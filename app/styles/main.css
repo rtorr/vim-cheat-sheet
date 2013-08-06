@@ -41,3 +41,6 @@ li {
   text-align: center;
 }
 
+kbd {
+  font-weight: bold;
+}
