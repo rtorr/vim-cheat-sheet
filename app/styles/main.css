@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -72px;
+}
+
+.push {
+  height: 72px;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+ul {
+  padding: 0;
+  padding-left: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.well {
+  border-radius: 0;
+}
+
+#footer {
+  text-align: center;
+}
+
