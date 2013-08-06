@@ -36,6 +36,7 @@ For production:
 
     grunt build
     
+You should see the generated files in the `dist` directory.
 
 Please sumbit pull request into the develop branch.
 
