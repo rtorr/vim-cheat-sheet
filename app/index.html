@@ -27,75 +27,76 @@
         <div class="col-lg-4">
           <h2>Cursor movement</h2>
           <ul>
-            <li><strong>h</strong> - move left</li>
-            <li><strong>j</strong> - move down</li>
-            <li><strong>k</strong> - move up</li>
-            <li><strong>l</strong> - move right</li>
-            <li><strong>w</strong> - jump by start of words (punctuation considered words)</li>
-            <li><strong>W</strong> - jump by words (spaces separate words)</li>
-            <li><strong>e</strong> - jump to end of words (punctuation considered words)</li>
-            <li><strong>E</strong> - jump to end of words (no punctuation)</li>
-            <li><strong>b</strong> - jump backward by words (punctuation considered words)</li>
-            <li><strong>B</strong> - jump backward by words (no punctuation)</li>
-            <li><strong>0</strong> - (zero) start of line</li>
-            <li><strong>^</strong> - first non-blank character of line</li>
-            <li><strong>$</strong> - end of line</li>
-            <li><strong>G</strong> - Go To command (prefix with number - 5G goes to line 5)</li>
+            <li><kbd>h</kbd> - move left</li>
+            <li><kbd>j</kbd> - move down</li>
+            <li><kbd>k</kbd> - move up</li>
+            <li><kbd>l</kbd> - move right</li>
+            <li><kbd>w</kbd> - jump by start of words (punctuation considered words)</li>
+            <li><kbd>W</kbd> - jump by words (spaces separate words)</li>
+            <li><kbd>e</kbd> - jump to end of words (punctuation considered words)</li>
+            <li><kbd>E</kbd> - jump to end of words (no punctuation)</li>
+            <li><kbd>b</kbd> - jump backward by words (punctuation considered words)</li>
+            <li><kbd>B</kbd> - jump backward by words (no punctuation)</li>
+            <li><kbd>0</kbd> - (zero) start of line</li>
+            <li><kbd>^</kbd> - first non-blank character of line</li>
+            <li><kbd>$</kbd> - end of line</li>
+            <li><kbd>G</kbd> - Go To command (prefix with number - 5G goes to line 5)</li>
           </ul>
           <p>Note: Prefix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines.</p>
           <h2>Insert Mode - Inserting/Appending text</h2>
           <ul>
-            <li><strong>i</strong> - start insert mode at cursor</li>
-            <li><strong>I</strong> - insert at the beginning of the line</li>
-            <li><strong>a</strong> - append after the cursor</li>
-            <li><strong>A</strong> - append at the end of the line</li>
-            <li><strong>o</strong> - open (append) blank line below current line (no need to press return)</li>
-            <li><strong>O</strong> - open blank line above current line</li>
-            <li><strong>ea</strong> - append at end of word</li>
-            <li><strong>Esc</strong> - exit insert mode</li>
+            <li><kbd>i</kbd> - start insert mode at cursor</li>
+            <li><kbd>I</kbd> - insert at the beginning of the line</li>
+            <li><kbd>a</kbd> - append after the cursor</li>
+            <li><kbd>A</kbd> - append at the end of the line</li>
+            <li><kbd>o</kbd> - open (append) blank line below current line (no need to press return)</li>
+            <li><kbd>O</kbd> - open blank line above current line</li>
+            <li><kbd>ea</kbd> - append at end of word</li>
+            <li><kbd>Esc</kbd> - exit insert mode</li>
           </ul>
         </div>
         <div class="col-lg-4">
           <h2>Editing</h2>
           <ul>
-            <li><strong>r</strong> - replace a single character (does not use insert mode)</li>
-            <li><strong>J</strong> - join line below to the current one</li>
-            <li><strong>cc</strong> - change (replace) an entire line</li>
-            <li><strong>cw</strong> - change (replace) to the end of word</li>
-            <li><strong>c$</strong> - change (replace) to the end of line</li>
-            <li><strong>s</strong> - delete character at cursor and substitute text</li>
-            <li><strong>S</strong> - delete line at cursor and substitute text (same as cc)</li>
-            <li><strong>xp</strong> - transpose two letter (delete and paste, technically)</li>
-            <li><strong>u</strong> - undo</li>
-            <li><strong>Ctrl+r</strong> - redo</li>
-            <li><strong>.</strong> - repeat last command</li>
+            <li><kbd>r</kbd> - replace a single character (does not use insert mode)</li>
+            <li><kbd>J</kbd> - join line below to the current one</li>
+            <li><kbd>cc</kbd> - change (replace) an entire line</li>
+            <li><kbd>cw</kbd> - change (replace) to the end of word</li>
+            <li><kbd>c$</kbd> - change (replace) to the end of line</li>
+            <li><kbd>s</kbd> - delete character at cursor and substitute text</li>
+            <li><kbd>S</kbd> - delete line at cursor and substitute text (same as cc)</li>
+            <li><kbd>xp</kbd> - transpose two letter (delete and paste, technically)</li>
+            <li><kbd>u</kbd> - undo</li>
+            <li><kbd>Ctrl</kbd> + <kbd>r</kbd> - redo</li>
+            <li><kbd>.</kbd> - repeat last command</li>
           </ul>
           <h2>Marking text (visual mode)</h2>
           <ul>
-            <li><strong>v</strong> - start visual mode, mark lines, then do command (such as y-yank)</li>
-            <li><strong>V</strong> - start Linewise visual mode</li>
-            <li><strong>o</strong> - move to other end of marked area</li>
-            <li><strong>Ctrl+v</strong> - start visual block mode</li>
-            <li><strong>O</strong> - move to Other corner of block</li>
-            <li><strong>aw</strong> - mark a word</li>
-            <li><strong>ab</strong> - a () block (with braces)</li>
-            <li><strong>aB</strong> - a {} block (with brackets)</li>
-            <li><strong>ib</strong> - inner () block</li>
-            <li><strong>iB</strong> - inner {} block</li>
-            <li><strong>Esc</strong> - exit visual mode</li>
+            <li><kbd>v</kbd> - start visual mode, mark lines, then do command (such as y-yank)</li>
+            <li><kbd>V</kbd> - start Linewise visual mode</li>
+            <li><kbd>o</kbd> - move to other end of marked area</li>
+            <li><kbd>Ctrl</kbd> + <kbd>v</kbd> - start visual block mode</li>
+            <li><kbd>O</kbd> - move to Other corner of block</li>
+            <li><kbd>aw</kbd> - mark a word</li>
+            <li><kbd>ab</kbd> - a () block (with braces)</li>
+            <li><kbd>aB</kbd> - a {} block (with brackets)</li>
+            <li><kbd>ib</kbd> - inner () block</li>
+            <li><kbd>iB</kbd> - inner {} block</li>
+            <li><kbd>Esc</kbd> - exit visual mode</li>
           </ul>
           <h2>Visual commands</h2>
           <ul>
-            <li><strong>&#62;</strong> - shift right</li>
-            <li><strong>&#60;</strong> - shift left</li>
-            <li><strong>y</strong> - yank (copy) marked text</li>
-            <li><strong>d</strong> - delete marked text</li>
-            <li><strong>~</strong> - switch case</li>
+            <li><kbd>&#62;</kbd> - shift right</li>
+            <li><kbd>&#60;</kbd> - shift left</li>
+            <li><kbd>y</kbd> - yank (copy) marked text</li>
+            <li><kbd>d</kbd> - delete marked text</li>
+            <li><kbd>~</kbd> - switch case</li>
           </ul>
         </div>
         <div class="col-lg-4">
           <h2>Cut and Paste</h2>
           <ul>
+<<<<<<< HEAD
             <li><strong>yy</strong> - yank (copy) a line</li>
             <li><strong>2yy</strong> - yank 2 lines</li>
             <li><strong>yw</strong> - yank word</li>
@@ -116,18 +117,41 @@
             <li><strong>:x</strong> - write (save) and quit</li>
             <li><strong>:q</strong> - quit (fails if anything has changed)</li>
             <li><strong>:q!</strong> - quit and throw away changes</li>
+=======
+            <li><kbd>yy</kbd> - yank (copy) a line</li>
+            <li><kbd>2yy</kbd> - yank 2 lines</li>
+            <li><kbd>yw</kbd> - yank word</li>
+            <li><kbd>y$</kbd> - yank to end of line</li>
+            <li><kbd>p</kbd> - put (paste) the clipboard after cursor</li>
+            <li><kbd>P</kbd> - put (paste) before cursor</li>
+            <li><kbd>dd</kbd> - delete (cut) a line</li>
+            <li><kbd>2dd</kbd> - delete (cut) 2 lines</li>
+            <li><kbd>dw</kbd> - delete (cut) the current word</li>
+            <li><kbd>D</kbd> - delete (cut) to the end of line</li>
+            <li><kbd>d$</kbd> - delete (cut) to the end of the line</li>
+            <li><kbd>x</kbd> - delete (cut) current character</li>
+          </ul>
+          <h2>Exiting</h2>
+          <ul>
+            <li><kbd>:w</kbd> - write (save) the file, but don't exit</li>
+            <li><kbd>:wq</kbd> - write (save) and quit</li>
+            <li><kbd>:x</kbd> -  write (save) and quit</li>
+            <li><kbd>:q</kbd> - quit (fails if anything has changed)</li>
+            <li><kbd>:q!</kbd> - quit and throw away changes</li>
+>>>>>>> upstream/master
           </ul>
           <h2>Search/Replace</h2>
           <ul>
-            <li><strong>/pattern</strong> - search for pattern</li>
-            <li><strong>?pattern</strong> - search backward for pattern</li>
-            <li><strong>n</strong> - repeat search in same direction</li>
-            <li><strong>N</strong> - repeat search in opposite direction</li>
-            <li><strong>:%s/old/new/g</strong> - replace all old with new throughout file</li>
-            <li><strong>:%s/old/new/gc</strong> - replace all old with new throughout file with confirmations</li>
+            <li><kbd>/pattern</kbd> - search for pattern</li>
+            <li><kbd>?pattern</kbd> - search backward for pattern</li>
+            <li><kbd>n</kbd> - repeat search in same direction</li>
+            <li><kbd>N</kbd> - repeat search in opposite direction</li>
+            <li><kbd>:%s/old/new/g</kbd> - replace all old with new throughout file</li>
+            <li><kbd>:%s/old/new/gc</kbd> - replace all old with new throughout file with confirmations</li>
           </ul>
           <h2>Working with multiple files</h2>
           <ul>
+<<<<<<< HEAD
             <li><strong>:e</strong> filename - Edit a file in a new buffer</li>
             <li><strong>:bnext or :bn</strong> - go to next buffer</li>
             <li><strong>:bprev or :bn</strong>  - go to previous buffer</li>
@@ -137,6 +161,17 @@
             <li><strong>ctrl+ww</strong> - switch windows</li>
             <li><strong>ctrl+wq</strong> - Quit a window</li>
             <li><strong>ctrl+wv</strong> - split windows vertically</li>
+=======
+            <li><kbd>:e</kbd> filename - Edit a file in a new buffer</li>
+            <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - go to next buffer</li>
+            <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - go to previous buffer</li>
+            <li><kbd>:bd</kbd> - delete a buffer (close a file)</li>
+            <li><kbd>:sp</kbd> filename - Open a file in a new buffer and split window</li>
+            <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - Split windows</li>
+            <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - switch windows</li>
+            <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - Quit a window</li>
+            <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - split windows vertically</li>
+>>>>>>> upstream/master
           </ul>
         </div>
       </div>
