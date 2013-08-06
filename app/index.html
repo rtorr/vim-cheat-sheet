@@ -103,14 +103,17 @@
             <li><kbd>p</kbd> - put (paste) the clipboard after cursor</li>
             <li><kbd>P</kbd> - put (paste) before cursor</li>
             <li><kbd>dd</kbd> - delete (cut) a line</li>
+            <li><kbd>2dd</kbd> - delete (cut) 2 lines</li>
             <li><kbd>dw</kbd> - delete (cut) the current word</li>
             <li><kbd>D</kbd> - delete (cut) to the end of line</li>
+            <li><kbd>d$</kbd> - delete (cut) to the end of the line</li>
             <li><kbd>x</kbd> - delete (cut) current character</li>
           </ul>
           <h2>Exiting</h2>
           <ul>
             <li><kbd>:w</kbd> - write (save) the file, but don't exit</li>
             <li><kbd>:wq</kbd> - write (save) and quit</li>
+            <li><kbd>:x</kbd> -  write (save) and quit</li>
             <li><kbd>:q</kbd> - quit (fails if anything has changed)</li>
             <li><kbd>:q!</kbd> - quit and throw away changes</li>
           </ul>
@@ -126,8 +129,8 @@
           <h2>Working with multiple files</h2>
           <ul>
             <li><kbd>:e</kbd> filename - Edit a file in a new buffer</li>
-            <li><kbd>:bnext</kbd> (or :bn) - go to next buffer</li>
-            <li><kbd>:bprev</kbd> (or :bp) - go to previous buffer</li>
+            <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - go to next buffer</li>
+            <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - go to previous buffer</li>
             <li><kbd>:bd</kbd> - delete a buffer (close a file)</li>
             <li><kbd>:sp</kbd> filename - Open a file in a new buffer and split window</li>
             <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - Split windows</li>
