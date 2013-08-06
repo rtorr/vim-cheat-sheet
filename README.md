@@ -26,7 +26,7 @@ http://rtorruellas.com/vim-cheat-sheet/
     npm install && bower install
     
     
-### Generat the site
+### Generate the site
 
 For development:
 
