@@ -210,7 +210,7 @@ module.exports = function (grunt) {
           dest: '.tmp/',
           src: [
             'styles/{,*/}*.css',
-            'bower_components/boostrap/dist/css/bootstrap.min.css'
+            'bower_components/bootstrap/dist/css/bootstrap.min.css'
           ]
         },
         files: [
