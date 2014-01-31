@@ -26,7 +26,6 @@ h2 {
 
 ul {
   padding: 0;
-  padding-left: 5px;
 }
 
 li {
@@ -38,9 +37,17 @@ li {
 }
 
 #footer {
+  margin-top: 15px;
   text-align: center;
 }
 
 kbd {
+  font-family: monospace,serif;
+  font-size: 1em;
+  color: #333;
+  background-color: #fafafa;
+  border-radius: 0;
+  box-shadow: none;
   font-weight: bold;
+  padding: 0;
 }
