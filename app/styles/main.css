@@ -42,7 +42,14 @@ li {
 }
 
 kbd {
-  font-weight: bold;
+  font-family: monospace,serif;
+  font-size: 1em;
+  color: #333;
+  background-color: #fafafa;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 700;
+  padding: 0;
 }
 
 #footer .well {

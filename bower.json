@@ -2,7 +2,7 @@
   "name": "vim-cheat-sheet",
   "version": "0.0.0",
   "dependencies": {
-    "boostrap": "git@github.com:twbs/bootstrap.git#3.0.0-rc1",
+    "bootstrap": "latest",
     "modernizr": "~2.6.2",
     "jquery": "~1.9.1"
   },
