@@ -44,3 +44,7 @@ li {
 kbd {
   font-weight: bold;
 }
+
+#footer .well {
+  margin-bottom: 0;
+}
