@@ -26,19 +26,10 @@ h2 {
 
 ul {
   padding: 0;
-  padding-left: 5px;
 }
 
 li {
   list-style-type: none;
-}
-
-.well {
-  border-radius: 0;
-}
-
-#footer {
-  text-align: center;
 }
 
 kbd {
@@ -48,9 +39,20 @@ kbd {
   background-color: #fafafa;
   border-radius: 0;
   box-shadow: none;
-  font-weight: 700;
+  font-weight: bold;
   padding: 0;
 }
+
+.well {
+  border-radius: 0;
+}
+
+#footer {
+  margin-top: 15px;
+  text-align: center;
+}
+
+
 
 #footer .well {
   margin-bottom: 0;
