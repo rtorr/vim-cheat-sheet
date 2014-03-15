@@ -94,7 +94,7 @@ exiting:
     colonq: quit (fails if there are unsaved changes)
     colonqbang: quit and throw away unsaved changes
 
-SearchAndReplace:
+searchAndReplace:
   title: Search and replace
   commands:
     forwardSlashPattern: search for pattern
@@ -103,6 +103,34 @@ SearchAndReplace:
     N: repeat search in opposite direction
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: replace all old with new throughout file
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: replace all old with new throughout file with confirmations
+
+workingWithMultipleFiles:
+  title: Working with multiple files
+  commands:
+    colone: edit a file in a new buffer
+    colonbnext: go to the next buffer
+    colonbprev: go to the previous buffer
+    colonbd: delete a buffer (close a file)
+    colonsp: open a file in a new buffer and split window
+    colonvsp: open a file in a new buffer and vertically split window
+    ctrlPlusws: split window
+    ctrlPlusww: switch windows
+    ctrlPluswq: quit a window
+    ctrlPluswv: split window vertically
+
+tabs:
+  title: "Tabs"
+  commands:
+    colonTabNew: "open a file in a new tab"
+    ctrlPluswt: "move the current split window into its own tab"
+    gt: "move to the next tab"
+    gT: "move to the previous tab"
+    hashgt: "move to tab number #"
+    colontabmove: "move current tab to the #th position (indexed from 0)"
+    colontabc: "close the current tab and all its windows"
+    colontabo: "close all tabs except for the current one"
+
+footer: Checkout the source on
 
 
 

@@ -120,44 +120,44 @@
             <li><kbd>:q</kbd> - <%= exiting.commands.colonq %></li>
             <li><kbd>:q!</kbd> - <%= exiting.commands.colonqbang %></li>
           </ul>
-          <h2><%= SearchAndReplace.title %></h2>
+          <h2><%= searchAndReplace.title %></h2>
           <ul>
-            <li><kbd>/pattern</kbd> - <%= SearchAndReplace.commands.forwardSlashPattern %></li>
-            <li><kbd>?pattern</kbd> - <%= SearchAndReplace.commands.questionMarkPattern %></li>
-            <li><kbd>n</kbd> - <%= SearchAndReplace.commands.n %></li>
-            <li><kbd>N</kbd> - <%= SearchAndReplace.commands.N %></li>
-            <li><kbd>:%s/old/new/g</kbd> - <%= SearchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashg %></li>
-            <li><kbd>:%s/old/new/gc</kbd> - <%= SearchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashgc %></li>
+            <li><kbd>/pattern</kbd> - <%= searchAndReplace.commands.forwardSlashPattern %></li>
+            <li><kbd>?pattern</kbd> - <%= searchAndReplace.commands.questionMarkPattern %></li>
+            <li><kbd>n</kbd> - <%= searchAndReplace.commands.n %></li>
+            <li><kbd>N</kbd> - <%= searchAndReplace.commands.N %></li>
+            <li><kbd>:%s/old/new/g</kbd> - <%= searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashg %></li>
+            <li><kbd>:%s/old/new/gc</kbd> - <%= searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashgc %></li>
           </ul>
         </div>
       </div> <!-- end row -->
       <div class="row">
         <div class="col-lg-4 col-md-4">
-          <h2>Working with multiple files</h2>
+          <h2><%= workingWithMultipleFiles.title %></h2>
           <ul>
-            <li><kbd>:e</kbd> filename - edit a file in a new buffer</li>
-            <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - go to the next buffer</li>
-            <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - go to the previous buffer</li>
-            <li><kbd>:bd</kbd> - delete a buffer (close a file)</li>
-            <li><kbd>:sp</kbd> filename - open a file in a new buffer and split window</li>
-            <li><kbd>:vsp</kbd> filename - open a file in a new buffer and vertically split window </li>
-            <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - split window</li>
-            <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - switch windows</li>
-            <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - quit a window</li>
-            <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - split window vertically</li>
+            <li><kbd>:e</kbd> filename - <%= workingWithMultipleFiles.commands.colone %></li>
+            <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - <%= workingWithMultipleFiles.commands.colonbnext %></li>
+            <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - <%= workingWithMultipleFiles.commands.colonbprev %></li>
+            <li><kbd>:bd</kbd> - <%= workingWithMultipleFiles.commands.colonbd %></li>
+            <li><kbd>:sp</kbd> filename - <%= workingWithMultipleFiles.commands.colonsp %></li>
+            <li><kbd>:vsp</kbd> filename - <%= workingWithMultipleFiles.commands.colonvsp %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - <%= workingWithMultipleFiles.commands.ctrlPlusws %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - <%= workingWithMultipleFiles.commands.ctrlPlusww %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - <%= workingWithMultipleFiles.commands.ctrlPluswq %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - <%= workingWithMultipleFiles.commands.ctrlPluswv %></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">
-          <h2>Tabs</h2>
+          <h2><%= tabs.title %></h2>
           <ul>
-            <li><kbd>:tabnew</kbd> filename or <kbd>:tabn</kbd> filename - open a file in a new tab</li>
-            <li><kbd>Ctrl</kbd> + <kbd>wt</kbd>  - move the current split window into its own tab</li>
-            <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>  - move to the next tab</li>
-            <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - move to the previous tab</li>
-            <li><kbd>#gt</kbd> - move to tab number #</li>
-            <li><kbd>:tabmove #</kbd> - move current tab to the #th position (indexed from 0)</li>
-            <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - close the current tab and all its windows</li>
-            <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - close all tabs except for the current one</li>
+            <li><kbd>:tabnew</kbd> filename or <kbd>:tabn</kbd> filename - <%= tabs.commands.colonTabNew %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>wt</kbd>  - <%= tabs.commands.ctrlPluswt %></li>
+            <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>  - <%= tabs.commands.gt %></li>
+            <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - <%= tabs.commands.gT %></li>
+            <li><kbd>#gt</kbd> - <%= tabs.commands.hashgt %></li>
+            <li><kbd>:tabmove #</kbd> - <%= tabs.commands.colontabmove %></li>
+            <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - <%= tabs.commands.colontabc %></li>
+            <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - <%= tabs.commands.colontabo %></li>
           </ul>
         </div>
       </div> <!-- end row -->
@@ -168,7 +168,7 @@
 <div id="footer">
   <div class="well">
     <div class="container">
-      <p class="muted credit">Checkout the source on <a href="https://github.com/rtorr/vim-cheat-sheet">Github</a></p>
+      <p class="muted credit"><%= footer %> <a href="https://github.com/rtorr/vim-cheat-sheet">Github</a></p>
     </div>
   </div>
 </div>
