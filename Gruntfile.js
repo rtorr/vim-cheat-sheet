@@ -311,7 +311,7 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('locale', [
+  grunt.registerTask('build', [
     'clean:dist',
     'useminPrepare',
     'concurrent:dist',
@@ -327,19 +327,7 @@ module.exports = function (grunt) {
     'aws_s3'
   ]);
 
-  grunt.registerTask('build', [
-    'clean:dist',
-    'useminPrepare',
-    'concurrent:dist',
-    'concat',
-    'cssmin',
-    'uglify',
-    'copy:dist',
-    'usemin'
-  ]);
-
   grunt.registerTask('default', [
-    'jshint',
     'build'
   ]);
 };
