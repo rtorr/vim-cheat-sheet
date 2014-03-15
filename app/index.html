@@ -6,13 +6,27 @@
   <title>Vim Cheat Sheet</title>
   <meta name="description" content="A mobile friendly VIM cheat sheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- build:css({.tmp,app}) styles/main.css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
+
+  <!-- build:remove -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  <!-- /build -->
+
+
+  <!-- build:template
+  <link rel="stylesheet" href="https://s3.amazonaws.com/rtorr-vim-cheat-sheet/assets/styles/main.css">
+  <script src="https://s3.amazonaws.com/rtorr-vim-cheat-sheet/assets/scripts/vendor/modernizr.js"></script>
+  /build -->
+
+
 </head>
 <body>
 <div class="wrapper">
@@ -172,5 +186,15 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25408695-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </body>
 </html>

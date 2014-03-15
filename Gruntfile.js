@@ -54,16 +54,6 @@ module.exports = function (grunt) {
           }
         }
       },
-      test: {
-        options: {
-          middleware: function (connect) {
-            return [
-              mountFolder(connect, '.tmp'),
-              mountFolder(connect, 'test')
-            ];
-          }
-        }
-      },
       dist: {
         options: {
           middleware: function (connect) {
@@ -101,8 +91,7 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         '<%= yeoman.app %>/scripts/{,*/}*.js',
-        '!<%= yeoman.app %>/scripts/vendor/*',
-        'test/spec/{,*/}*.js'
+        '!<%= yeoman.app %>/scripts/vendor/*'
       ]
     },
     mocha: {
@@ -259,8 +248,6 @@ module.exports = function (grunt) {
       server: [
 
       ],
-      test: [
-      ],
       dist: [
         'imagemin',
         'svgmin',
@@ -276,13 +263,36 @@ module.exports = function (grunt) {
       }
     },
     i18n: {
-      test: {
-        src: ['.tmp/index.html'],
+      src: ['.tmp/index.html'],
+      options: {
+        locales: 'app/locales/*.yaml',
+        output: 'app/lang',
+        base: '.tmp'
+      }
+    },
+    aws_s3: {
+      options: {
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+        uploadConcurrency: 5, // 5 simultaneous uploads
+        downloadConcurrency: 5 // 5 simultaneous downloads
+      },
+      dev: {
         options: {
-          locales: 'app/locales/*.yaml',
-          output: 'app/lang',
-          base: '.tmp'
-        }
+          bucket: 'rtorr-vim-cheat-sheet',
+          access: 'public-read'
+        },
+        files: [
+          {expand: true, cwd: '.tmp/', src: ['scripts/**/*', 'styles/**/*'], dest: 'assets'}
+        ]
+      }
+    },
+    processhtml: {
+      files: {
+        expand: true,
+        cwd: '.tmp',      // Src matches are relative to this path.
+        src: ['*.html'], // Actual pattern(s) to match.
+        dest: '.tmp'   // Destination path prefix.
       }
     }
   });
@@ -301,10 +311,6 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('test', [
-    'i18n'
-  ]);
-
   grunt.registerTask('locale', [
     'clean:dist',
     'useminPrepare',
@@ -314,9 +320,11 @@ module.exports = function (grunt) {
     'uglify',
     'copy:dist',
     'usemin',
+    'processhtml',
     'i18n',
     'copy:finalLangsHtml',
-    'copy:finalRootHtml'
+    'copy:finalRootHtml',
+    'aws_s3'
   ]);
 
   grunt.registerTask('build', [
@@ -332,7 +340,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'jshint',
-    'test',
     'build'
   ]);
 };
