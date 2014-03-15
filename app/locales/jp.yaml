@@ -1,3 +1,5 @@
+lang: "jp"
+
 cursorMovement:
   title: "カーソル移動"
   commands:
