@@ -30,4 +30,64 @@ insertMode:
     ea: insert (append) at the end of the word
     Esc: exit insert mode
 
+editing:
+  title: Editing
+  commands:
+    r: replace a single character
+    J: join line below to the current one
+    cc: change (replace) entire line
+    cw: change (replace) to the end of the word
+    cDollar: change (replace) to the end of the line
+    s: delete character and substitute text
+    S: delete line and substitute text (same as cc)
+    xp: transpose two letters (delete and paste)
+    u: undo
+    CtrlPlusr: redo
+    dot: repeat last command
+
+markingText:
+  title: Marking text (visual mode)
+  commands:
+    v: start visual mode, mark lines, then do a command (like y-yank)
+    V: start linewise visual mode
+    o: move to other end of marked area
+    CtrlPlusv: start visual block mode
+    O: move to other corner of block
+    aw: mark a word
+    ab: a block with ()
+    aB: a block with {}
+    ib: inner block with ()
+    iB: inner block with {}
+    Esc: exit visual mode
+
+visualCommands:
+  title: Visual commands
+  commands:
+    greaterThan: shift text right
+    lessThan: shift text left
+    y: yank (copy) marked text
+    d: delete marked text
+    tilde: switch case
+
+cutAndPaste:
+  title: Cut and paste
+  commands:
+    yy: yank (copy) a line
+    twoyy: yank (copy) 2 lines
+    yw: yank (copy) word
+    yDollar: yank (copy) to end of line
+    p: put (paste) the clipboard after cursor
+    P: put (paste) before cursor
+    dd: delete (cut) a line
+    twodd: delete (cut) 2 lines
+    dw: delete (cut) word
+    D: delete (cut) to the end of the line
+    dDollar: delete (cut) to the end of the line
+    x: delete (cut) character
+
+
+
+
+
+
 
