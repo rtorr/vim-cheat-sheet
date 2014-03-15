@@ -6,13 +6,19 @@
   <title>Vim Cheat Sheet</title>
   <meta name="description" content="A mobile friendly VIM cheat sheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- build:css({.tmp,app}) styles/main.css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
+  <!-- build:remove -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  <!-- /build -->
+  <!-- build:template
+  <link rel="stylesheet" href="https://s3.amazonaws.com/rtorr-vim-cheat-sheet/assets/styles/main.css">
+  <script src="https://s3.amazonaws.com/rtorr-vim-cheat-sheet/assets/scripts/vendor/modernizr.js"></script>
+  /build -->
 </head>
 <body>
 <div class="wrapper">
@@ -25,142 +31,151 @@
       </div> <!-- end row -->
       <div class="row">
         <div class="col-lg-4 col-md-4">
-          <h2>Cursor movement</h2>
+          <h2><%= cursorMovement.title %></h2>
           <ul>
-            <li><kbd>h</kbd> - move cursor left</li>
-            <li><kbd>j</kbd> - move cursor down</li>
-            <li><kbd>k</kbd> - move cursor up</li>
-            <li><kbd>l</kbd> - move cursor right</li>
-            <li><kbd>w</kbd> - jump forwards to the start of a word</li>
-            <li><kbd>W</kbd> - jump forwards to the start of a word (words can contain punctuation)</li>
-            <li><kbd>e</kbd> - jump forwards to the end of a word</li>
-            <li><kbd>E</kbd> - jump forwards to the end of a word (words can contain punctuation)</li>
-            <li><kbd>b</kbd> - jump backwards to the start of a word</li>
-            <li><kbd>B</kbd> - jump backwards to the start of a word (words can contain punctuation)</li>
-            <li><kbd>0</kbd> - jump to the start of the line</li>
-            <li><kbd>^</kbd> - jump to the first non-blank character of the line</li>
-            <li><kbd>$</kbd> - jump to the end of the line</li>
-            <li><kbd>G</kbd> - go to the last line of the document</li>
-            <li><kbd>5G</kbd> - go to line 5</li>
+            <li><kbd>h</kbd> - <%= cursorMovement.commands.h %></li>
+            <li><kbd>j</kbd> - <%= cursorMovement.commands.j %></li>
+            <li><kbd>k</kbd> - <%= cursorMovement.commands.k %></li>
+            <li><kbd>l</kbd> - <%= cursorMovement.commands.l %></li>
+            <li><kbd>w</kbd> - <%= cursorMovement.commands.w %></li>
+            <li><kbd>W</kbd> - <%= cursorMovement.commands.W %></li>
+            <li><kbd>e</kbd> - <%= cursorMovement.commands.e %></li>
+            <li><kbd>E</kbd> - <%= cursorMovement.commands.E %></li>
+            <li><kbd>b</kbd> - <%= cursorMovement.commands.b %></li>
+            <li><kbd>B</kbd> - <%= cursorMovement.commands.B %></li>
+            <li><kbd>0</kbd> - <%= cursorMovement.commands.zero %></li>
+            <li><kbd>^</kbd> - <%= cursorMovement.commands.caret %></li>
+            <li><kbd>$</kbd> - <%= cursorMovement.commands.dollar %></li>
+            <li><kbd>G</kbd> - <%= cursorMovement.commands.G %></li>
+            <li><kbd>5G</kbd> - <%= cursorMovement.commands.fiveG %></li>
           </ul>
           <div class="well">
-            <small><strong>Tip</strong> Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines.</small>
+            <small><strong>Tip</strong> <%= cursorMovement.tip %></small>
           </div>
-          <h2>Insert mode - inserting/appending text</h2>
+          <h2><%= insertMode.title %></h2>
           <ul>
-            <li><kbd>i</kbd> - insert before the cursor</li>
-            <li><kbd>I</kbd> - insert at the beginning of the line</li>
-            <li><kbd>a</kbd> - insert (append) after the cursor</li>
-            <li><kbd>A</kbd> - insert (append) at the end of the line</li>
-            <li><kbd>o</kbd> - append (open) a new line below the current line</li>
-            <li><kbd>O</kbd> - append (open) a new line above the current line</li>
-            <li><kbd>ea</kbd> - insert (append) at the end of the word</li>
-            <li><kbd>Esc</kbd> - exit insert mode</li>
+            <li><kbd>i</kbd> - <%= insertMode.commands.i %></li>
+            <li><kbd>I</kbd> - <%= insertMode.commands.I %></li>
+            <li><kbd>a</kbd> - <%= insertMode.commands.a %></li>
+            <li><kbd>A</kbd> - <%= insertMode.commands.A %></li>
+            <li><kbd>o</kbd> - <%= insertMode.commands.o %></li>
+            <li><kbd>O</kbd> - <%= insertMode.commands.O %></li>
+            <li><kbd>ea</kbd> - <%= insertMode.commands.ea %></li>
+            <li><kbd>Esc</kbd> - <%= insertMode.commands.Esc %></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">
-          <h2>Editing</h2>
+          <h2><%= editing.title %></h2>
           <ul>
-            <li><kbd>r</kbd> - replace a single character</li>
-            <li><kbd>J</kbd> - join line below to the current one</li>
-            <li><kbd>cc</kbd> - change (replace) entire line</li>
-            <li><kbd>cw</kbd> - change (replace) to the end of the word</li>
-            <li><kbd>c$</kbd> - change (replace) to the end of the line</li>
-            <li><kbd>s</kbd> - delete character and substitute text</li>
-            <li><kbd>S</kbd> - delete line and substitute text (same as cc)</li>
-            <li><kbd>xp</kbd> - transpose two letters (delete and paste)</li>
-            <li><kbd>u</kbd> - undo</li>
-            <li><kbd>Ctrl</kbd> + <kbd>r</kbd> - redo</li>
-            <li><kbd>.</kbd> - repeat last command</li>
+            <li><kbd>r</kbd> - <%= editing.commands.r %></li>
+            <li><kbd>J</kbd> - <%= editing.commands.J %></li>
+            <li><kbd>cc</kbd> - <%= editing.commands.cc %></li>
+            <li><kbd>cw</kbd> - <%= editing.commands.cw %></li>
+            <li><kbd>c$</kbd> - <%= editing.commands.cDollar %></li>
+            <li><kbd>s</kbd> - <%= editing.commands.s %></li>
+            <li><kbd>S</kbd> - <%= editing.commands.S %></li>
+            <li><kbd>xp</kbd> - <%= editing.commands.xp %></li>
+            <li><kbd>u</kbd> - <%= editing.commands.u %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>r</kbd> - <%= editing.commands.CtrlPlusr %></li>
+            <li><kbd>.</kbd> - <%= editing.commands.dot %></li>
           </ul>
-          <h2>Marking text (visual mode)</h2>
+          <h2><%= markingText.title %></h2>
           <ul>
-            <li><kbd>v</kbd> - start visual mode, mark lines, then do a command (like y-yank)</li>
-            <li><kbd>V</kbd> - start linewise visual mode</li>
-            <li><kbd>o</kbd> - move to other end of marked area</li>
-            <li><kbd>Ctrl</kbd> + <kbd>v</kbd> - start visual block mode</li>
-            <li><kbd>O</kbd> - move to other corner of block</li>
-            <li><kbd>aw</kbd> - mark a word</li>
-            <li><kbd>ab</kbd> - a block with ()</li>
-            <li><kbd>aB</kbd> - a block with {}</li>
-            <li><kbd>ib</kbd> - inner block with ()</li>
-            <li><kbd>iB</kbd> - inner block with {}</li>
-            <li><kbd>Esc</kbd> - exit visual mode</li>
+            <li><kbd>v</kbd> - <%= markingText.commands.v %></li>
+            <li><kbd>V</kbd> - <%= markingText.commands.V %></li>
+            <li><kbd>o</kbd> - <%= markingText.commands.o %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>v</kbd> - <%= markingText.commands.CtrlPlusv %></li>
+            <li><kbd>O</kbd> - <%= markingText.commands.O %></li>
+            <li><kbd>aw</kbd> - <%= markingText.commands.aw %></li>
+            <li><kbd>ab</kbd> - <%= markingText.commands.ab %></li>
+            <li><kbd>aB</kbd> - <%= markingText.commands.aB %></li>
+            <li><kbd>ib</kbd> - <%= markingText.commands.ib %></li>
+            <li><kbd>iB</kbd> - <%= markingText.commands.iB %></li>
+            <li><kbd>Esc</kbd> - <%= markingText.commands.Esc %></li>
           </ul>
-          <h2>Visual commands</h2>
+          <h2><%= visualCommands.title %></h2>
           <ul>
-            <li><kbd>&#62;</kbd> - shift text right</li>
-            <li><kbd>&#60;</kbd> - shift text left</li>
-            <li><kbd>y</kbd> - yank (copy) marked text</li>
-            <li><kbd>d</kbd> - delete marked text</li>
-            <li><kbd>~</kbd> - switch case</li>
+            <li><kbd>&#62;</kbd> - <%= visualCommands.commands.greaterThan %></li>
+            <li><kbd>&#60;</kbd> - <%= visualCommands.commands.lessThan %></li>
+            <li><kbd>y</kbd> - <%= visualCommands.commands.y %></li>
+            <li><kbd>d</kbd> - <%= visualCommands.commands.d %></li>
+            <li><kbd>~</kbd> - <%= visualCommands.commands.tilde %></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">
-          <h2>Cut and paste</h2>
+          <h2><%= cutAndPaste.title %></h2>
           <ul>
-            <li><kbd>yy</kbd> - yank (copy) a line</li>
-            <li><kbd>2yy</kbd> - yank (copy) 2 lines</li>
-            <li><kbd>yw</kbd> - yank (copy) word</li>
-            <li><kbd>y$</kbd> - yank (copy) to end of line</li>
-            <li><kbd>p</kbd> - put (paste) the clipboard after cursor</li>
-            <li><kbd>P</kbd> - put (paste) before cursor</li>
-            <li><kbd>dd</kbd> - delete (cut) a line</li>
-            <li><kbd>2dd</kbd> - delete (cut) 2 lines</li>
-            <li><kbd>dw</kbd> - delete (cut) word</li>
-            <li><kbd>D</kbd> - delete (cut) to the end of the line</li>
-            <li><kbd>d$</kbd> - delete (cut) to the end of the line</li>
-            <li><kbd>x</kbd> - delete (cut) character</li>
+            <li><kbd>yy</kbd> - <%= cutAndPaste.commands.yy %></li>
+            <li><kbd>2yy</kbd> - <%= cutAndPaste.commands.twoyy %></li>
+            <li><kbd>yw</kbd> - <%= cutAndPaste.commands.yw %></li>
+            <li><kbd>y$</kbd> - <%= cutAndPaste.commands.yDollar %></li>
+            <li><kbd>p</kbd> - <%= cutAndPaste.commands.p %></li>
+            <li><kbd>P</kbd> - <%= cutAndPaste.commands.P %></li>
+            <li><kbd>dd</kbd> - <%= cutAndPaste.commands.dd %></li>
+            <li><kbd>2dd</kbd> - <%= cutAndPaste.commands.twodd %></li>
+            <li><kbd>dw</kbd> - <%= cutAndPaste.commands.dw %></li>
+            <li><kbd>D</kbd> - <%= cutAndPaste.commands.D %></li>
+            <li><kbd>d$</kbd> - <%= cutAndPaste.commands.dDollar %></li>
+            <li><kbd>x</kbd> - <%= cutAndPaste.commands.x %></li>
           </ul>
-          <h2>Exiting</h2>
+          <h2><%= exiting.title %></h2>
           <ul>
-            <li><kbd>:w</kbd> - write (save) the file, but don't exit</li>
-            <li><kbd>:wq</kbd> - write (save) and quit</li>
-            <li><kbd>:x</kbd> -  write (save) and quit</li>
-            <li><kbd>:q</kbd> - quit (fails if there are unsaved changes)</li>
-            <li><kbd>:q!</kbd> - quit and throw away unsaved changes</li>
+            <li><kbd>:w</kbd> - <%= exiting.commands.colonw %></li>
+            <li><kbd>:wq</kbd> - <%= exiting.commands.colonwq %></li>
+            <li><kbd>:x</kbd> -  <%= exiting.commands.colonx %></li>
+            <li><kbd>:q</kbd> - <%= exiting.commands.colonq %></li>
+            <li><kbd>:q!</kbd> - <%= exiting.commands.colonqbang %></li>
           </ul>
-          <h2>Search and replace</h2>
+          <h2><%= searchAndReplace.title %></h2>
           <ul>
-            <li><kbd>/pattern</kbd> - search for pattern</li>
-            <li><kbd>?pattern</kbd> - search backward for pattern</li>
-            <li><kbd>n</kbd> - repeat search in same direction</li>
-            <li><kbd>N</kbd> - repeat search in opposite direction</li>
-            <li><kbd>:%s/old/new/g</kbd> - replace all old with new throughout file</li>
-            <li><kbd>:%s/old/new/gc</kbd> - replace all old with new throughout file with confirmations</li>
+            <li><kbd>/pattern</kbd> - <%= searchAndReplace.commands.forwardSlashPattern %></li>
+            <li><kbd>?pattern</kbd> - <%= searchAndReplace.commands.questionMarkPattern %></li>
+            <li><kbd>n</kbd> - <%= searchAndReplace.commands.n %></li>
+            <li><kbd>N</kbd> - <%= searchAndReplace.commands.N %></li>
+            <li><kbd>:%s/old/new/g</kbd> - <%= searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashg %></li>
+            <li><kbd>:%s/old/new/gc</kbd> - <%= searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashgc %></li>
           </ul>
         </div>
       </div> <!-- end row -->
       <div class="row">
         <div class="col-lg-4 col-md-4">
-          <h2>Working with multiple files</h2>
+          <h2><%= workingWithMultipleFiles.title %></h2>
           <ul>
-            <li><kbd>:e</kbd> filename - edit a file in a new buffer</li>
-            <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - go to the next buffer</li>
-            <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - go to the previous buffer</li>
-            <li><kbd>:bd</kbd> - delete a buffer (close a file)</li>
-            <li><kbd>:sp</kbd> filename - open a file in a new buffer and split window</li>
-            <li><kbd>:vsp</kbd> filename - open a file in a new buffer and vertically split window </li>
-            <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - split window</li>
-            <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - switch windows</li>
-            <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - quit a window</li>
-            <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - split window vertically</li>
+            <li><kbd>:e</kbd> filename - <%= workingWithMultipleFiles.commands.colone %></li>
+            <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - <%= workingWithMultipleFiles.commands.colonbnext %></li>
+            <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - <%= workingWithMultipleFiles.commands.colonbprev %></li>
+            <li><kbd>:bd</kbd> - <%= workingWithMultipleFiles.commands.colonbd %></li>
+            <li><kbd>:sp</kbd> filename - <%= workingWithMultipleFiles.commands.colonsp %></li>
+            <li><kbd>:vsp</kbd> filename - <%= workingWithMultipleFiles.commands.colonvsp %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - <%= workingWithMultipleFiles.commands.ctrlPlusws %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - <%= workingWithMultipleFiles.commands.ctrlPlusww %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - <%= workingWithMultipleFiles.commands.ctrlPluswq %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - <%= workingWithMultipleFiles.commands.ctrlPluswv %></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">
-          <h2>Tabs</h2>
+          <h2><%= tabs.title %></h2>
           <ul>
-            <li><kbd>:tabnew</kbd> filename or <kbd>:tabn</kbd> filename - open a file in a new tab</li>
-            <li><kbd>Ctrl</kbd> + <kbd>wt</kbd>  - move the current split window into its own tab</li>
-            <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>  - move to the next tab</li>
-            <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - move to the previous tab</li>
-            <li><kbd>#gt</kbd> - move to tab number #</li>
-            <li><kbd>:tabmove #</kbd> - move current tab to the #th position (indexed from 0)</li>
-            <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - close the current tab and all its windows</li>
-            <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - close all tabs except for the current one</li>
+            <li><kbd>:tabnew</kbd> filename or <kbd>:tabn</kbd> filename - <%= tabs.commands.colonTabNew %></li>
+            <li><kbd>Ctrl</kbd> + <kbd>wt</kbd>  - <%= tabs.commands.ctrlPluswt %></li>
+            <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>  - <%= tabs.commands.gt %></li>
+            <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - <%= tabs.commands.gT %></li>
+            <li><kbd>#gt</kbd> - <%= tabs.commands.hashgt %></li>
+            <li><kbd>:tabmove #</kbd> - <%= tabs.commands.colontabmove %></li>
+            <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - <%= tabs.commands.colontabc %></li>
+            <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - <%= tabs.commands.colontabo %></li>
           </ul>
         </div>
       </div> <!-- end row -->
+      <div id="languages" class="row">
+        <h2>Languages</h2>
+        <div class="col-lg-10 col-md-10">
+          <ul>
+            <li><a href="http://rtorruellas.com/vim-cheat-sheet/lang/en_us">en_us</a></li>
+            <li><a href="http://rtorruellas.com/vim-cheat-sheet/lang/jp">jp</a></li>
+          </ul>
+        </div>
+      </div><!-- end row/languages -->
     </div> <!-- end container -->
   </div> <!-- end clearfix -->
   <div class="push"></div>
@@ -168,9 +183,19 @@
 <div id="footer">
   <div class="well">
     <div class="container">
-      <p class="muted credit">Checkout the source on <a href="https://github.com/rtorr/vim-cheat-sheet">Github</a></p>
+      <p class="muted credit"><%= footer %> <a href="https://github.com/rtorr/vim-cheat-sheet">Github</a></p>
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25408695-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </body>
 </html>

@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   // configurable paths
   var yeomanConfig = {
     app: 'app',
-    dist: 'dist'
+    dist: '.tmp'
   };
 
   grunt.initConfig({
@@ -50,16 +50,6 @@ module.exports = function (grunt) {
               lrSnippet,
               mountFolder(connect, '.tmp'),
               mountFolder(connect, yeomanConfig.app)
-            ];
-          }
-        }
-      },
-      test: {
-        options: {
-          middleware: function (connect) {
-            return [
-              mountFolder(connect, '.tmp'),
-              mountFolder(connect, 'test')
             ];
           }
         }
@@ -101,8 +91,7 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         '<%= yeoman.app %>/scripts/{,*/}*.js',
-        '!<%= yeoman.app %>/scripts/vendor/*',
-        'test/spec/{,*/}*.js'
+        '!<%= yeoman.app %>/scripts/vendor/*'
       ]
     },
     mocha: {
@@ -235,13 +224,29 @@ module.exports = function (grunt) {
             ]
           }
         ]
+      },
+      finalLangsHtml: {
+        expand: true,
+        dot: true,
+        cwd: '<%= yeoman.app %>',
+        dest: 'dist',
+        src: [
+          'lang/**/*'
+        ]
+      },
+      finalRootHtml: {
+        expand: true,
+        flatten: true,
+        cwd: '<%= yeoman.app %>',
+        dest: 'dist',
+        src: [
+          'lang/en_us/index.html'
+        ]
       }
     },
     concurrent: {
       server: [
 
-      ],
-      test: [
       ],
       dist: [
         'imagemin',
@@ -255,6 +260,39 @@ module.exports = function (grunt) {
       },
       all: {
         rjsConfig: '<%= yeoman.app %>/scripts/main.js'
+      }
+    },
+    i18n: {
+      src: ['.tmp/index.html'],
+      options: {
+        locales: 'app/locales/*.yaml',
+        output: 'app/lang',
+        base: '.tmp'
+      }
+    },
+    aws_s3: {
+      options: {
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+        uploadConcurrency: 5, // 5 simultaneous uploads
+        downloadConcurrency: 5 // 5 simultaneous downloads
+      },
+      dev: {
+        options: {
+          bucket: 'rtorr-vim-cheat-sheet',
+          access: 'public-read'
+        },
+        files: [
+          {expand: true, cwd: '.tmp/', src: ['scripts/**/*', 'styles/**/*'], dest: 'assets'}
+        ]
+      }
+    },
+    processhtml: {
+      files: {
+        expand: true,
+        cwd: '.tmp',      // Src matches are relative to this path.
+        src: ['*.html'], // Actual pattern(s) to match.
+        dest: '.tmp'   // Destination path prefix.
       }
     }
   });
@@ -273,13 +311,6 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('test', [
-    'clean:server',
-    'concurrent:test',
-    'connect:test',
-    'mocha'
-  ]);
-
   grunt.registerTask('build', [
     'clean:dist',
     'useminPrepare',
@@ -288,13 +319,15 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
-    'rev',
-    'usemin'
+    'usemin',
+    'processhtml',
+    'i18n',
+    'copy:finalLangsHtml',
+    'copy:finalRootHtml',
+    'aws_s3'
   ]);
 
   grunt.registerTask('default', [
-    'jshint',
-    'test',
     'build'
   ]);
 };
