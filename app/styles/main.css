@@ -56,3 +56,16 @@ kbd {
 #footer .well {
   margin-bottom: 0;
 }
+
+.jp {
+  font-size: 13px;
+}
+
+.jp h2 {
+  font-size: 20px;
+}
+
+.jp kbd {
+  font-size: 16px;
+}
+
