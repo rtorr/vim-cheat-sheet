@@ -25,37 +25,37 @@
       </div> <!-- end row -->
       <div class="row">
         <div class="col-lg-4 col-md-4">
-          <h2>Cursor movement</h2>
+          <h2><%= cursorMovement.title %></h2>
           <ul>
-            <li><kbd>h</kbd> - move cursor left</li>
-            <li><kbd>j</kbd> - move cursor down</li>
-            <li><kbd>k</kbd> - move cursor up</li>
-            <li><kbd>l</kbd> - move cursor right</li>
-            <li><kbd>w</kbd> - jump forwards to the start of a word</li>
-            <li><kbd>W</kbd> - jump forwards to the start of a word (words can contain punctuation)</li>
-            <li><kbd>e</kbd> - jump forwards to the end of a word</li>
-            <li><kbd>E</kbd> - jump forwards to the end of a word (words can contain punctuation)</li>
-            <li><kbd>b</kbd> - jump backwards to the start of a word</li>
-            <li><kbd>B</kbd> - jump backwards to the start of a word (words can contain punctuation)</li>
-            <li><kbd>0</kbd> - jump to the start of the line</li>
-            <li><kbd>^</kbd> - jump to the first non-blank character of the line</li>
-            <li><kbd>$</kbd> - jump to the end of the line</li>
-            <li><kbd>G</kbd> - go to the last line of the document</li>
-            <li><kbd>5G</kbd> - go to line 5</li>
+            <li><kbd>h</kbd> - <%= cursorMovement.commands.h %></li>
+            <li><kbd>j</kbd> - <%= cursorMovement.commands.j %></li>
+            <li><kbd>k</kbd> - <%= cursorMovement.commands.k %></li>
+            <li><kbd>l</kbd> - <%= cursorMovement.commands.l %></li>
+            <li><kbd>w</kbd> - <%= cursorMovement.commands.w %></li>
+            <li><kbd>W</kbd> - <%= cursorMovement.commands.W %></li>
+            <li><kbd>e</kbd> - <%= cursorMovement.commands.e %></li>
+            <li><kbd>E</kbd> - <%= cursorMovement.commands.E %></li>
+            <li><kbd>b</kbd> - <%= cursorMovement.commands.b %></li>
+            <li><kbd>B</kbd> - <%= cursorMovement.commands.B %></li>
+            <li><kbd>0</kbd> - <%= cursorMovement.commands.zero %></li>
+            <li><kbd>^</kbd> - <%= cursorMovement.commands.caret %></li>
+            <li><kbd>$</kbd> - <%= cursorMovement.commands.dollar %></li>
+            <li><kbd>G</kbd> - <%= cursorMovement.commands.G %></li>
+            <li><kbd>5G</kbd> - <%= cursorMovement.commands.fiveG %></li>
           </ul>
           <div class="well">
-            <small><strong>Tip</strong> Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines.</small>
+            <small><strong>Tip</strong> <%= cursorMovement.tip %></small>
           </div>
-          <h2>Insert mode - inserting/appending text</h2>
+          <h2><%= insertMode.title %></h2>
           <ul>
-            <li><kbd>i</kbd> - insert before the cursor</li>
-            <li><kbd>I</kbd> - insert at the beginning of the line</li>
-            <li><kbd>a</kbd> - insert (append) after the cursor</li>
-            <li><kbd>A</kbd> - insert (append) at the end of the line</li>
-            <li><kbd>o</kbd> - append (open) a new line below the current line</li>
-            <li><kbd>O</kbd> - append (open) a new line above the current line</li>
-            <li><kbd>ea</kbd> - insert (append) at the end of the word</li>
-            <li><kbd>Esc</kbd> - exit insert mode</li>
+            <li><kbd>i</kbd> - <%= insertMode.commands.i %></li>
+            <li><kbd>I</kbd> - <%= insertMode.commands.I %></li>
+            <li><kbd>a</kbd> - <%= insertMode.commands.a %></li>
+            <li><kbd>A</kbd> - <%= insertMode.commands.A %></li>
+            <li><kbd>o</kbd> - <%= insertMode.commands.o %></li>
+            <li><kbd>O</kbd> - <%= insertMode.commands.O %></li>
+            <li><kbd>ea</kbd> - <%= insertMode.commands.ea %></li>
+            <li><kbd>Esc</kbd> - <%= insertMode.commands.Esc %></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">

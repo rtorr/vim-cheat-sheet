@@ -256,6 +256,16 @@ module.exports = function (grunt) {
       all: {
         rjsConfig: '<%= yeoman.app %>/scripts/main.js'
       }
+    },
+    i18n: {
+      test: {
+        src: ['app/index.html'],
+        options: {
+          locales: 'app/locales/*.yaml',
+          output: '.tmp',
+          base: 'app'
+        }
+      }
     }
   });
 
@@ -274,10 +284,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('test', [
-    'clean:server',
-    'concurrent:test',
-    'connect:test',
-    'mocha'
+    'i18n'
   ]);
 
   grunt.registerTask('build', [
