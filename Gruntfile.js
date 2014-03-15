@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   // configurable paths
   var yeomanConfig = {
     app: 'app',
-    dist: 'dist'
+    dist: '.tmp'
   };
 
   grunt.initConfig({
@@ -235,6 +235,24 @@ module.exports = function (grunt) {
             ]
           }
         ]
+      },
+      finalLangsHtml: {
+        expand: true,
+        dot: true,
+        cwd: '<%= yeoman.app %>',
+        dest: 'dist',
+        src: [
+          'lang/**/*'
+        ]
+      },
+      finalRootHtml: {
+        expand: true,
+        flatten: true,
+        cwd: '<%= yeoman.app %>',
+        dest: 'dist',
+        src: [
+          'lang/en_us/index.html'
+        ]
       }
     },
     concurrent: {
@@ -259,11 +277,11 @@ module.exports = function (grunt) {
     },
     i18n: {
       test: {
-        src: ['app/index.html'],
+        src: ['.tmp/index.html'],
         options: {
           locales: 'app/locales/*.yaml',
-          output: '.tmp',
-          base: 'app'
+          output: 'app/lang',
+          base: '.tmp'
         }
       }
     }
@@ -287,6 +305,20 @@ module.exports = function (grunt) {
     'i18n'
   ]);
 
+  grunt.registerTask('locale', [
+    'clean:dist',
+    'useminPrepare',
+    'concurrent:dist',
+    'concat',
+    'cssmin',
+    'uglify',
+    'copy:dist',
+    'usemin',
+    'i18n',
+    'copy:finalLangsHtml',
+    'copy:finalRootHtml'
+  ]);
+
   grunt.registerTask('build', [
     'clean:dist',
     'useminPrepare',
@@ -295,7 +327,6 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
-    'rev',
     'usemin'
   ]);
 
