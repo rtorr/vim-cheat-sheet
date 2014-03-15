@@ -112,22 +112,22 @@
             <li><kbd>d$</kbd> - <%= cutAndPaste.commands.dDollar %></li>
             <li><kbd>x</kbd> - <%= cutAndPaste.commands.x %></li>
           </ul>
-          <h2>Exiting</h2>
+          <h2><%= exiting.title %></h2>
           <ul>
-            <li><kbd>:w</kbd> - write (save) the file, but don't exit</li>
-            <li><kbd>:wq</kbd> - write (save) and quit</li>
-            <li><kbd>:x</kbd> -  write (save) and quit</li>
-            <li><kbd>:q</kbd> - quit (fails if there are unsaved changes)</li>
-            <li><kbd>:q!</kbd> - quit and throw away unsaved changes</li>
+            <li><kbd>:w</kbd> - <%= exiting.commands.colonw %></li>
+            <li><kbd>:wq</kbd> - <%= exiting.commands.colonwq %></li>
+            <li><kbd>:x</kbd> -  <%= exiting.commands.colonx %></li>
+            <li><kbd>:q</kbd> - <%= exiting.commands.colonq %></li>
+            <li><kbd>:q!</kbd> - <%= exiting.commands.colonqbang %></li>
           </ul>
-          <h2>Search and replace</h2>
+          <h2><%= SearchAndReplace.title %></h2>
           <ul>
-            <li><kbd>/pattern</kbd> - search for pattern</li>
-            <li><kbd>?pattern</kbd> - search backward for pattern</li>
-            <li><kbd>n</kbd> - repeat search in same direction</li>
-            <li><kbd>N</kbd> - repeat search in opposite direction</li>
-            <li><kbd>:%s/old/new/g</kbd> - replace all old with new throughout file</li>
-            <li><kbd>:%s/old/new/gc</kbd> - replace all old with new throughout file with confirmations</li>
+            <li><kbd>/pattern</kbd> - <%= SearchAndReplace.commands.forwardSlashPattern %></li>
+            <li><kbd>?pattern</kbd> - <%= SearchAndReplace.commands.questionMarkPattern %></li>
+            <li><kbd>n</kbd> - <%= SearchAndReplace.commands.n %></li>
+            <li><kbd>N</kbd> - <%= SearchAndReplace.commands.N %></li>
+            <li><kbd>:%s/old/new/g</kbd> - <%= SearchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashg %></li>
+            <li><kbd>:%s/old/new/gc</kbd> - <%= SearchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashgc %></li>
           </ul>
         </div>
       </div> <!-- end row -->

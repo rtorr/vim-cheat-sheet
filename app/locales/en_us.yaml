@@ -85,6 +85,28 @@ cutAndPaste:
     dDollar: delete (cut) to the end of the line
     x: delete (cut) character
 
+exiting:
+  title: Exiting
+  commands:
+    colonw: write (save) the file, but don't exit
+    colonwq: write (save) and quit
+    colonx: write (save) and quit
+    colonq: quit (fails if there are unsaved changes)
+    colonqbang: quit and throw away unsaved changes
+
+SearchAndReplace:
+  title: Search and replace
+  commands:
+    forwardSlashPattern: search for pattern
+    questionMarkPattern: search backward for pattern
+    n: repeat search in same direction
+    N: repeat search in opposite direction
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: replace all old with new throughout file
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: replace all old with new throughout file with confirmations
+
+
+
+
 
 
 
