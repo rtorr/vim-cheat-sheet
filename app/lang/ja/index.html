@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://s3.amazonaws.com/rtorr-vim-cheat-sheet/assets/styles/main.css">
   <script src="https://s3.amazonaws.com/rtorr-vim-cheat-sheet/assets/scripts/vendor/modernizr.js"></script>
 </head>
-<body class="jp">
+<body class="ja">
 <div class="wrapper">
   <div class="clearfix">
     <div class="container">
@@ -36,12 +36,12 @@
             <li><kbd>^</kbd> - 行の最初の文字へ移動</li>
             <li><kbd>$</kbd> - 行の終わりへ移動</li>
             <li><kbd>G</kbd> - 最終行へ移動（番号を付けるとその行へ移動- 5Gは 5行目へ）</li>
-            <li><kbd>5G</kbd> - go to line 5</li>
+            <li><kbd>5G</kbd> - 5行目に移動</li>
           </ul>
           <div class="well">
             <small><strong>Tip</strong> これらのコマンドの前に番号を付けるとその回数分繰り返します。例えば、 4jは 4行下に移動します。</small>
           </div>
-          <h2>insertモード - テキストを追加/挿入t</h2>
+          <h2>挿入モード - テキストを追加/挿入</h2>
           <ul>
             <li><kbd>i</kbd> - カーソル位置で挿入モードを開始</li>
             <li><kbd>I</kbd> - 行の先頭で挿入モードを開始</li>
@@ -57,7 +57,7 @@
           <h2>編集</h2>
           <ul>
             <li><kbd>r</kbd> - 単一の文字を置き換える（挿入モードを使用しません）</li>
-            <li><kbd>J</kbd> - 現在の行と次の行を統合する</li>
+            <li><kbd>J</kbd> - 現在の行と次の行を連結する</li>
             <li><kbd>cc</kbd> - 現在の行を削除して挿入モードを開始</li>
             <li><kbd>cw</kbd> - カーソル位置の単語を削除して挿入モードを開始</li>
             <li><kbd>c$</kbd> - カーソル位置から行末までを削除して挿入モードを開始</li>
@@ -68,7 +68,7 @@
             <li><kbd>Ctrl</kbd> + <kbd>r</kbd> - やり直し(リドゥ)</li>
             <li><kbd>.</kbd> - 最後に使ったコマンドを行う</li>
           </ul>
-          <h2>テキストの選択（ビジュアルモード</h2>
+          <h2>テキストの選択（ビジュアルモード）</h2>
           <ul>
             <li><kbd>v</kbd> - ビジュアルモード開始。移動すると選択してその後にコマンドを実行できる（例えばY-ヤンク）</li>
             <li><kbd>V</kbd> - 行単位のビジュアルモードを開始</li>
@@ -151,17 +151,17 @@
             <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - 前のタブに移動する</li>
             <li><kbd>#gt</kbd> - タブ番号(n)への移動</li>
             <li><kbd>:tabmove #</kbd> - 位置(n)番目に移動（左端が0）</li>
-            <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - 同上</li>
+            <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - カレントタブページを閉じる</li>
             <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - 現在の1を除く他のすべてのタブを閉じる</li>
           </ul>
         </div>
       </div> <!-- end row -->
       <div id="languages" class="row">
-        <h2>Languages</h2>
+        <h2>言語</h2>
         <div class="col-lg-10 col-md-10">
           <ul>
             <li><a href="http://rtorruellas.com/vim-cheat-sheet/lang/en_us">en_us</a></li>
-            <li><a href="http://rtorruellas.com/vim-cheat-sheet/lang/jp">jp</a></li>
+            <li><a href="http://rtorruellas.com/vim-cheat-sheet/lang/ja">ja</a></li>
           </ul>
         </div>
       </div><!-- end row/languages -->

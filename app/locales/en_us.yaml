@@ -132,6 +132,9 @@ tabs:
     colontabc: "close the current tab and all its windows"
     colontabo: "close all tabs except for the current one"
 
+languages:
+  title: Languages
+
 footer: Checkout the source on
 
 
