@@ -3,7 +3,7 @@ lang: "ja"
 cursorMovement:
   title: "カーソル移動"
   commands:
-    h: "左移動"
+    h: "左に移動"
     j: "下に移動"
     k: "上に移動"
     l: "右に移動"
@@ -129,8 +129,8 @@ tabs:
     gT: "前のタブに移動する"
     hashgt: "タブ番号(n)への移動"
     colontabmove:  "位置(n)番目に移動（左端が0）"
-    colontabc: "カレントタブページを閉じる"
-    colontabo: "現在の1を除く他のすべてのタブを閉じる"
+    colontabc: "カレントタブを閉じる"
+    colontabo: "カレントタブを除く他のすべてのタブを閉じる"
 
 languages:
   title: "言語"
