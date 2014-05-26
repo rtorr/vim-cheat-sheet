@@ -263,19 +263,19 @@ module.exports = function (grunt) {
       }
     },
     i18n: {
-      src: ['.tmp/index.html'],
+      src: ['dist/index.html'],
       options: {
         locales: 'app/locales/*.yaml',
         output: 'app/lang',
-        base: '.tmp'
+        base: 'dist'
       }
     },
     processhtml: {
       files: {
         expand: true,
-        cwd: '.tmp',      // Src matches are relative to this path.
+        cwd: 'dist',      // Src matches are relative to this path.
         src: ['*.html'], // Actual pattern(s) to match.
-        dest: '.tmp'   // Destination path prefix.
+        dest: 'dist'   // Destination path prefix.
       }
     }
   });
