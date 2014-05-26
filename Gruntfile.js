@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   // configurable paths
   var yeomanConfig = {
     app: 'app',
-    dist: '.tmp'
+    dist: 'dist'
   };
 
   grunt.initConfig({
@@ -270,23 +270,6 @@ module.exports = function (grunt) {
         base: '.tmp'
       }
     },
-    aws_s3: {
-      options: {
-        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-        uploadConcurrency: 5, // 5 simultaneous uploads
-        downloadConcurrency: 5 // 5 simultaneous downloads
-      },
-      dev: {
-        options: {
-          bucket: 'rtorr-vim-cheat-sheet',
-          access: 'public-read'
-        },
-        files: [
-          {expand: true, cwd: '.tmp/', src: ['scripts/**/*', 'styles/**/*'], dest: 'assets'}
-        ]
-      }
-    },
     processhtml: {
       files: {
         expand: true,
@@ -323,8 +306,7 @@ module.exports = function (grunt) {
     'processhtml',
     'i18n',
     'copy:finalLangsHtml',
-    'copy:finalRootHtml',
-    'aws_s3'
+    'copy:finalRootHtml'
   ]);
 
   grunt.registerTask('default', [
