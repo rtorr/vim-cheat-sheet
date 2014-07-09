@@ -3,6 +3,7 @@ body {
   background: #f8f8f8;
   color: #000;
   font-family: Georgia, serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
