@@ -1,26 +1,19 @@
-html, body {
-  height: 100%;
-}
-
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -72px;
-}
-
-.push {
-  height: 72px;
-}
 
 body {
-  background: #fafafa;
+  background: #f8f8f8;
   color: #333;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Georgia, serif;
   font-size: 16px;
+  padding: 10px;
+}
+
+h1 {
+  color: #667378;
+  font-size: 64px;
 }
 
 h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
 
@@ -33,29 +26,46 @@ li {
 }
 
 kbd {
+  background-color: #eee;
   font-family: monospace,serif;
   font-size: 1em;
   color: #333;
-  background-color: #fafafa;
   border-radius: 0;
   box-shadow: none;
   font-weight: bold;
-  padding: 0;
+  padding: 0 4px;
+}
+
+.container {
+  background: #fff;
+  border: 3px solid #eee;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 1170px;
 }
 
 .well {
+  background: #f8f8f8;
+  border: none;
   border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 
 #footer {
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: center;
 }
 
 #footer .well {
   margin-bottom: 0;
 }
+
+#footer p {
+  margin-bottom: inherit;
+}
+
 
 .ja {
   font-size: 13px;
