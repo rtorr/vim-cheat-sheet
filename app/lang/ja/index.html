@@ -10,173 +10,168 @@
   <script src="/scripts/vendor/modernizr.js"></script>
 </head>
 <body class="ja">
-<div class="wrapper">
-  <div class="clearfix">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <h1>VIM</h1>
-        </div>
-      </div> <!-- end row -->
-      <div class="row">
-        <div class="col-lg-4 col-md-4">
-          <h2>カーソル移動</h2>
-          <ul>
-            <li><kbd>h</kbd> - 左に移動</li>
-            <li><kbd>j</kbd> - 下に移動</li>
-            <li><kbd>k</kbd> - 上に移動</li>
-            <li><kbd>l</kbd> - 右に移動</li>
-            <li><kbd>w</kbd> - 単語の先頭へジャンプ（区切り文字まで）</li>
-            <li><kbd>W</kbd> - 単語の先頭へジャンプ（区切り文字を含めない）</li>
-            <li><kbd>e</kbd> - 単語の最後にジャンプ（区切り文字まで）</li>
-            <li><kbd>E</kbd> - 単語の最後にジャンプ（区切り文字を含めない）</li>
-            <li><kbd>b</kbd> - 単語の先頭へ戻る（区切り文字まで）</li>
-            <li><kbd>B</kbd> - 単語の先頭へ戻る（区切り文字を含めない）</li>
-            <li><kbd>0</kbd> - (ゼロ)先頭に移動</li>
-            <li><kbd>^</kbd> - 行の最初の文字へ移動</li>
-            <li><kbd>$</kbd> - 行の終わりへ移動</li>
-            <li><kbd>G</kbd> - 最終行へ移動（番号を付けるとその行へ移動- 5Gは 5行目へ）</li>
-            <li><kbd>5G</kbd> - 5行目に移動</li>
-          </ul>
-          <div class="well">
-            <small><strong>Tip</strong> これらのコマンドの前に番号を付けるとその回数分繰り返します。例えば、 4jは 4行下に移動します。</small>
-          </div>
-          <h2>挿入モード - テキストを追加/挿入</h2>
-          <ul>
-            <li><kbd>i</kbd> - カーソル位置で挿入モードを開始</li>
-            <li><kbd>I</kbd> - 行の先頭で挿入モードを開始</li>
-            <li><kbd>a</kbd> - カーソル位置の直後で挿入モードを開始</li>
-            <li><kbd>A</kbd> - 行の末尾で挿入モードを開始</li>
-            <li><kbd>o</kbd> - 現在の行の下に空白行を追加して挿入モードを開始</li>
-            <li><kbd>O</kbd> - 現在の行の上に空白行を追加して挿入モードを開始</li>
-            <li><kbd>ea</kbd> - 単語の末尾で挿入モードを開始</li>
-            <li><kbd>Esc</kbd> - 挿入モードを終了</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <h2>編集</h2>
-          <ul>
-            <li><kbd>r</kbd> - 単一の文字を置き換える（挿入モードを使用しません）</li>
-            <li><kbd>J</kbd> - 現在の行と次の行を連結する</li>
-            <li><kbd>cc</kbd> - 現在の行を削除して挿入モードを開始</li>
-            <li><kbd>cw</kbd> - カーソル位置の単語を削除して挿入モードを開始</li>
-            <li><kbd>c$</kbd> - カーソル位置から行末までを削除して挿入モードを開始</li>
-            <li><kbd>s</kbd> - カーソル位置の文字を削除して挿入モードを開始</li>
-            <li><kbd>S</kbd> - 現在の行を削除して挿入モードを開始（CCと同じ）</li>
-            <li><kbd>xp</kbd> - カーソル位置と次の文字を入れ替える（技術的にはカットしてペースト）</li>
-            <li><kbd>u</kbd> - 元に戻す(アンドゥ)</li>
-            <li><kbd>Ctrl</kbd> + <kbd>r</kbd> - やり直し(リドゥ)</li>
-            <li><kbd>.</kbd> - 最後に使ったコマンドを行う</li>
-          </ul>
-          <h2>テキストの選択（ビジュアルモード）</h2>
-          <ul>
-            <li><kbd>v</kbd> - ビジュアルモード開始。移動すると選択してその後にコマンドを実行できる（例えばY-ヤンク）</li>
-            <li><kbd>V</kbd> - 行単位のビジュアルモードを開始</li>
-            <li><kbd>o</kbd> - 選択範囲の反対側に移動する</li>
-            <li><kbd>Ctrl</kbd> + <kbd>v</kbd> - 矩形ビジュアルモードを開始</li>
-            <li><kbd>O</kbd> - ブロックの他のコーナーに移動する</li>
-            <li><kbd>aw</kbd> - 単語をマーク</li>
-            <li><kbd>ab</kbd> - () ブロックを選択(括弧ごと)</li>
-            <li><kbd>aB</kbd> - {}ブロックを選択(括弧ごと)</li>
-            <li><kbd>ib</kbd> - () ブロックを選択(括弧を除く)</li>
-            <li><kbd>iB</kbd> - {}ブロックを選択(括弧を除く)</li>
-            <li><kbd>Esc</kbd> - ビジュアルモード終了</li>
-          </ul>
-          <h2>ビジュアルモードでのコマンド</h2>
-          <ul>
-            <li><kbd>&#62;</kbd> - 選択範囲を右シフト</li>
-            <li><kbd>&#60;</kbd> - 選択範囲を左シフト</li>
-            <li><kbd>y</kbd> - 選択範囲をヤンク（コピー）</li>
-            <li><kbd>d</kbd> - 選択範囲を削除する</li>
-            <li><kbd>~</kbd> - 大文字と小文字を入れ替える</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <h2>カット＆ペースト</h2>
-          <ul>
-            <li><kbd>yy</kbd> - 現在の行をヤンク（コピー）</li>
-            <li><kbd>2yy</kbd> - 2行をヤンク</li>
-            <li><kbd>yw</kbd> - カーソル位置の単語をヤンク</li>
-            <li><kbd>y$</kbd> - 現在行の行末までヤンク</li>
-            <li><kbd>p</kbd> - カーソル位置の後にペースト</li>
-            <li><kbd>P</kbd> - カーソル位置の前にペースト</li>
-            <li><kbd>dd</kbd> - 現在の行をカット(コピーして削除)</li>
-            <li><kbd>2dd</kbd> - 2行をカット</li>
-            <li><kbd>dw</kbd> - カーソル位置の単語をカット</li>
-            <li><kbd>D</kbd> - カーソル位置から行末までカット</li>
-            <li><kbd>d$</kbd> - カーソル位置から行末までカット(Dと同じ)</li>
-            <li><kbd>x</kbd> - 現在の文字をカットする</li>
-          </ul>
-          <h2>終了</h2>
-          <ul>
-            <li><kbd>:w</kbd> - 終了せずに保存</li>
-            <li><kbd>:wq</kbd> - 保存して終了</li>
-            <li><kbd>:x</kbd> -  保存して終了</li>
-            <li><kbd>:q</kbd> - 保存せずに終了（変更点がある場合は終了できない）</li>
-            <li><kbd>:q!</kbd> - 保存せずに終了(変更点がある場合は破棄される)</li>
-          </ul>
-          <h2>検索/置換</h2>
-          <ul>
-            <li><kbd>/pattern</kbd> - /文字列 - 文字列を検索</li>
-            <li><kbd>?pattern</kbd> - ?文字列 - 文字列を逆方向に検索</li>
-            <li><kbd>n</kbd> - 同じ方向に再検索</li>
-            <li><kbd>N</kbd> - 逆方向に再検索</li>
-            <li><kbd>:%s/old/new/g</kbd> - ファイル全体でoldをnewに置き換える</li>
-            <li><kbd>:%s/old/new/gc</kbd> - ファイル全体でoldをnewに置き換える(確認あり)</li>
-          </ul>
-        </div>
-      </div> <!-- end row -->
-      <div class="row">
-        <div class="col-lg-4 col-md-4">
-          <h2>複数のファイルでの作業</h2>
-          <ul>
-            <li><kbd>:e</kbd> filename - ファイル名 - 新しいバッファでファイルを編集</li>
-            <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - または**:bn** - 次のバッファに移動</li>
-            <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - または**:bp** - 前のバッファへ移動</li>
-            <li><kbd>:bd</kbd> - バッファを削除（ファイルを閉じる）</li>
-            <li><kbd>:sp</kbd> filename - ファイル名 - 新しいバッファおよび分割ウィンドウでファイルを編集</li>
-            <li><kbd>:vsp</kbd> filename - ファイル名 - 新しいバッファおよび垂直分割ウィンドウでファイルを開きます</li>
-            <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - ウィンドウを分割</li>
-            <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - ウィンドウを切り替える</li>
-            <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - ウィンドウを終了します</li>
-            <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - ウィンドウを垂直に分割</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <h2>タブ</h2>
-          <ul>
-            <li><kbd>:tabnew</kbd> filename or <kbd>:tabn</kbd> filename - ファイル名 - 新しいタブで(ファイル名)を開く- ファイル名 - 同上</li>
-            <li><kbd>Ctrl</kbd> + <kbd>wt</kbd>  - 独自のタブに現在の分割ウィンドウを移動</li>
-            <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>  - 次のタブに移動する</li>
-            <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - 前のタブに移動する</li>
-            <li><kbd>#gt</kbd> - タブ番号(n)への移動</li>
-            <li><kbd>:tabmove #</kbd> - 位置(n)番目に移動（左端が0）</li>
-            <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - カレントタブを閉じる</li>
-            <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - カレントタブを除く他のすべてのタブを閉じる</li>
-          </ul>
-        </div>
-      </div> <!-- end row -->
-      <div id="languages" class="row">
-        <h2>Languages</h2>
-        <div class="col-lg-10 col-md-10">
-          <ul>
-            <li><a href="http://vim.rtorr.com/">en_us</a></li>
-            <li><a href="http://vim.rtorr.com/lang/ja">ja</a></li>
-            <li><a href="http://vim.rtorr.com/lang/fr_fr">fr</a></li>
-          </ul>
-        </div>
-      </div><!-- end row/languages -->
-    </div> <!-- end container -->
-  </div> <!-- end clearfix -->
-  <div class="push"></div>
-</div>
-<div id="footer">
-  <div class="well">
-    <div class="container">
-      <p class="muted credit">ソースのチェックアウト <a href="https://github.com/rtorr/vim-cheat-sheet">Github</a></p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <h1>VIM</h1>
+    </div>
+  </div> <!-- end row -->
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <h2>カーソル移動</h2>
+      <ul>
+        <li><kbd>h</kbd> - 左に移動</li>
+        <li><kbd>j</kbd> - 下に移動</li>
+        <li><kbd>k</kbd> - 上に移動</li>
+        <li><kbd>l</kbd> - 右に移動</li>
+        <li><kbd>w</kbd> - 単語の先頭へジャンプ（区切り文字まで）</li>
+        <li><kbd>W</kbd> - 単語の先頭へジャンプ（区切り文字を含めない）</li>
+        <li><kbd>e</kbd> - 単語の最後にジャンプ（区切り文字まで）</li>
+        <li><kbd>E</kbd> - 単語の最後にジャンプ（区切り文字を含めない）</li>
+        <li><kbd>b</kbd> - 単語の先頭へ戻る（区切り文字まで）</li>
+        <li><kbd>B</kbd> - 単語の先頭へ戻る（区切り文字を含めない）</li>
+        <li><kbd>0</kbd> - (ゼロ)先頭に移動</li>
+        <li><kbd>^</kbd> - 行の最初の文字へ移動</li>
+        <li><kbd>$</kbd> - 行の終わりへ移動</li>
+        <li><kbd>G</kbd> - 最終行へ移動（番号を付けるとその行へ移動- 5Gは 5行目へ）</li>
+        <li><kbd>5G</kbd> - 5行目に移動</li>
+      </ul>
+      <div class="well">
+        <small><strong>Tip</strong> これらのコマンドの前に番号を付けるとその回数分繰り返します。例えば、 4jは 4行下に移動します。</small>
+      </div>
+      <h2>挿入モード - テキストを追加/挿入</h2>
+      <ul>
+        <li><kbd>i</kbd> - カーソル位置で挿入モードを開始</li>
+        <li><kbd>I</kbd> - 行の先頭で挿入モードを開始</li>
+        <li><kbd>a</kbd> - カーソル位置の直後で挿入モードを開始</li>
+        <li><kbd>A</kbd> - 行の末尾で挿入モードを開始</li>
+        <li><kbd>o</kbd> - 現在の行の下に空白行を追加して挿入モードを開始</li>
+        <li><kbd>O</kbd> - 現在の行の上に空白行を追加して挿入モードを開始</li>
+        <li><kbd>ea</kbd> - 単語の末尾で挿入モードを開始</li>
+        <li><kbd>Esc</kbd> - 挿入モードを終了</li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <h2>編集</h2>
+      <ul>
+        <li><kbd>r</kbd> - 単一の文字を置き換える（挿入モードを使用しません）</li>
+        <li><kbd>J</kbd> - 現在の行と次の行を連結する</li>
+        <li><kbd>cc</kbd> - 現在の行を削除して挿入モードを開始</li>
+        <li><kbd>cw</kbd> - カーソル位置の単語を削除して挿入モードを開始</li>
+        <li><kbd>c$</kbd> - カーソル位置から行末までを削除して挿入モードを開始</li>
+        <li><kbd>s</kbd> - カーソル位置の文字を削除して挿入モードを開始</li>
+        <li><kbd>S</kbd> - 現在の行を削除して挿入モードを開始（CCと同じ）</li>
+        <li><kbd>xp</kbd> - カーソル位置と次の文字を入れ替える（技術的にはカットしてペースト）</li>
+        <li><kbd>u</kbd> - 元に戻す(アンドゥ)</li>
+        <li><kbd>Ctrl</kbd> + <kbd>r</kbd> - やり直し(リドゥ)</li>
+        <li><kbd>.</kbd> - 最後に使ったコマンドを行う</li>
+      </ul>
+      <h2>テキストの選択（ビジュアルモード）</h2>
+      <ul>
+        <li><kbd>v</kbd> - ビジュアルモード開始。移動すると選択してその後にコマンドを実行できる（例えばY-ヤンク）</li>
+        <li><kbd>V</kbd> - 行単位のビジュアルモードを開始</li>
+        <li><kbd>o</kbd> - 選択範囲の反対側に移動する</li>
+        <li><kbd>Ctrl</kbd> + <kbd>v</kbd> - 矩形ビジュアルモードを開始</li>
+        <li><kbd>O</kbd> - ブロックの他のコーナーに移動する</li>
+        <li><kbd>aw</kbd> - 単語をマーク</li>
+        <li><kbd>ab</kbd> - () ブロックを選択(括弧ごと)</li>
+        <li><kbd>aB</kbd> - {}ブロックを選択(括弧ごと)</li>
+        <li><kbd>ib</kbd> - () ブロックを選択(括弧を除く)</li>
+        <li><kbd>iB</kbd> - {}ブロックを選択(括弧を除く)</li>
+        <li><kbd>Esc</kbd> - ビジュアルモード終了</li>
+      </ul>
+      <h2>ビジュアルモードでのコマンド</h2>
+      <ul>
+        <li><kbd>&#62;</kbd> - 選択範囲を右シフト</li>
+        <li><kbd>&#60;</kbd> - 選択範囲を左シフト</li>
+        <li><kbd>y</kbd> - 選択範囲をヤンク（コピー）</li>
+        <li><kbd>d</kbd> - 選択範囲を削除する</li>
+        <li><kbd>~</kbd> - 大文字と小文字を入れ替える</li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <h2>カット＆ペースト</h2>
+      <ul>
+        <li><kbd>yy</kbd> - 現在の行をヤンク（コピー）</li>
+        <li><kbd>2yy</kbd> - 2行をヤンク</li>
+        <li><kbd>yw</kbd> - カーソル位置の単語をヤンク</li>
+        <li><kbd>y$</kbd> - 現在行の行末までヤンク</li>
+        <li><kbd>p</kbd> - カーソル位置の後にペースト</li>
+        <li><kbd>P</kbd> - カーソル位置の前にペースト</li>
+        <li><kbd>dd</kbd> - 現在の行をカット(コピーして削除)</li>
+        <li><kbd>2dd</kbd> - 2行をカット</li>
+        <li><kbd>dw</kbd> - カーソル位置の単語をカット</li>
+        <li><kbd>D</kbd> - カーソル位置から行末までカット</li>
+        <li><kbd>d$</kbd> - カーソル位置から行末までカット(Dと同じ)</li>
+        <li><kbd>x</kbd> - 現在の文字をカットする</li>
+      </ul>
+      <h2>終了</h2>
+      <ul>
+        <li><kbd>:w</kbd> - 終了せずに保存</li>
+        <li><kbd>:wq</kbd> - 保存して終了</li>
+        <li><kbd>:x</kbd> -  保存して終了</li>
+        <li><kbd>:q</kbd> - 保存せずに終了（変更点がある場合は終了できない）</li>
+        <li><kbd>:q!</kbd> - 保存せずに終了(変更点がある場合は破棄される)</li>
+      </ul>
+      <h2>検索/置換</h2>
+      <ul>
+        <li><kbd>/pattern</kbd> - /文字列 - 文字列を検索</li>
+        <li><kbd>?pattern</kbd> - ?文字列 - 文字列を逆方向に検索</li>
+        <li><kbd>n</kbd> - 同じ方向に再検索</li>
+        <li><kbd>N</kbd> - 逆方向に再検索</li>
+        <li><kbd>:%s/old/new/g</kbd> - ファイル全体でoldをnewに置き換える</li>
+        <li><kbd>:%s/old/new/gc</kbd> - ファイル全体でoldをnewに置き換える(確認あり)</li>
+      </ul>
+    </div>
+  </div> <!-- end row -->
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <h2>複数のファイルでの作業</h2>
+      <ul>
+        <li><kbd>:e</kbd> filename - ファイル名 - 新しいバッファでファイルを編集</li>
+        <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - または**:bn** - 次のバッファに移動</li>
+        <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - または**:bp** - 前のバッファへ移動</li>
+        <li><kbd>:bd</kbd> - バッファを削除（ファイルを閉じる）</li>
+        <li><kbd>:sp</kbd> filename - ファイル名 - 新しいバッファおよび分割ウィンドウでファイルを編集</li>
+        <li><kbd>:vsp</kbd> filename - ファイル名 - 新しいバッファおよび垂直分割ウィンドウでファイルを開きます</li>
+        <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - ウィンドウを分割</li>
+        <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - ウィンドウを切り替える</li>
+        <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - ウィンドウを終了します</li>
+        <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - ウィンドウを垂直に分割</li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <h2>タブ</h2>
+      <ul>
+        <li><kbd>:tabnew</kbd> filename or <kbd>:tabn</kbd> filename - ファイル名 - 新しいタブで(ファイル名)を開く- ファイル名 - 同上</li>
+        <li><kbd>Ctrl</kbd> + <kbd>wt</kbd>  - 独自のタブに現在の分割ウィンドウを移動</li>
+        <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>  - 次のタブに移動する</li>
+        <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - 前のタブに移動する</li>
+        <li><kbd>#gt</kbd> - タブ番号(n)への移動</li>
+        <li><kbd>:tabmove #</kbd> - 位置(n)番目に移動（左端が0）</li>
+        <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - カレントタブを閉じる</li>
+        <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - カレントタブを除く他のすべてのタブを閉じる</li>
+      </ul>
+    </div>
+  </div> <!-- end row -->
+  <div id="languages" class="row">
+    <h2>Languages</h2>
+    <div class="col-lg-10 col-md-10">
+      <ul>
+        <li><a href="http://vim.rtorr.com/">en_us</a></li>
+        <li><a href="http://vim.rtorr.com/lang/ja">ja</a></li>
+        <li><a href="http://vim.rtorr.com/lang/fr_fr">fr</a></li>
+      </ul>
+    </div>
+  </div><!-- end row/languages -->
+  <div id="footer">
+    <div class="row">
+      <div class="well class-sm-1">
+        <p>Checkout the source on <a href="https://github.com/rtorr/vim-cheat-sheet">Github</a></p>
+      </div>
     </div>
   </div>
-</div>
+</div> <!-- end container -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-25408695-1']);

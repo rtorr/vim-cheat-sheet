@@ -15,173 +15,170 @@
   <!-- endbuild -->
 </head>
 <body class="<%= lang %>">
-<div class="wrapper">
-  <div class="clearfix">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <h1>VIM</h1>
-        </div>
-      </div> <!-- end row -->
-      <div class="row">
-        <div class="col-lg-4 col-md-4">
-          <h2><%= cursorMovement.title %></h2>
-          <ul>
-            <li><kbd>h</kbd> - <%= cursorMovement.commands.h %></li>
-            <li><kbd>j</kbd> - <%= cursorMovement.commands.j %></li>
-            <li><kbd>k</kbd> - <%= cursorMovement.commands.k %></li>
-            <li><kbd>l</kbd> - <%= cursorMovement.commands.l %></li>
-            <li><kbd>w</kbd> - <%= cursorMovement.commands.w %></li>
-            <li><kbd>W</kbd> - <%= cursorMovement.commands.W %></li>
-            <li><kbd>e</kbd> - <%= cursorMovement.commands.e %></li>
-            <li><kbd>E</kbd> - <%= cursorMovement.commands.E %></li>
-            <li><kbd>b</kbd> - <%= cursorMovement.commands.b %></li>
-            <li><kbd>B</kbd> - <%= cursorMovement.commands.B %></li>
-            <li><kbd>0</kbd> - <%= cursorMovement.commands.zero %></li>
-            <li><kbd>^</kbd> - <%= cursorMovement.commands.caret %></li>
-            <li><kbd>$</kbd> - <%= cursorMovement.commands.dollar %></li>
-            <li><kbd>G</kbd> - <%= cursorMovement.commands.G %></li>
-            <li><kbd>5G</kbd> - <%= cursorMovement.commands.fiveG %></li>
-          </ul>
-          <div class="well">
-            <small><strong>Tip</strong> <%= cursorMovement.tip %></small>
-          </div>
-          <h2><%= insertMode.title %></h2>
-          <ul>
-            <li><kbd>i</kbd> - <%= insertMode.commands.i %></li>
-            <li><kbd>I</kbd> - <%= insertMode.commands.I %></li>
-            <li><kbd>a</kbd> - <%= insertMode.commands.a %></li>
-            <li><kbd>A</kbd> - <%= insertMode.commands.A %></li>
-            <li><kbd>o</kbd> - <%= insertMode.commands.o %></li>
-            <li><kbd>O</kbd> - <%= insertMode.commands.O %></li>
-            <li><kbd>ea</kbd> - <%= insertMode.commands.ea %></li>
-            <li><kbd>Esc</kbd> - <%= insertMode.commands.Esc %></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <h2><%= editing.title %></h2>
-          <ul>
-            <li><kbd>r</kbd> - <%= editing.commands.r %></li>
-            <li><kbd>J</kbd> - <%= editing.commands.J %></li>
-            <li><kbd>cc</kbd> - <%= editing.commands.cc %></li>
-            <li><kbd>cw</kbd> - <%= editing.commands.cw %></li>
-            <li><kbd>c$</kbd> - <%= editing.commands.cDollar %></li>
-            <li><kbd>s</kbd> - <%= editing.commands.s %></li>
-            <li><kbd>S</kbd> - <%= editing.commands.S %></li>
-            <li><kbd>xp</kbd> - <%= editing.commands.xp %></li>
-            <li><kbd>u</kbd> - <%= editing.commands.u %></li>
-            <li><kbd>Ctrl</kbd> + <kbd>r</kbd> - <%= editing.commands.CtrlPlusr %></li>
-            <li><kbd>.</kbd> - <%= editing.commands.dot %></li>
-          </ul>
-          <h2><%= markingText.title %></h2>
-          <ul>
-            <li><kbd>v</kbd> - <%= markingText.commands.v %></li>
-            <li><kbd>V</kbd> - <%= markingText.commands.V %></li>
-            <li><kbd>o</kbd> - <%= markingText.commands.o %></li>
-            <li><kbd>Ctrl</kbd> + <kbd>v</kbd> - <%= markingText.commands.CtrlPlusv %></li>
-            <li><kbd>O</kbd> - <%= markingText.commands.O %></li>
-            <li><kbd>aw</kbd> - <%= markingText.commands.aw %></li>
-            <li><kbd>ab</kbd> - <%= markingText.commands.ab %></li>
-            <li><kbd>aB</kbd> - <%= markingText.commands.aB %></li>
-            <li><kbd>ib</kbd> - <%= markingText.commands.ib %></li>
-            <li><kbd>iB</kbd> - <%= markingText.commands.iB %></li>
-            <li><kbd>Esc</kbd> - <%= markingText.commands.Esc %></li>
-          </ul>
-          <h2><%= visualCommands.title %></h2>
-          <ul>
-            <li><kbd>&#62;</kbd> - <%= visualCommands.commands.greaterThan %></li>
-            <li><kbd>&#60;</kbd> - <%= visualCommands.commands.lessThan %></li>
-            <li><kbd>y</kbd> - <%= visualCommands.commands.y %></li>
-            <li><kbd>d</kbd> - <%= visualCommands.commands.d %></li>
-            <li><kbd>~</kbd> - <%= visualCommands.commands.tilde %></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <h2><%= cutAndPaste.title %></h2>
-          <ul>
-            <li><kbd>yy</kbd> - <%= cutAndPaste.commands.yy %></li>
-            <li><kbd>2yy</kbd> - <%= cutAndPaste.commands.twoyy %></li>
-            <li><kbd>yw</kbd> - <%= cutAndPaste.commands.yw %></li>
-            <li><kbd>y$</kbd> - <%= cutAndPaste.commands.yDollar %></li>
-            <li><kbd>p</kbd> - <%= cutAndPaste.commands.p %></li>
-            <li><kbd>P</kbd> - <%= cutAndPaste.commands.P %></li>
-            <li><kbd>dd</kbd> - <%= cutAndPaste.commands.dd %></li>
-            <li><kbd>2dd</kbd> - <%= cutAndPaste.commands.twodd %></li>
-            <li><kbd>dw</kbd> - <%= cutAndPaste.commands.dw %></li>
-            <li><kbd>D</kbd> - <%= cutAndPaste.commands.D %></li>
-            <li><kbd>d$</kbd> - <%= cutAndPaste.commands.dDollar %></li>
-            <li><kbd>x</kbd> - <%= cutAndPaste.commands.x %></li>
-          </ul>
-          <h2><%= exiting.title %></h2>
-          <ul>
-            <li><kbd>:w</kbd> - <%= exiting.commands.colonw %></li>
-            <li><kbd>:wq</kbd> - <%= exiting.commands.colonwq %></li>
-            <li><kbd>:x</kbd> -  <%= exiting.commands.colonx %></li>
-            <li><kbd>:q</kbd> - <%= exiting.commands.colonq %></li>
-            <li><kbd>:q!</kbd> - <%= exiting.commands.colonqbang %></li>
-          </ul>
-          <h2><%= searchAndReplace.title %></h2>
-          <ul>
-            <li><kbd>/pattern</kbd> - <%= searchAndReplace.commands.forwardSlashPattern %></li>
-            <li><kbd>?pattern</kbd> - <%= searchAndReplace.commands.questionMarkPattern %></li>
-            <li><kbd>n</kbd> - <%= searchAndReplace.commands.n %></li>
-            <li><kbd>N</kbd> - <%= searchAndReplace.commands.N %></li>
-            <li><kbd>:%s/old/new/g</kbd> - <%= searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashg %></li>
-            <li><kbd>:%s/old/new/gc</kbd> - <%= searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashgc %></li>
-          </ul>
-        </div>
-      </div> <!-- end row -->
-      <div class="row">
-        <div class="col-lg-4 col-md-4">
-          <h2><%= workingWithMultipleFiles.title %></h2>
-          <ul>
-            <li><kbd>:e</kbd> filename - <%= workingWithMultipleFiles.commands.colone %></li>
-            <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - <%= workingWithMultipleFiles.commands.colonbnext %></li>
-            <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - <%= workingWithMultipleFiles.commands.colonbprev %></li>
-            <li><kbd>:bd</kbd> - <%= workingWithMultipleFiles.commands.colonbd %></li>
-            <li><kbd>:sp</kbd> filename - <%= workingWithMultipleFiles.commands.colonsp %></li>
-            <li><kbd>:vsp</kbd> filename - <%= workingWithMultipleFiles.commands.colonvsp %></li>
-            <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - <%= workingWithMultipleFiles.commands.ctrlPlusws %></li>
-            <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - <%= workingWithMultipleFiles.commands.ctrlPlusww %></li>
-            <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - <%= workingWithMultipleFiles.commands.ctrlPluswq %></li>
-            <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - <%= workingWithMultipleFiles.commands.ctrlPluswv %></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <h2><%= tabs.title %></h2>
-          <ul>
-            <li><kbd>:tabnew</kbd> filename or <kbd>:tabn</kbd> filename - <%= tabs.commands.colonTabNew %></li>
-            <li><kbd>Ctrl</kbd> + <kbd>wt</kbd>  - <%= tabs.commands.ctrlPluswt %></li>
-            <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>  - <%= tabs.commands.gt %></li>
-            <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - <%= tabs.commands.gT %></li>
-            <li><kbd>#gt</kbd> - <%= tabs.commands.hashgt %></li>
-            <li><kbd>:tabmove #</kbd> - <%= tabs.commands.colontabmove %></li>
-            <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - <%= tabs.commands.colontabc %></li>
-            <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - <%= tabs.commands.colontabo %></li>
-          </ul>
-        </div>
-      </div> <!-- end row -->
-      <div id="languages" class="row">
-        <h2>Languages</h2>
-        <div class="col-lg-10 col-md-10">
-          <ul>
-            <li><a href="http://vim.rtorr.com/">en_us</a></li>
-            <li><a href="http://vim.rtorr.com/lang/ja">ja</a></li>
-            <li><a href="http://vim.rtorr.com/lang/fr_fr">fr</a></li>
-          </ul>
-        </div>
-      </div><!-- end row/languages -->
-    </div> <!-- end container -->
-  </div> <!-- end clearfix -->
-  <div class="push"></div>
-</div>
-<div id="footer">
-  <div class="well">
-    <div class="container">
-      <p class="muted credit"><%= footer %> <a href="https://github.com/rtorr/vim-cheat-sheet">Github</a></p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <h1>VIM</h1>
+    </div>
+  </div> <!-- end row -->
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <h2><%= cursorMovement.title %></h2>
+      <ul>
+        <li><kbd>h</kbd> - <%= cursorMovement.commands.h %></li>
+        <li><kbd>j</kbd> - <%= cursorMovement.commands.j %></li>
+        <li><kbd>k</kbd> - <%= cursorMovement.commands.k %></li>
+        <li><kbd>l</kbd> - <%= cursorMovement.commands.l %></li>
+        <li><kbd>w</kbd> - <%= cursorMovement.commands.w %></li>
+        <li><kbd>W</kbd> - <%= cursorMovement.commands.W %></li>
+        <li><kbd>e</kbd> - <%= cursorMovement.commands.e %></li>
+        <li><kbd>E</kbd> - <%= cursorMovement.commands.E %></li>
+        <li><kbd>b</kbd> - <%= cursorMovement.commands.b %></li>
+        <li><kbd>B</kbd> - <%= cursorMovement.commands.B %></li>
+        <li><kbd>0</kbd> - <%= cursorMovement.commands.zero %></li>
+        <li><kbd>^</kbd> - <%= cursorMovement.commands.caret %></li>
+        <li><kbd>$</kbd> - <%= cursorMovement.commands.dollar %></li>
+        <li><kbd>G</kbd> - <%= cursorMovement.commands.G %></li>
+        <li><kbd>5G</kbd> - <%= cursorMovement.commands.fiveG %></li>
+      </ul>
+      <div class="well">
+        <small><strong>Tip</strong> <%= cursorMovement.tip %></small>
+      </div>
+      <h2><%= insertMode.title %></h2>
+      <ul>
+        <li><kbd>i</kbd> - <%= insertMode.commands.i %></li>
+        <li><kbd>I</kbd> - <%= insertMode.commands.I %></li>
+        <li><kbd>a</kbd> - <%= insertMode.commands.a %></li>
+        <li><kbd>A</kbd> - <%= insertMode.commands.A %></li>
+        <li><kbd>o</kbd> - <%= insertMode.commands.o %></li>
+        <li><kbd>O</kbd> - <%= insertMode.commands.O %></li>
+        <li><kbd>ea</kbd> - <%= insertMode.commands.ea %></li>
+        <li><kbd>Esc</kbd> - <%= insertMode.commands.Esc %></li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <h2><%= editing.title %></h2>
+      <ul>
+        <li><kbd>r</kbd> - <%= editing.commands.r %></li>
+        <li><kbd>J</kbd> - <%= editing.commands.J %></li>
+        <li><kbd>cc</kbd> - <%= editing.commands.cc %></li>
+        <li><kbd>cw</kbd> - <%= editing.commands.cw %></li>
+        <li><kbd>c$</kbd> - <%= editing.commands.cDollar %></li>
+        <li><kbd>s</kbd> - <%= editing.commands.s %></li>
+        <li><kbd>S</kbd> - <%= editing.commands.S %></li>
+        <li><kbd>xp</kbd> - <%= editing.commands.xp %></li>
+        <li><kbd>u</kbd> - <%= editing.commands.u %></li>
+        <li><kbd>Ctrl</kbd> + <kbd>r</kbd> - <%= editing.commands.CtrlPlusr %></li>
+        <li><kbd>.</kbd> - <%= editing.commands.dot %></li>
+      </ul>
+      <h2><%= markingText.title %></h2>
+      <ul>
+        <li><kbd>v</kbd> - <%= markingText.commands.v %></li>
+        <li><kbd>V</kbd> - <%= markingText.commands.V %></li>
+        <li><kbd>o</kbd> - <%= markingText.commands.o %></li>
+        <li><kbd>Ctrl</kbd> + <kbd>v</kbd> - <%= markingText.commands.CtrlPlusv %></li>
+        <li><kbd>O</kbd> - <%= markingText.commands.O %></li>
+        <li><kbd>aw</kbd> - <%= markingText.commands.aw %></li>
+        <li><kbd>ab</kbd> - <%= markingText.commands.ab %></li>
+        <li><kbd>aB</kbd> - <%= markingText.commands.aB %></li>
+        <li><kbd>ib</kbd> - <%= markingText.commands.ib %></li>
+        <li><kbd>iB</kbd> - <%= markingText.commands.iB %></li>
+        <li><kbd>Esc</kbd> - <%= markingText.commands.Esc %></li>
+      </ul>
+      <h2><%= visualCommands.title %></h2>
+      <ul>
+        <li><kbd>&#62;</kbd> - <%= visualCommands.commands.greaterThan %></li>
+        <li><kbd>&#60;</kbd> - <%= visualCommands.commands.lessThan %></li>
+        <li><kbd>y</kbd> - <%= visualCommands.commands.y %></li>
+        <li><kbd>d</kbd> - <%= visualCommands.commands.d %></li>
+        <li><kbd>~</kbd> - <%= visualCommands.commands.tilde %></li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <h2><%= cutAndPaste.title %></h2>
+      <ul>
+        <li><kbd>yy</kbd> - <%= cutAndPaste.commands.yy %></li>
+        <li><kbd>2yy</kbd> - <%= cutAndPaste.commands.twoyy %></li>
+        <li><kbd>yw</kbd> - <%= cutAndPaste.commands.yw %></li>
+        <li><kbd>y$</kbd> - <%= cutAndPaste.commands.yDollar %></li>
+        <li><kbd>p</kbd> - <%= cutAndPaste.commands.p %></li>
+        <li><kbd>P</kbd> - <%= cutAndPaste.commands.P %></li>
+        <li><kbd>dd</kbd> - <%= cutAndPaste.commands.dd %></li>
+        <li><kbd>2dd</kbd> - <%= cutAndPaste.commands.twodd %></li>
+        <li><kbd>dw</kbd> - <%= cutAndPaste.commands.dw %></li>
+        <li><kbd>D</kbd> - <%= cutAndPaste.commands.D %></li>
+        <li><kbd>d$</kbd> - <%= cutAndPaste.commands.dDollar %></li>
+        <li><kbd>x</kbd> - <%= cutAndPaste.commands.x %></li>
+      </ul>
+      <h2><%= exiting.title %></h2>
+      <ul>
+        <li><kbd>:w</kbd> - <%= exiting.commands.colonw %></li>
+        <li><kbd>:wq</kbd> - <%= exiting.commands.colonwq %></li>
+        <li><kbd>:x</kbd> -  <%= exiting.commands.colonx %></li>
+        <li><kbd>:q</kbd> - <%= exiting.commands.colonq %></li>
+        <li><kbd>:q!</kbd> - <%= exiting.commands.colonqbang %></li>
+      </ul>
+      <h2><%= searchAndReplace.title %></h2>
+      <ul>
+        <li><kbd>/pattern</kbd> - <%= searchAndReplace.commands.forwardSlashPattern %></li>
+        <li><kbd>?pattern</kbd> - <%= searchAndReplace.commands.questionMarkPattern %></li>
+        <li><kbd>n</kbd> - <%= searchAndReplace.commands.n %></li>
+        <li><kbd>N</kbd> - <%= searchAndReplace.commands.N %></li>
+        <li><kbd>:%s/old/new/g</kbd> - <%= searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashg %></li>
+        <li><kbd>:%s/old/new/gc</kbd> - <%= searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashgc %></li>
+      </ul>
+    </div>
+  </div> <!-- end row -->
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <h2><%= workingWithMultipleFiles.title %></h2>
+      <ul>
+        <li><kbd>:e</kbd> filename - <%= workingWithMultipleFiles.commands.colone %></li>
+        <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - <%= workingWithMultipleFiles.commands.colonbnext %></li>
+        <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - <%= workingWithMultipleFiles.commands.colonbprev %></li>
+        <li><kbd>:bd</kbd> - <%= workingWithMultipleFiles.commands.colonbd %></li>
+        <li><kbd>:sp</kbd> filename - <%= workingWithMultipleFiles.commands.colonsp %></li>
+        <li><kbd>:vsp</kbd> filename - <%= workingWithMultipleFiles.commands.colonvsp %></li>
+        <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - <%= workingWithMultipleFiles.commands.ctrlPlusws %></li>
+        <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - <%= workingWithMultipleFiles.commands.ctrlPlusww %></li>
+        <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - <%= workingWithMultipleFiles.commands.ctrlPluswq %></li>
+        <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - <%= workingWithMultipleFiles.commands.ctrlPluswv %></li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <h2><%= tabs.title %></h2>
+      <ul>
+        <li><kbd>:tabnew</kbd> filename or <kbd>:tabn</kbd> filename - <%= tabs.commands.colonTabNew %></li>
+        <li><kbd>Ctrl</kbd> + <kbd>wt</kbd>  - <%= tabs.commands.ctrlPluswt %></li>
+        <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>  - <%= tabs.commands.gt %></li>
+        <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - <%= tabs.commands.gT %></li>
+        <li><kbd>#gt</kbd> - <%= tabs.commands.hashgt %></li>
+        <li><kbd>:tabmove #</kbd> - <%= tabs.commands.colontabmove %></li>
+        <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - <%= tabs.commands.colontabc %></li>
+        <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - <%= tabs.commands.colontabo %></li>
+      </ul>
+    </div>
+  </div> <!-- end row -->
+  <div id="languages" class="row">
+    <div class="col-xs-12">
+      <h2>Languages</h2>
+      <div class="col-lg-10 col-md-10">
+        <ul>
+          <li><a href="http://vim.rtorr.com/">en_us</a></li>
+          <li><a href="http://vim.rtorr.com/lang/ja">ja</a></li>
+          <li><a href="http://vim.rtorr.com/lang/fr_fr">fr</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- end row/languages -->
+  <div id="footer">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Checkout the source on <a href="https://github.com/rtorr/vim-cheat-sheet">Github</a></p>
+      </div>
     </div>
   </div>
-</div>
+</div> <!-- end container -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-25408695-1']);
