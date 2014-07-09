@@ -1,7 +1,7 @@
 
 body {
   background: #f8f8f8;
-  color: #333;
+  color: #000;
   font-family: Georgia, serif;
   font-size: 16px;
 }
@@ -28,7 +28,7 @@ kbd {
   background-color: #eee;
   font-family: monospace,serif;
   font-size: 1em;
-  color: #333;
+  color: #000;
   border-radius: 0;
   box-shadow: none;
   font-weight: bold;
@@ -52,12 +52,8 @@ kbd {
 
 
 #footer {
-  margin-top: 20px;
+  margin: 20px 0;
   text-align: center;
-}
-
-#footer .well {
-  margin-bottom: 0;
 }
 
 #footer p {
