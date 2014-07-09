@@ -4,12 +4,11 @@ body {
   color: #333;
   font-family: Georgia, serif;
   font-size: 16px;
-  padding: 10px;
 }
 
 h1 {
   color: #667378;
-  font-size: 64px;
+  font-size: 45px;
 }
 
 h2 {
@@ -38,7 +37,6 @@ kbd {
 
 .container {
   background: #fff;
-  border: 3px solid #eee;
   padding: 20px 30px;
   width: 100%;
   max-width: 1170px;
