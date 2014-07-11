@@ -1,6 +1,5 @@
 
 body {
-  background: #f8f8f8;
   color: #000;
   font-family: Georgia, serif;
   font-size: 16px;
@@ -24,7 +23,9 @@ ul {
 }
 
 li {
+  border-bottom: 1px dashed #f8f8f8;
   list-style-type: none;
+  padding: 5px 0;
 }
 
 kbd {
