@@ -8,40 +8,16 @@ Yet another vim cheat sheet.
 
 ### Setting up for development
 
-#### Install Node
+Read about installing [jekyll](http://jekyllrb.com/)
 
-[http://nodejs.org/](http://nodejs.org/)
+```
+  cd vim-cheat-sheet
+  bundle install
+  jekyll serve --watch
+```
 
+Then open your browser to [http://localhost:4000/](http://localhost:4000/)
 
-#### Install grunt
-
-    npm install -g grunt-cli
-    
-##### Install bower 
-
-    npm install -g bower
-    
-#### Install dependencies
-
-    npm install && bower install
-    
-    
-### Generate the site
-
-For development:
-
-    grunt server
-    
-For production:
-
-    grunt build
-    
-You should see the generated files in the `dist` directory.
-
-Please sumbit pull request into the develop branch.
-
-TODOS:
-
-- Remove uneeded build code
+The default languge is english us, and that data can be found in `_config.yml`. Other languages can be found in `lang/*.html`.
 
 
