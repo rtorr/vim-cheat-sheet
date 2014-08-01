@@ -20,4 +20,3 @@ Then open your browser to [http://localhost:4000/](http://localhost:4000/)
 
 The default languge is english us, and that data can be found in `_config.yml`. Other languages can be found in `lang/*.html`.
 
-
