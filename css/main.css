@@ -12,24 +12,24 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 .grid-block {
   clear: both;
   letter-spacing: -.31em;
-  text-rendering: optimizespeed;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
   overflow: hidden;
+  text-rendering: optimizespeed;
   width: 100%;
 }
 
 .grid-block, .grid-1, .grid-lg-1-3 {
   display: inline-block;
   float: left;
-  zoom: 1;
   letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: top;
-  text-rendering: auto;
   padding: 0px 10px;
+  vertical-align: top;
+  word-spacing: normal;
+  text-rendering: auto;
+  zoom: 1;
 }
 
 .grid-1 {
@@ -53,22 +53,22 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  color: inherit;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
   margin-top: 30px;
 }
 
 h1 a {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #667378;
-  font-size: 45px;
+  color: #FA4949;
 }
 
 h2 {
@@ -77,8 +77,12 @@ h2 {
 }
 
 a {
-  color: #428bca;
+  color: #1a0dab;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 ul {
@@ -94,11 +98,11 @@ li {
 
 kbd {
   background-color: #eee;
-  font-family: monospace,serif;
-  font-size: 1em;
   color: #000;
   border-radius: 0;
   box-shadow: none;
+  font-family: monospace,serif;
+  font-size: 1em;
   font-weight: bold;
   padding: 0 4px;
 }
