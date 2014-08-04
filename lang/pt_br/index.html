@@ -8,21 +8,21 @@ cursorMovement:
   title: Movimento do cursor
   commands:
     h: "mover o cursor para esquerda"
-    j: "mover o cursos para baixo"
+    j: "mover o cursor para baixo"
     k: "mover o cursor para cima"
     l: "mover o cursor para direita"
-    w: "pular adiante para o inicio de uma palavra"
-    W: "pular adiante para o inicio de uma palavra (podendo conter pontuação)"
+    w: "pular adiante para o início de uma palavra"
+    W: "pular adiante para o início de uma palavra (podendo conter pontuação)"
     e: "pular adiante para o fim de uma palavra"
     E: "pular adiante para o fim de uma palavra (podendo conter pontuação)"
-    b: "pular para trás para o inicio de uma palavra"
-    B: "pular para trás para o inicio de uma palavra (podendo conter pontuação)"
-    zero: "pular para o inicio da linha"
+    b: "pular para trás para o início de uma palavra"
+    B: "pular para trás para o início de uma palavra (podendo conter pontuação)"
+    zero: "pular para o início da linha"
     caret: "pular para o primeiro caractere (sem ser espaço) da linha"
     dollar: "pular para o fim da linha"
-    G: "ir para a ultima linha do documento"
+    G: "ir para a última linha do documento"
     fiveG: "ir para a linha 5"
-  tip: "Adicione um prefixo ao comando com um numero para repetir o mesmo. Exemplo: <kbd>4j</kbd> irá 4 linhas para baixo."
+  tip: "Adicione um prefixo ao comando com um número para repetir o mesmo. Exemplo: <kbd>4j</kbd> irá 4 linhas para baixo."
 
 insertMode:
   title: "Modo de inserção - inserir/anexar no texto"
@@ -39,7 +39,7 @@ insertMode:
 editing:
   title: "Editando"
   commands:
-    r: "substituir um unico caractere"
+    r: "substituir um único caractere"
     J: "juntar a linha que está em baixo da linha atual"
     cc: "substituir a linha toda"
     cw: "substituir no final da palavra"
@@ -49,21 +49,21 @@ editing:
     xp: "transpor duas letras (deletar e colar)"
     u: "desfazer"
     CtrlPlusr: "refazer"
-    dot: "repetir o ultimo comando"
+    dot: "repetir o último comando"
 
 markingText:
   title: "Marcação de texto (modo visual)"
   commands:
     v: "iniciar modo visual, marcar linhas, e fazer um comando (como y-yank)"
-    V:
+    V: "iniciar modo visual marcando a linha linha toda"
     o: "mover para o final da área marcada"
     CtrlPlusv: "iniciar modo de bloco visual"
-    O:
+    O: 
     aw: "marcar uma palavra"
     ab: "um bloco com ()"
     aB: "um bloco com {}"
-    ib:
-    iB:
+    ib: "um bloco interno com ()"
+    iB: "um bloco interno com {}"
     Esc: "sair do movo visual"
 
 visualCommands:
@@ -82,7 +82,7 @@ cutAndPaste:
     twoyy: "copiar duas linhas"
     yw: "copiar uma palavra"
     yDollar: "copiar para o final da linha"
-    p: "colar para a área de transferencia depois do cursor"
+    p: "colar para a área de transferência depois do cursor"
     P: "colar antes do cursor"
     dd: "deletar uma linha"
     twodd: "deletar duas linhas"
@@ -107,11 +107,11 @@ searchAndReplace:
     questionMarkPattern: "procurar para trás por padrão"
     n: "repetir busca na mesma direção"
     N: "repetir busca na direção oposta"
-    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "substituir tudo com arquvio novo"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "substituir tudo com arquivo novo"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "substituir tudo com arquvio novo com confirmação"
 
 workingWithMultipleFiles:
-  title: "Trabalhando com multiplos arquivos"
+  title: "Trabalhando com múltiplos arquivos"
   commands:
     colone: "editar um arquivo em um novo buffer"
     colonbnext: "ir para o próximo buffer"
@@ -131,11 +131,11 @@ tabs:
     ctrlPluswt: "mover a divisão de janelas atual em uma aba própria"
     gt: "mover para a próxima aba"
     gT: "mover para a aba anterior"
-    hashgt: "mover para a aba de determinado numero"
+    hashgt: "mover para a aba de determinado número"
     colontabmove: "mover aba atual para determinada posição (indexado do 0)"
     colontabc: "fechar a aba atual e todas suas janelas"
     colontabo: "fechar todas as abas exceto a aba atual"
 
-footer: Checkout the source on
+footer: O código fonte está disponível em 
 
 ---
