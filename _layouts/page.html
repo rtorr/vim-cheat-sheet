@@ -144,8 +144,8 @@ layout: default
   </div> <!-- end grid-block -->
   <div id="languages">
     <div class="grid-block">
-      <h2>Languages</h2>
       <div class="grid-1">
+        <h2>Languages</h2>
         <ul>
           {% for page in site.pages %}
             {% if page.title %}<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}
