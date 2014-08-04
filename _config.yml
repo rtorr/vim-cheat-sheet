@@ -19,124 +19,124 @@ defaults:
       lang: "en_us"
 
       cursorMovement:
-        title: Cursor movement
+        title: "Cursor movement"
         commands:
-          h: move cursor left
-          j: move cursor down
-          k: move cursor up
-          l: move cursor right
-          w: jump forwards to the start of a word
-          W: jump forwards to the start of a word (words can contain punctuation)
-          e: jump forwards to the end of a word
-          E: jump forwards to the end of a word (words can contain punctuation)
-          b: jump backwards to the start of a word
-          B: jump backwards to the start of a word (words can contain punctuation)
-          zero: jump to the start of the line
-          caret: jump to the first non-blank character of the line
-          dollar: jump to the end of the line
-          G: go to the last line of the document
-          fiveG: go to line 5
-        tip: Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines.
+          h: "move cursor left"
+          j: "move cursor down"
+          k: "move cursor up"
+          l: "move cursor right"
+          w: "jump forwards to the start of a word"
+          W: "jump forwards to the start of a word (words can contain punctuation)"
+          e: "jump forwards to the end of a word"
+          E: "jump forwards to the end of a word (words can contain punctuation)"
+          b: "jump backwards to the start of a word"
+          B: "jump backwards to the start of a word (words can contain punctuation)"
+          zero: "jump to the start of the line"
+          caret: "jump to the first non-blank character of the line"
+          dollar: "jump to the end of the line"
+          G: "go to the last line of the document"
+          fiveG: "go to line 5"
+        tip: "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
 
       insertMode:
-        title: Insert mode - inserting/appending text
+        title: "Insert mode - inserting/appending text"
         commands:
-          i: insert before the cursor
-          I: insert at the beginning of the line
-          a: insert (append) after the cursor
-          A: insert (append) at the end of the line
-          o: append (open) a new line below the current line
-          O: append (open) a new line above the current line
-          ea: insert (append) at the end of the word
-          Esc: exit insert mode
+          i: "insert before the cursor"
+          I: "insert at the beginning of the line"
+          a: "insert (append) after the cursor"
+          A: "insert (append) at the end of the line"
+          o: "append (open) a new line below the current line"
+          O: "append (open) a new line above the current line"
+          ea: "insert (append) at the end of the word"
+          Esc: "exit insert mode"
 
       editing:
-        title: Editing
+        title: "Editing"
         commands:
-          r: replace a single character
-          J: join line below to the current one
-          cc: change (replace) entire line
-          cw: change (replace) to the end of the word
-          cDollar: change (replace) to the end of the line
-          s: delete character and substitute text
-          S: delete line and substitute text (same as cc)
-          xp: transpose two letters (delete and paste)
-          u: undo
-          CtrlPlusr: redo
-          dot: repeat last command
+          r: "replace a single character"
+          J: "join line below to the current one"
+          cc: "change (replace) entire line"
+          cw: "change (replace) to the end of the word"
+          cDollar: "change (replace) to the end of the line"
+          s: "delete character and substitute text"
+          S: "delete line and substitute text (same as cc)"
+          xp: "transpose two letters (delete and paste)"
+          u: "undo"
+          CtrlPlusr: "redo"
+          dot: "repeat last command"
 
       markingText:
-        title: Marking text (visual mode)
+        title: "Marking text (visual mode)"
         commands:
-          v: start visual mode, mark lines, then do a command (like y-yank)
-          V: start linewise visual mode
-          o: move to other end of marked area
-          CtrlPlusv: start visual block mode
-          O: move to other corner of block
-          aw: mark a word
-          ab: a block with ()
-          aB: a block with {}
-          ib: inner block with ()
-          iB: inner block with {}
-          Esc: exit visual mode
+          v: "start visual mode, mark lines, then do a command (like y-yank)"
+          V: "start linewise visual mode"
+          o: "move to other end of marked area"
+          CtrlPlusv: "start visual block mode"
+          O: "move to other corner of block"
+          aw: "mark a word"
+          ab: "a block with ()"
+          aB: "a block with {}"
+          ib: "inner block with ()"
+          iB: "inner block with {}"
+          Esc: "exit visual mode"
 
       visualCommands:
-        title: Visual commands
+        title: "Visual commands"
         commands:
-          greaterThan: shift text right
-          lessThan: shift text left
-          y: yank (copy) marked text
-          d: delete marked text
-          tilde: switch case
+          greaterThan: "shift text right"
+          lessThan: "shift text left"
+          y: "yank (copy) marked text"
+          d: "delete marked text"
+          tilde: "switch case"
 
       cutAndPaste:
-        title: Cut and paste
+        title: "Cut and paste"
         commands:
-          yy: yank (copy) a line
-          twoyy: yank (copy) 2 lines
-          yw: yank (copy) word
-          yDollar: yank (copy) to end of line
-          p: put (paste) the clipboard after cursor
-          P: put (paste) before cursor
-          dd: delete (cut) a line
-          twodd: delete (cut) 2 lines
-          dw: delete (cut) word
-          D: delete (cut) to the end of the line
-          dDollar: delete (cut) to the end of the line
-          x: delete (cut) character
+          yy: "yank (copy) a line"
+          twoyy: "yank (copy) 2 lines"
+          yw: "yank (copy) word"
+          yDollar: "yank (copy) to end of line"
+          p: "put (paste) the clipboard after cursor"
+          P: "put (paste) before cursor"
+          dd: "delete (cut) a line"
+          twodd: "delete (cut) 2 lines"
+          dw: "delete (cut) word"
+          D: "delete (cut) to the end of the line"
+          dDollar: "delete (cut) to the end of the line"
+          x: "delete (cut) character"
 
       exiting:
-        title: Exiting
+        title: "Exiting"
         commands:
           colonw: "write (save) the file, but don't exit"
-          colonwq: write (save) and quit
-          colonx: write (save) and quit
-          colonq: quit (fails if there are unsaved changes)
-          colonqbang: quit and throw away unsaved changes
+          colonwq: "write (save) and quit"
+          colonx: "write (save) and quit"
+          colonq: "quit (fails if there are unsaved changes)"
+          colonqbang: "quit and throw away unsaved changes"
 
       searchAndReplace:
-        title: Search and replace
+        title: "Search and replace"
         commands:
-          forwardSlashPattern: search for pattern
-          questionMarkPattern: search backward for pattern
-          n: repeat search in same direction
-          N: repeat search in opposite direction
-          colonPercentForwardSlashOldForwardSlashNewForwardSlashg: replace all old with new throughout file
-          colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: replace all old with new throughout file with confirmations
+          forwardSlashPattern: "search for pattern"
+          questionMarkPattern: "search backward for pattern"
+          n: "repeat search in same direction"
+          N: "repeat search in opposite direction"
+          colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "replace all old with new throughout file"
+          colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "replace all old with new throughout file with confirmations"
 
       workingWithMultipleFiles:
-        title: Working with multiple files
+        title: "Working with multiple files"
         commands:
-          colone: edit a file in a new buffer
-          colonbnext: go to the next buffer
-          colonbprev: go to the previous buffer
-          colonbd: delete a buffer (close a file)
-          colonsp: open a file in a new buffer and split window
-          colonvsp: open a file in a new buffer and vertically split window
-          ctrlPlusws: split window
-          ctrlPlusww: switch windows
-          ctrlPluswq: quit a window
-          ctrlPluswv: split window vertically
+          colone: "edit a file in a new buffer"
+          colonbnext: "go to the next buffer"
+          colonbprev: "go to the previous buffer"
+          colonbd: "delete a buffer (close a file)"
+          colonsp: "open a file in a new buffer and split window"
+          colonvsp: "open a file in a new buffer and vertically split window"
+          ctrlPlusws: "split window"
+          ctrlPlusww: "switch windows"
+          ctrlPluswq: "quit a window"
+          ctrlPluswv: "split window vertically"
 
       tabs:
         title: "Tabs"
@@ -151,6 +151,6 @@ defaults:
           colontabo: "close all tabs except for the current one"
 
       languages:
-        title: Languages
+        title: "Languages"
 
-      footer: Checkout the source on
+      footer: "Checkout the source on"
