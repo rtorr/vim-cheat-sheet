@@ -36,7 +36,7 @@ defaults:
           dollar: "jump to the end of the line"
           G: "go to the last line of the document"
           fiveG: "go to line 5"
-        tip: Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines.
+        tip: "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
 
       insertMode:
         title: "Insert mode - inserting/appending text"
@@ -102,7 +102,7 @@ defaults:
           twodd: "delete (cut) 2 lines"
           dw: "delete (cut) word"
           D: "delete (cut) to the end of the line"
-          dDollar: "delete (cut) to the end of the line"z
+          dDollar: "delete (cut) to the end of the line"
           x: "delete (cut) character"
 
       exiting:
@@ -151,6 +151,6 @@ defaults:
           colontabo: "close all tabs except for the current one"
 
       languages:
-        title: Languages
+        title: "Languages"
 
-      footer: Checkout the source on
+      footer: "Checkout the source on"
