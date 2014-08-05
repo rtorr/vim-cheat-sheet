@@ -164,23 +164,17 @@ kbd {
 }
 
 .box-header {
-  background-image: -o-linear-gradient(-89deg, #F4F4F4 0%, #EBEBEB 100%);
-  background-image: -moz-linear-gradient(-89deg, #F4F4F4 0%, #EBEBEB 100%);
-  background-image: -ms-linear-gradient(-89deg, #F4F4F4 0%, #EBEBEB 100%);
-  background-image: linear-gradient(-179deg, #F4F4F4 0%, #EBEBEB 100%);
-  border: 1px solid #fff;
-  border-bottom: 1px solid #E7E7E7;
-  height: 30px;
-  padding: 0px 10px;
+  background: #EBEBEB;
+  min-height: 30px;
+  padding: 10px;
 }
 
 .box-header h2{
-  font-size: 14px;
+  font-size: 16px;
   margin: 5px 0;
 }
 
 .box-body {
-  border: 1px solid #fff;
   font-size: 14px;
   display: block;
   clear: both;
