@@ -159,6 +159,10 @@ kbd {
   width: 100%;
 }
 
+.box .grid-block {
+  padding: 0
+}
+
 .box-header {
   background-image: -o-linear-gradient(-89deg, #F4F4F4 0%, #EBEBEB 100%);
   background-image: -moz-linear-gradient(-89deg, #F4F4F4 0%, #EBEBEB 100%);
@@ -178,10 +182,11 @@ kbd {
 .box-body {
   border: 1px solid #fff;
   font-size: 14px;
-  padding: 0px 10px;
   display: block;
   clear: both;
   overflow: hidden;
+  padding: 0 10px;
+  padding-bottom: 20px;
 }
 
 .box-body li {
