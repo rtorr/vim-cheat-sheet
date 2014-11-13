@@ -1,0 +1,144 @@
+---
+layout: page
+title: Italiano
+permalink: /lang/it/
+lang: "it"
+
+cursorMovement:
+  title: "Movimento del cursore"
+  commands:
+    h: "muovi cursore a sinistra"
+    j: "muovi cursore in basso"
+    k: "muovi cursore in alto"
+    l: "muovi cursore a destra"
+    w: "salta avanti fino all'inizio di una parola"
+    W: "salta avanti fino all'inizio di una parola (le parole possono contenere punteggiatura)"
+    e: "salta avanti fino alla fine di una parola"
+    E: "salta avanti fino alla fine di una parola (le parole possono contenere punteggiatura)"
+    b: "salta indietro fino all'inizio di una parola"
+    B: "salta indietro fino all'inizio di una parola (le parole possono contenere punteggiatura)"
+    zero: "salta all'inizio della linea"
+    caret: "salta fino al primo carattere non vuoto della linea"
+    dollar: "salta alla fine della linea"
+    G: "vai all'ultima linea del documento"
+    fiveG: "vai alla linea 5"
+  tip: "Anteponi un comando di movimento del cursore con un numero per ripeterlo. Per esempio, <kbd>4j</kbd> muove in basso di 4 linee."
+
+insertMode:
+  title: "Modalità inserimento - inserisci/aggiungi testo"
+  commands:
+    i: "inserisci prima del cursore"
+    I: "inserisci all'inizio della linea"
+    a: "inserisci (aggiungi) dopo il cursore"
+    A: "inserisci (aggiungi) alla fine della linea"
+    o: "aggiungi (apri) una nuova linea sotto la linea corrente"
+    O: "aggiungi (apri) una nuova linea sopra la linea corrente"
+    ea: "inserisci (aggiungi) alla fine della parola"
+    Esc: "esci dalla modalità inserimento"
+
+editing:
+  title: "Modifica"
+  commands:
+    r: "sostituisci un singolo carattere"
+    J: "unisci la linea sottostante con quella corrente"
+    cc: "cambia (sostituisci) l'intera linea"
+    cw: "cambia (sostituisci) fino alla fine della parola"
+    cDollar: "cambia (sostituisci) fino alla fine della linea"
+    s: "cancella carattere e sostituisci testo"
+    S: "cancella linea e sostituisci testo (uguale a cc)"
+    xp: "scambia due lettere (cancella e incolla)"
+    u: "annulla l'ultima modifica"
+    CtrlPlusr: "ripeti l'ultima modifica"
+    dot: "ripeti l'ultimo comando"
+
+markingText:
+  title: "Seleziona testo (modalità visuale)"
+  commands:
+    v: "inizia modalità visuale, seleziona linee, quindi esegui un comando (per esempio y-copia)"
+    V: "inizia modalità visuale su linee intere"
+    o: "vai all'altro capo dell'area selezionata"
+    CtrlPlusv: "inizia modalità visuale su blocchi"
+    O: "vai ad un altro angolo del blocco"
+    aw: "seleziona una parola"
+    ab: "un blocco con ()"
+    aB: "un blocco con {}"
+    ib: "un blocco con () (parentesi escluse)"
+    iB: "un blocco con {} (parentesi escluse)"
+    Esc: "esci dalla modalità visuale"
+
+visualCommands:
+  title: "Comandi della modalità visuale"
+  commands:
+    greaterThan: "scorri testo a destra"
+    lessThan: "scorri testo a sinistra"
+    y: "copia testo selezionato"
+    d: "elimina testo selezionato"
+    tilde: "inverti maiuscole e minuscole"
+
+cutAndPaste:
+  title: "Taglia e incolla"
+  commands:
+    yy: "copia una linea"
+    twoyy: "copia due linee"
+    yw: "copia una parola"
+    yDollar: "copia fino alla fine della linea"
+    p: "incolla dopo il cursore"
+    P: "incolla prima del cursore"
+    dd: "cancella (taglia) una linea"
+    twodd: "cancella (taglia) due linee"
+    dw: "cancella (taglia) una parola"
+    D: "cancella (taglia) fino alla fine della linea"
+    dDollar: "cancella (taglia) fino alla fine della linea"
+    x: "cancella (taglia) carattere"
+
+exiting:
+  title: "Uscire"
+  commands:
+    colonw: "scrivi (salva) il file, ma non uscire"
+    colonwq: "scrivi (salva) ed esci"
+    colonx: "scrivi (salva) ed esci"
+    colonq: "esci (fallisce se ci sono modifiche non salvate)"
+    colonqbang: "esci e ignora modifiche non salvate"
+
+searchAndReplace:
+  title: "Cerca e sostituisci"
+  commands:
+    forwardSlashPattern: "cerca pattern"
+    questionMarkPattern: "carca pattern all'indietro"
+    n: "ripeti ricerca nella stessa direzione"
+    N: "ripeti ricerca nella direzione opposta"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "sostituisci old con new in tutto il file"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "sostituisci old con new in tutto il file senza chiedere conferma"
+
+workingWithMultipleFiles:
+  title: "Lavorare con file multipli"
+  commands:
+    colone: "modifica file in un nuovo buffer"
+    colonbnext: "vai al buffer successivo"
+    colonbprev: "vai al buffer precedente"
+    colonbd: "cancella un buffer (chiudi un file)"
+    colonsp: "apri file in un nuovo buffer e dividi la finestra"
+    colonvsp: "apri file in un nuovo buffer e dividi la finestra verticalmente"
+    ctrlPlusws: "dividi finestra"
+    ctrlPlusww: "cambia finestra"
+    ctrlPluswq: "esci da una finestra"
+    ctrlPluswv: "dividi finestra verticalmente"
+
+tabs:
+  title: "Tabs"
+  commands:
+    colonTabNew: "apri un file in un nuovo tab"
+    ctrlPluswt: "muovi la finestra corrente nel suo proprio tab"
+    gt: "vai al tab successivo"
+    gT: "vai al tab precedente"
+    hashgt: "vai al tab numero #"
+    colontabmove:  "muovi il tab corrente nella #-esima posizione (l'indice parte da 0)"
+    colontabc: "chidi il tab corrente e tutte le sue finestre"
+    colontabo: "chudi tutti i tab tranne quello corrente"
+
+languages:
+  title: "Lingue"
+
+footer: "Guarda il codice sorgente su"
+
+---
