@@ -1,0 +1,146 @@
+---
+layout: page
+title: 简体汉语
+permalink: /lang/zh_cn/
+lang: "zh_cn"
+
+cursorMovement:
+  title: "光标"
+  commands:
+    h: "左移光标"
+    j: "下移光标"
+    k: "上移光标"
+    l: "右移光标"
+    w: "移动到下个单词开头"
+    W: "移动到下个单词开头(单词含标点)"
+    e: "移动到下个单词结尾"
+    E: "移动到下个单词结尾(单词含标点)"
+    b: "移动到上个单词结尾"            
+    B: "移动到上个单词结尾(单词含标点)"
+    zero: "移动到行首"
+    caret: "移动到行首的非空白符"
+    dollar: "移动到行尾"
+    G: "移动到文档末行行首"
+    fiveG: "移动到第五行"
+  tip: "命令前追加数字表示命令的重复次数, 比如 <kbd>4j</kbd> 表示向下移动四行"
+
+insertMode:
+  title: "插入模式 - 插入/追加文本"
+  commands:
+    i: "从光标前开始插入字符"
+    I: "从行首开始插入字符"
+    a: "从光标后开始插入字符"
+    A: "从行尾开始插入字符"
+    o: "在当前行之下另起一行, 开始插入字符"
+    O: "在当前行之上另起一行, 开始插入字符"
+    ea: "从当前单词末尾开始插入"
+    Esc: "退出插入模式"
+
+editing:
+  title: "编辑"
+  commands:
+    r: "替换当前字符"
+    J: "将下一行合并到当前行"
+    cc: "清空当前行, 然后进入插入模式"
+    cw: "从光标位置开始, 修改单词"
+    cDollar: "从光标位置开始, 修改当前行"
+    s: "删除当前字符, 然后进入插入模式"
+    S: "清空当前行, 然后进入插入模式 (同<kbd>cc</kbd>)"
+    xp: "当前字符后移"
+    u: "撤销"
+    CtrlPlusr: "重复"
+    dot: "再次执行上个命令"
+
+markingText:
+  title: "选择文本（可视化模式）"
+  commands:
+    v: "进入可视化模式, 移动光标高亮选择, 然后可以对选择的文本执行命令(比如<kbd>y</kbd>-复制)"
+    V: "进入可视化模式(行粒度选择)"
+    o: "切换光标到选择区开头/结尾"
+    CtrlPlusv: "进入可视化模式(矩阵选择)"
+    O: "切换光标到选择区的角"
+    aw: "选择当前单词"
+    ab: "选择被 () 包裹的区域(含括号)"
+    aB: "选择被 {} 包裹的区域(含花括号)"
+    ib: "选择被 () 包裹的区域(不含括号)"
+    iB: "选择被 {} 包裹的区域(不含花括号)"
+    Esc: "退出可视化模式"
+
+visualCommands:
+  title: "可视化模式命令"
+  commands:
+    greaterThan: "向右缩进"
+    lessThan: "向左缩进"
+    y: "复制"
+    d: "剪切"
+    tilde: "大小写切换"
+
+cutAndPaste:
+  title: "剪切, 复制, 粘贴"
+  commands:
+    yy: "复制当前行"
+    twoyy: "复制 2 行"
+    yw: "复制当前单词"
+    yDollar: "复制, 从光标位置到行末"
+    p: "在光标后粘贴"
+    P: "在光标前粘贴"
+    dd: "剪切当前行"
+    twodd: "剪切 2 行"
+    dw: "剪切当前单词"
+    D: "剪切, 从光标位置到行末"
+    dDollar: "剪切, 从光标位置到行末 (同<kbd>D</kbd>)"
+    x: "剪切当前字符"
+
+exiting:
+  title: "退出"
+  commands:
+    colonw: "保存"
+    colonwq: "保存并退出"
+    colonx: "保存并退出(同<kbd>:wq</kbd>)"
+    colonq: "退出(修改未保存时警告)"
+    colonqbang: "不保存强制退出"
+
+searchAndReplace:
+  title: "查找/替换"
+  commands:
+    forwardSlashPattern: "查找<kbd>pattern</kbd>"
+    questionMarkPattern: "向上查找<kbd>pattern</kbd>"
+    n: "查找下一个"
+    N: "查找上一个"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "替换全部"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "(逐个)替换"
+
+workingWithMultipleFiles:
+  title: "多文件"
+  commands:
+    colone: "新建缓冲区打开 filename"
+    colonbnext: "切换到下个缓冲区"
+    colonbprev: "切换到上个缓冲区"
+    colonbd: "关闭缓冲区"
+    colonsp: "新建缓冲区打开 filename 并水平分栏"
+    colonvsp: "新缓冲区打开 filename 并垂直分栏"
+    ctrlPlusws: "水平分栏"
+    ctrlPlusww: "在分栏间切换"
+    ctrlPluswq: "关闭分栏"
+    ctrlPluswv: "垂直分栏"
+    ctrlPluswh: "切换到右侧分栏"
+    ctrlPluswl: "切换到左侧分栏"
+
+tabs:
+  title: "页签"
+  commands:
+    colonTabNew: "创建新页签/在新标签页中打开文档"
+    ctrlPluswt: "将分栏变成页签"
+    gt: "切换到下一个页签"
+    gT: "切换到上一个页签"
+    hashgt: "切换到第 <kbd>#</kbd> 个页签"
+    colontabmove:  "移动页签到第 <kbd>#</kbd> 位(下标从 0 开始)"
+    colontabc: "关闭当前页签"
+    colontabo: "关闭其他页签"
+
+languages:
+  title: "语言"
+
+footer: "源代码"
+
+---
