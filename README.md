@@ -27,7 +27,7 @@ Read about installing [jekyll](http://jekyllrb.com/)
 ```
 cd vim-cheat-sheet
 bundle install
-jekyll serve --watch
+bundle exec jekyll serve --watch
 ```
 
 Then open your browser to [http://localhost:4000/](http://localhost:4000/)
