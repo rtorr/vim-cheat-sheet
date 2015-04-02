@@ -7,7 +7,7 @@ Yet another vim cheat sheet.
 
 ## Languages
 
-One of the goals of this project are to support
+One of the goals of this project is to support
 as many languages as possible.
 
 ### Adding a Language
@@ -17,7 +17,7 @@ If you are not a developer, try using this form
 
 All of the questions should be translated to your new language.
 
-If you are a developer, follow the setup below. The main language data is in the `_config.yml`, and examples of what to copy
+If you are a developer, follow the setup below. The main language data is in `_config.yml`, and examples of what to copy
 to make a new language can be found in the `lang` folder.
 
 ### Setting up for development
