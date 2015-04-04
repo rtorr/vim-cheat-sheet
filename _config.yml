@@ -137,8 +137,10 @@ defaults:
           ctrlPlusww: "switch windows"
           ctrlPluswq: "quit a window"
           ctrlPluswv: "split window vertically"
-          ctrlPluswh: "move cursor to next buffer (right)"
-          ctrlPluswl: "move cursor to previous buffer (left)"
+          ctrlPluswh: "move cursor to the left window (vertical split)"
+          ctrlPluswl: "move cursor to the right window (vertical split)"
+          ctrlPluswj: "move cursor to the window below (horizontal split)"
+          ctrlPluswk: "move cursor to the window above (horizontal split)"
 
       tabs:
         title: "Tabs"
