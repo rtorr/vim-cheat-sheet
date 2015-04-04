@@ -144,7 +144,7 @@ defaults:
         title: "Tabs"
         commands:
           colonTabNew: "open a file in a new tab"
-          ctrlPluswt: "move the current split window into its own tab"
+          ctrlPluswT: "move the current split window into its own tab"
           gt: "move to the next tab"
           gT: "move to the previous tab"
           hashgt: "move to tab number #"
