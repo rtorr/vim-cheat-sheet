@@ -137,14 +137,16 @@ defaults:
           ctrlPlusww: "switch windows"
           ctrlPluswq: "quit a window"
           ctrlPluswv: "split window vertically"
-          ctrlPluswh: "move cursor to next buffer (right)"
-          ctrlPluswl: "move cursor to previous buffer (left)"
+          ctrlPluswh: "move cursor to the left window (vertical split)"
+          ctrlPluswl: "move cursor to the right window (vertical split)"
+          ctrlPluswj: "move cursor to the window below (horizontal split)"
+          ctrlPluswk: "move cursor to the window above (horizontal split)"
 
       tabs:
         title: "Tabs"
         commands:
           colonTabNew: "open a file in a new tab"
-          ctrlPluswt: "move the current split window into its own tab"
+          ctrlPluswT: "move the current split window into its own tab"
           gt: "move to the next tab"
           gT: "move to the previous tab"
           hashgt: "move to tab number #"
