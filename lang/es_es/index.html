@@ -1,0 +1,145 @@
+---
+layout: page
+title: Español 
+permalink: /lang/es_es/
+lang: "es_es"
+
+cursorMovement:
+  title: "Mover el cursor"
+  commands:
+    h: "mover el cursor hacia la izquierda"
+    j: "mover el cursor hacia abajo"
+    k: "mover el cursor hacia arriba"
+    l: "mover el cursor hacia la derecha"
+    w: "saltar hasta el inicio de la siguiente palabra"
+    W: "saltar hasta el inicio de la siguiente palabra (incluso con puntuación)"
+    e: "saltar hasta el final de la siguiente palabra"
+    E: "saltar hasta el final de la siguiente palabra (incluso con puntuación)"
+    b: "regresar al inicio de una palabra"
+    B: "regresar al inicio de una palabra (incluso con puntuación)"
+    zero: "saltar al inicio de la línea"
+    caret: "saltar al primer carácter no-espacio de la línea"
+    dollar: "saltar al final de la línea"
+    G: "ir a la última línea del documento"
+    fiveG: "ir a la línea 5"
+  tip: "Escribir un número antes del comando de movimiento para repetirlo. Por ejemplo, <kbd>4j</kbd> mueve el cursor hacia abajo 4 líneas."
+
+insertMode:
+  title: "Modo insertar - insertar/agregar texto"
+  commands:
+    i: "insertar antes del cursor"
+    I: "insertar al comienzo de la línea"
+    a: "insertar después del cursor"
+    A: "insertar al final de la línea"
+    o: "insertar una nueva linea debajo de la línea actual"
+    O: "insertar una nueva línea encima de la línea actual" 
+    ea: "insertar después de palabra"
+    Esc: "salir del modo insertar"
+
+editing:
+  title: "Editar"
+  commands:
+    r: "remplazar una carácter"
+    J: "juntar línea con la siguiente"
+    cc: "cambiar (remplazar) toda la línea"
+    cw: "cambiar (remplazar) una palabra"
+    cDollar: "cambiar (remplazar) hasta el final de la línea"
+    s: "eliminar carácter y remplazar texto"
+    S: "eliminar línea y remplazar texto (igual que el comando cc)"
+    xp: "transponer dos letras (suprimir y pegar)"
+    u: " deshacer"
+    CtrlPlusr: "rehacer"
+    dot: "repetir el último comando"
+
+markingText:
+  title: "Seleccionar texto (modo visual)"
+  commands:
+    v: "iniciar modo visual, seleccionar lineas y ejecutar un comando (como y-yank)"
+    V: "iniciar modo visual seleccionando toda la línea"
+    o: "moverse al otro extremo de la zona seleccionada"
+    CtrlPlusv: "iniciar modo visual de bloque (visual block mode)"
+    O: "moverse a la otra esquina del bloque"
+    aw: "seleccionar una palabra"
+    ab: "un bloque con ()"
+    aB: "un bloque con {}"
+    ib: "un bloque interno con ()"
+    iB: "un bloque interno con {}"
+    Esc: "salir del modo visual"
+
+visualCommands:
+  title: "Comandos visuales"
+  commands:
+    greaterThan: "mover texto hacia la derecha"
+    lessThan: "mover texto hacia la izquierda"
+    y: "copiar texto seleccionado"
+    d: "eliminar texto seleccionado"
+    tilde: "pasar de minúscula a mayúscula y viceversa"
+
+cutAndPaste:
+  title: "Copiar y pegar"
+  commands:
+    yy: "copiar una línea"
+    twoyy: "copiar dos líneas"
+    yw: "copiar una palabra"
+    yDollar: "copiar hasta el final de la línea"
+    p: "pegar antes del cursor"
+    P: "pegar después del cursor"
+    dd: "cortar una línea"
+    twodd: "cortar dos líneas"
+    dw: "cortar una palabra"
+    D: "cortar hasta el final de la línea"
+    dDollar: "cortar hasta el final de la línea"
+    x: "cortar carácter"
+
+exiting:
+  title: "Salir"
+  commands:
+    colonw: "guardar archivo sin salir"
+    colonwq: "guardar archivo y salir"
+    colonx: "guardar archivo y salir"
+    colonq: "salir (no funciona si hay cambios sin guardar)"
+    colonqbang: "salir descartando los cambios no guardados"
+
+searchAndReplace:
+  title: "Buscar y remplazar"
+  commands:
+    forwardSlashPattern: "buscar patrón"
+    questionMarkPattern: "buscar patrón hacia atrás"
+    n: "repetir la búsqueda en la misma dirección"
+    N: "repetir la búsqueda en la dirección contraria"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "remplazar en todo el archivo"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "remplazar en todo el archivo pidiendo una confirmación"
+
+workingWithMultipleFiles:
+  title: "Trabajar con varios archivos"
+  commands:
+    colone: "editar un archivo en un nuevo búfer"
+    colonbnext: "ir al próximo búfer"
+    colonbprev: "ir al búfer anterior"
+    colonbd: "eliminar búfer (cerrar archivo)"
+    colonsp: "abrir archivo en un nuevo búfer y dividir la ventana"
+    colonvsp: "abrir archivo en un nuevo búfer y dividir la ventana verticalmente"
+    ctrlPlusws: "dividir ventana"
+    ctrlPlusww: "cambiar de ventana"
+    ctrlPluswq: "cerrar ventana"
+    ctrlPluswv: "dividir ventana verticalmente"
+    ctrlPluswh: "mover el cursor para la ventana izquierda (división vertical)"
+    ctrlPluswl: "mover el cursor para la ventana derecha (división vertical)"
+    ctrlPluswj: "mover el cursor a la ventana de abajo (división horizontal)"
+    ctrlPluswk: "mover el cursor a la ventana de arriba (división horizontal)"
+
+tabs:
+  title: "Pestañas"
+  commands:
+    colonTabNew: "abrir archivo en una nueva pestaña"
+    ctrlPluswT: "mover la ventana actual a su propia pestaña"
+    gt: "irr a la próxima pestaña"
+    gT: "ir a la pestaña anterior"
+    hashgt: "ir a la pestaña número #"
+    colontabmove: "mover a la pestaña actual a la posición número # (desde 0)"
+    colontabc: "cerrar todas las pestañas y sus ventanas"
+    colontabo: "cerrar todas las pestañas salvo la actual"
+
+footer: "El código fuente está disponible en"
+
+---
