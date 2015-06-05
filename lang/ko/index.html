@@ -1,0 +1,148 @@
+---
+layout: page
+title: 한국어
+permalink: /lang/ko/
+lang: "ko"
+
+cursorMovement:
+  title: "커서 이동"
+  commands:
+    h: "왼쪽으로 이동"
+    j: "밑으로 이동"
+    k: "위로 이동"
+    l: "오른쪽으로 이동"
+    w: "다음 단어의 선두로 점프"
+    W: "다음 단어의 선두로 점프(구절문자 단어로 인식)"
+    e: "현재 단어의 후미로 점프"
+    E: "현재 단어의 후미로 점프(구절문자 단어로 인식)"
+    b: "단어의 선두로 점프"
+    B: "단어의 선두로 점프(구절문자 단어로 인식)"
+    zero: "행의 선두로 점프"
+    caret: "행의 선두 문자로 점프"
+    dollar: "행의 후미로 점프"
+    G: "문서의 마지막 행으로 점프"
+    fiveG: "5번째 라인으로 점프"
+  tip: "커서 이동 명령 앞에 숫자를 붙이면 그 수 만큼 반복. 예를 들어서, <kbd>4j</kbd> 는 4행 아래로 이동."
+
+insertMode:
+  title: "삽입 모드 - 택스트를 삽입/추가"
+  commands:
+    i: "커서 앞에 삽입/추가모드 시작"
+    I: "행의 선두에서 삽입/추가모드 시작"
+    a: "커서의 바로 뒤부터 삽입/추가모드 시작"
+    A: "행의 마자막에 삽입/추가모드 시작"
+    o: "현재행의 아래에 새 라인 추가, 입력/추가모드 시작"
+    O: "현재행의 위에 새 라인 추가, 입력/추가모드 시작"
+    ea: "현 단어의 마지막에 입력/추가모드 시작"
+    Esc: "삽입 모드 종료"
+
+editing:
+  title: "편집"
+  commands:
+    r: "한 문자를 치환"
+    J: "현재 행과 다음 행을 연결"
+    cc: "현재행 전체를 새로 수정"
+    cw: "현재의 단어를 치환"
+    cDollar: "현재 커서위치애서 행의 마지막까지 새로 수정"
+    s: "한 문작 삭제후 삽입 모드 시작"
+    S: "현재행 전체를 새로 수정(<kbd>cc</kbd>와 동일)"
+    xp: "두 문자를 스홥.(잘라내기 붙여넣기 조합)"
+    u: "되돌리기(undo)"
+    CtrlPlusr: "다시하기(redo)"
+    dot: "마지막 명령 다시실행"
+
+markingText:
+  title: "텍스트 선택(비쥬얼 모드)"
+  commands:
+    v: "선택 모드 시작. 텍스트를 선택해서 명령을 실행(예를 들어 y 양크)"
+    V: "행 단위 선택 모드 시작"
+    o: "션택한 영역의 반대편까지 커서 이동"
+    CtrlPlusv: "블럭형태 선택 모드 시작"
+    O: "블럭의 반대편 코너로 이동"
+    aw: "단어 선택에 추가"
+    ab: "() 블럭 추가"
+    aB: "{} 블럭 추가"
+    ib: "() 블럭의 내부 추가"
+    iB: "{} 블럭의 내부 추가"
+    Esc: "선택 모드 종료"
+
+visualCommands:
+  title: "선택 모드 명령"
+  commands:
+    greaterThan: "선택 영역을 오른쪽  이동(shift)"
+    lessThan: "왼쪽 이동(shift)"
+    y: "선택한 택스트를 양크(복사)"
+    d: "선택한 텍스트를 삭제"
+    tilde: "대소문자 반전"
+
+cutAndPaste:
+  title: "잘라내기와 붙이기"
+  commands:
+    yy: "현재행 양크(yank, 복사)"
+    twoyy: "2줄 양크"
+    yw: "단어를 양크"
+    yDollar: "현재행 마지막까지 양크"
+    p: "커서 위치 뒤에 붙이기"
+    P: "커서 위치 앞에 분이기"
+    dd: "현재행 잘라내기"
+    twodd: "2줄 잘라내기"
+    dw: "단어 잘라내기"
+    D: "커서 위치에서 행의 마지막까지 잘라내기"
+    dDollar: "커서 위치에서 행의 마지막까지 잘라내기(<kbd>D</kbd>와 동일)"
+    x: "한 문자 잘라내기"
+
+exiting:
+  title: "나가기"
+  commands:
+    colonw: "나가지 않고 저장"
+    colonwq: "저장하고 나가기"
+    colonx: "저장하고 나가기"
+    colonq: "저장하지 않고 나가기(저장하지 않은 수정이 있을 경우 실패)"
+    colonqbang: "저장하지 않고 나가기(저장하지 않은 수정이 있더라도 무시)"
+
+searchAndReplace:
+  title: "검색/치환"
+  commands:
+    forwardSlashPattern: "패턴 검색"
+    questionMarkPattern: "패턴 검색 전방으로"
+    n: "같은 방향으로 다시 검색"
+    N: "역방향으로 다시 검색"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "파일 내 모든 old를 new로 치환"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "파일 내 모든 old를 new로 치환(확인)"
+
+workingWithMultipleFiles:
+  title: "복수개의 파일 작업"
+  commands:
+    colone: "새 버퍼에서 파일 편집"
+    colonbnext: "다음 버퍼로 이동"
+    colonbprev: "앞 버퍼로 이동"
+    colonbd: "버퍼를 삭제(파일을 닫음)"
+    colonsp: "분할 윈도우에 새로운 버퍼의 새로운 파일을 열기"
+    colonvsp: "세로 분활 윈도우에 새로운 버퍼에 새로운 파일을 열기"
+    ctrlPlusws: "윈도우 분할"
+    ctrlPlusww: "윈도우 스위치"
+    ctrlPluswq: "윈도우 닫기"
+    ctrlPluswv: "윈도우 세로로 분할"
+    ctrlPluswh: "오른쪽 윈도우로 이동"
+    ctrlPluswl: "왼쪽 윈도우로 이동"
+    ctrlPluswj: "아래 윈도우로 이동"
+    ctrlPluswk: "위 윈도우로 이동"
+
+tabs:
+  title: "탭"
+  commands:
+    colonTabNew: "새 탭으로 파일 열기"
+    ctrlPluswT: "현재 윈도우를 새로운 탭으로 이동"
+    gt: "다음 탭으로 이동"
+    gT: "앞 탭으로 이동"
+    hashgt: "n번 탭으로 이동"
+    colontabmove:  "현재 탭을 n번째로 이동(0부터 시작)"
+    colontabc: "현재 탭을 닫기"
+    colontabo: "현재 탭 이외의 모든 탭 닫기"
+
+languages:
+  title: "언어"
+
+footer: "소스 체크 아웃"
+
+---
