@@ -9,7 +9,11 @@
           <h3 id="languages">Languages</h3>
           <ul>
             {% for page in site.pages %}
-              {% if page.title %}<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}
+
+                {% if page.title and page.title != "Code of Conduct" %}
+                  <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
