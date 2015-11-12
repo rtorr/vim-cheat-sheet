@@ -45,6 +45,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 /*-----------------*/
 
 body {
+  background-color: #fff;
   color: #000;
   font-family: Georgia, serif;
   font-size: 16px;
