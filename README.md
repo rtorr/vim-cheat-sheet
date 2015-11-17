@@ -27,10 +27,10 @@ Read about installing [jekyll](http://jekyllrb.com/)
 ```
 cd vim-cheat-sheet
 bundle install
-bundle exec jekyll serve --watch
+bundle exec jekyll serve
 ```
 
-Then open your browser to [http://localhost:4000/](http://localhost:4000/)
+Then open your browser to [http://localhost:4000/](http://localhost:4000/).  Changes to any of the files except `_config.yml` will automatically be reflected by Jekyll; simply reload the page in your browser.
 
 The default languge is english us, and that data can be found in `_config.yml`. Other languages can be found in `lang/*.html`.
 
