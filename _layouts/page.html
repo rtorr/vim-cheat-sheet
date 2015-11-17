@@ -24,6 +24,10 @@ layout: default
           <li><kbd>$</kbd> - {{ page.cursorMovement.commands.dollar }}</li>
           <li><kbd>G</kbd> - {{ page.cursorMovement.commands.G }}</li>
           <li><kbd>5G</kbd> - {{ page.cursorMovement.commands.fiveG }}</li>
+          <li><kbd>fx</kbd> - {{ page.cursorMovement.commands.fx }}</li>
+          <li><kbd>tx</kbd> - {{ page.cursorMovement.commands.tx }}</li>
+          <li><kbd>}</kbd> - {{ page.cursorMovement.commands.closeCurlyBrace }}</li>
+          <li><kbd>{</kbd> - {{ page.cursorMovement.commands.openCurlyBrace }}</li>
         </ul>
         <div class="well">
           <strong>Tip</strong> {{ page.cursorMovement.tip }}
@@ -105,6 +109,7 @@ layout: default
         <ul>
           <li><kbd>/pattern</kbd> - {{ page.searchAndReplace.commands.forwardSlashPattern }}</li>
           <li><kbd>?pattern</kbd> - {{ page.searchAndReplace.commands.questionMarkPattern }}</li>
+          <li><kbd>\vpattern</kbd> - {{ page.searchAndReplace.commands.backslashVpattern }}</li>
           <li><kbd>n</kbd> - {{ page.searchAndReplace.commands.n }}</li>
           <li><kbd>N</kbd> - {{ page.searchAndReplace.commands.N }}</li>
           <li><kbd>:%s/old/new/g</kbd> - {{ page.searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashg }}</li>

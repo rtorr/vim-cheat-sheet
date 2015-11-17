@@ -36,6 +36,10 @@ defaults:
           dollar: "jump to the end of the line"
           G: "go to the last line of the document"
           fiveG: "go to line 5"
+          fx: "jump to next occurrence of character x"
+          tx: "jump to before next occurrence of character x"
+          closeCurlyBrace: "Jump to next paragraph (or function/block, when editing code)"
+          openCurlyBrace: "Jump to previous paragraph (or function/block, when editing code)"
         tip: "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
 
       insertMode:
@@ -119,6 +123,7 @@ defaults:
         commands:
           forwardSlashPattern: "search for pattern"
           questionMarkPattern: "search backward for pattern"
+          backslashVpattern: "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
           n: "repeat search in same direction"
           N: "repeat search in opposite direction"
           colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "replace all old with new throughout file"
