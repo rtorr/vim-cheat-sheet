@@ -128,6 +128,7 @@ defaults:
           N: "repeat search in opposite direction"
           colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "replace all old with new throughout file"
           colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "replace all old with new throughout file with confirmations"
+          colonnoh: "remove highlighting of search matches"
 
       workingWithMultipleFiles:
         title: "Working with multiple files"
