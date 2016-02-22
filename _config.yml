@@ -34,6 +34,7 @@ defaults:
           zero: "jump to the start of the line"
           caret: "jump to the first non-blank character of the line"
           dollar: "jump to the end of the line"
+          gg: "go to the first line of the document"
           G: "go to the last line of the document"
           fiveG: "go to line 5"
           fx: "jump to next occurrence of character x"
