@@ -114,6 +114,7 @@ defaults:
         title: "Exiting"
         commands:
           colonw: "write (save) the file, but don't exit"
+          colonwsudo: "write out the current file using sudo"
           colonwq: "write (save) and quit"
           colonx: "write (save) and quit"
           colonq: "quit (fails if there are unsaved changes)"
@@ -137,6 +138,7 @@ defaults:
           colone: "edit a file in a new buffer"
           colonbnext: "go to the next buffer"
           colonbprev: "go to the previous buffer"
+          colonls: "list all open buffers"
           colonbd: "delete a buffer (close a file)"
           colonsp: "open a file in a new buffer and split window"
           colonvsp: "open a file in a new buffer and vertically split window"
