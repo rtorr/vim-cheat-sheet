@@ -137,6 +137,7 @@ defaults:
           colone: "edit a file in a new buffer"
           colonbnext: "go to the next buffer"
           colonbprev: "go to the previous buffer"
+          colonls: "list all open buffers"
           colonbd: "delete a buffer (close a file)"
           colonsp: "open a file in a new buffer and split window"
           colonvsp: "open a file in a new buffer and vertically split window"
