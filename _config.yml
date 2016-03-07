@@ -114,6 +114,7 @@ defaults:
         title: "Exiting"
         commands:
           colonw: "write (save) the file, but don't exit"
+          colonwsudo: "write out the current file using sudo"
           colonwq: "write (save) and quit"
           colonx: "write (save) and quit"
           colonq: "quit (fails if there are unsaved changes)"
