@@ -132,6 +132,14 @@ defaults:
           colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "replace all old with new throughout file with confirmations"
           colonnoh: "remove highlighting of search matches"
 
+      searchMultipleFiles:
+        title: "Search in multiple files"
+        commands:
+          colonvimgrep: "search for pattern in multiple files"
+          coloncn: "jump to the next match"
+          coloncp: "jump to the previous match"
+          coloncopen: "open a window containing the list of matches"
+
       workingWithMultipleFiles:
         title: "Working with multiple files"
         commands:
