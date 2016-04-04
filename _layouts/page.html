@@ -118,6 +118,19 @@ layout: default
           <li><kbd>:%s/old/new/gc</kbd> - {{ page.searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashgc }}</li>
           <li><kbd>:noh</kbd> - {{ page.searchAndReplace.commands.colonnoh }}</li>
         </ul>
+        <h2>{{ page.searchMultipleFiles.title }}</h2>
+        <ul>
+          <li><kbd>:vimgrep /pattern/ {file}</kbd> - {{ page.searchMultipleFiles.commands.colonvimgrep}}</li>
+        </ul>
+        <div class="well">
+          e.g.
+          <kbd>:vimgrep /foo/ **/*</kbd>
+        </div>
+        <ul>
+          <li><kbd>:cn</kbd> - {{ page.searchMultipleFiles.commands.coloncn }}</li>
+          <li><kbd>:cp</kbd> - {{ page.searchMultipleFiles.commands.coloncp }}</li>
+          <li><kbd>:copen</kbd> - {{ page.searchMultipleFiles.commands.coloncopen }}</li>
+        </ul>
       </div>
     </div> <!-- end grid-block -->
     <div class="grid-block">
