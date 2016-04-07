@@ -170,6 +170,7 @@ defaults:
           colontabmove: "move current tab to the #th position (indexed from 0)"
           colontabc: "close the current tab and all its windows"
           colontabo: "close all tabs except for the current one"
+          colontabdo: "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
 
       languages:
         title: "Languages"
