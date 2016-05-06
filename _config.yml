@@ -42,6 +42,10 @@ defaults:
           tx: "jump to before next occurrence of character x"
           closeCurlyBrace: "Jump to next paragraph (or function/block, when editing code)"
           openCurlyBrace: "Jump to previous paragraph (or function/block, when editing code)"
+          CtrlPlusb: "move back one full screen"
+          CtrlPlusf: "move forward one full screen"
+          CtrlPlusd: "move forward 1/2 a screen"
+          CtrlPlusu: "move back 1/2 a screen"
         tip: "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
 
       insertMode:
