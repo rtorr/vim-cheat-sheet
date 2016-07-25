@@ -99,6 +99,39 @@ defaults:
           d: "delete marked text"
           tilde: "switch case"
 
+      registers:
+        title: "Registers"
+        commands:
+          show: "show registers content"
+          pasteRegisterX: "paste contents of register x"
+          yankIntoRegisterX: "yank into register x"
+        tip1: "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim."
+        tip2: "Register 0 contains always the value of the last yank command."
+
+      marks:
+        title: "Marks"
+        commands:
+          list: "list of marks"
+          currentPositionA: "set current position for mark A"
+          jumpPositionA: "jump to position of mark A"
+          yankToMarkA: "yank text to position of mark A"
+        tip: ""
+
+      macros:
+        title: "Macros"
+        commands:
+          recordA: "record macro a"
+          stopRecording: "stop recording macro"
+          rerun: "rerun last run macro"
+
+      global:
+        title: "Global"
+        commands:
+          helpForKeyword: "open help for keyword"
+          openFile: "open file"
+          saveAsFile: "save file as"
+          closePane: "close current pane"
+
       cutAndPaste:
         title: "Cut and paste"
         commands:
