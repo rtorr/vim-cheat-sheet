@@ -16,12 +16,20 @@ cursorMovement:
     e: "aller en avant à la fin d'un mot"
     E: "aller en avant à la fin d'un mot (les mots peuvent contenir de la ponctuation)"
     b: "aller en arrière au début d'un mot"
-    B: "aller en arrière au début d'un mot (wles mots peuvent contenir de la ponctuation)"
+    B: "aller en arrière au début d'un mot (les mots peuvent contenir de la ponctuation)"
     zero: "aller au début de la ligne"
     caret: "aller au premier caractère non-espace de la ligne"
     dollar: "aller à la fin de la ligne"
     G: "aller à la dernière ligne du document"
     fiveG: "aller à la ligne 5"
+	fx: "aller à la prochaine occurence du caractère x"
+	tx: "aller à l'occurence précédente du caractère x"
+	closeCurlyBrace: "Aller au paragraphe suivant (ou bloc/fonction, quand vous éditez du code)"
+	openCurlyBrace: "Aller au paragraphe précédent (ou bloc/fonction, quand vous éditez du code)"
+	CtrlPlusb: "Avancer d'un écran"
+	CtrlPlusf: "Reculer d'un demi écran"
+	CtrlPlusu: "Avancer d'un écran"
+	CtrlPlusd: "Reculer d'un demi écran"
   tip: "Préfixez un mouvement avec un nombre pour le répeter. Par exemple, <kbd>4j</kbd> déplace le curseur de 4 lignes vers le bas."
 
 insertMode:
@@ -45,7 +53,7 @@ editing:
     cw: "changer (remplacer) jusqu'à la fin d'un mot"
     cDollar: "changer (remplacer) jusqu'à la fin d'une ligne"
     s: "suppriemr un caractère et le remplacer par du texte"
-    S: "supprimer une ligne et la remplacer par du texte (comme cc)"
+    S: "supprimer une ligne et la remplacer par du texte (comme <kbd>cc</kbd>)"
     xp: "transposer deux lettres (supprimer et coller)"
     u: "annuler"
     CtrlPlusr: "rétablir"
@@ -54,7 +62,7 @@ editing:
 markingText:
   title: "Marquer du texte (mode visuel)"
   commands:
-    v: "passer en mode visuel, marquer du texte, exécuter des commandes (comme y)"
+    v: "passer en mode visuel, marquer du texte, exécuter des commandes (comme <kbd>y</kbd>)"
     V: "passer en mode visuel ligne par ligne"
     o: "se déplader à l'autre extrémité de la zone marquée"
     CtrlPlusv: "passer en mode visuel par bloc"
@@ -75,18 +83,55 @@ visualCommands:
     d: "supprimer le texte marqué"
     tilde: "modifier la casse"
 
+      registers:
+        title: "Registres"
+        commands:
+          show: "montre le contenu des registres"
+          pasteRegisterX: "colle le contenu du registre <code>x</code>"
+          yankIntoRegisterX: "copie dans le registre <code>x</code>"
+        tip1: "Les registres sont stockés dans ~/.viminfo, et seront rechargé au prochain démarrage de vim."
+        tip2: "Le registre 0 contient toujours la dernière valeur copiée."
+
+      marks:
+        title: "Marques"
+        commands:
+          list: "liste les marques"
+          currentPositionA: "définit la marque A à la position actuelle"
+          jumpPositionA: "va à la position de la marque <code>A</code>"
+          yankToMarkA: "copie à la position de la marque <code>A</code>"
+        tip: ""
+
+      macros:
+        title: "Macros"
+        commands:
+          recordA: "enregistre la macro <code>a</code>"
+          stopRecording: "arrete l'enregistrement de la macro"
+          rerun: "rejoue la dernière macro"
+
+      global:
+        title: "Global"
+        commands:
+          helpForKeyword: "ouvre l'aide du mot-clé <code>keyword</code>"
+          openFile: "ouvre le fichier <code>file</code>"
+          saveAsFile: "enregistre le fichier sous <code>file</code>"
+          closePane: "ferme le panneau actuel"
+
 cutAndPaste:
   title: "Copier-coller"
   commands:
     yy: "copier un ligne"
     twoyy: "copier 2 lignes"
     yw: "copier un mot"
+	yiw: "copie le mot sous le curseur"
+	yaw: "copie le mot sous le curseur et le caractère d'espace suivant"
     yDollar: "copier jusqu'à la fin de la ligne"
     p: "coller le presse-papier après le curseur"
     P: "coller le presse-papier avant le curseur"
     dd: "supprimer (couper) une ligne"
     twodd: "supprimer (couper) 2 lignes"
     dw: "supprimer (couper) un mot"
+	diw: "supprimer (couper) le mot sous le curseur"
+	daw: "supprimer (couper) le mot sous le curseur et le caractère d'espace suivant"
     D: "supprimer (couper) jusqu'à la fin de la ligne"
     dDollar: "supprimer (couper) jusqu'à la fin de la ligne"
     x: "supprimer (couper) un caractère"
@@ -95,6 +140,7 @@ exiting:
   title: "Quitter"
   commands:
     colonw: "écrire (sauver) le fichier"
+    colonwsudo: "écrire (sauver) le fichier en utilisant sudo"
     colonwq: "écrire (sauver) et quitter"
     colonx: "écrire (sauver) et quitter"
     colonq: "quitter (échoue s'il y a des modifications non sauvegardées)"
@@ -103,12 +149,22 @@ exiting:
 searchAndReplace:
   title: "Rechercher et remplacer"
   commands:
-    forwardSlashPattern: "chercher le motif"
-    questionMarkPattern: "chercher en arrière le motif"
+    forwardSlashPattern: "chercher le motif patern"
+    questionMarkPattern: "chercher en arrière le motif patern"
+	backslashVpattern: "motif 'très magique': les caractères alpha-numériques sont interprétés comme des caractères spéciaux de regex (échappement optionnel)"
     n: "répéter la recherche dans la même direction"
     N: "répéter la recherche dans la direction opposée"
-    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "remplacer toutes les occurrences de ol avec new dans tout le fichier"
-    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "remplacer toutes les occurrences de ol avec new dans tout le fichier (demande confirmation)"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "remplacer toutes les occurrences de old avec new dans tout le fichier"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "remplacer toutes les occurrences de old avec new dans tout le fichier (demande confirmation)"
+	colonnoh: "supprime la surbrillance dûe à la recherche"
+
+searchMultipleFiles:
+  title: "Rechercher dans plusieurs fichiers"
+	commands:
+	colonvimgrep: "recherche le motif 'pattern' dans plusieurs fichiers <code>file</code>"
+	coloncn: "aller à l'occurence suivante"
+	coloncp: "aller à l'occurence précédente"
+	coloncopen: "ouvre une fenêtre affichant la liste es occurences trouvées"
 
 workingWithMultipleFiles:
   title: "Travailler avec plusieurs fichiers"
@@ -116,6 +172,7 @@ workingWithMultipleFiles:
     colone: "modifier un fichier dans un nouveau tampon"
     colonbnext: "aller au tampon suivant"
     colonbprev: "aller au tampon précédent"
+	colonls: "Liste tous les tampons ouverts"
     colonbd: "supprimer un tampon (fermer le fichier)"
     colonsp: "ouvrir un fichier dans un nouveau tampon et diviser la fenêtre"
     colonvsp: "ouvrir un fichier dans un nouveau tampon et diviser la fenêtre verticalement"
@@ -125,6 +182,8 @@ workingWithMultipleFiles:
     ctrlPluswv: "diviser la fenêtre verticalement"
     ctrlPluswh: "déplacer le curseur vers le prochain tampon"
     ctrlPluswl: "déplacer le curseur vers le tampon précédent"
+	ctrlPluswj: "déplacer le curseur vers le tampon en dessous (division horizontale)"
+	ctrlPluswk: "déplacer le curseur vers le tampon au dessus (division horizontale)"
 
 tabs:
   title: "Onglets"
@@ -137,6 +196,7 @@ tabs:
     colontabmove: "déplacer l'onglet à la position # (commence à 0)"
     colontabc: "fermer l'onglet en cours et toutes ses fenêtres"
     colontabo: "fermer tous les onglets sauf l'onglet courant"
+	colontabdo: "Exécute <code>command</code> dans tous les onglets (ex. <code>:tabdo q</code> - ferme tous les onglets ouverts)"
 
 footer: "Voir la source sur"
 
