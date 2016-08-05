@@ -4,5 +4,7 @@ node_modules
 dist
 .tmp
 .sass-cache
+.ruby-version
+.ruby-gemset
 app/bower_components
 _site
