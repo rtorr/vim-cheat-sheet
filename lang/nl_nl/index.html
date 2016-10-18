@@ -35,7 +35,7 @@ cursorMovement:
   tip: "Prefix een cursorbeweging met een getal om deze te herhalen. bijvoorbeeld, <kbd>4j</kbd> beweegt de cursor 4 regels omlaag."
 
 insertMode:
-  title: "Insert modus - in- en toevoegen van tekst"
+  title: "Insert modus: in- en toevoegen van tekst"
   commands:
     i: "invoegen voor de cursor"
     I: "invoegen aan het begin van de regel"
@@ -52,7 +52,7 @@ editing:
     r: "vervang één karakter"
     J: "voeg onderstaande regel samen met huidige regel"
     cc: "vervang huidige regel"
-    cw: "vervant tot einde huidig woord"
+    cw: "vervang tot einde huidig woord"
     cDollar: "vervang tot einde regel"
     s: "vervang karakter"
     S: "vervang huidige regel (het zelfde als cc)"
@@ -77,7 +77,7 @@ markingText:
     Esc: "verlaat visuele modus"
 
 visualCommands:
-  title: "Visuele commandos"
+  title: "Visuele commando's"
   commands:
     greaterThan: "verplaats tekst naar rechts"
     lessThan: "verplaats tekst naar links"
@@ -92,7 +92,7 @@ registers:
     pasteRegisterX: "plak inhoud van register x"
     yankIntoRegisterX: "kopiëer naar register x"
   tip1: "Registers worden opgeslagen in ~/.viminfo en worden opnieuw geladen na het herstarten van vim."
-  tip2: "Register 0 bevat altijd de inhoud van het laatste kopiëer commando"
+  tip2: "Register 0 bevat altijd de inhoud van het laatste kopiëer ('yank') commando"
 
 marks:
   title: "Positiemarkeringen"
@@ -121,9 +121,9 @@ global:
 cutAndPaste:
   title: "Kopiëren en plakken"
   commands:
-    yy: "kopiëer een regel"
+    yy: "kopiëer één regel"
     twoyy: "kopiëer twee regels"
-    yw: "kopiëer de karakters van het woord vanaf de cursorpositie tot het begin van het volgende woord"
+    yw: "kopiëer de karakters vanaf de cursorpositie tot het begin van het volgende woord"
     yiw: "kopiëer woord onder de cursor"
     yaw: "kopiëer het woord onder de cursor, inclusief de spatie er voor of er achter"
     yDollar: "kopiëer tot het einde van de regel"
@@ -131,7 +131,7 @@ cutAndPaste:
     P: "plak voor de cursor"
     dd: "verwijder (knip) een regel"
     twodd: "verwijder (knip) twee regels"
-    dw: "verwijder (knip) de karakters van het woord vanaf de cursorpositie tot het begin van het volgende woord"
+    dw: "verwijder (knip) de karakters vanaf de cursorpositie tot het begin van het volgende woord"
     diw: "verwijder (knip) woord onder de cursor"
     daw: "verwijder (knip) het woord onder de cursor, inclusief de spatie er voor of er achter"
     D: "verwijder (knip) tot het einde van de regel"
@@ -142,18 +142,18 @@ exiting:
   title: "Verlaten"
   commands:
     colonw: "sla op maar blijf in vim"
-    colonwsudo: "sla op, rebruikmakend van sudo"
+    colonwsudo: "sla op, gebruikmakend van sudo"
     colonwq: "sla op en verlaat vim"
     colonx: "sla op en verlaat vim"
-    colonq: "verlaat vim (faalt wanneer er niet opgeslagen aanpassingen zijn)"
-    colonqbang: "verlaat vim en gooi niet opgeslagen aanpassingen weg"
+    colonq: "verlaat vim (faalt wanneer er niet-opgeslagen aanpassingen zijn)"
+    colonqbang: "verlaat vim en gooi niet-opgeslagen aanpassingen weg"
 
 searchAndReplace:
   title: "Zoeken en vervangen"
   commands:
     forwardSlashPattern: "zoek naar patroon"
     questionMarkPattern: "zoek achteruit naar patroon"
-    backslashVpattern: "'super magisch' patroon: non-alfanumerieke karacters worden geïnterpreteerd als speciale tekens, escapen niet nodig"
+    backslashVpattern: "'super magisch' patroon: non-alfanumerieke karakters worden geïnterpreteerd als speciale tekens, escapen niet nodig"
     n: "herhaal zoekopdracht in dezelfe richting"
     N: "herhaal zoekopdracht in tegengestelde richting"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "vervang alle 'old' met 'new' in het bestand"
