@@ -9,9 +9,9 @@ layout: default
       <div class="grid-lg-1-3">
         <h2>{{ page.global.title }}</h2>
         <ul>
-          <li><kbd>:help keyword</kbd> - {{ page.global.commands.helpForKeyword }}</li>
-          <li><kbd>:o file</kbd> - {{ page.global.commands.openFile }}</li>
-          <li><kbd>:saveas file</kbd> - {{ page.global.commands.saveAsFile }}</li>
+          <li><kbd>:help {{ page.words.keyword }}</kbd> - {{ page.global.commands.helpForKeyword }}</li>
+          <li><kbd>:o {{ page.words.file }}</kbd> - {{ page.global.commands.openFile }}</li>
+          <li><kbd>:saveas {{ page.words.file }}</kbd> - {{ page.global.commands.saveAsFile }}</li>
           <li><kbd>:close</kbd> - {{ page.global.commands.closePane }}</li>
         </ul>
         <h2>{{ page.cursorMovement.title }}</h2>
@@ -174,13 +174,13 @@ layout: default
       <div class="grid-lg-1-3">
         <h2>{{ page.workingWithMultipleFiles.title }}</h2>
         <ul>
-          <li><kbd>:e</kbd> filename - {{ page.workingWithMultipleFiles.commands.colone }}</li>
+          <li><kbd>:e {{ page.words.file }}</kbd> - {{ page.workingWithMultipleFiles.commands.colone }}</li>
           <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - {{ page.workingWithMultipleFiles.commands.colonbnext }}</li>
           <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - {{ page.workingWithMultipleFiles.commands.colonbprev }}</li>
           <li><kbd>:bd</kbd> - {{ page.workingWithMultipleFiles.commands.colonbd }}</li>
           <li><kbd>:ls</kbd> - {{ page.workingWithMultipleFiles.commands.colonls }}</li>
-          <li><kbd>:sp</kbd> filename - {{ page.workingWithMultipleFiles.commands.colonsp }}</li>
-          <li><kbd>:vsp</kbd> filename - {{ page.workingWithMultipleFiles.commands.colonvsp }}</li>
+          <li><kbd>:sp {{ page.words.file }}</kbd> - {{ page.workingWithMultipleFiles.commands.colonsp }}</li>
+          <li><kbd>:vsp {{ page.words.file }}</kbd> - {{ page.workingWithMultipleFiles.commands.colonvsp }}</li>
           <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - {{ page.workingWithMultipleFiles.commands.ctrlPlusws }}</li>
           <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - {{ page.workingWithMultipleFiles.commands.ctrlPlusww }}</li>
           <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - {{ page.workingWithMultipleFiles.commands.ctrlPluswq }}</li>
@@ -194,7 +194,7 @@ layout: default
       <div class="grid-lg-1-3">
         <h2>{{ page.tabs.title }}</h2>
         <ul>
-          <li><kbd>:tabnew</kbd> filename or <kbd>:tabn</kbd> filename - {{ page.tabs.commands.colonTabNew }}</li>
+          <li><kbd>:tabnew</kbd> or <kbd>:tabn {{ page.words.file }}</kbd> - {{ page.tabs.commands.colonTabNew }}</li>
           <li><kbd>Ctrl</kbd> + <kbd>wT</kbd>  - {{ page.tabs.commands.ctrlPluswT }}</li>
           <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>  - {{ page.tabs.commands.gt }}</li>
           <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>  - {{ page.tabs.commands.gT }}</li>

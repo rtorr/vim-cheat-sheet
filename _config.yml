@@ -216,6 +216,11 @@ defaults:
           colontabo: "close all tabs except for the current one"
           colontabdo: "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
 
+      words:
+        keyword: "keyword"
+        file: "file"
+        movement: "movement"
+
       languages:
         title: "Languages"
 
