@@ -16,12 +16,20 @@ cursorMovement:
     e: "aller en avant à la fin d'un mot"
     E: "aller en avant à la fin d'un mot (les mots peuvent contenir de la ponctuation)"
     b: "aller en arrière au début d'un mot"
-    B: "aller en arrière au début d'un mot (wles mots peuvent contenir de la ponctuation)"
+    B: "aller en arrière au début d'un mot (les mots peuvent contenir de la ponctuation)"
     zero: "aller au début de la ligne"
     caret: "aller au premier caractère non-espace de la ligne"
     dollar: "aller à la fin de la ligne"
     G: "aller à la dernière ligne du document"
     fiveG: "aller à la ligne 5"
+    fx: "atteindre la prochaine occurence du caractère x"
+    tx: "atteindre la précédente occurence du caractère x"
+    closeCurlyBrace: "atteindre le prochain paragraphe (ou function/bloc, en mode édition)"
+    openCurlyBrace: "atteindre le précédent paragraphe (ou function/bloc, en mode édition)"
+    CtrlPlusb: "Descendre d'une hauteur d'écran"
+    CtrlPlusf: "Monte d'une hauteur d'écran"
+    CtrlPlusu: "Descendre d'une demie-hauteur d'écran"
+    CtrlPlusd: "Monte d'une demie-hauteur d'écran"
   tip: "Préfixez un mouvement avec un nombre pour le répeter. Par exemple, <kbd>4j</kbd> déplace le curseur de 4 lignes vers le bas."
 
 insertMode:
@@ -34,7 +42,7 @@ insertMode:
     o: "ajouter (ouvrir) une nouvelle ligne vers le bas"
     O: "ajouter (ouvrir) une nouvelle ligne vers le haut"
     ea: "insérer (ajouter) a la fin d'un mot"
-    Esc: "quiter le mode insertion"
+    Esc: "quitter le mode insertion"
 
 editing:
   title: Éditer
@@ -44,7 +52,7 @@ editing:
     cc: "changer (remplacer) une ligne entière"
     cw: "changer (remplacer) jusqu'à la fin d'un mot"
     cDollar: "changer (remplacer) jusqu'à la fin d'une ligne"
-    s: "suppriemr un caractère et le remplacer par du texte"
+    s: "supprimer un caractère et le remplacer par du texte"
     S: "supprimer une ligne et la remplacer par du texte (comme cc)"
     xp: "transposer deux lettres (supprimer et coller)"
     u: "annuler"
@@ -56,7 +64,7 @@ markingText:
   commands:
     v: "passer en mode visuel, marquer du texte, exécuter des commandes (comme y)"
     V: "passer en mode visuel ligne par ligne"
-    o: "se déplader à l'autre extrémité de la zone marquée"
+    o: "se déplacer à l'autre extrémité de la zone marquée"
     CtrlPlusv: "passer en mode visuel par bloc"
     O: "se déplacer à l'autre angle du bloc"
     aw: "marquer un mot"
@@ -75,18 +83,55 @@ visualCommands:
     d: "supprimer le texte marqué"
     tilde: "modifier la casse"
 
+registers:
+  title: "Registres"
+  commands:
+    show: "afficher le contenu des registres"
+    pasteRegisterX: "coller le contenu du registre X"
+    yankIntoRegisterX: "copier dans le registre X"
+  tip1: "Les registres sont stockés dans ~/.viminfo, et seront encore chargé au prochain démarrage de vim."
+  tip2: "Le registre 0 contient toujours la valeur de la derniere commande copiée."
+
+marks:
+  title: "Marques"
+  commands:
+    list: "lister des marques"
+    currentPositionA: "définir la position actuelle pour la marque A"
+    jumpPositionA: "accéder à la position de la marque A"
+    yankToMarkA: "copier le texte à la position de la marque A"
+  tip: ""
+
+macros:
+  title: "Macros"
+  commands:
+    recordA: "enregistre la macro a"
+    stopRecording: "arreter l'enregistrement de la macro"
+    rerun: "re-executer la derniere macro executée"
+
+global:
+  title: "Global"
+  commands:
+    helpForKeyword: "ouvrir l'aide pour le mot clé"
+    openFile: "ouvrir un fichier"
+    saveAsFile: "sauvegarder un fichier sous"
+    closePane: "fermer le fichier en cours"
+
 cutAndPaste:
   title: "Copier-coller"
   commands:
-    yy: "copier un ligne"
+    yy: "copier une ligne"
     twoyy: "copier 2 lignes"
     yw: "copier un mot"
+    yiw: "copier le mot sous le curseur"
+    yaw: "copier le mot sous le curseur avec l'espace après ou avant"
     yDollar: "copier jusqu'à la fin de la ligne"
     p: "coller le presse-papier après le curseur"
     P: "coller le presse-papier avant le curseur"
     dd: "supprimer (couper) une ligne"
     twodd: "supprimer (couper) 2 lignes"
     dw: "supprimer (couper) un mot"
+    diw: "supprimer (couper) un mot sous le curseur"
+    daw: "supprimer (couper) un mot avec l'espace après ou avant"
     D: "supprimer (couper) jusqu'à la fin de la ligne"
     dDollar: "supprimer (couper) jusqu'à la fin de la ligne"
     x: "supprimer (couper) un caractère"
@@ -109,6 +154,14 @@ searchAndReplace:
     N: "répéter la recherche dans la direction opposée"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "remplacer toutes les occurrences de ol avec new dans tout le fichier"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "remplacer toutes les occurrences de ol avec new dans tout le fichier (demande confirmation)"
+
+searchMultipleFiles:
+  title: "Rechercher dans plusieurs fichiers"
+  commands:
+    colonvimgrep: "rechercher un motif dans plusieurs fichiers"
+    coloncn: "atteindre le prochain résultat"
+    coloncp: "atteindre le précédent résultat"
+    coloncopen: "ouvre une fenetre contenant une liste des resultats"
 
 workingWithMultipleFiles:
   title: "Travailler avec plusieurs fichiers"

@@ -4,6 +4,14 @@ title: Deutsch
 permalink: /lang/de_de/
 lang: "de_de"
 
+global:
+  title: "Global"
+  commands:
+    helpForKeyword: "Öffnet die Hilfe für das Stichwort"
+    openFile: "Öffnet die Datei"
+    saveAsFile: "Speichern als..."
+    closePane: "Schliesst das aktuelle Panel"
+
 cursorMovement:
   title: "Cursor-Bewegungen"
   commands:
@@ -20,8 +28,18 @@ cursorMovement:
     zero: "Sprung zum Zeilenanfang"
     caret: "Sprung zum ersten Zeichen der Zeile"
     dollar: "Sprung zum Zeilenende"
+    g_: "Springt zum letzten nicht-leeren Charakter der Linie"
+    gg: "Sprung zum Anfang des Dokuments"
     G: "Sprung zum Ende des Dokuments"
     fiveG: "Sprung zu Zeile 5"
+    fx: "Springe zum nächsten 'x' auf der Linie"
+    tx: "Springe vor das nächste 'x' auf der Linie"
+    closeCurlyBrace: "Springe zum nächsten Paragraphen (oder Funktion/Block)"
+    openCurlyBrace: "Springe zum vorherigen Paragraphen (oder Funktion/Block)"
+    CtrlPlusb: "Springe eine Bildschirmseite zurück"
+    CtrlPlusf: "Springe eine Bildschirmseite weiter"
+    CtrlPlusu: "Springe eine halbe Bildschirmseite zurück"
+    CtrlPlusd: "Springe eine halbe Bildschirmseite weiter"
   tip: "Um eine Cursor-Bewegung zu wiederholen, ist diese mit einer Zahl zu prefixen. Beispiel: <kbd>4j</kbd> bewegt den Cursor 4 Zeilen nach unten."
 
 insertMode:
@@ -75,6 +93,31 @@ visualCommands:
     d: "markierten Text löschen"
     tilde: "Groß-/Kleinschreibung umschalten"
 
+registers:
+  title: "Register"
+  commands:
+    show: "zeige den Inhalt der Register"
+    pasteRegisterX: "Füge den Inhalt vom Register x ein"
+    yankIntoRegisterX: "Kopiere in das Register x"
+  tip1: "Register werden in ~/.viminfo gespeichert und beim nächsten Start von vim wieder geladen"
+  tip2: "Register 0 enthält immer den Wert, der als letztes kopiert wurde"
+
+marks:
+  title: "Markierungen"
+  commands:
+    list: "Liste alle Markierungen"
+    currentPositionA: "Erstelle die Markierung 'a' an dieser Position"
+    jumpPositionA: "Springe zur Markierung 'a'"
+    yankToMarkA: "Kopiere bis zur Position der Markierung 'a'"
+  tip: ""
+
+macros:
+  title: "Makros"
+  commands:
+    recordA: "Starte Aufnahme 'a'"
+    stopRecording: "Stoppe die Aufnahme"
+    rerun: "Führe das letzte Makro nochmals aus"
+
 cutAndPaste:
   title: "Kopieren/Auschneiden und Einfügen"
   commands:
@@ -95,6 +138,7 @@ exiting:
   title: "Speichern und Beenden"
   commands:
     colonw: "Datei schreiben, aber nicht schließen"
+    colonwsudo: "Schreibe die aktuelle Datei mit sudo"
     colonwq: "Datei schreiben und schließen"
     colonx: "Datei schreiben und schließen"
     colonq: "Datei schließen (schlägt fehl bei ungespeicherten Änderungen)"
@@ -105,10 +149,20 @@ searchAndReplace:
   commands:
     forwardSlashPattern: "Muster suchen (vorwärts)"
     questionMarkPattern: "Muster suchen (rückwärts)"
+    backslashVpattern: "'very magic' pattern: nicht-alphanummerische Charakter werden als regex-Symbole interpretiert (kein Escaping benötigt)"
     n: "Suche wiederholen (selbe Richtung)"
     N: "Suche wiederholen (entgegengesetzte Richtung)"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "Muster im gesamten Dokument ersetzen"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "Muster im gesamten Dokument ersetzen, mit Bestätigung"
+    colonnoh: "Entferne alle Markierungen von Such-Treffern"
+
+searchMultipleFiles:
+  title: "Suchen in mehreren Dateien"
+  commands:
+    colonvimgrep: "Muster suchen in mehreren Dateien"
+    coloncn: "Sprung zum nächsten Muster (vorwärts)"
+    coloncp: "Sprung zum nächsten Muster (rückwärts)"
+    coloncopen: "Fenster öffnen mit Liste von Mustern"
 
 workingWithMultipleFiles:
   title: "Arbeit mit mehreren Dateien"
@@ -116,6 +170,7 @@ workingWithMultipleFiles:
     colone: "Datei im neuen Buffer bearbeiten"
     colonbnext: "zum nächsten Buffer springen"
     colonbprev: "zum vorherigen Buffer springen"
+    colonls: "Alle offenen Buffer auflisten"
     colonbd: "Buffer löschen (Datei schließen)"
     colonsp: "Datei im neuen Buffer bearbeiten und Fenster horizontal teilen"
     colonvsp: "Datei im neuen Buffer bearbeiten und Fenster vertikal teilen"
@@ -139,6 +194,12 @@ tabs:
     colontabmove:  "aktuellen Tab an #te Position bewegen (indiziert von 0 an)"
     colontabc: "aktuellen Tab, inklusiver aller Fenster, schließen"
     colontabo: "alle Tabs schließen, außer dem Aktuellen"
+    colontabdo: "führt <code>command</code> für alle Tabs aus (z.B.: <code>:tabdo q</code> - Schließt alle geöffneten Tabs)"
+
+words:
+    keyword: "Stichwort"
+    file: "Datei"
+    movement: "Cursor-Bewegung"
 
 languages:
   title: "Sprachen"

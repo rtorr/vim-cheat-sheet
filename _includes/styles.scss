@@ -1,6 +1,3 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
-
 /*Layout*/
 
 * {
@@ -45,6 +42,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 /*-----------------*/
 
 body {
+  background-color: #fff;
   color: #000;
   font-family: Georgia, serif;
   font-size: 16px;
@@ -54,6 +52,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: inherit;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
+  letter-spacing: normal;
   line-height: 1.1;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -86,6 +85,7 @@ a:hover {
 p {
   margin: 12px 0;
   line-height: 20px;
+  letter-spacing: normal;
 }
 
 ul {
@@ -128,12 +128,12 @@ kbd {
   padding: 19px;
 }
 
-#footer {
+.link-to-repo {
   margin: 20px 0;
   text-align: center;
 }
 
-#footer p {
+.link-to-repo p {
   margin-bottom: inherit;
 }
 
@@ -186,4 +186,92 @@ kbd {
   line-height: inherit;
   list-style-type: none;
   padding: 7px 7px;
+}
+
+@media print {
+
+  html, body {
+    height: 90%;
+  }
+
+  body {
+    line-height: 1.3;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-left: 0;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 10px;
+    margin-bottom: -10px;
+    margin-top: 0;
+    line-height: 10px;
+  }
+
+  #footer, .link-to-repo {
+    height: 0px;
+    display: none;
+  }
+
+  .commands-container {
+    clear: both;
+    overflow: hidden;
+  }
+
+  .commands-container > .grid-block:first-child {
+    width: 60%;
+  }
+
+  .commands-container > .grid-block:last-child .grid-lg-1-3 {
+    width: 50%;
+  }
+
+  .grid-block {
+    clear: none;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    width: 40%;
+  }
+
+  .grid-1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .grid-lg-1-3 {
+    display: inline-block;
+    float: left;
+    letter-spacing: normal;
+    padding: 0;
+    word-spacing: normal;
+    text-rendering: auto;
+    width: 33.3333%;
+    zoom: 1;
+  }
+
+  li {
+    line-height: initial;
+    padding: 4px 5px;
+  }
+
+  kbd {
+    color: #000;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .well {
+    height: 0px;
+    display: none;
+  }
+}
+
+@page {
+  margin: 0.5cm;
 }

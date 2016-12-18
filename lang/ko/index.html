@@ -20,8 +20,13 @@ cursorMovement:
     zero: "행의 선두로 점프"
     caret: "행의 선두 문자로 점프"
     dollar: "행의 후미로 점프"
+    gg: "문서의 첫번째 행으로 점프"
     G: "문서의 마지막 행으로 점프"
     fiveG: "5번째 라인으로 점프"
+    fx: "문자 x가 나타나는곳으로 이동"
+    tx: "문자 x가 나타나는곳 앞으로 이동"
+    closeCurlyBrace: "다음 단락(또는 함수/블락)으로 이동"
+    openCurlyBrace: "이전 단락(또는 함수/블락)으로 이동"
   tip: "커서 이동 명령 앞에 숫자를 붙이면 그 수 만큼 반복. 예를 들어서, <kbd>4j</kbd> 는 4행 아래로 이동."
 
 insertMode:
@@ -95,6 +100,7 @@ exiting:
   title: "나가기"
   commands:
     colonw: "나가지 않고 저장"
+    colonwsudo: "나가지 않고 sudo로 현재파일 저장"
     colonwq: "저장하고 나가기"
     colonx: "저장하고 나가기"
     colonq: "저장하지 않고 나가기(저장하지 않은 수정이 있을 경우 실패)"
@@ -105,17 +111,28 @@ searchAndReplace:
   commands:
     forwardSlashPattern: "패턴 검색"
     questionMarkPattern: "패턴 검색 전방으로"
+    backslashVpattern: "'마법' 패턴: 영문/숫자가 아닌 문자들은 정규식 심볼로 해석 (정규식 이스케이프 필요없음)"
     n: "같은 방향으로 다시 검색"
     N: "역방향으로 다시 검색"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "파일 내 모든 old를 new로 치환"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "파일 내 모든 old를 new로 치환(확인)"
+    colonnoh: "검색 매치의 하이라이트를 제거"
 
+searchMultipleFiles:
+  title: "다수 파일내 검색"
+  commands:
+    colonvimgrep: "다수의 파일에서 패턴으로 검색"
+    coloncn: "다음 매치로 이동"
+    coloncp: "이전 매치로 이동"
+    coloncopen: "매치된 리스트를 새 창으로 열기"
+    
 workingWithMultipleFiles:
-  title: "복수개의 파일 작업"
+  title: "다수 파일 작업"
   commands:
     colone: "새 버퍼에서 파일 편집"
     colonbnext: "다음 버퍼로 이동"
     colonbprev: "앞 버퍼로 이동"
+    colonls: "열려있는 모든 버퍼를 목록화"
     colonbd: "버퍼를 삭제(파일을 닫음)"
     colonsp: "분할 윈도우에 새로운 버퍼의 새로운 파일을 열기"
     colonvsp: "세로 분활 윈도우에 새로운 버퍼에 새로운 파일을 열기"
@@ -139,6 +156,7 @@ tabs:
     colontabmove:  "현재 탭을 n번째로 이동(0부터 시작)"
     colontabc: "현재 탭을 닫기"
     colontabo: "현재 탭 이외의 모든 탭 닫기"
+    colontabdo: "모든탭에 <code>명령어</code> 실행하기(e.g. <code>:tabdo q</code> - 열린 모든탭 닫기)"
 
 languages:
   title: "언어"

@@ -1,51 +1,32 @@
-# Site settings
-title: Vim Cheat Sheet
-email: rtorruellas@gmail.com
-description: "A mobile friendly VIM cheat sheet"
-baseurl: ""
-url: "http://vim.rtorr.com"
-twitter_username: richardiii
-github_username: rtorr
-
-# Build settings
-markdown: kramdown
-permalink: pretty
-sass:
-  style: compressed
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      lang: "en_us"
+---
+layout: page
+title: العربية
+permalink: /lang/ar/
+lang: "ar"
 
       cursorMovement:
-        title: "Cursor movement"
+        title: "تحريك المؤشر"
         commands:
-          h: "move cursor left"
-          j: "move cursor down"
-          k: "move cursor up"
-          l: "move cursor right"
-          w: "jump forwards to the start of a word"
-          W: "jump forwards to the start of a word (words can contain punctuation)"
-          e: "jump forwards to the end of a word"
-          E: "jump forwards to the end of a word (words can contain punctuation)"
-          b: "jump backwards to the start of a word"
-          B: "jump backwards to the start of a word (words can contain punctuation)"
-          H: "move to top of screen"
-          M: "move to middle of screen"
-          L: "move to bottom of screen"
-          zero: "jump to the start of the line"
-          caret: "jump to the first non-blank character of the line"
-          dollar: "jump to the end of the line"
-          g_: "jump to the last non-blank character of the line"
-          gg: "go to the first line of the document"
-          G: "go to the last line of the document"
-          fiveG: "go to line 5"
-          fx: "jump to next occurrence of character x"
-          tx: "jump to before next occurrence of character x"
-          closeCurlyBrace: "jump to next paragraph (or function/block, when editing code)"
+          h: "تحريك المؤشر لليسار"
+          j: "تحريك المؤشر للأسفل"
+          k: "تحريك المؤشر للأعلى"
+          l: "تحريك المؤشر لليمين"
+          w: "اقفز للأمام إلى بداية كليمة"
+          W: "اقفز للأمام إلى بداية كليمة (يمكن لكلمات أن تشمل علامات الترقيم)"
+          e: "اقفز للأمام إلى نهاية كليمة"
+          E: "اقفز للأمام إلى نهاية كليمة (يمكن لكلمات أن تشمل علامات الترقيم)"
+          b: "اقفز للوراء إلى بداية كليمة"
+          B: "اقفز للوراء إلى بداية كليمة (يمكن لكلمات أن تشمل علامات الترقيم)"
+          zero: "اقفز إلى بداية السطر"
+          caret: "اقفز إلى الحرف الأول غير فارغ في السطر"
+          dollar:  "اقفز إلى نهاية السطر"
+          g_: "اقفز إلى الحرف الآخر غير فارغ في السطر"
+          gg: "اذهب إلى السطر الأول في الملف"
+          G: "اذهب إلى السطر الآخر في الملف"
+          fiveG: "اذهب إلى سطر ٥"
+          fx: "اقفز إلى موقف الحدوث التالي لحرف x"
+          tx: "اقفز إلى الموقف قبل الحدوث التالي لحرف x"
+          closeCurlyBrace: "/ البلوك عند تحرير الكود)اقفز إلى القترة التالية (أم الدالة"
           openCurlyBrace: "jump to previous paragraph (or function/block, when editing code)"
           CtrlPlusb: "move back one full screen"
           CtrlPlusf: "move forward one full screen"
@@ -104,55 +85,18 @@ defaults:
           d: "delete marked text"
           tilde: "switch case"
 
-      registers:
-        title: "Registers"
-        commands:
-          show: "show registers content"
-          pasteRegisterX: "paste contents of register x"
-          yankIntoRegisterX: "yank into register x"
-        tip1: "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim."
-        tip2: "Register 0 contains always the value of the last yank command."
-
-      marks:
-        title: "Marks"
-        commands:
-          list: "list of marks"
-          currentPositionA: "set current position for mark A"
-          jumpPositionA: "jump to position of mark A"
-          yankToMarkA: "yank text to position of mark A"
-        tip: ""
-
-      macros:
-        title: "Macros"
-        commands:
-          recordA: "record macro a"
-          stopRecording: "stop recording macro"
-          rerun: "rerun last run macro"
-
-      global:
-        title: "Global"
-        commands:
-          helpForKeyword: "open help for keyword"
-          openFile: "open file"
-          saveAsFile: "save file as"
-          closePane: "close current pane"
-
       cutAndPaste:
         title: "Cut and paste"
         commands:
           yy: "yank (copy) a line"
           twoyy: "yank (copy) 2 lines"
-          yw: "yank (copy) the characters of the word from the cursor position to the start of the next word"
-          yiw: "yank (copy) word under the cursor"
-          yaw: "yank (copy) word under the cursor and the space after or before it"
+          yw: "yank (copy) word"
           yDollar: "yank (copy) to end of line"
           p: "put (paste) the clipboard after cursor"
           P: "put (paste) before cursor"
           dd: "delete (cut) a line"
           twodd: "delete (cut) 2 lines"
-          dw: "delete (cut) the characters of the word from the cursor position to the start of the next word"
-          diw: "delete (cut) word under the cursor"
-          daw: "yank (copy) word under the cursor and the space after or before it"
+          dw: "delete (cut) word"
           D: "delete (cut) to the end of the line"
           dDollar: "delete (cut) to the end of the line"
           x: "delete (cut) character"
@@ -218,11 +162,6 @@ defaults:
           colontabc: "close the current tab and all its windows"
           colontabo: "close all tabs except for the current one"
           colontabdo: "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
-
-      words:
-        keyword: "keyword"
-        file: "file"
-        movement: "movement"
 
       languages:
         title: "Languages"

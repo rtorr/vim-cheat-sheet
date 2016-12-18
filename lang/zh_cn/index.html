@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 简体汉语
+title: 简体中文
 permalink: /lang/zh_cn/
 lang: "zh_cn"
 
@@ -15,13 +15,23 @@ cursorMovement:
     W: "移动到下个单词开头(单词含标点)"
     e: "移动到下个单词结尾"
     E: "移动到下个单词结尾(单词含标点)"
-    b: "移动到上个单词结尾"            
+    b: "移动到上个单词结尾"
     B: "移动到上个单词结尾(单词含标点)"
     zero: "移动到行首"
     caret: "移动到行首的非空白符"
     dollar: "移动到行尾"
-    G: "移动到文档末行行首"
+    g_: "移动到行内最后一个非空白符"
+    gg: "移动到文件第一行"
+    G: "移动到文件最后一行"
     fiveG: "移动到第五行"
+    fx: "移动到字符 x 下次出现的位置"
+    tx: "移动到字符 x 下次出现的位置的前一个字符"
+    closeCurlyBrace: "移动到下一个段落 (当编辑代码时则为函数／代码块)"
+    openCurlyBrace: "移动到上一个段落 (当编辑代码时则为函数／代码块)"
+    CtrlPlusb: "向后滚动一屏"
+    CtrlPlusf: "向前滚动一屏"
+    CtrlPlusu: "向后滚动半屏"
+    CtrlPlusd: "向前滚动半屏"
   tip: "命令前追加数字表示命令的重复次数, 比如 <kbd>4j</kbd> 表示向下移动四行"
 
 insertMode:
@@ -95,6 +105,7 @@ exiting:
   title: "退出"
   commands:
     colonw: "保存"
+    colonwsudo: "使用 sudo 保存当前文件"
     colonwq: "保存并退出"
     colonx: "保存并退出(同<kbd>:wq</kbd>)"
     colonq: "退出(修改未保存时警告)"
@@ -105,10 +116,20 @@ searchAndReplace:
   commands:
     forwardSlashPattern: "查找<kbd>pattern</kbd>"
     questionMarkPattern: "向上查找<kbd>pattern</kbd>"
+    backslashVpattern: "<kbd>pattern</kbd> 中的非字母数字字符被视为正则表达式特殊字符 (不需转义字符)"
     n: "查找下一个"
     N: "查找上一个"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "替换全部"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "(逐个)替换"
+    colonnoh: "移除搜索结果的高亮显示"
+
+searchMultipleFiles:
+  title: "多文件搜索"
+  commands:
+    colonvimgrep: "在多个文件中搜索 <kbd>pattern</kbd>"
+    coloncn: "移动至下一个"
+    coloncp: "移动至上一个"
+    coloncopen: "打开搜索结果列表"
 
 workingWithMultipleFiles:
   title: "多文件"
@@ -116,27 +137,31 @@ workingWithMultipleFiles:
     colone: "新建缓冲区打开 filename"
     colonbnext: "切换到下个缓冲区"
     colonbprev: "切换到上个缓冲区"
+    colonls: "列出所有打开的缓冲区"
     colonbd: "关闭缓冲区"
-    colonsp: "新建缓冲区打开 filename 并水平分栏"
-    colonvsp: "新缓冲区打开 filename 并垂直分栏"
-    ctrlPlusws: "水平分栏"
-    ctrlPlusww: "在分栏间切换"
-    ctrlPluswq: "关闭分栏"
-    ctrlPluswv: "垂直分栏"
-    ctrlPluswh: "切换到右侧分栏"
-    ctrlPluswl: "切换到左侧分栏"
+    colonsp: "新建缓冲区打开 filename 并水平分割窗口"
+    colonvsp: "新缓冲区打开 filename 并垂直分割窗口"
+    ctrlPlusws: "水平分割窗口"
+    ctrlPlusww: "在窗口间切换"
+    ctrlPluswq: "关闭窗口"
+    ctrlPluswv: "垂直分割窗口"
+    ctrlPluswh: "切换到右侧窗口"
+    ctrlPluswl: "切换到左侧窗口"
+    ctrlPluswj: "切换到下侧窗口"
+    ctrlPluswk: "切换到上侧窗口"
 
 tabs:
-  title: "页签"
+  title: "标签"
   commands:
-    colonTabNew: "创建新页签/在新标签页中打开文档"
-    ctrlPluswT: "将分栏变成页签"
-    gt: "切换到下一个页签"
-    gT: "切换到上一个页签"
-    hashgt: "切换到第 <kbd>#</kbd> 个页签"
-    colontabmove:  "移动页签到第 <kbd>#</kbd> 位(下标从 0 开始)"
-    colontabc: "关闭当前页签"
-    colontabo: "关闭其他页签"
+    colonTabNew: "在新标签中打开文件"
+    ctrlPluswT: "将窗口变成标签"
+    gt: "切换到下一个标签"
+    gT: "切换到上一个标签"
+    hashgt: "切换到第 <kbd>#</kbd> 个标签"
+    colontabmove:  "移动标签到第 <kbd>#</kbd> 位(下标从 0 开始)"
+    colontabc: "关闭当前标签"
+    colontabo: "关闭其他标签"
+    colontabdo: "在所有标签中执行命令 (例如 <kbd>:tabdo q</kbd> 关闭所有标签)"
 
 languages:
   title: "语言"
