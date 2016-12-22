@@ -9,7 +9,11 @@ permalink: manifest.json
       "src": "images/vim-cheat-sheet-icon-128.png",
       "sizes": "128x128",
       "type": "image/png"
-    }, {
+    },{
+      "src": "images/vim-cheat-sheet-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },{
       "src": "images/vim-cheat-sheet-icon-192.png",
       "sizes": "192x192",
       "type": "image/png"

@@ -223,7 +223,11 @@ layout: default
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('{{ "/js/service-worker.js" | prepend: site.baseurl }}');
+    navigator.serviceWorker.register('{{ "/service-worker.js" | prepend: site.baseurl }}').then(function(registration) {
+      console.log('ServiceWorker registration successful with scope:', registration.scope);
+    }).catch(function(error) {
+      console.log('ServiceWorker registration failed:', error);
+    });
   }
 </script>
 </body>
