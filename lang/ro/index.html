@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Romana 
+title: Romana
 permalink: /lang/ro/
 lang: "ro"
 
@@ -17,13 +17,24 @@ cursorMovement:
     E: "sari la sfarsitul cuvantului (cuvintele pot contine semne de punctuatie)"
     b: "sari inapoi la inceputul cuvantului"
     B: "sari inapoi la inceputul cuvantului (cuvintele pot contine semne de punctuatie)"
+    H: "dute la inceputul ecranului"
+    M: "dute la mijlocul ecranului"
+    L: "dute la sfarsitul ecranului"
     zero: "sari la inceputul liniei"
     caret: "sari la primul caracter care nu e liber de la inceputul liniei"
     dollar: "sari la sfarsitul liniei"
-    G: "dute la ultima line din document"
+    g_: "sari la ultimul caracter non-blank al liniei"
+    gg: "dute la prima linie a documentului"
+    G: "dute la ultima linie a documentului"
     fiveG: "dute la linia 5"
     fx: "dute la urmatoarea referinta a caracterului x"
     tx: "dute la referinta precendenta a caracterului x"
+    closeCurlyBrace: "sari la urmatorul paragraf (sau functie/bloc, cand editezi cod)"
+    operCurlyBrace: "sari la paragraful anterior (sau functie/bloc, cand editezi cod)"
+    CtrlPlusb: "mergi inapoi un ecran intreg"
+    CtrlPlusf: "mergi inainte un ecran intreg"
+    CtrlPlusu: "mergi inapoi jumatate de ecran"
+    CtrlPlusd: "mergi inainte jumatate de ecran"
   tip: "Prefixeaza comanda de miscare a cursorului cu un numar pentru a o repeta. De exemplu, <kbd>4j</kbd> muta cursorul cu 4 linii in jos."
 
 insertMode:
@@ -77,18 +88,54 @@ visualCommands:
     d: "sterge textul marcat"
     tilde: "schimba capitala caracterului (majuscula/litera mica)"
 
+registers:
+  title: "Registre"
+  commands:
+    show: "arata continutul registrelor"
+    pasteRegisterX: "lipeste continutul registului x"
+    yankIntoRegisterX: "copie in registrul x"
+  tip1: "Registrele sunt salvate in ~/.viminfo, si vor fi incarcate din nou la urmatorul restart"
+  tip2: "Registrul 0 intotdeauna contine valoarea ultimei comenzi de copiere"
+
+marks:
+  title: "Insemne"
+  commands:
+    list: "lista insemnelor"
+    currentPositionA: "seteaza pozitia curenta pentru insemnul A"
+    jumpPositionA: "sari la pozitia insemnului A"
+    yankToMarkA: "copie textul pana la pozitia insemnului A"
+
+macros:
+  title: "Macros"
+  commands:
+    recordA: "inregistreaza macro-ul a"
+    stopRecording: "termina inregistrea macro-ului a"
+    rerun: "ruleaza ultimul macro"
+
+global:
+  title: "Global"
+  commands:
+    helpForKeyword: "ajutor pentru cuvantul keye"
+    openFile: "deschide fisier"
+    saveAsFile: "salveaza fisierul ca"
+    closePane: "inchide panoul current"
+
 cutAndPaste:
   title: "Copiere/taiere si lipire"
   commands:
     yy: "copie o linie"
     twoyy: "copie 2 linii"
     yw: "copie un cuvant"
+    yiw: "copie cuvantul de sub cursor"
+    yaw: "copie cuvantul de sub cursor si spatiul dinaintea lui"
     yDollar: "copie pana la sfarsitul liniei"
     p: "lipeste din clipboard dupa cursor"
     P: "lipeste inainte de cursor"
     dd: "sterge (taie) o linie"
     twodd: "sterge (taie) 2 linii"
     dw: "sterge (taie) un cuvant"
+    diw: "sterge (taie) cuvantul de sub cursor"
+    daw: "sterge (taie) cuvantul de sub cursor si spatiul de dinainte si dupa el"
     D: "sterge (taie) pana la sfarsitul liniei"
     dDollar: "sterge (taie) pana la sfarsitul liniei"
     x: "sterge (taie) un caracter"
@@ -97,7 +144,9 @@ exiting:
   title: "Iesire"
   commands:
     colonw: "salveaza fisierul, dar nu iesi"
+    colonwsudo: "salveaza fisierul folosind sudo"
     colonwq: "salveaza fisierul si iesi din program"
+    colonx: "salveaza fisierul si iesi din program"
     colonq: "iesi din program (nu iese daca fisierul nu este salvat)"
     colonqbang: "iesi si sterge modificarile din fisier"
 
@@ -106,10 +155,20 @@ searchAndReplace:
   commands:
     forwardSlashPattern: "cauta dupa sablon"
     questionMarkPattern: "cauta inapoi dupa sablon"
+    backslashVpattern: "sablon 'foarte magic': caracterele non-alfanumerice sunt interpretate ca symboluri regex (nu e nevoie de escaping)"
     n: "repeta cautarea inainte"
     N: "repeta cautarea inapoi"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "inlocuieste peste tot old cu new in fisier"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "inlocuieste peste tot old cu new in fisier cu confirmare"
+    colonnoh: "sterge highlightul cuvintelor potrivite"
+
+searchMultipleFiles:
+  title: "Cauta in fisiere multiple"
+  commands:
+    colonvimgrep: "cauta dupa sablon in fisiere multiple"
+    coloncn: "sari la urmatoarea potrivire"
+    coloncp: "sari la potrivirea anterioara"
+    coloncopen: "deschide o fereastra care contine lista de potriviri"
 
 workingWithMultipleFiles:
   title: "Editarea fisierelor multiple"
@@ -117,6 +176,7 @@ workingWithMultipleFiles:
     colone: "editeaza fisierul respectin intr-un nou buffer"
     colonbnext: "dute la urmatorul buffer"
     colonbprev: "dute la bufferul anterior"
+    colonls: "arata o lista cu bufferele deschise"
     colonbd: "sterge un buffer (inchide fisierul)"
     colonsp: "deschide fisierul intr-un buffer now si imparte fereastra"
     colonvsp: "deschide fisierul intr-un buffer now si imparte fereastra vertical"
@@ -140,6 +200,12 @@ tabs:
     colontabmove: "dute la tabul din pozitia <kbd>#</kbd>"
     colontabc: "inchide tabul curent si toate ferestrele lui"
     colontabo: "inchide toate taburile in afara de cel curent"
+    colontabdo: "ruleaza <code>comanda</code> in toate taburile (ex <code>:tabo q</code> - inchide toate taburile deschise)"
+
+words:
+  keyword: "cuvant keye"
+  file: "fisier"
+  movement: "miscare"
 
 languages:
   title: "Alta limba"
