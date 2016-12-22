@@ -2,9 +2,26 @@
 
 console.log('WORKER: executing.');
 
-var version = 'v1.0.0';
+var version = 'v1.0.1';
 var pathsToCache = [
-  '/'
+  '/',
+  '/lang/pt_br/',
+  '/lang/de_de/',
+  '/lang/id/',
+  '/lang/es_es/',
+  '/lang/tr/',
+  '/lang/th/',
+  '/lang/zh_tw/',
+  '/lang/ko/',
+  '/lang/ru/',
+  '/lang/zh_cn/',
+  '/lang/it/',
+  '/lang/fr_fr/',
+  '/lang/uk/',
+  '/lang/nl_nl/',
+  '/lang/ja/',
+  '/lang/ro/',
+  '/code_of_conduct/'
 ];
 
 self.addEventListener('install', event => {

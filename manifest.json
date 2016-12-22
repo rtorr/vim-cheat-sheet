@@ -1,0 +1,25 @@
+---
+permalink: manifest.json
+---
+
+{
+  "name": "VIM Cheat Sheet",
+  "short_name": "VIM Cheat Sheet",
+  "icons": [{
+      "src": "images/vim-cheat-sheet-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "images/vim-cheat-sheet-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "images/vim-cheat-sheet-icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    }],
+  "start_url": "/",
+  "background_color": "#fff",
+  "display": "standalone",
+  "theme_color": "#FA4949"
+}
