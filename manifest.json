@@ -4,7 +4,7 @@ permalink: manifest.json
 
 {
   "name": "VIM Cheat Sheet",
-  "short_name": "VIM Cheat Sheet",
+  "short_name": "VIM",
   "icons": [{
       "src": "images/vim-cheat-sheet-icon-128.png",
       "sizes": "128x128",

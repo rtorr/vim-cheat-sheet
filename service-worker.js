@@ -4,9 +4,11 @@ permalink: service-worker.js
 
 "use strict";
 
-console.log('WORKER: executing.');
 
-var version = 'v1.0.2';
+var version = 'v1.0.3';
+
+console.log('WORKER: executing.', version);
+
 var pathsToCache = [
   '/',
   '/lang/pt_br/',
@@ -25,7 +27,8 @@ var pathsToCache = [
   '/lang/nl_nl/',
   '/lang/ja/',
   '/lang/ro/',
-  '/code_of_conduct/'
+  '/code_of_conduct/',
+  '/service-worker.js'
 ];
 
 self.addEventListener('install', event => {
