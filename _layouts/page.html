@@ -228,13 +228,6 @@ layout: default
   ga('create', 'UA-25408695-1', 'auto');
   ga('send', 'pageview');
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('{{ "/service-worker.js" | prepend: site.baseurl }}').then(function (registration) {
-      console.log('ServiceWorker registration successful with scope:', registration.scope);
-    }).catch(function (error) {
-      console.log('ServiceWorker registration failed:', error);
-    });
-  }
-  if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('{{ "/service-worker.js" | prepend: site.baseurl }}').then(function (reg) {
       reg.onupdatefound = function () {
         var installingWorker = reg.installing;
