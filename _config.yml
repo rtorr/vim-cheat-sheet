@@ -47,6 +47,7 @@ defaults:
           tx: "jump to before next occurrence of character x"
           closeCurlyBrace: "jump to next paragraph (or function/block, when editing code)"
           openCurlyBrace: "jump to previous paragraph (or function/block, when editing code)"
+          centerCursor: "center cursor on screen"
           CtrlPlusb: "move back one full screen"
           CtrlPlusf: "move forward one full screen"
           CtrlPlusu: "move back 1/2 a screen"
