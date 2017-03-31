@@ -11,7 +11,7 @@ cursorMovement:
     j: "下移光标"
     k: "上移光标"
     l: "右移光标"
-    H: "移动到当前页面顶部
+    H: "移动到当前页面顶部"
     M: "移动到当前页面中间"
     L: "移动到当前页面底部"
     w: "移动到下个单词开头"
@@ -31,6 +31,7 @@ cursorMovement:
     tx: "移动到字符 x 下次出现的位置的前一个字符"
     closeCurlyBrace: "移动到下一个段落 (当编辑代码时则为函数／代码块)"
     openCurlyBrace: "移动到上一个段落 (当编辑代码时则为函数／代码块)"
+    centerCursor: "移动屏幕使光标居中"
     CtrlPlusb: "向后滚动一屏"
     CtrlPlusf: "向前滚动一屏"
     CtrlPlusu: "向后滚动半屏"
@@ -87,6 +88,39 @@ visualCommands:
     y: "复制"
     d: "剪切"
     tilde: "大小写切换"
+
+registers:
+  title: "寄存器"
+  commands:
+    show: "显示寄存器内容"
+    pasteRegisterX: "粘贴寄存器 x 中的内容"
+    yankIntoRegisterX: "复制内容到寄存器 x"
+  tip1: "寄存器被存储在 ~/.viminfo 中, 在下次重启vim时仍会加载"
+  tip2: "寄存器 0 存储上一次复制的值"
+
+marks:
+  title: "标记"
+  commands:
+    list: "标记列表"
+    currentPositionA: "设置当前位置为标记 a"
+    jumpPositionA: "跳转到标记 a 的位置"
+    yankToMarkA: "复制当前位置到标记 a 的内容"
+
+macros:
+  title: "宏"
+  commands:
+    recordA: "录制宏 a"
+    stopRecording: "停止录制宏"
+    runA: "执行宏 a"
+    rerun: "重新执行上次执行的宏"
+
+global:
+  title: "全局"
+  commands:
+    helpForKeyword: "打开关键字帮助"
+    openFile: "打开文件"
+    saveAsFile: "另存为"
+    closePane: "关闭当前窗口"
 
 cutAndPaste:
   title: "剪切, 复制, 粘贴"
