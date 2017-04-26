@@ -138,6 +138,7 @@ defaults:
           openFile: "open file"
           saveAsFile: "save file as"
           closePane: "close current pane"
+          K: "open man page for word under the cursor"
 
       cutAndPaste:
         title: "Cut and paste"
