@@ -17,12 +17,6 @@ to make a new language can be found in the `lang` folder.
 
 ### Setting up for development
 
-#### Vagrant
-
-```
-vagrant up
-```
-
 #### Local
 
 Read about installing [jekyll](http://jekyllrb.com/)
