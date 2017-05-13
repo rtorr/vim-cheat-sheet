@@ -1,0 +1,219 @@
+---
+layout: page
+title: Polski
+permalink: /lang/pl_pl/
+lang: "pl_pl"
+
+poruszanieKursora:
+  tytuł: "Poruszanie kursora"
+  polecenia:
+    h: "przesuń kursor w lewo"
+    j: "przesuń kursor w dół"
+    k: "przesuń kursor w górę"
+    l: "przesuń kursor w prawo"
+    w: "skocz do początku następnego wyrazu"
+    W: "skocz do początku następnego wyrazu (słowa mogą zawierać punktuacje)"
+    e: "skocz do końcu bieżącego wyrazu"
+    E: "skocz do końcu bieżącego wyrazu (slowa moga zawierac punktuacje)"
+    b: "skocz do początku bieżącego wyrazu"
+    B: "skocz do początku bieżącego wyrazu (slowa moga zawierac punktuacje)"
+    H: "przejdz do gory ekranu"
+    M: "skocz do połowy ekranu"
+    L: "skocz do dołu ekranu"
+    zero: "skocz do początku linii"
+    caret: "przesuń kursor na pierwszy niepusty znak"
+    dollar: "skocz na koniec wiersza"
+    g_: "skocz do ostatniego niepustego znaku na końcu wiersza"
+    gg: "kursor do pierwszego wiersza w pliku"
+    G: "skocz do ostatniego wiersza w pliku"
+    fiveG: "skocz do linii 5"
+    fx: "przesuń kursor na pierwszy znaleziony znak 'x'"
+    tx: "przesuń kursor przed pierwszym znalezionym znakiem 'x'"
+    closeCurlyBrace: "skocz do następnego paragrafu (albo funkcji/bloku kodu w trakcie edycji kodu)"
+    openCurlyBrace: "skocz do poprzedniego paragrafu (albo funkcji/bloku kodu w trakcie edycji kodu)"
+    centerCursor: "wyśrodkuj kursor na ekranie"
+    CtrlPlusb: "przesuń ekran o całą jego wysokość w górę"
+    CtrlPlusf: "  przesunięcie ekranu o całą jego wysokość w dół"
+    CtrlPlusu: "przesuń ekran o połowę tekstu do góry"
+    CtrlPlusd: "przesuń ekran o połowę tekstu w dol"
+  tip: "Poprzedź komendę ruchu kursora liczbą powtórzeń. Na przykład <kbd>4j</kbd> przesunie w dół 4 wiersze."
+
+wstawianieTekstu:
+  tytuł: "Tryb wprowadzania tekstu: wstawianie/dodawanie tekstu"
+  polecenia:
+    i: "wstaw przed kursorem"
+    I: "wstaw na początku linii"
+    a: "wstaw za kursorem"
+    A: "przesuń kursor na koniec wiersza i wprowadź tekst od tej pozycji"
+    o: "utworz nowy wiersz poniżej bieżącego i wprowadź tekst"
+    O: "utworz nowy wiersz powyżej bieżącego i wprowadź tekst"
+    ea: "wstaw na końcu wyrazu"
+    Esc: "wyjdź z trybu wstawiania"
+
+edycjaTekstu:
+  title: "Edycja"
+  polecenia:
+    r: "zamień pojedynczy znak pod kursorem"
+    J: "połącz wiersze: dodaj wiersz poniżej do bieżącego"
+    cc: "zastąp wiersz (bieżący wiersz się kasuje, kursor ustawia się na jego początku)"
+    cw: "zastąpienie wyrazu (bieżący wyraz się kasuje, kursor ustawia się na jego początku)"
+    cDollar: "usuń wiersz od miejsca wskazywanego przez kursor do końca wiersza"
+    s: "zastąp znak wskazany przez kursor"
+    S: "zastąp wiersz (takie samo znaczenie jak cc)"
+    xp: "transpose two letters (delete and pRaste)"
+    u: "cofnij"
+    CtrlPlusr: "popraw"
+    dot: "powtorz ostatnia komende"
+
+zaznaczanieTekstu:
+  tytuł: "Zaznaczanie tekstu"
+  polecenia:
+    v: "skocz do trybu wizualnego, zaznacz wiersze, potem wykonaj polecenie (podobnie jak y-yank)"
+    V: "start linewise visual mode"
+    o: "przesuń do drugiego końca zaznaczonej części/ move to other end of marked area"
+    CtrlPlusv: "start visual block mode"
+    O: "przesuń do przeciwnego kąta bloku/ move to other corner of block"
+    aw: "zaznacz słowo"
+    ab: "blok z ()/ a block with ()"
+    aB: "blok z {}/ a block with {}"
+    ib: "wewnętrzny blok z ()/ inner block with ()"
+    iB: "wewnętrzny blok z {}/ inner block with {}"
+    Esc: "wyjdź z trybu wizualnego"
+
+wizualnePolecenia:
+  tytuł: "Komendy w trybie wizualnym"
+  polecenia:
+    greaterThan: "przesuń tekst w prawo"
+    lessThan: "przesuń tekst w lewo"
+    y: "kopiuj zaznaczony tekst"
+    d: "usuń zaznaczony tekst"
+    tilde: "zmniejsz/zwiększ znak - switch case"
+
+rejestry:
+  tytuł: "Rejestry"
+  polecenia:
+    show: "pokaż zawartość rejestrów/ show registers content"
+    pasteRegisterX: "wklej zawartość rejestru x/ paste contents of register x"
+    yankIntoRegisterX: "kopiuj do rejestru/ yank into register x"
+  wskazówka1: "Rejestry zostały zapisane w ~/.viminfo i zostaną załadowane przy ponownym uruchomieniu vima/ Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim."
+  wskazówka2: "Rejestr 0 zawsze zawiera wartość ostatnio skopiowanego polecenia/ Register 0 contains always the value of the last yank command."
+
+oznaczanie:
+  tytuł: "Oznaczanie"
+  polecenia:
+    list: "pokaż listę wszystkich zaznaczeń/ list of marks"
+    currentPositionA: "ustaw bieżącą pozycję na oznaczenie A/ set current position for mark A"
+    jumpPositionA: "przeskocz do pozycji oznaczenia A/ jump to position of mark A"
+    yankToMarkA: "kopiuj tekst do pozycji oznaczenia A/ yank text to position of mark A"
+  tip: ""
+
+makra:
+  tytuł: "Makra"
+  polecenia:
+    recordA: "nagraj makro a/ record macro a"
+    stopRecording: "przerwij nagrywanie makra/ stop recording macro"
+    runA: "odtwórz makro a/ run macro a"
+    rerun: "powtórz ostatnio odtworzone makro/ rerun last run macro"
+
+globalne:
+  tytuł: "Globalne"
+  polecenia:
+    helpForKeyword: "otwórz pomoc dla słowa kluczowego/ open help for keyword"
+    openFile: "otwórz plik"
+    saveAsFile: "zapisz plik jako"
+    closePane: "zamknij okienko nawigacji/ close current pane"
+
+wytnijIwklej:
+  tytuł: "Wytnij i wklej"
+  polecenia:
+    yy: "kopiuj wiersz"
+    twoyy: "kopiuj dwa wiersze"
+    yw: "kopiuj litery wyraz od miejsca, gdzie znajduje się kursor, do początku następnego słowa"
+    yiw: "kopiuj wyraz pod kursorem"
+    yaw: "kopiuj wyraz pod kursorem i spacje przed lub za tym wyrazem"
+    yDollar: "kopiuj do końca wiersza"
+    p: "put (paste) the clipboard after cursor"
+    P: "wklej przed kursorem"
+    dd: "kasuj wiersz"
+    twodd: "kasuj dwa wiersze"
+    dw: "kasuj litery wyrazu od miejsca, gdzie znajduje się kursor, do początku następnego słowa"
+    diw: "kasuj wyraz pod kursorem"
+    daw: "kopiuj wyraz pod kursorem i spacje przed wyrazem lub za nim"
+    D: "kasuj do końca wiersza"
+    dDollar: "kasuj do końca wiersza"
+    x: "usuń znak"
+
+wychodzenie:
+  tytuł: "Wychodzenie"
+  polecenia:
+    colonw: "zapisz plik, ale nie wychodz"
+    colonwsudo: "zapisz plik używając sudo"
+    colonwq: "zapisz i wyjdź"
+    colonx: "zapisz i wyjdź"
+    colonq: "wyjdź (nie zadziała, jeśli są niezapisane zmiany)"
+    colonqbang: "wyjdź i odrzuć niezapisane zmiany"
+
+szukajIzastap:
+  tytuł: "Szukaj i zastąp"
+  polecenia:
+    forwardSlashPattern: "szukaj wzoru"
+    questionMarkPattern: "szukaj wzoru wstecznie/ search backward for pattern"
+    backslashVpattern: "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
+    n: "powtórz szukanie w tym samym kierunku/ repeat search in same direction"
+    N: "powtórz szukanie w przeciwnym kierunku/ repeat search in opposite direction"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "zastąp wszystkie stare z nowymi w całym pliku/ replace all old with new throughout file"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "zastąp wszystkie stare z nowymi w całym pliku w potwierdzeniami/ replace all old with new throughout file with confirmations"
+    colonnoh: "usuń podświetlone wyniki/ remove highlighting of search matches"
+
+szukajWieluPlikowRównocześnie:
+  tytuł: "Szukaj w wielu plikach równocześnie"
+  polecenia:
+    colonvimgrep: "szukaj wzorca w wielu plikach/ search for pattern in multiple files"
+    coloncn: "skocz do następnego dopasowania"
+    coloncp: "skocz do poprzedniego dopasowania"
+    coloncopen: "otwórz okno zawierające listę dopasowan"
+
+pracaZwielomaPlikami:
+  tytuł: "Working with multiple files"
+  polecenia:
+    colone: "edytuj plik w nowym buforze/edit a file in a new buffer"
+    colonbnext: "idź do następnego bufora/ go to the next buffer"
+    colonbprev: "wróć do poprzedniego bufora/ go to the previous buffer"
+    colonls: "zrób listę wszystkich otwartych buforów/ list all open buffers"
+    colonbd: "usuń bufer (zamknij plik)/ delete a buffer (close a file)"
+    colonsp: "otwórz plik w nowym buforze i podziel okno/ open a file in a new buffer and split window"
+    colonvsp: "otwórz plik w nowym buforze i podziel okno vertykalnie/ open a file in a new buffer and vertically split window"
+    ctrlPlusws: "podziel okno/ split window"
+    ctrlPlusww: "przełącz okno/ switch windows"
+    ctrlPluswq: "wyjdź z okna/ quit a window"
+    ctrlPluswv: "podziel okno wertykalnie"
+    ctrlPluswh: "przesuń kursor do lewego okna (wertykalny podział)"
+    ctrlPluswl: "przesuń kursor do prawego okna (wertykalny podział)/ move cursor to the right window (vertical split)"
+    ctrlPluswj: "przesuń kursor do okna poniżej (horyzontalny podział)/ move cursor to the window below (horizontal split)"
+    ctrlPluswk: "przesuń kursor do okna powyżej (horyzontalny podział)/ move cursor to the window above (horizontal split)"
+
+karty:
+  tytuł: "Karty"
+  polecenia:
+    colonTabNew: "otwórz plik w nowej karcie"
+    ctrlPluswT: "przesuń podzielone okno do oddzielnej karty // move the current split window into its own tab"
+    gt: "przesuń do następnej karty"
+    gT: "przesuń do poprzedniej karty"
+    hashgt: "przesuń do karty numer #"
+    colontabmove: "przesuń kartę do pozycji #th (liczonej od 0)"
+    colontabc: "zamknij kartę i wszystkie jej okna"
+    colontabo: "zamknij wszystkie karty oprócz bieżącej"
+    colontabdo: "wykonaj <code>polecenie</code> we wszystkich kartach (np. <code>:tabdo q</code> - zamyka wszystkie otwarte karty)"
+
+words:
+  keyword: "keyword"
+  file: "file"
+  movement: "movement"
+
+languages:
+  title: "Languages"
+
+footer: "Checkout the source on"
+
+
+
