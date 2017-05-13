@@ -4,20 +4,20 @@ title: Polski
 permalink: /lang/pl_pl/
 lang: "pl_pl"
 
-poruszanieKursora:
-  tytuł: "Poruszanie kursora"
-  polecenia:
+cursorMovement:
+  title: "Poruszanie kursora"
+  commands:
     h: "przesuń kursor w lewo"
     j: "przesuń kursor w dół"
     k: "przesuń kursor w górę"
     l: "przesuń kursor w prawo"
     w: "skocz do początku następnego wyrazu"
-    W: "skocz do początku następnego wyrazu (słowa mogą zawierać punktuacje)"
+    W: "skocz do początku następnego wyrazu (słowa mogą zawierać punktuację)"
     e: "skocz do końcu bieżącego wyrazu"
-    E: "skocz do końcu bieżącego wyrazu (slowa moga zawierac punktuacje)"
+    E: "skocz do końcu bieżącego wyrazu (słowa mogą zawierać punktuację)"
     b: "skocz do początku bieżącego wyrazu"
-    B: "skocz do początku bieżącego wyrazu (slowa moga zawierac punktuacje)"
-    H: "przejdz do gory ekranu"
+    B: "skocz do początku bieżącego wyrazu (słowa mogą zawierać punktuację)"
+    H: "przejdz do góry ekranu"
     M: "skocz do połowy ekranu"
     L: "skocz do dołu ekranu"
     zero: "skocz do początku linii"
@@ -38,9 +38,9 @@ poruszanieKursora:
     CtrlPlusd: "przesuń ekran o połowę tekstu w dol"
   tip: "Poprzedź komendę ruchu kursora liczbą powtórzeń. Na przykład <kbd>4j</kbd> przesunie w dół 4 wiersze."
 
-wstawianieTekstu:
-  tytuł: "Tryb wprowadzania tekstu: wstawianie/dodawanie tekstu"
-  polecenia:
+insertMode:
+  title: "Tryb wprowadzania tekstu: wstawianie/dodawanie tekstu"
+  commands:
     i: "wstaw przed kursorem"
     I: "wstaw na początku linii"
     a: "wstaw za kursorem"
@@ -50,9 +50,9 @@ wstawianieTekstu:
     ea: "wstaw na końcu wyrazu"
     Esc: "wyjdź z trybu wstawiania"
 
-edycjaTekstu:
+editing:
   title: "Edycja"
-  polecenia:
+  commands:
     r: "zamień pojedynczy znak pod kursorem"
     J: "połącz wiersze: dodaj wiersz poniżej do bieżącego"
     cc: "zastąp wiersz (bieżący wiersz się kasuje, kursor ustawia się na jego początku)"
@@ -65,9 +65,9 @@ edycjaTekstu:
     CtrlPlusr: "popraw"
     dot: "powtorz ostatnia komende"
 
-zaznaczanieTekstu:
-  tytuł: "Zaznaczanie tekstu"
-  polecenia:
+markingText:
+  title: "Zaznaczanie tekstu"
+  commands:
     v: "skocz do trybu wizualnego, zaznacz wiersze, potem wykonaj polecenie (podobnie jak y-yank)"
     V: "start linewise visual mode"
     o: "przesuń do drugiego końca zaznaczonej części/ move to other end of marked area"
@@ -80,52 +80,52 @@ zaznaczanieTekstu:
     iB: "wewnętrzny blok z {}/ inner block with {}"
     Esc: "wyjdź z trybu wizualnego"
 
-wizualnePolecenia:
-  tytuł: "Komendy w trybie wizualnym"
-  polecenia:
+visualCommands:
+  title: "Komendy w trybie wizualnym"
+  commands:
     greaterThan: "przesuń tekst w prawo"
     lessThan: "przesuń tekst w lewo"
     y: "kopiuj zaznaczony tekst"
     d: "usuń zaznaczony tekst"
     tilde: "zmniejsz/zwiększ znak - switch case"
 
-rejestry:
-  tytuł: "Rejestry"
-  polecenia:
+registers:
+  title: "Rejestry"
+  commands:
     show: "pokaż zawartość rejestrów/ show registers content"
     pasteRegisterX: "wklej zawartość rejestru x/ paste contents of register x"
     yankIntoRegisterX: "kopiuj do rejestru/ yank into register x"
   wskazówka1: "Rejestry zostały zapisane w ~/.viminfo i zostaną załadowane przy ponownym uruchomieniu vima/ Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim."
-  wskazówka2: "Rejestr 0 zawsze zawiera wartość ostatnio skopiowanego polecenia/ Register 0 contains always the value of the last yank command."
+  wskazówka2: "Rejestr 0 zawsze zawiera wartość ostatnio skopiowanego commands/ Register 0 contains always the value of the last yank command."
 
-oznaczanie:
-  tytuł: "Oznaczanie"
-  polecenia:
+marks:
+  title: "Oznaczanie"
+  commands:
     list: "pokaż listę wszystkich zaznaczeń/ list of marks"
     currentPositionA: "ustaw bieżącą pozycję na oznaczenie A/ set current position for mark A"
     jumpPositionA: "przeskocz do pozycji oznaczenia A/ jump to position of mark A"
     yankToMarkA: "kopiuj tekst do pozycji oznaczenia A/ yank text to position of mark A"
   tip: ""
 
-makra:
-  tytuł: "Makra"
-  polecenia:
+macros:
+  title: "Makra"
+  commands:
     recordA: "nagraj makro a/ record macro a"
     stopRecording: "przerwij nagrywanie makra/ stop recording macro"
     runA: "odtwórz makro a/ run macro a"
     rerun: "powtórz ostatnio odtworzone makro/ rerun last run macro"
 
-globalne:
-  tytuł: "Globalne"
-  polecenia:
+global:
+  title: "Globalne"
+  commands:
     helpForKeyword: "otwórz pomoc dla słowa kluczowego/ open help for keyword"
     openFile: "otwórz plik"
     saveAsFile: "zapisz plik jako"
     closePane: "zamknij okienko nawigacji/ close current pane"
 
-wytnijIwklej:
-  tytuł: "Wytnij i wklej"
-  polecenia:
+cutAndPaste:
+  title: "Wytnij i wklej"
+  commands:
     yy: "kopiuj wiersz"
     twoyy: "kopiuj dwa wiersze"
     yw: "kopiuj litery wyraz od miejsca, gdzie znajduje się kursor, do początku następnego słowa"
@@ -143,9 +143,9 @@ wytnijIwklej:
     dDollar: "kasuj do końca wiersza"
     x: "usuń znak"
 
-wychodzenie:
-  tytuł: "Wychodzenie"
-  polecenia:
+exiting:
+  title: "Wychodzenie"
+  commands:
     colonw: "zapisz plik, ale nie wychodz"
     colonwsudo: "zapisz plik używając sudo"
     colonwq: "zapisz i wyjdź"
@@ -153,9 +153,9 @@ wychodzenie:
     colonq: "wyjdź (nie zadziała, jeśli są niezapisane zmiany)"
     colonqbang: "wyjdź i odrzuć niezapisane zmiany"
 
-szukajIzastap:
-  tytuł: "Szukaj i zastąp"
-  polecenia:
+searchAndReplace:
+  title: "Szukaj i zastąp"
+  commands:
     forwardSlashPattern: "szukaj wzoru"
     questionMarkPattern: "szukaj wzoru wstecznie/ search backward for pattern"
     backslashVpattern: "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
@@ -165,17 +165,17 @@ szukajIzastap:
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "zastąp wszystkie stare z nowymi w całym pliku w potwierdzeniami/ replace all old with new throughout file with confirmations"
     colonnoh: "usuń podświetlone wyniki/ remove highlighting of search matches"
 
-szukajWieluPlikowRównocześnie:
-  tytuł: "Szukaj w wielu plikach równocześnie"
-  polecenia:
+searchMultipleFiles:
+  title: "Szukaj w wielu plikach równocześnie"
+  commands:
     colonvimgrep: "szukaj wzorca w wielu plikach/ search for pattern in multiple files"
     coloncn: "skocz do następnego dopasowania"
     coloncp: "skocz do poprzedniego dopasowania"
     coloncopen: "otwórz okno zawierające listę dopasowan"
 
-pracaZwielomaPlikami:
-  tytuł: "Working with multiple files"
-  polecenia:
+workingWithMultipleFiles:
+  title: "Working with multiple files"
+  commands:
     colone: "edytuj plik w nowym buforze/edit a file in a new buffer"
     colonbnext: "idź do następnego bufora/ go to the next buffer"
     colonbprev: "wróć do poprzedniego bufora/ go to the previous buffer"
@@ -192,9 +192,9 @@ pracaZwielomaPlikami:
     ctrlPluswj: "przesuń kursor do okna poniżej (horyzontalny podział)/ move cursor to the window below (horizontal split)"
     ctrlPluswk: "przesuń kursor do okna powyżej (horyzontalny podział)/ move cursor to the window above (horizontal split)"
 
-karty:
-  tytuł: "Karty"
-  polecenia:
+tabs:
+  title: "Karty"
+  commands:
     colonTabNew: "otwórz plik w nowej karcie"
     ctrlPluswT: "przesuń podzielone okno do oddzielnej karty // move the current split window into its own tab"
     gt: "przesuń do następnej karty"
@@ -205,15 +205,9 @@ karty:
     colontabo: "zamknij wszystkie karty oprócz bieżącej"
     colontabdo: "wykonaj <code>polecenie</code> we wszystkich kartach (np. <code>:tabdo q</code> - zamyka wszystkie otwarte karty)"
 
-words:
-  keyword: "keyword"
-  file: "file"
-  movement: "movement"
+footer: "Sprawdź źródło na"
 
-languages:
-  title: "Languages"
-
-footer: "Checkout the source on"
+---
 
 
 
