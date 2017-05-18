@@ -159,6 +159,7 @@ defaults:
           D: "delete (cut) to the end of the line"
           dDollar: "delete (cut) to the end of the line"
           x: "delete (cut) character"
+          X: "delete (cut) character before cursor"
 
       exiting:
         title: "Exiting"
