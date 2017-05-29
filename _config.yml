@@ -52,6 +52,7 @@ defaults:
           CtrlPlusf: "move forward one full screen"
           CtrlPlusu: "move back 1/2 a screen"
           CtrlPlusd: "move forward 1/2 a screen"
+          percent: "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
         tip: "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
 
       insertMode:
