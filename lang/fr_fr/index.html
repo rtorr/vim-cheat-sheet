@@ -17,15 +17,21 @@ cursorMovement:
     E: "aller en avant à la fin d'un mot (les mots peuvent contenir de la ponctuation)"
     b: "aller en arrière au début d'un mot"
     B: "aller en arrière au début d'un mot (les mots peuvent contenir de la ponctuation)"
+    H: "aller en haut de l'écran"
+    M: "aller au milieu de l'écran"
+    L: "aller en bas de l'écran"
     zero: "aller au début de la ligne"
     caret: "aller au premier caractère non-espace de la ligne"
     dollar: "aller à la fin de la ligne"
+    g_: "aller au dernier charactère non-espace de la ligne"
+    gg: "aller à la première ligne du document"
     G: "aller à la dernière ligne du document"
     fiveG: "aller à la ligne 5"
     fx: "atteindre la prochaine occurence du caractère x"
     tx: "atteindre la précédente occurence du caractère x"
     closeCurlyBrace: "atteindre le prochain paragraphe (ou function/bloc, en mode édition)"
     openCurlyBrace: "atteindre le précédent paragraphe (ou function/bloc, en mode édition)"
+    centerCursor: "centre le curseur sur l'écran"
     CtrlPlusb: "Descendre d'une hauteur d'écran"
     CtrlPlusf: "Monte d'une hauteur d'écran"
     CtrlPlusu: "Descendre d'une demie-hauteur d'écran"
@@ -116,6 +122,7 @@ global:
     openFile: "ouvrir un fichier"
     saveAsFile: "sauvegarder un fichier sous"
     closePane: "fermer le fichier en cours"
+    K: "ouvre la page du manuel (man) du mot sous le curseur"
 
 cutAndPaste:
   title: "Copier-coller"
@@ -141,6 +148,7 @@ exiting:
   title: "Quitter"
   commands:
     colonw: "écrire (sauver) le fichier"
+    colonwsudo: "écrire (sauver) le fichier en utilisant sudo"
     colonwq: "écrire (sauver) et quitter"
     colonx: "écrire (sauver) et quitter"
     colonq: "quitter (échoue s'il y a des modifications non sauvegardées)"
@@ -151,10 +159,12 @@ searchAndReplace:
   commands:
     forwardSlashPattern: "chercher le motif"
     questionMarkPattern: "chercher en arrière le motif"
+    backslashVpattern: "motif 'très magique': les caractères non alphanumériques sont interprétés comme des caracètres spéciaux regex (pas besoin d'échapper)"
     n: "répéter la recherche dans la même direction"
     N: "répéter la recherche dans la direction opposée"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "remplacer toutes les occurrences de old avec new dans tout le fichier"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "remplacer toutes les occurrences de old avec new dans tout le fichier (demande confirmation)"
+    colonnoh: "supprime le surlignage du résultat des recherches"
 
 searchMultipleFiles:
   title: "Rechercher dans plusieurs fichiers"
@@ -170,6 +180,7 @@ workingWithMultipleFiles:
     colone: "modifier un fichier dans un nouveau tampon"
     colonbnext: "aller au tampon suivant"
     colonbprev: "aller au tampon précédent"
+    colonls: "liste tout les tampons ouverts"
     colonbd: "supprimer un tampon (fermer le fichier)"
     colonsp: "ouvrir un fichier dans un nouveau tampon et diviser la fenêtre"
     colonvsp: "ouvrir un fichier dans un nouveau tampon et diviser la fenêtre verticalement"
@@ -177,8 +188,10 @@ workingWithMultipleFiles:
     ctrlPlusww: "changer de fenêtre"
     ctrlPluswq: "fermer la fenêtre"
     ctrlPluswv: "diviser la fenêtre verticalement"
-    ctrlPluswh: "déplacer le curseur vers le prochain tampon"
-    ctrlPluswl: "déplacer le curseur vers le tampon précédent"
+    ctrlPluswh: "déplacer le curseur vers la fenêtre de gauche (division verticale)"
+    ctrlPluswl: "déplacer le curseur vers la fenêtre de droite (division verticale)"
+    ctrlPluswj: "déplacer le curseur vers la fenêtre en dessous (division horizontale)"
+    ctrlPluswk: "déplacer le curseur vers la fenêtre au dessus (division horizontale)"
 
 tabs:
   title: "Onglets"
@@ -191,6 +204,7 @@ tabs:
     colontabmove: "déplacer l'onglet à la position # (commence à 0)"
     colontabc: "fermer l'onglet en cours et toutes ses fenêtres"
     colontabo: "fermer tous les onglets sauf l'onglet courant"
+    colontabdo: "exécute la <code>commande</code> sur tout les onglets (ex: <code>:tabdo q</code> - ferme tout les onglets ouverts)"
 
 footer: "Voir la source sur"
 
