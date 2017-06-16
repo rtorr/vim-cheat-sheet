@@ -1,0 +1,209 @@
+---
+layout: page
+title: Português - Portugal
+permalink: /lang/pt_pt/
+lang: "pt_pt"
+
+global:
+  title: "Global"
+  commands:
+    helpForKeyword: "abrir ajuda para termo"
+    openFile: "abrir ficheiro"
+    saveAsFile: "gravar como"
+    closePane: "fechar painel actual"
+    K: "abrir página do manual para o termo onde está o cursor"
+
+cursorMovement:
+  title: "Movimento do cursor"
+  commands:
+    h: "mover o cursor para a esquerda"
+    j: "mover o cursor para baixo"
+    k: "mover o cursor para cima"
+    l: "mover o cursor para a direita"
+    H: "ir para o topo do ecrã"
+    M: "ir para o meio do ecrã"
+    L: "ir para o fundo do ecrã"
+    w: "ir para o início da próxima palavra"
+    W: "ir para o início da próxima palavra (podendo conter pontuação)"
+    e: "ir para o fim da próxima palavra"
+    E: "ir para o fim da próxima palavra (podendo conter pontuação)"
+    b: "ir para o início da palavra anterior"
+    B: "ir para o início da palavra anterior (podendo conter pontuação)"
+    percent: "ir para o carácter correspondente (pares reconhecidos originalmente: '()', '{}', '[]' - use <code>:h matchpairs</code> no vim para mais informação"
+    zero: "ir para o início da linha"
+    caret: "ir para o primeiro carácter da linha que não seja espaço"
+    dollar: "ir para o fim da linha"
+    g_: "ir para o último carácter da linha que não seja espaço"
+    gg: "ir para a primeira linha do documento"
+    G: "ir para a última linha do documento"
+    fiveG: "ir para a linha 5"
+    fx: "ir para o próximo carácter 'x' da linha"
+    tx: "ir para o carácter anterior ao próximo carácter 'x' da linha"
+    closeCurlyBrace: "ir para o próximo parágrafo (ou função/bloco, ao editar código)"
+    openCurlyBrace: "ir para o parágrafo anterior (ou função/bloco, ao editar código)"
+    centerCursor: "centrar o cursor no ecrã"
+    CtrlPlusb: "retroceder um ecrã completo"
+    CtrlPlusf: "avançar um ecrã completo"
+    CtrlPlusu: "retroceder meio ecrã"
+    CtrlPlusd: "avançar meio ecrã"
+  tip: "Para repetir um movimento do cursor adicione um prefixo numérico. Por exemplo, <kbd>4j</kbd> move o cursor 4 linhas para baixo."
+
+insertMode:
+  title: "Modo de inserção - inserir/acrescentar texto"
+  commands:
+    i: "inserir antes do cursor"
+    I: "inserir no início da linha"
+    a: "inserir depois do cursor"
+    A: "inserir no fim da linha"
+    o: "inserir uma nova linha por baixo da actual"
+    O: "inserir uma nova linha por cima da actual"
+    ea: "inserir no fim da palavra"
+    Esc: "sair do modo de inserção"
+
+editing:
+  title: "Edição"
+  commands:
+    r: "substituir um único carácter"
+    J: "juntar a linha seguinte com a linha actual"
+    cc: "substituir a linha toda"
+    cw: "substituir até ao fim da palavra actual"
+    cDollar: "substituir até ao fim da linha"
+    s: "apagar um carácter e substituir texto"
+    S: "apagar um carácter e substituir até ao fim da linha (igual ao cc)"
+    xp: "transpor duas letras (cortar e colar)"
+    u: "anular"
+    CtrlPlusr: "refazer"
+    dot: "repetir o último comando"
+
+markingText:
+  title: "Marcação de texto (modo visual)"
+  commands:
+    v: "começar modo visual, marcar linhas e executar um comando (como o y - copiar)"
+    V: "começar modo visual de linha"
+    o: "ir alternadamente para o fim/início da área marcada"
+    CtrlPlusv: "iniciar modo visual de bloco"
+    O: "ir alternadamente para o fim/início do bloco na linha actual"
+    aw: "marcar uma palavra"
+    ab: "marcar bloco dentro de (), incluindo ()"
+    aB: "marcar bloco dentro de {}, incluindo {}"
+    ib: "marcar bloco dentro de (), excluindo ()"
+    iB: "marcar bloco dentro de {}, excluindo {}"
+    Esc: "sair do modo visual"
+
+visualCommands:
+  title: "Comandos no modo visual"
+  commands:
+    greaterThan: "deslocar texto para a direita"
+    lessThan: "deslocar texto para a esquerda"
+    y: "copiar texto marcado"
+    d: "apagar texto marcado"
+    tilde: "alternar maiúsculas/minúsculas"
+
+registers:
+  title: "Registos"
+  commands:
+    show: "mostrar conteúdo dos registos"
+    pasteRegisterX: "colar conteúdo do registo 'x'"
+    yankIntoRegisterX: "copiar para o registo 'x'"
+  tip1: "Os registos são guardados em ~/.viminfo e serão carregados novamente quando reiniciar o vim"
+  tip2: "O registo 0 (zero) contém sempre o último valor copiado"
+
+marks:
+  title: "Marcas"
+  commands:
+    list: "lista das marcas"
+    currentPositionA: "definir a marca 'a' na posição actual"
+    jumpPositionA: "ir para a posição da marca 'a'"
+    yankToMarkA: "copiar texto da posição actual até à marca 'a'"
+  tip: ""
+
+macros:
+  title: "Macros"
+  commands:
+    recordA: "começar a gravar a macro 'a'"
+    stopRecording: "parar de gravar a macro"
+    runA: "correr a macro 'a'"
+    rerun: "correr novamente a última macro executada"
+
+cutAndPaste:
+  title: "Cortar/copiar e colar"
+  commands:
+    yy: "copiar uma linha"
+    twoyy: "copiar duas linhas"
+    yw: "copiar os caracteres até ao início da próxima palavra"
+    yDollar: "copiar até ao fim da linha"
+    p: "colar depois do cursor"
+    P: "colar antes do cursor"
+    dd: "cortar uma linha"
+    twodd: "cortar duas linhas"
+    dw: "cortar até ao início da próxima palavra"
+    D: "cortar até ao fim da linha"
+    dDollar: "cortar até ao fim da linha (igual ao D)"
+    x: "cortar o carácter actual"
+
+exiting:
+  title: "Sair"
+  commands:
+    colonw: "gravar ficheiro, mas sem sair"
+    colonwsudo: "gravar o ficheiro actual com sudo"
+    colonwq: "gravar e sair"
+    colonq: "sair (não sai se houver alterações por gravar)"
+    colonqbang: "sair sem gravar alterações"
+
+searchAndReplace:
+  title: "Procurar e substituir"
+  commands:
+    forwardSlashPattern: "procurar por próxima ocorrência de padrão"
+    questionMarkPattern: "procurar por ocorrência anterior de padrão"
+    backslashVpattern: "padrão 'muito mágico': caracteres não-alfanuméricos são interpretados como símbolos especiais de expressões regulares (sem necessidade de escape)"
+    n: "repetir procura na mesma direcção"
+    N: "repetir procura na direção oposta"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "substituir todas as ocorrências de 'old' por 'new' no documento"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "substituir todas as ocorrências de 'old' por 'new' no documento, com confirmação"
+    colonnoh: "remover destaque das ocorrências encontradas"
+
+searchMultipleFiles:
+  title: "Procurar em múltiplos ficheiros"
+  commands:
+    colonvimgrep: "procurar por padrão em múltiplos ficheiros"
+    coloncn: "ir para a próxima ocorrência"
+    coloncp: "ir para a ocorrência anterior"
+    coloncopen: "abrir uma janela com a lista de ocorrências encontradas"
+
+workingWithMultipleFiles:
+  title: "Trabalhar com múltiplos ficheiros"
+  commands:
+    colone: "editar um ficheiro numa nova área de memória temporária"
+    colonbnext: "ir para a próxima área de memória temporária"
+    colonbprev: "ir para a área de memória temporária anterior"
+    colonls: "listar as áreas de memória temporárias abertas"
+    colonbd: "apagar uma área de memória temporária (fechar um ficheiro)"
+    colonsp: "abrir um ficheiro numa nova área de memória temporária e dividir a janela"
+    colonvsp: "abrir um ficheiro numa nova área de memória temporária e dividir a janela verticalmente"
+    ctrlPlusws: "dividir a janela"
+    ctrlPlusww: "alternar janelas"
+    ctrlPluswq: "sair de uma janela"
+    ctrlPluswv: "dividir janela verticalmente"
+    ctrlPluswh: "mover o cursor para a janela da esquerda (divisão vertical)"
+    ctrlPluswl: "mover o cursor para a janela da direita (divisão vertical)"
+    ctrlPluswj: "mover o cursor para a janela de baixo (divisão horizontal)"
+    ctrlPluswk: "mover o cursor para a janela de cima (divisão horizontal)"
+
+tabs:
+  title: "Separadores"
+  commands:
+    colonTabNew: "abrir um ficheiro num novo separador"
+    ctrlPluswT: "mover a janela dividida actual para o seu próprio separador"
+    gt: "ir para o próximo separador"
+    gT: "ir para o separador anterior"
+    hashgt: "ir para o separador número '#'"
+    colontabmove:  "mover o separador actual para a posição '#' (começa no zero)"
+    colontabc: "fechar o separador actual e todas as suas janelas"
+    colontabo: "fechar todos os separadores excepto o actual"
+    colontabdo: "correr <code>commando</code> para todos os separadores (por exemplo, <code>:tabdo q</code> - fecha todos os separadores abertos)"
+
+words:
+    keyword: "termo"
+    file: "ficheiro"
+
+---
