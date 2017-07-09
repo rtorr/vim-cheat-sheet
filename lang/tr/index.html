@@ -7,7 +7,7 @@ lang: "tr"
 cursorMovement:
   title: "İmleç hareketleri"
   commands:
-    h: "imleci sola kaydir"
+    h: "imleci sola kaydır"
     j: "imleci aşağı kaydır"
     k: "imleci yukarı kaydır"
     l: "imleci sağa kaydır"
@@ -17,11 +17,26 @@ cursorMovement:
     E: "bir sonraki kelimenin sonuna atla (kelime noktalama işareti içerebilir)"
     b: "bir önceki kelimenin başlangıcına atla"
     B: "bir önceki kelimenin başlangıcına atla (kelime noktalama işareti içerebilir)"
+    H: "ekranın en üstüne kaydır"
+    M: "ekranın ortasına kaydır"
+    L: "ekranın en altına kaydır"
     zero: "satır başına atla"
     caret: "satır üzerindeki ilk boşluk olmayan karaktere atla"
     dollar: "satır sonuna atla"
-    G: "dökümanın son satırına git"
+    g_: "satırın boş olmayan son karakterine atla"
+    gg: "dokümanın ilk satırına git"
+    G: "dokümanın son satırına git"
     fiveG: "5. satıra git"
+    fx: "sonraki x karakterinin konumuna atla"
+    tx: "önceki x karakterinin konumuna atla"
+    closeCurlyBrace: "sonraki paragrafa atla (veya fonksiyon/blok, kod yazarken)"
+    openCurlyBrace: "önceki paragrafa atla (veya fonksiyon/blok, kod yazarken)"
+    centerCursor: "imleci ekranda ortala"
+    CtrlPlusb: "tam ekran geri kaydır"
+    CtrlPlusf: "tam ekran ileri kaydır"
+    CtrlPlusu: "yarım ekran geri kaydır"
+    CtrlPlusd: "yarım ekran ileri kaydır"
+    percent: "eşleşen karakterlere kaydır (varsayılan çiftler: '()', '{}', '[]' - daha fazla bilgi için <code>:h matchpairs</code> komutunu kullan)"
   tip: "İmleç hareketleri komutlarından önce verilen sayı kadar komut çalıştırılır. Örneğin, <kbd>4j</kbd> 4 satır aşağıya gider."
 
 insertMode:
@@ -52,13 +67,13 @@ editing:
     dot: "son komutu tekrarla"
 
 markingText:
-  title: "Metin işaretleme(görsel mod)"
+  title: "Metin işaretleme (görsel mod)"
   commands:
-    v: "start visual mode, mark lines, then do a command (like y-yank)"
-    V: "start linewise visual mode"
+    v: "görsel modu başlat, satırları işaretle, bir komut gir (y-yank gibi)"
+    V: "görsel modu tüm satırı işaretleyerek başlatır"
     o: "diğer işaretlenmiş alanın sonuna gider"
     CtrlPlusv: "görsel blok moduna başlar"
-    O: "diğer bloğun köşesine gider"
+    O: "bloğun diğer köşesine gider"
     aw: "kelimeyi işaretle"
     ab: "() ile bloklar"
     aB: "{} ile bloklar"
@@ -74,6 +89,41 @@ visualCommands:
     y: "işaretlenmiş metni kopyala"
     d: "işaretlenmiş metni sil"
     tilde: "harfleri büyükse küçük, küçükse büyük yap"
+
+registers:
+  title: "Registerlar"
+  commands:
+    show: "register içeriğini göster"
+    pasteRegisterX: "register x'in içeriğini yapıştırır"
+    yankIntoRegisterX: "register x içerisini kopyalar"
+  tip1: "Registerlar ~/.viminfo içerisinde depolanıyor ve vim'i yeniden başlattığınızda yüklenecektir"
+  tip2: "Register 0 daima son kopyalama komutunun değerini taşımaktadır"
+
+marks:
+  title: "İşaretler"
+  commands:
+    list: "işaretleri listele"
+    currentPositionA: "A işareti için konum belirle"
+    jumpPositionA: "A işaretinin konumuna atla"
+    yankToMarkA: "A işaretinin konumundaki yazıyı kopyala"
+  tip: ""
+
+macros:
+  title: "Macros"
+  commands:
+    recordA: "bir makro kaydet"
+    stopRecording: "makro kaydetmeyi durdur"
+    runA: "bir makro çalıştır"
+    rerun: "son çalıştırılan makroyu yeniden çalıştır"
+
+global:
+  title: "Genel"
+  commands:
+    helpForKeyword: "kelime için yardımı aç"
+    openFile: "dosyayı aç"
+    saveAsFile: "dosyayı farklı kaydet"
+    closePane: "bölümü kapat "
+    K: "imleç altındaki kelime için kılavuzu aç"
 
 cutAndPaste:
   title: "Kes ve yapıştır"
@@ -95,6 +145,7 @@ exiting:
   title: "Çıkış"
   commands:
     colonw: "dosyayı kaydet, ama kapatma"
+    colonwsudo: "dosyayı sudo kullanarak kaydet"
     colonwq: "dosyayı kaydet ve kapat"
     colonx: "dosyayı kaydet ve kapat"
     colonq: "(kaydedilmemiş değişiklikler varsa hata ver) kapat"
@@ -105,20 +156,31 @@ searchAndReplace:
   commands:
     forwardSlashPattern: "kalıbı ara"
     questionMarkPattern: "geriye doğru kalıbı ara"
+    backslashVpattern: "'çok sihirli' kalıp: alfanumerik olmayan karakterleri düzenli ifade (regex) sembolleri olarak yorumlar (kaçış karakteri gerekmez)"
     n: "aynı yönde aramaya devam et"
     N: "ters yönde aramaya devam et"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "dosya boyunca tüm eskileri yenileriyle değiştirir"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "dosya boyunca tüm eskileri yenileriyle onaylayarak değiştirir"
+    colonnoh: "eşleşen sonuçların vurgusunu kaldır"
+
+searchMultipleFiles:
+  title: "Birden fazla dosyada ara"
+  commands:
+    colonvimgrep: "kalıbı birden fazla dosyada ara"
+    coloncn: "sonraki eşleşmeye atla"
+    coloncp: "önceki eşleşmeye atla"
+    coloncopen: "eşleşmeleri bir pencerede göster"
 
 workingWithMultipleFiles:
   title: "Birden çok dosya ile çalışma"
   commands:
-    colone: "yeni buffer da dosyayı düzenle"
-    colonbnext: "bir sonraki buffer a geçer"
-    colonbprev: "bir önceki buffer a geçer"
-    colonbd: "buffer ı siler ve dosyayı kapatır"
-    colonsp: "yeni buffer da dosya açar ve pencereyi böler"
-    colonvsp: "yeni buffer da dosya açar ve dikey olarak pencereyi böler"
+    colone: "yeni tamponda dosyayı düzenle"
+    colonbnext: "bir sonraki tampona geçer"
+    colonbprev: "bir önceki tampona geçer"
+    colonls: "tüm açık tamponları listeler"
+    colonbd: "tamponu siler ve dosyayı kapatır"
+    colonsp: "yeni tamponda dosya açar ve pencereyi böler"
+    colonvsp: "yeni tamponda dosya açar ve dikey olarak pencereyi böler"
     ctrlPlusws: "pencereyi böler"
     ctrlPlusww: "pencereyi değiştirir"
     ctrlPluswq: "pencereyi kapatır"
@@ -129,7 +191,7 @@ workingWithMultipleFiles:
     ctrlPluswk: "imleci yukarı pencereye taşır (yatay bölme)"
 
 tabs:
-  title: "Tabs"
+  title: "Sekmeler"
   commands:
     colonTabNew: "yeni sekmede dosya aç"
     ctrlPluswT: "kendi sekmeleri içerisinde şu anki bölünmüş pencereye geçer"
@@ -139,7 +201,7 @@ tabs:
     colontabmove:  "şu anki sekmeyi #. pozisyona taşır (sıralama 0'dan başlar)"
     colontabc: "şu anki sekmeyi ve tüm pencereleri kapat"
     colontabo: "şu anki sekme dışında hepsini kapat"
-
+    colontabdo: "tüm sekmelerde <code>komut</code> çalıştır (örn. <code>:tabdo q</code> - açık tüm sekmeleri kapatır)"
 languages:
   title: "Diller"
 
