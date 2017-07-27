@@ -17,22 +17,27 @@ cursorMovement:
     E: "向右跳至字尾 (字中可含標點)"
     b: "向左跳至字尾"
     B: "向左跳至字尾 (字中可含標點)"
+    H: "跳至視窗頂端"
+    M: "跳至視窗中間"
+    L: "跳至視窗底端"
     zero: "跳至行首"
     caret: "跳至行內第一個非空白字元"
     dollar: "跳至行尾"
     g_: "跳至行內最後一個非空白字元"
     gg: "跳至檔案第一行"
     G: "跳至檔案最後一行"
-    fiveG: "跳至第 5 行"
-    fx: "跳至字元 x 下次出現的位置"
-    tx: "跳至字元 x 下次出現位置的上一個字元"
+    fiveG: "跳至第 <code>5</code> 行"
+    fx: "跳至字元 <code>x</code> 下次出現的位置"
+    tx: "跳至字元 <code>x</code> 下次出現位置的上一個字元"
     closeCurlyBrace: "跳至下一段 (若編輯程式碼則為函式/區塊)"
     openCurlyBrace: "跳至上一段 (若編輯程式碼則為函式/區塊)"
+    centerCursor: "將游標所在行移到視窗中間"
     CtrlPlusb: "向上捲動一個視窗"
     CtrlPlusf: "向下捲動一個視窗"
     CtrlPlusd: "向下捲動半個視窗"
     CtrlPlusu: "向上捲動半個視窗"
-  tip: "移動游標的命令前加數字可指定重複次數，例如 <kbd>4j</kbd> 會向下移動 4 行。"
+    percent: "跳至相對應的字元 (預設支援 ()、{}、[] - 在 Vim 中使用 <kbd>:h matchpairs</kbd> 顯示說明)"
+  tip: "移動游標的命令前加數字可指定重複次數，例如 <kbd>4j</kbd> 會向下移動 <code>4</code> 行。"
 
 insertMode:
   title: "插入模式 - 插入/附加文字"
@@ -85,17 +90,52 @@ visualCommands:
     d: "剪下"
     tilde: "切換大小寫"
 
+registers:
+  title: "暫存區"
+  commands:
+    show: "顯示暫存區內容"
+    pasteRegisterX: "貼上暫存區 <code>x</code> 的內容"
+    yankIntoRegisterX: "複製到暫存區 <code>x</code>"
+  tip1: "暫存區儲存在 <code>~/.viminfo</code>，且會在 Vim 下次啟動時重新載入。"
+  tip2: "暫存區 <code>0</code> 一律會保存上一次複製的內容。"
+
+marks:
+  title: "標記"
+  commands:
+    list: "顯示標記清單"
+    currentPositionA: "將目前的位置設為標記 <code>a</code>"
+    jumpPositionA: "跳至標記 <code>a</code>"
+    yankToMarkA: "複製游標目前位置到標記 <code>a</code> 位置的字元"
+  tip: ""
+
+macros:
+  title: "巨集"
+  commands:
+    recordA: "錄製巨集 <code>a</code>"
+    stopRecording: "停止錄製巨集"
+    runA: "執行巨集 <code>a</code>"
+    rerun: "執行上一次執行的巨集"
+
+global:
+  title: "全域"
+  commands:
+    helpForKeyword: "顯示<kbd>關鍵字</kbd>的說明"
+    openFile: "開啟<kbd>檔案名稱<kbd>"
+    saveAsFile: "另存新檔為<kbd>檔案名稱</kbd>"
+    closePane: "關閉目前的視窗"
+    K: "開啟游標所在單字的 <code>man</code> 頁面"
+
 cutAndPaste:
   title: "剪下、複製、貼上"
   commands:
     yy: "複製該行"
-    twoyy: "複製 2 行"
+    twoyy: "複製 <code>2</code> 行"
     yw: "複製該單字"
     yDollar: "複製游標位置到行尾的區塊"
     p: "在游標後貼上"
     P: "在游標前貼上"
     dd: "剪下 (刪除) 該行"
-    twodd: "剪下 (刪除) 2 行"
+    twodd: "剪下 (刪除) <code>2</code> 行"
     dw: "剪下 (刪除) 該單字"
     D: "剪下 (刪除) 游標位置到行尾的區塊"
     dDollar: "剪下 (刪除) 游標位置到行尾的區塊 (同 <kbd>D</kbd>)"
@@ -105,7 +145,7 @@ exiting:
   title: "退出"
   commands:
     colonw: "儲存"
-    colonwsudo: "以 sudo 儲存目前的檔案"
+    colonwsudo: "以 <code>sudo</code> 儲存目前的檔案"
     colonwq: "儲存並退出"
     colonx: "儲存並退出"
     colonq: "退出 (修改未儲存時警告)"
@@ -134,13 +174,13 @@ searchMultipleFiles:
 workingWithMultipleFiles:
   title: "多檔案編輯"
   commands:
-    colone: "在新緩衝區開啟 filename"
+    colone: "在新緩衝區開啟<kbd>檔案名稱</kbd>"
     colonbnext: "切換到下個緩衝區"
     colonbprev: "切換到上個緩衝區"
     colonls: "列出所有開啟的緩衝區"
     colonbd: "刪除緩衝區 (關閉檔案)"
-    colonsp: "在新緩衝區開啟 filename 並水平分割視窗"
-    colonvsp: "在新緩衝區開啟 filename 並垂直分割視窗"
+    colonsp: "在新緩衝區開啟<kbd>檔案名稱</kbd>並水平分割視窗"
+    colonvsp: "在新緩衝區開啟<kbd>檔案名稱</kbd>並垂直分割視窗"
     ctrlPlusws: "水平分割視窗"
     ctrlPlusww: "切換視窗"
     ctrlPluswq: "關閉視窗"
@@ -153,15 +193,20 @@ workingWithMultipleFiles:
 tabs:
   title: "分頁"
   commands:
-    colonTabNew: "在新分頁開啟 filename"
+    colonTabNew: "在新分頁開啟<kbd>檔案名稱</kbd>"
     ctrlPluswT: "以新分頁開啟視窗"
     gt: "切換到下個分頁"
     gT: "切換到上個分頁"
-    hashgt: "切換到第 <kbd>#</kbd> 個分頁"
-    colontabmove:  "將分頁移到第 <kbd>#</kbd> 位 (從 0 算起)"
+    hashgt: "切換到第 <code>#</code> 個分頁"
+    colontabmove:  "將分頁移到第 <code>#</code> 位 (從 <code>0</code> 算起)"
     colontabc: "關閉該分頁及其中所有視窗"
     colontabo: "關閉所有其他分頁"
     colontabdo: "對所有分頁執行命令 (例如 <kbd>:tabdo q</kbd> 會關閉所有分頁)"
+
+words:
+  keyword: "關鍵字"
+  file: "檔案名稱"
+  movement: "移動"
 
 languages:
   title: "語言"
