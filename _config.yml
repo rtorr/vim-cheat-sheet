@@ -71,7 +71,7 @@ defaults:
         title: "Editing"
         commands:
           r: "replace a single character"
-          J: "join line below to the current one"
+          J: "join line below the current one"
           cc: "change (replace) entire line"
           cw: "change (replace) to the end of the word"
           cDollar: "change (replace) to the end of the line"
