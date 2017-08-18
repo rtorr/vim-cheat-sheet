@@ -11,6 +11,9 @@ cursorMovement:
     j: "mover el cursor hacia abajo"
     k: "mover el cursor hacia arriba"
     l: "mover el cursor hacia la derecha"
+    H: "moverse hacia la parte superior de la pantalla"
+    M: "moverse hacia el centro de la pantalla"
+    L: "moverse hacia la parte inferior de la pantalla"
     w: "saltar hasta el inicio de la siguiente palabra"
     W: "saltar hasta el inicio de la siguiente palabra (incluso con puntuación)"
     e: "saltar hasta el final de la siguiente palabra"
@@ -20,9 +23,21 @@ cursorMovement:
     zero: "saltar al inicio de la línea"
     caret: "saltar al primer carácter no-espacio de la línea"
     dollar: "saltar al final de la línea"
-    g_: "salter al último carácter no-spacio de la línea"
+    g_: "saltar al último carácter no-espacio de la línea"
+    gg: "ir a la primera línea del documento"
     G: "ir a la última línea del documento"
     fiveG: "ir a la línea 5"
+    fx: "saltar a la siguiente ocurrencia del carácter x"
+    tx: "saltar a la ocurrencia previa del carácter x"
+    closeCurlyBrace: "saltar al párrafo siguiente (o función/bloque, en modo edición)"
+    openCurlyBrace: "saltar al párrafo previo (o función/bloque, en modo edición)"
+    centerCursor: "centrar el cursor en la pantalla"
+    CtrlPlusb: "retroceder una pantalla"
+    CtrlPlusf: "avanzar una pantalla"
+    CtrlPlusu: "retroceder cursor media pantalla"
+    CtrlPlusd: "avanzar cursor media pantalla"
+    percent: "ir al carácter asociado (pares por defecto: '()', '{}', '[]' - usar </code>:h matchpairs</code> en vim para más información)"
+
   tip: "Escribir un número antes del comando de movimiento para repetirlo. Por ejemplo, <kbd>4j</kbd> mueve el cursor hacia abajo 4 líneas."
 
 insertMode:
@@ -40,13 +55,13 @@ insertMode:
 editing:
   title: "Editar"
   commands:
-    r: "remplazar una carácter"
-    J: "juntar línea con la siguiente"
-    cc: "cambiar (remplazar) toda la línea"
-    cw: "cambiar (remplazar) una palabra"
-    cDollar: "cambiar (remplazar) hasta el final de la línea"
-    s: "eliminar carácter y remplazar texto"
-    S: "eliminar línea y remplazar texto (igual que el comando cc)"
+    r: "reemplazar un carácter"
+    J: "juntar siguiente línea con la actual"
+    cc: "cambiar (reemplazar) toda la línea"
+    cw: "cambiar (reemplazar) una palabra"
+    cDollar: "cambiar (reemplazar) hasta el final de la línea"
+    s: "eliminar carácter y reemplazar texto"
+    S: "eliminar línea y reemplazar texto (igual que el comando cc)"
     xp: "transponer dos letras (suprimir y pegar)"
     u: " deshacer"
     CtrlPlusr: "rehacer"
@@ -76,6 +91,41 @@ visualCommands:
     d: "eliminar texto seleccionado"
     tilde: "pasar de minúscula a mayúscula y viceversa"
 
+registers:
+  title: "Registros"
+  commands:
+    show: "mostrar el contenido de los registros"
+    pasteRegisterX: "pegar el contenido del registro X"
+    yankIntoRegisterX: "copiar en el registro X"
+  tip1: "Los registros son guardados en ~/.viminfo, y serán cargados la próxima vez que se ejecute vim."
+  tip2: "El registro 0 siempre contiene el último texto copiado."
+
+marks:
+  title: "Marcas"
+  commands:
+    list: "mostrar marcas"
+    currentPositionA: "definir posición actual para la marca A"
+    jumpPositionA: "saltar a la posición de la marca A"
+    yankToMarkA: "copiar texto a la posición de la marca A"
+  tip: ""
+
+macros:
+  title: "Macros"
+  commands:
+    recordA: "grabar macro a"
+    stopRecording: "detener la grabación de la macro"
+    runA: "ejecutar macro a"
+    rerun: "re-ejecutar la última macro ejecutada"
+
+global:
+  title: "Global"
+  commands:
+    helpForKeyword: "abrir ayuda para palabra clave"
+    openFile: "abrir archivo"
+    saveAsFile: "guardar archivo como"
+    closePane: "cerrar archivo actual"
+    K: "abrir página del manual (man page) de la palabra bajo el cursor"
+
 cutAndPaste:
   title: "Copiar y pegar"
   commands:
@@ -100,20 +150,32 @@ exiting:
   title: "Salir"
   commands:
     colonw: "guardar archivo sin salir"
+    colonwsudo: "guardar archivo usando sudo"
     colonwq: "guardar archivo y salir"
     colonx: "guardar archivo y salir"
     colonq: "salir (no funciona si hay cambios sin guardar)"
     colonqbang: "salir descartando los cambios no guardados"
 
 searchAndReplace:
-  title: "Buscar y remplazar"
+  title: "Buscar y reemplazar"
   commands:
     forwardSlashPattern: "buscar patrón"
     questionMarkPattern: "buscar patrón hacia atrás"
+    backslashVpattern: "patrón 'muy mágico' (very magic): los caracteres no alfanuméricos son interpretados como caracteres especiales regex (sin necesidad de escaparlos)"
     n: "repetir la búsqueda en la misma dirección"
     N: "repetir la búsqueda en la dirección contraria"
-    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "remplazar en todo el archivo"
-    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "remplazar en todo el archivo pidiendo una confirmación"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "reemplazar en todo el archivo"
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "reemplazar en todo el archivo pidiendo una confirmación"
+    colonnoh: "desactiva el realce (highlight) de los resultados de búsqueda"
+
+searchMultipleFiles:
+  title: "Buscar en varios archivos"
+  commands:
+    colonvimgrep: "buscar un patrón en varios archivos"
+    coloncn: "ir al resultado siguiente"
+    coloncp: "ir al resultado previo"
+    coloncopen: "abrir ventana con una lista de los resultados"
+
 
 workingWithMultipleFiles:
   title: "Trabajar con varios archivos"
@@ -121,6 +183,7 @@ workingWithMultipleFiles:
     colone: "editar un archivo en un nuevo búfer"
     colonbnext: "ir al próximo búfer"
     colonbprev: "ir al búfer anterior"
+    colonls: "mostrar todos los búfers abiertos"
     colonbd: "eliminar búfer (cerrar archivo)"
     colonsp: "abrir archivo en un nuevo búfer y dividir la ventana"
     colonvsp: "abrir archivo en un nuevo búfer y dividir la ventana verticalmente"
@@ -128,8 +191,8 @@ workingWithMultipleFiles:
     ctrlPlusww: "cambiar de ventana"
     ctrlPluswq: "cerrar ventana"
     ctrlPluswv: "dividir ventana verticalmente"
-    ctrlPluswh: "mover el cursor para la ventana izquierda (división vertical)"
-    ctrlPluswl: "mover el cursor para la ventana derecha (división vertical)"
+    ctrlPluswh: "mover el cursor a la ventana izquierda (división vertical)"
+    ctrlPluswl: "mover el cursor a la ventana derecha (división vertical)"
     ctrlPluswj: "mover el cursor a la ventana de abajo (división horizontal)"
     ctrlPluswk: "mover el cursor a la ventana de arriba (división horizontal)"
 
