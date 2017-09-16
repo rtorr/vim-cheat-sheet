@@ -17,6 +17,7 @@ cursorMovement:
     E: "skocz na koniec bieżącego wyrazu (słowa mogą zawierać interpunkcję)"
     b: "skocz na początek bieżącego wyrazu"
     B: "skocz na początek bieżącego wyrazu (słowa mogą zawierać interpunkcję)"
+    percent: "przesuń do pasującego znaku (standardowo wspierane pary: '()', '{}', '[]' - użyj :h matchpairs w Vimie po więce informacji)"
     H: "skocz do góry ekranu"
     M: "skocz do połowy ekranu"
     L: "skocz do dołu ekranu"
@@ -56,8 +57,8 @@ editing:
     r: "zamień pojedynczy znak pod kursorem"
     J: "połącz wiersze: dodaj wiersz poniżej do bieżącego"
     cc: "zastąp cały wiersz"
-    cw: "zastąp na koniec wyrazu"
-    cDollar: "zastąp na koniec wiersza"
+    cw: "zastąp na końcu wyrazu"
+    cDollar: "zastąp na końcu wiersza"
     s: "zastąp znak wskazany przez kursor"
     S: "zastąp wiersz (takie samo znaczenie jak cc)"
     xp: "zastąp dwa znaki (usuń i wklej)"
@@ -95,8 +96,8 @@ registers:
     show: "pokaż zawartość rejestrów"
     pasteRegisterX: "wklej zawartość rejestru x"
     yankIntoRegisterX: "kopiuj do rejestru x"
-  wskazówka1: "Rejestry zostały zapisane w ~/.viminfo i zostaną załadowane przy ponownym uruchomieniu vima"
-  wskazówka2: "Rejestr 0 zawsze zawiera wartość ostatnio skopiowanego polecenia"
+  tip1: "Rejestry zostały zapisane w ~/.viminfo i zostaną załadowane przy ponownym uruchomieniu vima"
+  tip2: "Rejestr 0 zawsze zawiera wartość ostatnio skopiowanego polecenia"
 
 marks:
   title: "Oznaczanie"
@@ -138,8 +139,8 @@ cutAndPaste:
     dw: "kasuj litery wyrazu od miejsca, gdzie znajduje się kursor, na początek następnego słowa"
     diw: "kasuj wyraz pod kursorem"
     daw: "kopiuj wyraz pod kursorem i spację przed wyrazem lub za nim"
-    D: "kasuj na koniec wiersza"
-    dDollar: "kasuj na koniec wiersza"
+    D: "kasuj na końcu wiersza"
+    dDollar: "kasuj na końcu wiersza"
     x: "usuń znak"
 
 exiting:
