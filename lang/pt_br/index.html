@@ -17,11 +17,30 @@ cursorMovement:
     E: "pular adiante para o fim de uma palavra (podendo conter pontuação)"
     b: "pular para trás para o início de uma palavra"
     B: "pular para trás para o início de uma palavra (podendo conter pontuação)"
+    H: "mover para o curor para a parte superior da tela"
+    M: "mover para o curor para o meio da tela"
+    L: "mover para o curor para a parte inferior da tela"
     zero: "pular para o início da linha"
     caret: "pular para o primeiro caractere (sem ser espaço) da linha"
     dollar: "pular para o fim da linha"
+    g_: "pular para o último character não vazio da linha"
+    gg: "ir para a primeira linha do documento"
     G: "ir para a última linha do documento"
     fiveG: "ir para a linha 5"
+    fx: "pular para a próxima ocorrencia do caractere x"
+    tx: "pular para antes da próxima ocorrencia do caractere x"
+    Fx: "pular para a ocorrencia anterior do caractere x"
+    Tx: "pular para depois da ocorrência do caractere x"
+    semicolon: "repetir o último movimento de f, t, F ou T"
+    comma: "repetir o último movimento de f, t, F ou T de forma invesa"
+    closeCurlyBrace: "pular para o próximo parágrafo (ou função/bloco, quando estiver editando código)"
+    openCurlyBrace: "pular para o parágrafo anterior (ou função/bloco, quando estiver editando código)"
+    centerCursor: "centralizar o cursor na tela"
+    CtrlPlusb: "mover o cursor uma tela cheia para tras"
+    CtrlPlusf: "mover o cursor uma tela cheia para frente"
+    CtrlPlusu: "mover o cursor uma tela e meia para tras"
+    CtrlPlusd: "mover o cursor uma tela e meia para frente"
+    percent: "mover para a ocorrência de um dos caracteres compatíveis (pares padrões: '()', '{}', '[]' - execute <code>:h matchpairs</code> no vim para mais informações)"
   tip: "Adicione um prefixo a um comando de movimento com um número para repetir o mesmo. Exemplo: <kbd>4j</kbd> irá mover 4 linhas para baixo."
 
 insertMode:
@@ -76,6 +95,41 @@ visualCommands:
     d: "deletar texto marcado"
     tilde: "alterar entre maiúscula e minúscula"
 
+registers:
+  title: "Registradores"
+  commands:
+    show: "mostrar conteúdo dos registradores"
+    pasteRegisterX: "colar o conteúdo do registrador x"
+    yankIntoRegisterX: "colar no registrador x"
+  tip1: "Registradores são guardados em ~/.viminfo, e são carregados no início do vim."
+  tip2: "Registrador 0 sempre contém o valor do ultimo comando de cópia."
+
+marks:
+  title: "Marcadores"
+  commands:
+    list: "listar todos os marcadores"
+    currentPositionA: "atribuir a posição atual no marcador A"
+    jumpPositionA: "pular para a posição do marcador A"
+    yankToMarkA: "copiar texto para a posição do marcador A"
+    tip: ""
+
+macros:
+  title: "Macros"
+  commands:
+    recordA: "gravar o macro a"
+    stopRecording: "parar a gravação do macro"
+    runA: "executar o macro a"
+    rerun: "re executar o último macro"
+
+global:
+  title: "Global"
+  commands:
+    helpForKeyword: "abrir a página de ajuda para um termo"
+    openFile: "abrir um arquivo"
+    saveAsFile: "salvar um arquivo como"
+    closePane: "fechar o painel atual"
+    K: "abrir a pagína do manual para a palavra abaixo do cursor"
+
 cutAndPaste:
   title: "Copiar e colar"
   commands:
@@ -106,13 +160,15 @@ searchAndReplace:
   commands:
     forwardSlashPattern: "procurar por padrão"
     questionMarkPattern: "procurar por padrão na direção oposta"
+    backslashVpattern: "padrão `mágico`: caracteres não-alfanuméricos são interpretados como símbolos especias de expressões regulares (sem necessidade de escapar os caracteres)"
     n: "repetir busca na mesma direção"
     N: "repetir busca na direção oposta"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "substituir todas as ocorrências de old por new dentro do buffer"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: "substituir todas as ocorrências de old por new dentro do buffer pedindo confirmação"
+    colonnoh: "remover o destaque dos resultados de busca"
 
 searchMultipleFiles:
-  title: "procurar em múltiplos arquivos"
+  title: "Procurar em múltiplos arquivos"
   commands:
     colonvimgrep: "procurar por padrão em múltiplos arquivos"
     coloncn: "pular para próxima ocorrência"
@@ -125,6 +181,7 @@ workingWithMultipleFiles:
     colone: "editar um arquivo em um novo buffer"
     colonbnext: "ir para o próximo buffer"
     colonbprev: "ir para o buffer anterior"
+    colonls: "listar todos os buffers abertos"
     colonbd: "deletar um buffer (fechar um arquivo)"
     colonsp: "abrir um arquivo em um novo buffer e dividir a janela"
     colonvsp: "abrir um arquivo em um novo buffer e dividir janelas verticalmente"
@@ -136,6 +193,7 @@ workingWithMultipleFiles:
     ctrlPluswl: "mover o cursor para a janela a esquerda (vertical)"
     ctrlPluswj: "mover o cursor para a janela abaixo (horizontal)"
     ctrlPluswk: "mover o cursor para a janela acima (horizontal)"
+
 tabs:
   title: "Abas"
   commands:
@@ -147,6 +205,15 @@ tabs:
     colontabmove: "mover aba atual para posição # (indexado do 0)"
     colontabc: "fechar a aba atual e todas suas janelas"
     colontabo: "fechar todas as abas exceto a aba atual"
+    colontabdo: "executar o <code>comando</code> em todas as abas (e.g. <code> :tabdo q</code> - fechar todas as abas abertas)"
+
+words:
+  keyword: "palavra chave"
+  file: "arquivo"
+  movement: "movimento"
+
+languages:
+  title: "Línguas"
 
 footer: "O código fonte está disponível em"
 
