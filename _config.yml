@@ -52,6 +52,8 @@ defaults:
           closeCurlyBrace: "jump to next paragraph (or function/block, when editing code)"
           openCurlyBrace: "jump to previous paragraph (or function/block, when editing code)"
           centerCursor: "center cursor on screen"
+          CtrlPluse: "move screen down one line (without moving cursor)"
+          CtrlPlusy: "move screen up one line (without moving cursor)"
           CtrlPlusb: "move back one full screen"
           CtrlPlusf: "move forward one full screen"
           CtrlPlusu: "move back 1/2 a screen"
