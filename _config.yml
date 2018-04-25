@@ -143,7 +143,6 @@ defaults:
         title: "Global"
         commands:
           helpForKeyword: "open help for keyword"
-          openFile: "open file"
           saveAsFile: "save file as"
           closePane: "close current pane"
           K: "open man page for word under the cursor"
