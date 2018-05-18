@@ -25,6 +25,9 @@ cursorMovement:
     E: "Sprung vorwärts zum Wortende (Wort kann Interpunktion enthalten)"
     b: "Sprung rückwärts zum Wortanfang"
     B: "Sprung rückwärts zum Wortanfang (Wort kann Interpunktion enthalten)"
+    H: "Zum Anfang des Bildschirms springen"
+    M: "Zur Mitte des Bildschirms springen"
+    L: "Zum Ende des Bildschirms springen"
     zero: "Sprung zum Zeilenanfang"
     caret: "Sprung zum ersten Zeichen der Zeile"
     dollar: "Sprung zum Zeilenende"
@@ -34,12 +37,20 @@ cursorMovement:
     fiveG: "Sprung zu Zeile 5"
     fx: "Springe zum nächsten 'x' auf der Linie"
     tx: "Springe vor das nächste 'x' auf der Linie"
+    Fx: "Springe zum vorherigen 'x' auf der Linie"
+    Tx: "Springe hinter das vorherige 'x' auf der Linie"
+    semicolon: "Wiederhole die letzte Bewegung mittels f, t, F oder T"
+    comma: "Wiederhole die letzte Bewegung mittels f, t, F oder T in entgegengesetzer Richtung"
     closeCurlyBrace: "Springe zum nächsten Paragraphen (oder Funktion/Block)"
     openCurlyBrace: "Springe zum vorherigen Paragraphen (oder Funktion/Block)"
+    centerCursor: "Zentriere den Cursor"
+    CtrlPluse: "Bewege den Bildschirm eine Zeile runter (ohne den Cursor zu verschieben)"
+    CtrlPlusy: "Bewege den Bildschirm eine Zeile hoch (ohne den Cursor zu verschieben)"
     CtrlPlusb: "Springe eine Bildschirmseite zurück"
     CtrlPlusf: "Springe eine Bildschirmseite weiter"
     CtrlPlusu: "Springe eine halbe Bildschirmseite zurück"
     CtrlPlusd: "Springe eine halbe Bildschirmseite weiter"
+    percent: "Zum entsprechenden Zeichen springen. (Unterstützt werden: '()', '{}', '[]' - mehr dazu mittels <code>:h_matchpairs</code> in vim)"
   tip: "Um eine Cursor-Bewegung zu wiederholen, ist diese mit einer Zahl zu prefixen. Beispiel: <kbd>4j</kbd> bewegt den Cursor 4 Zeilen nach unten."
 
 insertMode:
@@ -59,6 +70,8 @@ editing:
   commands:
     r: "einzelnes Zeichen ersetzen"
     J: "die Zeile unterhalb zur aktuellen Zeile hinzufügen"
+    gJ: "die Zeile unterhalb zur aktuellen Zeile ohne Abstand hinzufügen"
+    gwip: "Absatz neu umbrechen"
     cc: "Ersetzen der kompletten Zeile"
     cw: "Ersetzen bis zum Ende des Wortes"
     cDollar: "Ersetzen bis zum Zeilenende"
@@ -119,18 +132,30 @@ macros:
     runA: "Führe das Makro 'a'"
     rerun: "Führe das letzte Makro nochmals aus"
 
+global:
+  title: "Global"
+  commands:
+    helpForKeyword: "Hilfe zum Schlüsselwort öffnen"
+    saveAsFile: "Speichern unter"
+    closePane: "Ansicht schließen"
+    K: "Handbuchseite für das Wort unterm Cursor öffnen"
+    
 cutAndPaste:
   title: "Kopieren/Auschneiden und Einfügen"
   commands:
     yy: "Zeile kopieren"
     twoyy: "2 Zeilen kopieren"
-    yw: "Wort kopieren"
+    yw: "Zeichen des Worts unterm Cursor bis zum nächsten Wort kopieren."
+    yiw: "Wort kopieren"
+    yaw: "Zeichen des Worts unterm Cursor und die Abstände davor oder danach kopieren"
     yDollar: "bis Zeilenende kopieren"
     p: "Zwischenablage nach dem Cursor einfügen"
     P: "Zwischenablage vor dem Cursor einfügen"
     dd: "Löschen (Ausschneiden) der aktuellen Zeile"
     twodd: "Löschen (Ausschneiden) von 2 Zeilen (aktuelle und folgende)"
-    dw: "Wort löschen (ausschneiden)"
+    dw: "Zeichen des Worts unterm Cursor bis zum nächsten Wort löschen (ausschneiden)."
+    diw: "Wort löschen (ausschneiden)"
+    daw: "Zeichen des Worts unterm Cursor und die Abstände davor oder danach löschen (ausschneiden)"
     D: "Löschen (Ausschneiden) bis Zeilenende"
     dDollar: "Löschen (Ausschneiden) bis Zeilenende"
     x: "Zeichen löschen (ausschneiden)"
@@ -144,6 +169,7 @@ exiting:
     colonx: "Datei schreiben und schließen"
     colonq: "Datei schließen (schlägt fehl bei ungespeicherten Änderungen)"
     colonqbang: "Datei schließen und Änderungen verwerfen"
+    colonwqa: "Datei in allen Tabs schreiben und schließen"
 
 searchAndReplace:
   title: "Suchen und Ersetzen"

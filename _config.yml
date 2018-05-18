@@ -164,7 +164,7 @@ defaults:
           twodd: "delete (cut) 2 lines"
           dw: "delete (cut) the characters of the word from the cursor position to the start of the next word"
           diw: "delete (cut) word under the cursor"
-          daw: "yank (copy) word under the cursor and the space after or before it"
+          daw: "delete (cut) word under the cursor and the space after or before it"
           D: "delete (cut) to the end of the line"
           dDollar: "delete (cut) to the end of the line"
           x: "delete (cut) character"
