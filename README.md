@@ -23,6 +23,7 @@ Read about installing [jekyll](http://jekyllrb.com/)
 
 ```
 cd vim-cheat-sheet
+bundle update
 bundle install
 bundle exec jekyll serve
 ```
