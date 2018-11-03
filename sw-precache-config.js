@@ -51,6 +51,9 @@ module.exports = {
     '/lang/ro/': [
       '_site/lang/ro/index.html'
     ],
+    '/lang/si_lk/': [
+      '_site/lang/si_lk/index.html'
+    ],
     '/code_of_conduct/': [
       '_site/code_of_conduct/index.html'
     ]
