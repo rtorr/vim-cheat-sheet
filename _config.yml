@@ -81,6 +81,7 @@ defaults:
           gJ: "join line below to the current one without space in between"
           gwip: "reflow paragraph"
           cc: "change (replace) entire line"
+          C: "change (replace) to the end of the line"
           cDollar: "change (replace) to the end of the line"
           ciw: "change (replace) entire word"
           cw: "change (replace) to the end of the word"
