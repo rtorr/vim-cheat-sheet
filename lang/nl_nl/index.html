@@ -11,6 +11,9 @@ cursorMovement:
     j: "verplaats cursor naar rechts"
     k: "verplaats cursor naar boven"
     l: "verplaats cursor naar beneden"
+    H: "verplaats cursor naar de bovenkant van het scherm"
+    M: "verplaats cursor naar het midden van het scherm"
+    L: "verplaats cursor naar de onderkant van het scherm"
     w: "verplaats cursor naar het begin van een woord"
     W: "verplaats cursor naar het begin van een woord (woorden mogen interpunctie bevatten)"
     e: "verplaats cursor naar het einde van een woord"
@@ -25,9 +28,16 @@ cursorMovement:
     G: "verplaats cursor naar de laatste regel van het document"
     fiveG: "ga naar regel 5"
     fx: "ga naar het volgende voorkomen van karakter x"
-    tx: "na naar voor het volgende voorkomen van karakter x"
+    tx: "ga naar voor het volgende voorkomen van karakter x"
+    Fx: "ga naar het vorige voorkomen van karakter x"
+    Tx: "ga naar na het vorige voorkomen van karakter x"
+    semicolon: "herhaal vorige f, t, F of T commando"
+    comma: "herhaal vorige f, t, F of T commando, terugwaards"
     closeCurlyBrace: "ga naar de volgende paragraaf (of functie/blok, tijdens het bewerken van code)"
     openCurlyBrace: "ga naar de vorige paragraaf (of functie/blok, tijdens het bewerken van code)"
+    zz: "centreer cursor op scherm"
+    CtrlPluse: "beweeg scherm een regel omlaag"
+    CtrlPlusy: "beweeg scherm een regel omhoog"
     CtrlPlusb: "ga een volledig scherm terug"
     CtrlPlusf: "ga een volledig scherm vooruit"
     CtrlPlusu: "ga 1/2 scherm terug"
@@ -50,10 +60,14 @@ editing:
   title: "Bewerken"
   commands:
     r: "vervang één karakter"
-    J: "voeg onderstaande regel samen met huidige regel"
+    J: "voeg onderstaande regel samen met huidige regel met een spatie ertussen"
+    gJ: "voeg onderstaande regel samen met huidige regel zonder een spatie ertussen"
+    gwip: "formatteer paragraaf"
     cc: "vervang huidige regel"
+    C: "vervang tot einde regel"
     cw: "vervang tot einde huidig woord"
     cDollar: "vervang tot einde regel"
+    ciw: "vervang woord"
     s: "vervang karakter"
     S: "vervang huidige regel (het zelfde als cc)"
     xp: "verwissel twee letters (verwijder en plak)"
@@ -64,7 +78,7 @@ editing:
 markingText:
   title: "Tekst markeren (Visuele modus)"
   commands:
-    v: "start visuele modus, selecteer tekst en voer daarna een commando uit (zoals y-kopiëer)"
+    v: "start visuele modus, selecteer tekst en voer daarna een commando uit (zoals y-kopieer)"
     V: "start visuele modus (per regel)"
     o: "ga naar het einde van het geselecteerde gebied"
     CtrlPlusv: "begin visuele modus (per blok)"
@@ -81,7 +95,7 @@ visualCommands:
   commands:
     greaterThan: "verplaats tekst naar rechts"
     lessThan: "verplaats tekst naar links"
-    y: "kopiëer gemarkeerde tekst"
+    y: "kopieer gemarkeerde tekst"
     d: "verwijder gemarkeerde tekst"
     tilde: "hoofdletters omwisselen"
 
@@ -90,9 +104,9 @@ registers:
   commands:
     show: "laat registerinhoud zien"
     pasteRegisterX: "plak inhoud van register x"
-    yankIntoRegisterX: "kopiëer naar register x"
+    yankIntoRegisterX: "kopieer naar register x"
   tip1: "Registers worden opgeslagen in ~/.viminfo en worden opnieuw geladen na het herstarten van vim."
-  tip2: "Register 0 bevat altijd de inhoud van het laatste kopiëer ('yank') commando"
+  tip2: "Register 0 bevat altijd de inhoud van het laatste kopieer ('yank') commando"
 
 marks:
   title: "Positiemarkeringen"
@@ -100,7 +114,7 @@ marks:
     list: "lijst van positiemarkeringen"
     currentPositionA: "Markeer huidige positie als marker A"
     jumpPositionA: "ga naar positie van marker A"
-    yankToMarkA: "kopiëer tekst naar positie van marker A"
+    yankToMarkA: "kopieer tekst naar positie van marker A"
   tip: ""
 
 macros:
@@ -118,16 +132,17 @@ global:
     openFile: "open bestand"
     saveAsFile: "sla bestand op als"
     closePane: "sluit huidige scherm"
+    K: "open handleiding voor woord onder cursor"
 
 cutAndPaste:
   title: "Kopiëren en plakken"
   commands:
-    yy: "kopiëer één regel"
-    twoyy: "kopiëer twee regels"
-    yw: "kopiëer de karakters vanaf de cursorpositie tot het begin van het volgende woord"
-    yiw: "kopiëer woord onder de cursor"
-    yaw: "kopiëer het woord onder de cursor, inclusief de spatie er voor of er achter"
-    yDollar: "kopiëer tot het einde van de regel"
+    yy: "kopieer één regel"
+    twoyy: "kopieer twee regels"
+    yw: "kopieer de karakters vanaf de cursorpositie tot het begin van het volgende woord"
+    yiw: "kopieer woord onder de cursor"
+    yaw: "kopieer het woord onder de cursor, inclusief de spatie er voor of er achter"
+    yDollar: "kopieer tot het einde van de regel"
     p: "plak achter de cursor"
     P: "plak voor de cursor"
     dd: "verwijder (knip) een regel"
@@ -148,6 +163,7 @@ exiting:
     colonx: "sla op en verlaat vim"
     colonq: "verlaat vim (faalt wanneer er niet-opgeslagen aanpassingen zijn)"
     colonqbang: "verlaat vim en gooi niet-opgeslagen aanpassingen weg"
+    colonwqa: "sla op en sluit alle tabs"
 
 searchAndReplace:
   title: "Zoeken en vervangen"
