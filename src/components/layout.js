@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
           <div id="footer" className="grid-block">
             <div className="box">
               <div className="box-header">
-                <h2 id="languages">Additional Resources</h2>
+                <h2>Additional Resources</h2>
               </div>
               <div className="box-body">
                 <div className="grid-block">
