@@ -19,7 +19,7 @@ const Languages = ({ data }) => (
       <ul>
         {data.allIndexYaml.edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={`/${node.lang}`}>{node.lang}</Link>
+            <Link to={`/lang/${node.lang}`}>{node.lang}</Link>
           </li>
         ))}
       </ul>

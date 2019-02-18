@@ -83,7 +83,7 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(result => {
       result.data.allIndexYaml.edges.forEach(({ node }) => {
         createPage({
-          path: node.lang,
+          path: `lang/${node.lang}`,
           component: path.resolve(`./src/templates/sheet.js`),
           context: { slug: node.lang }
         });
