@@ -80,14 +80,6 @@ const Layout = ({ children }) => (
                       </a>
                       .
                     </p>
-                    <h3>Contributor Code of Conduct</h3>
-                    <p>
-                      This project strongly believes in having a code of conduct.{' '}
-                      <a href="/code_of_conduct/">
-                        {' '}
-                        Please see the code of conduct page for more information.
-                      </a>
-                    </p>
                     <h3>Other places to find this document</h3>
                     <p>
                       This document was embedded in{' '}
