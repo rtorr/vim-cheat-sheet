@@ -10,6 +10,7 @@ module.exports = {
     url: 'http://vim.rtorr.com'
   },
   plugins: [
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     {
       name: 'yaml',
