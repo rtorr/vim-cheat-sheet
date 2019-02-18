@@ -11,9 +11,9 @@ as many languages as possible.
 
 ## Quick start
 
-    ```sh
-    npx gatsby develop
-    ```
+```bash
+npx gatsby develop
+```
 
 1.  **Open the source code and start editing!**
 
