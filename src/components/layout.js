@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div class="container">
+      <div className="container">
         <Header config={data.allConfigYaml.edges[0].node} />
         <main>{children}</main>
         <div>
