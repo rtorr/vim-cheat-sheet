@@ -23,7 +23,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div class="container">
+      <div className="container">
         <Header config={data.configYaml} />
         <main>{children}</main>
         <div>
