@@ -4,8 +4,6 @@ title: Svenska
 permalink: /lang/sv/
 lang: "sv"
 
-title: 'Svenska'
-lang: 'sv'
 cursorMovement:
   title: 'Markörkontroller'
   commands:
