@@ -1,0 +1,229 @@
+
+layout: page
+title: Svenska
+permalink: /lang/sv/
+lang: "sv"
+
+cursorMovement:
+  title: 'Markörkontroller'
+  commands:
+    h: 'flytta markören åt vänster'
+    j: 'flytta markören åt höger'
+    k: 'flytta markören uppåt'
+    l: 'flytta markören neråt'
+    w: 'hoppa framåt till starten av nästa ord'
+    W: 'hoppa framåt till starten av nästa ord (orden kan innehålla skiljetecken)'
+    e: 'hoppa framåt till slutet av nästa ord'
+    E: 'hoppa framåt till slutet av nästa ord (orden kan innehålla skiljetecken)'
+    b: 'hoppa bakåt till starten av föregående ord'
+    B: 'hoppa bakåt till starten av föregående ord (orden kan innehålla skiljetecken)'
+    H: 'flytta till toppen av skärmen'
+    M: 'flytta till mitten av skärmen'
+    L: 'flytta till botten av skärmen'
+    zero: 'hoppa till början av raden'
+    caret: 'hoppa till första icke-blanka tecknet på raden'
+    dollar: 'hoppa till slutet av raden'
+    g_: 'hoppa till sista icke-blanka tecknet på raden'
+    gg: 'gå till första raden i dokumentet'
+    G: 'gå till sista raden i dokumentet'
+    fiveG: 'gå till rad 5'
+    fx: 'hoppa till nästa förekomst av tecknet x'
+    tx: 'hoppa till tecknet före nästa förekomst av tecknet x'
+    Fx: 'hoppa till föregående förekomst av tecknet x'
+    Tx: 'hoppa till tecknet efter föregående förekomst av tecknet x'
+    semicolon: 'upprepa föregående kommando av typ f, t, F eller T'
+    comma: 'upprepa föregående kommando av typ f, t, F eller T, baklänges'
+    closeCurlyBrace: 'hoppa till nästa paragraf (eller funktion/block av kod)'
+    openCurlyBrace: 'hoppa till föregående paragraf (eller funktion/block av kod)'
+    centerCursor: 'centrera markören på skärmen'
+    CtrlPluse: 'flytta ner skärmen en rad (utan att flytta markören)'
+    CtrlPlusy: 'flytta upp skärmen en rad (utan att flytta markören)'
+    CtrlPlusb: 'flytta bakåt en hel skärm'
+    CtrlPlusf: 'flytta framåt en hel skärm'
+    CtrlPlusu: 'flytta bakåt en halv skärm'
+    CtrlPlusd: 'flytta framåt en halv skärm'
+    percent: "flytta till matchande tecken (gäller följande par: '()', '{}', '[]' - använd <code>:h matchpairs</code> i vim för mer information)"
+  tip: 'Skriv ett tal före ett markörkommando för att upprepa det. Till exempel: <kbd>4j</kbd> flyttar ner 4 rader.'
+
+insertMode:
+  title: 'Insättning - sätta in/lägga till text'
+  commands:
+    i: 'sätt in efter markören'
+    I: 'sätt in på början av raden'
+    a: 'sätt in (lägg till) efter markören'
+    A: 'sätt in (lägg till) på slutet av raden'
+    o: 'lägg till (öppna) en ny rad under nuvarande rad'
+    O: 'lägg till (öppna) enny rad över nuvarande rad'
+    ea: 'sätt in (lägg till) efter slutet av ordet'
+    Esc: 'lämna insättningsläget'
+
+editing:
+  title: 'Redigering'
+  commands:
+    r: 'byt ut ett tecken'
+    J: 'sammanfoga raden under med nuvarande rad med mellanslag mellan'
+    gJ: 'sammanfoga raden under med nuvarande rad utan mellanslag mellan'
+    gwip: 'flyt ihop paragrafen'
+    cc: 'byt (ersätt) hela raden'
+    C: 'byt (ersätt) till slutet av raden'
+    cDollar: 'byt (ersätt) till slutet av raden'
+    ciw: 'byt (ersätt) ett helt ord'
+    cw: 'byt (ersätt) till slutet av ordet'
+    s: 'tag bort tecken och ersätt med text'
+    S: 'tag bort rad och ersätt med text (samma som cc)'
+    xp: 'byt ut två tecken (klipp och klistra)'
+    u: 'ångra'
+    CtrlPlusr: 'gör om'
+    dot: 'upprepa föregående kommando'
+
+markingText:
+  title: 'Markera text (visuellt läge)'
+  commands:
+    v: 'starta visuellt läge, markera rader, utför sedan kommando (t.ex. y-kopiera)'
+    V: 'starta radvist visuellt läge'
+    o: 'flytta till andra änden av redan markerat område'
+    CtrlPlusv: 'starta visuellt blockläge'
+    O: 'flytta till ett annat hörn av redan markerat block'
+    aw: 'markera ett ord'
+    ab: 'markera ett block med ()'
+    aB: 'markera ett block med {}'
+    ib: 'markera inre block med ()'
+    iB: 'markera inre block med {}'
+    Esc: 'avsluta visuellt läge'
+
+visualCommands:
+  title: 'Visuella kommandon'
+  commands:
+    greaterThan: 'flytta texten åt höger'
+    lessThan: 'flytta texten åt vänster'
+    y: 'yank (copy) marked text'
+    d: 'tag bort markerad text'
+    tilde: 'byt till stora/små bokstäver'
+
+registers:
+  title: 'Register'
+  commands:
+    show: 'visa alla registers innehåll'
+    pasteRegisterX: 'klistra in innehållet av register x'
+    yankIntoRegisterX: 'kopiera till register x'
+  tip1: 'Register förvaras i ~/.viminfo och kommer att laddas igen nästa gång vim startar om.'
+  tip2: 'Register 0 innehåller alltid värdet av det senaste kopieringskommandot (yank).'
+
+marks:
+  title: 'Märken'
+  commands:
+    list: 'visa en lista över märken'
+    currentPositionA: 'spara nuvarande position i märke A'
+    jumpPositionA: 'hoppa till märke A'
+    yankToMarkA: 'klistra in text vid märke A'
+  tip: ''
+
+macros:
+  title: 'Macros'
+  commands:
+    recordA: 'record macro a'
+    stopRecording: 'stop recording macro'
+    runA: 'run macro a'
+    rerun: 'rerun last run macro'
+
+global:
+  title: 'Globala kommandon'
+  commands:
+    helpForKeyword: 'visa hjälp för kommando "nyckelord"'
+    saveAsFile: 'spara fil som'
+    closePane: 'stäng nuvarande ruta'
+    K: 'öppna man page för ordet under markören'
+
+cutAndPaste:
+  title: 'Klipp och klistra'
+  commands:
+    yy: 'kopiera en rad'
+    twoyy: 'kopiera två rader'
+    yw: 'kopiera tecken från nuvarande position till starten av nästa ord'
+    yiw: 'kopiera till slutet av raden'
+    yaw: 'kopiera ordet under markören och mellanslag före eller efter ordet'
+    yDollar: 'kopiera till slutet av raden'
+    p: 'klistra in urklippet efter markören'
+    P: 'klistra in före markören'
+    dd: 'tag bort en rad'
+    twodd: 'tag bort två rader'
+    dw: 'delete (cut) the characters of the word from the cursor position to the start of the next word'
+    dw: 'tag bort tecken från markören till början av nästa ord'
+    diw: 'tag bort ordet under markören'
+    daw: 'tag bort ordet under markören och mellanslag före eller efter ordet'
+    D: 'tag bort till slutet av raden'
+    dDollar: 'tag bort till slutet av raden'
+    x: 'tag bort tecken'
+
+exiting:
+  title: 'Avslutning'
+  commands:
+    colonw: "skriv (spara) filen, men avsluta inte"
+    colonwsudo: 'skriv nuvarande fil med sudo'
+    colonwq: 'skriv (spara) och avsluta'
+    colonx: 'skriv (spara) och avsluta'
+    colonq: 'avsluta (fungerar inte om det finns osparade ändringar)'
+    colonqbang: 'avsluta och kassera alla ändringar'
+    colonwqa: 'skriv (spara) och avsluta i alla tabbar'
+
+searchAndReplace:
+  title: 'Sök och ersätt'
+  commands:
+    forwardSlashPattern: 'sök efter mönster'
+    questionMarkPattern: 'sök baklänges efter mönster'
+    backslashVpattern: "'väldigt magiskt' mönster: icke-alfanumeriska tecken räknas som särskilda regexsymboler (escape character behövs inte)"
+    n: 'upprepa sökning i samma riktning'
+    N: 'upprepa sökning i motsatt riktning'
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashg: 'ersätt alla "old" med "new" i hela filen'
+    colonPercentForwardSlashOldForwardSlashNewForwardSlashgc: 'ersätt alla "old" med "new" i hela filen, med konfirmering för varje ord'
+    colonnoh: 'stäng av färgmarkering av sökresultat'
+
+searchMultipleFiles:
+  title: 'Sök i flera filer'
+  commands:
+    colonvimgrep: 'search for pattern in multiple files'
+    coloncn: 'jump to the next match'
+    coloncp: 'jump to the previous match'
+    coloncopen: 'open a window containing the list of matches'
+
+workingWithMultipleFiles:
+  title: 'Working with multiple files'
+  commands:
+    colone: 'öppna en fil i en ny buffer'
+    colonbnext: 'gå till nästa buffer'
+    colonbprev: 'gå till föregående buffer'
+    colonls: 'visa lista över alla öppna buffrar'
+    colonbd: 'tag bort buffer (stäng en fil)'
+    colonsp: 'öppna en fil i en ny buffer och dela fönstret horisontellt'
+    colonvsp: 'öppna en fil i en ny buffer och dela fönstret vertikalt'
+    ctrlPlusws: 'splitta fönster'
+    ctrlPlusww: 'byt fönster'
+    ctrlPluswq: 'stäng ett fönster'
+    ctrlPluswv: 'dela ett fönster vertikalt'
+    ctrlPluswh: 'flytta till fönstret åt vänster (vertikal delning)'
+    ctrlPluswl: 'flytta till fönstret åt höger (vertikal delning)'
+    ctrlPluswj: 'flytta till fönstret nedanför (horisontell delning)'
+    ctrlPluswk: 'flytta till fönstret ovanför (horisontell delning)'
+
+tabs:
+  title: 'Tabbar'
+  commands:
+    colonTabNew: 'öppna en fil i en ny tabb'
+    ctrlPluswT: 'flytta nuvarande fönster till en egen tabb'
+    gt: 'flytta till nästa tabb'
+    gT: 'flytta till föregåendetabb'
+    hashgt: 'flytta till tabb nummer #'
+    colontabmove: 'flytta nuvarande tabb till den #e positionen (räknar från 0)'
+    colontabc: 'stäng nuvarande tabb och alla dess fönster'
+    colontabo: 'stäng alla tabbar förutom nuvarande'
+    colontabdo: 'kör <code>kommando</code> på alla tabbar (t.ex. <code>:tabdo q</code> - stänger alla öppna tabbar)'
+
+words:
+  keyword: 'nyckelord'
+  file: 'fil'
+  movement: 'förflyttning'
+
+languages:
+  title: 'Språk'
+
+footer: 'Checka ut koden på'
