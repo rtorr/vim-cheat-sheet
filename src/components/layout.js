@@ -11,24 +11,20 @@ const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteConfigQuery {
-        allConfigYaml {
-          edges {
-            node {
-              title
-              email
-              description
-              baseurl
-              url
-              twitter_username
-              github_username
-            }
-          }
+        configYaml {
+          title
+          email
+          description
+          baseurl
+          url
+          twitter_username
+          github_username
         }
       }
     `}
     render={data => (
       <div className="container">
-        <Header config={data.allConfigYaml.edges[0].node} />
+        <Header config={data.configYaml} />
         <main>{children}</main>
         <div>
           <div id="footer" className="grid-block">
