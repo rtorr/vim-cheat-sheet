@@ -76,6 +76,9 @@ const sheet = graphql`
               comma
               CtrlPluse
               CtrlPlusy
+              CtrlPlusf
+              CtrlPlusd
+              CtrlPlusu
               zz
             }
           }

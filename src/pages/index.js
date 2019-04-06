@@ -84,6 +84,9 @@ export const query = graphql`
               comma
               CtrlPluse
               CtrlPlusy
+              CtrlPlusf
+              CtrlPlusd
+              CtrlPlusu
               zz
             }
           }
