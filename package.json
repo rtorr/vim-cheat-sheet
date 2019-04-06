@@ -1,9 +1,9 @@
 {
   "name": "vim-cheet-sheet",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A mobile friendly Vim cheat sheet",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Richard Torruellas <rtorruellas@gmail.com>",
   "dependencies": {
     "gatsby": "^2.3.14",
     "gatsby-image": "^2.0.37",
