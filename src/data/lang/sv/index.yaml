@@ -1,8 +1,7 @@
-
 layout: page
 title: Svenska
 permalink: /lang/sv/
-lang: "sv"
+lang: 'sv'
 
 cursorMovement:
   title: 'Markörkontroller'
@@ -147,7 +146,6 @@ cutAndPaste:
     P: 'klistra in före markören'
     dd: 'tag bort en rad'
     twodd: 'tag bort två rader'
-    dw: 'delete (cut) the characters of the word from the cursor position to the start of the next word'
     dw: 'tag bort tecken från markören till början av nästa ord'
     diw: 'tag bort ordet under markören'
     daw: 'tag bort ordet under markören och mellanslag före eller efter ordet'
@@ -158,7 +156,7 @@ cutAndPaste:
 exiting:
   title: 'Avslutning'
   commands:
-    colonw: "skriv (spara) filen, men avsluta inte"
+    colonw: 'skriv (spara) filen, men avsluta inte'
     colonwsudo: 'skriv nuvarande fil med sudo'
     colonwq: 'skriv (spara) och avsluta'
     colonx: 'skriv (spara) och avsluta'
