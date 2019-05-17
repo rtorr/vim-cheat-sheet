@@ -34,7 +34,7 @@ cursorMovement:
     semicolon: "直前のf, t, F, Tの繰り返し"
     comma: "直前のf, t, F, Tの繰り返し（反対方向）"
     closeCurlyBrace: "次の段落へジャンプ（コード編集中の場合は関数/ブロック）"
-    openCurlyBrace: "前の段落へジャンププ（コード編集中の場合は関数/ブロック）"
+    openCurlyBrace: "前の段落へジャンプ（コード編集中の場合は関数/ブロック）"
     centerCursor: "カーソル位置を画面中央にする"
     CtrlPluse: "画面を下に1行スクロール（カーソル移動なし）"
     CtrlPlusy: "画面を上に1行スクロール（カーソル移動なし）"
