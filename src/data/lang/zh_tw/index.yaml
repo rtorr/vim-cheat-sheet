@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 繁體中文
+title: 中文 (台灣)
 permalink: /lang/zh_tw/
 lang: "zh_tw"
 
@@ -13,7 +13,7 @@ cursorMovement:
     l: "向右移動游標"
     w: "向右跳至字首"
     W: "向右跳至字首 (字中可含標點)"
-    e: "向右跳至尾"
+    e: "向右跳至字尾"
     E: "向右跳至字尾 (字中可含標點)"
     b: "向左跳至字尾"
     B: "向左跳至字尾 (字中可含標點)"
@@ -40,8 +40,8 @@ cursorMovement:
     CtrlPlusy: '視窗向上捲動一行 (不移動游標)'
     CtrlPlusb: "向上捲動一個視窗"
     CtrlPlusf: "向下捲動一個視窗"
-    CtrlPlusd: "向下捲動半個視窗"
     CtrlPlusu: "向上捲動半個視窗"
+    CtrlPlusd: "向下捲動半個視窗"
     percent: "跳至相對應的字元 (預設支援 ()、{}、[] - 在 Vim 中使用 :h matchpairs 顯示說明)"
   tip: "移動游標的命令前加數字可指定重複次數，例如 <kbd>4j</kbd> 會向下移動 4 行。"
 
@@ -60,7 +60,7 @@ insertMode:
 editing:
   title: "編輯"
   commands:
-    r: "變更 (取代) 游標後一個字元"
+    r: "取代游標後一個字元"
     J: "將下一行合併至該行 (兩行之間有空格)"
     gJ: '將下一行合併至該行 (兩行之間沒有空格)'
     gwip: '重新調整段落'
@@ -74,7 +74,7 @@ editing:
     xp: "游標後二個字元位置交換 (刪除並貼上)"
     u: "復原"
     CtrlPlusr: "重做"
-    dot: "再次執行上個命令"
+    dot: "重複上個命令"
 
 markingText:
   title: "選取文字（標示模式）"
@@ -152,7 +152,7 @@ cutAndPaste:
     daw: '剪下 (刪除) 游標所在單字和後面或前面的空格'
     D: "剪下 (刪除) 游標位置到行尾的區塊"
     dDollar: "剪下 (刪除) 游標位置到行尾的區塊 (同 D)"
-    x: "剪下 (刪除) 該單字"
+    x: "剪下 (刪除) 字元"
 
 exiting:
   title: "退出"
