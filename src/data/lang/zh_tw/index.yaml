@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 繁體中文
+title: 中文 (台灣)
 permalink: /lang/zh_tw/
 lang: "zh_tw"
 
@@ -26,18 +26,24 @@ cursorMovement:
     g_: "跳至行內最後一個非空白字元"
     gg: "跳至檔案第一行"
     G: "跳至檔案最後一行"
-    fiveG: "跳至第 <code>5</code> 行"
-    fx: "跳至字元 <code>x</code> 下次出現的位置"
-    tx: "跳至字元 <code>x</code> 下次出現位置的上一個字元"
+    fiveG: "跳至第 5 行"
+    fx: "跳至字元 x 下次出現的位置"
+    tx: "跳至字元 x 下次出現位置的上一個字元"
+    Fx: '跳至字元 x 上次出現的位置'
+    Tx: '跳至字元 x 上次出現的位置之後'
+    semicolon: '重複上個 f、t、F 或 T 移動'
+    comma: '反向重複上個 f、t、F 或 T 移動'
     closeCurlyBrace: "跳至下一段 (若編輯程式碼則為函式/區塊)"
     openCurlyBrace: "跳至上一段 (若編輯程式碼則為函式/區塊)"
     centerCursor: "將游標所在行移到視窗中間"
+    CtrlPluse: '視窗向下捲動一行 (不移動游標)'
+    CtrlPlusy: '視窗向上捲動一行 (不移動游標)'
     CtrlPlusb: "向上捲動一個視窗"
     CtrlPlusf: "向下捲動一個視窗"
-    CtrlPlusd: "向下捲動半個視窗"
     CtrlPlusu: "向上捲動半個視窗"
-    percent: "跳至相對應的字元 (預設支援 ()、{}、[] - 在 Vim 中使用 <kbd>:h matchpairs</kbd> 顯示說明)"
-  tip: "移動游標的命令前加數字可指定重複次數，例如 <kbd>4j</kbd> 會向下移動 <code>4</code> 行。"
+    CtrlPlusd: "向下捲動半個視窗"
+    percent: "跳至相對應的字元 (預設支援 ()、{}、[] - 在 Vim 中使用 :h matchpairs 顯示說明)"
+  tip: "移動游標的命令前加數字可指定重複次數，例如 <kbd>4j</kbd> 會向下移動 4 行。"
 
 insertMode:
   title: "插入模式 - 插入/附加文字"
@@ -54,22 +60,26 @@ insertMode:
 editing:
   title: "編輯"
   commands:
-    r: "變更 (取代) 游標後一個字元"
-    J: "將下一行合併至該行"
-    cc: "變更 (取代) 整行"
+    r: "取代游標後一個字元"
+    J: "將下一行合併至該行 (兩行之間有空格)"
+    gJ: '將下一行合併至該行 (兩行之間沒有空格)'
+    gwip: '重新調整段落'
+    cc: "剪下 (刪除) 整行並開始插入"
+    C: '剪下 (刪除) 游標位置到行尾的區塊並開始插入'
+    cDollar: "剪下 (刪除) 游標位置到行尾的區塊並開始插入"
+    ciw: '剪下 (刪除) 整個字並開始插入'
     cw: "從游標位置開始變更 (取代) 單字"
-    cDollar: "從游標位置開始變更 (取代) 該行"
     s: "刪除游標後字元並進入插入模式"
-    S: "刪除整行並進入插入模式 (同 <kbd>cc</kbd>)"
+    S: "刪除整行並進入插入模式 (同 cc)"
     xp: "游標後二個字元位置交換 (刪除並貼上)"
     u: "復原"
     CtrlPlusr: "重做"
-    dot: "再次執行上個命令"
+    dot: "重複上個命令"
 
 markingText:
   title: "選取文字（標示模式）"
   commands:
-    v: "進入標示模式 (字元選取)，並執行命令 (如 <kbd>y</kbd> - 複製)"
+    v: "進入標示模式 (字元選取)，並執行命令 (如 y - 複製)"
     V: "進入標示模式 (行選取)"
     CtrlPlusv: "進入標示模式 (區塊選取)"
     o: "跳至選取區塊的開頭/結尾"
@@ -94,69 +104,73 @@ registers:
   title: "暫存區"
   commands:
     show: "顯示暫存區內容"
-    pasteRegisterX: "貼上暫存區 <code>x</code> 的內容"
-    yankIntoRegisterX: "複製到暫存區 <code>x</code>"
-  tip1: "暫存區儲存在 <code>~/.viminfo</code>，且會在 Vim 下次啟動時重新載入。"
-  tip2: "暫存區 <code>0</code> 一律會保存上一次複製的內容。"
+    pasteRegisterX: "貼上暫存區 x 的內容"
+    yankIntoRegisterX: "複製到暫存區 x"
+  tip1: "暫存區儲存在 ~/.viminfo，且會在 Vim 下次啟動時重新載入。"
+  tip2: "暫存區 0 一律會保存上一次複製的內容。"
 
 marks:
   title: "標記"
   commands:
     list: "顯示標記清單"
-    currentPositionA: "將目前的位置設為標記 <code>a</code>"
-    jumpPositionA: "跳至標記 <code>a</code>"
-    yankToMarkA: "複製游標目前位置到標記 <code>a</code> 位置的字元"
+    currentPositionA: "將目前的位置設為標記 a"
+    jumpPositionA: "跳至標記 a"
+    yankToMarkA: "複製游標目前位置到標記 a 位置的字元"
   tip: ""
 
 macros:
   title: "巨集"
   commands:
-    recordA: "錄製巨集 <code>a</code>"
+    recordA: "錄製巨集 a"
     stopRecording: "停止錄製巨集"
-    runA: "執行巨集 <code>a</code>"
+    runA: "執行巨集 a"
     rerun: "執行上一次執行的巨集"
 
 global:
   title: "全域"
   commands:
-    helpForKeyword: "顯示<kbd>關鍵字</kbd>的說明"
-    openFile: "開啟<kbd>檔案名稱<kbd>"
-    saveAsFile: "另存新檔為<kbd>檔案名稱</kbd>"
+    helpForKeyword: "顯示關鍵字的說明"
+    saveAsFile: "另存新檔為檔案名稱"
     closePane: "關閉目前的視窗"
-    K: "開啟游標所在單字的 <code>man</code> 頁面"
+    K: "開啟游標所在單字的 man 頁面"
 
 cutAndPaste:
   title: "剪下、複製、貼上"
   commands:
     yy: "複製該行"
-    twoyy: "複製 <code>2</code> 行"
-    yw: "複製該單字"
+    twoyy: "複製 2 行"
+    yw: "複製游標位置到下個單字前的字元"
+    yiw: '複製游標所在單字'
+    yaw: '複製游標所在單字和後面或前面的空格'
     yDollar: "複製游標位置到行尾的區塊"
     p: "在游標後貼上"
     P: "在游標前貼上"
     dd: "剪下 (刪除) 該行"
-    twodd: "剪下 (刪除) <code>2</code> 行"
-    dw: "剪下 (刪除) 該單字"
+    twodd: "剪下 (刪除) 2 行"
+    dw: '剪下 (刪除) 游標位置到下個單字前的字元'
+    diw: '剪下 (刪除) 游標所在單字'
+    daw: '剪下 (刪除) 游標所在單字和後面或前面的空格'
     D: "剪下 (刪除) 游標位置到行尾的區塊"
-    dDollar: "剪下 (刪除) 游標位置到行尾的區塊 (同 <kbd>D</kbd>)"
-    x: "剪下 (刪除) 該單字"
+    dDollar: "剪下 (刪除) 游標位置到行尾的區塊 (同 D)"
+    x: "剪下 (刪除) 字元"
 
 exiting:
   title: "退出"
   commands:
     colonw: "儲存"
-    colonwsudo: "以 <code>sudo</code> 儲存目前的檔案"
+    colonwsudo: "以 sudo 儲存目前的檔案"
     colonwq: "儲存並退出"
     colonx: "儲存並退出"
     colonq: "退出 (修改未儲存時警告)"
     colonqbang: "強制退出 (不儲存)"
+    colonwqa: '儲存所有分頁並全部退出'
 
 searchAndReplace:
   title: "尋找、取代"
   commands:
-    forwardSlashPattern: "尋找 <kbd>pattern</kbd>"
-    questionMarkPattern: "向上尋找 <kbd>pattern</kbd>"
-    backslashVpattern: "<kbd>pattern</kbd> 中的非英數字元皆視為正規表示式的特殊字元 (不需跳脫字元)"
+    forwardSlashPattern: "尋找 pattern"
+    questionMarkPattern: "向上尋找 pattern"
+    backslashVpattern: "pattern 中的非英數字元皆視為正規表示式的特殊字元 (不需跳脫字元)"
     n: "尋找下一個"
     N: "尋找上一個"
     colonPercentForwardSlashOldForwardSlashNewForwardSlashg: "全部取代"
@@ -166,7 +180,7 @@ searchAndReplace:
 searchMultipleFiles:
   title: "多檔案搜尋"
   commands:
-    colonvimgrep: "在多個檔案中搜尋 <kbd>pattern</kbd>"
+    colonvimgrep: "在多個檔案中搜尋 pattern"
     coloncn: "跳至下一個"
     coloncp: "跳至上一個"
     coloncopen: "開啟搜尋結果列表視窗"
@@ -174,13 +188,13 @@ searchMultipleFiles:
 workingWithMultipleFiles:
   title: "多檔案編輯"
   commands:
-    colone: "在新緩衝區開啟<kbd>檔案名稱</kbd>"
+    colone: "在新緩衝區開啟檔案名稱"
     colonbnext: "切換到下個緩衝區"
     colonbprev: "切換到上個緩衝區"
     colonls: "列出所有開啟的緩衝區"
     colonbd: "刪除緩衝區 (關閉檔案)"
-    colonsp: "在新緩衝區開啟<kbd>檔案名稱</kbd>並水平分割視窗"
-    colonvsp: "在新緩衝區開啟<kbd>檔案名稱</kbd>並垂直分割視窗"
+    colonsp: "在新緩衝區開啟檔案名稱並水平分割視窗"
+    colonvsp: "在新緩衝區開啟檔案名稱並垂直分割視窗"
     ctrlPlusws: "水平分割視窗"
     ctrlPlusww: "切換視窗"
     ctrlPluswq: "關閉視窗"
@@ -193,15 +207,15 @@ workingWithMultipleFiles:
 tabs:
   title: "分頁"
   commands:
-    colonTabNew: "在新分頁開啟<kbd>檔案名稱</kbd>"
+    colonTabNew: "在新分頁開啟檔案名稱"
     ctrlPluswT: "以新分頁開啟視窗"
     gt: "切換到下個分頁"
     gT: "切換到上個分頁"
-    hashgt: "切換到第 <code>#</code> 個分頁"
-    colontabmove:  "將分頁移到第 <code>#</code> 位 (從 <code>0</code> 算起)"
+    hashgt: "切換到第 # 個分頁"
+    colontabmove:  "將分頁移到第 # 位 (從 0 算起)"
     colontabc: "關閉該分頁及其中所有視窗"
     colontabo: "關閉所有其他分頁"
-    colontabdo: "對所有分頁執行命令 (例如 <kbd>:tabdo q</kbd> 會關閉所有分頁)"
+    colontabdo: "對所有分頁執行命令 (例如 :tabdo q 會關閉所有分頁)"
 
 words:
   keyword: "關鍵字"
