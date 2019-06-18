@@ -167,6 +167,10 @@ export const query = graphql`
               dd
               twodd
               dw
+              d/
+              d?
+              dn
+              dN
               D
               dDollar
               x
