@@ -13,6 +13,8 @@ cursorMovement:
     E: 'jump forwards to the end of a word (words can contain punctuation)'
     b: 'jump backwards to the start of a word'
     B: 'jump backwards to the start of a word (words can contain punctuation)'
+    ge: 'jump backwards to the end of a word'
+    gE: 'jump backwards to the end of a word (words can contain punctuation)'
     H: 'move to top of screen'
     M: 'move to middle of screen'
     L: 'move to bottom of screen'
