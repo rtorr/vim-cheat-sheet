@@ -66,6 +66,8 @@ export const query = graphql`
               E
               b
               B
+              ge
+              gE
               zero
               caret
               dollar
