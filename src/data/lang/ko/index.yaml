@@ -36,6 +36,8 @@ cursorMovement:
     closeCurlyBrace: "다음 단락(또는 함수/블록)으로 이동"
     openCurlyBrace: "이전 단락(또는 함수/블록)으로 이동"
     centerCursor: "커서가 있는 행을 중간으로 하도록 화면 이동"
+    CtrlPluse: "커서 이동 없이 한 줄 아래로 화면 이동"
+    CtrlPlusy: "커서 이동 없이 한 줄 위로 화면 이동"
     CtrlPlusb: "한 화면 위로"
     CtrlPlusf: "한 화면 아래로"
     CtrlPlusu: "반 화면 위로"
