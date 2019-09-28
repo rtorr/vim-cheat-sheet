@@ -17,7 +17,7 @@ cursorMovement:
     E: "skocz na koniec bieżącego wyrazu (słowa mogą zawierać interpunkcję)"
     b: "skocz na początek bieżącego wyrazu"
     B: "skocz na początek bieżącego wyrazu (słowa mogą zawierać interpunkcję)"
-    percent: "przesuń do pasującego znaku (standardowo wspierane pary: '()', '{}', '[]' - użyj :h matchpairs w Vimie po więce informacji)"
+    percent: "przesuń do pasującego znaku (standardowo wspierane pary: '()', '{}', '[]' - użyj <code>:h matchpairs</code> w Vimie po więce informacji)"
     H: "skocz do góry ekranu"
     M: "skocz do połowy ekranu"
     L: "skocz do dołu ekranu"

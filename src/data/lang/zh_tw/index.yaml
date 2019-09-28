@@ -42,7 +42,7 @@ cursorMovement:
     CtrlPlusf: "向下捲動一個視窗"
     CtrlPlusu: "向上捲動半個視窗"
     CtrlPlusd: "向下捲動半個視窗"
-    percent: "跳至相對應的字元 (預設支援 ()、{}、[] - 在 Vim 中使用 :h matchpairs 顯示說明)"
+    percent: "跳至相對應的字元 (預設支援 ()、{}、[] - 在 Vim 中使用 <code>:h matchpairs</code> 顯示說明)"
   tip: "移動游標的命令前加數字可指定重複次數，例如 <kbd>4j</kbd> 會向下移動 4 行。"
 
 insertMode:
