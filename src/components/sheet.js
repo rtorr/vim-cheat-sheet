@@ -62,7 +62,7 @@ export default ({ page }) => (
               <kbd>B</kbd> - {page.cursorMovement.commands.B}
             </li>
             <li>
-              <kbd>%</kbd> - {page.cursorMovement.commands.percent}
+              <kbd>%</kbd> - <SetHtml>{page.cursorMovement.commands.percent}</SetHtml>
             </li>
             <li>
               <kbd>0</kbd> - {page.cursorMovement.commands.zero}

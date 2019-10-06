@@ -5,7 +5,11 @@ const Languages = ({ data }) => (
   <StaticQuery
     query={graphql`
       {
-        allIndexYaml {
+        allIndexYaml(
+          sort: {
+            fields: [title]
+          }
+        ) {
           edges {
             node {
               id
