@@ -28,7 +28,11 @@ cursorMovement:
     G: "aller à la dernière ligne du document"
     fiveG: "aller à la ligne 5"
     fx: "atteindre la prochaine occurence du caractère x"
-    tx: "atteindre la précédente occurence du caractère x"
+    tx: "atteindre le caractère précédent la prochaine occurence du caractère x"
+    Fx: "atteindre la précédente occurence du character x"
+    Tx: "atteindre le caractère suivant la précédente occurence du caractère x"
+    semicolon: "répéter le dernier f, t, F ou T"
+    comma: "répéter le dernier f, t, F ou T, dans l'autre sens"
     closeCurlyBrace: "atteindre le prochain paragraphe (ou function/bloc, en mode édition)"
     openCurlyBrace: "atteindre le précédent paragraphe (ou function/bloc, en mode édition)"
     centerCursor: "centre le curseur sur l'écran"
@@ -59,6 +63,7 @@ editing:
     r: "remplacer un caractère"
     J: "joindre la ligne suivante à la ligne en cours"
     cc: "changer (remplacer) une ligne entière"
+    C: "changer (remplacer) jusqu'à la fin de la ligne"
     ciw: "changer (remplacer) un mot entier"
     cw: "changer (remplacer) jusqu'à la fin d'un mot"
     cDollar: "changer (remplacer) jusqu'à la fin d'une ligne"
@@ -157,6 +162,7 @@ exiting:
     colonx: "écrire (sauver) et quitter"
     colonq: "quitter (échoue s'il y a des modifications non sauvegardées)"
     colonqbang: "quitter et abandonner les modifications non sauvegardées"
+    colonwqa: "écrire (sauver) et fermer tous les onglets"
 
 searchAndReplace:
   title: "Rechercher et remplacer"
