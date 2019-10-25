@@ -200,8 +200,8 @@ workingWithMultipleFiles:
     ctrlPlusww: "창 전환"
     ctrlPluswq: "창 닫기"
     ctrlPluswv: "좌우로 창 분할"
-    ctrlPluswh: "오른쪽 창으로 이동 (좌우 분할)"
-    ctrlPluswl: "왼쪽 창으로 이동 (좌우 분할)"
+    ctrlPluswh: "왼쪽 창으로 이동 (좌우 분할)"
+    ctrlPluswl: "오른쪽 창으로 이동 (좌우 분할)"
     ctrlPluswj: "아래 창으로 이동 (상하 분할)"
     ctrlPluswk: "위 창으로 이동 (상하 분할)"
 
