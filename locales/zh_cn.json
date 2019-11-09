@@ -3,6 +3,7 @@
   "title": "简体中文",
   "permalink": "/lang/zh_cn/",
   "lang": "zh_cn",
+  "lang_tag": "zh",
   "cursorMovement": {
     "title": "光标",
     "commands": {

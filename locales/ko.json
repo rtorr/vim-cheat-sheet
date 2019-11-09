@@ -3,6 +3,7 @@
   "title": "한국어",
   "permalink": "/lang/ko/",
   "lang": "ko",
+  "lang_tag": "ko",
   "cursorMovement": {
     "title": "커서 이동",
     "commands": {

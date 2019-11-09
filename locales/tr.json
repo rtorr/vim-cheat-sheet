@@ -3,6 +3,7 @@
   "title": "Türkçe",
   "permalink": "/lang/tr/",
   "lang": "tr",
+  "lang_tag": "tr",
   "cursorMovement": {
     "title": "İmleç hareketleri",
     "commands": {

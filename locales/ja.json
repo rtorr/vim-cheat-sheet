@@ -3,6 +3,7 @@
   "title": "日本語",
   "permalink": "/lang/ja/",
   "lang": "ja",
+  "lang_tag": "ja",
   "cursorMovement": {
     "title": "カーソル移動",
     "commands": {

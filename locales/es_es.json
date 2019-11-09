@@ -3,6 +3,7 @@
   "title": "Español",
   "permalink": "/lang/es_es/",
   "lang": "es_es",
+  "lang_tag": "es",
   "cursorMovement": {
     "title": "Mover el cursor",
     "commands": {

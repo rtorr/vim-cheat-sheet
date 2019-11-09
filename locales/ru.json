@@ -3,6 +3,7 @@
   "title": "Русский",
   "permalink": "/lang/ru/",
   "lang": "ru",
+  "lang_tag": "ru",
   "cursorMovement": {
     "title": "Перемещение курсора",
     "commands": {

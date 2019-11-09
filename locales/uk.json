@@ -3,6 +3,7 @@
   "title": "Українська",
   "permalink": "/lang/uk/",
   "lang": "uk",
+  "lang_tag": "uk",
   "cursorMovement": {
     "title": "Переміщення курсору",
     "commands": {

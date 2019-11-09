@@ -3,6 +3,7 @@
   "title": "Svenska",
   "permalink": "/lang/sv/",
   "lang": "sv",
+  "lang_tag": "sv",
   "cursorMovement": {
     "title": "Markörkontroller",
     "commands": {

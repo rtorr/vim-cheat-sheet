@@ -3,6 +3,7 @@
   "title": "中文 (台灣)",
   "permalink": "/lang/zh_tw/",
   "lang": "zh_tw",
+  "lang_tag": "zh",
   "cursorMovement": {
     "title": "移動游標",
     "commands": {
