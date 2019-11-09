@@ -8,6 +8,7 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const langRouter = require('./routes/lang');
 const { directory, locales, metaData } = require('./locales');
+const packageJson = require('./package.json');
 
 const app = express();
 
@@ -22,6 +23,7 @@ hbs.registerHelper('log', function(something) {
   console.log(something);
   return '' + something;
 });
+app.set('packageVersion', packageJson.version);
 app.set('languagesMetaData', metaData);
 app.engine(
   'hbs',
