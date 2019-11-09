@@ -25,6 +25,7 @@ hbs.registerHelper('log', function(something) {
 });
 app.set('packageVersion', packageJson.version);
 app.set('languagesMetaData', metaData);
+
 app.engine(
   'hbs',
   hbs.express4({

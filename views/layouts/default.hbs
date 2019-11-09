@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="/images/icons/icon-48x48.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <meta name="theme-color" content="#FA4949" />
+  <meta http-equiv="cache-control" content="max-age=600" />
   <link rel="apple-touch-icon" sizes="48x48" href="/images/icons/icon-48x48.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/icon-72x72.png" />
   <link rel="apple-touch-icon" sizes="96x96" href="/images/icons/icon-96x96.png" />
@@ -99,7 +100,21 @@
       </div>
     </div>
   </div>
-  <script src="/javascripts/init.js"></script>
+  <script>
+    window.CACHE_NAME = "{{ version }}";
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/javascripts/sw.js?version={{ version }}').then(function (registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
 </body>
 
 </html>
