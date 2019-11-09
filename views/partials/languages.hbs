@@ -1,0 +1,7 @@
+<ul>
+  {{#each languagesMetaData as |language|}}
+  <li key={{language.id}}>
+    <a href="/lang/{{language.lang}}">{{language.title}}</a>
+  </li>
+  {{/each}}
+</ul>

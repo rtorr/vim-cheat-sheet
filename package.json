@@ -1,36 +1,18 @@
 {
-  "name": "vim-cheet-sheet",
+  "name": "vim-express",
+  "version": "0.0.0",
   "private": true,
-  "description": "A mobile friendly Vim cheat sheet",
-  "version": "0.1.0",
-  "author": "Richard Torruellas <rtorruellas@gmail.com>",
-  "dependencies": {
-    "gatsby": "^2.3.14",
-    "gatsby-image": "^2.0.37",
-    "gatsby-plugin-manifest": "^2.0.26",
-    "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-plugin-sharp": "^2.0.32",
-    "gatsby-source-filesystem": "^2.0.28",
-    "gatsby-transformer-sharp": "^2.1.17",
-    "js-yaml": "^3.13.1",
-    "lodash": "^4.17.11",
-    "node-sass": "^4.11.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-hbs": "^2.2.0",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "i18n": "^0.8.4",
+    "morgan": "~1.9.1"
   }
 }
