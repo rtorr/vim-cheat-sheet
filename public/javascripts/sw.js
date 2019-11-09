@@ -3,7 +3,7 @@ const urlsToCache = ['/stylesheets/style.css'];
 function getUrlParams(search) {
   let hashes = search.slice(search.indexOf('?') + 1).split('&');
   let params = {};
-  hashes.map(hash => {
+  hashes.forEach(hash => {
     let [key, val] = hash.split('=');
     params[key] = decodeURIComponent(val);
   });
@@ -11,7 +11,7 @@ function getUrlParams(search) {
   return params;
 }
 
-let CACHE_NAME = getUrlParams(self.location.search).version;
+const CACHE_NAME = getUrlParams(self.location.search).version;
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
@@ -19,7 +19,6 @@ self.addEventListener('activate', function(event) {
       return Promise.all(
         cacheNames
           .filter(function(cacheName) {
-            console.log(cacheName, self);
             return cacheName !== CACHE_NAME;
           })
           .map(function(cacheName) {
