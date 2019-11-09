@@ -1,10 +1,10 @@
 const urlsToCache = ['/stylesheets/style.css'];
 
 function getUrlParams(search) {
-  let hashes = search.slice(search.indexOf('?') + 1).split('&');
-  let params = {};
+  const hashes = search.slice(search.indexOf('?') + 1).split('&');
+  const params = {};
   hashes.forEach(hash => {
-    let [key, val] = hash.split('=');
+    const [key, val] = hash.split('=');
     params[key] = decodeURIComponent(val);
   });
 
