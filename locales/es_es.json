@@ -1,0 +1,224 @@
+{
+  "layout": "page",
+  "title": "Español",
+  "permalink": "/lang/es_es/",
+  "lang": "es_es",
+  "cursorMovement": {
+    "title": "Mover el cursor",
+    "commands": {
+      "h": "mover el cursor hacia la izquierda",
+      "j": "mover el cursor hacia abajo",
+      "k": "mover el cursor hacia arriba",
+      "l": "mover el cursor hacia la derecha",
+      "H": "moverse hacia la parte superior de la pantalla",
+      "M": "moverse hacia el centro de la pantalla",
+      "L": "moverse hacia la parte inferior de la pantalla",
+      "w": "saltar hasta el inicio de la siguiente palabra",
+      "W": "saltar hasta el inicio de la siguiente palabra (incluso con puntuación)",
+      "e": "saltar hasta el final de la siguiente palabra",
+      "E": "saltar hasta el final de la siguiente palabra (incluso con puntuación)",
+      "b": "regresar al inicio de una palabra",
+      "B": "regresar al inicio de una palabra (incluso con puntuación)",
+      "zero": "saltar al inicio de la línea",
+      "caret": "saltar al primer carácter no-espacio de la línea",
+      "dollar": "saltar al final de la línea",
+      "g_": "saltar al último carácter no-espacio de la línea",
+      "gg": "ir a la primera línea del documento",
+      "G": "ir a la última línea del documento",
+      "fiveG": "ir a la línea 5",
+      "fx": "saltar a la siguiente ocurrencia del carácter x",
+      "tx": "saltar a la ocurrencia previa del carácter x",
+      "closeCurlyBrace": "saltar al párrafo siguiente (o función/bloque, en modo edición)",
+      "openCurlyBrace": "saltar al párrafo previo (o función/bloque, en modo edición)",
+      "centerCursor": "centrar el cursor en la pantalla",
+      "CtrlPlusb": "retroceder una pantalla",
+      "CtrlPlusf": "avanzar una pantalla",
+      "CtrlPlusu": "retroceder cursor media pantalla",
+      "CtrlPlusd": "avanzar cursor media pantalla",
+      "percent": "ir al carácter asociado (pares por defecto: '()', '{}', '[]' - usar </code>:h matchpairs</code> en vim para más información)"
+    },
+    "tip": "Escribir un número antes del comando de movimiento para repetirlo. Por ejemplo, <kbd>4j</kbd> mueve el cursor hacia abajo 4 líneas."
+  },
+  "insertMode": {
+    "title": "Modo insertar - insertar/agregar texto",
+    "commands": {
+      "i": "insertar antes del cursor",
+      "I": "insertar al comienzo de la línea",
+      "a": "insertar después del cursor",
+      "A": "insertar al final de la línea",
+      "o": "insertar una nueva linea debajo de la línea actual",
+      "O": "insertar una nueva línea encima de la línea actual",
+      "ea": "insertar después de palabra",
+      "Esc": "salir del modo insertar"
+    }
+  },
+  "editing": {
+    "title": "Editar",
+    "commands": {
+      "r": "reemplazar un carácter",
+      "J": "juntar siguiente línea con la actual",
+      "cc": "cambiar (reemplazar) toda la línea",
+      "cw": "cambiar (reemplazar) una palabra",
+      "cDollar": "cambiar (reemplazar) hasta el final de la línea",
+      "s": "eliminar carácter y reemplazar texto",
+      "S": "eliminar línea y reemplazar texto (igual que el comando cc)",
+      "xp": "transponer dos letras (suprimir y pegar)",
+      "u": " deshacer",
+      "CtrlPlusr": "rehacer",
+      "dot": "repetir el último comando"
+    }
+  },
+  "markingText": {
+    "title": "Seleccionar texto (modo visual)",
+    "commands": {
+      "v": "iniciar modo visual, seleccionar lineas y ejecutar un comando (como y-yank)",
+      "V": "iniciar modo visual seleccionando toda la línea",
+      "o": "moverse al otro extremo de la zona seleccionada",
+      "CtrlPlusv": "iniciar modo visual de bloque (visual block mode)",
+      "O": "moverse a la otra esquina del bloque",
+      "aw": "seleccionar una palabra",
+      "ab": "un bloque con ()",
+      "aB": "un bloque con {}",
+      "ib": "un bloque interno con ()",
+      "iB": "un bloque interno con {}",
+      "Esc": "salir del modo visual"
+    }
+  },
+  "visualCommands": {
+    "title": "Comandos visuales",
+    "commands": {
+      "greaterThan": "mover texto hacia la derecha",
+      "lessThan": "mover texto hacia la izquierda",
+      "y": "copiar texto seleccionado",
+      "d": "eliminar texto seleccionado",
+      "tilde": "pasar de minúscula a mayúscula y viceversa"
+    }
+  },
+  "registers": {
+    "title": "Registros",
+    "commands": {
+      "show": "mostrar el contenido de los registros",
+      "pasteRegisterX": "pegar el contenido del registro X",
+      "yankIntoRegisterX": "copiar en el registro X"
+    },
+    "tip1": "Los registros son guardados en ~/.viminfo, y serán cargados la próxima vez que se ejecute vim.",
+    "tip2": "El registro 0 siempre contiene el último texto copiado."
+  },
+  "marks": {
+    "title": "Marcas",
+    "commands": {
+      "list": "mostrar marcas",
+      "currentPositionA": "definir posición actual para la marca A",
+      "jumpPositionA": "saltar a la posición de la marca A",
+      "yankToMarkA": "copiar texto a la posición de la marca A"
+    },
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macros",
+    "commands": {
+      "recordA": "grabar macro a",
+      "stopRecording": "detener la grabación de la macro",
+      "runA": "ejecutar macro a",
+      "rerun": "re-ejecutar la última macro ejecutada"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "abrir ayuda para palabra clave",
+      "openFile": "abrir archivo",
+      "saveAsFile": "guardar archivo como",
+      "closePane": "cerrar archivo actual",
+      "K": "abrir página del manual (man page) de la palabra bajo el cursor"
+    }
+  },
+  "cutAndPaste": {
+    "title": "Copiar y pegar",
+    "commands": {
+      "yy": "copiar una línea",
+      "twoyy": "copiar dos líneas",
+      "yw": "copiar el resto de los carácteres de la palabra desde la posición del cursor hasta el principio de la siguiente palabra",
+      "yiw": "copiar la palabra localizada en la posición del cursor",
+      "yaw": "copiar la palabra localizada en la posición del cursor y el espacio detras de ella o delante",
+      "yDollar": "copiar hasta el final de la línea",
+      "p": "pegar antes del cursor",
+      "P": "pegar después del cursor",
+      "dd": "cortar una línea",
+      "twodd": "cortar dos líneas",
+      "dw": "cortar el resto de los carácteres de la palabra desde la posición del cursor hasta el principio de la siguiente palabra",
+      "diw": "cortar la palabra localizada en la posición del cursor",
+      "daw": "cortar la palabra localizada en la posición del cursor y el espacio detras de ella o delante",
+      "D": "cortar hasta el final de la línea",
+      "dDollar": "cortar hasta el final de la línea",
+      "x": "cortar carácter"
+    }
+  },
+  "exiting": {
+    "title": "Salir",
+    "commands": {
+      "colonw": "guardar archivo sin salir",
+      "colonwsudo": "guardar archivo usando sudo",
+      "colonwq": "guardar archivo y salir",
+      "colonx": "guardar archivo y salir",
+      "colonq": "salir (no funciona si hay cambios sin guardar)",
+      "colonqbang": "salir descartando los cambios no guardados"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Buscar y reemplazar",
+    "commands": {
+      "forwardSlashPattern": "buscar patrón",
+      "questionMarkPattern": "buscar patrón hacia atrás",
+      "backslashVpattern": "patrón 'muy mágico' (very magic): los caracteres no alfanuméricos son interpretados como caracteres especiales regex (sin necesidad de escaparlos)",
+      "n": "repetir la búsqueda en la misma dirección",
+      "N": "repetir la búsqueda en la dirección contraria",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "reemplazar en todo el archivo",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "reemplazar en todo el archivo pidiendo una confirmación",
+      "colonnoh": "desactiva el realce (highlight) de los resultados de búsqueda"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Buscar en varios archivos",
+    "commands": {
+      "colonvimgrep": "buscar un patrón en varios archivos",
+      "coloncn": "ir al resultado siguiente",
+      "coloncp": "ir al resultado previo",
+      "coloncopen": "abrir ventana con una lista de los resultados"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Trabajar con varios archivos",
+    "commands": {
+      "colone": "editar un archivo en un nuevo búfer",
+      "colonbnext": "ir al próximo búfer",
+      "colonbprev": "ir al búfer anterior",
+      "colonls": "mostrar todos los búfers abiertos",
+      "colonbd": "eliminar búfer (cerrar archivo)",
+      "colonsp": "abrir archivo en un nuevo búfer y dividir la ventana",
+      "colonvsp": "abrir archivo en un nuevo búfer y dividir la ventana verticalmente",
+      "ctrlPlusws": "dividir ventana",
+      "ctrlPlusww": "cambiar de ventana",
+      "ctrlPluswq": "cerrar ventana",
+      "ctrlPluswv": "dividir ventana verticalmente",
+      "ctrlPluswh": "mover el cursor a la ventana izquierda (división vertical)",
+      "ctrlPluswl": "mover el cursor a la ventana derecha (división vertical)",
+      "ctrlPluswj": "mover el cursor a la ventana de abajo (división horizontal)",
+      "ctrlPluswk": "mover el cursor a la ventana de arriba (división horizontal)"
+    }
+  },
+  "tabs": {
+    "title": "Pestañas",
+    "commands": {
+      "colonTabNew": "abrir archivo en una nueva pestaña",
+      "ctrlPluswT": "mover la ventana actual a su propia pestaña",
+      "gt": "irr a la próxima pestaña",
+      "gT": "ir a la pestaña anterior",
+      "hashgt": "ir a la pestaña número #",
+      "colontabmove": "mover a la pestaña actual a la posición número # (desde 0)",
+      "colontabc": "cerrar todas las pestañas y sus ventanas",
+      "colontabo": "cerrar todas las pestañas salvo la actual"
+    }
+  },
+  "footer": "El código fuente está disponible en"
+}

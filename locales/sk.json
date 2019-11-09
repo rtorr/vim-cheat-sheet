@@ -1,0 +1,243 @@
+{
+  "layout": "page",
+  "title": "Slovenčina",
+  "permalink": "/lang/sk/",
+  "lang": "sk",
+  "cursorMovement": {
+    "title": "Presun kurzoru",
+    "commands": {
+      "h": "presunie kurzor doľava",
+      "j": "presunie kurzor nadol",
+      "k": "presunie kurzor hore",
+      "l": "presunie kurzor doprava",
+      "w": "skočí na začiatok slova",
+      "W": "skočí na začiatok slova (slová môžu obsahovať interpunkciu)",
+      "e": "skočí na koniec slova",
+      "E": "skočí na koniec slova (slová môžu obsahovať interpunkciu)",
+      "b": "skočí späť na začiatok slova",
+      "B": "skočí späť na začiatok slova (slová môžu obsahovať interpunkciu)",
+      "H": "presunie na hornú časť obrazovky",
+      "M": "presunie do stredu obrazovky",
+      "L": "presunie na spodok obrazovky",
+      "zero": "skočí na začiatok riadku",
+      "caret": "skočí na prvý znak riadku, ktorý nie je prázdny",
+      "dollar": "skočí na koniec riadku",
+      "g_": "skočí na posledný znak riadku, ktorý nie je prázdny",
+      "gg": "prejde na prvý riadok dokumentu",
+      "G": "prejde na posledný riadok dokumentu",
+      "fiveG": "prejde na riadok 5",
+      "fx": "skočí na ďalší výskyt znaku x",
+      "tx": "skočí jeden znak pred ďalší výskyt znaku x",
+      "Fx": "skočí na predchádzajúci výskyt znaku x",
+      "Tx": "skočí jeden znak pred predchádzajúci výskyt znaku x",
+      "semicolon": "zopakujte predchádzajúci pohyb f, t, F alebo T",
+      "comma": "zopakujte predchádzajúci pohyb f, t, F alebo T, dozadu",
+      "closeCurlyBrace": "skočí na ďalší odsek (alebo funkciu/blok pri úprave kódu)",
+      "openCurlyBrace": "skočí na predchádzajúci odsek (alebo funkciu/blok pri úprave kódu)",
+      "centerCursor": "centruje kurzor na stred obrazovky",
+      "CtrlPluse": "presunie obrazovku dole o jeden riadok (bez posunu kurzoru)",
+      "CtrlPlusy": "presunie obrazovku hore o jeden riadok (bez posunu kurzoru)",
+      "CtrlPlusb": "presunie späť jednu celú obrazovku",
+      "CtrlPlusf": "presunie dopredu jednu celú obrazovku",
+      "CtrlPlusu": "presunie späť o 1/2 obrazovky",
+      "CtrlPlusd": "presunie dopredu o 1/2 obrazovky",
+      "percent": "presunie sa na zodpovedajúci znak (predvolené podporované páry: '()', '{}', '[]' - použi <code>:h matchpairs</code> pre viac informácií)"
+    },
+    "tip": "Vlož číslo pred príkaz na jeho zopakovanie. Napríklad, <kbd>4j</kbd> skočí 4 riadky nadol."
+  },
+  "insertMode": {
+    "title": "Režim vkladania - vkladanie/pridanie textu",
+    "commands": {
+      "i": "vlož pred kurzor",
+      "I": "vlož na začiatok riadku",
+      "a": "vlož (pripoj) za kurzor",
+      "A": "vlož (pripoj) na koniec riadku",
+      "o": "pripoj (vytvor) nový riadok pod kurzorom",
+      "O": "pripoj (vytvor) nový riadok nad kurzorom",
+      "ea": "vlož (pripoj) na koniec slova",
+      "Esc": "ukonči režim vkladania"
+    }
+  },
+  "editing": {
+    "title": "Editovanie",
+    "commands": {
+      "r": "nahradí jeden znak",
+      "J": "pripojí riadok nižšie k aktuálnemu s použitím medzery",
+      "gJ": "pripojí riadok nižšie k aktuálnemu bez použitia medzery",
+      "gwip": "zarovná paragraf",
+      "cc": "zmení (nahradí) celý riadok",
+      "cDollar": "zmení (nahradí) do konca riadku",
+      "ciw": "zmení (nahradí) celé slovo",
+      "cw": "zmení (nahradí) do konca slova",
+      "s": "odstráni znak a nahradí textom",
+      "S": "odstráni riadok a nahradí textom (rovnako ako cc)",
+      "xp": "prehodí dve písmená (vymazanie a vloženie)",
+      "u": "krok späť",
+      "CtrlPlusr": "vráti krok späť",
+      "dot": "opakuje posledný príkaz"
+    }
+  },
+  "markingText": {
+    "title": "Označenie textu (vizuálny režim)",
+    "commands": {
+      "v": "spusti vizuálny režim, označ riadky, potom urob príkaz (napr. y-kopíruj)",
+      "V": "spusti riadkový vizuálny režim",
+      "o": "presuň sa na druhý koniec vyznačenej oblasti",
+      "CtrlPlusv": "spusti blokový vizuálny režim",
+      "O": "presuň sa na druhý roh bloku",
+      "aw": "označ slovo",
+      "ab": "blok s ()",
+      "aB": "blok s {}",
+      "ib": "vnútorný blok s ()",
+      "iB": "vnútorný blok s {}",
+      "Esc": "ukonči vizuálny režim"
+    }
+  },
+  "visualCommands": {
+    "title": "Vizuálne príkazy",
+    "commands": {
+      "greaterThan": "posunie text doprava",
+      "lessThan": "posunie text doľava",
+      "y": "vystrihne (skopíruje) označený text",
+      "d": "zmaže označený text",
+      "tilde": "zmení veľkosť textu"
+    }
+  },
+  "registers": {
+    "title": "Registre",
+    "commands": {
+      "show": "zobrazí obsah registra",
+      "pasteRegisterX": "prilepí obsah registra x",
+      "yankIntoRegisterX": "skopíruje do registra x"
+    },
+    "tip1": "Registre sa ukladajú do súboru ~/.viminfo a budú načítané znova pri ďalšom reštarte vim.",
+    "tip2": "Register 0 vždy obsahuje hodnotu posledného kopírujúceho príkazu."
+  },
+  "marks": {
+    "title": "Značky",
+    "commands": {
+      "list": "zoznam značiek",
+      "currentPositionA": "nastaví aktuálnu polohu pre značku A",
+      "jumpPositionA": "skočí na polohu značky A",
+      "yankToMarkA": "skopíruje text do polohy značky A",
+      "tip": ""
+    }
+  },
+  "macros": {
+    "title": "Makrá",
+    "commands": {
+      "recordA": "nahraje makro a",
+      "stopRecording": "zastaví nahrávanie makra",
+      "runA": "spusti makro a",
+      "rerun": "opätovné spustenie posledného spusteného makra"
+    }
+  },
+  "global": {
+    "title": "Globálne",
+    "commands": {
+      "helpForKeyword": "otvorí pomoc pre kľúčové slovo",
+      "openFile": "otvorí súbor",
+      "saveAsFile": "uloží súbor ako",
+      "closePane": "zatvorí aktuálny panel",
+      "K": "otvorí manuálovú stránku pre slovo pod kurzorom"
+    }
+  },
+  "cutAndPaste": {
+    "title": "Vystrihni a prilep",
+    "commands": {
+      "yy": "skopíruje riadok",
+      "twoyy": "skopíruje 2 riadky",
+      "yw": "skopíruje znaky slova z polohy kurzora na začiatok ďalšieho slova",
+      "yiw": "skopíruje slovo pod kurzorom",
+      "yaw": "skopíruje slovo pod kurzorom a miesto pred alebo za ním",
+      "yDollar": "skopíruje do konca riadku",
+      "p": "vloží (prilepí) schránku za kurzor",
+      "P": "vloží (prilepí) schránku pred kurzor",
+      "dd": "zmaže (vystrihne) riadok",
+      "twodd": "zmaže (vystrihne) 2 riadky",
+      "dw": "zmaže (vystrihne) znaky slova z polohy kurzora na začiatok ďalšieho slova",
+      "diw": "zmaže (vystrihne) slovo pod kurzorom",
+      "daw": "zmaže (vystrihne) slovo pod kurzorom a miesto pred alebo za ním",
+      "D": "zmaže (vystrihne) do konca riadku",
+      "dDollar": "zmaže (vystrihne) do konca riadku",
+      "x": "zmaže (vystrihne) znak"
+    }
+  },
+  "exiting": {
+    "title": "Ukončenie",
+    "commands": {
+      "colonw": "zapíše (uloží) súbor, ale neukončí",
+      "colonwsudo": "zapíše aktuálny súbor pomocou sudo",
+      "colonwq": "zapíše (uloží) a ukončí",
+      "colonx": "write (save) and quit",
+      "colonq": "ukončí (zlyhá, ak sú neuložené zmeny)",
+      "colonqbang": "ukončí a zahodí neuložené zmeny",
+      "colonwqa": "zapíše (uloží) a ukončí všetky karty"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Vyhľadaj a nahraď",
+    "commands": {
+      "forwardSlashPattern": "hľadaj vzor",
+      "questionMarkPattern": "hľadaj vzor pozadu",
+      "backslashVpattern": "'very magic' pattern: nealfanumerické znaky sa interpretujú ako špeciálne symboly regexu (nie je potrebný escape)",
+      "n": "zopakuje vyhľadávanie rovnakým smerom",
+      "N": "zopakuje vyhľadávanie opačným smerom",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "nahradí všetky 'old' s 'new' v celom súbore",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": " nahradí všetko 'old' s 'new' v celom súbore s potvrdením",
+      "colonnoh": "odstráni zvýraznenie vyhľadanej zhody"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Vyhľadávanie vo viacerých súboroch",
+    "commands": {
+      "colonvimgrep": "vyhľadávanie vzoru vo viacerých súboroch",
+      "coloncn": "skočí na nasledujúcu zhodu",
+      "coloncp": "skočí na predchodziu zhodu",
+      "coloncopen": "otvorí okno obsahujúce zoznam zhôd"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Práca s viacerými súbormi",
+    "commands": {
+      "colone": "edituje súbor v novom buffri",
+      "colonbnext": "prejde na nasledujúci buffer",
+      "colonbprev": "prejde na predchádzajúci buffer",
+      "colonls": "zoznam všetkých otvorených buffrov",
+      "colonbd": "vymaže buffer (zatvorí súbor)",
+      "colonsp": "otvorí súbor v novom buffri a rozdelí okno",
+      "colonvsp": "otvorí súbor v novom buffri a vertikálne rozdelí okno",
+      "ctrlPlusws": "rozdelí okno",
+      "ctrlPlusww": "prepína medzi oknami",
+      "ctrlPluswq": "zavrie okno",
+      "ctrlPluswv": "rozdelí okno vertikálne",
+      "ctrlPluswh": "presunie kurzor do ľavého okna (vertikálne rozdelenie)",
+      "ctrlPluswl": "presunie kurzor do pravého okna (vertikálne rozdelenie)",
+      "ctrlPluswj": "presunie kurzor do okna pod (horizontálne rozdelenie)",
+      "ctrlPluswk": "presunie kurzor do okna nad (horizontálne rozdelenie)"
+    }
+  },
+  "tabs": {
+    "title": "Záložky",
+    "commands": {
+      "colonTabNew": "otvorí súbor v novej záložke",
+      "ctrlPluswT": "presunie aktuálne rozdelené okno na vlastnú záložku",
+      "gt": "presunie na ďalšiu záložku",
+      "gT": "presunie na predchádzajúcu záložku",
+      "hashgt": "prejde na záložku číslo #",
+      "colontabmove": "presunie aktuálnu záložku na # polohu (indexovaná od 0)",
+      "colontabc": "zatvorí aktuálnu záložku a všetky jej okná",
+      "colontabo": "zatvorí všetky záložky okrem aktuálnej",
+      "colontabdo": "spusti <code>command</code> na všetkých záložkach (e.g. <code>:tabdo q</code> - zatvorí všetky otvorené záložky)"
+    }
+  },
+  "words": {
+    "keyword": "kľúčové slovo",
+    "file": "súbor",
+    "movement": "pohyb"
+  },
+  "languages": {
+    "title": "Jazyky"
+  },
+  "footer": "Pozri zdroj na"
+}
