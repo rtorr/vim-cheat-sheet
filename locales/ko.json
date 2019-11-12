@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "한국어",
-  "permalink": "/lang/ko/",
   "lang": "ko",
   "lang_tag": "ko",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "다음 단어 끝으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다)",
       "b": "이전 단어 시작으로 점프",
       "B": "이전 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "화면 상단으로 이동",
       "M": "화면 중간으로 이동",
       "L": "화면 하단으로 이동",
@@ -68,9 +68,9 @@
       "gwip": "단락을 리플로우",
       "cc": "행 전체를 새로 쓰기",
       "C": "행 끝까지를 새로 쓰기",
-      "cw": "단어 끝까지를 새로 쓰기",
       "cDollar": "행 끝까지를 새로 쓰기",
       "ciw": "단어 전체를 새로 쓰기",
+      "cw": "단어 끝까지를 새로 쓰기",
       "s": "한 글자 삭제하고 삽입 모드 시작",
       "S": "행 삭제하고 텍스트 입력 (<kbd>cc</kbd>와 동일)",
       "xp": "두 문자 위치 바꾸기 (잘라내기 붙여넣기 조합)",
@@ -138,10 +138,10 @@
     "title": "전역",
     "commands": {
       "helpForKeyword": "keyword에 대한 도움말 열기",
-      "openFile": "file 열기",
       "saveAsFile": "file로 저장하기",
       "closePane": "현재 영역 닫기",
-      "K": "커서가 위치한 단어에 대한 맨페이지 열기"
+      "K": "커서가 위치한 단어에 대한 맨페이지 열기",
+      "openFile": "file 열기"
     }
   },
   "cutAndPaste": {
@@ -233,8 +233,15 @@
       "colontabdo": "모든 탭에서 <code>command</code> 실행하기 (예를 들어, <code>:tabdo q</code> - 열린 모든 탭 닫기)"
     }
   },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
   "languages": {
     "title": "언어"
   },
-  "footer": "소스 체크 아웃"
+  "footer": "소스 체크 아웃",
+  "layout": "page",
+  "permalink": "/lang/ko/"
 }

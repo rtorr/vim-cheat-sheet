@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Українська",
-  "permalink": "/lang/uk/",
   "lang": "uk",
   "lang_tag": "uk",
   "cursorMovement": {
@@ -17,11 +15,34 @@
       "E": "переміститись вперед на кінець слова (слово може містити пунктуацію)",
       "b": "переміститись назад на початок слова",
       "B": "переміститись назад на початок слова (слово може містити пунктуацію)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "H": "move to top of screen",
+      "M": "move to middle of screen",
+      "L": "move to bottom of screen",
       "zero": "переміститись на початок строчки",
       "caret": "переміститись на перший непробільний символ строчки",
       "dollar": "переміститись в кінець строчки",
+      "g_": "jump to the last non-blank character of the line",
+      "gg": "go to the first line of the document",
       "G": "переміститись на останню строчку документа",
-      "fiveG": "перемістити на п'яту строчку"
+      "fiveG": "перемістити на п'яту строчку",
+      "fx": "jump to next occurrence of character x",
+      "tx": "jump to before next occurrence of character x",
+      "Fx": "jump to previous occurence of character x",
+      "Tx": "jump to after previous occurence of character x",
+      "semicolon": "repeat previous f, t, F or T movement",
+      "comma": "repeat previous f, t, F or T movement, backwards",
+      "closeCurlyBrace": "jump to next paragraph (or function/block, when editing code)",
+      "openCurlyBrace": "jump to previous paragraph (or function/block, when editing code)",
+      "centerCursor": "center cursor on screen",
+      "CtrlPluse": "move screen down one line (without moving cursor)",
+      "CtrlPlusy": "move screen up one line (without moving cursor)",
+      "CtrlPlusb": "move back one full screen",
+      "CtrlPlusf": "move forward one full screen",
+      "CtrlPlusu": "move back 1/2 a screen",
+      "CtrlPlusd": "move forward 1/2 a screen",
+      "percent": "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
     },
     "tip": "Добавте число перед командою переміщения курсору для того, щоб повторити її. Наприклад, <kbd>4j</kbd> переміщує курсор на 4 строчки вниз."
   },
@@ -43,9 +64,13 @@
     "commands": {
       "r": "замінити один символ",
       "J": "приєднати нижню строчку до поточної",
+      "gJ": "join line below to the current one without space in between",
+      "gwip": "reflow paragraph",
       "cc": "замінити усю строчку",
-      "cw": "замінити до кінця слова",
+      "C": "change (replace) to the end of the line",
       "cDollar": "замінити до кінця строчки",
+      "ciw": "change (replace) entire word",
+      "cw": "замінити до кінця слова",
       "s": "видалити символ та замінити текст",
       "S": "видалити строчку та замінити текст (те ж що й cc)",
       "xp": "переставити дві букви (видалити й вставити)",
@@ -80,18 +105,60 @@
       "tilde": "переключити регістр"
     }
   },
+  "registers": {
+    "title": "Registers",
+    "commands": {
+      "show": "show registers content",
+      "pasteRegisterX": "paste contents of register x",
+      "yankIntoRegisterX": "yank into register x"
+    },
+    "tip1": "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.",
+    "tip2": "Register 0 contains always the value of the last yank command."
+  },
+  "marks": {
+    "title": "Marks",
+    "commands": {
+      "list": "list of marks",
+      "currentPositionA": "set current position for mark A",
+      "jumpPositionA": "jump to position of mark A",
+      "yankToMarkA": "yank text to position of mark A"
+    },
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macros",
+    "commands": {
+      "recordA": "record macro a",
+      "stopRecording": "stop recording macro",
+      "runA": "run macro a",
+      "rerun": "rerun last run macro"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "open help for keyword",
+      "saveAsFile": "save file as",
+      "closePane": "close current pane",
+      "K": "open man page for word under the cursor"
+    }
+  },
   "cutAndPaste": {
     "title": "Вирізати й вставити",
     "commands": {
       "yy": "скопіювати строчку",
       "twoyy": "скопіювати 2 строчки",
       "yw": "скопіювати слово",
+      "yiw": "yank (copy) word under the cursor",
+      "yaw": "yank (copy) word under the cursor and the space after or before it",
       "yDollar": "скопіювати до кінця строчки",
       "p": "вставити вміст буфера обміну після курсору",
       "P": "вставити вміст буфера обміну перед курсором",
       "dd": "видалити (вирізати) строчку",
       "twodd": "видалити (вирізати) 2 строчки",
       "dw": "видалити (вирізати) слово",
+      "diw": "delete (cut) word under the cursor",
+      "daw": "delete (cut) word under the cursor and the space after or before it",
       "D": "видалити (вирізати) до кінця строчки",
       "dDollar": "видалити (вирізати) до кінця строчки",
       "x": "видалити (вирізати) символ"
@@ -101,10 +168,12 @@
     "title": "Вийти й зберегти",
     "commands": {
       "colonw": "зберегти файл, але не виходити",
+      "colonwsudo": "write out the current file using sudo",
       "colonwq": "зберегти файл та вийти",
       "colonx": "зберегти та вийти",
       "colonq": "вийти (не працює у випадку якщо зміни не збережено)",
-      "colonqbang": "вийти та втратити зміни що незбережено"
+      "colonqbang": "вийти та втратити зміни що незбережено",
+      "colonwqa": "write (save) and quit on all tabs"
     }
   },
   "searchAndReplace": {
@@ -112,10 +181,21 @@
     "commands": {
       "forwardSlashPattern": "пошук шаблону",
       "questionMarkPattern": "зворотній пошук шаблону",
+      "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
       "n": "повторити пошук у тому ж напрямку",
       "N": "повторити пошук у зворотньому напрямку",
       "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "замінити усі входження шаблону у файл на вказане значення",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "замінити усі входження шаблону у файл на вказане значення з підтвердженням"
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "замінити усі входження шаблону у файл на вказане значення з підтвердженням",
+      "colonnoh": "remove highlighting of search matches"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Search in multiple files",
+    "commands": {
+      "colonvimgrep": "search for pattern in multiple files",
+      "coloncn": "jump to the next match",
+      "coloncp": "jump to the previous match",
+      "coloncopen": "open a window containing the list of matches"
     }
   },
   "workingWithMultipleFiles": {
@@ -124,6 +204,7 @@
       "colone": "редагувати файл у новому буфері",
       "colonbnext": "перейти до наступного буфера",
       "colonbprev": "перейти до попереднього буфера",
+      "colonls": "list all open buffers",
       "colonbd": "видалити буфер (закрити файл)",
       "colonsp": "відкрити файл у новому буфері й розділити вікно",
       "colonvsp": "відкрити файл у новому буфері й вертикально розділити вікно",
@@ -147,11 +228,19 @@
       "hashgt": "переключити на вкладинку з номером #",
       "colontabmove": "перемістити поточну вкладинку на # позицію (нумерація з 0)",
       "colontabc": "закрити поточну вкладинку з усіма її вікнами",
-      "colontabo": "закрити усі вкладинки окрім поточної"
+      "colontabo": "закрити усі вкладинки окрім поточної",
+      "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
     }
+  },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
   },
   "languages": {
     "title": "Мови"
   },
-  "footer": "Дивіться код на "
+  "footer": "Дивіться код на ",
+  "layout": "page",
+  "permalink": "/lang/uk/"
 }

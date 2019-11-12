@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Português - Brasil",
-  "permalink": "/lang/pt_br/",
   "lang": "pt_br",
   "lang_tag": "pt",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "pular adiante para o fim de uma palavra (podendo conter pontuação)",
       "b": "pular para trás para o início de uma palavra",
       "B": "pular para trás para o início de uma palavra (podendo conter pontuação)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "mover para o cursor para a parte superior da tela",
       "M": "mover para o cursor para o meio da tela",
       "L": "mover para o cursor para a parte inferior da tela",
@@ -36,6 +36,8 @@
       "closeCurlyBrace": "pular para o próximo parágrafo (ou função/bloco, quando estiver editando código)",
       "openCurlyBrace": "pular para o parágrafo anterior (ou função/bloco, quando estiver editando código)",
       "centerCursor": "centralizar o cursor na tela",
+      "CtrlPluse": "move screen down one line (without moving cursor)",
+      "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "mover o cursor uma tela cheia para tras",
       "CtrlPlusf": "mover o cursor uma tela cheia para frente",
       "CtrlPlusu": "mover o cursor uma tela e meia para tras",
@@ -62,16 +64,20 @@
     "commands": {
       "r": "substituir um único caractere",
       "J": "juntar a linha que está em baixo da linha atual",
+      "gJ": "join line below to the current one without space in between",
+      "gwip": "reflow paragraph",
       "cc": "substituir a linha toda",
-      "cw": "substituir no final da palavra",
+      "C": "change (replace) to the end of the line",
       "cDollar": "substituir no final da linha",
+      "ciw": "change (replace) entire word",
+      "cw": "substituir no final da palavra",
       "s": "deletar um caractere e substituir texto",
       "S": "deletar linha e substituir texto (igual o comando cc)",
       "xp": "transpor duas letras (deletar e colar)",
       "u": "desfazer",
-      "U": "restaura linha inteira",
       "CtrlPlusr": "refazer",
-      "dot": "repetir o último comando"
+      "dot": "repetir o último comando",
+      "U": "restaura linha inteira"
     }
   },
   "markingText": {
@@ -118,7 +124,8 @@
       "jumpPositionA": "pular para a posição do marcador A",
       "yankToMarkA": "copiar texto para a posição do marcador A",
       "tip": ""
-    }
+    },
+    "tip": ""
   },
   "macros": {
     "title": "Macros",
@@ -133,10 +140,10 @@
     "title": "Global",
     "commands": {
       "helpForKeyword": "abrir a página de ajuda para um termo",
-      "openFile": "abrir um arquivo",
       "saveAsFile": "salvar um arquivo como",
       "closePane": "fechar o painel atual",
-      "K": "abrir a página do manual para a palavra abaixo do cursor"
+      "K": "abrir a página do manual para a palavra abaixo do cursor",
+      "openFile": "abrir um arquivo"
     }
   },
   "cutAndPaste": {
@@ -145,12 +152,16 @@
       "yy": "copiar uma linha",
       "twoyy": "copiar duas linhas",
       "yw": "copiar uma palavra",
+      "yiw": "yank (copy) word under the cursor",
+      "yaw": "yank (copy) word under the cursor and the space after or before it",
       "yDollar": "copiar até o final da linha",
       "p": "colar depois do cursor",
       "P": "colar antes do cursor",
       "dd": "deletar (cortar) uma linha",
       "twodd": "deletar (cortar) duas linhas",
       "dw": "deletar (cortar) uma palavra",
+      "diw": "delete (cut) word under the cursor",
+      "daw": "delete (cut) word under the cursor and the space after or before it",
       "D": "deletar (cortar) até o final da linha",
       "dDollar": "deletar (cortar) até o final da linha",
       "x": "deletar (cortar) caractere"
@@ -160,10 +171,12 @@
     "title": "Saindo",
     "commands": {
       "colonw": "escrever (salvar) arquivo, mas não sair",
+      "colonwsudo": "write out the current file using sudo",
       "colonwq": "escrever (salvar) arquivo e sair",
       "colonx": "escrever (salvar) arquivo e sair",
       "colonq": "sair (não funciona se existirem mudanças não salvas)",
-      "colonqbang": "sair e descartar mudanças não salvas"
+      "colonqbang": "sair e descartar mudanças não salvas",
+      "colonwqa": "write (save) and quit on all tabs"
     }
   },
   "searchAndReplace": {
@@ -230,5 +243,7 @@
   "languages": {
     "title": "Línguas"
   },
-  "footer": "O código fonte está disponível em"
+  "footer": "O código fonte está disponível em",
+  "layout": "page",
+  "permalink": "/lang/pt_br/"
 }

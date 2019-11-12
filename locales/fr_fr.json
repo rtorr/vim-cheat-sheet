@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Français",
-  "permalink": "/lang/fr_fr/",
   "lang": "fr_fr",
   "lang_tag": "fr",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "aller en avant à la fin d'un mot (les mots peuvent contenir de la ponctuation)",
       "b": "aller en arrière au début d'un mot",
       "B": "aller en arrière au début d'un mot (les mots peuvent contenir de la ponctuation)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "aller en haut de l'écran",
       "M": "aller au milieu de l'écran",
       "L": "aller en bas de l'écran",
@@ -64,11 +64,13 @@
     "commands": {
       "r": "remplacer un caractère",
       "J": "joindre la ligne suivante à la ligne en cours",
+      "gJ": "join line below to the current one without space in between",
+      "gwip": "reflow paragraph",
       "cc": "changer (remplacer) une ligne entière",
       "C": "changer (remplacer) jusqu'à la fin de la ligne",
+      "cDollar": "changer (remplacer) jusqu'à la fin d'une ligne",
       "ciw": "changer (remplacer) un mot entier",
       "cw": "changer (remplacer) jusqu'à la fin d'un mot",
-      "cDollar": "changer (remplacer) jusqu'à la fin d'une ligne",
       "s": "supprimer un caractère et le remplacer par du texte",
       "S": "supprimer une ligne et la remplacer par du texte (comme cc)",
       "xp": "transposer deux lettres (supprimer et coller)",
@@ -136,10 +138,10 @@
     "title": "Global",
     "commands": {
       "helpForKeyword": "ouvrir l'aide pour le mot clé",
-      "openFile": "ouvrir un fichier",
       "saveAsFile": "sauvegarder un fichier sous",
       "closePane": "fermer le fichier en cours",
-      "K": "ouvre la page du manuel (man) du mot sous le curseur"
+      "K": "ouvre la page du manuel (man) du mot sous le curseur",
+      "openFile": "ouvrir un fichier"
     }
   },
   "cutAndPaste": {
@@ -231,5 +233,15 @@
       "colontabdo": "exécute la <code>commande</code> sur tout les onglets (ex: <code>:tabdo q</code> - ferme tout les onglets ouverts)"
     }
   },
-  "footer": "Voir la source sur"
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
+  "languages": {
+    "title": "Languages"
+  },
+  "footer": "Voir la source sur",
+  "layout": "page",
+  "permalink": "/lang/fr_fr/"
 }

@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Türkçe",
-  "permalink": "/lang/tr/",
   "lang": "tr",
   "lang_tag": "tr",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "bir sonraki kelimenin sonuna atla (kelime noktalama işareti içerebilir)",
       "b": "bir önceki kelimenin başlangıcına atla",
       "B": "bir önceki kelimenin başlangıcına atla (kelime noktalama işareti içerebilir)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "ekranın en üstüne kaydır",
       "M": "ekranın ortasına kaydır",
       "L": "ekranın en altına kaydır",
@@ -36,6 +36,8 @@
       "closeCurlyBrace": "sonraki paragrafa atla (veya fonksiyon/blok, kod yazarken)",
       "openCurlyBrace": "önceki paragrafa atla (veya fonksiyon/blok, kod yazarken)",
       "centerCursor": "imleci ekranda ortala",
+      "CtrlPluse": "move screen down one line (without moving cursor)",
+      "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "tam ekran geri kaydır",
       "CtrlPlusf": "tam ekran ileri kaydır",
       "CtrlPlusu": "yarım ekran geri kaydır",
@@ -62,9 +64,13 @@
     "commands": {
       "r": "tek karakterin yerine koyar",
       "J": "şu anki satırın altına ekler",
+      "gJ": "join line below to the current one without space in between",
+      "gwip": "reflow paragraph",
       "cc": "tüm satırı değiştirir (yerine koyar)",
-      "cw": "kelimenin sonuna kadar değiştirir (yerine koyar)",
+      "C": "change (replace) to the end of the line",
       "cDollar": "satır sonuna kadar değiştirir (yerine koyar)",
+      "ciw": "change (replace) entire word",
+      "cw": "kelimenin sonuna kadar değiştirir (yerine koyar)",
       "s": "karakteri siler ve metin ile değiştirir",
       "S": "satırı siler ve metin ile değiştirir (cc komutu ile aynı)",
       "xp": "iki harfi transpoze eder (sil ve yapıştır)",
@@ -132,10 +138,10 @@
     "title": "Genel",
     "commands": {
       "helpForKeyword": "kelime için yardımı aç",
-      "openFile": "dosyayı aç",
       "saveAsFile": "dosyayı farklı kaydet",
       "closePane": "bölümü kapat ",
-      "K": "imleç altındaki kelime için kılavuzu aç"
+      "K": "imleç altındaki kelime için kılavuzu aç",
+      "openFile": "dosyayı aç"
     }
   },
   "cutAndPaste": {
@@ -144,12 +150,16 @@
       "yy": "tek satır kopyalar",
       "twoyy": "2 satır kopyalar",
       "yw": "kelime kopyalar",
+      "yiw": "yank (copy) word under the cursor",
+      "yaw": "yank (copy) word under the cursor and the space after or before it",
       "yDollar": "satır sonuna kadar kopyalar",
       "p": "imleç sonrasına yapıştırır",
       "P": "imleç öncesine yapıştırır",
       "dd": "satırı (keser) siler",
       "twodd": "2 satırı (keser) siler",
       "dw": "kelime (keser) siler",
+      "diw": "delete (cut) word under the cursor",
+      "daw": "delete (cut) word under the cursor and the space after or before it",
       "D": "satır sonuna kadar (keser) siler",
       "dDollar": "satır sonuna kadar (keser) siler",
       "x": "karakter (keser) siler"
@@ -163,7 +173,8 @@
       "colonwq": "dosyayı kaydet ve kapat",
       "colonx": "dosyayı kaydet ve kapat",
       "colonq": "(kaydedilmemiş değişiklikler varsa hata ver) kapat",
-      "colonqbang": "kaydedilmemiş değişiklikleri at ve kapat"
+      "colonqbang": "kaydedilmemiş değişiklikleri at ve kapat",
+      "colonwqa": "write (save) and quit on all tabs"
     }
   },
   "searchAndReplace": {
@@ -222,8 +233,15 @@
       "colontabdo": "tüm sekmelerde <code>komut</code> çalıştır (örn. <code>:tabdo q</code> - açık tüm sekmeleri kapatır)"
     }
   },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
   "languages": {
     "title": "Diller"
   },
-  "footer": "Kaynak koda bak"
+  "footer": "Kaynak koda bak",
+  "layout": "page",
+  "permalink": "/lang/tr/"
 }

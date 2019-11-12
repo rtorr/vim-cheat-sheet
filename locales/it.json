@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Italiano",
-  "permalink": "/lang/it/",
   "lang": "it",
   "lang_tag": "it",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "salta avanti fino alla fine di una parola (le parole possono contenere punteggiatura)",
       "b": "salta indietro fino all'inizio di una parola",
       "B": "salta indietro fino all'inizio di una parola (le parole possono contenere punteggiatura)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "vai in cima alla schermata",
       "M": "vai a metà della schermata",
       "L": "vai in fondo alla schermata",
@@ -67,6 +67,7 @@
       "gJ": "unisci la linea sottostante con quella corrente senza spazi in mezzo",
       "gwip": "riformatta paragrafo",
       "cc": "cambia (sostituisci) l'intera linea",
+      "C": "change (replace) to the end of the line",
       "cDollar": "cambia (sostituisci) fino alla fine della linea",
       "ciw": "cambia (sostituisci) una parola intera",
       "cw": "cambia (sostituisci) fino alla fine della parola",
@@ -239,5 +240,7 @@
   "languages": {
     "title": "Lingue"
   },
-  "footer": "Guarda il codice sorgente su"
+  "footer": "Guarda il codice sorgente su",
+  "layout": "page",
+  "permalink": "/lang/it/"
 }

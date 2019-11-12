@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "العربية",
-  "permalink": "/lang/ar/",
   "lang": "ar",
   "lang_tag": "ar",
   "cursorMovement": {
@@ -17,6 +15,11 @@
       "E": "اقفز للأمام إلى نهاية كلمة (يمكن للكلمات أن تشمل علامات الترقيم)",
       "b": "اقفز للوراء إلى بداية الكلمة",
       "B": "اقفز للوراء إلى بداية الكلمة (يمكن للكلمات أن تشمل علامات الترقيم)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "H": "move to top of screen",
+      "M": "move to middle of screen",
+      "L": "move to bottom of screen",
       "zero": "اقفز إلى بداية السطر",
       "caret": "اقفز إلى الخانة الأولى غير الفارغة في السطر",
       "dollar": "اقفز إلى نهاية السطر",
@@ -28,12 +31,18 @@
       "tx": "اقفز إلى الخانة قبل الحدوث التالي لحرف اكس",
       "Fx": "اقفز الى الخانة بغد الحدوث السابق لحرف اكس",
       "Tx": "اقفز الى الخانة قبل الحدوث السابق لحرف اكس",
+      "semicolon": "repeat previous f, t, F or T movement",
+      "comma": "repeat previous f, t, F or T movement, backwards",
       "closeCurlyBrace": "/ البلوك عند تحرير الكود)اقفز إلى القترة التالية (أم الدالة",
       "openCurlyBrace": "jump to previous paragraph (or function/block, when editing code)",
+      "centerCursor": "center cursor on screen",
+      "CtrlPluse": "move screen down one line (without moving cursor)",
+      "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "move back one full screen",
       "CtrlPlusf": "move forward one full screen",
       "CtrlPlusu": "move back 1/2 a screen",
-      "CtrlPlusd": "move forward 1/2 a screen"
+      "CtrlPlusd": "move forward 1/2 a screen",
+      "percent": "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
     },
     "tip": "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
   },
@@ -55,9 +64,13 @@
     "commands": {
       "r": "replace a single character",
       "J": "join line below to the current one",
+      "gJ": "join line below to the current one without space in between",
+      "gwip": "reflow paragraph",
       "cc": "change (replace) entire line",
-      "cw": "change (replace) to the end of the word",
+      "C": "change (replace) to the end of the line",
       "cDollar": "change (replace) to the end of the line",
+      "ciw": "change (replace) entire word",
+      "cw": "change (replace) to the end of the word",
       "s": "delete character and substitute text",
       "S": "delete line and substitute text (same as cc)",
       "xp": "transpose two letters (delete and paste)",
@@ -92,18 +105,60 @@
       "tilde": "switch case"
     }
   },
+  "registers": {
+    "title": "Registers",
+    "commands": {
+      "show": "show registers content",
+      "pasteRegisterX": "paste contents of register x",
+      "yankIntoRegisterX": "yank into register x"
+    },
+    "tip1": "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.",
+    "tip2": "Register 0 contains always the value of the last yank command."
+  },
+  "marks": {
+    "title": "Marks",
+    "commands": {
+      "list": "list of marks",
+      "currentPositionA": "set current position for mark A",
+      "jumpPositionA": "jump to position of mark A",
+      "yankToMarkA": "yank text to position of mark A"
+    },
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macros",
+    "commands": {
+      "recordA": "record macro a",
+      "stopRecording": "stop recording macro",
+      "runA": "run macro a",
+      "rerun": "rerun last run macro"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "open help for keyword",
+      "saveAsFile": "save file as",
+      "closePane": "close current pane",
+      "K": "open man page for word under the cursor"
+    }
+  },
   "cutAndPaste": {
     "title": "Cut and paste",
     "commands": {
       "yy": "yank (copy) a line",
       "twoyy": "yank (copy) 2 lines",
       "yw": "yank (copy) word",
+      "yiw": "yank (copy) word under the cursor",
+      "yaw": "yank (copy) word under the cursor and the space after or before it",
       "yDollar": "yank (copy) to end of line",
       "p": "put (paste) the clipboard after cursor",
       "P": "put (paste) before cursor",
       "dd": "delete (cut) a line",
       "twodd": "delete (cut) 2 lines",
       "dw": "delete (cut) word",
+      "diw": "delete (cut) word under the cursor",
+      "daw": "delete (cut) word under the cursor and the space after or before it",
       "D": "delete (cut) to the end of the line",
       "dDollar": "delete (cut) to the end of the line",
       "x": "delete (cut) character"
@@ -117,7 +172,8 @@
       "colonwq": "write (save) and quit",
       "colonx": "write (save) and quit",
       "colonq": "quit (fails if there are unsaved changes)",
-      "colonqbang": "quit and throw away unsaved changes"
+      "colonqbang": "quit and throw away unsaved changes",
+      "colonwqa": "write (save) and quit on all tabs"
     }
   },
   "searchAndReplace": {
@@ -176,8 +232,15 @@
       "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
     }
   },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
   "languages": {
     "title": "Languages"
   },
-  "footer": "Checkout the source on"
+  "footer": "Checkout the source on",
+  "layout": "page",
+  "permalink": "/lang/ar/"
 }

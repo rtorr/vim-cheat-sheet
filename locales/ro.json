@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Romana",
-  "permalink": "/lang/ro/",
   "lang": "ro",
   "lang_tag": "ro",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "sari la sfarsitul cuvantului (cuvintele pot contine semne de punctuatie)",
       "b": "sari inapoi la inceputul cuvantului",
       "B": "sari inapoi la inceputul cuvantului (cuvintele pot contine semne de punctuatie)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "dute la inceputul ecranului",
       "M": "dute la mijlocul ecranului",
       "L": "dute la sfarsitul ecranului",
@@ -29,21 +29,21 @@
       "fiveG": "dute la linia 5",
       "fx": "dute la urmatoarea referinta a caracterului x",
       "tx": "dute la referinta precendenta a caracterului x",
+      "Fx": "cursorMovement.commands.Fx",
+      "Tx": "cursorMovement.commands.Tx",
+      "semicolon": "cursorMovement.commands.semicolon",
+      "comma": "cursorMovement.commands.comma",
       "closeCurlyBrace": "sari la urmatorul paragraf (sau functie/bloc, cand editezi cod)",
-      "operCurlyBrace": "sari la paragraful anterior (sau functie/bloc, cand editezi cod)",
+      "openCurlyBrace": "cursorMovement.commands.openCurlyBrace",
+      "centerCursor": "cursorMovement.commands.centerCursor",
+      "CtrlPluse": "cursorMovement.commands.CtrlPluse",
+      "CtrlPlusy": "cursorMovement.commands.CtrlPlusy",
       "CtrlPlusb": "mergi inapoi un ecran intreg",
       "CtrlPlusf": "mergi inainte un ecran intreg",
       "CtrlPlusu": "mergi inapoi jumatate de ecran",
       "CtrlPlusd": "mergi inainte jumatate de ecran",
       "percent": "cursorMovement.commands.percent",
-      "Fx": "cursorMovement.commands.Fx",
-      "Tx": "cursorMovement.commands.Tx",
-      "semicolon": "cursorMovement.commands.semicolon",
-      "comma": "cursorMovement.commands.comma",
-      "openCurlyBrace": "cursorMovement.commands.openCurlyBrace",
-      "centerCursor": "cursorMovement.commands.centerCursor",
-      "CtrlPluse": "cursorMovement.commands.CtrlPluse",
-      "CtrlPlusy": "cursorMovement.commands.CtrlPlusy"
+      "operCurlyBrace": "sari la paragraful anterior (sau functie/bloc, cand editezi cod)"
     },
     "tip": "Prefixeaza comanda de miscare a cursorului cu un numar pentru a o repeta. De exemplu, <kbd>4j</kbd> muta cursorul cu 4 linii in jos."
   },
@@ -65,19 +65,19 @@
     "commands": {
       "r": "inlocuieste un singur caracter",
       "J": "lipeste lina curenta cu cea dedesubt",
+      "gJ": "editing.commands.gJ",
+      "gwip": "editing.commands.gwip",
       "cc": "schimba (inlocuieste) toata linia",
-      "cw": "schimba (inlocuieste) pana la sfarsitul cuvantului",
+      "C": "editing.commands.C",
       "cDollar": "schimba (inlocuieste) pana la sfarsitul liniei",
+      "ciw": "editing.commands.ciw",
+      "cw": "schimba (inlocuieste) pana la sfarsitul cuvantului",
       "s": "sterge caracterul si inlocuieste",
       "S": "sterge linia si inlocuieste (asemeni <kbd>cc</kbd>)",
       "xp": "transpune 2 caractere (sterge si lipeste)",
       "u": "undo (anulare)",
       "CtrlPlusr": "redo (refacere)",
-      "dot": "repeta comanda anterioara",
-      "gJ": "editing.commands.gJ",
-      "gwip": "editing.commands.gwip",
-      "C": "editing.commands.C",
-      "ciw": "editing.commands.ciw"
+      "dot": "repeta comanda anterioara"
     }
   },
   "markingText": {
@@ -123,7 +123,8 @@
       "currentPositionA": "seteaza pozitia curenta pentru insemnul A",
       "jumpPositionA": "sari la pozitia insemnului A",
       "yankToMarkA": "copie textul pana la pozitia insemnului A"
-    }
+    },
+    "tip": ""
   },
   "macros": {
     "title": "Macros",
@@ -138,10 +139,10 @@
     "title": "Global",
     "commands": {
       "helpForKeyword": "ajutor pentru cuvantul keye",
-      "openFile": "deschide fisier",
       "saveAsFile": "salveaza fisierul ca",
       "closePane": "inchide panoul current",
-      "K": "global.commands.K"
+      "K": "global.commands.K",
+      "openFile": "deschide fisier"
     }
   },
   "cutAndPaste": {
@@ -241,5 +242,7 @@
   "languages": {
     "title": "Alta limba"
   },
-  "footer": "Resurse aditionale"
+  "footer": "Resurse aditionale",
+  "layout": "page",
+  "permalink": "/lang/ro/"
 }

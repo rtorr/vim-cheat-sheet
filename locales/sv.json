@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Svenska",
-  "permalink": "/lang/sv/",
   "lang": "sv",
   "lang_tag": "sv",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "hoppa framåt till slutet av nästa ord (orden kan innehålla skiljetecken)",
       "b": "hoppa bakåt till starten av föregående ord",
       "B": "hoppa bakåt till starten av föregående ord (orden kan innehålla skiljetecken)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "flytta till toppen av skärmen",
       "M": "flytta till mitten av skärmen",
       "L": "flytta till botten av skärmen",
@@ -240,5 +240,7 @@
   "languages": {
     "title": "Språk"
   },
-  "footer": "Checka ut koden på"
+  "footer": "Checka ut koden på",
+  "layout": "page",
+  "permalink": "/lang/sv/"
 }

@@ -1,18 +1,7 @@
 {
-  "layout": "page",
   "title": "Persian",
-  "permalink": "/lang/fa_ir/",
   "lang": "fa_ir",
   "lang_tag": "fa",
-  "global": {
-    "title": "فرمان های کلی",
-    "commands": {
-      "helpForKeyword": "کمک در مورد keyword",
-      "openFile": "ذخیره کردن file",
-      "saveAsFile": "ذخیره کردن با عنوان",
-      "closePane": "بستن پنل فعلی"
-    }
-  },
   "cursorMovement": {
     "title": "حرکت مکان نما",
     "commands": {
@@ -26,6 +15,8 @@
       "E": "برو به آخر کلمه (کلمه هایی که شامل نقطه و علامت)",
       "b": "برو به ابتدای کلمه",
       "B": "برو به ابتدای کلمه(کلمه هایی که شامل نقطه و علامت)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "برو به ابتدای نمایشگر",
       "M": "برو به وسط نمایشگر",
       "L": "برو به آخر نمایشگر",
@@ -76,9 +67,10 @@
       "gJ": "خط بعدی را بدون فاصله به خط فعلی بچسبان",
       "gwip": "جمع کردن پاراگراف",
       "cc": "خط فعلی را جایگزین کن",
-      "cw": "کلمه فعلی را جایگزین کن",
+      "C": "change (replace) to the end of the line",
       "cDollar": "از مکان فعلی تا آخر خط را جایگزین کن",
       "ciw": "خط فعلی را جایگزین کن",
+      "cw": "کلمه فعلی را جایگزین کن",
       "s": "کاراکتر فعلی را جایگزین کن",
       "S": "خط فعلی را جایگزین کن(مثل cc)",
       "xp": "ترانهادن دو کاراکتر(پاک کردن و چسباندن)",
@@ -140,6 +132,16 @@
       "stopRecording": "توقف ضبط ماکرو",
       "runA": "اجرای ماکروی 'a'",
       "rerun": "اجرای دوباره آخرین ماکروی اجرا شده"
+    }
+  },
+  "global": {
+    "title": "فرمان های کلی",
+    "commands": {
+      "helpForKeyword": "کمک در مورد keyword",
+      "saveAsFile": "ذخیره کردن با عنوان",
+      "closePane": "بستن پنل فعلی",
+      "K": "open man page for word under the cursor",
+      "openFile": "ذخیره کردن file"
     }
   },
   "cutAndPaste": {
@@ -239,5 +241,7 @@
   "languages": {
     "title": "زبان"
   },
-  "footer": "سورس کد در زیر"
+  "footer": "سورس کد در زیر",
+  "layout": "page",
+  "permalink": "/lang/fa_ir/"
 }

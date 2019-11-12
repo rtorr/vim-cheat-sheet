@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Nederlands",
-  "permalink": "/lang/nl_nl/",
   "lang": "nl_nl",
   "lang_tag": "nl",
   "cursorMovement": {
@@ -11,15 +9,17 @@
       "j": "verplaats cursor naar rechts",
       "k": "verplaats cursor naar boven",
       "l": "verplaats cursor naar beneden",
-      "H": "verplaats cursor naar de bovenkant van het scherm",
-      "M": "verplaats cursor naar het midden van het scherm",
-      "L": "verplaats cursor naar de onderkant van het scherm",
       "w": "verplaats cursor naar het begin van een woord",
       "W": "verplaats cursor naar het begin van een woord (woorden mogen interpunctie bevatten)",
       "e": "verplaats cursor naar het einde van een woord",
       "E": "verplaats cursor naar het einde van een woord (woorden mogen interpunctie bevatten)",
       "b": "verplaats cursor naar het begin van een woord",
       "B": "verplaats cursor naar het begin van een woord (woorden mogen interpunctie bevatten)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "H": "verplaats cursor naar de bovenkant van het scherm",
+      "M": "verplaats cursor naar het midden van het scherm",
+      "L": "verplaats cursor naar de onderkant van het scherm",
       "zero": "verplaats cursor naar het begin van de regel",
       "caret": "verplaats cursor naar het eerste teken van de regel",
       "dollar": "verplaats cursor naar het einde van de regel",
@@ -35,13 +35,15 @@
       "comma": "herhaal vorige f, t, F of T commando, terugwaards",
       "closeCurlyBrace": "ga naar de volgende paragraaf (of functie/blok, tijdens het bewerken van code)",
       "openCurlyBrace": "ga naar de vorige paragraaf (of functie/blok, tijdens het bewerken van code)",
-      "zz": "centreer cursor op scherm",
+      "centerCursor": "center cursor on screen",
       "CtrlPluse": "beweeg scherm een regel omlaag",
       "CtrlPlusy": "beweeg scherm een regel omhoog",
       "CtrlPlusb": "ga een volledig scherm terug",
       "CtrlPlusf": "ga een volledig scherm vooruit",
       "CtrlPlusu": "ga 1/2 scherm terug",
-      "CtrlPlusd": "ga 1/2 scherm vooruit"
+      "CtrlPlusd": "ga 1/2 scherm vooruit",
+      "percent": "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)",
+      "zz": "centreer cursor op scherm"
     },
     "tip": "Prefix een cursorbeweging met een getal om deze te herhalen. bijvoorbeeld, <kbd>4j</kbd> beweegt de cursor 4 regels omlaag."
   },
@@ -67,9 +69,9 @@
       "gwip": "formatteer paragraaf",
       "cc": "vervang huidige regel",
       "C": "vervang tot einde regel",
-      "cw": "vervang tot einde huidig woord",
       "cDollar": "vervang tot einde regel",
       "ciw": "vervang woord",
+      "cw": "vervang tot einde huidig woord",
       "s": "vervang karakter",
       "S": "vervang huidige regel (het zelfde als cc)",
       "xp": "verwissel twee letters (verwijder en plak)",
@@ -137,10 +139,10 @@
     "title": "Algemeen",
     "commands": {
       "helpForKeyword": "open hulp voor keyword",
-      "openFile": "open bestand",
       "saveAsFile": "sla bestand op als",
       "closePane": "sluit huidige scherm",
-      "K": "open handleiding voor woord onder cursor"
+      "K": "open handleiding voor woord onder cursor",
+      "openFile": "open bestand"
     }
   },
   "cutAndPaste": {
@@ -232,8 +234,15 @@
       "colontabdo": "voer het <code>command</code> uit op alle tabs (bijvoorbeeld <code>:tabdo q</code> - sluit alle geopende tabbladen)"
     }
   },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
   "languages": {
     "title": "Talen"
   },
-  "footer": "Bekijk de broncode op "
+  "footer": "Bekijk de broncode op ",
+  "layout": "page",
+  "permalink": "/lang/nl_nl/"
 }

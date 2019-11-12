@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "日本語",
-  "permalink": "/lang/ja/",
   "lang": "ja",
   "lang_tag": "ja",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "単語の最後にジャンプ（区切り文字を含めない）",
       "b": "単語の先頭へ戻る（区切り文字まで）",
       "B": "単語の先頭へ戻る（区切り文字を含めない）",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "画面の先頭行へ移動",
       "M": "画面の中央行へ移動",
       "L": "画面の最下行へ移動",
@@ -88,11 +88,12 @@
       "CtrlPlusv": "矩形ビジュアルモードを開始",
       "O": "ブロックの他のコーナーに移動する",
       "aw": "単語をマーク",
-      "AB": "() ブロックを選択（括弧ごと）",
+      "ab": "a block with ()",
       "aB": "{}ブロックを選択（括弧ごと）",
       "ib": "() ブロックを選択（括弧を除く）",
       "iB": "{}ブロックを選択（括弧を除く）",
-      "Esc": "ビジュアルモード終了"
+      "Esc": "ビジュアルモード終了",
+      "AB": "() ブロックを選択（括弧ごと）"
     }
   },
   "visualCommands": {
@@ -240,5 +241,7 @@
   "languages": {
     "title": "言語"
   },
-  "footer": "ソースのチェックアウト"
+  "footer": "ソースのチェックアウト",
+  "layout": "page",
+  "permalink": "/lang/ja/"
 }

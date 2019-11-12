@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "中文 (台灣)",
-  "permalink": "/lang/zh_tw/",
   "lang": "zh_tw",
   "lang_tag": "zh",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "向右跳至字尾 (字中可含標點)",
       "b": "向左跳至字尾",
       "B": "向左跳至字尾 (字中可含標點)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "跳至視窗頂端",
       "M": "跳至視窗中間",
       "L": "跳至視窗底端",
@@ -84,8 +84,8 @@
     "commands": {
       "v": "進入標示模式 (字元選取)，並執行命令 (如 y - 複製)",
       "V": "進入標示模式 (行選取)",
-      "CtrlPlusv": "進入標示模式 (區塊選取)",
       "o": "跳至選取區塊的開頭/結尾",
+      "CtrlPlusv": "進入標示模式 (區塊選取)",
       "O": "跳至選取區塊的角落",
       "aw": "選取該單字",
       "ab": "選取 () 及所包圍的區塊",
@@ -240,5 +240,7 @@
   "languages": {
     "title": "語言"
   },
-  "footer": "原始程式碼"
+  "footer": "原始程式碼",
+  "layout": "page",
+  "permalink": "/lang/zh_tw/"
 }

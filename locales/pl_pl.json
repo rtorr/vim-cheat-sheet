@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Polski",
-  "permalink": "/lang/pl_pl/",
   "lang": "pl_pl",
   "lang_tag": "pl",
   "cursorMovement": {
@@ -17,7 +15,8 @@
       "E": "skocz na koniec bieżącego wyrazu (słowa mogą zawierać interpunkcję)",
       "b": "skocz na początek bieżącego wyrazu",
       "B": "skocz na początek bieżącego wyrazu (słowa mogą zawierać interpunkcję)",
-      "percent": "przesuń do pasującego znaku (standardowo wspierane pary: '()', '{}', '[]' - użyj <code>:h matchpairs</code> w Vimie po więce informacji)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "skocz do góry ekranu",
       "M": "skocz do połowy ekranu",
       "L": "skocz do dołu ekranu",
@@ -30,13 +29,20 @@
       "fiveG": "skocz do linii 5",
       "fx": "przesuń kursor na pierwszy znaleziony znak 'x'",
       "tx": "przesuń kursor przed pierwszy znaleziony znak 'x'",
+      "Fx": "jump to previous occurence of character x",
+      "Tx": "jump to after previous occurence of character x",
+      "semicolon": "repeat previous f, t, F or T movement",
+      "comma": "repeat previous f, t, F or T movement, backwards",
       "closeCurlyBrace": "skocz do następnego paragrafu (albo funkcji/bloku kodu w trakcie edycji kodu)",
       "openCurlyBrace": "skocz do poprzedniego paragrafu (albo funkcji/bloku kodu w trakcie edycji kodu)",
       "centerCursor": "wyśrodkuj kursor na ekranie",
+      "CtrlPluse": "move screen down one line (without moving cursor)",
+      "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "przesuń ekran o całą jego wysokość w górę",
       "CtrlPlusf": "przesuń ekran o całą jego wysokość w dół",
       "CtrlPlusu": "przesuń ekran o połowę tekstu w górę",
-      "CtrlPlusd": "przesuń ekran o połowę tekstu w dół"
+      "CtrlPlusd": "przesuń ekran o połowę tekstu w dół",
+      "percent": "przesuń do pasującego znaku (standardowo wspierane pary: '()', '{}', '[]' - użyj <code>:h matchpairs</code> w Vimie po więce informacji)"
     },
     "tip": "Poprzedź komendę ruchu kursora liczbą powtórzeń. Na przykład <kbd>4j</kbd> przesunie w dół 4 wiersze"
   },
@@ -58,9 +64,13 @@
     "commands": {
       "r": "zamień pojedynczy znak pod kursorem",
       "J": "połącz wiersze: dodaj wiersz poniżej do bieżącego",
+      "gJ": "join line below to the current one without space in between",
+      "gwip": "reflow paragraph",
       "cc": "zastąp cały wiersz",
-      "cw": "zastąp na końcu wyrazu",
+      "C": "change (replace) to the end of the line",
       "cDollar": "zastąp na końcu wiersza",
+      "ciw": "change (replace) entire word",
+      "cw": "zastąp na końcu wyrazu",
       "s": "zastąp znak wskazany przez kursor",
       "S": "zastąp wiersz (takie samo znaczenie jak cc)",
       "xp": "zastąp dwa znaki (usuń i wklej)",
@@ -112,7 +122,8 @@
       "currentPositionA": "ustaw bieżącą pozycję na oznaczenie A",
       "jumpPositionA": "przeskocz do pozycji oznaczenia A",
       "yankToMarkA": "kopiuj tekst do pozycji oznaczenia A"
-    }
+    },
+    "tip": ""
   },
   "macros": {
     "title": "Makra",
@@ -127,9 +138,10 @@
     "title": "Globalne",
     "commands": {
       "helpForKeyword": "otwórz pomoc dla słowa kluczowego",
-      "openFile": "otwórz plik",
       "saveAsFile": "zapisz plik jako",
-      "closePane": "zamknij okienko nawigacji"
+      "closePane": "zamknij okienko nawigacji",
+      "K": "open man page for word under the cursor",
+      "openFile": "otwórz plik"
     }
   },
   "cutAndPaste": {
@@ -161,7 +173,8 @@
       "colonwq": "zapisz i wyjdź",
       "colonx": "zapisz i wyjdź",
       "colonq": "wyjdź (nie zadziała, jeśli są niezapisane zmiany)",
-      "colonqbang": "wyjdź i odrzuć niezapisane zmiany"
+      "colonqbang": "wyjdź i odrzuć niezapisane zmiany",
+      "colonwqa": "write (save) and quit on all tabs"
     }
   },
   "searchAndReplace": {
@@ -220,5 +233,15 @@
       "colontabdo": "wykonaj <code>polecenie</code> we wszystkich kartach (np. <code>:tabdo q</code> - zamyka wszystkie otwarte karty)"
     }
   },
-  "footer": "Sprawdź źródło na"
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
+  "languages": {
+    "title": "Languages"
+  },
+  "footer": "Sprawdź źródło na",
+  "layout": "page",
+  "permalink": "/lang/pl_pl/"
 }

@@ -1,19 +1,7 @@
 {
-  "layout": "page",
   "title": "ภาษาไทย",
-  "permalink": "/lang/th/",
   "lang": "th",
   "lang_tag": "th",
-  "global": {
-    "title": "Global",
-    "commands": {
-      "helpForKeyword": "ขอความช่วยเหลือสำหรับ keyword",
-      "openFile": "เปิด file",
-      "saveAsFile": "บันทึกเป็น file",
-      "closePane": "ปิด pane ปัจจุบัน",
-      "K": "เปิด man page สำหรับคำใต้ cursor"
-    }
-  },
   "cursorMovement": {
     "title": "การเลื่อนตำแหน่งเคอร์เซอร์",
     "commands": {
@@ -21,22 +9,40 @@
       "j": "ลงด้านล่าง",
       "k": "ขึ้นข้างบน",
       "l": "ไปทางขวา",
-      "H": "ไปยังบรรทัดแรกของจอ",
-      "M": "ไปยังกลางจอ",
-      "L": "ไปยังบรรทัดสุดท้ายของจอ",
       "w": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรแรกของคำนั้น",
       "W": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรแรกของคำนั้น (แบบรวมเครื่องหมายวรรคตอนด้วย)",
       "e": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรสุดท้ายของคำนั้น",
       "E": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรสุดท้ายของคำนั้น (แบบรวมเครื่องหมายวรรคตอนด้วย)",
       "b": "ไปข้างหลังทีละคำ โดยไปที่ตัวอักษรแรกของคำนั้น",
       "B": "ไปข้างหลังทีละคำ โดยไปที่ตัวอักษรแรกของคำนั้น (แบบรวมเครื่องหมายวรรคตอนด้วย)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "H": "ไปยังบรรทัดแรกของจอ",
+      "M": "ไปยังกลางจอ",
+      "L": "ไปยังบรรทัดสุดท้ายของจอ",
       "zero": "ไปยังจุดเริ่มต้นของบรรทัดนั้น",
       "caret": "ไปยังตัวอักษรแรกสุด ที่ไม่ใช่ช่องว่าง ของบรรทัดนั้น",
       "dollar": "ไปยังจุดท้ายสุดของบรรทัดนั้น",
       "g_": "ไปยังตัวอักษรสุดท้าย ที่ไม่ใช่ช่องว่าง ของบรรทัดนั้น",
       "gg": "ไปยังบรรทัดแรกของไฟล์",
       "G": "ไปยังบรรทัดสุดท้ายของไฟล์",
-      "fiveG": "ไปยังบรรทัดที่ 5"
+      "fiveG": "ไปยังบรรทัดที่ 5",
+      "fx": "jump to next occurrence of character x",
+      "tx": "jump to before next occurrence of character x",
+      "Fx": "jump to previous occurence of character x",
+      "Tx": "jump to after previous occurence of character x",
+      "semicolon": "repeat previous f, t, F or T movement",
+      "comma": "repeat previous f, t, F or T movement, backwards",
+      "closeCurlyBrace": "jump to next paragraph (or function/block, when editing code)",
+      "openCurlyBrace": "jump to previous paragraph (or function/block, when editing code)",
+      "centerCursor": "center cursor on screen",
+      "CtrlPluse": "move screen down one line (without moving cursor)",
+      "CtrlPlusy": "move screen up one line (without moving cursor)",
+      "CtrlPlusb": "move back one full screen",
+      "CtrlPlusf": "move forward one full screen",
+      "CtrlPlusu": "move back 1/2 a screen",
+      "CtrlPlusd": "move forward 1/2 a screen",
+      "percent": "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
     },
     "tip": "กดตัวเลขก่อนใช้คำสั่งการเลื่อนตำแหน่งเคอร์เซอร์ ซึ่งตัวเลขนั้นคือจำนวนคำสั่งที่ทำซ้ำ เช่น <kbd>4j</kbd>  คือลงมาด้านล่าง 4 บรรทัด"
   },
@@ -61,8 +67,10 @@
       "gJ": "ดึงเอาบรรทัดล่างขึ้นมาอยู่บรรทัดเดียวกันกับบรรทัดปัจจุบัน ไม่เว้นวรรค",
       "gwip": "ฟอร์แมตย่อหน้าใหม่",
       "cc": "ลบทั้งบรรทัดแล้วพิมพ์ใหม่",
-      "cw": "ลบทั้งคำแล้วพิมพ์ใหม่",
+      "C": "change (replace) to the end of the line",
       "cDollar": "ลบไปจนถึงสุดบรรทัดแล้วพิมพ์ใหม่",
+      "ciw": "change (replace) entire word",
+      "cw": "ลบทั้งคำแล้วพิมพ์ใหม่",
       "s": "ลบหนึ่งตัวอักษร แล้วเริ่มพิมพ์ใหม่",
       "S": "ลบทั้งบรรทัดแล้วพิมพ์ใหม่ (เหมือนกับใช้ cc)",
       "xp": "สลับตัวอักษร 2 ตัวที่ติดกัน (ลบแล้วก็วาง)",
@@ -97,18 +105,61 @@
       "tilde": "สลับตัวพิมพ์เล็ก/พิมพ์ใหญ่"
     }
   },
+  "registers": {
+    "title": "Registers",
+    "commands": {
+      "show": "show registers content",
+      "pasteRegisterX": "paste contents of register x",
+      "yankIntoRegisterX": "yank into register x"
+    },
+    "tip1": "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.",
+    "tip2": "Register 0 contains always the value of the last yank command."
+  },
+  "marks": {
+    "title": "Marks",
+    "commands": {
+      "list": "list of marks",
+      "currentPositionA": "set current position for mark A",
+      "jumpPositionA": "jump to position of mark A",
+      "yankToMarkA": "yank text to position of mark A"
+    },
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macros",
+    "commands": {
+      "recordA": "บันทึก macro 'a'",
+      "stopRecording": "หยุดบันทึก macro 'a'",
+      "runA": "ใช้งาน macro 'a'",
+      "rerun": "ใช้งาน macro 'a' อีกครั้ง"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "ขอความช่วยเหลือสำหรับ keyword",
+      "saveAsFile": "บันทึกเป็น file",
+      "closePane": "ปิด pane ปัจจุบัน",
+      "K": "เปิด man page สำหรับคำใต้ cursor",
+      "openFile": "เปิด file"
+    }
+  },
   "cutAndPaste": {
     "title": "การลบ (Cut) และการวาง (Paste)",
     "commands": {
       "yy": "คัดลอก (copy) ทั้งบรรทัด",
       "twoyy": "คัดลอก (copy) 2 บรรทัด",
       "yw": "คัดลอก (copy) ทั้งคำ",
+      "yiw": "yank (copy) word under the cursor",
+      "yaw": "yank (copy) word under the cursor and the space after or before it",
       "yDollar": "คัดลอก (copy) ตั้งแต่ตำแหน่งเคอร์เซอร์ปัจจุบัน ถึงสุดบรรทัด",
       "p": "วาง (paste) หลังเคอร์เซอร์",
       "P": "วาง (paste) ก่อนเคอร์เซอร์",
       "dd": "ลบ (cut) ทั้งบรรทัด",
       "twodd": "ลบ (cut) 2 บรรทัด",
       "dw": "ลบ (cut) ทั้งคำ่",
+      "diw": "delete (cut) word under the cursor",
+      "daw": "delete (cut) word under the cursor and the space after or before it",
       "D": "ลบ (cut) ตั้งแต่ตำแหน่งเคอร์เซอร์ปัจจุบัน ถึงสุดบรรทัด",
       "dDollar": "ลบ (cut) ตั้งแต่ตำแหน่งเคอร์เซอร์ปัจจุบัน ถึงสุดบรรทัด",
       "x": "ลบ (cut) หนึ่งตัวอักษร"
@@ -118,6 +169,7 @@
     "title": "การออกจาก Vim",
     "commands": {
       "colonw": "บันทึก (write) ลงไฟล์อย่างเดียว ไม่ได้ออก",
+      "colonwsudo": "write out the current file using sudo",
       "colonwq": "บันทึก (write) ลงไฟล์ และออกจาก Vim",
       "colonx": "บันทึก (write) ลงไฟล์ และออกจาก Vim",
       "colonq": "ออกจาก Vim (ออกไม่ได้ ถ้าไม่ได้บันทึกลงไฟล์)",
@@ -130,10 +182,21 @@
     "commands": {
       "forwardSlashPattern": "ค้นหาตาม pattern ที่ใส่ไป",
       "questionMarkPattern": "ค้นหาย้อนกลับไป(ขึ้นไป) ตาม pattern ที่ใส่ไป",
+      "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
       "n": "ค้นหาอันถัดไป",
       "N": "ค้นหาย้อนกลับไป",
       "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "แทนที่ old ทั้งหมดด้วย new",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "แทนที่ old ทั้งหมดด้วย new ก่อนทำการแทนที่จะถามก่อนทุกครั้ง"
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "แทนที่ old ทั้งหมดด้วย new ก่อนทำการแทนที่จะถามก่อนทุกครั้ง",
+      "colonnoh": "remove highlighting of search matches"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Search in multiple files",
+    "commands": {
+      "colonvimgrep": "search for pattern in multiple files",
+      "coloncn": "jump to the next match",
+      "coloncp": "jump to the previous match",
+      "coloncopen": "open a window containing the list of matches"
     }
   },
   "workingWithMultipleFiles": {
@@ -142,8 +205,8 @@
       "colone": "เปิดไฟล์ filename ขึ้นมาแก้ไขบน buffer ใหม่",
       "colonbnext": "เปิดไฟล์ใน buffer ถัดไป",
       "colonbprev": "เปิดไฟล์ใน buffer ก่อนหน้านี้",
-      "colonbd": "ลบ buffer ที่กำลังทำงานอยู่ (ปิดไฟล์นี้)",
       "colonls": "ดูทุก buffer ที่กำลังทำงานอยู่",
+      "colonbd": "ลบ buffer ที่กำลังทำงานอยู่ (ปิดไฟล์นี้)",
       "colonsp": "เปิดไฟล์ filename ใน buffer ใหม่ โดยแบ่งหน้าต่างตามแนวนอน",
       "colonvsp": "เปิดไฟล์ filename ใน buffer ใหม่ โดยแบ่งหน้าต่างตามแนวตั้ง",
       "ctrlPlusws": "แบ่งหน้าต่าง ตามแนวนอน",
@@ -166,20 +229,19 @@
       "hashgt": "ย้ายไป tab หมายเลข #",
       "colontabmove": "ขยับที่ tab ปัจจุบันไปยัง ตำแหน่งที่ # (โดยเริ่มนับจาก 0)",
       "colontabc": "ปิด tab ปัจจุบัน รวมทั้ง หน้าต่างที่ถูกแบ่งไว้ใน tab นั้นทั้งหมด",
-      "colontabo": "ปิด tab ทั้งหมด ยกเว้น tab ปัจจุบัน"
+      "colontabo": "ปิด tab ทั้งหมด ยกเว้น tab ปัจจุบัน",
+      "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
     }
   },
-  "macros": {
-    "title": "Macros",
-    "commands": {
-      "recordA": "บันทึก macro 'a'",
-      "stopRecording": "หยุดบันทึก macro 'a'",
-      "runA": "ใช้งาน macro 'a'",
-      "rerun": "ใช้งาน macro 'a' อีกครั้ง"
-    }
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
   },
   "languages": {
     "title": "ภาษา"
   },
-  "footer": "Checkout the source on"
+  "footer": "Checkout the source on",
+  "layout": "page",
+  "permalink": "/lang/th/"
 }

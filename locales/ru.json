@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Русский",
-  "permalink": "/lang/ru/",
   "lang": "ru",
   "lang_tag": "ru",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "переместиться вперед на конец слова (слово может содержать пунктуацию)",
       "b": "переместиться назад на начало слова",
       "B": "переместиться назад на начало слова (слово может содержать пунктуацию)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "переместиться к началу экрана",
       "M": "переместиться к середине экрана",
       "L": "переместиться к концу экрана",
@@ -29,12 +29,20 @@
       "fiveG": "переместить на пятую строку",
       "fx": "переместиться к следующему вхождению символа x",
       "tx": "переместиться перед следующим вхождением символа x",
+      "Fx": "jump to previous occurence of character x",
+      "Tx": "jump to after previous occurence of character x",
+      "semicolon": "repeat previous f, t, F or T movement",
+      "comma": "repeat previous f, t, F or T movement, backwards",
       "closeCurlyBrace": "переместиться к следующему параграфу (или функции/блоку при редактировании кода)",
       "openCurlyBrace": "переместиться к предыдущему параграфу (или функции/блоку при редактировании кода)",
+      "centerCursor": "center cursor on screen",
+      "CtrlPluse": "move screen down one line (without moving cursor)",
+      "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "переместиться назад на целый экран",
       "CtrlPlusf": "переместиться вперед на целый экран",
       "CtrlPlusu": "переместиться назад на половину экрана",
-      "CtrlPlusd": "переместиться вперед на половину экрана"
+      "CtrlPlusd": "переместиться вперед на половину экрана",
+      "percent": "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
     },
     "tip": "Добавьте число перед командой перемещения курсора для того, чтобы повторить её. Например, <kbd>4j</kbd> перемещает курсор на 4 строки вниз."
   },
@@ -56,9 +64,13 @@
     "commands": {
       "r": "заменить один символ",
       "J": "присоединить нижнюю строку к текущей",
+      "gJ": "join line below to the current one without space in between",
+      "gwip": "reflow paragraph",
       "cc": "заменить всю строку",
-      "cw": "заменить до конца слова",
+      "C": "change (replace) to the end of the line",
       "cDollar": "заменить до конца строки",
+      "ciw": "change (replace) entire word",
+      "cw": "заменить до конца слова",
       "s": "удалить символ и заменить текст",
       "S": "удалить строку и заменить текст (то же что cc)",
       "xp": "переставить две буквы (удалить и вставить)",
@@ -118,6 +130,7 @@
     "commands": {
       "recordA": "записать макрос A",
       "stopRecording": "остановить запись макроса",
+      "runA": "run macro a",
       "rerun": "выполнить последний макрос"
     }
   },
@@ -125,10 +138,10 @@
     "title": "Общее",
     "commands": {
       "helpForKeyword": "открыть помощь для keyword",
-      "openFile": "открыть file",
       "saveAsFile": "сохранить как file",
       "closePane": "закрыть текущую панель",
-      "K": "открыть справочное руководство для слова под курсором"
+      "K": "открыть справочное руководство для слова под курсором",
+      "openFile": "открыть file"
     }
   },
   "cutAndPaste": {
@@ -160,7 +173,8 @@
       "colonwq": "сохранить файл и выйти",
       "colonx": "сохранить и выйти",
       "colonq": "выйти (терпит неудачу в случае несохраненных изменений)",
-      "colonqbang": "выйти и потерять несохраненные изменения"
+      "colonqbang": "выйти и потерять несохраненные изменения",
+      "colonwqa": "write (save) and quit on all tabs"
     }
   },
   "searchAndReplace": {
@@ -219,8 +233,15 @@
       "colontabdo": "выполнить <code>command</code> на всех вкладках (к примеру <code>:tabdo q</code> - закрывает все открытые вкладки)"
     }
   },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
   "languages": {
     "title": "Языки"
   },
-  "footer": "Смотрите код на "
+  "footer": "Смотрите код на ",
+  "layout": "page",
+  "permalink": "/lang/ru/"
 }

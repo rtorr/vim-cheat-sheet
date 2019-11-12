@@ -1,7 +1,5 @@
 {
-  "layout": "page",
   "title": "Deutsch",
-  "permalink": "/lang/de_de/",
   "lang": "de_de",
   "lang_tag": "de",
   "cursorMovement": {
@@ -17,6 +15,8 @@
       "E": "Sprung vorwärts zum Wortende (Wort kann Interpunktion enthalten)",
       "b": "Sprung rückwärts zum Wortanfang",
       "B": "Sprung rückwärts zum Wortanfang (Wort kann Interpunktion enthalten)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
       "H": "Zum Anfang des Bildschirms springen",
       "M": "Zur Mitte des Bildschirms springen",
       "L": "Zum Ende des Bildschirms springen",
@@ -67,16 +67,16 @@
       "gJ": "die Zeile unterhalb zur aktuellen Zeile ohne Abstand hinzufügen",
       "gwip": "Absatz neu umbrechen",
       "cc": "Ersetzen der kompletten Zeile",
-      "cw": "Ersetzen bis zum Ende des Worts",
+      "C": "editing.commands.C",
       "cDollar": "Ersetzen bis zum Zeilenende",
       "ciw": "Ersetzen des gesamten Worts",
+      "cw": "Ersetzen bis zum Ende des Worts",
       "s": "Zeichen löschen und ersetzen",
       "S": "Zeile löschen und ersetzen (wie cc)",
       "xp": "zwei Zeichen vertauschen (löschen und einfügen)",
       "u": "Änderung rückgängig",
       "CtrlPlusr": "Wiederholen der letzten, rückgängig gemachten, Änderung",
-      "dot": "letztes Kommando wiederholen",
-      "C": "editing.commands.C"
+      "dot": "letztes Kommando wiederholen"
     }
   },
   "markingText": {
@@ -240,5 +240,7 @@
   "languages": {
     "title": "Sprachen"
   },
-  "footer": "Quellcode unter "
+  "footer": "Quellcode unter ",
+  "layout": "page",
+  "permalink": "/lang/de_de/"
 }

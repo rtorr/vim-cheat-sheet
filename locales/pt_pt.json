@@ -1,19 +1,7 @@
 {
-  "layout": "page",
   "title": "Português - Portugal",
-  "permalink": "/lang/pt_pt/",
   "lang": "pt_pt",
   "lang_tag": "pt",
-  "global": {
-    "title": "Global",
-    "commands": {
-      "helpForKeyword": "abrir ajuda para termo",
-      "openFile": "abrir ficheiro",
-      "saveAsFile": "gravar como",
-      "closePane": "fechar painel actual",
-      "K": "abrir página do manual para o termo onde está o cursor"
-    }
-  },
   "cursorMovement": {
     "title": "Movimento do cursor",
     "commands": {
@@ -21,16 +9,17 @@
       "j": "mover o cursor para baixo",
       "k": "mover o cursor para cima",
       "l": "mover o cursor para a direita",
-      "H": "ir para o topo do ecrã",
-      "M": "ir para o meio do ecrã",
-      "L": "ir para o fundo do ecrã",
       "w": "ir para o início da próxima palavra",
       "W": "ir para o início da próxima palavra (podendo conter pontuação)",
       "e": "ir para o fim da próxima palavra",
       "E": "ir para o fim da próxima palavra (podendo conter pontuação)",
       "b": "ir para o início da palavra anterior",
       "B": "ir para o início da palavra anterior (podendo conter pontuação)",
-      "percent": "ir para o carácter correspondente (pares reconhecidos originalmente: '()', '{}', '[]' - use <code>:h matchpairs</code> no vim para mais informação",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "H": "ir para o topo do ecrã",
+      "M": "ir para o meio do ecrã",
+      "L": "ir para o fundo do ecrã",
       "zero": "ir para o início da linha",
       "caret": "ir para o primeiro carácter da linha que não seja espaço",
       "dollar": "ir para o fim da linha",
@@ -47,10 +36,13 @@
       "closeCurlyBrace": "ir para o próximo parágrafo (ou função/bloco, ao editar código)",
       "openCurlyBrace": "ir para o parágrafo anterior (ou função/bloco, ao editar código)",
       "centerCursor": "centrar o cursor no ecrã",
+      "CtrlPluse": "move screen down one line (without moving cursor)",
+      "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "retroceder um ecrã completo",
       "CtrlPlusf": "avançar um ecrã completo",
       "CtrlPlusu": "retroceder meio ecrã",
-      "CtrlPlusd": "avançar meio ecrã"
+      "CtrlPlusd": "avançar meio ecrã",
+      "percent": "ir para o carácter correspondente (pares reconhecidos originalmente: '()', '{}', '[]' - use <code>:h matchpairs</code> no vim para mais informação"
     },
     "tip": "Para repetir um movimento do cursor adicione um prefixo numérico. Por exemplo, <kbd>4j</kbd> move o cursor 4 linhas para baixo."
   },
@@ -72,9 +64,13 @@
     "commands": {
       "r": "substituir um único carácter",
       "J": "juntar a linha seguinte com a linha actual",
+      "gJ": "join line below to the current one without space in between",
+      "gwip": "reflow paragraph",
       "cc": "substituir a linha toda",
-      "cw": "substituir até ao fim da palavra actual",
+      "C": "change (replace) to the end of the line",
       "cDollar": "substituir até ao fim da linha",
+      "ciw": "change (replace) entire word",
+      "cw": "substituir até ao fim da palavra actual",
       "s": "apagar um carácter e substituir texto",
       "S": "apagar um carácter e substituir até ao fim da linha (igual ao cc)",
       "xp": "transpor duas letras (cortar e colar)",
@@ -138,18 +134,32 @@
       "rerun": "correr novamente a última macro executada"
     }
   },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "abrir ajuda para termo",
+      "saveAsFile": "gravar como",
+      "closePane": "fechar painel actual",
+      "K": "abrir página do manual para o termo onde está o cursor",
+      "openFile": "abrir ficheiro"
+    }
+  },
   "cutAndPaste": {
     "title": "Cortar/copiar e colar",
     "commands": {
       "yy": "copiar uma linha",
       "twoyy": "copiar duas linhas",
       "yw": "copiar os caracteres até ao início da próxima palavra",
+      "yiw": "yank (copy) word under the cursor",
+      "yaw": "yank (copy) word under the cursor and the space after or before it",
       "yDollar": "copiar até ao fim da linha",
       "p": "colar depois do cursor",
       "P": "colar antes do cursor",
       "dd": "cortar uma linha",
       "twodd": "cortar duas linhas",
       "dw": "cortar até ao início da próxima palavra",
+      "diw": "delete (cut) word under the cursor",
+      "daw": "delete (cut) word under the cursor and the space after or before it",
       "D": "cortar até ao fim da linha",
       "dDollar": "cortar até ao fim da linha (igual ao D)",
       "x": "cortar o carácter actual"
@@ -161,8 +171,10 @@
       "colonw": "gravar ficheiro, mas sem sair",
       "colonwsudo": "gravar o ficheiro actual com sudo",
       "colonwq": "gravar e sair",
+      "colonx": "write (save) and quit",
       "colonq": "sair (não sai se houver alterações por gravar)",
-      "colonqbang": "sair sem gravar alterações"
+      "colonqbang": "sair sem gravar alterações",
+      "colonwqa": "write (save) and quit on all tabs"
     }
   },
   "searchAndReplace": {
@@ -223,6 +235,13 @@
   },
   "words": {
     "keyword": "termo",
-    "file": "ficheiro"
-  }
+    "file": "ficheiro",
+    "movement": "movement"
+  },
+  "languages": {
+    "title": "Languages"
+  },
+  "footer": "Checkout the source on",
+  "layout": "page",
+  "permalink": "/lang/pt_pt/"
 }
