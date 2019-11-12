@@ -15,7 +15,7 @@ const app = express();
 i18n.configure({
   locales,
   objectNotation: true,
-  defaultLocale: 'en',
+  defaultLocale: 'en_us',
   directory
 });
 
