@@ -1,249 +1,418 @@
 {
-	"layout": "page",
-	"title": "Romana",
-	"permalink": "/lang/ro/",
-	"lang": "ro",
-	"lang_tag": "ro",
-	"cursorMovement": {
-		"title": "Mutarea cursorului",
-		"commands": {
-			"h": "muta cursorul la stanga",
-			"j": "muta cursorul la dreapta",
-			"k": "muta cursolul in sus",
-			"l": "muta cursolul in jos",
-			"w": "sari la inceputul cuvantului",
-			"W": "sari la inceputul cuvantului (cuvintele pot contine semne de punctuatie)",
-			"e": "sari la sfarsitul cuvantului",
-			"E": "sari la sfarsitul cuvantului (cuvintele pot contine semne de punctuatie)",
-			"b": "sari inapoi la inceputul cuvantului",
-			"B": "sari inapoi la inceputul cuvantului (cuvintele pot contine semne de punctuatie)",
-			"H": "dute la inceputul ecranului",
-			"M": "dute la mijlocul ecranului",
-			"L": "dute la sfarsitul ecranului",
-			"zero": "sari la inceputul liniei",
-			"caret": "sari la primul caracter care nu e liber de la inceputul liniei",
-			"dollar": "sari la sfarsitul liniei",
-			"g_": "sari la ultimul caracter non-blank al liniei",
-			"gg": "dute la prima linie a documentului",
-			"G": "dute la ultima linie a documentului",
-			"fiveG": "dute la linia 5",
-			"fx": "dute la urmatoarea referinta a caracterului x",
-			"tx": "dute la referinta precendenta a caracterului x",
-			"closeCurlyBrace": "sari la urmatorul paragraf (sau functie/bloc, cand editezi cod)",
-			"operCurlyBrace": "sari la paragraful anterior (sau functie/bloc, cand editezi cod)",
-			"CtrlPlusb": "mergi inapoi un ecran intreg",
-			"CtrlPlusf": "mergi inainte un ecran intreg",
-			"CtrlPlusu": "mergi inapoi jumatate de ecran",
-			"CtrlPlusd": "mergi inainte jumatate de ecran",
-			"percent": "cursorMovement.commands.percent",
-			"Fx": "cursorMovement.commands.Fx",
-			"Tx": "cursorMovement.commands.Tx",
-			"semicolon": "cursorMovement.commands.semicolon",
-			"comma": "cursorMovement.commands.comma",
-			"openCurlyBrace": "cursorMovement.commands.openCurlyBrace",
-			"centerCursor": "cursorMovement.commands.centerCursor",
-			"CtrlPluse": "cursorMovement.commands.CtrlPluse",
-			"CtrlPlusy": "cursorMovement.commands.CtrlPlusy"
-		},
-		"tip": "Prefixeaza comanda de miscare a cursorului cu un numar pentru a o repeta. De exemplu, <kbd>4j</kbd> muta cursorul cu 4 linii in jos."
-	},
-	"insertMode": {
-		"title": "Modul de inserare - inserare/adaugare text",
-		"commands": {
-			"i": "insereaza inainte de cursor",
-			"I": "insereaza la inceputul liniei",
-			"a": "insereaza (adauga) dupa cursor",
-			"A": "insereaza (adauga) la sfarsitul liniei",
-			"o": "adauga (deschide) o noua linie sub linia curenta",
-			"O": "adauga (deschide) o noua linie inaintea liniei curente",
-			"ea": "insereaza (adauga) la sfarsitul cuvantului",
-			"Esc": "iesi din modul inserare"
-		}
-	},
-	"editing": {
-		"title": "Editare",
-		"commands": {
-			"r": "inlocuieste un singur caracter",
-			"J": "lipeste lina curenta cu cea dedesubt",
-			"cc": "schimba (inlocuieste) toata linia",
-			"cw": "schimba (inlocuieste) pana la sfarsitul cuvantului",
-			"cDollar": "schimba (inlocuieste) pana la sfarsitul liniei",
-			"s": "sterge caracterul si inlocuieste",
-			"S": "sterge linia si inlocuieste (asemeni <kbd>cc</kbd>)",
-			"xp": "transpune 2 caractere (sterge si lipeste)",
-			"u": "undo (anulare)",
-			"CtrlPlusr": "redo (refacere)",
-			"dot": "repeta comanda anterioara",
-			"gJ": "editing.commands.gJ",
-			"gwip": "editing.commands.gwip",
-			"C": "editing.commands.C",
-			"ciw": "editing.commands.ciw"
-		}
-	},
-	"markingText": {
-		"title": "Marcarea textului (modul vizual)",
-		"commands": {
-			"v": "incepe modul vizual, marcheaza linii, apoi trimite o comanda (precum <kbd>y</kbd>-copie)",
-			"V": "incepe modul vizual in relatie cu liniile",
-			"o": "dute la sfarsitul sectiunii marcate",
-			"CtrlPlusv": "incepe modul vizual de tip sectiune",
-			"O": "dute la celalat colt al sectiunii",
-			"aw": "marcheaza un cuvant",
-			"ab": "o sectiune cu ()",
-			"aB": "o sectiune cu {}",
-			"ib": "sectiunea interioara cu ()",
-			"iB": "sectiunea interioara cu {}",
-			"Esc": "iesi din modul vizual"
-		}
-	},
-	"visualCommands": {
-		"title": "Commandes du mode visuel",
-		"commands": {
-			"greaterThan": "muta textul la dreapta",
-			"lessThan": "muta textul la stanga",
-			"y": "copie textul markat",
-			"d": "sterge textul marcat",
-			"tilde": "schimba capitala caracterului (majuscula/litera mica)"
-		}
-	},
-	"registers": {
-		"title": "Registre",
-		"commands": {
-			"show": "arata continutul registrelor",
-			"pasteRegisterX": "lipeste continutul registului x",
-			"yankIntoRegisterX": "copie in registrul x"
-		},
-		"tip1": "Registrele sunt salvate in ~/.viminfo, si vor fi incarcate din nou la urmatorul restart",
-		"tip2": "Registrul 0 intotdeauna contine valoarea ultimei comenzi de copiere"
-	},
-	"marks": {
-		"title": "Insemne",
-		"commands": {
-			"list": "lista insemnelor",
-			"currentPositionA": "seteaza pozitia curenta pentru insemnul A",
-			"jumpPositionA": "sari la pozitia insemnului A",
-			"yankToMarkA": "copie textul pana la pozitia insemnului A"
-		}
-	},
-	"macros": {
-		"title": "Macros",
-		"commands": {
-			"recordA": "inregistreaza macro-ul a",
-			"stopRecording": "termina inregistrea macro-ului a",
-			"runA": "ruleaza macro a",
-			"rerun": "ruleaza ultimul macro"
-		}
-	},
-	"global": {
-		"title": "Global",
-		"commands": {
-			"helpForKeyword": "ajutor pentru cuvantul keye",
-			"openFile": "deschide fisier",
-			"saveAsFile": "salveaza fisierul ca",
-			"closePane": "inchide panoul current",
-			"K": "global.commands.K"
-		}
-	},
-	"cutAndPaste": {
-		"title": "Copiere/taiere si lipire",
-		"commands": {
-			"yy": "copie o linie",
-			"twoyy": "copie 2 linii",
-			"yw": "copie un cuvant",
-			"yiw": "copie cuvantul de sub cursor",
-			"yaw": "copie cuvantul de sub cursor si spatiul dinaintea lui",
-			"yDollar": "copie pana la sfarsitul liniei",
-			"p": "lipeste din clipboard dupa cursor",
-			"P": "lipeste inainte de cursor",
-			"dd": "sterge (taie) o linie",
-			"twodd": "sterge (taie) 2 linii",
-			"dw": "sterge (taie) un cuvant",
-			"diw": "sterge (taie) cuvantul de sub cursor",
-			"daw": "sterge (taie) cuvantul de sub cursor si spatiul de dinainte si dupa el",
-			"D": "sterge (taie) pana la sfarsitul liniei",
-			"dDollar": "sterge (taie) pana la sfarsitul liniei",
-			"x": "sterge (taie) un caracter"
-		}
-	},
-	"exiting": {
-		"title": "Iesire",
-		"commands": {
-			"colonw": "salveaza fisierul, dar nu iesi",
-			"colonwsudo": "salveaza fisierul folosind sudo",
-			"colonwq": "salveaza fisierul si iesi din program",
-			"colonx": "salveaza fisierul si iesi din program",
-			"colonq": "iesi din program (nu iese daca fisierul nu este salvat)",
-			"colonqbang": "iesi si sterge modificarile din fisier",
-			"colonwqa": "exiting.commands.colonwqa"
-		}
-	},
-	"searchAndReplace": {
-		"title": "Cauta si inlocuieste",
-		"commands": {
-			"forwardSlashPattern": "cauta dupa sablon",
-			"questionMarkPattern": "cauta inapoi dupa sablon",
-			"backslashVpattern": "sablon 'foarte magic': caracterele non-alfanumerice sunt interpretate ca symboluri regex (nu e nevoie de escaping)",
-			"n": "repeta cautarea inainte",
-			"N": "repeta cautarea inapoi",
-			"colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "inlocuieste peste tot old cu new in fisier",
-			"colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "inlocuieste peste tot old cu new in fisier cu confirmare",
-			"colonnoh": "sterge highlightul cuvintelor potrivite"
-		},
-		"commands\r\n            ": {
-			"colonPercentForwardSlashOldForwardSlashNewForwardSlashg\r\n            ": "searchAndReplace.commands\r\n            .colonPercentForwardSlashOldForwardSlashNewForwardSlashg\r\n            ",
-			"colonPercentForwardSlashOldForwardSlashNewForwardSlashgc\r\n            ": "searchAndReplace.commands\r\n            .colonPercentForwardSlashOldForwardSlashNewForwardSlashgc\r\n            "
-		}
-	},
-	"searchMultipleFiles": {
-		"title": "Cauta in fisiere multiple",
-		"commands": {
-			"colonvimgrep": "cauta dupa sablon in fisiere multiple",
-			"coloncn": "sari la urmatoarea potrivire",
-			"coloncp": "sari la potrivirea anterioara",
-			"coloncopen": "deschide o fereastra care contine lista de potriviri"
-		}
-	},
-	"workingWithMultipleFiles": {
-		"title": "Editarea fisierelor multiple",
-		"commands": {
-			"colone": "editeaza fisierul respectin intr-un nou buffer",
-			"colonbnext": "dute la urmatorul buffer",
-			"colonbprev": "dute la bufferul anterior",
-			"colonls": "arata o lista cu bufferele deschise",
-			"colonbd": "sterge un buffer (inchide fisierul)",
-			"colonsp": "deschide fisierul intr-un buffer now si imparte fereastra",
-			"colonvsp": "deschide fisierul intr-un buffer now si imparte fereastra vertical",
-			"ctrlPlusws": "imparte fereastra orizontal",
-			"ctrlPlusww": "schimba fereastra",
-			"ctrlPluswq": "iesi din fereastra",
-			"ctrlPluswv": "imparte fereastra vertical",
-			"ctrlPluswh": "muta cursorul in fereastra din stanga (vertical)",
-			"ctrlPluswl": "muta cursorul in fereastra din dreapta (vertical)",
-			"ctrlPluswj": "muta cursorul in fereastra de sus (orizontal)",
-			"ctrlPluswk": "muta cursorul in fereastra de jos (orizontal)"
-		}
-	},
-	"tabs": {
-		"title": "Taburi",
-		"commands": {
-			"colonTabNew": "deschide fisierul intr-un tab nou",
-			"ctrlPluswT": "muta fereastra curenta in propriul tab",
-			"gt": "dute la urmatorul tab",
-			"gT": "dute la tabul anterior",
-			"hashgt": "dute la tabul cu numarul <kbd>#</kbd>",
-			"colontabmove": "dute la tabul din pozitia <kbd>#</kbd>",
-			"colontabc": "inchide tabul curent si toate ferestrele lui",
-			"colontabo": "inchide toate taburile in afara de cel curent",
-			"colontabdo": "ruleaza <code>comanda</code> in toate taburile (ex <code>:tabo q</code> - inchide toate taburile deschise)"
-		}
-	},
-	"words": {
-		"keyword": "cuvant keye",
-		"file": "fisier",
-		"movement": "miscare"
-	},
-	"languages": {
-		"title": "Alta limba"
-	},
-	"footer": "Resurse aditionale"
+  "title": "Romana",
+  "lang": "ro",
+  "lang_tag": "ro",
+  "cursorMovement": {
+    "title": "Mutarea cursorului",
+    "commands": {
+      "h": "muta cursorul la stanga",
+      "j": "muta cursorul la dreapta",
+      "k": "muta cursolul in sus",
+      "l": "muta cursolul in jos",
+      "w": "sari la inceputul cuvantului",
+      "W": "sari la inceputul cuvantului (cuvintele pot contine semne de punctuatie)",
+      "e": "sari la sfarsitul cuvantului",
+      "E": "sari la sfarsitul cuvantului (cuvintele pot contine semne de punctuatie)",
+      "b": "sari inapoi la inceputul cuvantului",
+      "B": "sari inapoi la inceputul cuvantului (cuvintele pot contine semne de punctuatie)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "H": "dute la inceputul ecranului",
+      "M": "dute la mijlocul ecranului",
+      "L": "dute la sfarsitul ecranului",
+      "zero": "sari la inceputul liniei",
+      "caret": "sari la primul caracter care nu e liber de la inceputul liniei",
+      "dollar": "sari la sfarsitul liniei",
+      "g_": "sari la ultimul caracter non-blank al liniei",
+      "gg": "dute la prima linie a documentului",
+      "G": "dute la ultima linie a documentului",
+      "fiveG": "dute la linia 5",
+      "fx": "dute la urmatoarea referinta a caracterului x",
+      "tx": "dute la referinta precendenta a caracterului x",
+      "Fx": "cursorMovement.commands.Fx",
+      "Tx": "cursorMovement.commands.Tx",
+      "semicolon": "cursorMovement.commands.semicolon",
+      "comma": "cursorMovement.commands.comma",
+      "closeCurlyBrace": "sari la urmatorul paragraf (sau functie/bloc, cand editezi cod)",
+      "openCurlyBrace": "cursorMovement.commands.openCurlyBrace",
+      "centerCursor": "cursorMovement.commands.centerCursor",
+      "CtrlPluse": "cursorMovement.commands.CtrlPluse",
+      "CtrlPlusy": "cursorMovement.commands.CtrlPlusy",
+      "CtrlPlusb": "mergi inapoi un ecran intreg",
+      "CtrlPlusf": "mergi inainte un ecran intreg",
+      "CtrlPlusu": "mergi inapoi jumatate de ecran",
+      "CtrlPlusd": "mergi inainte jumatate de ecran",
+      "percent": "cursorMovement.commands.percent",
+      "operCurlyBrace": "sari la paragraful anterior (sau functie/bloc, cand editezi cod)"
+    },
+    "tip": "Prefixeaza comanda de miscare a cursorului cu un numar pentru a o repeta. De exemplu, <kbd>4j</kbd> muta cursorul cu 4 linii in jos."
+  },
+  "insertMode": {
+    "title": "Modul de inserare - inserare/adaugare text",
+    "commands": {
+      "i": "insereaza inainte de cursor",
+      "I": "insereaza la inceputul liniei",
+      "a": "insereaza (adauga) dupa cursor",
+      "A": "insereaza (adauga) la sfarsitul liniei",
+      "o": "adauga (deschide) o noua linie sub linia curenta",
+      "O": "adauga (deschide) o noua linie inaintea liniei curente",
+      "ea": "insereaza (adauga) la sfarsitul cuvantului",
+      "Esc": "iesi din modul inserare"
+    }
+  },
+  "editing": {
+    "title": "Editare",
+    "commands": {
+      "r": "inlocuieste un singur caracter",
+      "J": "lipeste lina curenta cu cea dedesubt",
+      "gJ": "editing.commands.gJ",
+      "gwip": "editing.commands.gwip",
+      "cc": "schimba (inlocuieste) toata linia",
+      "C": "editing.commands.C",
+      "cDollar": "schimba (inlocuieste) pana la sfarsitul liniei",
+      "ciw": "editing.commands.ciw",
+      "cw": "schimba (inlocuieste) pana la sfarsitul cuvantului",
+      "s": "sterge caracterul si inlocuieste",
+      "S": "sterge linia si inlocuieste (asemeni <kbd>cc</kbd>)",
+      "xp": "transpune 2 caractere (sterge si lipeste)",
+      "u": "undo (anulare)",
+      "CtrlPlusr": "redo (refacere)",
+      "dot": "repeta comanda anterioara"
+    }
+  },
+  "markingText": {
+    "title": "Marcarea textului (modul vizual)",
+    "commands": {
+      "v": "incepe modul vizual, marcheaza linii, apoi trimite o comanda (precum <kbd>y</kbd>-copie)",
+      "V": "incepe modul vizual in relatie cu liniile",
+      "o": "dute la sfarsitul sectiunii marcate",
+      "CtrlPlusv": "incepe modul vizual de tip sectiune",
+      "O": "dute la celalat colt al sectiunii",
+      "aw": "marcheaza un cuvant",
+      "ab": "o sectiune cu ()",
+      "aB": "o sectiune cu {}",
+      "ib": "sectiunea interioara cu ()",
+      "iB": "sectiunea interioara cu {}",
+      "Esc": "iesi din modul vizual"
+    }
+  },
+  "visualCommands": {
+    "title": "Commandes du mode visuel",
+    "commands": {
+      "greaterThan": "muta textul la dreapta",
+      "lessThan": "muta textul la stanga",
+      "y": "copie textul markat",
+      "d": "sterge textul marcat",
+      "tilde": "schimba capitala caracterului (majuscula/litera mica)"
+    }
+  },
+  "registers": {
+    "title": "Registre",
+    "commands": {
+      "show": "arata continutul registrelor",
+      "pasteRegisterX": "lipeste continutul registului x",
+      "yankIntoRegisterX": "copie in registrul x"
+    },
+    "tip1": "Registrele sunt salvate in ~/.viminfo, si vor fi incarcate din nou la urmatorul restart",
+    "tip2": "Registrul 0 intotdeauna contine valoarea ultimei comenzi de copiere"
+  },
+  "marks": {
+    "title": "Insemne",
+    "commands": {
+      "list": "lista insemnelor",
+      "currentPositionA": "seteaza pozitia curenta pentru insemnul A",
+      "jumpPositionA": "sari la pozitia insemnului A",
+      "yankToMarkA": "copie textul pana la pozitia insemnului A"
+    },
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macros",
+    "commands": {
+      "recordA": "inregistreaza macro-ul a",
+      "stopRecording": "termina inregistrea macro-ului a",
+      "runA": "ruleaza macro a",
+      "rerun": "ruleaza ultimul macro"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "ajutor pentru cuvantul keye",
+      "saveAsFile": "salveaza fisierul ca",
+      "closePane": "inchide panoul current",
+      "K": "global.commands.K",
+      "openFile": "deschide fisier"
+    }
+  },
+  "cutAndPaste": {
+    "title": "Copiere/taiere si lipire",
+    "commands": {
+      "yy": "copie o linie",
+      "twoyy": "copie 2 linii",
+      "yw": "copie un cuvant",
+      "yiw": "copie cuvantul de sub cursor",
+      "yaw": "copie cuvantul de sub cursor si spatiul dinaintea lui",
+      "yDollar": "copie pana la sfarsitul liniei",
+      "p": "lipeste din clipboard dupa cursor",
+      "P": "lipeste inainte de cursor",
+      "dd": "sterge (taie) o linie",
+      "twodd": "sterge (taie) 2 linii",
+      "dw": "sterge (taie) un cuvant",
+      "diw": "sterge (taie) cuvantul de sub cursor",
+      "daw": "sterge (taie) cuvantul de sub cursor si spatiul de dinainte si dupa el",
+      "D": "sterge (taie) pana la sfarsitul liniei",
+      "dDollar": "sterge (taie) pana la sfarsitul liniei",
+      "x": "sterge (taie) un caracter"
+    }
+  },
+  "exiting": {
+    "title": "Iesire",
+    "commands": {
+      "colonw": "salveaza fisierul, dar nu iesi",
+      "colonwsudo": "salveaza fisierul folosind sudo",
+      "colonwq": "salveaza fisierul si iesi din program",
+      "colonx": "salveaza fisierul si iesi din program",
+      "colonq": "iesi din program (nu iese daca fisierul nu este salvat)",
+      "colonqbang": "iesi si sterge modificarile din fisier",
+      "colonwqa": "exiting.commands.colonwqa"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Cauta si inlocuieste",
+    "commands": {
+      "forwardSlashPattern": "cauta dupa sablon",
+      "questionMarkPattern": "cauta inapoi dupa sablon",
+      "backslashVpattern": "sablon 'foarte magic': caracterele non-alfanumerice sunt interpretate ca symboluri regex (nu e nevoie de escaping)",
+      "n": "repeta cautarea inainte",
+      "N": "repeta cautarea inapoi",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "inlocuieste peste tot old cu new in fisier",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "inlocuieste peste tot old cu new in fisier cu confirmare",
+      "colonnoh": "sterge highlightul cuvintelor potrivite"
+    },
+    "commands\r\n            ": {
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg\r\n            ": "searchAndReplace.commands\r\n            .colonPercentForwardSlashOldForwardSlashNewForwardSlashg\r\n            ",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc\r\n            ": "searchAndReplace.commands\r\n            .colonPercentForwardSlashOldForwardSlashNewForwardSlashgc\r\n            "
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Cauta in fisiere multiple",
+    "commands": {
+      "colonvimgrep": "cauta dupa sablon in fisiere multiple",
+      "coloncn": "sari la urmatoarea potrivire",
+      "coloncp": "sari la potrivirea anterioara",
+      "coloncopen": "deschide o fereastra care contine lista de potriviri"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Editarea fisierelor multiple",
+    "commands": {
+      "colone": "editeaza fisierul respectin intr-un nou buffer",
+      "colonbnext": "dute la urmatorul buffer",
+      "colonbprev": "dute la bufferul anterior",
+      "colonls": "arata o lista cu bufferele deschise",
+      "colonbd": "sterge un buffer (inchide fisierul)",
+      "colonsp": "deschide fisierul intr-un buffer now si imparte fereastra",
+      "colonvsp": "deschide fisierul intr-un buffer now si imparte fereastra vertical",
+      "ctrlPlusws": "imparte fereastra orizontal",
+      "ctrlPlusww": "schimba fereastra",
+      "ctrlPluswq": "iesi din fereastra",
+      "ctrlPluswv": "imparte fereastra vertical",
+      "ctrlPluswh": "muta cursorul in fereastra din stanga (vertical)",
+      "ctrlPluswl": "muta cursorul in fereastra din dreapta (vertical)",
+      "ctrlPluswj": "muta cursorul in fereastra de sus (orizontal)",
+      "ctrlPluswk": "muta cursorul in fereastra de jos (orizontal)"
+    }
+  },
+  "tabs": {
+    "title": "Taburi",
+    "commands": {
+      "colonTabNew": "deschide fisierul intr-un tab nou",
+      "ctrlPluswT": "muta fereastra curenta in propriul tab",
+      "gt": "dute la urmatorul tab",
+      "gT": "dute la tabul anterior",
+      "hashgt": "dute la tabul cu numarul <kbd>#</kbd>",
+      "colontabmove": "dute la tabul din pozitia <kbd>#</kbd>",
+      "colontabc": "inchide tabul curent si toate ferestrele lui",
+      "colontabo": "inchide toate taburile in afara de cel curent",
+      "colontabdo": "ruleaza <code>comanda</code> in toate taburile (ex <code>:tabo q</code> - inchide toate taburile deschise)"
+    }
+  },
+  "words": {
+    "keyword": "cuvant keye",
+    "file": "fisier",
+    "movement": "miscare"
+  },
+  "languages": {
+    "title": "Alta limba"
+  },
+  "footer": "Resurse aditionale",
+  "global.title": "global.title",
+  "words.keyword": "words.keyword",
+  "global.commands.helpForKeyword": "global.commands.helpForKeyword",
+  "words.file": "words.file",
+  "global.commands.saveAsFile": "global.commands.saveAsFile",
+  "global.commands.closePane": "global.commands.closePane",
+  "global.commands.K": "global.commands.K",
+  "cursorMovement.title": "cursorMovement.title",
+  "cursorMovement.commands.h": "cursorMovement.commands.h",
+  "cursorMovement.commands.j": "cursorMovement.commands.j",
+  "cursorMovement.commands.k": "cursorMovement.commands.k",
+  "cursorMovement.commands.l": "cursorMovement.commands.l",
+  "cursorMovement.commands.H": "cursorMovement.commands.H",
+  "cursorMovement.commands.M": "cursorMovement.commands.M",
+  "cursorMovement.commands.L": "cursorMovement.commands.L",
+  "cursorMovement.commands.w": "cursorMovement.commands.w",
+  "cursorMovement.commands.W": "cursorMovement.commands.W",
+  "cursorMovement.commands.e": "cursorMovement.commands.e",
+  "cursorMovement.commands.E": "cursorMovement.commands.E",
+  "cursorMovement.commands.b": "cursorMovement.commands.b",
+  "cursorMovement.commands.B": "cursorMovement.commands.B",
+  "cursorMovement.commands.percent": "cursorMovement.commands.percent",
+  "cursorMovement.commands.zero": "cursorMovement.commands.zero",
+  "cursorMovement.commands.caret": "cursorMovement.commands.caret",
+  "cursorMovement.commands.dollar": "cursorMovement.commands.dollar",
+  "cursorMovement.commands.g_": "cursorMovement.commands.g_",
+  "cursorMovement.commands.gg": "cursorMovement.commands.gg",
+  "cursorMovement.commands.G": "cursorMovement.commands.G",
+  "cursorMovement.commands.fiveG": "cursorMovement.commands.fiveG",
+  "cursorMovement.commands.fx": "cursorMovement.commands.fx",
+  "cursorMovement.commands.tx": "cursorMovement.commands.tx",
+  "cursorMovement.commands.Fx": "cursorMovement.commands.Fx",
+  "cursorMovement.commands.Tx": "cursorMovement.commands.Tx",
+  "cursorMovement.commands.semicolon": "cursorMovement.commands.semicolon",
+  "cursorMovement.commands.comma": "cursorMovement.commands.comma",
+  "cursorMovement.commands.closeCurlyBrace": "cursorMovement.commands.closeCurlyBrace",
+  "cursorMovement.commands.openCurlyBrace": "cursorMovement.commands.openCurlyBrace",
+  "cursorMovement.commands.centerCursor": "cursorMovement.commands.centerCursor",
+  "cursorMovement.commands.CtrlPluse": "cursorMovement.commands.CtrlPluse",
+  "cursorMovement.commands.CtrlPlusy": "cursorMovement.commands.CtrlPlusy",
+  "cursorMovement.commands.CtrlPlusb": "cursorMovement.commands.CtrlPlusb",
+  "cursorMovement.commands.CtrlPlusf": "cursorMovement.commands.CtrlPlusf",
+  "cursorMovement.commands.CtrlPlusd": "cursorMovement.commands.CtrlPlusd",
+  "cursorMovement.commands.CtrlPlusu": "cursorMovement.commands.CtrlPlusu",
+  "cursorMovement.tip": "cursorMovement.tip",
+  "insertMode.title": "insertMode.title",
+  "insertMode.commands.i": "insertMode.commands.i",
+  "insertMode.commands.I": "insertMode.commands.I",
+  "insertMode.commands.a": "insertMode.commands.a",
+  "insertMode.commands.A": "insertMode.commands.A",
+  "insertMode.commands.o": "insertMode.commands.o",
+  "insertMode.commands.O": "insertMode.commands.O",
+  "insertMode.commands.ea": "insertMode.commands.ea",
+  "insertMode.commands.Esc": "insertMode.commands.Esc",
+  "editing.title": "editing.title",
+  "editing.commands.r": "editing.commands.r",
+  "editing.commands.J": "editing.commands.J",
+  "editing.commands.gJ": "editing.commands.gJ",
+  "editing.commands.gwip": "editing.commands.gwip",
+  "editing.commands.cc": "editing.commands.cc",
+  "editing.commands.C": "editing.commands.C",
+  "editing.commands.cDollar": "editing.commands.cDollar",
+  "editing.commands.ciw": "editing.commands.ciw",
+  "editing.commands.cw": "editing.commands.cw",
+  "editing.commands.s": "editing.commands.s",
+  "editing.commands.S": "editing.commands.S",
+  "editing.commands.xp": "editing.commands.xp",
+  "editing.commands.u": "editing.commands.u",
+  "editing.commands.CtrlPlusr": "editing.commands.CtrlPlusr",
+  "editing.commands.dot": "editing.commands.dot",
+  "markingText.title": "markingText.title",
+  "markingText.commands.v": "markingText.commands.v",
+  "markingText.commands.V": "markingText.commands.V",
+  "markingText.commands.o": "markingText.commands.o",
+  "markingText.commands.CtrlPlusv": "markingText.commands.CtrlPlusv",
+  "markingText.commands.O": "markingText.commands.O",
+  "markingText.commands.aw": "markingText.commands.aw",
+  "markingText.commands.ab": "markingText.commands.ab",
+  "markingText.commands.aB": "markingText.commands.aB",
+  "markingText.commands.ib": "markingText.commands.ib",
+  "markingText.commands.iB": "markingText.commands.iB",
+  "markingText.commands.Esc": "markingText.commands.Esc",
+  "visualCommands.title": "visualCommands.title",
+  "visualCommands.commands.greaterThan": "visualCommands.commands.greaterThan",
+  "visualCommands.commands.lessThan": "visualCommands.commands.lessThan",
+  "visualCommands.commands.y": "visualCommands.commands.y",
+  "visualCommands.commands.d": "visualCommands.commands.d",
+  "visualCommands.commands.tilde": "visualCommands.commands.tilde",
+  "registers.title": "registers.title",
+  "registers.commands.show": "registers.commands.show",
+  "registers.commands.yankIntoRegisterX": "registers.commands.yankIntoRegisterX",
+  "registers.commands.pasteRegisterX": "registers.commands.pasteRegisterX",
+  "registers.tip1": "registers.tip1",
+  "registers.tip2": "registers.tip2",
+  "marks.title": "marks.title",
+  "marks.commands.list": "marks.commands.list",
+  "marks.commands.currentPositionA": "marks.commands.currentPositionA",
+  "marks.commands.jumpPositionA": "marks.commands.jumpPositionA",
+  "marks.commands.yankToMarkA": "marks.commands.yankToMarkA",
+  "macros.title": "macros.title",
+  "macros.commands.recordA": "macros.commands.recordA",
+  "macros.commands.stopRecording": "macros.commands.stopRecording",
+  "macros.commands.runA": "macros.commands.runA",
+  "macros.commands.rerun": "macros.commands.rerun",
+  "cutAndPaste.title": "cutAndPaste.title",
+  "cutAndPaste.commands.yy": "cutAndPaste.commands.yy",
+  "cutAndPaste.commands.twoyy": "cutAndPaste.commands.twoyy",
+  "cutAndPaste.commands.yw": "cutAndPaste.commands.yw",
+  "cutAndPaste.commands.yDollar": "cutAndPaste.commands.yDollar",
+  "cutAndPaste.commands.p": "cutAndPaste.commands.p",
+  "cutAndPaste.commands.P": "cutAndPaste.commands.P",
+  "cutAndPaste.commands.dd": "cutAndPaste.commands.dd",
+  "cutAndPaste.commands.twodd": "cutAndPaste.commands.twodd",
+  "cutAndPaste.commands.dw": "cutAndPaste.commands.dw",
+  "cutAndPaste.commands.D": "cutAndPaste.commands.D",
+  "cutAndPaste.commands.dDollar": "cutAndPaste.commands.dDollar",
+  "cutAndPaste.commands.x": "cutAndPaste.commands.x",
+  "exiting.title": "exiting.title",
+  "exiting.commands.colonw": "exiting.commands.colonw",
+  "exiting.commands.colonwsudo": "exiting.commands.colonwsudo",
+  "exiting.commands.colonwq": "exiting.commands.colonwq",
+  "exiting.commands.colonq": "exiting.commands.colonq",
+  "exiting.commands.colonqbang": "exiting.commands.colonqbang",
+  "exiting.commands.colonwqa": "exiting.commands.colonwqa",
+  "searchAndReplace.title": "searchAndReplace.title",
+  "searchAndReplace.commands.forwardSlashPattern": "searchAndReplace.commands.forwardSlashPattern",
+  "searchAndReplace.commands.questionMarkPattern": "searchAndReplace.commands.questionMarkPattern",
+  "searchAndReplace.commands.backslashVpattern": "searchAndReplace.commands.backslashVpattern",
+  "searchAndReplace.commands.n": "searchAndReplace.commands.n",
+  "searchAndReplace.commands.N": "searchAndReplace.commands.N",
+  "searchAndReplace.commands\r\n            .colonPercentForwardSlashOldForwardSlashNewForwardSlashg\r\n            ": "searchAndReplace.commands\r\n            .colonPercentForwardSlashOldForwardSlashNewForwardSlashg\r\n            ",
+  "searchAndReplace.commands\r\n            .colonPercentForwardSlashOldForwardSlashNewForwardSlashgc\r\n            ": "searchAndReplace.commands\r\n            .colonPercentForwardSlashOldForwardSlashNewForwardSlashgc\r\n            ",
+  "searchAndReplace.commands.colonnoh": "searchAndReplace.commands.colonnoh",
+  "searchMultipleFiles.title": "searchMultipleFiles.title",
+  "searchMultipleFiles.commands.colonvimgrep": "searchMultipleFiles.commands.colonvimgrep",
+  "searchMultipleFiles.commands.coloncn": "searchMultipleFiles.commands.coloncn",
+  "searchMultipleFiles.commands.coloncp": "searchMultipleFiles.commands.coloncp",
+  "searchMultipleFiles.commands.coloncopen": "searchMultipleFiles.commands.coloncopen",
+  "workingWithMultipleFiles.title": "workingWithMultipleFiles.title",
+  "workingWithMultipleFiles.commands.colone": "workingWithMultipleFiles.commands.colone",
+  "workingWithMultipleFiles.commands.colonbnext": "workingWithMultipleFiles.commands.colonbnext",
+  "workingWithMultipleFiles.commands.colonbprev": "workingWithMultipleFiles.commands.colonbprev",
+  "workingWithMultipleFiles.commands.colonbd": "workingWithMultipleFiles.commands.colonbd",
+  "workingWithMultipleFiles.commands.colonls": "workingWithMultipleFiles.commands.colonls",
+  "workingWithMultipleFiles.commands.colonsp": "workingWithMultipleFiles.commands.colonsp",
+  "workingWithMultipleFiles.commands.colonvsp": "workingWithMultipleFiles.commands.colonvsp",
+  "workingWithMultipleFiles.commands.ctrlPlusws": "workingWithMultipleFiles.commands.ctrlPlusws",
+  "workingWithMultipleFiles.commands.ctrlPlusww": "workingWithMultipleFiles.commands.ctrlPlusww",
+  "workingWithMultipleFiles.commands.ctrlPluswq": "workingWithMultipleFiles.commands.ctrlPluswq",
+  "workingWithMultipleFiles.commands.ctrlPluswv": "workingWithMultipleFiles.commands.ctrlPluswv",
+  "workingWithMultipleFiles.commands.ctrlPluswh": "workingWithMultipleFiles.commands.ctrlPluswh",
+  "workingWithMultipleFiles.commands.ctrlPluswl": "workingWithMultipleFiles.commands.ctrlPluswl",
+  "workingWithMultipleFiles.commands.ctrlPluswj": "workingWithMultipleFiles.commands.ctrlPluswj",
+  "workingWithMultipleFiles.commands.ctrlPluswk": "workingWithMultipleFiles.commands.ctrlPluswk",
+  "tabs.title": "tabs.title",
+  "tabs.commands.colonTabNew": "tabs.commands.colonTabNew",
+  "tabs.commands.ctrlPluswT": "tabs.commands.ctrlPluswT",
+  "tabs.commands.gt": "tabs.commands.gt",
+  "tabs.commands.gT": "tabs.commands.gT",
+  "tabs.commands.hashgt": "tabs.commands.hashgt",
+  "tabs.commands.colontabmove": "tabs.commands.colontabmove",
+  "tabs.commands.colontabc": "tabs.commands.colontabc",
+  "tabs.commands.colontabo": "tabs.commands.colontabo",
+  "tabs.commands.colontabdo": "tabs.commands.colontabdo",
+  "cursorMovement title": "cursorMovement title",
+  "cursorMovement, title": "cursorMovement, title",
+  "layout": "page",
+  "permalink": "/lang/ro/"
 }

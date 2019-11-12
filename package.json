@@ -3,11 +3,13 @@
   "version": "3.0.4",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "postinstall": "node ./postinstall.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "deepmerge": "^4.2.2",
     "express": "~4.16.1",
     "express-hbs": "^2.2.0",
     "hbs": "~4.0.4",
