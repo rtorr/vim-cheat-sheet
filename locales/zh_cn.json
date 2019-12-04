@@ -3,7 +3,7 @@
   "lang": "zh_cn",
   "lang_tag": "zh",
   "cursorMovement": {
-    "title": "光标",
+    "title": "移动光标",
     "commands": {
       "h": "左移光标",
       "j": "下移光标",
@@ -13,10 +13,10 @@
       "W": "移动到下个单词开头(单词含标点)",
       "e": "移动到下个单词结尾",
       "E": "移动到下个单词结尾(单词含标点)",
-      "b": "移动到上个单词结尾",
-      "B": "移动到上个单词结尾(单词含标点)",
-      "ge": "jump backwards to the end of a word",
-      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "b": "移动到上个单词开头",
+      "B": "移动到上个单词开头(单词含标点)",
+      "ge":"移动到上个单词结尾",
+      "gE":"移动到上个单词结尾(单词含标点)",
       "H": "移动到当前页面顶部",
       "M": "移动到当前页面中间",
       "L": "移动到当前页面底部",
@@ -29,20 +29,20 @@
       "fiveG": "移动到第五行",
       "fx": "移动到字符 x 下次出现的位置",
       "tx": "移动到字符 x 下次出现的位置的前一个字符",
-      "Fx": "jump to previous occurence of character x",
-      "Tx": "jump to after previous occurence of character x",
-      "semicolon": "repeat previous f, t, F or T movement",
-      "comma": "repeat previous f, t, F or T movement, backwards",
+      "Fx": "移动到字符 x 上次出现的位置",
+      "Tx": "移动到字符 x 上次出现的位置的后一个字符",
+      "semicolon": "重复之前的f、t、F、T操作",
+      "comma": "反向重复之前的f、t、F、T操作",
       "closeCurlyBrace": "移动到下一个段落 (当编辑代码时则为函数／代码块)",
       "openCurlyBrace": "移动到上一个段落 (当编辑代码时则为函数／代码块)",
       "centerCursor": "移动屏幕使光标居中",
-      "CtrlPluse": "move screen down one line (without moving cursor)",
-      "CtrlPlusy": "move screen up one line (without moving cursor)",
-      "CtrlPlusb": "向后滚动一屏",
-      "CtrlPlusf": "向前滚动一屏",
-      "CtrlPlusu": "向后滚动半屏",
-      "CtrlPlusd": "向前滚动半屏",
-      "percent": "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
+      "CtrlPluse": "向下移动屏幕一行(保持光标不动)",
+      "CtrlPlusy": "向上移动屏幕一行(保持光标不动)",
+      "CtrlPlusb": "向上滚动一屏",
+      "CtrlPlusf": "向下滚动一屏",
+      "CtrlPlusu": "向上滚动半屏",
+      "CtrlPlusd": "向下滚动半屏",
+      "percent": "跳转到配对的符号(默认支持的配对符号组:: '()', '{}', '[]' - 在vim中使用 <code>:h matchpairs</code> 获得更多信息)"
     },
     "tip": "命令前追加数字表示命令的重复次数, 比如 <kbd>4j</kbd> 表示向下移动四行"
   },
@@ -60,16 +60,16 @@
     }
   },
   "editing": {
-    "title": "编辑",
+    "title": "编辑文本",
     "commands": {
       "r": "替换当前字符",
-      "J": "将下一行合并到当前行",
-      "gJ": "join line below to the current one without space in between",
-      "gwip": "reflow paragraph",
-      "cc": "清空当前行, 然后进入插入模式",
-      "C": "change (replace) to the end of the line",
-      "cDollar": "从光标位置开始, 修改当前行",
-      "ciw": "change (replace) entire word",
+      "J": "将下一行合并到当前行, 并在两部分文本之间插入一个空格",
+      "gJ": "将下一行合并到当前行, 两部分文本之间不含空格",
+      "gwip": "重新调整段落",
+      "cc": "将光标所在的行删除, 然后进入插入模式",
+      "C": "将光标处到行尾删除, 然后进入插入模式",
+      "cDollar": "将光标处到行尾删除, 然后进入插入模式",
+      "ciw": "将光标所在的单词删除, 然后进入插入模式",
       "cw": "从光标位置开始, 修改单词",
       "s": "删除当前字符, 然后进入插入模式",
       "S": "清空当前行, 然后进入插入模式 (同<kbd>cc</kbd>)",
@@ -140,7 +140,7 @@
       "helpForKeyword": "打开关键字帮助",
       "saveAsFile": "另存为",
       "closePane": "关闭当前窗口",
-      "K": "open man page for word under the cursor",
+      "K": "打开光标所在单词的man页面",
       "openFile": "打开文件"
     }
   },
@@ -150,16 +150,16 @@
       "yy": "复制当前行",
       "twoyy": "复制 2 行",
       "yw": "复制当前单词",
-      "yiw": "yank (copy) word under the cursor",
-      "yaw": "yank (copy) word under the cursor and the space after or before it",
+      "yiw": "复制光标处的单词",
+      "yaw": "复制光标处的单词及其前后的空格",
       "yDollar": "复制, 从光标位置到行末",
       "p": "在光标后粘贴",
       "P": "在光标前粘贴",
       "dd": "剪切当前行",
       "twodd": "剪切 2 行",
       "dw": "剪切当前单词",
-      "diw": "delete (cut) word under the cursor",
-      "daw": "delete (cut) word under the cursor and the space after or before it",
+      "diw": "删除光标处的单词",
+      "daw": "删除光标处的单词及其前后的空格",
       "D": "剪切, 从光标位置到行末",
       "dDollar": "剪切, 从光标位置到行末 (同<kbd>D</kbd>)",
       "x": "剪切当前字符"
@@ -174,7 +174,7 @@
       "colonx": "保存并退出(同<kbd>:wq</kbd>)",
       "colonq": "退出(修改未保存时警告)",
       "colonqbang": "不保存强制退出",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonwqa": "保存所有标签页并全部退出"
     }
   },
   "searchAndReplace": {
@@ -200,7 +200,7 @@
     }
   },
   "workingWithMultipleFiles": {
-    "title": "多文件",
+    "title": "多文件编辑",
     "commands": {
       "colone": "新建缓冲区打开 filename",
       "colonbnext": "切换到下个缓冲区",
@@ -234,9 +234,9 @@
     }
   },
   "words": {
-    "keyword": "keyword",
-    "file": "file",
-    "movement": "movement"
+    "keyword": "关键字",
+    "file": "文件名",
+    "movement": "移动"
   },
   "languages": {
     "title": "语言"
