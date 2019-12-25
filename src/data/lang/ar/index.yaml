@@ -35,16 +35,19 @@ cursorMovement:
     f, t, F, T
     مع الرجوع للخلف
     '
-    closeCurlyBrace: '/ البلوك عند تحرير الكود)اقفز إلى القترة التالية (أم الدالة'
-    openCurlyBrace: 'jump to previous paragraph (or function/block, when editing code)'
-    CtrlPlusb: 'move back one full screen'
-    CtrlPlusf: 'move forward one full screen'
-    CtrlPlusu: 'move back 1/2 a screen'
-    CtrlPlusd: 'move forward 1/2 a screen'
-  tip: 'Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines.'
+    closeCurlyBrace: 'القفز الى الفرة السابقة - او الدالة السابقة - او تجمع السطور السابق عند تعديل الكود'
+    openCurlyBrace: 'القفز الى الفرة التالية - او الدالة التالية - او تجمع السطور التالي عند تعديل الكود'
+    CtrlPlusb: 'الرجوع بمقدار شاشة كاملة'
+    CtrlPlusf: 'النقدم بمقدار شاشة كاملة'
+    CtrlPlusu: 'الرجوع بمقدار نصف شاشة'
+    CtrlPlusd: 'التقدم بمقدار نصف شاشة'
+  tip: 'ضع رقما قبل اي من الاوامر السابقة لتكرار الامر
+  مثال. 
+  <kbd>4j</kbd>
+   يعني التحريك 4 اسطر للأسفل'
 
 insertMode:
-  title: 'Insert mode - inserting/appending text'
+  title: 'خيار الادخال - يستخدم لأدخال النصوص'
   commands:
     i: 'insert before the cursor'
     I: 'insert at the beginning of the line'
