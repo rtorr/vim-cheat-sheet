@@ -55,19 +55,19 @@ insertMode:
     Esc: 'الخروج من خيار الادخال'
 
 editing:
-  title: 'Editing'
+  title: 'خيار التعديل'
   commands:
-    r: 'replace a single character'
-    J: 'join line below to the current one'
-    cc: 'change (replace) entire line'
-    cw: 'change (replace) to the end of the word'
-    cDollar: 'change (replace) to the end of the line'
-    s: 'delete character and substitute text'
-    S: 'delete line and substitute text (same as cc)'
-    xp: 'transpose two letters (delete and paste)'
-    u: 'undo'
-    CtrlPlusr: 'redo'
-    dot: 'repeat last command'
+    r: 'استبدال رمز واجد'
+    J: 'دمج السطر الاسفل مع السطر الحالي'
+    cc: 'تغيير السطر كاملا او استبداله'
+    cw: 'تغيير او استبدال لنهاية الكلمة'
+    cDollar: 'تغيير او استبدال لنهاية السطر'
+    s: 'حذف الرمز و استبدال النص'
+    S: 'حذف السطر و استبدال النص (مثل ضغط حرف سي مرتن)'
+    xp: 'حذف و نسخ حرفين'
+    u: 'العودة عن اخر امر'
+    CtrlPlusr: 'تكرار اخر امر'
+    dot: 'تكرار الامر السابق'
 
 markingText:
   title: 'Marking text (visual mode)'
