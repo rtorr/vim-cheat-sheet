@@ -70,19 +70,19 @@ editing:
     dot: 'تكرار الامر السابق'
 
 markingText:
-  title: 'Marking text (visual mode)'
+  title: 'تظليل النصوص - ضمن الحيار البصري'
   commands:
-    v: 'start visual mode, mark lines, then do a command (like y-yank)'
-    V: 'start linewise visual mode'
-    o: 'move to other end of marked area'
-    CtrlPlusv: 'start visual block mode'
-    O: 'move to other corner of block'
-    aw: 'mark a word'
-    ab: 'a block with ()'
-    aB: 'a block with {}'
-    ib: 'inner block with ()'
-    iB: 'inner block with {}'
-    Esc: 'exit visual mode'
+    v: 'بدء خيار التظليل, 'تظليل الخطوط, ثم تنفيذ امر - مثل واي'
+    V: 'بدء خيار التظليل لكل خط'
+    o: 'الذهاب لنهاية المنطقة المظللة'
+    CtrlPlusv: 'بدء خيار التظليل'
+    O: 'الذهاب لنهاية كتلة التظليل'
+    aw: 'تظليل كلمة'
+    ab: '() تظليل شامل قوس '
+    aB: 'تظليل شامل قوس معوج  {}'
+    ib: 'تظليل ما داخل القوس ()'
+    iB: 'تظليل ما داخل القوس المعوج {}'
+    Esc: 'الخروج من الخيار البصري'
 
 visualCommands:
   title: 'Visual commands'
