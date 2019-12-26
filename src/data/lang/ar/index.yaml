@@ -45,14 +45,14 @@ cursorMovement:
 insertMode:
   title: 'خيار الادخال - يستخدم لأدخال النصوص'
   commands:
-    i: 'insert before the cursor'
-    I: 'insert at the beginning of the line'
-    a: 'insert (append) after the cursor'
-    A: 'insert (append) at the end of the line'
-    o: 'append (open) a new line below the current line'
-    O: 'append (open) a new line above the current line'
-    ea: 'insert (append) at the end of the word'
-    Esc: 'exit insert mode'
+    i: 'ادخال قبل المؤشرة'
+    I: 'ادخال عند بداية السطر'
+    a: 'ادخال بعد الموشرة'
+    A: 'ادخال عند نهاية السطر'
+    o: 'ادخال سطر جديد تحت السطر الحالي'
+    O: 'ادخال سطر جديد فوق السطر الحالي'
+    ea: 'ادخال عند نهاية الكلمة'
+    Esc: 'الخروج من خيار الادخال'
 
 editing:
   title: 'Editing'
