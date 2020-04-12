@@ -208,6 +208,8 @@
       "colonbprev": "prejde na predchádzajúci buffer",
       "colonls": "zoznam všetkých otvorených buffrov",
       "colonbd": "vymaže buffer (zatvorí súbor)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "otvorí súbor v novom buffri a rozdelí okno",
       "colonvsp": "otvorí súbor v novom buffri a vertikálne rozdelí okno",
       "ctrlPlusws": "rozdelí okno",

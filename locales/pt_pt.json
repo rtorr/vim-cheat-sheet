@@ -207,6 +207,8 @@
       "colonbprev": "ir para a área de memória temporária anterior",
       "colonls": "listar as áreas de memória temporárias abertas",
       "colonbd": "apagar uma área de memória temporária (fechar um ficheiro)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "abrir um ficheiro numa nova área de memória temporária e dividir a janela",
       "colonvsp": "abrir um ficheiro numa nova área de memória temporária e dividir a janela verticalmente",
       "ctrlPlusws": "dividir a janela",

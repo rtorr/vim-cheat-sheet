@@ -206,6 +206,8 @@
       "colonbprev": "перейти до попереднього буфера",
       "colonls": "list all open buffers",
       "colonbd": "видалити буфер (закрити файл)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "відкрити файл у новому буфері й розділити вікно",
       "colonvsp": "відкрити файл у новому буфері й вертикально розділити вікно",
       "ctrlPlusws": "розділити вікно",

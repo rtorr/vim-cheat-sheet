@@ -206,6 +206,8 @@
       "colonbprev": "vai al buffer precedente",
       "colonls": "elenca tutti i buffer aperti",
       "colonbd": "cancella un buffer (chiudi un file)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "apri file in un nuovo buffer e dividi la finestra",
       "colonvsp": "apri file in un nuovo buffer e dividi la finestra verticalmente",
       "ctrlPlusws": "dividi finestra",

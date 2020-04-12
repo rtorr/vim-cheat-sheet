@@ -208,6 +208,8 @@
       "colonbprev": "ga naar de vorige buffer",
       "colonls": "lijst van alle open buffers",
       "colonbd": "verwijder buffer (sluit een bestand)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "open een bestand in een nieuwe buffer en splits scherm",
       "colonvsp": "open een bestand in een nieuwe buffer en splits scherm verticaal",
       "ctrlPlusws": "splits scherm",

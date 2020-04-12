@@ -206,6 +206,8 @@
       "colonbprev": "gå till föregående buffer",
       "colonls": "visa lista över alla öppna buffrar",
       "colonbd": "tag bort buffer (stäng en fil)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "öppna en fil i en ny buffer och dela fönstret horisontellt",
       "colonvsp": "öppna en fil i en ny buffer och dela fönstret vertikalt",
       "ctrlPlusws": "splitta fönster",

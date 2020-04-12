@@ -207,6 +207,8 @@
       "colonbprev": "bir önceki tampona geçer",
       "colonls": "tüm açık tamponları listeler",
       "colonbd": "tamponu siler ve dosyayı kapatır",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "yeni tamponda dosya açar ve pencereyi böler",
       "colonvsp": "yeni tamponda dosya açar ve dikey olarak pencereyi böler",
       "ctrlPlusws": "pencereyi böler",

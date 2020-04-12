@@ -207,6 +207,8 @@
       "colonbprev": "wróć do poprzedniego bufora",
       "colonls": "zrób listę wszystkich otwartych buforów",
       "colonbd": "usuń bufer (zamknij plik)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "otwórz plik w nowym buforze i podziel okno",
       "colonvsp": "otwórz plik w nowym buforze i podziel okno wertykalnie",
       "ctrlPlusws": "podziel okno",

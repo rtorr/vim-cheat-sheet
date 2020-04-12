@@ -207,6 +207,8 @@
       "colonbprev": "이전 버퍼로 이동",
       "colonls": "열린 버퍼 모두 나열",
       "colonbd": "버퍼 삭제 (파일 닫기)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "새 버퍼에 파일 열고 상하로 창 분할",
       "colonvsp": "새 버퍼에 파일 열고 좌우로 창 분할",
       "ctrlPlusws": "상하로 창 분할",

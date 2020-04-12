@@ -207,6 +207,8 @@
       "colonbprev": "เปิดไฟล์ใน buffer ก่อนหน้านี้",
       "colonls": "ดูทุก buffer ที่กำลังทำงานอยู่",
       "colonbd": "ลบ buffer ที่กำลังทำงานอยู่ (ปิดไฟล์นี้)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "เปิดไฟล์ filename ใน buffer ใหม่ โดยแบ่งหน้าต่างตามแนวนอน",
       "colonvsp": "เปิดไฟล์ filename ใน buffer ใหม่ โดยแบ่งหน้าต่างตามแนวตั้ง",
       "ctrlPlusws": "แบ่งหน้าต่าง ตามแนวนอน",

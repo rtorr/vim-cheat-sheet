@@ -207,6 +207,8 @@
       "colonbprev": "برو به بافر قبلی",
       "colonls": "لیست تمامی بافرهای باز",
       "colonbd": "بستن بافر(بسته شدن فایل)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "باز کردن فایل در پنجره جدید و  به دو قسمت کردن پنجره",
       "colonvsp": "باز کردن فایل در پنجره جدید و به دو قسمت کردن پنجره به صورت عمودی",
       "ctrlPlusws": "به دو قسمت کردن پنجره",

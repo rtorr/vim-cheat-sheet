@@ -207,6 +207,8 @@
       "colonbprev": "前のバッファへ移動",
       "colonls": "バッファのリストを開く",
       "colonbd": "バッファを削除（ファイルを閉じる）",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "新しいバッファおよび水平分割ウィンドウでファイルを編集",
       "colonvsp": "新しいバッファおよび垂直分割ウィンドウでファイルを開きます",
       "ctrlPlusws": "ウィンドウを分割",
