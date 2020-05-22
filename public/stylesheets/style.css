@@ -49,6 +49,7 @@ body {
   color: #000;
   font-family: Georgia, serif;
   font-size: 16px;
+  margin: 0;
 }
 
 h1,
@@ -199,6 +200,29 @@ kbd {
   line-height: inherit;
   list-style-type: none;
   padding: 7px 7px;
+}
+
+.weekend-dev {
+  width: 100%;
+  background: rgb(27, 27, 27);
+  color: #fff;
+}
+
+.weekend-dev p {
+  margin: 0;
+  padding: 0;
+}
+
+.weekend-dev .container {
+  background: transparent;
+  padding: 20px;
+}
+
+.weekend-dev a,
+.weekend-dev a:hover,
+.weekend-dev a:visited {
+  color: #c300ff;
+  font-weight: bold;
 }
 
 @media print {
