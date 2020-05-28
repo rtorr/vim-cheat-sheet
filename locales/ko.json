@@ -102,7 +102,9 @@
       "lessThan": "텍스트를 왼쪽으로 이동",
       "y": "선택한 텍스트 복사",
       "d": "선택한 텍스트 삭제",
-      "tilde": "대소문자 반전"
+      "tilde": "대소문자 반전",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -121,8 +123,20 @@
       "list": "표시 항목 표시",
       "currentPositionA": "현재 위치를 표시 a로 설정",
       "jumpPositionA": "표시 a의 위치로 점프",
-      "yankToMarkA": "표시 a의 위치까지 복사"
+      "yankToMarkA": "표시 a의 위치까지 복사",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -141,8 +155,10 @@
       "saveAsFile": "file로 저장하기",
       "closePane": "현재 영역 닫기",
       "K": "커서가 위치한 단어에 대한 맨페이지 열기",
+      "colonTerminal": "open a terminal window",
       "openFile": "file 열기"
-    }
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "잘라내기와 붙여넣기",
@@ -209,10 +225,14 @@
       "colonbd": "버퍼 삭제 (파일 닫기)",
       "colonsp": "새 버퍼에 파일 열고 상하로 창 분할",
       "colonvsp": "새 버퍼에 파일 열고 좌우로 창 분할",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "상하로 창 분할",
+      "ctrlPluswv": "좌우로 창 분할",
       "ctrlPlusww": "창 전환",
       "ctrlPluswq": "창 닫기",
-      "ctrlPluswv": "좌우로 창 분할",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "왼쪽 창으로 이동 (좌우 분할)",
       "ctrlPluswl": "오른쪽 창으로 이동 (좌우 분할)",
       "ctrlPluswj": "아래 창으로 이동 (상하 분할)",

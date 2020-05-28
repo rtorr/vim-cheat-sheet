@@ -102,7 +102,9 @@
       "lessThan": "décaler le texte vers la gauche",
       "y": "copier le texte marqué",
       "d": "supprimer le texte marqué",
-      "tilde": "modifier la casse"
+      "tilde": "modifier la casse",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -121,8 +123,20 @@
       "list": "lister des marques",
       "currentPositionA": "définir la position actuelle pour la marque A",
       "jumpPositionA": "accéder à la position de la marque A",
-      "yankToMarkA": "copier le texte à la position de la marque A"
+      "yankToMarkA": "copier le texte à la position de la marque A",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -141,8 +155,10 @@
       "saveAsFile": "sauvegarder un fichier sous",
       "closePane": "fermer le fichier en cours",
       "K": "ouvre la page du manuel (man) du mot sous le curseur",
+      "colonTerminal": "open a terminal window",
       "openFile": "ouvrir un fichier"
-    }
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "Copier-coller",
@@ -209,10 +225,14 @@
       "colonbd": "supprimer un tampon (fermer le fichier)",
       "colonsp": "ouvrir un fichier dans un nouveau tampon et diviser la fenêtre",
       "colonvsp": "ouvrir un fichier dans un nouveau tampon et diviser la fenêtre verticalement",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "diviser la fenêtre",
+      "ctrlPluswv": "diviser la fenêtre verticalement",
       "ctrlPlusww": "changer de fenêtre",
       "ctrlPluswq": "fermer la fenêtre",
-      "ctrlPluswv": "diviser la fenêtre verticalement",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "déplacer le curseur vers la fenêtre de gauche (division verticale)",
       "ctrlPluswl": "déplacer le curseur vers la fenêtre de droite (division verticale)",
       "ctrlPluswj": "déplacer le curseur vers la fenêtre en dessous (division horizontale)",

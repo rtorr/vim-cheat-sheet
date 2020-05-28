@@ -102,7 +102,9 @@
       "lessThan": "向左縮排",
       "y": "複製",
       "d": "剪下",
-      "tilde": "切換大小寫"
+      "tilde": "切換大小寫",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -121,8 +123,20 @@
       "list": "顯示標記清單",
       "currentPositionA": "將目前的位置設為標記 a",
       "jumpPositionA": "跳至標記 a",
-      "yankToMarkA": "複製游標目前位置到標記 a 位置的字元"
+      "yankToMarkA": "複製游標目前位置到標記 a 位置的字元",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -140,8 +154,10 @@
       "helpForKeyword": "顯示關鍵字的說明",
       "saveAsFile": "另存新檔為檔案名稱",
       "closePane": "關閉目前的視窗",
-      "K": "開啟游標所在單字的 man 頁面"
-    }
+      "K": "開啟游標所在單字的 man 頁面",
+      "colonTerminal": "open a terminal window"
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "剪下、複製、貼上",
@@ -208,10 +224,14 @@
       "colonbd": "刪除緩衝區 (關閉檔案)",
       "colonsp": "在新緩衝區開啟檔案名稱並水平分割視窗",
       "colonvsp": "在新緩衝區開啟檔案名稱並垂直分割視窗",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "水平分割視窗",
+      "ctrlPluswv": "垂直分割視窗",
       "ctrlPlusww": "切換視窗",
       "ctrlPluswq": "關閉視窗",
-      "ctrlPluswv": "垂直分割視窗",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "游標跳至左視窗 (垂直分割)",
       "ctrlPluswl": "游標跳至右視窗 (垂直分割)",
       "ctrlPluswj": "游標跳至下視窗 (水平分割)",

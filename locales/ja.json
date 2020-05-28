@@ -103,7 +103,9 @@
       "lessThan": "選択範囲を左シフト",
       "y": "選択範囲をヤンク（コピー）",
       "d": "選択範囲を削除する",
-      "tilde": "大文字と小文字を入れ替える"
+      "tilde": "大文字と小文字を入れ替える",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -122,8 +124,20 @@
       "list": "マークの一覧",
       "currentPositionA": "現在の位置をマーク「a」に設定",
       "jumpPositionA": "マーク「a」にジャンプ",
-      "yankToMarkA": "マーク「a」の位置にヤンクする"
+      "yankToMarkA": "マーク「a」の位置にヤンクする",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -141,8 +155,10 @@
       "helpForKeyword": "「keyword」のヘルプを開く",
       "saveAsFile": "名前を付けて保存",
       "closePane": "現在のペインを閉じる",
-      "K": "カーソル位置の単語のmanを開く"
-    }
+      "K": "カーソル位置の単語のmanを開く",
+      "colonTerminal": "open a terminal window"
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "カット＆ペースト",
@@ -209,10 +225,14 @@
       "colonbd": "バッファを削除（ファイルを閉じる）",
       "colonsp": "新しいバッファおよび水平分割ウィンドウでファイルを編集",
       "colonvsp": "新しいバッファおよび垂直分割ウィンドウでファイルを開きます",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "ウィンドウを分割",
+      "ctrlPluswv": "ウィンドウを垂直に分割",
       "ctrlPlusww": "ウィンドウを切り替える",
       "ctrlPluswq": "ウィンドウを終了します",
-      "ctrlPluswv": "ウィンドウを垂直に分割",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "右のウィンドウに移動（垂直分割）",
       "ctrlPluswl": "左のウィンドウに移動（垂直分割）",
       "ctrlPluswj": "下のウィンドウに移動（水平分割）",

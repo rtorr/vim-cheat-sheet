@@ -102,7 +102,9 @@
       "lessThan": "scorri testo a sinistra",
       "y": "copia testo selezionato",
       "d": "elimina testo selezionato",
-      "tilde": "inverti maiuscole e minuscole"
+      "tilde": "inverti maiuscole e minuscole",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -121,8 +123,20 @@
       "list": "elenca i segnalibri",
       "currentPositionA": "imposta il segnalibro <code>A</code> alla posizione corrente",
       "jumpPositionA": "salta alla posizione del segnalibro <code>A</code>",
-      "yankToMarkA": "copia il testo fino alla posizione del segnalibro <code>A</code>"
+      "yankToMarkA": "copia il testo fino alla posizione del segnalibro <code>A</code>",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -140,8 +154,10 @@
       "helpForKeyword": "apri il manuale (di vim) per <code>keyword</code>",
       "saveAsFile": "salva il file con nome",
       "closePane": "chiudi il pannello corrente",
-      "K": "apri la pagina del manuale (man) relativa alla parola sotto al cursore"
-    }
+      "K": "apri la pagina del manuale (man) relativa alla parola sotto al cursore",
+      "colonTerminal": "open a terminal window"
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "Taglia e incolla",
@@ -208,10 +224,14 @@
       "colonbd": "cancella un buffer (chiudi un file)",
       "colonsp": "apri file in un nuovo buffer e dividi la finestra",
       "colonvsp": "apri file in un nuovo buffer e dividi la finestra verticalmente",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "dividi finestra",
+      "ctrlPluswv": "dividi finestra verticalmente",
       "ctrlPlusww": "cambia finestra",
       "ctrlPluswq": "esci da una finestra",
-      "ctrlPluswv": "dividi finestra verticalmente",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "muovi cursore sul buffer successivo (a destra)",
       "ctrlPluswl": "muovi cursore sul buffer precedente (a sinistra)",
       "ctrlPluswj": "muovi cursore sul buffer inferiore (divisione orizzontale)",

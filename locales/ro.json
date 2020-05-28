@@ -103,7 +103,9 @@
       "lessThan": "muta textul la stanga",
       "y": "copie textul markat",
       "d": "sterge textul marcat",
-      "tilde": "schimba capitala caracterului (majuscula/litera mica)"
+      "tilde": "schimba capitala caracterului (majuscula/litera mica)",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -122,8 +124,20 @@
       "list": "lista insemnelor",
       "currentPositionA": "seteaza pozitia curenta pentru insemnul A",
       "jumpPositionA": "sari la pozitia insemnului A",
-      "yankToMarkA": "copie textul pana la pozitia insemnului A"
+      "yankToMarkA": "copie textul pana la pozitia insemnului A",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -142,8 +156,10 @@
       "saveAsFile": "salveaza fisierul ca",
       "closePane": "inchide panoul current",
       "K": "global.commands.K",
+      "colonTerminal": "open a terminal window",
       "openFile": "deschide fisier"
-    }
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "Copiere/taiere si lipire",
@@ -210,10 +226,14 @@
       "colonbd": "sterge un buffer (inchide fisierul)",
       "colonsp": "deschide fisierul intr-un buffer now si imparte fereastra",
       "colonvsp": "deschide fisierul intr-un buffer now si imparte fereastra vertical",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "imparte fereastra orizontal",
+      "ctrlPluswv": "imparte fereastra vertical",
       "ctrlPlusww": "schimba fereastra",
       "ctrlPluswq": "iesi din fereastra",
-      "ctrlPluswv": "imparte fereastra vertical",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "muta cursorul in fereastra din stanga (vertical)",
       "ctrlPluswl": "muta cursorul in fereastra din dreapta (vertical)",
       "ctrlPluswj": "muta cursorul in fereastra de sus (orizontal)",

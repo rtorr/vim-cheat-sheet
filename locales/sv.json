@@ -102,7 +102,9 @@
       "lessThan": "flytta texten åt vänster",
       "y": "yank (copy) marked text",
       "d": "tag bort markerad text",
-      "tilde": "byt till stora/små bokstäver"
+      "tilde": "byt till stora/små bokstäver",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -121,8 +123,20 @@
       "list": "visa en lista över märken",
       "currentPositionA": "spara nuvarande position i märke A",
       "jumpPositionA": "hoppa till märke A",
-      "yankToMarkA": "klistra in text vid märke A"
+      "yankToMarkA": "klistra in text vid märke A",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -140,8 +154,10 @@
       "helpForKeyword": "visa hjälp för kommando \"nyckelord\"",
       "saveAsFile": "spara fil som",
       "closePane": "stäng nuvarande ruta",
-      "K": "öppna man page för ordet under markören"
-    }
+      "K": "öppna man page för ordet under markören",
+      "colonTerminal": "open a terminal window"
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "Klipp och klistra",
@@ -208,10 +224,14 @@
       "colonbd": "tag bort buffer (stäng en fil)",
       "colonsp": "öppna en fil i en ny buffer och dela fönstret horisontellt",
       "colonvsp": "öppna en fil i en ny buffer och dela fönstret vertikalt",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "splitta fönster",
+      "ctrlPluswv": "dela ett fönster vertikalt",
       "ctrlPlusww": "byt fönster",
       "ctrlPluswq": "stäng ett fönster",
-      "ctrlPluswv": "dela ett fönster vertikalt",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "flytta till fönstret åt vänster (vertikal delning)",
       "ctrlPluswl": "flytta till fönstret åt höger (vertikal delning)",
       "ctrlPluswj": "flytta till fönstret nedanför (horisontell delning)",

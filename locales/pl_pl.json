@@ -102,7 +102,9 @@
       "lessThan": "przesuń tekst w lewo",
       "y": "kopiuj zaznaczony tekst",
       "d": "usuń zaznaczony tekst",
-      "tilde": "zmień wielkość liter"
+      "tilde": "zmień wielkość liter",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -121,8 +123,20 @@
       "list": "pokaż listę wszystkich zaznaczeń",
       "currentPositionA": "ustaw bieżącą pozycję na oznaczenie A",
       "jumpPositionA": "przeskocz do pozycji oznaczenia A",
-      "yankToMarkA": "kopiuj tekst do pozycji oznaczenia A"
+      "yankToMarkA": "kopiuj tekst do pozycji oznaczenia A",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -141,8 +155,10 @@
       "saveAsFile": "zapisz plik jako",
       "closePane": "zamknij okienko nawigacji",
       "K": "open man page for word under the cursor",
+      "colonTerminal": "open a terminal window",
       "openFile": "otwórz plik"
-    }
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "Wytnij i wklej",
@@ -209,10 +225,14 @@
       "colonbd": "usuń bufer (zamknij plik)",
       "colonsp": "otwórz plik w nowym buforze i podziel okno",
       "colonvsp": "otwórz plik w nowym buforze i podziel okno wertykalnie",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "podziel okno",
+      "ctrlPluswv": "podziel okno wertykalnie",
       "ctrlPlusww": "przełącz okno",
       "ctrlPluswq": "wyjdź z okna",
-      "ctrlPluswv": "podziel okno wertykalnie",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "przesuń kursor do lewego okna (podział wertykalny)",
       "ctrlPluswl": "przesuń kursor do prawego okna (podział wertykalny)",
       "ctrlPluswj": "przesuń kursor do okna poniżej (podział horyzontalny)",

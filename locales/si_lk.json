@@ -102,7 +102,9 @@
       "lessThan": "පෙළ වමට ගෙන යන්න",
       "y": "තෝරාගත් පෙළ පිටපත් කරන්න",
       "d": "තෝරාගත් පෙළ මකන්න",
-      "tilde": "මහකුරු / කුඩා අකුරු හුවමාරුව"
+      "tilde": "මහකුරු / කුඩා අකුරු හුවමාරුව",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -121,8 +123,20 @@
       "list": "සලකුණු ලැයිස්තුව",
       "currentPositionA": "මෙම ස්ථානය a යනුවෙන් සලකුණු කරන්න",
       "jumpPositionA": "a සලකුණු වෙත යන්න",
-      "yankToMarkA": "a සලකුණ යෙදු ස්ථානයට පිටපත් කරන්න"
+      "yankToMarkA": "a සලකුණ යෙදු ස්ථානයට පිටපත් කරන්න",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -141,8 +155,10 @@
       "saveAsFile": "ගොනුව ලෙස සුරකින්න",
       "closePane": "වත්මන් කවුළුව වසන්න",
       "K": "කර්සරය යට ඇති වදනට අදාල උපකාරය විවෘත කරන්න ",
+      "colonTerminal": "open a terminal window",
       "openFile": "ගොනුව සුරකින්න"
-    }
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "පිටපත් කිරීම, කැපීම සහ ඇලවීම",
@@ -209,10 +225,14 @@
       "colonbd": "බෆරයක් මකන්න (ගොනුව වසා දමන්න)",
       "colonsp": "නව බෆර් සහ ද්විත්ව කවුළුවක ගොනුව විවෘත කරන්න",
       "colonvsp": "නව බෆරයක ගොනුවක් විවෘත කර සිරස් වින්යාස සහිත කවුළුවක විවෘත කරන්න",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "කවුළුව භේදනය (තිරස් භේදය)",
+      "ctrlPluswv": "කවුළුව භේදනය (සිරස් භේදය)",
       "ctrlPlusww": " ඊළඟ කවුළුව වෙත යන්න ",
       "ctrlPluswq": "කවුළුව වසන්න",
-      "ctrlPluswv": "කවුළුව භේදනය (සිරස් භේදය)",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "වම් කවුළුව වෙත කර්සරය ගෙනයාම (සිරස් භේදය)",
       "ctrlPluswl": "දකුණු කවුළුව වෙත කර්සරය ගෙනයාම (සිරස් භේදය)",
       "ctrlPluswj": "පහත දැක්වෙන කවුළුව කර්සරය ගෙනයාම (තිරස් භේදය)",
