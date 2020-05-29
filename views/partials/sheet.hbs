@@ -5,16 +5,16 @@
         <h2>{{__ 'global.title'}}</h2>
         <ul>
           <li>
-            <kbd>:help {{__ 'words.keyword'}}</kbd> - {{__ 'global.commands.helpForKeyword'}}
+            <kbd>:h[elp] {{__ 'words.keyword'}}</kbd> - {{__ 'global.commands.helpForKeyword'}}
           </li>
           <li>
-            <kbd>:saveas {{__ 'words.file'}}</kbd> - {{__ 'global.commands.saveAsFile'}}
+            <kbd>:sav[eas] {{__ 'words.file'}}</kbd> - {{__ 'global.commands.saveAsFile'}}
           </li>
           <li>
-            <kbd>:close</kbd> - {{__ 'global.commands.closePane'}}
+            <kbd>:clo[se]</kbd> - {{__ 'global.commands.closePane'}}
           </li>
           <li>
-            <kbd>:terminal</kbd> - {{__ 'global.commands.colonTerminal'}}
+            <kbd>:ter[minal]</kbd> - {{__ 'global.commands.colonTerminal'}}
           </li>
           <li>
             <kbd>K</kbd> - {{__ 'global.commands.K'}}
@@ -320,7 +320,7 @@
         <h2>{{__ 'registers.title'}}</h2>
         <ul>
           <li>
-            <kbd>:reg</kbd> - {{__ 'registers.commands.show'}}
+            <kbd>:reg[isters]</kbd> - {{__ 'registers.commands.show'}}
           </li>
           <li>
             <kbd>"xy</kbd> - {{__ 'registers.commands.yankIntoRegisterX'}}
@@ -362,7 +362,7 @@
             <kbd>``</kbd> - {{__ 'marks.commands.backtickBacktick'}}
           </li>
           <li>
-            <kbd>:jumps</kbd> - {{__ 'marks.commands.colonjumps'}}
+            <kbd>:ju[mps]</kbd> - {{__ 'marks.commands.colonjumps'}}
           </li>
           <li>
             <kbd>Ctrl</kbd> + <kbd>i</kbd> - {{__ 'marks.commands.ctrlPlusi'}}
@@ -522,29 +522,29 @@
             {{__ 'searchAndReplace.commands.colonPercentForwardSlashOldForwardSlashNewForwardSlashgc'}}
           </li>
           <li>
-            <kbd>:noh</kbd> - {{__ 'searchAndReplace.commands.colonnoh'}}
+            <kbd>:noh[lsearch]</kbd> - {{__ 'searchAndReplace.commands.colonnoh'}}
           </li>
         </ul>
         <h2>{{__ 'searchMultipleFiles.title'}}</h2>
         <ul>
           <li>
-            <kbd>:vimgrep /pattern/ {`{file}`}</kbd> -
+            <kbd>:vim[grep] /pattern/ {`{file}`}</kbd> -
             {{__ 'searchMultipleFiles.commands.colonvimgrep'}}
           </li>
         </ul>
         <div class="well">
           e.g.
-          <kbd>:vimgrep /foo/ **/*</kbd>
+          <kbd>:vim[grep] /foo/ **/*</kbd>
         </div>
         <ul>
           <li>
-            <kbd>:cn</kbd> - {{__ 'searchMultipleFiles.commands.coloncn'}}
+            <kbd>:cn[ext]</kbd> - {{__ 'searchMultipleFiles.commands.coloncn'}}
           </li>
           <li>
-            <kbd>:cp</kbd> - {{__ 'searchMultipleFiles.commands.coloncp'}}
+            <kbd>:cp[revious]</kbd> - {{__ 'searchMultipleFiles.commands.coloncp'}}
           </li>
           <li>
-            <kbd>:copen</kbd> - {{__ 'searchMultipleFiles.commands.coloncopen'}}
+            <kbd>:cope[n]</kbd> - {{__ 'searchMultipleFiles.commands.coloncopen'}}
           </li>
         </ul>
       </div>
@@ -554,33 +554,33 @@
         <h2>{{__ 'workingWithMultipleFiles.title'}}</h2>
         <ul>
           <li>
-            <kbd>:e {{__ 'words.file'}}</kbd> - {{__ 'workingWithMultipleFiles.commands.colone'}}
+            <kbd>:e[dit] {{__ 'words.file'}}</kbd> - {{__ 'workingWithMultipleFiles.commands.colone'}}
           </li>
           <li>
-            <kbd>:bnext</kbd> or <kbd>:bn</kbd> -
+            <kbd>:bn[ext]</kbd> or <kbd>:bn</kbd> -
             {{__ 'workingWithMultipleFiles.commands.colonbnext'}}
           </li>
           <li>
-            <kbd>:bprev</kbd> or <kbd>:bp</kbd> -
+            <kbd>:bp[revious]</kbd> or <kbd>:bp</kbd> -
             {{__ 'workingWithMultipleFiles.commands.colonbprev'}}
           </li>
           <li>
-            <kbd>:bd</kbd> - {{__ 'workingWithMultipleFiles.commands.colonbd'}}
+            <kbd>:bd[elete]</kbd> - {{__ 'workingWithMultipleFiles.commands.colonbd'}}
           </li>
           <li>
             <kbd>:ls</kbd> - {{__ 'workingWithMultipleFiles.commands.colonls'}}
           </li>
           <li>
-            <kbd>:sp {{__ 'words.file'}}</kbd> - {{__ 'workingWithMultipleFiles.commands.colonsp'}}
+            <kbd>:sp[lit] {{__ 'words.file'}}</kbd> - {{__ 'workingWithMultipleFiles.commands.colonsp'}}
           </li>
           <li>
-            <kbd>:vsp {{__ 'words.file'}}</kbd> - {{__ 'workingWithMultipleFiles.commands.colonvsp'}}
+            <kbd>:vs[plit] {{__ 'words.file'}}</kbd> - {{__ 'workingWithMultipleFiles.commands.colonvsp'}}
           </li>
           <li>
-            <kbd>:vert ba</kbd> - {{__ 'workingWithMultipleFiles.commands.colonvertba'}}
+            <kbd>:vert[ical] ba[ll]</kbd> - {{__ 'workingWithMultipleFiles.commands.colonvertba'}}
           </li>
           <li>
-            <kbd>:tab ba</kbd> - {{__ 'workingWithMultipleFiles.commands.colontabba'}}
+            <kbd>:tab ba[ll]</kbd> - {{__ 'workingWithMultipleFiles.commands.colontabba'}}
           </li>
           <li>
             <kbd>Ctrl</kbd> + <kbd>ws</kbd> - {{__ 'workingWithMultipleFiles.commands.ctrlPlusws'}}
@@ -625,22 +625,22 @@
             <kbd>Ctrl</kbd> + <kbd>wT</kbd> - {{__ 'tabs.commands.ctrlPluswT'}}
           </li>
           <li>
-            <kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd> - {{__ 'tabs.commands.gt'}}
+            <kbd>gt</kbd> or <kbd>:tabn[ext]</kbd> - {{__ 'tabs.commands.gt'}}
           </li>
           <li>
-            <kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd> - {{__ 'tabs.commands.gT'}}
+            <kbd>gT</kbd> or <kbd>:tabp[revious]</kbd> - {{__ 'tabs.commands.gT'}}
           </li>
           <li>
             <kbd>#gt</kbd> - {{__ 'tabs.commands.hashgt'}}
           </li>
           <li>
-            <kbd>:tabmove #</kbd> - {{__ 'tabs.commands.colontabmove'}}
+            <kbd>:tabm[ove] #</kbd> - {{__ 'tabs.commands.colontabmove'}}
           </li>
           <li>
-            <kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - {{__ 'tabs.commands.colontabc'}}
+            <kbd>:tabc[lose]</kbd> - {{__ 'tabs.commands.colontabc'}}
           </li>
           <li>
-            <kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - {{__ 'tabs.commands.colontabo'}}
+            <kbd>:tabo[nly]</kbd> - {{__ 'tabs.commands.colontabo'}}
           </li>
           <li>
             <kbd>:tabdo</kbd> command - {{{__ 'tabs.commands.colontabdo'}}}
