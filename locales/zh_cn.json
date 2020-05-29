@@ -126,7 +126,9 @@
     "commands": {
       "show": "显示寄存器内容",
       "pasteRegisterX": "粘贴寄存器 x 中的内容",
-      "yankIntoRegisterX": "复制内容到寄存器 x"
+      "yankIntoRegisterX": "复制内容到寄存器 x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "寄存器被存储在 ~/.viminfo 中, 在下次重启vim时仍会加载",
     "tip2": "寄存器 0 存储上一次复制的值"

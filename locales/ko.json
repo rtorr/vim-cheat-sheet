@@ -126,7 +126,9 @@
     "commands": {
       "show": "레지스터 내용물 표시",
       "pasteRegisterX": "레지스터 x의 내용물 붙어넣기",
-      "yankIntoRegisterX": "레지스터 x로 복사"
+      "yankIntoRegisterX": "레지스터 x로 복사",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "레지스터들은 ./viminfo에 저장되며 다음번 vim 재시작 때 다시 읽어들임.",
     "tip2": "0번 레지스터에는 항상 최근 복사 명령의 값이 들어있음."

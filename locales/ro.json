@@ -127,7 +127,9 @@
     "commands": {
       "show": "arata continutul registrelor",
       "pasteRegisterX": "lipeste continutul registului x",
-      "yankIntoRegisterX": "copie in registrul x"
+      "yankIntoRegisterX": "copie in registrul x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registrele sunt salvate in ~/.viminfo, si vor fi incarcate din nou la urmatorul restart",
     "tip2": "Registrul 0 intotdeauna contine valoarea ultimei comenzi de copiere"

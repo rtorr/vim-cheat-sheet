@@ -126,7 +126,9 @@
     "commands": {
       "show": "顯示暫存區內容",
       "pasteRegisterX": "貼上暫存區 x 的內容",
-      "yankIntoRegisterX": "複製到暫存區 x"
+      "yankIntoRegisterX": "複製到暫存區 x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "暫存區儲存在 ~/.viminfo，且會在 Vim 下次啟動時重新載入。",
     "tip2": "暫存區 0 一律會保存上一次複製的內容。"

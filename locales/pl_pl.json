@@ -126,7 +126,9 @@
     "commands": {
       "show": "pokaż zawartość rejestrów",
       "pasteRegisterX": "wklej zawartość rejestru x",
-      "yankIntoRegisterX": "kopiuj do rejestru x"
+      "yankIntoRegisterX": "kopiuj do rejestru x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Rejestry zostały zapisane w ~/.viminfo i zostaną załadowane przy ponownym uruchomieniu vima",
     "tip2": "Rejestr 0 zawsze zawiera wartość ostatnio skopiowanego polecenia"

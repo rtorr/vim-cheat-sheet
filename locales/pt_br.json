@@ -126,7 +126,9 @@
     "commands": {
       "show": "mostrar conteúdo dos registradores",
       "pasteRegisterX": "colar o conteúdo do registrador x",
-      "yankIntoRegisterX": "colar no registrador x"
+      "yankIntoRegisterX": "colar no registrador x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registradores são guardados em ~/.viminfo, e são carregados no início do vim.",
     "tip2": "Registrador 0 sempre contém o valor do ultimo comando de cópia."

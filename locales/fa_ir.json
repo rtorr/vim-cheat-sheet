@@ -126,7 +126,9 @@
     "commands": {
       "show": "محتوای رجیستر را نمایش بده",
       "pasteRegisterX": "کپی کردن به رجیستر x",
-      "yankIntoRegisterX": "محتوای رجیستر x را پیست کن"
+      "yankIntoRegisterX": "محتوای رجیستر x را پیست کن",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "محتوای رجیستر ها در فایل ~/.viminfo ذخیره می شوند و بعد از ریستارت برنامه به آنها دسترسی دارید.",
     "tip2": "رجیستر شماره 0 همیشه مقدار آخرین کپی را شامل می باشد"

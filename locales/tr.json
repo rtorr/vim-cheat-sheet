@@ -126,7 +126,9 @@
     "commands": {
       "show": "register içeriğini göster",
       "pasteRegisterX": "register x'in içeriğini yapıştırır",
-      "yankIntoRegisterX": "register x içerisini kopyalar"
+      "yankIntoRegisterX": "register x içerisini kopyalar",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registerlar ~/.viminfo içerisinde depolanıyor ve vim'i yeniden başlattığınızda yüklenecektir",
     "tip2": "Register 0 daima son kopyalama komutunun değerini taşımaktadır"

@@ -126,7 +126,9 @@
     "commands": {
       "show": "රෙජිස්ටර් අන්තර්ගතය පෙන්වන්න",
       "pasteRegisterX": "රෙජිස්ටර් අන්තර්ගතය ආදේශ කරන්න",
-      "yankIntoRegisterX": "රෙජිස්ටරයට පිටපත් කරන්න"
+      "yankIntoRegisterX": "රෙජිස්ටරයට පිටපත් කරන්න",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "ටයිප් රෙජිස්ටර් ~/.viminfo තුල ගබඩා කර ඇත, නැවතත් නැවතත් Vim සමග අලුතෙන් ආරම්භ වේ.",
     "tip2": "ටයිප් රෙජිස්ට්රි 0 අන්තිම විධානය සෑම විටම අඩංගු වේ."

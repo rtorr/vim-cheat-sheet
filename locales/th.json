@@ -126,7 +126,9 @@
     "commands": {
       "show": "show registers content",
       "pasteRegisterX": "paste contents of register x",
-      "yankIntoRegisterX": "yank into register x"
+      "yankIntoRegisterX": "yank into register x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.",
     "tip2": "Register 0 contains always the value of the last yank command."

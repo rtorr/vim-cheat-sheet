@@ -126,7 +126,9 @@
     "commands": {
       "show": "mostrar el contenido de los registros",
       "pasteRegisterX": "pegar el contenido del registro X",
-      "yankIntoRegisterX": "copiar en el registro X"
+      "yankIntoRegisterX": "copiar en el registro X",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Los registros son guardados en ~/.viminfo, y serán cargados la próxima vez que se ejecute vim.",
     "tip2": "El registro 0 siempre contiene el último texto copiado."

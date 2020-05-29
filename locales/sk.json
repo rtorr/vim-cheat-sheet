@@ -126,7 +126,9 @@
     "commands": {
       "show": "zobrazí obsah registra",
       "pasteRegisterX": "prilepí obsah registra x",
-      "yankIntoRegisterX": "skopíruje do registra x"
+      "yankIntoRegisterX": "skopíruje do registra x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registre sa ukladajú do súboru ~/.viminfo a budú načítané znova pri ďalšom reštarte vim.",
     "tip2": "Register 0 vždy obsahuje hodnotu posledného kopírujúceho príkazu."

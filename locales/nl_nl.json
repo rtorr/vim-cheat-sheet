@@ -127,7 +127,9 @@
     "commands": {
       "show": "laat registerinhoud zien",
       "pasteRegisterX": "plak inhoud van register x",
-      "yankIntoRegisterX": "kopieer naar register x"
+      "yankIntoRegisterX": "kopieer naar register x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registers worden opgeslagen in ~/.viminfo en worden opnieuw geladen na het herstarten van vim.",
     "tip2": "Register 0 bevat altijd de inhoud van het laatste kopieer ('yank') commando"

@@ -126,7 +126,9 @@
     "commands": {
       "show": "Zeige den Inhalt der Register",
       "pasteRegisterX": "Füge den Inhalt vom Register x ein",
-      "yankIntoRegisterX": "Kopiere in das Register x"
+      "yankIntoRegisterX": "Kopiere in das Register x",
+      "quotePlusy": "Kopiere in die System Zwischenablage",
+      "quotePlusp": "Füge den Inhalt von der System Zwischenablage ein"
     },
     "tip1": "Register werden in ~/.viminfo gespeichert und beim nächsten Start von vim wieder geladen",
     "tip2": "Register 0 enthält immer den Wert, der als letztes kopiert wurde"

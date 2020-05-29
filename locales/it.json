@@ -126,7 +126,9 @@
     "commands": {
       "show": "mostra il contenuto dei registri",
       "pasteRegisterX": "incolla il contenuto del registro <code>x</code>",
-      "yankIntoRegisterX": "copia dentro al registro <code>x</code>"
+      "yankIntoRegisterX": "copia dentro al registro <code>x</code>",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "I registri sono salvati in ~/.viminfo e saranno ricaricati al prossimo avvio di vim.",
     "tip2": "Il registro 0 contiene sempre il valore dell'ultimo comando di copia."

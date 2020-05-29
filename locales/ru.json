@@ -126,7 +126,9 @@
     "commands": {
       "show": "показать содержимое регистров",
       "pasteRegisterX": "вставить содержимое регистра x",
-      "yankIntoRegisterX": "поместить содержимое в регистр x"
+      "yankIntoRegisterX": "поместить содержимое в регистр x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Содержимое регистров сохраняется в ~/.viminfo, и будет восстановлено при следующем запуске vim.",
     "tip2": "В нулевом регистре всегда хранится содержимое последней команды копирования."

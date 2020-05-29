@@ -126,7 +126,9 @@
     "commands": {
       "show": "mostrar conteúdo dos registos",
       "pasteRegisterX": "colar conteúdo do registo 'x'",
-      "yankIntoRegisterX": "copiar para o registo 'x'"
+      "yankIntoRegisterX": "copiar para o registo 'x'",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Os registos são guardados em ~/.viminfo e serão carregados novamente quando reiniciar o vim",
     "tip2": "O registo 0 (zero) contém sempre o último valor copiado"

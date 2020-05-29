@@ -127,7 +127,9 @@
     "commands": {
       "show": "レジスタの中身を表示",
       "pasteRegisterX": "レジスタxをペースト",
-      "yankIntoRegisterX": "レジスタxへヤンク（コピー）"
+      "yankIntoRegisterX": "レジスタxへヤンク（コピー）",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "レジスタは ~/.viminfo に保存され、次回起動時に読み込まれます。",
     "tip2": "レジスタ0は常に最新のヤンク（コピー）の値です。"
