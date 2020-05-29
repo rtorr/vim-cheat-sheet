@@ -56,6 +56,13 @@
       "o": "ajouter (ouvrir) une nouvelle ligne vers le bas",
       "O": "ajouter (ouvrir) une nouvelle ligne vers le haut",
       "ea": "insérer (ajouter) a la fin d'un mot",
+      "ctrlPlush": "delete the character before the cursor during insert mode",
+      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
+      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "Esc": "quitter le mode insertion"
     }
   },
@@ -191,7 +198,7 @@
   "indentText": {
     "title": "Indent text",
     "commands": {
-      "greaterThanGreaterThan": "indent line (move right) one shiftwidth",
+      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
       "lessThanLessThan": "de-indent (move left) line one shiftwidth",
       "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
       "greaterThanib": "indent inner block with ()",

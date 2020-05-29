@@ -56,6 +56,13 @@
       "o": "Einfügen in einer neuen Zeile, unterhalb der aktuellen Zeile",
       "O": "Einfügen in einer neuen Zeile, oberhalb der aktuellen Zeile",
       "ea": "Anfügen am Wortende",
+      "ctrlPlush": "Entferne ein Zeichen vor dem Cursor im Eingabe-Modus",
+      "ctrlPlusw": "Entferne ein Wort vor dem Cursor im Eingabe-Modus",
+      "ctrlPlusj": "Starte eine neue Zeile im Eingabe-Modus",
+      "ctrlPlust": "Zeile um eine Einheit einrücken (nach rechts verschieben) im Eingabe-Modus",
+      "ctrlPlusd": "Zeile um eine Einheit ausrücken (nach links verschieben) im Eingabe-Modus",
+      "ctrlPlusn": "Nächstes passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
+      "ctrlPlusp": "Vorheriges passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
       "Esc": "Eingabe-Modus verlassen"
     }
   },

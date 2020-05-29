@@ -56,6 +56,13 @@
       "o": "現在の行の下に空白行を追加して挿入モードを開始",
       "O": "現在の行の上に空白行を追加して挿入モードを開始",
       "ea": "単語の末尾で挿入モードを開始",
+      "ctrlPlush": "delete the character before the cursor during insert mode",
+      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
+      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "Esc": "挿入モードを終了"
     }
   },
@@ -191,7 +198,7 @@
   "indentText": {
     "title": "Indent text",
     "commands": {
-      "greaterThanGreaterThan": "indent line (move right) one shiftwidth",
+      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
       "lessThanLessThan": "de-indent (move left) line one shiftwidth",
       "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
       "greaterThanib": "indent inner block with ()",
