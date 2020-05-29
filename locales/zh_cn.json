@@ -254,6 +254,8 @@
       "colonbprev": "切换到上个缓冲区",
       "colonls": "列出所有打开的缓冲区",
       "colonbd": "关闭缓冲区",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "新建缓冲区打开 filename 并水平分割窗口",
       "colonvsp": "新缓冲区打开 filename 并垂直分割窗口",
       "colonvertba": "edit all buffers as vertical windows",

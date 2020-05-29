@@ -254,6 +254,8 @@
       "colonbprev": "aller au tampon précédent",
       "colonls": "liste tout les tampons ouverts",
       "colonbd": "supprimer un tampon (fermer le fichier)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "ouvrir un fichier dans un nouveau tampon et diviser la fenêtre",
       "colonvsp": "ouvrir un fichier dans un nouveau tampon et diviser la fenêtre verticalement",
       "colonvertba": "edit all buffers as vertical windows",

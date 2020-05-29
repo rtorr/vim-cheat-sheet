@@ -254,6 +254,8 @@
       "colonbprev": "beralih ke buffer sebelumnya",
       "colonls": "daftar buffer yang terbuka",
       "colonbd": "menghapus buffer (menutup file)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "buka file di buffer baru dan split jendela",
       "colonvsp": "buka file di buffer baru dan split jendela secara vertikal",
       "colonvertba": "edit all buffers as vertical windows",

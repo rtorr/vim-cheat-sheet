@@ -253,6 +253,8 @@
       "colonbprev": "切換到上個緩衝區",
       "colonls": "列出所有開啟的緩衝區",
       "colonbd": "刪除緩衝區 (關閉檔案)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "在新緩衝區開啟檔案名稱並水平分割視窗",
       "colonvsp": "在新緩衝區開啟檔案名稱並垂直分割視窗",
       "colonvertba": "edit all buffers as vertical windows",

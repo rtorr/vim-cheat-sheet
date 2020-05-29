@@ -255,6 +255,8 @@
       "colonbprev": "dute la bufferul anterior",
       "colonls": "arata o lista cu bufferele deschise",
       "colonbd": "sterge un buffer (inchide fisierul)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "deschide fisierul intr-un buffer now si imparte fereastra",
       "colonvsp": "deschide fisierul intr-un buffer now si imparte fereastra vertical",
       "colonvertba": "edit all buffers as vertical windows",

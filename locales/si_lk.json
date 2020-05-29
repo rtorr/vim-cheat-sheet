@@ -254,6 +254,8 @@
       "colonbprev": "පෙර බෆරය වෙත යන්න",
       "colonls": "සියලු විවෘත බෆර් ලැයිස්තුගත කරන්න",
       "colonbd": "බෆරයක් මකන්න (ගොනුව වසා දමන්න)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "නව බෆර් සහ ද්විත්ව කවුළුවක ගොනුව විවෘත කරන්න",
       "colonvsp": "නව බෆරයක ගොනුවක් විවෘත කර සිරස් වින්යාස සහිත කවුළුවක විවෘත කරන්න",
       "colonvertba": "edit all buffers as vertical windows",

@@ -254,6 +254,8 @@
       "colonbprev": "перейти к предыдущему буферу",
       "colonls": "список всех открытых буферов",
       "colonbd": "удалить буфер (закрыть файл)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
       "colonsp": "открыть файл в новом буфере и разделить окно",
       "colonvsp": "открыть файл в новом буфере и вертикально разделить окно",
       "colonvertba": "edit all buffers as vertical windows",
