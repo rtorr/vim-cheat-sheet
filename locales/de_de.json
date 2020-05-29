@@ -281,6 +281,28 @@
       "colontabdo": "Führt <code>command</code> für alle Tabs aus (z.B.: <code>:tabdo q</code> - Schließt alle geöffneten Tabs)"
     }
   },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "Fold definieren bis zur Bewegung",
+      "zd": "Fold unter dem Cursor löschen",
+      "za": "Fold unter dem Cursor umschalten",
+      "zo": "Fold unter dem Cursor öffnen",
+      "zc": "Fold unter dem Cursor schliessen",
+      "zr": "Alle Folds um ein Level öffnen (reduzieren)",
+      "zm": "Alle Folds um ein Level schliessen",
+      "zi": "Folding Funktionalität umschalten",
+      "closeSquarec": "Springe zum Start der nächsten Änderung",
+      "openSquarec": "Springe zum Start der vorherigen Änderung",
+      "do": "Hole den Unterschied (vom anderen Buffer)",
+      "dp": "Gebe den Unterschied (an den anderen Buffer)",
+      "colonDiffthis": "Mache das aktuelle Fenster Teil vom Diff",
+      "colonDiffupdate": "Aktualisiere den Diff",
+      "colonDiffoff": "Schalte den Diff Modus für das aktuelle Fenster aus"
+    },
+    "tip1": "Die Kommandos für Folding (bspw. <kbd>za</kbd>) wirken sich nur auf ein Level aus. Um diese auf alle Level anzuwenden, verwende Großbuchstaben (bspw. <kbd>zA</kbd>).",
+    "tip2": "Um die Unterschiede von Dateien anzusehen, kann man Vim direkt im Diff Modus starten, indem man <kbd>vimdiff</kbd> in einem Terminal ausführt. Man kann es sogar als <kbd>git difftool</kbd> festlegen."
+  },
   "words": {
     "keyword": "Stichwort",
     "file": "Datei",
