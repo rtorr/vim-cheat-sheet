@@ -56,6 +56,13 @@
       "o": "inserir uma nova linha em baixo da linha atual",
       "O": "inserir uma nova linha em cima da linha atual",
       "ea": "inserir no final da palavra",
+      "ctrlPlush": "delete the character before the cursor during insert mode",
+      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
+      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "Esc": "sair do modo de inserção"
     }
   },
@@ -66,6 +73,9 @@
       "J": "juntar a linha que está em baixo da linha atual",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",
+      "gTilde": "switch case up to motion",
+      "gu": "change to lowercase up to motion",
+      "gU": "change to uppercase up to motion",
       "cc": "substituir a linha toda",
       "C": "change (replace) to the end of the line",
       "cDollar": "substituir no final da linha",
@@ -75,9 +85,9 @@
       "S": "deletar linha e substituir texto (igual o comando cc)",
       "xp": "transpor duas letras (deletar e colar)",
       "u": "desfazer",
+      "U": "restaura linha inteira",
       "CtrlPlusr": "refazer",
-      "dot": "repetir o último comando",
-      "U": "restaura linha inteira"
+      "dot": "repetir o último comando"
     }
   },
   "markingText": {
@@ -91,10 +101,13 @@
       "aw": "marcar uma palavra",
       "ab": "um bloco com ()",
       "aB": "um bloco com {}",
+      "at": "a block with <> tags",
       "ib": "um bloco interno com ()",
       "iB": "um bloco interno com {}",
+      "it": "inner block with <> tags",
       "Esc": "sair do modo visual"
-    }
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
   },
   "visualCommands": {
     "title": "Comandos visuais",
@@ -103,7 +116,9 @@
       "lessThan": "deslocar texto para esquerda",
       "y": "copiar texto marcado",
       "d": "deletar texto marcado",
-      "tilde": "alterar entre maiúscula e minúscula"
+      "tilde": "alterar entre maiúscula e minúscula",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -111,7 +126,9 @@
     "commands": {
       "show": "mostrar conteúdo dos registradores",
       "pasteRegisterX": "colar o conteúdo do registrador x",
-      "yankIntoRegisterX": "colar no registrador x"
+      "yankIntoRegisterX": "colar no registrador x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registradores são guardados em ~/.viminfo, e são carregados no início do vim.",
     "tip2": "Registrador 0 sempre contém o valor do ultimo comando de cópia."
@@ -123,8 +140,20 @@
       "currentPositionA": "atribuir a posição atual no marcador A",
       "jumpPositionA": "pular para a posição do marcador A",
       "yankToMarkA": "copiar texto para a posição do marcador A",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor",
       "tip": ""
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -143,8 +172,10 @@
       "saveAsFile": "salvar um arquivo como",
       "closePane": "fechar o painel atual",
       "K": "abrir a página do manual para a palavra abaixo do cursor",
+      "colonTerminal": "open a terminal window",
       "openFile": "abrir um arquivo"
-    }
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "Copiar e colar",
@@ -165,6 +196,21 @@
       "D": "deletar (cortar) até o final da linha",
       "dDollar": "deletar (cortar) até o final da linha",
       "x": "deletar (cortar) caractere"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
     }
   },
   "exiting": {
@@ -211,10 +257,14 @@
       "colonbd": "deletar um buffer (fechar um arquivo)",
       "colonsp": "abrir um arquivo em um novo buffer e dividir a janela",
       "colonvsp": "abrir um arquivo em um novo buffer e dividir janelas verticalmente",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "dividir janela",
+      "ctrlPluswv": "dividir janelas verticalmente",
       "ctrlPlusww": "trocar de janelas",
       "ctrlPluswq": "fechar janela",
-      "ctrlPluswv": "dividir janelas verticalmente",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "mover o cursor para a janela a direita (vertical)",
       "ctrlPluswl": "mover o cursor para a janela a esquerda (vertical)",
       "ctrlPluswj": "mover o cursor para a janela abaixo (horizontal)",
@@ -234,6 +284,28 @@
       "colontabo": "fechar todas as abas exceto a aba atual",
       "colontabdo": "executar o <code>comando</code> em todas as abas (e.g. <code> :tabdo q</code> - fechar todas as abas abertas)"
     }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "manually define a fold up to motion",
+      "zd": "delete fold under the cursor",
+      "za": "toggle fold under the cursor",
+      "zo": "open fold under the cursor",
+      "zc": "close fold under the cursor",
+      "zr": "reduce (open) all folds by one level",
+      "zm": "fold more (close) all folds by one level",
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
+    },
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "palavra chave",

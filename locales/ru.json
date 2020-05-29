@@ -56,6 +56,13 @@
       "o": "добавление новой строки под текущей",
       "O": "добавление новой строки над текущей",
       "ea": "вставка (добавление) после конца слова",
+      "ctrlPlush": "delete the character before the cursor during insert mode",
+      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
+      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "Esc": "выход из режима вставки"
     }
   },
@@ -66,6 +73,9 @@
       "J": "присоединить нижнюю строку к текущей",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",
+      "gTilde": "switch case up to motion",
+      "gu": "change to lowercase up to motion",
+      "gU": "change to uppercase up to motion",
       "cc": "заменить всю строку",
       "C": "change (replace) to the end of the line",
       "cDollar": "заменить до конца строки",
@@ -75,6 +85,7 @@
       "S": "удалить строку и заменить текст (то же что cc)",
       "xp": "переставить две буквы (удалить и вставить)",
       "u": "отменить",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "повторить",
       "dot": "повторить последнюю команду"
     }
@@ -90,10 +101,13 @@
       "aw": "выделить слово",
       "ab": "блок в ()",
       "aB": "блок в {}",
+      "at": "a block with <> tags",
       "ib": "внутренний блок в ()",
       "iB": "внутренний блок в {}",
+      "it": "inner block with <> tags",
       "Esc": "выйти из режима выделения текста"
-    }
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
   },
   "visualCommands": {
     "title": "Визуальные команды",
@@ -102,7 +116,9 @@
       "lessThan": "сместить текст влево",
       "y": "скопировать выделенный текст",
       "d": "удалить выделенный текст",
-      "tilde": "переключить регистр"
+      "tilde": "переключить регистр",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -110,7 +126,9 @@
     "commands": {
       "show": "показать содержимое регистров",
       "pasteRegisterX": "вставить содержимое регистра x",
-      "yankIntoRegisterX": "поместить содержимое в регистр x"
+      "yankIntoRegisterX": "поместить содержимое в регистр x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Содержимое регистров сохраняется в ~/.viminfo, и будет восстановлено при следующем запуске vim.",
     "tip2": "В нулевом регистре всегда хранится содержимое последней команды копирования."
@@ -121,8 +139,20 @@
       "list": "список меток",
       "currentPositionA": "установить метку A на текущей позиции",
       "jumpPositionA": "переместиться к метке A",
-      "yankToMarkA": "скопировать до метки A"
+      "yankToMarkA": "скопировать до метки A",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -141,8 +171,10 @@
       "saveAsFile": "сохранить как file",
       "closePane": "закрыть текущую панель",
       "K": "открыть справочное руководство для слова под курсором",
+      "colonTerminal": "open a terminal window",
       "openFile": "открыть file"
-    }
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "Вырезать и вставить",
@@ -163,6 +195,21 @@
       "D": "удалить (вырезать) до конца строки",
       "dDollar": "удалить (вырезать) до конца строки",
       "x": "удалить (вырезать) символ"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
     }
   },
   "exiting": {
@@ -209,10 +256,14 @@
       "colonbd": "удалить буфер (закрыть файл)",
       "colonsp": "открыть файл в новом буфере и разделить окно",
       "colonvsp": "открыть файл в новом буфере и вертикально разделить окно",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "разделить окно",
+      "ctrlPluswv": "разделить окно вертикально",
       "ctrlPlusww": "переключение окон",
       "ctrlPluswq": "закрыть окно",
-      "ctrlPluswv": "разделить окно вертикально",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "переместить курсор в левое окно (вертикально разделение)",
       "ctrlPluswl": "переместить курсор в правое окно (вертикальное разделение)",
       "ctrlPluswj": "переместить курсор в окно ниже (горизонтальное разделение)",
@@ -232,6 +283,28 @@
       "colontabo": "закрыть все вкладки кроме текущей",
       "colontabdo": "выполнить <code>command</code> на всех вкладках (к примеру <code>:tabdo q</code> - закрывает все открытые вкладки)"
     }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "manually define a fold up to motion",
+      "zd": "delete fold under the cursor",
+      "za": "toggle fold under the cursor",
+      "zo": "open fold under the cursor",
+      "zc": "close fold under the cursor",
+      "zr": "reduce (open) all folds by one level",
+      "zm": "fold more (close) all folds by one level",
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
+    },
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "keyword",

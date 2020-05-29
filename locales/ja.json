@@ -56,6 +56,13 @@
       "o": "現在の行の下に空白行を追加して挿入モードを開始",
       "O": "現在の行の上に空白行を追加して挿入モードを開始",
       "ea": "単語の末尾で挿入モードを開始",
+      "ctrlPlush": "delete the character before the cursor during insert mode",
+      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
+      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "Esc": "挿入モードを終了"
     }
   },
@@ -66,6 +73,9 @@
       "J": "現在の行に下の行を連結する（スペースが1文字入る）",
       "gJ": "現在の行に下の行を連結する（スペースが入らない）",
       "gwip": "段落をリフロー",
+      "gTilde": "switch case up to motion",
+      "gu": "change to lowercase up to motion",
+      "gU": "change to uppercase up to motion",
       "cc": "現在の行を削除して挿入モードを開始",
       "C": "カーソル位置から行末までを削除して挿入モードを開始",
       "cDollar": "カーソル位置から行末までを削除して挿入モードを開始",
@@ -75,6 +85,7 @@
       "S": "現在の行を削除して挿入モードを開始（<kbd>cc</kbd>と同じ）",
       "xp": "カーソル位置と次の文字を入れ替える（技術的にはカットしてペースト）",
       "u": "元に戻す（アンドゥ）",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "やり直し（リドゥ）",
       "dot": "最後に使ったコマンドを行う"
     }
@@ -90,11 +101,14 @@
       "aw": "単語をマーク",
       "ab": "a block with ()",
       "aB": "{}ブロックを選択（括弧ごと）",
+      "at": "a block with <> tags",
       "ib": "() ブロックを選択（括弧を除く）",
       "iB": "{}ブロックを選択（括弧を除く）",
+      "it": "inner block with <> tags",
       "Esc": "ビジュアルモード終了",
       "AB": "() ブロックを選択（括弧ごと）"
-    }
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
   },
   "visualCommands": {
     "title": "ビジュアルモードでのコマンド",
@@ -103,7 +117,9 @@
       "lessThan": "選択範囲を左シフト",
       "y": "選択範囲をヤンク（コピー）",
       "d": "選択範囲を削除する",
-      "tilde": "大文字と小文字を入れ替える"
+      "tilde": "大文字と小文字を入れ替える",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -111,7 +127,9 @@
     "commands": {
       "show": "レジスタの中身を表示",
       "pasteRegisterX": "レジスタxをペースト",
-      "yankIntoRegisterX": "レジスタxへヤンク（コピー）"
+      "yankIntoRegisterX": "レジスタxへヤンク（コピー）",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "レジスタは ~/.viminfo に保存され、次回起動時に読み込まれます。",
     "tip2": "レジスタ0は常に最新のヤンク（コピー）の値です。"
@@ -122,8 +140,20 @@
       "list": "マークの一覧",
       "currentPositionA": "現在の位置をマーク「a」に設定",
       "jumpPositionA": "マーク「a」にジャンプ",
-      "yankToMarkA": "マーク「a」の位置にヤンクする"
+      "yankToMarkA": "マーク「a」の位置にヤンクする",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -141,8 +171,10 @@
       "helpForKeyword": "「keyword」のヘルプを開く",
       "saveAsFile": "名前を付けて保存",
       "closePane": "現在のペインを閉じる",
-      "K": "カーソル位置の単語のmanを開く"
-    }
+      "K": "カーソル位置の単語のmanを開く",
+      "colonTerminal": "open a terminal window"
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "カット＆ペースト",
@@ -163,6 +195,21 @@
       "D": "カーソル位置から行末までカット",
       "dDollar": "カーソル位置から行末までカット（<kbd>D</kbd>と同じ）",
       "x": "現在の文字をカットする"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
     }
   },
   "exiting": {
@@ -209,10 +256,14 @@
       "colonbd": "バッファを削除（ファイルを閉じる）",
       "colonsp": "新しいバッファおよび水平分割ウィンドウでファイルを編集",
       "colonvsp": "新しいバッファおよび垂直分割ウィンドウでファイルを開きます",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "ウィンドウを分割",
+      "ctrlPluswv": "ウィンドウを垂直に分割",
       "ctrlPlusww": "ウィンドウを切り替える",
       "ctrlPluswq": "ウィンドウを終了します",
-      "ctrlPluswv": "ウィンドウを垂直に分割",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "右のウィンドウに移動（垂直分割）",
       "ctrlPluswl": "左のウィンドウに移動（垂直分割）",
       "ctrlPluswj": "下のウィンドウに移動（水平分割）",
@@ -232,6 +283,28 @@
       "colontabo": "カレントタブを除く他のすべてのタブを閉じる",
       "colontabdo": "全てのタブで <code>command</code> を実行（例: <code>:tabdo q</code> - 全てのタブを閉じる）"
     }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "manually define a fold up to motion",
+      "zd": "delete fold under the cursor",
+      "za": "toggle fold under the cursor",
+      "zo": "open fold under the cursor",
+      "zc": "close fold under the cursor",
+      "zr": "reduce (open) all folds by one level",
+      "zm": "fold more (close) all folds by one level",
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
+    },
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "keyword",

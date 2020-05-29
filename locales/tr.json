@@ -56,6 +56,13 @@
       "o": "şu anki satırın altına yeni satır ekler ekler",
       "O": "şu anki satırın üstüne yeni satır ekler ekler",
       "ea": "kelimenin sonuna ekler",
+      "ctrlPlush": "delete the character before the cursor during insert mode",
+      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
+      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "Esc": "ekleme modundan çıkar"
     }
   },
@@ -66,6 +73,9 @@
       "J": "şu anki satırın altına ekler",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",
+      "gTilde": "switch case up to motion",
+      "gu": "change to lowercase up to motion",
+      "gU": "change to uppercase up to motion",
       "cc": "tüm satırı değiştirir (yerine koyar)",
       "C": "change (replace) to the end of the line",
       "cDollar": "satır sonuna kadar değiştirir (yerine koyar)",
@@ -75,6 +85,7 @@
       "S": "satırı siler ve metin ile değiştirir (cc komutu ile aynı)",
       "xp": "iki harfi transpoze eder (sil ve yapıştır)",
       "u": "geri al",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "ileri al",
       "dot": "son komutu tekrarla"
     }
@@ -90,10 +101,13 @@
       "aw": "kelimeyi işaretle",
       "ab": "() ile bloklar",
       "aB": "{} ile bloklar",
+      "at": "a block with <> tags",
       "ib": "() içerisini bloklar",
       "iB": "{} içerisini bloklar",
+      "it": "inner block with <> tags",
       "Esc": "görsel moddan çık"
-    }
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
   },
   "visualCommands": {
     "title": "Görsel komutlar",
@@ -102,7 +116,9 @@
       "lessThan": "metni sola kaydır",
       "y": "işaretlenmiş metni kopyala",
       "d": "işaretlenmiş metni sil",
-      "tilde": "harfleri büyükse küçük, küçükse büyük yap"
+      "tilde": "harfleri büyükse küçük, küçükse büyük yap",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -110,7 +126,9 @@
     "commands": {
       "show": "register içeriğini göster",
       "pasteRegisterX": "register x'in içeriğini yapıştırır",
-      "yankIntoRegisterX": "register x içerisini kopyalar"
+      "yankIntoRegisterX": "register x içerisini kopyalar",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registerlar ~/.viminfo içerisinde depolanıyor ve vim'i yeniden başlattığınızda yüklenecektir",
     "tip2": "Register 0 daima son kopyalama komutunun değerini taşımaktadır"
@@ -121,8 +139,20 @@
       "list": "işaretleri listele",
       "currentPositionA": "A işareti için konum belirle",
       "jumpPositionA": "A işaretinin konumuna atla",
-      "yankToMarkA": "A işaretinin konumundaki yazıyı kopyala"
+      "yankToMarkA": "A işaretinin konumundaki yazıyı kopyala",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -141,8 +171,10 @@
       "saveAsFile": "dosyayı farklı kaydet",
       "closePane": "bölümü kapat ",
       "K": "imleç altındaki kelime için kılavuzu aç",
+      "colonTerminal": "open a terminal window",
       "openFile": "dosyayı aç"
-    }
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "Kes ve yapıştır",
@@ -163,6 +195,21 @@
       "D": "satır sonuna kadar (keser) siler",
       "dDollar": "satır sonuna kadar (keser) siler",
       "x": "karakter (keser) siler"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
     }
   },
   "exiting": {
@@ -209,10 +256,14 @@
       "colonbd": "tamponu siler ve dosyayı kapatır",
       "colonsp": "yeni tamponda dosya açar ve pencereyi böler",
       "colonvsp": "yeni tamponda dosya açar ve dikey olarak pencereyi böler",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "pencereyi böler",
+      "ctrlPluswv": "pencereyi dikey böler",
       "ctrlPlusww": "pencereyi değiştirir",
       "ctrlPluswq": "pencereyi kapatır",
-      "ctrlPluswv": "pencereyi dikey böler",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "imleci sol pencereye taşır (dikey bölme)",
       "ctrlPluswl": "imleci sağ pencereye taşır (dikey bölme)",
       "ctrlPluswj": "imleci aşağı pencereye taşır (yatay bölme)",
@@ -232,6 +283,28 @@
       "colontabo": "şu anki sekme dışında hepsini kapat",
       "colontabdo": "tüm sekmelerde <code>komut</code> çalıştır (örn. <code>:tabdo q</code> - açık tüm sekmeleri kapatır)"
     }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "manually define a fold up to motion",
+      "zd": "delete fold under the cursor",
+      "za": "toggle fold under the cursor",
+      "zo": "open fold under the cursor",
+      "zc": "close fold under the cursor",
+      "zr": "reduce (open) all folds by one level",
+      "zm": "fold more (close) all folds by one level",
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
+    },
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "keyword",

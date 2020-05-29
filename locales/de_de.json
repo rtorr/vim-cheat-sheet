@@ -9,24 +9,24 @@
       "j": "Cursor eine Zeile nach unten bewegen",
       "k": "Cursor eine Zeile nach oben bewegen",
       "l": "Cursor ein Zeichen nach rechts bewegen",
-      "w": "Sprung vorwärts zum Wortanfang",
-      "W": "Sprung vorwärts zum Wortanfang (Wort kann Interpunktion enthalten)",
-      "e": "Sprung vorwärts zum Wortende",
-      "E": "Sprung vorwärts zum Wortende (Wort kann Interpunktion enthalten)",
-      "b": "Sprung rückwärts zum Wortanfang",
-      "B": "Sprung rückwärts zum Wortanfang (Wort kann Interpunktion enthalten)",
-      "ge": "jump backwards to the end of a word",
-      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "w": "Springe vorwärts zum Wortanfang",
+      "W": "Springe vorwärts zum Wortanfang (Wort kann Interpunktion enthalten)",
+      "e": "Springe vorwärts zum Wortende",
+      "E": "Springe vorwärts zum Wortende (Wort kann Interpunktion enthalten)",
+      "b": "Springe rückwärts zum Wortanfang",
+      "B": "Springe rückwärts zum Wortanfang (Wort kann Interpunktion enthalten)",
+      "ge": "Springe rückwärts zum Wortende",
+      "gE": "Springe rückwärts zum Wortende (Wort kann Interpunktion enthalten)",
       "H": "Zum Anfang des Bildschirms springen",
       "M": "Zur Mitte des Bildschirms springen",
       "L": "Zum Ende des Bildschirms springen",
-      "zero": "Sprung zum Zeilenanfang",
-      "caret": "Sprung zum ersten Zeichen der Zeile",
-      "dollar": "Sprung zum Zeilenende",
-      "g_": "Springt zum letzten nicht-leeren Charakter der Linie",
-      "gg": "Sprung zum Anfang des Dokuments",
-      "G": "Sprung zum Ende des Dokuments",
-      "fiveG": "Sprung zu Zeile 5",
+      "zero": "Springe zum Zeilenanfang",
+      "caret": "Springe zum ersten Zeichen der Zeile",
+      "dollar": "Springe zum Zeilenende",
+      "g_": "Springe zum letzten Nicht-Leerzeichen der Linie",
+      "gg": "Springe zum Anfang des Dokuments",
+      "G": "Springe zum Ende des Dokuments",
+      "fiveG": "Springe zu Zeile 5",
       "fx": "Springe zum nächsten 'x' auf der Linie",
       "tx": "Springe vor das nächste 'x' auf der Linie",
       "Fx": "Springe zum vorherigen 'x' auf der Linie",
@@ -56,73 +56,103 @@
       "o": "Einfügen in einer neuen Zeile, unterhalb der aktuellen Zeile",
       "O": "Einfügen in einer neuen Zeile, oberhalb der aktuellen Zeile",
       "ea": "Anfügen am Wortende",
+      "ctrlPlush": "Entferne ein Zeichen vor dem Cursor im Eingabe-Modus",
+      "ctrlPlusw": "Entferne ein Wort vor dem Cursor im Eingabe-Modus",
+      "ctrlPlusj": "Starte eine neue Zeile im Eingabe-Modus",
+      "ctrlPlust": "Zeile um eine Einheit einrücken (nach rechts verschieben) im Eingabe-Modus",
+      "ctrlPlusd": "Zeile um eine Einheit ausrücken (nach links verschieben) im Eingabe-Modus",
+      "ctrlPlusn": "Nächstes passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
+      "ctrlPlusp": "Vorheriges passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
       "Esc": "Eingabe-Modus verlassen"
     }
   },
   "editing": {
     "title": "Editieren",
     "commands": {
-      "r": "einzelnes Zeichen ersetzen",
-      "J": "die Zeile unterhalb zur aktuellen Zeile hinzufügen",
-      "gJ": "die Zeile unterhalb zur aktuellen Zeile ohne Abstand hinzufügen",
+      "r": "Einzelnes Zeichen ersetzen",
+      "J": "Die Zeile unterhalb zur aktuellen Zeile hinzufügen",
+      "gJ": "Die Zeile unterhalb zur aktuellen Zeile ohne Abstand hinzufügen",
       "gwip": "Absatz neu umbrechen",
+      "gTilde": "Groß-/Kleinschreibung umschalten bis zur Bewegung",
+      "gu": "In Kleinschreibung ändern bis zur Bewegung",
+      "gU": "In Großschreibung ändern bis zur Bewegung",
       "cc": "Ersetzen der kompletten Zeile",
-      "C": "editing.commands.C",
+      "C": "Ersetzen bis zum Zeilenende",
       "cDollar": "Ersetzen bis zum Zeilenende",
       "ciw": "Ersetzen des gesamten Worts",
       "cw": "Ersetzen bis zum Ende des Worts",
       "s": "Zeichen löschen und ersetzen",
       "S": "Zeile löschen und ersetzen (wie cc)",
-      "xp": "zwei Zeichen vertauschen (löschen und einfügen)",
+      "xp": "Zwei Zeichen vertauschen (löschen und einfügen)",
       "u": "Änderung rückgängig",
+      "U": "Letzte geänderte Zeile wiederherstellen (rückgängig machen)",
       "CtrlPlusr": "Wiederholen der letzten, rückgängig gemachten, Änderung",
-      "dot": "letztes Kommando wiederholen"
+      "dot": "Letztes Kommando wiederholen"
     }
   },
   "markingText": {
     "title": "Text markieren (Visueller Modus)",
     "commands": {
       "v": "Visuellen Modus starten, Zeilen markieren, Kommando ausführen (wie y-kopieren)",
-      "V": "zeilenweise Visuellen Modus starten",
-      "o": "Sprung zum anderen Ende der Markierung",
-      "CtrlPlusv": "blockweise Visuellen Modus starten",
-      "O": "Sprung zur anderen Blockecke",
+      "V": "Zeilenweise Visuellen Modus starten",
+      "o": "Springe zum anderen Ende der Markierung",
+      "CtrlPlusv": "Blockweise Visuellen Modus starten",
+      "O": "Springe zur anderen Blockecke",
       "aw": "Wort markieren",
       "ab": "Block mit ()",
       "aB": "Block mit {}",
-      "ib": "innerer Block mit ()",
-      "iB": "innerer Block mit {}",
+      "at": "Block mit <>",
+      "ib": "Innerer Block mit ()",
+      "iB": "Innerer Block mit {}",
+      "it": "Innerer Block mit <>",
       "Esc": "Visuellen Modus verlassen"
-    }
+    },
+    "tip1": "Anstatt <kbd>b</kbd> oder <kbd>B</kbd>, kann man auch <kbd>(</kbd> oder <kbd>{</kbd> verwenden."
   },
   "visualCommands": {
     "title": "Kommandos im Visuellen Modus",
     "commands": {
       "greaterThan": "Text nach rechts rücken",
       "lessThan": "Text nach links rücken",
-      "y": "markierten Text kopieren",
-      "d": "markierten Text löschen",
-      "tilde": "Groß-/Kleinschreibung umschalten"
+      "y": "Markierten Text kopieren",
+      "d": "Markierten Text löschen",
+      "tilde": "Groß-/Kleinschreibung umschalten",
+      "u": "Markierten Text in Kleinschreibung ändern",
+      "U": "Markierten Text in Großschreibung ändern"
     }
   },
   "registers": {
     "title": "Register",
     "commands": {
-      "show": "zeige den Inhalt der Register",
+      "show": "Zeige den Inhalt der Register",
       "pasteRegisterX": "Füge den Inhalt vom Register x ein",
-      "yankIntoRegisterX": "Kopiere in das Register x"
+      "yankIntoRegisterX": "Kopiere in das Register x",
+      "quotePlusy": "Kopiere in die System Zwischenablage",
+      "quotePlusp": "Füge den Inhalt von der System Zwischenablage ein"
     },
     "tip1": "Register werden in ~/.viminfo gespeichert und beim nächsten Start von vim wieder geladen",
     "tip2": "Register 0 enthält immer den Wert, der als letztes kopiert wurde"
   },
   "marks": {
-    "title": "Markierungen",
+    "title": "Markierungen und Positionen",
     "commands": {
       "list": "Liste alle Markierungen",
       "currentPositionA": "Erstelle die Markierung 'a' an dieser Position",
       "jumpPositionA": "Springe zur Markierung 'a'",
-      "yankToMarkA": "Kopiere bis zur Position der Markierung 'a'"
+      "yankToMarkA": "Kopiere bis zur Position der Markierung 'a'",
+      "backtick0": "Zur Position gehen an der Vim zuvor beendet wurde",
+      "backtickQuote": "Zur Position gehen an der beim letzen Mal gearbeitet wurde",
+      "backtickDot": "Zur Position der letzten Änderung gehen",
+      "backtickBacktick": "Zur Position vor dem letzten Sprung gehen",
+      "colonjumps": "Liste alle Sprünge",
+      "ctrlPlusi": "Zur neueren Position in der Sprungliste gehen",
+      "ctrlPluso": "Zur älteren Position in der Sprungliste gehen",
+      "colonchanges": "Liste alle Änderungen",
+      "gcomma": "Zur neueren Position in der Änderungsliste gehen",
+      "gsemicolon": "Zur älteren Position in der Änderungsliste gehen",
+      "ctrlPlusCloseSquare": "Zum Schlagwort unter dem Cursor gehen"
     },
+    "tip1": "Um zu einer Markierung zu gehen kann entweder ein Backtick (<kbd>`</kbd>) oder ein Apostroph (<kbd>'</kbd>) verwendet werden. Mit einem Apostroph geht man jedoch an den Anfang (erstes Nicht-Leerzeichen) der Zeile mit der Markierung.",
     "tip": ""
   },
   "macros": {
@@ -130,7 +160,7 @@
     "commands": {
       "recordA": "Starte Aufnahme 'a'",
       "stopRecording": "Stoppe die Aufnahme",
-      "runA": "Führe das Makro 'a'",
+      "runA": "Führe das Makro 'a' aus",
       "rerun": "Führe das letzte Makro nochmals aus"
     }
   },
@@ -140,8 +170,10 @@
       "helpForKeyword": "Hilfe zum Schlüsselwort öffnen",
       "saveAsFile": "Speichern unter",
       "closePane": "Ansicht schließen",
-      "K": "Handbuchseite für das Wort unterm Cursor öffnen"
-    }
+      "K": "Handbuchseite für das Wort unter dem Cursor öffnen",
+      "colonTerminal": "Ein Terminal Fenster öffnen"
+    },
+    "tip1": "Führe <kbd>vimtutor</kbd> in einem Terminal aus um die ersten Vim Befehle zu lernen."
   },
   "cutAndPaste": {
     "title": "Kopieren/Auschneiden und Einfügen",
@@ -162,6 +194,21 @@
       "D": "Löschen (Ausschneiden) bis Zeilenende",
       "dDollar": "Löschen (Ausschneiden) bis Zeilenende",
       "x": "Zeichen löschen (ausschneiden)"
+    }
+  },
+  "indentText": {
+    "title": "Text einrücken",
+    "commands": {
+      "greaterThanGreaterThan": "Zeile um eine Einheit einrücken (nach rechts verschieben)",
+      "lessThanLessThan": "Zeile um eine Einheit ausrücken (nach links verschieben)",
+      "greaterThanPercent": "Block mit () oder {} einrücken (Cursor auf Klammer)",
+      "greaterThanib": "Innerer Block mit () einrücken",
+      "greaterThanat": "Block mit <> einrücken",
+      "3==": "3 Zeilen neu ausrichten",
+      "=Percent": "Block mit () oder {} neu ausrichten (Cursor auf Klammer)",
+      "=iB": "Inner Block mit {} neu ausrichten",
+      "gg=G": "Gesamter Buffer neu ausrichten",
+      "closeSquarep": "Einfügen und analog zur aktuellen Zeile einrücken"
     }
   },
   "exiting": {
@@ -193,9 +240,9 @@
     "title": "Suchen in mehreren Dateien",
     "commands": {
       "colonvimgrep": "Muster suchen in mehreren Dateien",
-      "coloncn": "Sprung zum nächsten Muster (vorwärts)",
-      "coloncp": "Sprung zum nächsten Muster (rückwärts)",
-      "coloncopen": "Fenster öffnen mit Liste von Mustern"
+      "coloncn": "Springe zur nächsten Übereinstimmung",
+      "coloncp": "Springe zur vorherigen Übereinstimmung",
+      "coloncopen": "Öffne ein Fenster mit der Liste von Übereinstimmungen"
     }
   },
   "workingWithMultipleFiles": {
@@ -208,10 +255,14 @@
       "colonbd": "Buffer löschen (Datei schließen)",
       "colonsp": "Datei im neuen Buffer bearbeiten und Fenster horizontal teilen",
       "colonvsp": "Datei im neuen Buffer bearbeiten und Fenster vertikal teilen",
+      "colonvertba": "Alle Buffer als vertikale Fenster bearbeiten",
+      "colontabba": "Alle Buffer als Tabs bearbeiten",
       "ctrlPlusws": "Fenster horizontal teilen",
+      "ctrlPluswv": "Fenster vertikal teilen",
       "ctrlPlusww": "Fenster wechseln",
       "ctrlPluswq": "Fenster schließen",
-      "ctrlPluswv": "Fenster vertikal teilen",
+      "ctrlPluswx": "Aktuelles Fenster mit nächstem tauschen",
+      "ctrlPlusw=": "Alle Fenster gleich gross machen",
       "ctrlPluswh": "Cursor in das linke Fenster (vertikale Teilung)",
       "ctrlPluswl": "Cursor in das rechte Fenster (vertikale Teilung)",
       "ctrlPluswj": "Cursor in das untere Fenster (horizontale Teilung)",
@@ -222,15 +273,37 @@
     "title": "Tabs",
     "commands": {
       "colonTabNew": "Datei in neuem Tab öffnen",
-      "ctrlPluswT": "aktuell geteiltes Fenster in eigenen Tab bewegen",
-      "gt": "zum nächsten Tab springen",
-      "gT": "zum vorigen Tab springen",
-      "hashgt": "zum Tab mit der Nummer # springen",
-      "colontabmove": "aktuellen Tab an #te Position bewegen (indiziert von 0 an)",
-      "colontabc": "aktuellen Tab, inklusiver aller Fenster, schließen",
-      "colontabo": "alle Tabs schließen, außer dem Aktuellen",
-      "colontabdo": "führt <code>command</code> für alle Tabs aus (z.B.: <code>:tabdo q</code> - Schließt alle geöffneten Tabs)"
+      "ctrlPluswT": "Aktuell geteiltes Fenster in eigenen Tab bewegen",
+      "gt": "Zum nächsten Tab springen",
+      "gT": "Zum vorigen Tab springen",
+      "hashgt": "Zum Tab mit der Nummer # springen",
+      "colontabmove": "Aktuellen Tab an #te Position bewegen (indiziert von 0 an)",
+      "colontabc": "Aktuellen Tab, inklusiver aller Fenster, schließen",
+      "colontabo": "Alle Tabs schließen, außer dem Aktuellen",
+      "colontabdo": "Führt <code>command</code> für alle Tabs aus (z.B.: <code>:tabdo q</code> - Schließt alle geöffneten Tabs)"
     }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "Fold definieren bis zur Bewegung",
+      "zd": "Fold unter dem Cursor löschen",
+      "za": "Fold unter dem Cursor umschalten",
+      "zo": "Fold unter dem Cursor öffnen",
+      "zc": "Fold unter dem Cursor schliessen",
+      "zr": "Alle Folds um ein Level öffnen (reduzieren)",
+      "zm": "Alle Folds um ein Level schliessen",
+      "zi": "Folding Funktionalität umschalten",
+      "closeSquarec": "Springe zum Start der nächsten Änderung",
+      "openSquarec": "Springe zum Start der vorherigen Änderung",
+      "do": "Hole den Unterschied (vom anderen Buffer)",
+      "dp": "Gebe den Unterschied (an den anderen Buffer)",
+      "colonDiffthis": "Mache das aktuelle Fenster Teil vom Diff",
+      "colonDiffupdate": "Aktualisiere den Diff",
+      "colonDiffoff": "Schalte den Diff Modus für das aktuelle Fenster aus"
+    },
+    "tip1": "Die Kommandos für Folding (bspw. <kbd>za</kbd>) wirken sich nur auf ein Level aus. Um diese auf alle Level anzuwenden, verwende Großbuchstaben (bspw. <kbd>zA</kbd>).",
+    "tip2": "Um die Unterschiede von Dateien anzusehen, kann man Vim direkt im Diff Modus starten, indem man <kbd>vimdiff</kbd> in einem Terminal ausführt. Man kann es sogar als <kbd>git difftool</kbd> festlegen."
   },
   "words": {
     "keyword": "Stichwort",

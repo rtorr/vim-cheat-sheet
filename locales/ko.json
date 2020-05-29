@@ -56,6 +56,13 @@
       "o": "현재 행 아래에 새 행 추가",
       "O": "현재 행 위에 새 행 추가",
       "ea": "단어 끝에 추가",
+      "ctrlPlush": "delete the character before the cursor during insert mode",
+      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
+      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "Esc": "삽입 모드 종료"
     }
   },
@@ -66,6 +73,9 @@
       "J": "현재 행과 다음 행을 연결",
       "gJ": "현재 행과 다음 행을 둘 사이에 공백 없이 연결",
       "gwip": "단락을 리플로우",
+      "gTilde": "switch case up to motion",
+      "gu": "change to lowercase up to motion",
+      "gU": "change to uppercase up to motion",
       "cc": "행 전체를 새로 쓰기",
       "C": "행 끝까지를 새로 쓰기",
       "cDollar": "행 끝까지를 새로 쓰기",
@@ -75,6 +85,7 @@
       "S": "행 삭제하고 텍스트 입력 (<kbd>cc</kbd>와 동일)",
       "xp": "두 문자 위치 바꾸기 (잘라내기 붙여넣기 조합)",
       "u": "실행 취소",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "다시 실행",
       "dot": "마지막 명령 반복"
     }
@@ -90,10 +101,13 @@
       "aw": "단어 선택",
       "ab": "() 블럭 선택",
       "aB": "{} 블럭 선택",
+      "at": "a block with <> tags",
       "ib": "() 블럭의 내부 선택",
       "iB": "{} 블럭의 내부 선택",
+      "it": "inner block with <> tags",
       "Esc": "선택 모드 종료"
-    }
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
   },
   "visualCommands": {
     "title": "선택 모드 명령",
@@ -102,7 +116,9 @@
       "lessThan": "텍스트를 왼쪽으로 이동",
       "y": "선택한 텍스트 복사",
       "d": "선택한 텍스트 삭제",
-      "tilde": "대소문자 반전"
+      "tilde": "대소문자 반전",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
     }
   },
   "registers": {
@@ -110,7 +126,9 @@
     "commands": {
       "show": "레지스터 내용물 표시",
       "pasteRegisterX": "레지스터 x의 내용물 붙어넣기",
-      "yankIntoRegisterX": "레지스터 x로 복사"
+      "yankIntoRegisterX": "레지스터 x로 복사",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "레지스터들은 ./viminfo에 저장되며 다음번 vim 재시작 때 다시 읽어들임.",
     "tip2": "0번 레지스터에는 항상 최근 복사 명령의 값이 들어있음."
@@ -121,8 +139,20 @@
       "list": "표시 항목 표시",
       "currentPositionA": "현재 위치를 표시 a로 설정",
       "jumpPositionA": "표시 a의 위치로 점프",
-      "yankToMarkA": "표시 a의 위치까지 복사"
+      "yankToMarkA": "표시 a의 위치까지 복사",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -141,8 +171,10 @@
       "saveAsFile": "file로 저장하기",
       "closePane": "현재 영역 닫기",
       "K": "커서가 위치한 단어에 대한 맨페이지 열기",
+      "colonTerminal": "open a terminal window",
       "openFile": "file 열기"
-    }
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
     "title": "잘라내기와 붙여넣기",
@@ -163,6 +195,21 @@
       "D": "행 끝까지 잘라내기",
       "dDollar": "행 끝까지 잘라내기",
       "x": "한 글자 잘라내기"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
     }
   },
   "exiting": {
@@ -209,10 +256,14 @@
       "colonbd": "버퍼 삭제 (파일 닫기)",
       "colonsp": "새 버퍼에 파일 열고 상하로 창 분할",
       "colonvsp": "새 버퍼에 파일 열고 좌우로 창 분할",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "상하로 창 분할",
+      "ctrlPluswv": "좌우로 창 분할",
       "ctrlPlusww": "창 전환",
       "ctrlPluswq": "창 닫기",
-      "ctrlPluswv": "좌우로 창 분할",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
       "ctrlPluswh": "왼쪽 창으로 이동 (좌우 분할)",
       "ctrlPluswl": "오른쪽 창으로 이동 (좌우 분할)",
       "ctrlPluswj": "아래 창으로 이동 (상하 분할)",
@@ -232,6 +283,28 @@
       "colontabo": "현재 탭 이외의 모든 탭 닫기",
       "colontabdo": "모든 탭에서 <code>command</code> 실행하기 (예를 들어, <code>:tabdo q</code> - 열린 모든 탭 닫기)"
     }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "manually define a fold up to motion",
+      "zd": "delete fold under the cursor",
+      "za": "toggle fold under the cursor",
+      "zo": "open fold under the cursor",
+      "zc": "close fold under the cursor",
+      "zr": "reduce (open) all folds by one level",
+      "zm": "fold more (close) all folds by one level",
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
+    },
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "keyword",
