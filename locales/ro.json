@@ -132,7 +132,21 @@
       "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registrele sunt salvate in ~/.viminfo, si vor fi incarcate din nou la urmatorul restart",
-    "tip2": "Registrul 0 intotdeauna contine valoarea ultimei comenzi de copiere"
+    "tip2": {
+      "title": "Special registers:",
+      "0": "last yank",
+      "quote": "unnamed register, last delete or yank",
+      "percent": "current file name",
+      "hashtag": "alternate file name",
+      "asterisk": "clipboard contents (X11 primary)",
+      "plus": "clipboard contents (X11 clipboard)",
+      "slash": "last search pattern",
+      "colon": "last command-line",
+      "dot": "last inserted text",
+      "minus": "last small (less than a line) delete",
+      "equal": "expression register",
+      "underscore": "black hole register"
+    }
   },
   "marks": {
     "title": "Insemne",

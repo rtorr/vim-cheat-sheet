@@ -131,7 +131,21 @@
       "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Los registros son guardados en ~/.viminfo, y serán cargados la próxima vez que se ejecute vim.",
-    "tip2": "El registro 0 siempre contiene el último texto copiado."
+    "tip2": {
+      "title": "Special registers:",
+      "0": "last yank",
+      "quote": "unnamed register, last delete or yank",
+      "percent": "current file name",
+      "hashtag": "alternate file name",
+      "asterisk": "clipboard contents (X11 primary)",
+      "plus": "clipboard contents (X11 clipboard)",
+      "slash": "last search pattern",
+      "colon": "last command-line",
+      "dot": "last inserted text",
+      "minus": "last small (less than a line) delete",
+      "equal": "expression register",
+      "underscore": "black hole register"
+    }
   },
   "marks": {
     "title": "Marcas",

@@ -132,7 +132,21 @@
       "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "Registers worden opgeslagen in ~/.viminfo en worden opnieuw geladen na het herstarten van vim.",
-    "tip2": "Register 0 bevat altijd de inhoud van het laatste kopieer ('yank') commando"
+    "tip2": {
+      "title": "Special registers:",
+      "0": "last yank",
+      "quote": "unnamed register, last delete or yank",
+      "percent": "current file name",
+      "hashtag": "alternate file name",
+      "asterisk": "clipboard contents (X11 primary)",
+      "plus": "clipboard contents (X11 clipboard)",
+      "slash": "last search pattern",
+      "colon": "last command-line",
+      "dot": "last inserted text",
+      "minus": "last small (less than a line) delete",
+      "equal": "expression register",
+      "underscore": "black hole register"
+    }
   },
   "marks": {
     "title": "Positiemarkeringen",
