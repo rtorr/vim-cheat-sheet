@@ -78,6 +78,7 @@
       "S": "odstráni riadok a nahradí textom (rovnako ako cc)",
       "xp": "prehodí dve písmená (vymazanie a vloženie)",
       "u": "krok späť",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "vráti krok späť",
       "dot": "opakuje posledný príkaz"
     }

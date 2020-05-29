@@ -78,6 +78,7 @@
       "S": "apagar um carácter e substituir até ao fim da linha (igual ao cc)",
       "xp": "transpor duas letras (cortar e colar)",
       "u": "anular",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "refazer",
       "dot": "repetir o último comando"
     }

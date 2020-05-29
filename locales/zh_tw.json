@@ -78,6 +78,7 @@
       "S": "刪除整行並進入插入模式 (同 cc)",
       "xp": "游標後二個字元位置交換 (刪除並貼上)",
       "u": "復原",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "重做",
       "dot": "重複上個命令"
     }

@@ -78,6 +78,7 @@
       "S": "supprimer une ligne et la remplacer par du texte (comme cc)",
       "xp": "transposer deux lettres (supprimer et coller)",
       "u": "annuler",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "rétablir",
       "dot": "répéter la commande précédente"
     }

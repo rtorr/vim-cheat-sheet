@@ -78,6 +78,7 @@
       "S": "Zeile löschen und ersetzen (wie cc)",
       "xp": "Zwei Zeichen vertauschen (löschen und einfügen)",
       "u": "Änderung rückgängig",
+      "U": "Letzte geänderte Zeile wiederherstellen (rückgängig machen)",
       "CtrlPlusr": "Wiederholen der letzten, rückgängig gemachten, Änderung",
       "dot": "Letztes Kommando wiederholen"
     }

@@ -78,9 +78,9 @@
       "S": "deletar linha e substituir texto (igual o comando cc)",
       "xp": "transpor duas letras (deletar e colar)",
       "u": "desfazer",
+      "U": "restaura linha inteira",
       "CtrlPlusr": "refazer",
-      "dot": "repetir o último comando",
-      "U": "restaura linha inteira"
+      "dot": "repetir o último comando"
     }
   },
   "markingText": {

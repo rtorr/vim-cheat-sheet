@@ -79,6 +79,7 @@
       "S": "menghapus isi baris saat ini untuk diganti dengan text lain (sama dengan cc)",
       "xp": "menukar dua karakter (delete dan paste)",
       "u": "undo",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "redo",
       "dot": "ulangi perintah sebelumnya"
     }

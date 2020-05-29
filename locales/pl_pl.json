@@ -78,6 +78,7 @@
       "S": "zastąp wiersz (takie samo znaczenie jak cc)",
       "xp": "zastąp dwa znaki (usuń i wklej)",
       "u": "cofnij",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "popraw",
       "dot": "powtórz ostatnią komendę"
     }

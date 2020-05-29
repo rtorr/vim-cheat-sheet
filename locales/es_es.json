@@ -78,6 +78,7 @@
       "S": "eliminar línea y reemplazar texto (igual que el comando cc)",
       "xp": "transponer dos letras (suprimir y pegar)",
       "u": " deshacer",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "rehacer",
       "dot": "repetir el último comando"
     }

@@ -78,6 +78,7 @@
       "S": "cancella linea e sostituisci testo (uguale a cc)",
       "xp": "scambia due lettere (cancella e incolla)",
       "u": "annulla l'ultima modifica",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "ripeti l'ultima modifica",
       "dot": "ripeti l'ultimo comando"
     }

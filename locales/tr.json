@@ -78,6 +78,7 @@
       "S": "satırı siler ve metin ile değiştirir (cc komutu ile aynı)",
       "xp": "iki harfi transpoze eder (sil ve yapıştır)",
       "u": "geri al",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "ileri al",
       "dot": "son komutu tekrarla"
     }

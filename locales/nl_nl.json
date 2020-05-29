@@ -79,6 +79,7 @@
       "S": "vervang huidige regel (het zelfde als cc)",
       "xp": "verwissel twee letters (verwijder en plak)",
       "u": "ongedaan maken",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "overdoen",
       "dot": "laatste commando herhalen"
     }

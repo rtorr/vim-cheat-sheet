@@ -79,6 +79,7 @@
       "S": "sterge linia si inlocuieste (asemeni <kbd>cc</kbd>)",
       "xp": "transpune 2 caractere (sterge si lipeste)",
       "u": "undo (anulare)",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "redo (refacere)",
       "dot": "repeta comanda anterioara"
     }

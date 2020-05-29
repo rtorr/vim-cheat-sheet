@@ -78,6 +78,7 @@
       "S": "delete line and substitute text (same as cc)",
       "xp": "transpose two letters (delete and paste)",
       "u": "undo",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "redo",
       "dot": "repeat last command"
     }

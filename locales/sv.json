@@ -78,6 +78,7 @@
       "S": "tag bort rad och ersätt med text (samma som cc)",
       "xp": "byt ut två tecken (klipp och klistra)",
       "u": "ångra",
+      "U": "restore (undo) last changed line",
       "CtrlPlusr": "gör om",
       "dot": "upprepa föregående kommando"
     }
