@@ -90,10 +90,13 @@
       "aw": "단어 선택",
       "ab": "() 블럭 선택",
       "aB": "{} 블럭 선택",
+      "at": "a block with <> tags",
       "ib": "() 블럭의 내부 선택",
       "iB": "{} 블럭의 내부 선택",
+      "it": "inner block with <> tags",
       "Esc": "선택 모드 종료"
-    }
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
   },
   "visualCommands": {
     "title": "선택 모드 명령",
@@ -179,6 +182,21 @@
       "D": "행 끝까지 잘라내기",
       "dDollar": "행 끝까지 잘라내기",
       "x": "한 글자 잘라내기"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent line (move right) one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
     }
   },
   "exiting": {

@@ -90,10 +90,13 @@
       "aw": "kelimeyi işaretle",
       "ab": "() ile bloklar",
       "aB": "{} ile bloklar",
+      "at": "a block with <> tags",
       "ib": "() içerisini bloklar",
       "iB": "{} içerisini bloklar",
+      "it": "inner block with <> tags",
       "Esc": "görsel moddan çık"
-    }
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
   },
   "visualCommands": {
     "title": "Görsel komutlar",
@@ -179,6 +182,21 @@
       "D": "satır sonuna kadar (keser) siler",
       "dDollar": "satır sonuna kadar (keser) siler",
       "x": "karakter (keser) siler"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent line (move right) one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
     }
   },
   "exiting": {

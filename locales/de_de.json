@@ -90,10 +90,13 @@
       "aw": "Wort markieren",
       "ab": "Block mit ()",
       "aB": "Block mit {}",
+      "at": "Block mit <>",
       "ib": "Innerer Block mit ()",
       "iB": "Innerer Block mit {}",
+      "it": "Innerer Block mit <>",
       "Esc": "Visuellen Modus verlassen"
-    }
+    },
+    "tip1": "Anstatt <kbd>b</kbd> oder <kbd>B</kbd>, kann man auch <kbd>(</kbd> oder <kbd>{</kbd> verwenden."
   },
   "visualCommands": {
     "title": "Kommandos im Visuellen Modus",
@@ -178,6 +181,21 @@
       "D": "Löschen (Ausschneiden) bis Zeilenende",
       "dDollar": "Löschen (Ausschneiden) bis Zeilenende",
       "x": "Zeichen löschen (ausschneiden)"
+    }
+  },
+  "indentText": {
+    "title": "Text einrücken",
+    "commands": {
+      "greaterThanGreaterThan": "Zeile um eine Einheit einrücken (nach rechts verschieben)",
+      "lessThanLessThan": "Zeile um eine Einheit ausrücken (nach links verschieben)",
+      "greaterThanPercent": "Block mit () oder {} einrücken (Cursor auf Klammer)",
+      "greaterThanib": "Innerer Block mit () einrücken",
+      "greaterThanat": "Block mit <> einrücken",
+      "3==": "3 Zeilen neu ausrichten",
+      "=Percent": "Block mit () oder {} neu ausrichten (Cursor auf Klammer)",
+      "=iB": "Inner Block mit {} neu ausrichten",
+      "gg=G": "Gesamter Buffer neu ausrichten",
+      "closeSquarep": "Einfügen und analog zur aktuellen Zeile einrücken"
     }
   },
   "exiting": {

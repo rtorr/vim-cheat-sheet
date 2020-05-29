@@ -90,10 +90,13 @@
       "aw": "выделить слово",
       "ab": "блок в ()",
       "aB": "блок в {}",
+      "at": "a block with <> tags",
       "ib": "внутренний блок в ()",
       "iB": "внутренний блок в {}",
+      "it": "inner block with <> tags",
       "Esc": "выйти из режима выделения текста"
-    }
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
   },
   "visualCommands": {
     "title": "Визуальные команды",
@@ -179,6 +182,21 @@
       "D": "удалить (вырезать) до конца строки",
       "dDollar": "удалить (вырезать) до конца строки",
       "x": "удалить (вырезать) символ"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent line (move right) one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
     }
   },
   "exiting": {
