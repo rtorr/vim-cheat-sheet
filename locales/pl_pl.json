@@ -243,7 +243,8 @@
       "colonvimgrep": "szukaj wzorca w wielu plikach",
       "coloncn": "skocz do następnego dopasowania",
       "coloncp": "skocz do poprzedniego dopasowania",
-      "coloncopen": "otwórz okno zawierające listę dopasowań"
+      "coloncopen": "otwórz okno zawierające listę dopasowań",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

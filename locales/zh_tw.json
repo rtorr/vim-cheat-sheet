@@ -242,7 +242,8 @@
       "colonvimgrep": "在多個檔案中搜尋 pattern",
       "coloncn": "跳至下一個",
       "coloncp": "跳至上一個",
-      "coloncopen": "開啟搜尋結果列表視窗"
+      "coloncopen": "開啟搜尋結果列表視窗",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

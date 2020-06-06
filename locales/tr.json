@@ -243,7 +243,8 @@
       "colonvimgrep": "kalıbı birden fazla dosyada ara",
       "coloncn": "sonraki eşleşmeye atla",
       "coloncp": "önceki eşleşmeye atla",
-      "coloncopen": "eşleşmeleri bir pencerede göster"
+      "coloncopen": "eşleşmeleri bir pencerede göster",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

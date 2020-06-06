@@ -243,7 +243,8 @@
       "colonvimgrep": "ගොනු කිහිපයක් තුල සෙවීම",
       "coloncn": "රටාවේ ඊළඟ යෙදුමට (ඉදිරියට) යන්න",
       "coloncp": "රටාවේ ඊළඟ යෙදුමට (පසුපසට) යන්න",
-      "coloncopen": "රටාවේ සියලු යෙදීම් ලැයිස්තුව සහිත කවුළුව විවෘත කරන්න"
+      "coloncopen": "රටාවේ සියලු යෙදීම් ලැයිස්තුව සහිත කවුළුව විවෘත කරන්න",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

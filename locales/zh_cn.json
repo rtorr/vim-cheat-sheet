@@ -243,7 +243,8 @@
       "colonvimgrep": "在多个文件中搜索 <kbd>pattern</kbd>",
       "coloncn": "移动至下一个",
       "coloncp": "移动至上一个",
-      "coloncopen": "打开搜索结果列表"
+      "coloncopen": "打开搜索结果列表",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

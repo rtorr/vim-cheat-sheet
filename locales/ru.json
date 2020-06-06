@@ -243,7 +243,8 @@
       "colonvimgrep": "поиск по шаблону в нескольких файлах",
       "coloncn": "переместиться к следующему совпадению",
       "coloncp": "переместиться к предыдущему совпадению",
-      "coloncopen": "открыть окно со списком результатов"
+      "coloncopen": "открыть окно со списком результатов",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

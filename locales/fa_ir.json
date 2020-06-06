@@ -243,7 +243,8 @@
       "colonvimgrep": "جستجوی الگو در چند فایل",
       "coloncn": "برو به نتیجه بعدی",
       "coloncp": "برو به نتیجه قبلی",
-      "coloncopen": "باز کردن یک پنجره که شامل لیست نتایج جستجو باشد"
+      "coloncopen": "باز کردن یک پنجره که شامل لیست نتایج جستجو باشد",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

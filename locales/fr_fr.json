@@ -243,7 +243,8 @@
       "colonvimgrep": "rechercher un motif dans plusieurs fichiers",
       "coloncn": "atteindre le prochain résultat",
       "coloncp": "atteindre le précédent résultat",
-      "coloncopen": "ouvre une fenetre contenant une liste des resultats"
+      "coloncopen": "ouvre une fenetre contenant une liste des resultats",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

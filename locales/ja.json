@@ -243,7 +243,8 @@
       "colonvimgrep": "複数ファイルで pattern を検索",
       "coloncn": "次の該当箇所へジャンプ",
       "coloncp": "前の該当箇所へジャンプ",
-      "coloncopen": "該当箇所一覧のウインドウを開く"
+      "coloncopen": "該当箇所一覧のウインドウを開く",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {
