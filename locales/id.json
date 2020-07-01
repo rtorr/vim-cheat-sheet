@@ -243,7 +243,8 @@
       "colonvimgrep": "pencarian pola di beberapa file",
       "coloncn": "lompat ke temuan selanjutnya",
       "coloncp": "lompat ke temuan sebelumnya",
-      "coloncopen": "membuka windows baru yang menampilkan hasil temuan"
+      "coloncopen": "membuka windows baru yang menampilkan hasil temuan",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

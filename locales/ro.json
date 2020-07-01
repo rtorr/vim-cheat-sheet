@@ -244,7 +244,8 @@
       "colonvimgrep": "cauta dupa sablon in fisiere multiple",
       "coloncn": "sari la urmatoarea potrivire",
       "coloncp": "sari la potrivirea anterioara",
-      "coloncopen": "deschide o fereastra care contine lista de potriviri"
+      "coloncopen": "deschide o fereastra care contine lista de potriviri",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

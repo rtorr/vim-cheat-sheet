@@ -243,7 +243,8 @@
       "colonvimgrep": "여러 파일에서 패턴 찾기",
       "coloncn": "다음 일치 항목으로 점프",
       "coloncp": "이전 일치 항목으로 점프",
-      "coloncopen": "일치 목록을 새 창으로 열기"
+      "coloncopen": "일치 목록을 새 창으로 열기",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

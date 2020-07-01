@@ -244,7 +244,8 @@
       "colonvimgrep": "zoek voor patroon in meerdere bestanden",
       "coloncn": "ga naar het volgende zoekresultaat",
       "coloncp": "ga naar het vorige zoekresultaat",
-      "coloncopen": "open een scherm met de lijst van alle zoekresultaten"
+      "coloncopen": "open een scherm met de lijst van alle zoekresultaten",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

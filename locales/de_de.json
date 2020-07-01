@@ -242,7 +242,8 @@
       "colonvimgrep": "Muster suchen in mehreren Dateien",
       "coloncn": "Springe zur nächsten Übereinstimmung",
       "coloncp": "Springe zur vorherigen Übereinstimmung",
-      "coloncopen": "Öffne ein Fenster mit der Liste von Übereinstimmungen"
+      "coloncopen": "Öffne ein Fenster mit der Liste von Übereinstimmungen",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

@@ -243,7 +243,8 @@
       "colonvimgrep": "procurar por padrão em múltiplos ficheiros",
       "coloncn": "ir para a próxima ocorrência",
       "coloncp": "ir para a ocorrência anterior",
-      "coloncopen": "abrir uma janela com a lista de ocorrências encontradas"
+      "coloncopen": "abrir uma janela com a lista de ocorrências encontradas",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {

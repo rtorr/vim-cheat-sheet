@@ -243,7 +243,8 @@
       "colonvimgrep": "buscar un patrón en varios archivos",
       "coloncn": "ir al resultado siguiente",
       "coloncp": "ir al resultado previo",
-      "coloncopen": "abrir ventana con una lista de los resultados"
+      "coloncopen": "abrir ventana con una lista de los resultados",
+      "coloncclose": "close the quickfix window"
     }
   },
   "workingWithMultipleFiles": {
