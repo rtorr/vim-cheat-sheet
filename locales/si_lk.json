@@ -63,6 +63,7 @@
       "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
       "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
       "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
+      "ctrlPlusrx": "insert the contents of register x",
       "Esc": "ඇතුල් කිරීමේ ප්‍රකාරයෙන් (Insert Mode) පිටවන්න"
     }
   },

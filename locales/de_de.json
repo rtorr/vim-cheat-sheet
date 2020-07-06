@@ -63,6 +63,7 @@
       "ctrlPlusd": "Zeile um eine Einheit ausrücken (nach links verschieben) im Eingabe-Modus",
       "ctrlPlusn": "Nächstes passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
       "ctrlPlusp": "Vorheriges passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
+      "ctrlPlusrx": "Füge den Inhalt von Register x ein",
       "Esc": "Eingabe-Modus verlassen"
     }
   },
@@ -125,7 +126,7 @@
     "title": "Register",
     "commands": {
       "show": "Zeige den Inhalt der Register",
-      "pasteRegisterX": "Füge den Inhalt vom Register x ein",
+      "pasteRegisterX": "Füge den Inhalt von Register x ein",
       "yankIntoRegisterX": "Kopiere in das Register x",
       "quotePlusy": "Kopiere in die System Zwischenablage",
       "quotePlusp": "Füge den Inhalt von der System Zwischenablage ein"
@@ -257,19 +258,19 @@
       "coloncn": "Springe zur nächsten Übereinstimmung",
       "coloncp": "Springe zur vorherigen Übereinstimmung",
       "coloncopen": "Öffne ein Fenster mit der Liste von Übereinstimmungen",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "Schliesse das Fenster mit der Liste von Übereinstimmungen"
     }
   },
   "workingWithMultipleFiles": {
     "title": "Arbeit mit mehreren Dateien",
     "commands": {
       "colone": "Datei im neuen Buffer bearbeiten",
-      "colonbnext": "zum nächsten Buffer springen",
-      "colonbprev": "zum vorherigen Buffer springen",
+      "colonbnext": "Springe zum nächsten Buffer",
+      "colonbprev": "Springe zum vorherigen Buffer",
       "colonls": "Alle offenen Buffer auflisten",
       "colonbd": "Buffer löschen (Datei schließen)",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "Springe zum Buffer mit Index #",
+      "colonbfile": "Springe zum Buffer einer Datei",
       "colonsp": "Datei im neuen Buffer bearbeiten und Fenster horizontal teilen",
       "colonvsp": "Datei im neuen Buffer bearbeiten und Fenster vertikal teilen",
       "colonvertba": "Alle Buffer als vertikale Fenster bearbeiten",
