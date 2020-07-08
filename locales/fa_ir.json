@@ -131,7 +131,21 @@
       "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "محتوای رجیستر ها در فایل ~/.viminfo ذخیره می شوند و بعد از ریستارت برنامه به آنها دسترسی دارید.",
-    "tip2": "رجیستر شماره 0 همیشه مقدار آخرین کپی را شامل می باشد"
+    "tip2": {
+      "title": "Special registers:",
+      "0": "last yank",
+      "quote": "unnamed register, last delete or yank",
+      "percent": "current file name",
+      "hashtag": "alternate file name",
+      "asterisk": "clipboard contents (X11 primary)",
+      "plus": "clipboard contents (X11 clipboard)",
+      "slash": "last search pattern",
+      "colon": "last command-line",
+      "dot": "last inserted text",
+      "minus": "last small (less than a line) delete",
+      "equal": "expression register",
+      "underscore": "black hole register"
+    }
   },
   "marks": {
     "title": "علامت ها",

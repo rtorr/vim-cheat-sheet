@@ -131,7 +131,21 @@
       "quotePlusp": "paste from the system clipboard register"
     },
     "tip1": "暫存區儲存在 ~/.viminfo，且會在 Vim 下次啟動時重新載入。",
-    "tip2": "暫存區 0 一律會保存上一次複製的內容。"
+    "tip2": {
+      "title": "Special registers:",
+      "0": "last yank",
+      "quote": "unnamed register, last delete or yank",
+      "percent": "current file name",
+      "hashtag": "alternate file name",
+      "asterisk": "clipboard contents (X11 primary)",
+      "plus": "clipboard contents (X11 clipboard)",
+      "slash": "last search pattern",
+      "colon": "last command-line",
+      "dot": "last inserted text",
+      "minus": "last small (less than a line) delete",
+      "equal": "expression register",
+      "underscore": "black hole register"
+    }
   },
   "marks": {
     "title": "標記",

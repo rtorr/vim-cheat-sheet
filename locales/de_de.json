@@ -131,7 +131,21 @@
       "quotePlusp": "Füge den Inhalt von der System Zwischenablage ein"
     },
     "tip1": "Register werden in ~/.viminfo gespeichert und beim nächsten Start von vim wieder geladen",
-    "tip2": "Register 0 enthält immer den Wert, der als letztes kopiert wurde"
+    "tip2": {
+      "title": "Spezial Register:",
+      "0": "Zuletzt kopiert",
+      "quote": "Register ohne Namen, zuletzt gelöscht oder kopiert",
+      "percent": "Aktueller Dateinamen",
+      "hashtag": "Alternativer Dateinamen",
+      "asterisk": "Inhalt der Zwischenablage (X11 primary)",
+      "plus": "Inhalt der Zwischenablage (X11 clipboard)",
+      "slash": "Letztes Such-Muster",
+      "colon": "Letzte Kommando-Zeile",
+      "dot": "Zuletzt eingefügter (geschriebener) Text",
+      "minus": "Zuletzt gelöscht (weniger als eine Zeile)",
+      "equal": "Ausdruck Register",
+      "underscore": "Schwarzes Loch Register"
+    }
   },
   "marks": {
     "title": "Markierungen und Positionen",
