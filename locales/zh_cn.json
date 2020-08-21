@@ -281,8 +281,8 @@
       "ctrlPluswq": "关闭窗口",
       "ctrlPluswx": "exchange current window with next one",
       "ctrlPlusw=": "make all windows equal height & width",
-      "ctrlPluswh": "切换到右侧窗口",
-      "ctrlPluswl": "切换到左侧窗口",
+      "ctrlPluswh": "切换到左侧窗口",
+      "ctrlPluswl": "切换到右侧窗口",
       "ctrlPluswj": "切换到下侧窗口",
       "ctrlPluswk": "切换到上侧窗口"
     }
