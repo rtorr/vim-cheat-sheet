@@ -104,10 +104,10 @@
       "at": "a block with <> tags",
       "ib": "選取 () 內的區塊",
       "iB": "選取 {} 內的區塊",
-      "it": "inner block with <> tags",
+      "it": "選取 <> tags 內的區塊",
       "Esc": "退出標示模式"
     },
-    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+    "tip1": "除了 <kbd>b</kbd> 或 <kbd>B</kbd> 我們也能使用 <kbd>(</kbd> 或 <kbd>{</kbd> 。"
   },
   "visualCommands": {
     "title": "標示模式命令",
@@ -117,8 +117,8 @@
       "y": "複製",
       "d": "剪下",
       "tilde": "切換大小寫",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "u": "轉換成小寫",
+      "U": "轉換成大寫"
     }
   },
   "registers": {
@@ -127,14 +127,14 @@
       "show": "顯示暫存區內容",
       "pasteRegisterX": "貼上暫存區 x 的內容",
       "yankIntoRegisterX": "複製到暫存區 x",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "quotePlusy": "複製到剪貼簿暫存區",
+      "quotePlusp": "貼上剪貼簿暫存區的內容"
     },
     "tip1": "暫存區儲存在 ~/.viminfo，且會在 Vim 下次啟動時重新載入。",
     "tip2": {
-      "title": "Special registers:",
-      "0": "last yank",
-      "quote": "unnamed register, last delete or yank",
+      "title": "特殊暫存區",
+      "0": "最近複製暫存區",
+      "quote": "未命名暫存區, 保存上次的刪除或複製",
       "percent": "current file name",
       "hashtag": "alternate file name",
       "asterisk": "clipboard contents (X11 primary)",
@@ -144,7 +144,7 @@
       "dot": "last inserted text",
       "minus": "last small (less than a line) delete",
       "equal": "expression register",
-      "underscore": "black hole register"
+      "underscore": "黑洞暫存區"
     }
   },
   "marks": {
@@ -211,19 +211,19 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
-    "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line"
-    }
+      "title": "文字縮排",
+      "commands": {
+          "greaterThanGreaterThan": "向右縮排一個shiftwidth寬度",
+          "lessThanLessThan": "向左縮排一個shiftwidth寬度",
+          "greaterThanPercent": "向右縮排 () 或 {} 內的區塊 (游標需置於括號上)",
+          "greaterThanib": "向右縮排 () 內的區塊",
+          "greaterThanat": "向右縮排 <> tags 內的區塊",
+          "3==": "自動縮排下3行",
+          "=Percent": "自動縮排 () 或 {} 內的區塊 (游標需置於括號上)",
+          "=iB": "自動縮排 {} 內的區塊",
+          "gg=G": "自動縮排整個緩衝區",
+          "closeSquarep": "貼上並自動縮排至該行"
+      }
   },
   "exiting": {
     "title": "退出",
