@@ -15,8 +15,8 @@
       "E": "向右跳至字尾 (字中可含標點)",
       "b": "向左跳至字尾",
       "B": "向左跳至字尾 (字中可含標點)",
-      "ge": "jump backwards to the end of a word",
-      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "ge": "向左跳至前一字的字尾",
+      "gE": "向左跳至前一字的字尾(字中可含標點)",
       "H": "跳至視窗頂端",
       "M": "跳至視窗中間",
       "L": "跳至視窗底端",
@@ -185,9 +185,9 @@
       "saveAsFile": "另存新檔為檔案名稱",
       "closePane": "關閉目前的視窗",
       "K": "開啟游標所在單字的 man 頁面",
-      "colonTerminal": "open a terminal window"
+      "colonTerminal": "開啟一個命令列視窗"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "命令列中執行 <kbd>vimtutor</kbd> 來學習Vim指令"
   },
   "cutAndPaste": {
     "title": "剪下、複製、貼上",
