@@ -212,18 +212,18 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "文字缩进",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line"
+      "greaterThanGreaterThan": "将当前行向右缩进，宽度由 shiftwidth 控制",
+      "lessThanLessThan": "将当前行向左缩进，宽度由 shiftwidth 控制",
+      "greaterThanPercent": "向右缩进 () 或 {} 内的区域 (光标需置于括号上)",
+      "greaterThanib": "向右缩进 () 内的区域",
+      "greaterThanat": "向右缩进 <> 标签内的区域",
+      "3==": "自动缩进 3 行",
+      "=Percent": "自动缩进 () 或 {} 内的区域 (光标需置于括号上)",
+      "=iB": "自动缩进 {} 内的区域 (光标需置于括号上)",
+      "gg=G": "自动缩进整个缓冲区",
+      "closeSquarep": "粘贴并调整缩进至当前行"
     }
   },
   "exiting": {
