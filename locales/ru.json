@@ -133,8 +133,8 @@
     },
     "tip1": "Содержимое регистров сохраняется в ~/.viminfo, и будет восстановлено при следующем запуске vim.",
     "tip2": {
-      "title": "Special registers:",
       "0": "last yank",
+      "title": "Special registers:",
       "quote": "unnamed register, last delete or yank",
       "percent": "current file name",
       "hashtag": "alternate file name",

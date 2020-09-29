@@ -133,8 +133,8 @@
     },
     "tip1": "Register werden in ~/.viminfo gespeichert und beim nächsten Start von vim wieder geladen",
     "tip2": {
-      "title": "Spezial Register:",
       "0": "Zuletzt kopiert",
+      "title": "Spezial Register:",
       "quote": "Register ohne Namen, zuletzt gelöscht oder kopiert",
       "percent": "Aktueller Dateinamen",
       "hashtag": "Alternativer Dateinamen",

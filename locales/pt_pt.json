@@ -133,8 +133,8 @@
     },
     "tip1": "Os registos são guardados em ~/.viminfo e serão carregados novamente quando reiniciar o vim",
     "tip2": {
-      "title": "Special registers:",
       "0": "last yank",
+      "title": "Special registers:",
       "quote": "unnamed register, last delete or yank",
       "percent": "current file name",
       "hashtag": "alternate file name",

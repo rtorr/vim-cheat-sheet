@@ -134,8 +134,8 @@
     },
     "tip1": "Registrele sunt salvate in ~/.viminfo, si vor fi incarcate din nou la urmatorul restart",
     "tip2": {
-      "title": "Special registers:",
       "0": "last yank",
+      "title": "Special registers:",
       "quote": "unnamed register, last delete or yank",
       "percent": "current file name",
       "hashtag": "alternate file name",

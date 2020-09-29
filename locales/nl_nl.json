@@ -134,8 +134,8 @@
     },
     "tip1": "Registers worden opgeslagen in ~/.viminfo en worden opnieuw geladen na het herstarten van vim.",
     "tip2": {
-      "title": "Special registers:",
       "0": "last yank",
+      "title": "Special registers:",
       "quote": "unnamed register, last delete or yank",
       "percent": "current file name",
       "hashtag": "alternate file name",

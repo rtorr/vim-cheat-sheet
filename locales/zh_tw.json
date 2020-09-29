@@ -133,8 +133,8 @@
     },
     "tip1": "暫存區儲存在 ~/.viminfo，且會在 Vim 下次啟動時重新載入。",
     "tip2": {
-      "title": "特殊暫存區",
       "0": "最近複製暫存區",
+      "title": "特殊暫存區",
       "quote": "未命名暫存區, 保存上次的刪除或複製",
       "percent": "current file name",
       "hashtag": "alternate file name",
@@ -212,19 +212,19 @@
     }
   },
   "indentText": {
-      "title": "文字縮排",
-      "commands": {
-          "greaterThanGreaterThan": "向右縮排一個shiftwidth寬度",
-          "lessThanLessThan": "向左縮排一個shiftwidth寬度",
-          "greaterThanPercent": "向右縮排 () 或 {} 內的區塊 (游標需置於括號上)",
-          "greaterThanib": "向右縮排 () 內的區塊",
-          "greaterThanat": "向右縮排 <> tags 內的區塊",
-          "3==": "自動縮排下3行",
-          "=Percent": "自動縮排 () 或 {} 內的區塊 (游標需置於括號上)",
-          "=iB": "自動縮排 {} 內的區塊",
-          "gg=G": "自動縮排整個緩衝區",
-          "closeSquarep": "貼上並自動縮排至該行"
-      }
+    "title": "文字縮排",
+    "commands": {
+      "greaterThanGreaterThan": "向右縮排一個shiftwidth寬度",
+      "lessThanLessThan": "向左縮排一個shiftwidth寬度",
+      "greaterThanPercent": "向右縮排 () 或 {} 內的區塊 (游標需置於括號上)",
+      "greaterThanib": "向右縮排 () 內的區塊",
+      "greaterThanat": "向右縮排 <> tags 內的區塊",
+      "3==": "自動縮排下3行",
+      "=Percent": "自動縮排 () 或 {} 內的區塊 (游標需置於括號上)",
+      "=iB": "自動縮排 {} 內的區塊",
+      "gg=G": "自動縮排整個緩衝區",
+      "closeSquarep": "貼上並自動縮排至該行"
+    }
   },
   "exiting": {
     "title": "退出",

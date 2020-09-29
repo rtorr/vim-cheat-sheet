@@ -133,8 +133,8 @@
     },
     "tip1": "I registri sono salvati in ~/.viminfo e saranno ricaricati al prossimo avvio di vim.",
     "tip2": {
-      "title": "Special registers:",
       "0": "last yank",
+      "title": "Special registers:",
       "quote": "unnamed register, last delete or yank",
       "percent": "current file name",
       "hashtag": "alternate file name",

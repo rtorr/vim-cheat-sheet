@@ -133,8 +133,8 @@
     },
     "tip1": "레지스터들은 ./viminfo에 저장되며 다음번 vim 재시작 때 다시 읽어들임.",
     "tip2": {
-      "title": "Special registers:",
       "0": "last yank",
+      "title": "Special registers:",
       "quote": "unnamed register, last delete or yank",
       "percent": "current file name",
       "hashtag": "alternate file name",
