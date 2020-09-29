@@ -63,6 +63,7 @@
       "ctrlPlusd": "挿入モード中にその行を（左に）字上げ",
       "ctrlPlusn": "挿入モード中にカーソルの手前側へ次の候補を挿入（自動補完）",
       "ctrlPlusp": "挿入モード中にカーソルの後ろ側へ前の候補を挿入（自動補完）",
+      "ctrlPlusrx": "insert the contents of register x",
       "Esc": "挿入モードを終了"
     }
   },
