@@ -56,8 +56,8 @@
       "o": "在当前行之下另起一行, 开始插入字符",
       "O": "在当前行之上另起一行, 开始插入字符",
       "ea": "从当前单词末尾开始插入",
-      "ctrlPlush": "delete the character before the cursor during insert mode",
-      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlush": "删除光标前的字符",
+      "ctrlPlusw": "删除光标前的单词",
       "ctrlPlusj": "begin new line during insert mode",
       "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
       "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
@@ -282,8 +282,8 @@
       "ctrlPluswq": "关闭窗口",
       "ctrlPluswx": "exchange current window with next one",
       "ctrlPlusw=": "make all windows equal height & width",
-      "ctrlPluswh": "切换到右侧窗口",
-      "ctrlPluswl": "切换到左侧窗口",
+      "ctrlPluswh": "切换到左侧窗口",
+      "ctrlPluswl": "切换到右侧窗口",
       "ctrlPluswj": "切换到下侧窗口",
       "ctrlPluswk": "切换到上侧窗口"
     }
