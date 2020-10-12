@@ -213,18 +213,18 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Sangría del texto",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line"
+      "greaterThanGreaterThan": "sangría (mover a la derecha) línea uno ancho de turno",
+      "lessThanLessThan": "desangrar (mover a la izquierda) línea uno ancho de turno",
+      "greaterThanPercent": "sangrar un bloque con () o {} (cursor sobre llave)",
+      "greaterThanib": "sangrar el bloque interior con ()",
+      "greaterThanat": "sangrar un bloque con etiquetas <>",
+      "3==": "re-sangrar 3 líneas",
+      "=Percent": "volver a sangrar un bloque con () o {} (cursor sobre llave)",
+      "=iB": "volver a sangrar el bloque interior con {}",
+      "gg=G": "volver a sangrar todo el búfer",
+      "closeSquarep": "pegar y ajustar la sangría a la línea actual"
     }
   },
   "exiting": {
@@ -236,7 +236,7 @@
       "colonx": "guardar archivo y salir",
       "colonq": "salir (no funciona si hay cambios sin guardar)",
       "colonqbang": "salir descartando los cambios no guardados",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonwqa": "escribir (guardar) y salir en todas las pestañas"
     }
   },
   "searchAndReplace": {
@@ -259,7 +259,7 @@
       "coloncn": "ir al resultado siguiente",
       "coloncp": "ir al resultado previo",
       "coloncopen": "abrir ventana con una lista de los resultados",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "cerrar la ventana de corrección rápida"
     }
   },
   "workingWithMultipleFiles": {
@@ -270,18 +270,18 @@
       "colonbprev": "ir al búfer anterior",
       "colonls": "mostrar todos los búfers abiertos",
       "colonbd": "eliminar búfer (cerrar archivo)",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "ir a un búfer por #",
+      "colonbfile": "ir a un búfer por archivo",
       "colonsp": "abrir archivo en un nuevo búfer y dividir la ventana",
       "colonvsp": "abrir archivo en un nuevo búfer y dividir la ventana verticalmente",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvertba": "editar todos los búferes como ventanas verticales",
+      "colontabba": "editar todos los búferes como pestañas",
       "ctrlPlusws": "dividir ventana",
       "ctrlPluswv": "dividir ventana verticalmente",
       "ctrlPlusww": "cambiar de ventana",
       "ctrlPluswq": "cerrar ventana",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswx": "intercambiar la ventana actual con la siguiente",
+      "ctrlPlusw=": "hacer que todas las ventanas tengan la misma altura y ancho",
       "ctrlPluswh": "mover el cursor a la ventana izquierda (división vertical)",
       "ctrlPluswl": "mover el cursor a la ventana derecha (división vertical)",
       "ctrlPluswj": "mover el cursor a la ventana de abajo (división horizontal)",
@@ -303,23 +303,23 @@
     }
   },
   "diff": {
-    "title": "Diff",
+    "title": "Diferencia",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "definir manualmente un pliegue hasta el movimiento",
+      "zd": "eliminar pliegue debajo del cursor",
+      "za": "alternar pliegue debajo del cursor",
+      "zo": "pliegue abierto debajo del cursor",
+      "zc": "cerrar pliegue debajo del cursor",
+      "zr": "reducir (abrir) todos los pliegues en un nivel",
+      "zm": "doblar más (cerrar) todos los dobleces en un nivel",
+      "zi": "alternar la funcionalidad de plegado",
+      "closeSquarec": "saltar al inicio del próximo cambio",
+      "openSquarec": "saltar al inicio del cambio anterior",
+      "do": "obtener (obtener) diferencia (de otro búfer)",
+      "dp": "poner diferencia (a otro búfer)",
+      "colonDiffthis": "hacer que la ventana actual forme parte de diff",
+      "colonDiffupdate": "actualizar diferencias",
+      "colonDiffoff": "desactivar el modo diferencial para la ventana actual"
     },
     "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
     "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
@@ -330,7 +330,7 @@
     "movement": "movement"
   },
   "languages": {
-    "title": "Languages"
+    "title": "Idiomas"
   },
   "footer": "El código fuente está disponible en",
   "layout": "page",
