@@ -321,7 +321,7 @@
       "colonDiffupdate": "actualizar diferencias",
       "colonDiffoff": "desactivar el modo diferencial para la ventana actual"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip1": "The comandos for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
     "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
   },
   "words": {
