@@ -1,0 +1,335 @@
+{
+  "title": "မြန်မာ",
+  "lang": "mm",
+  "lang_tag": "mm",
+  "cursorMovement": {
+    "title": "Cursor ရွှေ့ခြင်း",
+    "commands": {
+      "h": "ဘယ်ဘက်သို့ cursor တစ်ချက်ရွှေ့သည်",
+      "j": "အောက်သို့ cursor တစ်ချက်ရွှေ့သည်",
+      "k": "အပေါ်သို့ cursor တစ်ချက်ရွှေ့သည်",
+      "l": "ညာဘက်သို့ cursor တစ်ချက်ရွှေ့သည်",
+      "w": "နောက်စာလုံးတစ်လုံး၏ ထိပ်ဆုံးအက္ခရာသို့ ရွှေ့သည် (punctuation များကို စာလုံးတစ်လုံးအနေနှင့် ထည့်တွက်သည်)",
+      "W": "နောက်စာလုံးတစ်လုံး၏ ထိပ်ဆုံးအက္ခရာသို့ ရွှေ့သည် (စာလုံး + punctuations ကို စာလုံးတစ်လုံးအနေနှင့် ထည့်တွက်သည်)",
+      "e": "နောက်စာလုံးတစ်လုံး၏ နောက်ဆုံးအက္ခရာသို့ ရွှေ့သည် (punctuation များကို စာလုံးတစ်လုံးအနေနှင့် ထည့်တွက်သည်)",
+      "E": "နောက်စာလုံးတစ်လုံး၏ နောက်ဆုံးအက္ခရာသို့ ရွှေ့သည် (စာလုံး + punctuations ကို စာလုံးတစ်လုံးအနေနှင့် ထည့်တွက်သည်)",
+      "b": "ရှေ့စာလုံးတစ်လုံး၏ ထိပ်ဆုံးအက္ခရာသို့ ရွှေ့သည် (punctuation များကို စာလုံးတစ်လုံးအနေနှင့် ထည့်တွက်သည်)",
+      "B": "ရှေ့စာလုံးတစ်လုံး၏ ထိပ်ဆုံးအက္ခရာသို့ ရွှေ့သည် (စာလုံး + punctuations ကို စာလုံးတစ်လုံးအနေနှင့် ထည့်တွက်သည်)",
+      "ge": "ရှေ့စာလုံးတစ်လုံး၏ နောက်ဆုံးအက္ခရာသို့ ရွှေ့သည် (punctuation များကို စာလုံးတစ်လုံးအနေနှင့် ထည့်တွက်သည်)",
+      "gE": "ရှေ့စာလုံးတစ်လုံး၏ နောက်ဆုံးအက္ခရာသို့ ရွှေ့သည် (စာလုံး + punctuations ကို စာလုံးတစ်လုံးအနေနှင့် ထည့်တွက်သည်)",
+      "H": "screen ၏ထိပ်ဆုံးသို့ ရွှေ့သည်",
+      "M": "screen ၏အလယ်သို့ ရွှေ့သည်",
+      "L": "screen ၏အောက်ဆုံးသို့ ရွှေ့သည်",
+      "zero": "စာကြောင်းတစ်ကြောင်း၏ အရှေ့ဆုံး သို့ရွှေ့သည်",
+      "caret": "စာကြောင်းတစ်ကြောင်း၏ ပထမဆုံး non-blank character သို့ရွှေ့သည်",
+      "dollar": "စာကြောင်းတစ်ကြောင်း၏ အနောက်ဆုံး သို့ရွှေ့သည်",
+      "g_": "စာကြောင်းတစ်ကြောင်း၏ နောက်ဆုံး non-blank character သို့ရွှေ့သည်",
+      "gg": "document တစ်ခု၏ ထိပ်ဆုံးစာကြောင်း သို့ရွှေ့သည်",
+      "G": "document တစ်ခု၏ နောက်ဆုံးစာကြောင်း သို့ရွှေ့သည်",
+      "fiveG": "line နံပါတ် ၅ သို့ရွှေ့သည်(၅ အစား ကြိုက်ရာဂဏန်း အသုံးပြုနိုင်သည်)",
+      "fx": "cursor ၏အနောက်ပိုင်းတွင် character x ကိုရှာပြီး x မရောက်ခင် ရှေ့အက္ခရာသို့ cursor ရွှေ့သည် (x အစား ရှာလိုရာစကားလုံး ထည့်နိုင်သည်)",
+      "tx": "cursor  ၏အနောက်ပိုင်းတွင် character x ကိုရှာပြီး x ၏နောက်အက္ခရာသို့ cursor ရွှေ့သည် (x အစား ရှာလိုရာစကားလုံး ထည့်နိုင်သည်)",
+      "Fx": "cursor ၏အရှေ့ပိုင်းတွင် character x ကိုရှာပြီး x မရောက်ခင် ရှေ့အက္ခရာသို့ cursor ရွှေ့သည် (x အစား ရှာလိုရာစကားလုံး ထည့်နိုင်သည်)",
+      "Tx": "cursor  ၏အရှေ့ပိုင်းတွင် character x ကိုရှာပြီး x ၏နောက်အက္ခရာသို့ cursor ရွှေ့သည် (x အစား ရှာလိုရာစကားလုံး ထည့်နိုင်သည်)",
+      "semicolon": "f, t, F or T movement ကိုပြန်သုံးသည်",
+      "comma": "f, t, F or T movement ကိုပြန်သုံးသည် (backwards)",
+      "closeCurlyBrace": "နောက် paragraph သို့ cursor ကိုရွှေ့သည် (or function/block, when editing code)",
+      "openCurlyBrace": "ရှေ့ paragraph သို့ cursor ကိုရွှေ့သည် (or function/block, when editing code)",
+      "centerCursor": "cursor ကို screen ၏အလယ်သို့ ရွှေ့သည်",
+      "CtrlPluse": "cursor မရွှေ့ဘဲ screen ကိုအောက်တစ်ကြောင်း ဆင်းသည်",
+      "CtrlPlusy": "cursor မရွှေ့ဘဲ screen ကိုအပေါ်တစ်ကြောင်း တက်သည်",
+      "CtrlPlusb": "screen တစ်ခုစာ အပေါ်တက်သည်",
+      "CtrlPlusf": "screen တစ်ခုစာ အောက်ဆင်းသည်",
+      "CtrlPlusu": "screen တစ်ဝက်စာ အပေါ်တက်သည်",
+      "CtrlPlusd": "screen တစ်ဝက်စာ အောက်ဆင်းသည်",
+      "percent": "သက်ဆိုင်ရာ character သို့ cursor ရွှေ့သည် (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
+    },
+    "tip": "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
+  },
+  "insertMode": {
+    "title": "Insert mode - စာရိုက်ခြင်း",
+    "commands": {
+      "i": "cursor ၏ ရှေ့တစ်နေရာတွင် insert mode ပြောင်းသည်",
+      "I": "လက်ရှိစာကြောင်း၏ ရှေ့ဆုံးတွင် insert mode ပြောင်းသည်",
+      "a": "cursor ၏နောက်အက္ခရာတွင် insert mode ပြောင်းသည်",
+      "A": "လက်ရှိစာကြောင်း၏ နောက်ဆုံးတွင် insert mode ပြောင်းသည်",
+      "o": "လက်ရှိစာကြောင်း၏ အောက်တစ်ကြောင်းသို့ ဆင်း၍ insert mode ပြောင်းသည်",
+      "O": "လက်ရှိစာကြောင်း၏ အပေါ်တစ်ကြောင်းသို့ တက်၍ insert mode ပြောင်းသည်",
+      "ea": "စကားလုံးတစ်လုံး၏‌ နောက်အက္ခရာတွင် insert mode ပြောင်းသည်",
+      "ctrlPlush": "insert mode ပြောင်းထားချိန်တွင် cursor ၏ ရှေ့အက္ခရာတစ်လုံးကို ဖျက်သည်",
+      "ctrlPlusw": "insert mode ပြောင်းထားချိန်တွင် cursor ၏ ရှေ့စာလုံးတစ်လုံးကို ဖျက်သည်",
+      "ctrlPlusj": "insert mode ပြောင်းထားချိန်တွင် စာကြောင်းအသစ်ယူသည်",
+      "ctrlPlust": "insert mode ပြောင်းထားချိန်တွင် ညာဘက်သို့ Tab တစ်ခု ခုန်သည်",
+      "ctrlPlusd": "insert mode ပြောင်းထားချိန်တွင် ဘယ်ဘက်သို့ Tab တစ်ခု ဆုတ်သည်",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
+      "ctrlPlusrx": "register x မှ contents များကိုထည့်သည်",
+      "Esc": "insert mode မှထွက်သည်"
+    }
+  },
+  "editing": {
+    "title": "စာပြင်ခြင်း",
+    "commands": {
+      "r": "အက္ခရာတစ်လုံး အစားထိုးသည်",
+      "J": "စာတစ်ကြောင်းလုံးကို အပေါ်တစ်ကြောင်းသို့ တင်သည်",
+      "gJ": "စာတစ်ကြောင်းလုံးကို အောက်တစ်ကြောင်းသို့ ဆင်းသည်",
+      "gwip": "reflow paragraph",
+      "gTilde": "switch case up to motion",
+      "gu": "Lowercase ပြောင်းသည်",
+      "gU": "Uppercase ပြောင်းသည်",
+      "cc": "စာကြောင်းတစ်ကြောင်းလုံး ဖျက်၍ အသစ်ပြင်သည်",
+      "C": "စာကြောင်း၏ နောက်ဆုံးနေရာတွင် ပြင်သည်",
+      "cDollar": "စာကြောင်း၏ နောက်ဆုံးနေရာတွင် ပြင်သည်(C နှင့် လုပ်ဆောင်ပုံ တူညီသည်)",
+      "ciw": "စကားလုံး တစ်လုံးစာပြင်သည်",
+      "cw": "စကားလုံး၏ နောက်ဆုံးအက္ခရာ ၏အနောက်တွင် insert mode ပြောင်းသည်",
+      "s": "စကားလုံးတစ်လုံးစာ ဖျက်၍ အသစ်အစားထိုးသည်",
+      "S": "တစ်ကြောင်းလုံး ဖျက်၍ အသစ်ပြင်သည်(cc နှင့် လုပ်ဆောင်ပုံ တူညီသည်)",
+      "xp": "အက္ခရာ နှစ်ခုကို ရှေ့နောက်ပြောင်းသည်",
+      "u": "undo",
+      "U": "restore (undo) last changed line",
+      "CtrlPlusr": "redo",
+      "dot": "နောက်ဆုံးလုပ်ဆောင်ခဲ့သော command ကိုပြန်လည်လုပ်ဆောင်သည်"
+    }
+  },
+  "markingText": {
+    "title": "စာလုံးများကို select မှတ်ခြင်း (visual mode)",
+    "commands": {
+      "v": "visual mode သို့ပြောင်းသည်",
+      "V": "visual mode သို့ပြောင်းပြီး cursor ရှိရာ စာကြောင်းတစ်ကြောင်းလုံး select မှတ်သည်",
+      "o": "cursor အား select မှတ်ထားသော စာပိုဒ်၏ ထိပ်ဆုံး (သို့) နောက်ဆုံး သို့ရွှေ့သည်",
+      "CtrlPlusv": "visualသို့ရွှေ့သည်ပြောင်းသည်",
+      "O": "move to other corner of block",
+      "aw": "စာလုံးတစ်လုံးစာ select မှတ်သည်",
+      "ab": "() တစ်ခုလုံးကို select မှတ်သည်",
+      "aB": "{} တစ်ခုလုံးကို select မှတ်သည်",
+      "at": "<> တစ်ခုလုံးကို select မှတ်သည်",
+      "ib": "() အတွင်းရှိစာများကို select မှတ်သည်",
+      "iB": "{} အတွင်းရှိစာများကို select မှတ်သည်",
+      "it": "<> အတွင်းရှိစာများကို select မှတ်သည်",
+      "Esc": "visual mode မှထွက်သည်"
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+  },
+  "visualCommands": {
+    "title": "Visual commands",
+    "commands": {
+      "greaterThan": "visual mode တွင် မှတ်ထားသော စာများကို ညာဘက်သို့ ရွှေ့သည်",
+      "lessThan": "visual mode တွင် မှတ်ထားသော စာများကို ဘယ်ဘက်သို့ ရွှေ့သည်",
+      "y": "visual mode တွင် မှတ်ထားသော စာများကို copy လုပ်သည်",
+      "d": "visual mode တွင် မှတ်ထားသော စာများကို ဖျက်သည်",
+      "tilde": "switch case",
+      "u": "မှတ်ထားသော စာများကို lowercase ပြောင်းသည်",
+      "U": "မှတ်ထားသော စာများကို uppercase ပြောင်းသည်"
+    }
+  },
+  "registers": {
+    "title": "Registers",
+    "commands": {
+      "show": "registers content များကိုပြသည် ",
+      "pasteRegisterX": "register x မှ contents များကို paste သည်",
+      "yankIntoRegisterX": "register x ထဲသို့ yank (copy) လုပ်သည်",
+      "quotePlusy": "system clipboard register ထဲသို့ yank (copy) လုပ်သည်",
+      "quotePlusp": "system clipboard register မှ contents များကို paste သည်"
+    },
+    "tip1": "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.",
+    "tip2": {
+      "0": "last yank",
+      "title": "Special registers:",
+      "quote": "unnamed register, last delete or yank",
+      "percent": "current file name",
+      "hashtag": "alternate file name",
+      "asterisk": "clipboard contents (X11 primary)",
+      "plus": "clipboard contents (X11 clipboard)",
+      "slash": "last search pattern",
+      "colon": "last command-line",
+      "dot": "last inserted text",
+      "minus": "last small (less than a line) delete",
+      "equal": "expression register",
+      "underscore": "black hole register"
+    }
+  },
+  "marks": {
+    "title": "Marks and positions",
+    "commands": {
+      "list": "list of marks",
+      "currentPositionA": "အမှတ် A ၏ တည်နေရာကို သတ်မှတ်သည်",
+      "jumpPositionA": "cursor ကို အမှတ် A ရှိရာသို့ရွှေ့သည်",
+      "yankToMarkA": " လက်ရှိ cursor ရှိရာနေရာမှ အမှတ် A ရှိရာနေရာထိ yank(copy) လုပ်သည်",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "လက်ရှိဖိုင်၏ နောက်ဆုံးပြင်ခဲ့သော နေရာသို့ cursor အား ရွှေ့သည်",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+    },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macros",
+    "commands": {
+      "recordA": "macro a ကို record စလုပ်သည်",
+      "stopRecording": "record ရပ်သည်",
+      "runA": "macro a ကို run သည်",
+      "rerun": "နောက်ဆုံး run ခဲ့သော macro ကိုပြန် run သည်"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "ရှာလိုသော keyword အတွက် help ဖွင့်သည် ",
+      "saveAsFile": "ဖိုင်အသစ် save သည်",
+      "closePane": "လက်ရှိ window ကိုပိတ်သည်",
+      "K": "cursor ထောက်ထားသော စာလုံးသည် vim command ဖြစ်ခဲ့သော် ထိုစာလုံးနှင့်သက်ဆိုင်သော help file ကိုဖွင့်သည်",
+      "colonTerminal": "terminal window ဖွင့်သည်"
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+  },
+  "cutAndPaste": {
+    "title": "Cut and paste",
+    "commands": {
+      "yy": " စာကြောင်းတစ်ကြောင်းစာ yank (copy) သည် ",
+      "twoyy": "စာကြောင်းနှစ်ကြောင်းစာ yank (copy) သည်",
+      "yw": "cursor ရှိရာ စကားလုံးမှစ၍ စာလုံး၏ နောက်ဆုံး အက္ခရာအထိ yank (copy) လုပ်သည်",
+      "yiw": "cursor  ရှိရာ စကားလုံးတစ်ခုလုံးကို yank (copy) လုပ်သည်",
+      "yaw": "cursor  ရှိရာ စကားလုံးတစ်ခုလုံးကို yank (copy) လုပ်၍ cursor ကို ထိပ်ဆုံးအက္ခရာသို့ ရွှေ့သည်",
+      "yDollar": "cursor ရှိရာ စကားလုံးမှစ၍ စာကြောင်း၏ နောက်ဆုံး အက္ခရာအထိ yank (copy) လုပ်သည် ",
+      "p": "cursor ထောက်ထားသောအက္ခရာ၏ နောက်တစ်နေရာတွင် put (paste) လုပ်သည်",
+      "P": "cursor ထောက်ထားသောအက္ခရာ၏ ရှေ့တစ်နေရာတွင် put (paste) လုပ်သည်",
+      "dd": "စာကြောင်းတစ်ကြောင်းကို delete (cut) သည် ",
+      "twodd": "စာကြောင်းနှစ်ကြောင်းကို delete (cut) သည်",
+      "dw": "cursor ရှိရာ စကားလုံးမှစ၍ နောက်စာလုံး၏ ရှေ့ဆုံးအက္ခရာအထိ delete (cut) သည်",
+      "diw": "cursor  ရှိရာ စကားလုံးတစ်ခုလုံးကို delete (cut) လုပ်သည်",
+      "daw": "cursor  ရှိရာ စကားလုံးတစ်ခုလုံးကို delete (cut) လုပ်၍ cursor ကို ထိပ်ဆုံးအက္ခရာသို့ ရွှေ့သည်",
+      "D": "cursor ရှိရာ စကားလုံးမှစ၍ စာကြောင်း၏ နောက်ဆုံး အက္ခရာအထိ delete (cut) လုပ်သည်",
+      "dDollar": "cursor ရှိရာ စကားလုံးမှစ၍ စာကြောင်း၏ နောက်ဆုံး အက္ခရာအထိ delete (cut) လုပ်သည်",
+      "x": "အက္ခရာ တစ်လုံးစာ delete (cut) လုပ်သည်"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "စာကြောင်းကို ညာဘက်သို့ shiftwidth တစ်ခုစာ ရွှေ့သည်",
+      "lessThanLessThan": "စာကြောင်းကို ဘယ်ဘက်သို့ shiftwidth တစ်ခုစာ ရွှေ့သည်",
+      "greaterThanPercent": " cursor ထောက်ထားသော () (သို့) {} block တစ်ခုလုံးစာကို ညာဘက်သို့ shiftwidth တစ်ခုစာ ရွှေ့သည် ",
+      "greaterThanib": "cursor ထောက်ထားသော () အတွင်းရှိစာများကို ညာဘက်သို့ shiftwidth တစ်ခုစာ ရွှေ့သည်",
+      "greaterThanat": "cursor ထောက်ထားသော <> block တစ်ခုလုံးစာကို ညာဘက်သို့ shiftwidth တစ်ခုစာ ရွှေ့သည်",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
+    }
+  },
+  "exiting": {
+    "title": "VIM မှထွက်ခြင်း",
+    "commands": {
+      "colonw": "လက်ရှိဖိုင် ကို write (save) သည် (VIM မှမထွက်ပါ)",
+      "colonwsudo": "လက်ရှိဖိုင် ကို sudo (with admin privileges)  ဖြင့် write (save) သည်",
+      "colonwq": "လက်ရှိဖိုင် ကို write (save) ပြီး VIM မှထွက်သည်",
+      "colonx": "လက်ရှိဖိုင် ကို write (save) ပြီး VIM မှထွက်သည်",
+      "colonq": "VIM မှထွက်သည် (save မလုပ်လျှင် ထွက်၍မရပါ)",
+      "colonqbang": "save မလုပ်ဘဲ VIM မှထွက်သည်",
+      "colonwqa": "save လုပ်ပြီး tabs အကုန်ပိတ်သည်"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Search and replace",
+    "commands": {
+      "forwardSlashPattern": "ဖိုင်ထဲတွင် pattern ကိုရှာသည် (forward)",
+      "questionMarkPattern": "ဖိုင်ထဲတွင် pattern ကိုရှာသည် (backward)",
+      "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
+      "n": "ရှေ့ဘက်သို့ဆက်၍ တူညီသော ရှာဖွေမှုကို ထပ်မံပြုလုပ်သည်",
+      "N": "နောက်သို့ပြန်၍ တူညီသော ရှာဖွေမှုကို ထပ်မံပြုလုပ်သည်",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "ဖိုင်တစ်ခုလုံးတွင် ရှာလိုသောစကားလုံးအားလုံး ကိုရှာ၍ စကားလုံးအသစ်ဖြင့် အစားထိုးသည်( 'old' နေရာတွင် ရှာလိုသော စကားလုံးထည့်၍ 'new' နေရာတွင်အစားထိုးလိုသောစကားလုံးကိုထည့်ရမည်)",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "ဖိုင်တစ်ခုလုံးတွင် ရှာလိုသောစကားလုံးအားလုံး ကိုရှာ၍ စကားလုံးအသစ်ဖြင့် အစားထိုးသည်( အစားမထိုးခင် ရှာတွေ့ထားသောစာလုံးတစ်လုံးချင်းစီကို အစားထိုးမည် မထိုးမည် ကို confirm အရင်လုပ်သည်)",
+      "colonnoh": "ရှာတွေ့ထားသော စကားလုံးများကို highlight ပြန်ဖျောက်သည်"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Search in multiple files",
+    "commands": {
+      "colonvimgrep": "ရှာလိုသော pattern ကို ဖိုင်များတွင် ရှာသည်",
+      "coloncn": "jump to the next match",
+      "coloncp": "jump to the previous match",
+      "coloncopen": "ရှာတွေ့ထားသမျှ list ကို windows အသစ်ဖြင့်ကြည့်သည်",
+      "coloncclose": "quickfix window ပြန်ပိတ်သည်"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Working with multiple files",
+    "commands": {
+      "colone": "edit a file in a new buffer",
+      "colonbnext": "go to the next buffer",
+      "colonbprev": "go to the previous buffer",
+      "colonls": "list all open buffers",
+      "colonbd": "delete a buffer (close a file)",
+      "colonbnumber": "go to a buffer by index #",
+      "colonbfile": "go to a buffer by file",
+      "colonsp": "open a file in a new buffer and split window",
+      "colonvsp": "open a file in a new buffer and vertically split window",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
+      "ctrlPlusws": "split window",
+      "ctrlPluswv": "split window vertically",
+      "ctrlPlusww": "switch windows",
+      "ctrlPluswq": "quit a window",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswh": "move cursor to the left window (vertical split)",
+      "ctrlPluswl": "move cursor to the right window (vertical split)",
+      "ctrlPluswj": "move cursor to the window below (horizontal split)",
+      "ctrlPluswk": "move cursor to the window above (horizontal split)"
+    }
+  },
+  "tabs": {
+    "title": "Tabs",
+    "commands": {
+      "colonTabNew": "Tab အသစ်ယူ၍ ဖိုင်ဖွင့်သည်",
+      "ctrlPluswT": "move the current split window into its own tab",
+      "gt": "ညာဘက် tab သို့သွားသည်",
+      "gT": "ဘယ်ဘက် tab သို့သွားသည်",
+      "hashgt": "Tab number # သို့သွားသည်",
+      "colontabmove": "လက်ရှိ tab ကို #th position သိုရွှေ့သည် (tab number သည် သုညမှ စသည်)",
+      "colontabc": "လက်ရှိ tab ကိုပိတ်သည်",
+      "colontabo": "လက်ရှိ tab မှလွဲ၍ ကျန် tab အားလုံးကိုပိတ်သည်",
+      "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
+    }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "manually define a fold up to motion",
+      "zd": "delete fold under the cursor",
+      "za": "toggle fold under the cursor",
+      "zo": "open fold under the cursor",
+      "zc": "close fold under the cursor",
+      "zr": "reduce (open) all folds by one level",
+      "zm": "fold more (close) all folds by one level",
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
+    },
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
+  "languages": {
+    "title": "Languages"
+  },
+  "footer": "Checkout the source on"
+}
