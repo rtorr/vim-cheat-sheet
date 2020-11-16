@@ -36,7 +36,7 @@
       "closeCurlyBrace": "sonraki paragrafa atla (veya fonksiyon/blok, kod yazarken)",
       "openCurlyBrace": "önceki paragrafa atla (veya fonksiyon/blok, kod yazarken)",
       "centerCursor": "imleci ekranda ortala",
-      "CtrlPluse": "ekranı bir satır asagı kaydır (imleci hareket ettirmeden)",
+      "CtrlPluse": "ekranı bir satır aşağı kaydır (imleci hareket ettirmeden)",
       "CtrlPlusy": "ekranı bir satır yukarı kaydır (imleci hareket ettirmeden)",
       "CtrlPlusb": "tam ekran geri kaydır",
       "CtrlPlusf": "tam ekran ileri kaydır",
