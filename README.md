@@ -5,6 +5,9 @@ Yet another vim cheat sheet.
 
 [http://vim.rtorr.com/](http://vim.rtorr.com/)
 
+## Please consider sponsoring
+
+[:heart: Sponsor](https://github.com/sponsors/rtorr)
 
 ## Set up for development
 
