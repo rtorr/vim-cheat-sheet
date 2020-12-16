@@ -202,25 +202,25 @@ kbd {
   padding: 7px 7px;
 }
 
-.weekend-dev {
+.sponsor {
   width: 100%;
   background: rgb(27, 27, 27);
   color: #fff;
 }
 
-.weekend-dev p {
+.sponsor p {
   margin: 0;
   padding: 0;
 }
 
-.weekend-dev .container {
+.sponsor .container {
   background: transparent;
   padding: 20px;
 }
 
-.weekend-dev a,
-.weekend-dev a:hover,
-.weekend-dev a:visited {
+.sponsor a,
+.sponsor a:hover,
+.sponsor a:visited {
   color: #c300ff;
   font-weight: bold;
 }
