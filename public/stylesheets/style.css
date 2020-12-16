@@ -204,8 +204,8 @@ kbd {
 
 .sponsor {
   width: 100%;
-  background: rgb(27, 27, 27);
-  color: #fff;
+  background: rgb(249 243 212);
+  border-bottom: 1px solid #e0dab7;
 }
 
 .sponsor p {
@@ -221,8 +221,9 @@ kbd {
 .sponsor a,
 .sponsor a:hover,
 .sponsor a:visited {
-  color: #c300ff;
+  color: #166bb3;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 @media print {
