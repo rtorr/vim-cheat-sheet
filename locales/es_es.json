@@ -167,7 +167,7 @@
       "gsemicolon": "ir a la posición anterior en la lista de cambios",
       "ctrlPlusCloseSquare": "saltar a la etiqueta debajo del cursor"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip1": "Para saltar a una marca, puede usar una tilde (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
