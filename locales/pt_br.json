@@ -28,6 +28,7 @@
       "G": "ir para a última linha do documento",
       "fiveG": "ir para a linha 5",
       "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "pular para a próxima ocorrencia do caractere x",
       "tx": "pular para antes da próxima ocorrencia do caractere x",
       "Fx": "pular para a ocorrencia anterior do caractere x",

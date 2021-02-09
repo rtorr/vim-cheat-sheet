@@ -28,6 +28,7 @@
       "G": "verplaats cursor naar de laatste regel van het document",
       "fiveG": "ga naar regel 5",
       "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "ga naar het volgende voorkomen van karakter x",
       "tx": "ga naar voor het volgende voorkomen van karakter x",
       "Fx": "ga naar het vorige voorkomen van karakter x",

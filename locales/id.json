@@ -28,6 +28,7 @@
       "G": "pindah ke baris paling akhir dokumen",
       "fiveG": "pindah ke baris ke-5",
       "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "lompat tepat pada karakter x",
       "tx": "lompat tepat sebelum karakter x",
       "Fx": "jump to previous occurence of character x",

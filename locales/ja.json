@@ -28,6 +28,7 @@
       "G": "ドキュメントの末尾行に移動",
       "fiveG": "5行目に移動",
       "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "次にある文字「x」の手前に移動",
       "tx": "次にある文字「x」の 1 つ手前に移動",
       "Fx": "前にある文字「x」の手前に移動",

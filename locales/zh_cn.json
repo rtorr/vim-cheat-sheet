@@ -28,6 +28,7 @@
       "G": "移动到文件最后一行",
       "fiveG": "移动到第五行",
       "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "移动到字符 x 下次出现的位置",
       "tx": "移动到字符 x 下次出现的位置的前一个字符",
       "Fx": "移动到字符 x 上次出现的位置",

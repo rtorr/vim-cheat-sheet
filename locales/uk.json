@@ -28,6 +28,7 @@
       "G": "переміститись на останню строчку документа",
       "fiveG": "перемістити на п'яту строчку",
       "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "jump to next occurrence of character x",
       "tx": "jump to before next occurrence of character x",
       "Fx": "jump to previous occurence of character x",

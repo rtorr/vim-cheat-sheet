@@ -28,6 +28,7 @@
       "G": "переместиться на последнюю строку документа",
       "fiveG": "переместить на пятую строку",
       "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "переместиться к следующему вхождению символа x",
       "tx": "переместиться перед следующим вхождением символа x",
       "Fx": "jump to previous occurence of character x",
