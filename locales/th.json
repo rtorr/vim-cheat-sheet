@@ -27,6 +27,7 @@
       "gg": "ไปยังบรรทัดแรกของไฟล์",
       "G": "ไปยังบรรทัดสุดท้ายของไฟล์",
       "fiveG": "ไปยังบรรทัดที่ 5",
+      "gd": "move to local declaration",
       "fx": "jump to next occurrence of character x",
       "tx": "jump to before next occurrence of character x",
       "Fx": "jump to previous occurence of character x",

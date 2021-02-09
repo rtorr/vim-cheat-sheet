@@ -27,6 +27,7 @@
       "gg": "Springe zum Anfang des Dokuments",
       "G": "Springe zum Ende des Dokuments",
       "fiveG": "Springe zu Zeile 5",
+      "gd": "move to local declaration",
       "fx": "Springe zum nächsten 'x' auf der Linie",
       "tx": "Springe vor das nächste 'x' auf der Linie",
       "Fx": "Springe zum vorherigen 'x' auf der Linie",

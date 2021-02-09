@@ -27,6 +27,7 @@
       "gg": "skocz do pierwszego wiersza w pliku",
       "G": "skocz do ostatniego wiersza w pliku",
       "fiveG": "skocz do linii 5",
+      "gd": "move to local declaration",
       "fx": "przesuń kursor na pierwszy znaleziony znak 'x'",
       "tx": "przesuń kursor przed pierwszy znaleziony znak 'x'",
       "Fx": "jump to previous occurence of character x",

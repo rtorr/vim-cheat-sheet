@@ -27,6 +27,7 @@
       "gg": "dokümanın ilk satırına git",
       "G": "dokümanın son satırına git",
       "fiveG": "5. satıra git",
+      "gd": "move to local declaration",
       "fx": "sonraki x karakter konumuna atla",
       "tx": "sonraki x karakter konumunun yanına atla",
       "Fx": "önceki x karakter konumuna atla",

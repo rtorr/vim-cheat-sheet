@@ -27,6 +27,7 @@
       "gg": "aller à la première ligne du document",
       "G": "aller à la dernière ligne du document",
       "fiveG": "aller à la ligne 5",
+      "gd": "move to local declaration",
       "fx": "atteindre la prochaine occurence du caractère x",
       "tx": "atteindre le caractère précédent la prochaine occurence du caractère x",
       "Fx": "atteindre la précédente occurence du character x",

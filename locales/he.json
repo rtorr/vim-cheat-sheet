@@ -1,335 +1,336 @@
 {
-    "title": "עברית",
-    "lang": "he",
-    "lang_tag": "he",
-    "cursorMovement": {
-        "title": "הזזת הסמן",
-        "commands": {
-            "h": "הזזת הסמן לשמאל",
-            "j": "הזזת הסמן למטה",
-            "k": "הזזת הסמן למעלה",
-            "l": "הזזת הסמן לימין",
-            "w": "עבור לתחילת המילה הבאה",
-            "W": "עבור לתחילת המילה הבאה (מילים יכולות להכיל סימני פיסוק)",
-            "e": "עבור לסוף המילה הבאה",
-            "E": "עבור לסוף המילה הבאה (מילים יכולות להכיל סימני פיסוק)",
-            "b": "עבור לתחילת המילה הקודמת",
-            "B": "עבור לתחילת המילה הקודמת (מילים יכולות להכיל סימני פיסוק)",
-            "ge": "עבור לסוף המילה הקודמת",
-            "gE": "עבור לסוף המילה הקודמת (מילים יכולות להכיל סימני פיסוק",
-            "H": "עבור לתחילת המסך",
-            "M": "עבור לאמצע המסך",
-            "L": "עבור לסוף המסך",
-            "zero": "עבור לתחילת השורה",
-            "caret": "עבור לתו הלא ריק הראשון בשורה",
-            "dollar": "עבור לסוף השורה",
-            "g_": "עבור לתו הלא ריק האחרון בשורה",
-            "gg": "עבור לשורה הראשונה במסמך",
-            "G": "עבור לשורה האחרונה במסמך",
-            "fiveG": "עבור לשורה 5",
-            "fx": "x עבור למופע הבא של התו",
-            "tx": "x עבור ללפני המופע הבא של התו",
-            "Fx": "x עבור למופע הקודם של התו",
-            "Tx": "x עבור לאחרי המופע הקודם של התו",
-            "semicolon": "קדימה T או ,F ,t ,f חזור על",
-            "comma": "אחורה T או ,F ,t ,f חזור על",
-            "closeCurlyBrace": " עבור לפסקה (או פונקציה/בלוק כשכותבים קוד ) הבאה ",
-            "openCurlyBrace": " עבור לפסקה (או פונקציה/בלוק כשכותבים קוד ) הקודמת ",
-            "centerCursor": "ממרכז את מיקום הסמן במסך",
-            "CtrlPluse": "(ללא הזזת הסמן) מוריד את המסך שורה אחת",
-            "CtrlPlusy": "(ללא הזזת הסמן) מעלה את המסך שורה אחת",
-            "CtrlPlusb": "עבור מסך מלא אחורה",
-            "CtrlPlusf": "עבור מסך מלא קדימה",
-            "CtrlPlusu": "עבור אחורה חצי מסך",
-            "CtrlPlusd": "עבור קדימה חצי מסך",
-            "percent": "עבור לתו המתאים (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
-        },
-        "tip": "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
+  "title": "עברית",
+  "lang": "he",
+  "lang_tag": "he",
+  "cursorMovement": {
+    "title": "הזזת הסמן",
+    "commands": {
+      "h": "הזזת הסמן לשמאל",
+      "j": "הזזת הסמן למטה",
+      "k": "הזזת הסמן למעלה",
+      "l": "הזזת הסמן לימין",
+      "w": "עבור לתחילת המילה הבאה",
+      "W": "עבור לתחילת המילה הבאה (מילים יכולות להכיל סימני פיסוק)",
+      "e": "עבור לסוף המילה הבאה",
+      "E": "עבור לסוף המילה הבאה (מילים יכולות להכיל סימני פיסוק)",
+      "b": "עבור לתחילת המילה הקודמת",
+      "B": "עבור לתחילת המילה הקודמת (מילים יכולות להכיל סימני פיסוק)",
+      "ge": "עבור לסוף המילה הקודמת",
+      "gE": "עבור לסוף המילה הקודמת (מילים יכולות להכיל סימני פיסוק",
+      "H": "עבור לתחילת המסך",
+      "M": "עבור לאמצע המסך",
+      "L": "עבור לסוף המסך",
+      "zero": "עבור לתחילת השורה",
+      "caret": "עבור לתו הלא ריק הראשון בשורה",
+      "dollar": "עבור לסוף השורה",
+      "g_": "עבור לתו הלא ריק האחרון בשורה",
+      "gg": "עבור לשורה הראשונה במסמך",
+      "G": "עבור לשורה האחרונה במסמך",
+      "fiveG": "עבור לשורה 5",
+      "gd": "move to local declaration",
+      "fx": "x עבור למופע הבא של התו",
+      "tx": "x עבור ללפני המופע הבא של התו",
+      "Fx": "x עבור למופע הקודם של התו",
+      "Tx": "x עבור לאחרי המופע הקודם של התו",
+      "semicolon": "קדימה T או ,F ,t ,f חזור על",
+      "comma": "אחורה T או ,F ,t ,f חזור על",
+      "closeCurlyBrace": " עבור לפסקה (או פונקציה/בלוק כשכותבים קוד ) הבאה ",
+      "openCurlyBrace": " עבור לפסקה (או פונקציה/בלוק כשכותבים קוד ) הקודמת ",
+      "centerCursor": "ממרכז את מיקום הסמן במסך",
+      "CtrlPluse": "(ללא הזזת הסמן) מוריד את המסך שורה אחת",
+      "CtrlPlusy": "(ללא הזזת הסמן) מעלה את המסך שורה אחת",
+      "CtrlPlusb": "עבור מסך מלא אחורה",
+      "CtrlPlusf": "עבור מסך מלא קדימה",
+      "CtrlPlusu": "עבור אחורה חצי מסך",
+      "CtrlPlusd": "עבור קדימה חצי מסך",
+      "percent": "עבור לתו המתאים (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
     },
-    "insertMode": {
-        "title": "Insert mode - inserting/appending text",
-        "commands": {
-            "i": "insert before the cursor",
-            "I": "insert at the beginning of the line",
-            "a": "insert (append) after the cursor",
-            "A": "insert (append) at the end of the line",
-            "o": "append (open) a new line below the current line",
-            "O": "append (open) a new line above the current line",
-            "ea": "insert (append) at the end of the word",
-            "ctrlPlush": "delete the character before the cursor during insert mode",
-            "ctrlPlusw": "delete word before the cursor during insert mode",
-            "ctrlPlusj": "begin new line during insert mode",
-            "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
-            "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
-            "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
-            "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
-            "ctrlPlusrx": "insert the contents of register x",
-            "Esc": "exit insert mode"
-        }
+    "tip": "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
+  },
+  "insertMode": {
+    "title": "Insert mode - inserting/appending text",
+    "commands": {
+      "i": "insert before the cursor",
+      "I": "insert at the beginning of the line",
+      "a": "insert (append) after the cursor",
+      "A": "insert (append) at the end of the line",
+      "o": "append (open) a new line below the current line",
+      "O": "append (open) a new line above the current line",
+      "ea": "insert (append) at the end of the word",
+      "ctrlPlush": "delete the character before the cursor during insert mode",
+      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
+      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
+      "ctrlPlusrx": "insert the contents of register x",
+      "Esc": "exit insert mode"
+    }
+  },
+  "editing": {
+    "title": "Editing",
+    "commands": {
+      "r": "replace a single character",
+      "J": "join line below to the current one with one space in between",
+      "gJ": "join line below to the current one without space in between",
+      "gwip": "reflow paragraph",
+      "gTilde": "switch case up to motion",
+      "gu": "change to lowercase up to motion",
+      "gU": "change to uppercase up to motion",
+      "cc": "change (replace) entire line",
+      "C": "change (replace) to the end of the line",
+      "cDollar": "change (replace) to the end of the line",
+      "ciw": "change (replace) entire word",
+      "cw": "change (replace) to the end of the word",
+      "s": "delete character and substitute text",
+      "S": "delete line and substitute text (same as cc)",
+      "xp": "transpose two letters (delete and paste)",
+      "u": "undo",
+      "U": "restore (undo) last changed line",
+      "CtrlPlusr": "redo",
+      "dot": "repeat last command"
+    }
+  },
+  "markingText": {
+    "title": "Marking text (visual mode)",
+    "commands": {
+      "v": "start visual mode, mark lines, then do a command (like y-yank)",
+      "V": "start linewise visual mode",
+      "o": "move to other end of marked area",
+      "CtrlPlusv": "start visual block mode",
+      "O": "move to other corner of block",
+      "aw": "mark a word",
+      "ab": "a block with ()",
+      "aB": "a block with {}",
+      "at": "a block with <> tags",
+      "ib": "inner block with ()",
+      "iB": "inner block with {}",
+      "it": "inner block with <> tags",
+      "Esc": "exit visual mode"
     },
-    "editing": {
-        "title": "Editing",
-        "commands": {
-            "r": "replace a single character",
-            "J": "join line below to the current one with one space in between",
-            "gJ": "join line below to the current one without space in between",
-            "gwip": "reflow paragraph",
-            "gTilde": "switch case up to motion",
-            "gu": "change to lowercase up to motion",
-            "gU": "change to uppercase up to motion",
-            "cc": "change (replace) entire line",
-            "C": "change (replace) to the end of the line",
-            "cDollar": "change (replace) to the end of the line",
-            "ciw": "change (replace) entire word",
-            "cw": "change (replace) to the end of the word",
-            "s": "delete character and substitute text",
-            "S": "delete line and substitute text (same as cc)",
-            "xp": "transpose two letters (delete and paste)",
-            "u": "undo",
-            "U": "restore (undo) last changed line",
-            "CtrlPlusr": "redo",
-            "dot": "repeat last command"
-        }
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+  },
+  "visualCommands": {
+    "title": "Visual commands",
+    "commands": {
+      "greaterThan": "shift text right",
+      "lessThan": "shift text left",
+      "y": "yank (copy) marked text",
+      "d": "delete marked text",
+      "tilde": "switch case",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
+    }
+  },
+  "registers": {
+    "title": "Registers",
+    "commands": {
+      "show": "show registers content",
+      "pasteRegisterX": "paste contents of register x",
+      "yankIntoRegisterX": "yank into register x",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
     },
-    "markingText": {
-        "title": "Marking text (visual mode)",
-        "commands": {
-            "v": "start visual mode, mark lines, then do a command (like y-yank)",
-            "V": "start linewise visual mode",
-            "o": "move to other end of marked area",
-            "CtrlPlusv": "start visual block mode",
-            "O": "move to other corner of block",
-            "aw": "mark a word",
-            "ab": "a block with ()",
-            "aB": "a block with {}",
-            "at": "a block with <> tags",
-            "ib": "inner block with ()",
-            "iB": "inner block with {}",
-            "it": "inner block with <> tags",
-            "Esc": "exit visual mode"
-        },
-        "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+    "tip1": "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.",
+    "tip2": {
+      "0": "last yank",
+      "title": "Special registers:",
+      "quote": "unnamed register, last delete or yank",
+      "percent": "current file name",
+      "hashtag": "alternate file name",
+      "asterisk": "clipboard contents (X11 primary)",
+      "plus": "clipboard contents (X11 clipboard)",
+      "slash": "last search pattern",
+      "colon": "last command-line",
+      "dot": "last inserted text",
+      "minus": "last small (less than a line) delete",
+      "equal": "expression register",
+      "underscore": "black hole register"
+    }
+  },
+  "marks": {
+    "title": "Marks and positions",
+    "commands": {
+      "list": "list of marks",
+      "currentPositionA": "set current position for mark A",
+      "jumpPositionA": "jump to position of mark A",
+      "yankToMarkA": "yank text to position of mark A",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
-    "visualCommands": {
-        "title": "Visual commands",
-        "commands": {
-            "greaterThan": "shift text right",
-            "lessThan": "shift text left",
-            "y": "yank (copy) marked text",
-            "d": "delete marked text",
-            "tilde": "switch case",
-            "u": "change marked text to lowercase",
-            "U": "change marked text to uppercase"
-        }
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macros",
+    "commands": {
+      "recordA": "record macro a",
+      "stopRecording": "stop recording macro",
+      "runA": "run macro a",
+      "rerun": "rerun last run macro"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": " keyword עזרה עבור",
+      "saveAsFile": "שמור בשם",
+      "closePane": "סגור את הפאנל",
+      "K": "open man page for word under the cursor",
+      "colonTerminal": "פתח טרמינל"
     },
-    "registers": {
-        "title": "Registers",
-        "commands": {
-            "show": "show registers content",
-            "pasteRegisterX": "paste contents of register x",
-            "yankIntoRegisterX": "yank into register x",
-            "quotePlusy": "yank into the system clipboard register",
-            "quotePlusp": "paste from the system clipboard register"
-        },
-        "tip1": "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.",
-        "tip2": {
-            "0": "last yank",
-            "title": "Special registers:",
-            "quote": "unnamed register, last delete or yank",
-            "percent": "current file name",
-            "hashtag": "alternate file name",
-            "asterisk": "clipboard contents (X11 primary)",
-            "plus": "clipboard contents (X11 clipboard)",
-            "slash": "last search pattern",
-            "colon": "last command-line",
-            "dot": "last inserted text",
-            "minus": "last small (less than a line) delete",
-            "equal": "expression register",
-            "underscore": "black hole register"
-        }
+    "tip1": "בשביל ללמוד פקודות בסיסיות vimtutor הקש"
+  },
+  "cutAndPaste": {
+    "title": "העתק והדבק",
+    "commands": {
+      "yy": "שלוף (העתק) שורה",
+      "twoyy": "שלוף (העתק) 2 שורות",
+      "yw": "yank (copy) the characters of the word from the cursor position to the start of the next word",
+      "yiw": "yank (copy) word under the cursor",
+      "yaw": "yank (copy) word under the cursor and the space after or before it",
+      "yDollar": "yank (copy) to end of line",
+      "p": "put (paste) the clipboard after cursor",
+      "P": "put (paste) before cursor",
+      "dd": "delete (cut) a line",
+      "twodd": "delete (cut) 2 lines",
+      "dw": "delete (cut) the characters of the word from the cursor position to the start of the next word",
+      "diw": "delete (cut) word under the cursor",
+      "daw": "delete (cut) word under the cursor and the space after or before it",
+      "D": "delete (cut) to the end of the line",
+      "dDollar": "delete (cut) to the end of the line",
+      "x": "delete (cut) character"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
+    }
+  },
+  "exiting": {
+    "title": "יציאה",
+    "commands": {
+      "colonw": "שמור בלי לצאת",
+      "colonwsudo": "write out the current file using sudo",
+      "colonwq": "שמור וצא",
+      "colonx": "שמור וצא",
+      "colonq": "(נכשל אם יש שינויים שלא נשמרו) יציאה",
+      "colonqbang": "צא ללא שמירת שינויים",
+      "colonwqa": "שמור וצא מכל הכרטיסיות"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Search and replace",
+    "commands": {
+      "forwardSlashPattern": "search for pattern",
+      "questionMarkPattern": "search backward for pattern",
+      "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
+      "n": "repeat search in same direction",
+      "N": "repeat search in opposite direction",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "replace all old with new throughout file",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "replace all old with new throughout file with confirmations",
+      "colonnoh": "remove highlighting of search matches"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Search in multiple files",
+    "commands": {
+      "colonvimgrep": "search for pattern in multiple files",
+      "coloncn": "jump to the next match",
+      "coloncp": "jump to the previous match",
+      "coloncopen": "open a window containing the list of matches",
+      "coloncclose": "close the quickfix window"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Working with multiple files",
+    "commands": {
+      "colone": "edit a file in a new buffer",
+      "colonbnext": "go to the next buffer",
+      "colonbprev": "go to the previous buffer",
+      "colonls": "list all open buffers",
+      "colonbd": "delete a buffer (close a file)",
+      "colonbnumber": "go to a buffer by index #",
+      "colonbfile": "go to a buffer by file",
+      "colonsp": "open a file in a new buffer and split window",
+      "colonvsp": "open a file in a new buffer and vertically split window",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
+      "ctrlPlusws": "split window",
+      "ctrlPluswv": "split window vertically",
+      "ctrlPlusww": "switch windows",
+      "ctrlPluswq": "quit a window",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswh": "move cursor to the left window (vertical split)",
+      "ctrlPluswl": "move cursor to the right window (vertical split)",
+      "ctrlPluswj": "move cursor to the window below (horizontal split)",
+      "ctrlPluswk": "move cursor to the window above (horizontal split)"
+    }
+  },
+  "tabs": {
+    "title": "Tabs",
+    "commands": {
+      "colonTabNew": "open a file in a new tab",
+      "ctrlPluswT": "move the current split window into its own tab",
+      "gt": "move to the next tab",
+      "gT": "move to the previous tab",
+      "hashgt": "move to tab number #",
+      "colontabmove": "move current tab to the #th position (indexed from 0)",
+      "colontabc": "close the current tab and all its windows",
+      "colontabo": "close all tabs except for the current one",
+      "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
+    }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "manually define a fold up to motion",
+      "zd": "delete fold under the cursor",
+      "za": "toggle fold under the cursor",
+      "zo": "open fold under the cursor",
+      "zc": "close fold under the cursor",
+      "zr": "reduce (open) all folds by one level",
+      "zm": "fold more (close) all folds by one level",
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
     },
-    "marks": {
-        "title": "Marks and positions",
-        "commands": {
-            "list": "list of marks",
-            "currentPositionA": "set current position for mark A",
-            "jumpPositionA": "jump to position of mark A",
-            "yankToMarkA": "yank text to position of mark A",
-            "backtick0": "go to the position where Vim was previously exited",
-            "backtickQuote": "go to the position when last editing this file",
-            "backtickDot": "go to the position of the last change in this file",
-            "backtickBacktick": "go to the position before the last jump",
-            "colonjumps": "list of jumps",
-            "ctrlPlusi": "go to newer position in jump list",
-            "ctrlPluso": "go to older position in jump list",
-            "colonchanges": "list of changes",
-            "gcomma": "go to newer position in change list",
-            "gsemicolon": "go to older position in change list",
-            "ctrlPlusCloseSquare": "jump to the tag under cursor"
-        },
-        "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
-        "tip": ""
-    },
-    "macros": {
-        "title": "Macros",
-        "commands": {
-            "recordA": "record macro a",
-            "stopRecording": "stop recording macro",
-            "runA": "run macro a",
-            "rerun": "rerun last run macro"
-        }
-    },
-    "global": {
-        "title": "Global",
-        "commands": {
-            "helpForKeyword": " keyword עזרה עבור",
-            "saveAsFile": "שמור בשם",
-            "closePane": "סגור את הפאנל",
-            "K": "open man page for word under the cursor",
-            "colonTerminal": "פתח טרמינל"
-        },
-        "tip1": "בשביל ללמוד פקודות בסיסיות vimtutor הקש"
-    },
-    "cutAndPaste": {
-        "title": "העתק והדבק",
-        "commands": {
-            "yy": "שלוף (העתק) שורה",
-            "twoyy": "שלוף (העתק) 2 שורות",
-            "yw": "yank (copy) the characters of the word from the cursor position to the start of the next word",
-            "yiw": "yank (copy) word under the cursor",
-            "yaw": "yank (copy) word under the cursor and the space after or before it",
-            "yDollar": "yank (copy) to end of line",
-            "p": "put (paste) the clipboard after cursor",
-            "P": "put (paste) before cursor",
-            "dd": "delete (cut) a line",
-            "twodd": "delete (cut) 2 lines",
-            "dw": "delete (cut) the characters of the word from the cursor position to the start of the next word",
-            "diw": "delete (cut) word under the cursor",
-            "daw": "delete (cut) word under the cursor and the space after or before it",
-            "D": "delete (cut) to the end of the line",
-            "dDollar": "delete (cut) to the end of the line",
-            "x": "delete (cut) character"
-        }
-    },
-    "indentText": {
-        "title": "Indent text",
-        "commands": {
-            "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-            "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-            "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-            "greaterThanib": "indent inner block with ()",
-            "greaterThanat": "indent a block with <> tags",
-            "3==": "re-indent 3 lines",
-            "=Percent": "re-indent a block with () or {} (cursor on brace)",
-            "=iB": "re-indent inner block with {}",
-            "gg=G": "re-indent entire buffer",
-            "closeSquarep": "paste and adjust indent to current line"
-        }
-    },
-    "exiting": {
-        "title": "יציאה",
-        "commands": {
-            "colonw": "שמור בלי לצאת",
-            "colonwsudo": "write out the current file using sudo",
-            "colonwq": "שמור וצא",
-            "colonx": "שמור וצא",
-            "colonq": "(נכשל אם יש שינויים שלא נשמרו) יציאה",
-            "colonqbang": "צא ללא שמירת שינויים",
-            "colonwqa": "שמור וצא מכל הכרטיסיות"
-        }
-    },
-    "searchAndReplace": {
-        "title": "Search and replace",
-        "commands": {
-            "forwardSlashPattern": "search for pattern",
-            "questionMarkPattern": "search backward for pattern",
-            "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
-            "n": "repeat search in same direction",
-            "N": "repeat search in opposite direction",
-            "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "replace all old with new throughout file",
-            "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "replace all old with new throughout file with confirmations",
-            "colonnoh": "remove highlighting of search matches"
-        }
-    },
-    "searchMultipleFiles": {
-        "title": "Search in multiple files",
-        "commands": {
-            "colonvimgrep": "search for pattern in multiple files",
-            "coloncn": "jump to the next match",
-            "coloncp": "jump to the previous match",
-            "coloncopen": "open a window containing the list of matches",
-            "coloncclose": "close the quickfix window"
-        }
-    },
-    "workingWithMultipleFiles": {
-        "title": "Working with multiple files",
-        "commands": {
-            "colone": "edit a file in a new buffer",
-            "colonbnext": "go to the next buffer",
-            "colonbprev": "go to the previous buffer",
-            "colonls": "list all open buffers",
-            "colonbd": "delete a buffer (close a file)",
-            "colonbnumber": "go to a buffer by index #",
-            "colonbfile": "go to a buffer by file",
-            "colonsp": "open a file in a new buffer and split window",
-            "colonvsp": "open a file in a new buffer and vertically split window",
-            "colonvertba": "edit all buffers as vertical windows",
-            "colontabba": "edit all buffers as tabs",
-            "ctrlPlusws": "split window",
-            "ctrlPluswv": "split window vertically",
-            "ctrlPlusww": "switch windows",
-            "ctrlPluswq": "quit a window",
-            "ctrlPluswx": "exchange current window with next one",
-            "ctrlPlusw=": "make all windows equal height & width",
-            "ctrlPluswh": "move cursor to the left window (vertical split)",
-            "ctrlPluswl": "move cursor to the right window (vertical split)",
-            "ctrlPluswj": "move cursor to the window below (horizontal split)",
-            "ctrlPluswk": "move cursor to the window above (horizontal split)"
-        }
-    },
-    "tabs": {
-        "title": "Tabs",
-        "commands": {
-            "colonTabNew": "open a file in a new tab",
-            "ctrlPluswT": "move the current split window into its own tab",
-            "gt": "move to the next tab",
-            "gT": "move to the previous tab",
-            "hashgt": "move to tab number #",
-            "colontabmove": "move current tab to the #th position (indexed from 0)",
-            "colontabc": "close the current tab and all its windows",
-            "colontabo": "close all tabs except for the current one",
-            "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
-        }
-    },
-    "diff": {
-        "title": "Diff",
-        "commands": {
-            "zf": "manually define a fold up to motion",
-            "zd": "delete fold under the cursor",
-            "za": "toggle fold under the cursor",
-            "zo": "open fold under the cursor",
-            "zc": "close fold under the cursor",
-            "zr": "reduce (open) all folds by one level",
-            "zm": "fold more (close) all folds by one level",
-            "zi": "toggle folding functionality",
-            "closeSquarec": "jump to start of next change",
-            "openSquarec": "jump to start of previous change",
-            "do": "obtain (get) difference (from other buffer)",
-            "dp": "put difference (to other buffer)",
-            "colonDiffthis": "make current window part of diff",
-            "colonDiffupdate": "update differences",
-            "colonDiffoff": "switch off diff mode for current window"
-        },
-        "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-        "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
-    },
-    "words": {
-        "keyword": "keyword",
-        "file": "file",
-        "movement": "movement"
-    },
-    "languages": {
-        "title": "Languages"
-    },
-    "footer": "Checkout the source on"
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
+  "languages": {
+    "title": "Languages"
+  },
+  "footer": "Checkout the source on"
 }

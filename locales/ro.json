@@ -27,6 +27,7 @@
       "gg": "dute la prima linie a documentului",
       "G": "dute la ultima linie a documentului",
       "fiveG": "dute la linia 5",
+      "gd": "move to local declaration",
       "fx": "dute la urmatoarea referinta a caracterului x",
       "tx": "dute la referinta precendenta a caracterului x",
       "Fx": "cursorMovement.commands.Fx",
