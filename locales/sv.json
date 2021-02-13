@@ -27,6 +27,8 @@
       "gg": "gå till första raden i dokumentet",
       "G": "gå till sista raden i dokumentet",
       "fiveG": "gå till rad 5",
+      "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "hoppa till nästa förekomst av tecknet x",
       "tx": "hoppa till tecknet före nästa förekomst av tecknet x",
       "Fx": "hoppa till föregående förekomst av tecknet x",
