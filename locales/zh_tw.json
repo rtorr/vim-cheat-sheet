@@ -66,6 +66,7 @@
       "ctrlPlusn": "在插入模式中自動補全下個候補字",
       "ctrlPlusp": "在插入模式中自動補全上個候補字",
       "ctrlPlusrx": "在插入模式中插入x暫存器的內容",
+      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
       "Esc": "退出插入模式"
     }
   },
