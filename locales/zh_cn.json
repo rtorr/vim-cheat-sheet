@@ -188,7 +188,7 @@
       "saveAsFile": "另存为",
       "closePane": "关闭当前窗口",
       "K": "打开光标所在单词的man页面",
-      "colonTerminal": "open a terminal window",
+      "colonTerminal": "打开一个shell窗口",
       "openFile": "打开文件"
     },
     "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
