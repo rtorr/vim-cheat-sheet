@@ -72,6 +72,7 @@
     "title": "Editing",
     "commands": {
       "r": "mengubah satu karakter",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "menyambung baris di bawah dengan baris saat ini",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",

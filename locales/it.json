@@ -71,6 +71,7 @@
     "title": "Modifica",
     "commands": {
       "r": "sostituisci un singolo carattere",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "unisci la linea sottostante con quella corrente",
       "gJ": "unisci la linea sottostante con quella corrente senza spazi in mezzo",
       "gwip": "riformatta paragrafo",

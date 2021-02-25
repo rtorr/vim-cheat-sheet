@@ -71,6 +71,7 @@
     "title": "Editar",
     "commands": {
       "r": "reemplazar un carácter",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "juntar siguiente línea con la actual",
       "gJ": "une la línea de abajo a la actual sin espacio entre ellas",
       "gwip": "párrafo de reflujo",

@@ -71,6 +71,7 @@
     "title": "편집",
     "commands": {
       "r": "한 글자 바꾸기",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "현재 행과 다음 행을 연결",
       "gJ": "현재 행과 다음 행을 둘 사이에 공백 없이 연결",
       "gwip": "단락을 리플로우",

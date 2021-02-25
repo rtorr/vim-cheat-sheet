@@ -72,6 +72,7 @@
     "title": "Editare",
     "commands": {
       "r": "inlocuieste un singur caracter",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "lipeste lina curenta cu cea dedesubt",
       "gJ": "editing.commands.gJ",
       "gwip": "editing.commands.gwip",

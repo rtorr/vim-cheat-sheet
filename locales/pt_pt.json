@@ -71,6 +71,7 @@
     "title": "Edição",
     "commands": {
       "r": "substituir um único carácter",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "juntar a linha seguinte com a linha actual",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",

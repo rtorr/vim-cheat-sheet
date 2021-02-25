@@ -71,6 +71,7 @@
     "title": "編輯",
     "commands": {
       "r": "取代游標後一個字元",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "將下一行合併至該行 (兩行之間有空格)",
       "gJ": "將下一行合併至該行 (兩行之間沒有空格)",
       "gwip": "重新調整段落",

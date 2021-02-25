@@ -71,6 +71,7 @@
     "title": "Редагування",
     "commands": {
       "r": "замінити один символ",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "приєднати нижню строчку до поточної",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",

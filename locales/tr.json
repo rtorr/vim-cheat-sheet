@@ -71,6 +71,7 @@
     "title": "Düzenleme",
     "commands": {
       "r": "tek karakterin yerine koyar",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "şu anki satırın altına ekler",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",
