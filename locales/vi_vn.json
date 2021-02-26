@@ -3,20 +3,20 @@
   "lang": "vi_vn",
   "lang_tag": "vi",
   "cursorMovement": {
-    "title": "Di chuyển con trỏ",
+    "title": "Cursor movement",
     "commands": {
       "h": "di chuyển con trỏ qua trái một ký tự",
       "j": "di chuyển con trỏ xuống dưới một hàng",
       "k": "di chuyển con trỏ lên trên một hàng",
       "l": "di chuyển con trỏ qua phải một ký tự",
-      "w": "di chuyển qua phải, đến ký tự bắt đầu của từ kế tiếp",
-      "W": "di chuyển qua phải, đến ký tự bắt đầu của từ kế tiếp (trong từ có thể chứa các ký tự đặc biệt và dấu câu)",
-      "e": "di chuyển qua phải, đến ký tự kết thúc của từ",
-      "E": "di chuyển qua phải, đến ký tự kết thúc của từ (trong từ có thể chứa các ký tự đặc biệt và dấu câu)",
-      "b": "di chuyển qua trái, đến ký tự bắt đầu của từ",
-      "B": "di chuyển qua trái, đến ký tự bắt đầu của từ (trong từ có thể chứa các ký tự đặc biệt và dấu câu)",
-      "ge": "di chuyển qua trái, đến ký tự kết thúc của từ trước đó",
-      "gE": "di chuyển qua trái, đến ký tự kết thúc của từ trước đó (trong từ có thể chứa các ký tự đặc biệt và dấu câu)",
+      "w": "di chuyển qua phải, đến ký tự đầu tiên của từ kế tiếp",
+      "W": "di chuyển qua phải, đến ký tự đầu tiên của từ kế tiếp (trong từ có thể chứa các ký tự đặc biệt và dấu câu)",
+      "e": "di chuyển qua phải, đến ký tự cuối cùng của từ",
+      "E": "di chuyển qua phải, đến ký tự cuối cùng của từ (trong từ có thể chứa các ký tự đặc biệt và dấu câu)",
+      "b": "di chuyển qua trái, đến ký tự đầu tiên của từ",
+      "B": "di chuyển qua trái, đến ký tự đầu tiên của từ (trong từ có thể chứa các ký tự đặc biệt và dấu câu)",
+      "ge": "di chuyển qua trái, đến ký tự cuối cùng của từ trước đó",
+      "gE": "di chuyển qua trái, đến ký tự cuối cùng của từ trước đó (trong từ có thể chứa các ký tự đặc biệt và dấu câu)",
       "H": "di chuyển con trỏ lên đầu màn hình",
       "M": "di chuyển con trỏ về giữa màn hình",
       "L": "di chuyển con trỏ xuống cuối màn hình",
@@ -47,7 +47,7 @@
     "tip": "Sử dụng tiền tố là chữ số cùng với lệnh để lặp lại lệnh đó. Ví dụ, <kbd>4j</kbd> là di chuyển xuống dưới 4 hàng."
   },
   "insertMode": {
-    "title": "Chế độ Insert - inserting/appending text",
+    "title": "Insert mode - inserting/appending text",
     "commands": {
       "i": "chèn vào phía trước con trỏ",
       "I": "chèn vào đầu hàng",
@@ -68,7 +68,7 @@
     }
   },
   "editing": {
-    "title": "Chỉnh sửa",
+    "title": "Editing",
     "commands": {
       "r": "thay thế một ký tự với một ký tự khác, ví dụ: ra, rx,...",
       "R": "thay thế nhiều ký tự cho đến khi <kbd>ESC</kbd> được nhấn.",
@@ -95,8 +95,8 @@
   "markingText": {
     "title": "Marking text (visual mode)",
     "commands": {
-      "v": "start visual mode, mark lines, then do a command (like y-yank)",
-      "V": "start linewise visual mode",
+      "v": "chế độ đánh dấu, dùng để bôi đen ký tự, sau đó thực hiện các command như copy hoặc xóa.",
+      "V": "chế độ đánh dấu, dùng để bôi đen theo hàng. ",
       "o": "move to other end of marked area",
       "CtrlPlusv": "start visual block mode",
       "O": "move to other corner of block",
@@ -116,11 +116,11 @@
     "commands": {
       "greaterThan": "shift text right",
       "lessThan": "shift text left",
-      "y": "yank (copy) marked text",
-      "d": "delete marked text",
-      "tilde": "switch case",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "y": "copy những ký tự đã được bôi đen.",
+      "d": "xóa những ký tự đã được bôi đen.",
+      "tilde": "chuyển đổi giữa uppercase và lowercase cho những ký tự đã bôi đen.",
+      "u": "chuyển thành lowercase cho những ký tự đã bôi đen.",
+      "U": "chuyển thành uppercase cho những ký tự đã bôi đen."
     }
   },
   "registers": {
@@ -181,7 +181,7 @@
     }
   },
   "global": {
-    "title": "Tổng quát",
+    "title": "Global",
     "commands": {
       "helpForKeyword": "tra cứu một lệnh, ví dụ: <code>:h dd</code>",
       "saveAsFile": "lưu file với tên mới, ví dụ: <code>:sav new_file_name</code>",
@@ -194,41 +194,41 @@
   "cutAndPaste": {
     "title": "Cut and paste",
     "commands": {
-      "yy": "yank (copy) a line",
-      "twoyy": "yank (copy) 2 lines",
-      "yw": "yank (copy) the characters of the word from the cursor position to the start of the next word",
-      "yiw": "yank (copy) word under the cursor",
-      "yaw": "yank (copy) word under the cursor and the space after or before it",
-      "yDollar": "yank (copy) to end of line",
-      "p": "put (paste) the clipboard after cursor",
-      "P": "put (paste) before cursor",
-      "dd": "delete (cut) a line",
-      "twodd": "delete (cut) 2 lines",
-      "dw": "delete (cut) the characters of the word from the cursor position to the start of the next word",
-      "diw": "delete (cut) word under the cursor",
-      "daw": "delete (cut) word under the cursor and the space after or before it",
-      "D": "delete (cut) to the end of the line",
-      "dDollar": "delete (cut) to the end of the line",
-      "x": "delete (cut) character"
+      "yy": "copy 1 hàng tại vị trí con trỏ.",
+      "twoyy": "copy 2 hàng, tính từ hàng chứa con trỏ.",
+      "yw": "copy từ vị trí con trỏ đến trước ký tự đầu tiên của từ tiếp theo.",
+      "yiw": "copy cả từ tại vị trí con trỏ",
+      "yaw": "copy cả từ tại vị trí con trỏ, kể cả khoảng trắng phía trước hoặc sau nó.",
+      "yDollar": "copy từ vị trí con trỏ đến cuối hàng.",
+      "p": "paste vào vị trí phía sau con trỏ.",
+      "P": "paste vào vị trí phía trước con trỏ.",
+      "dd": "xóa 1 hàng.",
+      "twodd": "xóa 2 hàng.",
+      "dw": "xóa từ vị trí con trỏ đến trước ký tự đầu tiên của từ tiếp theo.",
+      "diw": "xóa cả từ tại vị trí con trỏ.", 
+      "daw": "xóa cả từ tại vị trí con trỏ, kể cả khoảng trắng phía trước hoặc sau nó.", 
+      "D": "xóa đến cuối hàng.",
+      "dDollar": "xóa đến cuối hàng.",
+      "x": "xóa ký tự tại vị trí con trỏ."
     }
   },
   "indentText": {
     "title": "Indent text",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanGreaterThan": "di chuyển cả hàng sang phải 1 tab.",
+      "lessThanLessThan": "di chuyển cả hàng sang trái 1 tab.",
+      "greaterThanPercent": "di chuyển cả block (block được bao bọc bởi (), {}), tính từ hàng chứa con trỏ sang phải 1 tab",
       "greaterThanib": "indent inner block with ()",
       "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "3==": "re-indent 3 hàng, tính từ hàng chứa con trỏ.",
+      "=Percent": "re-indent cả block (block được bao bọc bởi (), {}), tính từ hàng chứa con trỏ.",
       "=iB": "re-indent inner block with {}",
       "gg=G": "re-indent entire buffer",
       "closeSquarep": "paste and adjust indent to current line"
     }
   },
   "exiting": {
-    "title": "Đóng file",
+    "title": "Exiting",
     "commands": {
       "colonw": "lưu file",
       "colonwsudo": "lưu file với quyền root",
@@ -330,9 +330,9 @@
     "movement": "movement"
   },
   "languages": {
-    "title": "Các ngôn ngữ hiện có"
+    "title": "Languages"
   },
   "footer": "Xem mã nguồn trên ",
   "layout": "page",
-  "permalink": "/lang/vi/"
+  "permalink": "/lang/vi_vn/"
 }
