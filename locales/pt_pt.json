@@ -27,6 +27,8 @@
       "gg": "ir para a primeira linha do documento",
       "G": "ir para a última linha do documento",
       "fiveG": "ir para a linha 5",
+      "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "ir para a próxima ocorrência do caracter 'x'",
       "tx": "ir para o carácter anterior à próxima ocorrência do caracter 'x'",
       "Fx": "ir para a ocorrência anterior do caracter 'x'",

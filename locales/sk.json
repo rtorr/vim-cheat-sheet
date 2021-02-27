@@ -27,6 +27,8 @@
       "gg": "prejde na prvý riadok dokumentu",
       "G": "prejde na posledný riadok dokumentu",
       "fiveG": "prejde na riadok 5",
+      "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "skočí na ďalší výskyt znaku x",
       "tx": "skočí jeden znak pred ďalší výskyt znaku x",
       "Fx": "skočí na predchádzajúci výskyt znaku x",
