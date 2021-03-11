@@ -51,7 +51,7 @@
   "insertMode": {
     "title": "Insert mode - inserting/appending text",
     "commands": {
-      "i": "insert before the cursor",
+      "i": "הכנס טקסט לפני הסמן",
       "I": "insert at the beginning of the line",
       "a": "insert (append) after the cursor",
       "A": "insert (append) at the end of the line",
