@@ -187,11 +187,11 @@
       "helpForKeyword": "کمک در مورد keyword",
       "saveAsFile": "ذخیره کردن با عنوان",
       "closePane": "بستن پنل فعلی",
-      "K": "open man page for word under the cursor",
-      "colonTerminal": "open a terminal window",
+      "K": "برای کلمه زیر مکان‌نما، یک صفحه راهنما باز کن",
+      "colonTerminal": "یک پنجره ترمینال را باز کن",
       "openFile": "ذخیره کردن file"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "دستور <kbd>vimtutor</kbd> را در یک ترمینال جدید اجرا کنید تا دستورات ابتدایی را یاد بگیرید."
   },
   "cutAndPaste": {
     "title": "کپی کردن و چسباندن",
