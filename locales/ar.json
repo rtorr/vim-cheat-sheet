@@ -73,6 +73,7 @@
     "title": "Editing",
     "commands": {
       "r": "replace a single character",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "join line below to the current one",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",

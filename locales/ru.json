@@ -73,6 +73,7 @@
     "title": "Редактирование",
     "commands": {
       "r": "заменить один символ",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "присоединить нижнюю строку к текущей",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",

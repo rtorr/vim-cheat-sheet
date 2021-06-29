@@ -73,6 +73,7 @@
     "title": "စာပြင်ခြင်း",
     "commands": {
       "r": "အက္ခရာတစ်လုံး အစားထိုးသည်",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "စာတစ်ကြောင်းလုံးကို အပေါ်တစ်ကြောင်းသို့ တင်သည်",
       "gJ": "စာတစ်ကြောင်းလုံးကို အောက်တစ်ကြောင်းသို့ ဆင်းသည်",
       "gwip": "reflow paragraph",

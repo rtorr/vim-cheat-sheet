@@ -74,6 +74,7 @@
     "title": "Bewerken",
     "commands": {
       "r": "vervang één karakter",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "voeg onderstaande regel samen met huidige regel met een spatie ertussen",
       "gJ": "voeg onderstaande regel samen met huidige regel zonder een spatie ertussen",
       "gwip": "formatteer paragraaf",

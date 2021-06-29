@@ -73,6 +73,7 @@
     "title": "Redigering",
     "commands": {
       "r": "byt ut ett tecken",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "sammanfoga raden under med nuvarande rad med mellanslag mellan",
       "gJ": "sammanfoga raden under med nuvarande rad utan mellanslag mellan",
       "gwip": "flyt ihop paragrafen",

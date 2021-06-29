@@ -73,6 +73,7 @@
     "title": "编辑文本",
     "commands": {
       "r": "替换当前字符",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "将下一行合并到当前行, 并在两部分文本之间插入一个空格",
       "gJ": "将下一行合并到当前行, 两部分文本之间不含空格",
       "gwip": "重新调整段落",

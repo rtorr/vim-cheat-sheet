@@ -73,6 +73,7 @@
     "title": "تصحیح",
     "commands": {
       "r": "یک کاراکتر را جایگزین کن",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "خط بعدی را به خط فعلی بچسبان با فاصله",
       "gJ": "خط بعدی را بدون فاصله به خط فعلی بچسبان",
       "gwip": "جمع کردن پاراگراف",

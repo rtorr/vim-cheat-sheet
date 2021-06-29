@@ -73,6 +73,7 @@
     "title": "Éditer",
     "commands": {
       "r": "remplacer un caractère",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "joindre la ligne suivante à la ligne en cours en ajoutant un espace",
       "gJ": "joindre la ligne suivante à la ligne en cours sans ajouter d'espace",
       "gwip": "reflow paragraph",
