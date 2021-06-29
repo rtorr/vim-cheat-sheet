@@ -78,8 +78,8 @@
       "gJ": "将下一行合并到当前行, 两部分文本之间不含空格",
       "gwip": "重新调整段落",
       "gTilde": "switch case up to motion",
-      "gu": "change to lowercase up to motion",
-      "gU": "change to uppercase up to motion",
+      "gu": "小写操作修饰符",
+      "gU": "大写操作修饰符",
       "cc": "将光标所在的行删除, 然后进入插入模式",
       "C": "将光标处到行尾删除, 然后进入插入模式",
       "cDollar": "将光标处到行尾删除, 然后进入插入模式",
@@ -89,7 +89,7 @@
       "S": "清空当前行, 然后进入插入模式 (同<kbd>cc</kbd>)",
       "xp": "当前字符后移",
       "u": "撤销",
-      "U": "restore (undo) last changed line",
+      "U": "撤销上一次的改动行的操作",
       "CtrlPlusr": "重复",
       "dot": "再次执行上个命令"
     }
@@ -189,7 +189,7 @@
       "saveAsFile": "另存为",
       "closePane": "关闭当前窗口",
       "K": "打开光标所在单词的man页面",
-      "colonTerminal": "open a terminal window",
+      "colonTerminal": "打开一个shell窗口",
       "openFile": "打开文件"
     },
     "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
