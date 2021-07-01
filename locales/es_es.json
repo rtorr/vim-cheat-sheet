@@ -66,7 +66,7 @@
       "ctrlPlusn": "insertar (autocompletar) la siguiente coincidencia antes del cursor durante el modo de inserción",
       "ctrlPlusp": "insertar (autocompletar) coincidencia anterior antes del cursor durante el modo de inserción",
       "ctrlPlusrx": "insertar el contenido del registro x",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlusox": "Ingrese temporalmente al modo normal para emitir un comando de modo normal x.",
       "Esc": "salir del modo insertar"
     }
   },

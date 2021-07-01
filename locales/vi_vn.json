@@ -27,6 +27,8 @@
       "gg": "di chuyển đến hàng đầu tiên của file",
       "G": "di chuyển đến hàng cuối cùng của file",
       "fiveG": "di chuyển đến hàng thứ 5 của file",
+      "gd": "move to local declaration",
+      "gD": "move to global declaration",
       "fx": "jump to next occurrence of character x",
       "tx": "jump to before next occurrence of character x",
       "Fx": "jump to previous occurence of character x",
@@ -64,6 +66,7 @@
       "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
       "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "ctrlPlusrx": "insert the contents of register x",
+      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
       "Esc": "thoát khỏi chế độ Insert"
     }
   },
@@ -205,8 +208,8 @@
       "dd": "xóa 1 hàng.",
       "twodd": "xóa 2 hàng.",
       "dw": "xóa từ vị trí con trỏ đến trước ký tự đầu tiên của từ tiếp theo.",
-      "diw": "xóa cả từ tại vị trí con trỏ.", 
-      "daw": "xóa cả từ tại vị trí con trỏ, kể cả khoảng trắng phía trước hoặc sau nó.", 
+      "diw": "xóa cả từ tại vị trí con trỏ.",
+      "daw": "xóa cả từ tại vị trí con trỏ, kể cả khoảng trắng phía trước hoặc sau nó.",
       "D": "xóa đến cuối hàng.",
       "dDollar": "xóa đến cuối hàng.",
       "x": "xóa ký tự tại vị trí con trỏ."
