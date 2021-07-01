@@ -74,6 +74,7 @@
     "title": "編集",
     "commands": {
       "r": "文字を 1 つだけ置き換え",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "スペースを 1 つ加えて下の行を現在の行に連結",
       "gJ": "スペースなしで現在の行に下の行を連結",
       "gwip": "段落をすべて連結",

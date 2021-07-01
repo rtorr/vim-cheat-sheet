@@ -74,6 +74,7 @@
     "title": "تصحیح",
     "commands": {
       "r": "یک کاراکتر را جایگزین کن",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "خط بعدی را به خط فعلی بچسبان با فاصله",
       "gJ": "خط بعدی را بدون فاصله به خط فعلی بچسبان",
       "gwip": "جمع کردن پاراگراف",
@@ -170,7 +171,7 @@
       "gsemicolon": "go to older position in change list",
       "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -188,11 +189,11 @@
       "helpForKeyword": "کمک در مورد keyword",
       "saveAsFile": "ذخیره کردن با عنوان",
       "closePane": "بستن پنل فعلی",
-      "K": "open man page for word under the cursor",
-      "colonTerminal": "open a terminal window",
+      "K": "برای کلمه زیر مکان‌نما، یک صفحه راهنما باز کن",
+      "colonTerminal": "یک پنجره ترمینال را باز کن",
       "openFile": "ذخیره کردن file"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "دستور <kbd>vimtutor</kbd> را در یک ترمینال جدید اجرا کنید تا دستورات ابتدایی را یاد بگیرید."
   },
   "cutAndPaste": {
     "title": "کپی کردن و چسباندن",

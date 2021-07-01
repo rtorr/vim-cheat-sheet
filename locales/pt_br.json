@@ -74,6 +74,7 @@
     "title": "Editando",
     "commands": {
       "r": "substituir um único caractere",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "juntar a linha que está em baixo da linha atual",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",
@@ -171,7 +172,7 @@
       "ctrlPlusCloseSquare": "jump to the tag under cursor",
       "tip": ""
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
   },
   "macros": {

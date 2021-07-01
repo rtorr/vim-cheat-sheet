@@ -51,7 +51,7 @@
   "insertMode": {
     "title": "Insert mode - inserting/appending text",
     "commands": {
-      "i": "insert before the cursor",
+      "i": "הכנס טקסט לפני הסמן",
       "I": "insert at the beginning of the line",
       "a": "insert (append) after the cursor",
       "A": "insert (append) at the end of the line",
@@ -74,6 +74,7 @@
     "title": "Editing",
     "commands": {
       "r": "replace a single character",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "join line below to the current one with one space in between",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",
@@ -170,7 +171,7 @@
       "gsemicolon": "go to older position in change list",
       "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
   },
   "macros": {

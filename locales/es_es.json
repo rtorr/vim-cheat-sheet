@@ -74,6 +74,7 @@
     "title": "Editar",
     "commands": {
       "r": "reemplazar un carácter",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "juntar siguiente línea con la actual",
       "gJ": "une la línea de abajo a la actual sin espacio entre ellas",
       "gwip": "párrafo de reflujo",
@@ -170,7 +171,7 @@
       "gsemicolon": "ir a la posición anterior en la lista de cambios",
       "ctrlPlusCloseSquare": "saltar a la etiqueta debajo del cursor"
     },
-    "tip1": "Para saltar a una marca, puede usar una tilde (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip1": "Para saltar a una marca, puede usar una tilde (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
   },
   "macros": {

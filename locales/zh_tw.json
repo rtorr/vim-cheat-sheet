@@ -74,6 +74,7 @@
     "title": "編輯",
     "commands": {
       "r": "取代游標後一個字元",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "將下一行合併至該行 (兩行之間有空格)",
       "gJ": "將下一行合併至該行 (兩行之間沒有空格)",
       "gwip": "重新調整段落",
@@ -170,7 +171,7 @@
       "gsemicolon": "go to older position in change list",
       "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
   },
   "macros": {

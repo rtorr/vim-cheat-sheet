@@ -74,6 +74,7 @@
     "title": "Editieren",
     "commands": {
       "r": "Einzelnes Zeichen ersetzen",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "Die Zeile unterhalb zur aktuellen Zeile hinzufügen",
       "gJ": "Die Zeile unterhalb zur aktuellen Zeile ohne Abstand hinzufügen",
       "gwip": "Absatz neu umbrechen",
