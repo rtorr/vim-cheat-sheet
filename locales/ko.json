@@ -66,6 +66,7 @@
       "ctrlPlusn": "다음 단어 탐색 (자동완성)",
       "ctrlPlusp": "이전 단어 탐색 (자동완성)",
       "ctrlPlusrx": "레지스터 x의 내용 삽입",
+      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
       "Esc": "삽입모드 종료"
     }
   },
@@ -73,6 +74,7 @@
     "title": "편집 모드",
     "commands": {
       "r": "한 글자 바꾸기",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "현재 행과 다음 행 연결",
       "gJ": "현재 행과 다음 행 연결 (공백무시)",
       "gwip": "단락 리플로우",

@@ -65,7 +65,8 @@
       "ctrlPlusd": "在插入模式下，向左缩进，宽度由 shiftwidth 控制",
       "ctrlPlusn": "在插入模式下，在光标之前插入自动补全的下一个匹配项",
       "ctrlPlusp": "在插入模式下，在光标之前插入自动补全的上一个匹配项",
-      "ctrlPlusrx": "insert the contents of register x",
+      "ctrlPlusrx": "插入寄存器 x 的内容",
+      "ctrlPlusox": "暂时进入正常模式以发出一个正常模式命令 x。",
       "Esc": "退出插入模式"
     }
   },

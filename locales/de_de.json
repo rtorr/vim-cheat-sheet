@@ -66,6 +66,7 @@
       "ctrlPlusn": "Nächstes passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
       "ctrlPlusp": "Vorheriges passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
       "ctrlPlusrx": "Füge den Inhalt von Register x ein",
+      "ctrlPlusox": "Wechseln Sie vorübergehend in den Normalmodus, um nur einen Normalmodus Befehl -x zu verwenden.",
       "Esc": "Eingabe-Modus verlassen"
     }
   },

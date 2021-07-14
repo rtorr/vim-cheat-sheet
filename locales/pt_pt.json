@@ -66,6 +66,7 @@
       "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
       "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "ctrlPlusrx": "insert the contents of register x",
+      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
       "Esc": "sair do modo de inserção"
     }
   },
