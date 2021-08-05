@@ -66,6 +66,7 @@
       "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
       "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "ctrlPlusrx": "insert the contents of register x",
+      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
       "Esc": "از مد اضافه خارج شو"
     }
   },
@@ -73,6 +74,7 @@
     "title": "تصحیح",
     "commands": {
       "r": "یک کاراکتر را جایگزین کن",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "خط بعدی را به خط فعلی بچسبان با فاصله",
       "gJ": "خط بعدی را بدون فاصله به خط فعلی بچسبان",
       "gwip": "جمع کردن پاراگراف",
@@ -169,7 +171,7 @@
       "gsemicolon": "go to older position in change list",
       "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
   },
   "macros": {

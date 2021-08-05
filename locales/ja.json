@@ -66,6 +66,7 @@
       "ctrlPlusn": "挿入モード中にカーソルの手前側へ次の候補を挿入（自動補完）",
       "ctrlPlusp": "挿入モード中にカーソルの後ろ側へ前の候補を挿入（自動補完）",
       "ctrlPlusrx": "insert the contents of register x",
+      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
       "Esc": "挿入モードを終了"
     }
   },
@@ -73,6 +74,7 @@
     "title": "編集",
     "commands": {
       "r": "文字を 1 つだけ置き換え",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "スペースを 1 つ加えて下の行を現在の行に連結",
       "gJ": "スペースなしで現在の行に下の行を連結",
       "gwip": "段落をすべて連結",

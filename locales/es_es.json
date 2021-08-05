@@ -27,8 +27,8 @@
       "gg": "ir a la primera línea del documento",
       "G": "ir a la última línea del documento",
       "fiveG": "ir a la línea 5",
-      "gd": "move to local declaration",
-      "gD": "move to global declaration",
+      "gd": "saltar a la declaración local",
+      "gD": "saltar a la declaración global",
       "fx": "saltar a la siguiente ocurrencia del carácter x",
       "tx": "saltar a la ocurrencia previa del carácter x",
       "Fx": "saltar a la aparición anterior del carácter x",
@@ -66,6 +66,7 @@
       "ctrlPlusn": "insertar (autocompletar) la siguiente coincidencia antes del cursor durante el modo de inserción",
       "ctrlPlusp": "insertar (autocompletar) coincidencia anterior antes del cursor durante el modo de inserción",
       "ctrlPlusrx": "insertar el contenido del registro x",
+      "ctrlPlusox": "Ingrese temporalmente al modo normal para emitir un comando de modo normal x.",
       "Esc": "salir del modo insertar"
     }
   },
@@ -73,6 +74,7 @@
     "title": "Editar",
     "commands": {
       "r": "reemplazar un carácter",
+      "R": "reemplazar más de un carácter, hasta que se presione <kbd>ESC</kbd>.",
       "J": "juntar siguiente línea con la actual",
       "gJ": "une la línea de abajo a la actual sin espacio entre ellas",
       "gwip": "párrafo de reflujo",
@@ -110,7 +112,7 @@
       "it": "bloque interior con etiquetas <>",
       "Esc": "salir del modo visual"
     },
-    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+    "tip1": "En lugar de <kbd>b</kbd> o <kbd>B</kbd> también puede usar <kbd>(</kbd> o <kbd>{</kbd> respectivamente."
   },
   "visualCommands": {
     "title": "Comandos visuales",
@@ -169,7 +171,7 @@
       "gsemicolon": "ir a la posición anterior en la lista de cambios",
       "ctrlPlusCloseSquare": "saltar a la etiqueta debajo del cursor"
     },
-    "tip1": "Para saltar a una marca, puede usar una tilde (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip1": "Para saltar a una marca, puede usar una tilde (<kbd>`</kbd>) o un apóstrofo (<kbd>'</kbd>). Usando un apóstrofo salta al inicio (primer carácter no-espacio) de la linea que contiene la marca.",
     "tip": ""
   },
   "macros": {
@@ -191,7 +193,7 @@
       "colonTerminal": "abre una ventana de terminal",
       "openFile": "abrir archivo"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "Ejecuta <kbd>vimtutor</kbd> en una terminal para aprender los primeros comandos de Vim."
   },
   "cutAndPaste": {
     "title": "Copiar y pegar",
@@ -301,7 +303,7 @@
       "colontabmove": "mover a la pestaña actual a la posición número # (desde 0)",
       "colontabc": "cerrar todas las pestañas y sus ventanas",
       "colontabo": "cerrar todas las pestañas salvo la actual",
-      "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
+      "colontabdo": "ejecuta el <code>comando</code> en todas las pestañas (p. ej., <code>:tabdo q</code> - cierra todas las pestañas abiertas)"
     }
   },
   "diff": {
@@ -323,8 +325,8 @@
       "colonDiffupdate": "actualizar diferencias",
       "colonDiffoff": "desactivar el modo diferencial para la ventana actual"
     },
-    "tip1": "The comandos for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "Los comandos de plegar <kbd>za</kbd>) operan en un nivel. Para operar en todos los niveles, use letras mayúsculas (p. ej. <kbd>zA</kbd>).",
+    "tip2": "Para ver las diferencias de archivos, puede iniciar Vim directamente en el modo diferencias ejecutando <kbd>vimdiff</kbd> en una terminal. Incluso se puede configurar como <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "keyword",

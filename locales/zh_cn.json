@@ -65,7 +65,8 @@
       "ctrlPlusd": "在插入模式下，向左缩进，宽度由 shiftwidth 控制",
       "ctrlPlusn": "在插入模式下，在光标之前插入自动补全的下一个匹配项",
       "ctrlPlusp": "在插入模式下，在光标之前插入自动补全的上一个匹配项",
-      "ctrlPlusrx": "insert the contents of register x",
+      "ctrlPlusrx": "插入寄存器 x 的内容",
+      "ctrlPlusox": "暂时进入正常模式以发出一个正常模式命令 x。",
       "Esc": "退出插入模式"
     }
   },
@@ -73,12 +74,13 @@
     "title": "编辑文本",
     "commands": {
       "r": "替换当前字符",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "将下一行合并到当前行, 并在两部分文本之间插入一个空格",
       "gJ": "将下一行合并到当前行, 两部分文本之间不含空格",
       "gwip": "重新调整段落",
       "gTilde": "switch case up to motion",
-      "gu": "change to lowercase up to motion",
-      "gU": "change to uppercase up to motion",
+      "gu": "小写操作修饰符",
+      "gU": "大写操作修饰符",
       "cc": "将光标所在的行删除, 然后进入插入模式",
       "C": "将光标处到行尾删除, 然后进入插入模式",
       "cDollar": "将光标处到行尾删除, 然后进入插入模式",
@@ -88,7 +90,7 @@
       "S": "清空当前行, 然后进入插入模式 (同<kbd>cc</kbd>)",
       "xp": "当前字符后移",
       "u": "撤销",
-      "U": "restore (undo) last changed line",
+      "U": "撤销上一次的改动行的操作",
       "CtrlPlusr": "重复",
       "dot": "再次执行上个命令"
     }
@@ -169,7 +171,7 @@
       "gsemicolon": "go to older position in change list",
       "ctrlPlusCloseSquare": "jump to the tag under cursor"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
   },
   "macros": {
@@ -188,7 +190,7 @@
       "saveAsFile": "另存为",
       "closePane": "关闭当前窗口",
       "K": "打开光标所在单词的man页面",
-      "colonTerminal": "open a terminal window",
+      "colonTerminal": "打开一个shell窗口",
       "openFile": "打开文件"
     },
     "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."

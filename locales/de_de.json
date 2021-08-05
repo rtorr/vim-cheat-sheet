@@ -66,6 +66,7 @@
       "ctrlPlusn": "Nächstes passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
       "ctrlPlusp": "Vorheriges passendes Wort vor dem Cursor einfügen (auto-complete) im Eingabe-Modus",
       "ctrlPlusrx": "Füge den Inhalt von Register x ein",
+      "ctrlPlusox": "Wechseln Sie vorübergehend in den Normalmodus, um nur einen Normalmodus Befehl -x zu verwenden.",
       "Esc": "Eingabe-Modus verlassen"
     }
   },
@@ -73,6 +74,7 @@
     "title": "Editieren",
     "commands": {
       "r": "Einzelnes Zeichen ersetzen",
+      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
       "J": "Die Zeile unterhalb zur aktuellen Zeile hinzufügen",
       "gJ": "Die Zeile unterhalb zur aktuellen Zeile ohne Abstand hinzufügen",
       "gwip": "Absatz neu umbrechen",
