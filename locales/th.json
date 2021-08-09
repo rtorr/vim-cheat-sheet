@@ -289,7 +289,11 @@
       "ctrlPluswh": "เลื่อนเคอร์เซอร์ไปหน้าต่างทางซ้าย (การแบ่งตามแนวตั้ง)",
       "ctrlPluswl": "เลื่อนเคอร์เซอร์ไปหน้าต่างทางขวา (การแบ่งตามแนวตั้ง",
       "ctrlPluswj": "เลื่อนเคอร์เซอร์ไปหน้าต่างด้านล่าง (การแบ่งตามแนวนอน)",
-      "ctrlPluswk": "เลื่อนเคอร์เซอร์ไปหน้าต่างด้านบน (การแบ่งตามแนวนอน)"
+      "ctrlPluswk": "เลื่อนเคอร์เซอร์ไปหน้าต่างด้านบน (การแบ่งตามแนวนอน)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {

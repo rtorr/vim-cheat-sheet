@@ -288,7 +288,11 @@
       "ctrlPluswh": "muovi cursore sul buffer successivo (a destra)",
       "ctrlPluswl": "muovi cursore sul buffer precedente (a sinistra)",
       "ctrlPluswj": "muovi cursore sul buffer inferiore (divisione orizzontale)",
-      "ctrlPluswk": "muovi cursore sul buffer superiore (divisione orizzontale)"
+      "ctrlPluswk": "muovi cursore sul buffer superiore (divisione orizzontale)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {

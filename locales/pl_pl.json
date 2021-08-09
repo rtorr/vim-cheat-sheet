@@ -289,7 +289,11 @@
       "ctrlPluswh": "przesuń kursor do lewego okna (podział wertykalny)",
       "ctrlPluswl": "przesuń kursor do prawego okna (podział wertykalny)",
       "ctrlPluswj": "przesuń kursor do okna poniżej (podział horyzontalny)",
-      "ctrlPluswk": "przesuń kursor do okna powyżej (podział horyzontalny)"
+      "ctrlPluswk": "przesuń kursor do okna powyżej (podział horyzontalny)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {

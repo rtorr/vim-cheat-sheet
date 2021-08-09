@@ -288,7 +288,11 @@
       "ctrlPluswh": "move cursor to the left window (vertical split)",
       "ctrlPluswl": "move cursor to the right window (vertical split)",
       "ctrlPluswj": "move cursor to the window below (horizontal split)",
-      "ctrlPluswk": "move cursor to the window above (horizontal split)"
+      "ctrlPluswk": "move cursor to the window above (horizontal split)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {

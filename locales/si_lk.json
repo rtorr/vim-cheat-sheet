@@ -289,7 +289,11 @@
       "ctrlPluswh": "වම් කවුළුව වෙත කර්සරය ගෙනයාම (සිරස් භේදය)",
       "ctrlPluswl": "දකුණු කවුළුව වෙත කර්සරය ගෙනයාම (සිරස් භේදය)",
       "ctrlPluswj": "පහත දැක්වෙන කවුළුව කර්සරය ගෙනයාම (තිරස් භේදය)",
-      "ctrlPluswk": "ඉහළ කවුළුව වෙත ගෙන යාම (තිරස් භේදය)"
+      "ctrlPluswk": "ඉහළ කවුළුව වෙත ගෙන යාම (තිරස් භේදය)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {
