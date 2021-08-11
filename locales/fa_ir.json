@@ -15,8 +15,8 @@
       "E": "برو به آخر کلمه (کلمه هایی که شامل نقطه و علامت)",
       "b": "برو به ابتدای کلمه",
       "B": "برو به ابتدای کلمه(کلمه هایی که شامل نقطه و علامت)",
-      "ge": "jump backwards to the end of a word",
-      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "ge": "پرش رو به عقب تا انتهای کلمه",
+      "gE": "پرش رو به عقب تا انتهای کلمه (کلمات می‌توانند شامل نقطه‌گذاری‌ها باشند)",
       "H": "برو به ابتدای نمایشگر",
       "M": "برو به وسط نمایشگر",
       "L": "برو به آخر نمایشگر",
@@ -27,8 +27,8 @@
       "gg": "برو به اولین خط این فایل",
       "G": "برو به آخرین خط این فایل",
       "fiveG": "برو به خط شماره 5",
-      "gd": "move to local declaration",
-      "gD": "move to global declaration",
+      "gd": "حرکت روی تعریف (اعلام) محلی",
+      "gD": "حرکت روی تعریف (اعلام) سرتاسری",
       "fx": "برو به کاراکتر x",
       "tx": "برو به یک کاراکتر قبل از x",
       "Fx": "برو به کاراکتر x قبل از محل فعلی مکان نما",
@@ -82,7 +82,7 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "خط فعلی را جایگزین کن",
-      "C": "change (replace) to the end of the line",
+      "C": "تغییر (جایگزین‌کردن) تا انتهای خط",
       "cDollar": "از مکان فعلی تا آخر خط را جایگزین کن",
       "ciw": "خط فعلی را جایگزین کن",
       "cw": "کلمه فعلی را جایگزین کن",
@@ -90,7 +90,7 @@
       "S": "خط فعلی را جایگزین کن(مثل cc)",
       "xp": "ترانهادن دو کاراکتر(پاک کردن و چسباندن)",
       "u": "بازگرداندن",
-      "U": "restore (undo) last changed line",
+      "U": "بازگرداندن تغییرات آخرین خط تغییرکرده",
       "CtrlPlusr": "دوباره انجام بده",
       "dot": "فرمان قبلی را تکرار کن"
     }
@@ -122,8 +122,8 @@
       "y": "کپی کردن متن",
       "d": "حذف متن",
       "tilde": "تغییر از حرف کوچک به بزرگ یا برعکس",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "u": "تغییر متن مشخص‌شده به حروف کوچک",
+      "U": "تغییر متن مشخص‌شده به حروف بزرگ"
     }
   },
   "registers": {
@@ -132,22 +132,22 @@
       "show": "محتوای رجیستر را نمایش بده",
       "pasteRegisterX": "کپی کردن به رجیستر x",
       "yankIntoRegisterX": "محتوای رجیستر x را پیست کن",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "quotePlusy": "کپی‌کردن (یانک) در رجیستر کلیپ‌بورد سیستم ",
+      "quotePlusp": "چسباندن به وسیلیه رجیستر کلیپ‌بورد سیستم"
     },
     "tip1": "محتوای رجیستر ها در فایل ~/.viminfo ذخیره می شوند و بعد از ریستارت برنامه به آنها دسترسی دارید.",
     "tip2": {
-      "0": "last yank",
-      "title": "Special registers:",
+      "0": "آخرین یانک (کپی)",
+      "title": "ثبات‌های ویژه:",
       "quote": "unnamed register, last delete or yank",
-      "percent": "current file name",
+      "percent": "نام فایل جاری",
       "hashtag": "alternate file name",
       "asterisk": "clipboard contents (X11 primary)",
       "plus": "clipboard contents (X11 clipboard)",
-      "slash": "last search pattern",
-      "colon": "last command-line",
-      "dot": "last inserted text",
-      "minus": "last small (less than a line) delete",
+      "slash": "آخرین پترن سرچ",
+      "colon": "آخرین خط دستور",
+      "dot": "آخرین متن درج‌شده",
+      "minus": "آخرین حذف کوچیک (کمتر از یک خط)",
       "equal": "expression register",
       "underscore": "black hole register"
     }
@@ -163,13 +163,13 @@
       "backtickQuote": "go to the position when last editing this file",
       "backtickDot": "go to the position of the last change in this file",
       "backtickBacktick": "go to the position before the last jump",
-      "colonjumps": "list of jumps",
-      "ctrlPlusi": "go to newer position in jump list",
-      "ctrlPluso": "go to older position in jump list",
-      "colonchanges": "list of changes",
-      "gcomma": "go to newer position in change list",
-      "gsemicolon": "go to older position in change list",
-      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+      "colonjumps": "لیست پرش‌ها",
+      "ctrlPlusi": "برو به مکان جدید‌تر در لیست پرش",
+      "ctrlPluso": "برو به مکان قدیمی‌تر در لیست پرش",
+      "colonchanges": "لیست تغییرات",
+      "gcomma": "برو به مکان جدیدتر در لیست تغییر",
+      "gsemicolon": "برو به مکان قدیمی‌تر در لیست تغییر",
+      "ctrlPlusCloseSquare": "پرش به برچسب زیر مکان‌نما"
     },
     "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
@@ -186,7 +186,7 @@
   "global": {
     "title": "فرمان های کلی",
     "commands": {
-      "helpForKeyword": "کمک در مورد keyword",
+      "helpForKeyword": "کمک در مورد کلمه کلیدی",
       "saveAsFile": "ذخیره کردن با عنوان",
       "closePane": "بستن پنل فعلی",
       "K": "برای کلمه زیر مکان‌نما، یک صفحه راهنما باز کن",
@@ -217,18 +217,18 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "تو رفتنگی متن",
     "commands": {
       "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
       "lessThanLessThan": "de-indent (move left) line one shiftwidth",
       "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
       "greaterThanib": "indent inner block with ()",
       "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
+      "3==": "تنظیم مجدد تو رفتگی ۳ خط",
       "=Percent": "re-indent a block with () or {} (cursor on brace)",
       "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line"
+      "gg=G": "تنظیم مجدد تورفتنگی کل بافر",
+      "closeSquarep": "چسباندن و تنظیم تو رفتگی برای خط کنونی"
     }
   },
   "exiting": {
@@ -263,7 +263,7 @@
       "coloncn": "برو به نتیجه بعدی",
       "coloncp": "برو به نتیجه قبلی",
       "coloncopen": "باز کردن یک پنجره که شامل لیست نتایج جستجو باشد",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "بستن پنجره تعمیر سریع"
     }
   },
   "workingWithMultipleFiles": {
@@ -274,18 +274,18 @@
       "colonbprev": "برو به بافر قبلی",
       "colonls": "لیست تمامی بافرهای باز",
       "colonbd": "بستن بافر(بسته شدن فایل)",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "با استفاده از هشتگ (#) به بافر برو",
+      "colonbfile": "با استفاده از فایل به بافر برو",
       "colonsp": "باز کردن فایل در پنجره جدید و  به دو قسمت کردن پنجره",
       "colonvsp": "باز کردن فایل در پنجره جدید و به دو قسمت کردن پنجره به صورت عمودی",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvertba": "پیرایش تمامی بافرها با استفاده از پنجره‌های عمودی",
+      "colontabba": "ویرایش تمامی بافرها با استفاده از تب‌‌ها",
       "ctrlPlusws": "به دو قسمت کردن پنجره",
       "ctrlPluswv": "به دو قسمت کردن به صورت عمودی",
       "ctrlPlusww": "سوئیچ کردن مابین پنجره ها",
       "ctrlPluswq": "خارج شدن از پنجره",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswx": "تعویض پنجره فعلی با بعدی",
+      "ctrlPlusw=": "مساوی‌کردن طول و عرض تمامی پنجره‌ها",
       "ctrlPluswh": "انتقال مکان نما به پنجره سمت چپ",
       "ctrlPluswl": "انتقال مکان نما به پنجره سمت راست",
       "ctrlPluswj": "انتقال مکان نما به پنجره پایین",
