@@ -1,0 +1,343 @@
+{
+  "title": "Català",
+  "lang": "ca",
+  "lang_tag": "ca",
+  "cursorMovement": {
+    "title": "Moure el cursor",
+    "commands": {
+      "h": "moure el cursor cap a l'esquerra",
+      "j": "moure el cursor cap avall",
+      "k": "moure el cursor cap amunt",
+      "l": "moure el cursor cap a la dreta",
+      "w": "saltar a l'inici de la següent paraula",
+      "W": "saltar a l'inici de la següent paraula (la paraula pot contenir puntuació)",
+      "e": "saltar al final de la següent paraula",
+      "E": "saltar al final de la següent paraula (la paraula pot contenir puntuació)",
+      "b": "tornar a l'inici d'una paraula",
+      "B": "tornar a l'inici d'una paraula (la paraula pot contenir puntuació)",
+      "ge": "saltar enrere fins al final d'una paraula",
+      "gE": "saltar enrere fins al final d'una paraula (la paraula pot contenir puntuació)",
+      "H": "moure's a la part superior de la pantalla",
+      "M": "moure's a la part mitja de la pantalla",
+      "L": "moure's al part inferior de la pantalla",
+      "zero": "saltar a l'inici de la línia",
+      "caret": "saltar al primer caràcter de la línia que no estigui en blanc",
+      "dollar": "saltar al final de la línia",
+      "g_": "saltar a l'últim caràcter de la línia que no estigui en blanc",
+      "gg": "anar a la primera línia del document",
+      "G": "anar a la darrera línia del document",
+      "fiveG": "anar a la línia 5",
+      "gd": "saltar a la declaració local",
+      "gD": "saltar a la declaració global",
+      "fx": "saltar a la següent aparició del caràcter x",
+      "tx": "saltar a la posició anterior a la següent aparició del caràcter x",
+      "Fx": "saltar a l'aparició anterior del caràcter x",
+      "Tx": "saltar a la posició següent a l'anterior aparició del caràcter x",
+      "semicolon": "repetir el moviment anterior d'f, t, F o T",
+      "comma": "repetir el moviment anterior d'f, t, F o T, cap enrere",
+      "closeCurlyBrace": "saltar al paràgraf següent (o funció/bloc, en mode d'edició)",
+      "openCurlyBrace": "saltar al paràgraf anterior (o funció/bloc, en mode d'edició)",
+      "centerCursor": "centrar el cursor a la pantalla",
+      "CtrlPluse": "moure la pantalla cap avall una línia (sense moure el cursor)",
+      "CtrlPlusy": "moure la pantalla una línia cap amunt (sense moure el cursor)",
+      "CtrlPlusb": "retrocedir una pantalla sencera",
+      "CtrlPlusf": "avançar una pantalla sencera",
+      "CtrlPlusu": "retrocedir mitja pantalla",
+      "CtrlPlusd": "avançar mitja pantalla",
+      "percent": "anar al caràcter relacionat (parells per defecte: '()', '{}', '[]' - utilitzeu </code>:h matchpairs</code> a Vim per a més informació)"
+    },
+    "tip": "Escriure un nombre abans del comandament de moviment per a repetir-lo. Per exemple, <kbd>4j</kbd> mourà el cursor cap avall 4 línies."
+  },
+  "insertMode": {
+    "title": "Mode inserir - inserir/afegir text",
+    "commands": {
+      "i": "inserir abans del cursor",
+      "I": "inserir a l'inici de la línia",
+      "a": "inserir després del cursor",
+      "A": "inserir al final de la línia",
+      "o": "inserir una nova línia sota la línia actual",
+      "O": "inserir una nova línia sobre la línia actual",
+      "ea": "inserir després de la paraula",
+      "ctrlPlush": "esborrar el caràcter abans del cursor durant el mode d'inserció",
+      "ctrlPlusw": "esborrar la paraula abans del cursor durant el mode d'inserció",
+      "ctrlPlusj": "començar una nova línia durant el mode d'inserció",
+      "ctrlPlust": "sagnar (moure cap a la dreta) la línia un espai d'autoindentació (shiftwidth) durant el mode d'inserció",
+      "ctrlPlusd": "suprimir el sagnat (moure cap a l'esquerra) de la línia un espai d'autoindentació (shiftwidth) durant el mode d'inserció",
+      "ctrlPlusn": "inserir (autocompletar) la coincidència següent abans del cursor durant el mode d'inserció",
+      "ctrlPlusp": "inserir (autocompletar) la coincidència anterior abans del cursor durant el mode d'inserció",
+      "ctrlPlusrx": "inserir el contingut del registre x",
+      "ctrlPlusox": "canviar temporalment al mode normal per a executar un comandament x en mode normal",
+      "Esc": "sortir del mode d'inserció"
+    }
+  },
+  "editing": {
+    "title": "Editar",
+    "commands": {
+      "r": "substituir un caràcter",
+      "R": "substituir més de un caràcter, fins que es premi <kbd>ESC</kbd>.",
+      "J": "afegir la línia de sota a l'actual amb un espai entre mig",
+      "gJ": "afegir la línia de sota a l'actual sense espai entre mig",
+      "gwip": "redistribuir el text de paràgraf",
+      "gTilde": "intercanviar majúscules i minúscules segons el moviment",
+      "gu": "canviar a minúscules segons el moviment",
+      "gU": "canviar a majúscules fins al moviment",
+      "cc": "canviar (substituir) tota la línia",
+      "C": "canviar (substituir) fins al final de la línia",
+      "cDollar": "canviar (substituir) fins al final de la línia (igual que C)",
+      "ciw": "canviar (substituir) la paraula sencera",
+      "cw": "canviar (substituir) fins al final de la paraula",
+      "s": "esborrar caràcter i substituir text",
+      "S": "esborrar línia i substituir text (igual que cc)",
+      "xp": "transposar dos caràcters (suprimir i enganxar)",
+      "u": "desfer",
+      "U": "restaurar (desfer) la darrera línia modificada",
+      "CtrlPlusr": "refer",
+      "dot": "repetir el darrer comandament"
+    }
+  },
+  "markingText": {
+    "title": "Seleccionar text (mode visual)",
+    "commands": {
+      "v": "iniciar el mode visual, seleccionar línies i executar un comandament (com y-yank)",
+      "V": "iniciar el mode visual seleccionant la línia completa",
+      "o": "moure's a l'altre extrem de la zona seleccionada",
+      "CtrlPlusv": "iniciar el mode visual de bloc (visual block mode)",
+      "O": "moure's a l'altre cantó del bloc",
+      "aw": "seleccionar una paraula",
+      "ab": "un bloc amb ()",
+      "aB": "un bloc amb {}",
+      "at": "un bloc amb etiquetes <>",
+      "ib": "un bloc intern amb ()",
+      "iB": "un bloc intern amb {}",
+      "it": "bloc interior amb etiquetes <>",
+      "Esc": "sortir del mode visual"
+    },
+    "tip1": "En comptes de <kbd>b</kbd> o <kbd>B</kbd> també es poden utilitzar <kbd>(</kbd> o <kbd>{</kbd> respectivament."
+  },
+  "visualCommands": {
+    "title": "Comandaments visuals",
+    "commands": {
+      "greaterThan": "desplaçar el text cap a la dreta",
+      "lessThan": "desplaçar el text cap a l'esquerra",
+      "y": "copiar el text seleccionat",
+      "d": "esborrar el text seleccionat",
+      "tilde": "intercanviar entre majúscules i minúscules",
+      "u": "posar el text seleccionat en minúscules",
+      "U": "posar el text seleccionat en majúscules",
+      "i": "copiar el text seleccionat"
+    }
+  },
+  "registers": {
+    "title": "Registres",
+    "commands": {
+      "show": "mostrar el contingut dels registres",
+      "pasteRegisterX": "enganxar el contingut del registre X",
+      "yankIntoRegisterX": "copiar al registre X",
+      "quotePlusy": "copiar al registre del porta-retalls del sistema",
+      "quotePlusp": "enganxar des del registre del porta-retalls del sistema"
+    },
+    "tip1": "Els registres són desats a ~/.viminfo, i seran carregats la propera vegada que s'iniciï Vim.",
+    "tip2": {
+      "0": "darrera còpia",
+      "title": "Registres especials:",
+      "quote": "registre sense nom, darrera eliminació o còpia",
+      "percent": "nom actual de l'arxiu",
+      "hashtag": "nom alternatiu de l'arxiu",
+      "asterisk": "contingut del porta-retalls (X11 primari)",
+      "plus": "contingut del porta-retalls (porta-retalls X11)",
+      "slash": "darrer patró de cerca",
+      "colon": "darrera línia de comandaments",
+      "dot": "darrer text inserit",
+      "minus": "darrer esborrat breu (inferior a una línia)",
+      "equal": "registre d'expressió",
+      "underscore": "registre de forat negre"
+    }
+  },
+  "marks": {
+    "title": "Marques",
+    "commands": {
+      "list": "mostrar marques",
+      "currentPositionA": "definir la posició actual per a la marca A",
+      "jumpPositionA": "saltar a la posició de la marca A",
+      "yankToMarkA": "copiar text a la posició de la marca A",
+      "backtick0": "anar a la posició des de la qual es va sortir prèviamente de Vim",
+      "backtickQuote": "anar a la posició de la darrera edició de l'arxiu",
+      "backtickDot": "anar a la posició on es va produir el darrer canvi de l'arxiu",
+      "backtickBacktick": "anar a la posició abans del darrer salt",
+      "colonjumps": "llistat de salts",
+      "ctrlPlusi": "anar a la nova posició del llistat de salts",
+      "ctrlPluso": "anar a la posició anterior del llistat de salts",
+      "colonchanges": "llistat de canvis",
+      "gcomma": "anar a la nova posició del llistat de canvis",
+      "gsemicolon": "anar a la posició anterior del llistat de canvis",
+      "ctrlPlusCloseSquare": "saltar a l'etiqueta sota el cursor"
+    },
+    "tip1": "Para a saltar fins a una marca, es pot utilitzar un accent obert (<kbd>`</kbd>) o un apòstrof (<kbd>'</kbd>). Utilitzant l'apòstrof saltarà fins a l'inici (primer caràcter que no estigui en blanc) de la línia que conté la marca.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macros",
+    "commands": {
+      "recordA": "enregistrar la macro a",
+      "stopRecording": "detenir la gravació de la macro",
+      "runA": "executar la macro a",
+      "rerun": "tornar a executar la darrera macro executada"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "obrir l'ajuda per a una paraula clau",
+      "saveAsFile": "desar arxiu com a",
+      "closePane": "tancar l'arxiu actual",
+      "K": "obrir la página del manual (man page) per a la paraula sota el cursor",
+      "colonTerminal": "obrir un terminal",
+      "openFile": "obrir arxiu"
+    },
+    "tip1": "Executar <kbd>vimtutor</kbd> a un terminal per a aprendre els primers comandaments de Vim."
+  },
+  "cutAndPaste": {
+    "title": "Copiar i enganxar",
+    "commands": {
+      "yy": "copiar una línia",
+      "twoyy": "copiar dues línies",
+      "yw": "copiar la resta de caràcters de la paraula desde la posició del cursor fins a l'inici de la paraula següent",
+      "yiw": "copiar la paraula sota el cursor",
+      "yaw": "copiar la paraula sota el cursor i l'espai darrere o davant d'ella",
+      "yDollar": "copiar fins al final de la línia",
+      "p": "enganxar abans del cursor",
+      "P": "enganxar després del cursor",
+      "dd": "esborrar (retallar) una línia",
+      "twodd": "esborrar (retallar) dues línias",
+      "dw": "esborrar (retallar) la resta de caràcters de la paraula des de la posició del cursor fins a l'inici de la paraula següent",
+      "diw": "esborrar (retallar) la paraula sota el cursor",
+      "daw": "esborrar (retallar) la paraula sota el cursor i l'espai darrere o davant d'ella",
+      "D": "esborrar (retallar) fins el final de la línia",
+      "dDollar": "esborrar (retallar) fins al final de la línia",
+      "x": "esborrar (retallar) un caràcter"
+    }
+  },
+  "indentText": {
+    "title": "Indentar el text",
+    "commands": {
+      "greaterThanGreaterThan": "sagnar (moure cap a la dreta) la línia un espai d'utoindentació (shiftwidth)",
+      "lessThanLessThan": "suprimir el sagnat (moure cap a l'esquerra) la línia un espai d'autoindentació (shiftwidth)",
+      "greaterThanPercent": "sagnar un bloc amb () o {} (amb el cursor sobre el parèntesi o la clau)",
+      "greaterThanib": "sagnar el bloc interior amb ()",
+      "greaterThanat": "sagnar un bloc amb etiquetes <>",
+      "3==": "tornar a sagnar 3 línies",
+      "=Percent": "tornar a sagnar un bloc amb () o {} (amb el cursor sobre el parèntesi o la clau)",
+      "=iB": "tornar a sagnar el bloc interior amb {}",
+      "gg=G": "tornar a sagnar tots els caràcters a la memòria intermèdia (buffer)",
+      "closeSquarep": "enganxar i ajustar la sagnia a la línia actual"
+    }
+  },
+  "exiting": {
+    "title": "Sortir",
+    "commands": {
+      "colonw": "desar l'arxiu sense sortir",
+      "colonwsudo": "desar l'arxiu utilitzant sudo",
+      "colonwq": "desar l'arxiu i sortir",
+      "colonx": "desar l'arxiu i sortir",
+      "colonq": "sortir (no funcionarà en cas que hi hagi canvis sense desar)",
+      "colonqbang": "sortir descartant els canvis no desats",
+      "colonwqa": "escriure (desar) i sortir de totes les pestanyes"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Cercar i substituir",
+    "commands": {
+      "forwardSlashPattern": "cercar patró",
+      "questionMarkPattern": "cercar patró cap enrere",
+      "backslashVpattern": "patró «molt màgic» ('very magic'): els caràcters no alfanumèrics s'interpretaran com a caràcters especials regex (no cal escapar-los)",
+      "n": "repetir la cerca en la mateixa direcció",
+      "N": "repetir la cerca en direcció oposada",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "substituir a tot l'arxiu",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "substituir a tot l'arxiu demanat la confirmació",
+      "colonnoh": "desactivar el realçament (highlight) dels resultats de cerca"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Cercar a múltiples arxius",
+    "commands": {
+      "colonvimgrep": "cercar un patró a múltiples arxius",
+      "coloncn": "anar al resultat següent",
+      "coloncp": "anar al resultat anterior",
+      "coloncopen": "obrir una finestra amb el llistat de resultats",
+      "coloncclose": "tancar la finestra de correcció ràpida"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Treballar amb múltiples arxius",
+    "commands": {
+      "colone": "editar un arxiu en una nova memòria intermèdia (buffer)",
+      "colonbnext": "anar a la propera memòria intermèdia (buffer)",
+      "colonbprev": "anar a la memòria intermèdia (buffer) anterior",
+      "colonls": "mostrar totes les memòries intermèdies (buffer) en ús",
+      "colonbd": "esborrar la memòria intermèdia (buffer) (tancar un arxiu)",
+      "colonbnumber": "anar a una memòria intermèdia (buffer) a través del número # d'índex",
+      "colonbfile": "anar a una memòria intermèdia (buffer) per arxiu",
+      "colonsp": "obrir un arxiu en una nova memòria intermèdia (buffer) i dividir la finestra",
+      "colonvsp": "obrir arxiu en una nova memòria intermèdia (buffer) i dividir la finestra verticalment",
+      "colonvertba": "editar totes les memòries intermèdies (buffers) com a finestres verticals",
+      "colontabba": "editar totes les memòries intermèdies (buffers) com a pestanyes",
+      "ctrlPlusws": "dividir la finestra",
+      "ctrlPluswv": "dividir la finestra verticalment",
+      "ctrlPlusww": "canviar de finestra",
+      "ctrlPluswq": "tancar la finestra",
+      "ctrlPluswx": "intercanviar la finestra actual amb la següent",
+      "ctrlPlusw=": "igualar l'alçada i l'amplada de totes les finestres",
+      "ctrlPluswh": "moure el cursor a la finestra esquerra (divisió vertical)",
+      "ctrlPluswl": "moure el cursor a la finestra dreta (divisió vertical)",
+      "ctrlPluswj": "moure el cursor a la finestra de sota (divisió horitzontal)",
+      "ctrlPluswk": "moure el cursor a la finestra de dalt (divisió horitzontal)"
+    }
+  },
+  "tabs": {
+    "title": "Pestanyes",
+    "commands": {
+      "colonTabNew": "obrir arxiu a una nova pestanya",
+      "ctrlPluswT": "moure la finestra actual a la seva pròpia pestanya",
+      "gt": "anar a la pestanya següent",
+      "gT": "anar a la pestanya anterior",
+      "hashgt": "anar a la pestanya número #",
+      "colontabmove": "moure la pestanya actual a la posició número # (indexada a partir del 0)",
+      "colontabc": "tancar totes les pestanyes i les seves finestres",
+      "colontabo": "tancar totes les pestanyes tret de l'actual",
+      "colontabdo": "executar el <code>comandament</code> a totes las pestanyes (per exemple, <code>:tabdo q</code> - tanca totes les pestanyes obertes)"
+    }
+  },
+  "diff": {
+    "title": "Diferència",
+    "commands": {
+      "zf": "definir manualment un plec (fold o línies amagades) segons el moviment",
+      "zd": "esborrar el plec (fold o línies amagades) sota el cursor",
+      "za": "obrir o tancar el plec (fold o línies amagades) sota el cursor",
+      "zo": "obrir el plec (fold o línies amagades) sota el cursor",
+      "zc": "tancar el plec (fold o línies amagades) sota el cursor",
+      "zr": "suprimir (obrir) un nivell de plecs (folds o línies amagades)",
+      "zm": "plegar més (tancar) un nivell de plecs (folds o línies amagades)",
+      "zi": "obrir o tancar la funcionalitat de plegat",
+      "closeSquarec": "saltar a l'inici del canvi següent",
+      "openSquarec": "saltar a l'inici del canvi anterior",
+      "do": "obtenir (get) la diferència (respecte a altra memòria intermèdia o buffer)",
+      "dp": "col·locar (put) la diferència (a una altra memòria intermèdia o buffer)",
+      "colonDiffthis": "fer que la finestra actual s'incorpori al mode diferencial",
+      "colonDiffupdate": "actualitzar les diferències",
+      "colonDiffoff": "desactivar el mode diferencial per a la finestra actual"
+    },
+    "tip1": "El comandaments de plegar <kbd>za</kbd>) operan a un únic nivell. Per a operar a tots els nivells, utilitzeu lletres majúscules (per exemple, <kbd>zA</kbd>).",
+    "tip2": "Per a veure les diferències entre arxius, es pot iniciar Vim directament en el mode diferencial executant <kbd>vimdiff</kbd> a un terminal. Fins i tot es pot configurar com a <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
+  "languages": {
+    "title": "Llengües"
+  },
+  "footer": "Comprova el codi font a",
+  "layout": "page",
+  "permalink": "/lang/ca/"
+}
