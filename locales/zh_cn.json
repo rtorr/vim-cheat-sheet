@@ -289,7 +289,11 @@
       "ctrlPluswh": "切换到左侧窗口",
       "ctrlPluswl": "切换到右侧窗口",
       "ctrlPluswj": "切换到下侧窗口",
-      "ctrlPluswk": "切换到上侧窗口"
+      "ctrlPluswk": "切换到上侧窗口",
+      "ctrlPluswH": "使游标所在视窗全高并移至最左 (最左垂直视窗)",
+      "ctrlPluswL": "使游标所在视窗全高并移至最右 (最右垂直视窗)",
+      "ctrlPluswJ": "使游标所在视窗全宽并移至最下 (最下水平视窗)",
+      "ctrlPluswK": "使游标所在视窗全宽并移至最上 (最上水平视窗)"
     }
   },
   "tabs": {

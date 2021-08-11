@@ -289,7 +289,11 @@
       "ctrlPluswh": "memindahkan kursor ke jendela kiri (split vertikal)",
       "ctrlPluswl": "memindahkan kursor ke jendela kanan (split vertikal)",
       "ctrlPluswj": "memindahkan kursor ke jendela bawah (split horizontal)",
-      "ctrlPluswk": "mmemindahkan kursor ke jendela atas (split horizontal)"
+      "ctrlPluswk": "mmemindahkan kursor ke jendela atas (split horizontal)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {
