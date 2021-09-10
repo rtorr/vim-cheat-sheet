@@ -249,10 +249,10 @@
       "forwardSlashPattern": "جستجوی الگو ",
       "questionMarkPattern": "جستجوی الگو از مکان فعلی مکان نما به قبل",
       "backslashVpattern": "الگوی 'very magic': حروف و اعداد غیر به عنوان regex شناخته می شوند",
-      "n": "تکرار جستجو در جهت قبلی",
-      "N": "تکرار جستجو مخالف جهت قبلی",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "جایگذاری الگوی old با الگوی new",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "جایگذاری الگوی old با الگوی new  همراه با سوال",
+      "n": "تکرار جستجو در جهت یکسان",
+      "N": "تکرار جستجو در جهت مخالف",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "جایگذاری الگوی قدیمی با الگوی جدید",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "جایگذاری الگوی قدیمی با الگوی جدید در تمامی فایل به همراه تایید",
       "colonnoh": "برداشتن هایلایت از نتایج جستجو"
     }
   },
