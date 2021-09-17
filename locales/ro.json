@@ -290,7 +290,11 @@
       "ctrlPluswh": "muta cursorul in fereastra din stanga (vertical)",
       "ctrlPluswl": "muta cursorul in fereastra din dreapta (vertical)",
       "ctrlPluswj": "muta cursorul in fereastra de sus (orizontal)",
-      "ctrlPluswk": "muta cursorul in fereastra de jos (orizontal)"
+      "ctrlPluswk": "muta cursorul in fereastra de jos (orizontal)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {

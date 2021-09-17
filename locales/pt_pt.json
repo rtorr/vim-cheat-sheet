@@ -289,7 +289,11 @@
       "ctrlPluswh": "mover o cursor para a janela da esquerda (divisão vertical)",
       "ctrlPluswl": "mover o cursor para a janela da direita (divisão vertical)",
       "ctrlPluswj": "mover o cursor para a janela de baixo (divisão horizontal)",
-      "ctrlPluswk": "mover o cursor para a janela de cima (divisão horizontal)"
+      "ctrlPluswk": "mover o cursor para a janela de cima (divisão horizontal)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {

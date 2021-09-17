@@ -290,7 +290,11 @@
       "ctrlPluswh": "presunie kurzor do ľavého okna (vertikálne rozdelenie)",
       "ctrlPluswl": "presunie kurzor do pravého okna (vertikálne rozdelenie)",
       "ctrlPluswj": "presunie kurzor do okna pod (horizontálne rozdelenie)",
-      "ctrlPluswk": "presunie kurzor do okna nad (horizontálne rozdelenie)"
+      "ctrlPluswk": "presunie kurzor do okna nad (horizontálne rozdelenie)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {

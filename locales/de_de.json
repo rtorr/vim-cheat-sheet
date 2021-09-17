@@ -288,7 +288,11 @@
       "ctrlPluswh": "Cursor in das linke Fenster (vertikale Teilung)",
       "ctrlPluswl": "Cursor in das rechte Fenster (vertikale Teilung)",
       "ctrlPluswj": "Cursor in das untere Fenster (horizontale Teilung)",
-      "ctrlPluswk": "Cursor in das obere Fenster (horizontale Teilung)"
+      "ctrlPluswk": "Cursor in das obere Fenster (horizontale Teilung)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {
