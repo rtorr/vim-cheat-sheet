@@ -207,6 +207,8 @@
       "yDollar": "copiar fins al final de la línia",
       "p": "enganxar abans del cursor",
       "P": "enganxar després del cursor",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "esborrar (retallar) una línia",
       "twodd": "esborrar (retallar) dues línias",
       "dw": "esborrar (retallar) la resta de caràcters de la paraula des de la posició del cursor fins a l'inici de la paraula següent",
@@ -290,7 +292,11 @@
       "ctrlPluswh": "moure el cursor a la finestra esquerra (divisió vertical)",
       "ctrlPluswl": "moure el cursor a la finestra dreta (divisió vertical)",
       "ctrlPluswj": "moure el cursor a la finestra de sota (divisió horitzontal)",
-      "ctrlPluswk": "moure el cursor a la finestra de dalt (divisió horitzontal)"
+      "ctrlPluswk": "moure el cursor a la finestra de dalt (divisió horitzontal)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
     }
   },
   "tabs": {

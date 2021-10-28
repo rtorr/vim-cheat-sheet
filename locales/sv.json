@@ -205,6 +205,8 @@
       "yDollar": "kopiera till slutet av raden",
       "p": "klistra in urklippet efter markören",
       "P": "klistra in före markören",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "tag bort en rad",
       "twodd": "tag bort två rader",
       "dw": "tag bort tecken från markören till början av nästa ord",

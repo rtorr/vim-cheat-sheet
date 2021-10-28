@@ -206,6 +206,8 @@
       "yDollar": "copier jusqu'à la fin de la ligne",
       "p": "coller le presse-papier après le curseur",
       "P": "coller le presse-papier avant le curseur",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "supprimer (couper) une ligne",
       "twodd": "supprimer (couper) 2 lignes",
       "dw": "supprimer (couper) un mot",

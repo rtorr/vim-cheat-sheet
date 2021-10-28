@@ -206,6 +206,8 @@
       "yDollar": "한 행 끝까지 복사하기",
       "p": "커서 뒤에 붙여넣기",
       "P": "커서 앞에 붙여넣기",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "한 행 잘라내기",
       "twodd": "2줄 잘라내기",
       "dw": "다음 단어까지 잘라내기",

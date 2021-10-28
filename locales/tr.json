@@ -206,6 +206,8 @@
       "yDollar": "satır sonuna kadar kopyalar",
       "p": "imleç sonrasına yapıştırır",
       "P": "imleç öncesine yapıştırır",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "satırı (keser) siler",
       "twodd": "2 satırı (keser) siler",
       "dw": "kelime (keser) siler",

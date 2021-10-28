@@ -206,6 +206,8 @@
       "yDollar": "පේළියේ අවසානය දක්වා පිටපත් කරන්න",
       "p": "කර්සරයට පසු ඇමිණුම් පිටපත් කරගත් පේළි අලවන්න",
       "P": "කර්සරයට පසු ඇමිණුම් පිටපත් කරගත් පේළි අලවන්න",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "වත්මන් පේළිය මකන්න (කපන්න)",
       "twodd": "පේළි 2 ක් (වත්මන් හා පහත) මකන්න (කැපීම)",
       "dw": "ඊළඟ වදන ය දක්වා කර්සරය යට අක්ෂර මකා දැමීම (කැපීම)",

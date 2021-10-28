@@ -205,6 +205,8 @@
       "yDollar": "copy từ vị trí con trỏ đến cuối hàng.",
       "p": "paste vào vị trí phía sau con trỏ.",
       "P": "paste vào vị trí phía trước con trỏ.",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "xóa 1 hàng.",
       "twodd": "xóa 2 hàng.",
       "dw": "xóa từ vị trí con trỏ đến trước ký tự đầu tiên của từ tiếp theo.",

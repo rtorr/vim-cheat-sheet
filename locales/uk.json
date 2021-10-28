@@ -205,6 +205,8 @@
       "yDollar": "скопіювати до кінця строчки",
       "p": "вставити вміст буфера обміну після курсору",
       "P": "вставити вміст буфера обміну перед курсором",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "видалити (вирізати) строчку",
       "twodd": "видалити (вирізати) 2 строчки",
       "dw": "видалити (вирізати) слово",
