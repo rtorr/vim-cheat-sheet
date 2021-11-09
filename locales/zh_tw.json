@@ -205,6 +205,8 @@
       "yDollar": "複製游標位置到行尾的區塊",
       "p": "在游標後貼上",
       "P": "在游標前貼上",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "剪下 (刪除) 該行",
       "twodd": "剪下 (刪除) 2 行",
       "dw": "剪下 (刪除) 游標位置到下個單字前的字元",

@@ -206,6 +206,8 @@
       "yDollar": "复制, 从光标位置到行末",
       "p": "在光标后粘贴",
       "P": "在光标前粘贴",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "剪切当前行",
       "twodd": "剪切 2 行",
       "dw": "剪切当前单词",

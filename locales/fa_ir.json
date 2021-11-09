@@ -206,6 +206,8 @@
       "yDollar": "کپی کردن تا آخری خط",
       "p": "چسباندن محتوای کلیپ بورد بعد از مکان فعلی مکان نما",
       "P": "چسباندن محتوای کلیپ بورد قبل از مکان فعلی مکان نما",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "کات کردن خط فعلی",
       "twodd": "کات کردن دو خط",
       "dw": "کات کردن از مکان فعلی مکان نما تا ابتدای کلمه بعدی",

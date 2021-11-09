@@ -206,6 +206,8 @@
       "yDollar": "copiar hasta el final de la línea",
       "p": "pegar antes del cursor",
       "P": "pegar después del cursor",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "cortar una línea",
       "twodd": "cortar dos líneas",
       "dw": "cortar el resto de los carácteres de la palabra desde la posición del cursor hasta el principio de la siguiente palabra",

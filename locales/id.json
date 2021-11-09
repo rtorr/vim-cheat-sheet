@@ -206,6 +206,8 @@
       "yDollar": "menyalin dari posisi sekarang hingga akhir baris saat ini",
       "p": "menempelkan salinan dari clipboard setelah kursor",
       "P": "menempelkan salinan dari clipboard sebelum kursor",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "menghapus satu baris",
       "twodd": "menghapus (memotong) dua baris",
       "dw": "menghapus (memotong) kata",

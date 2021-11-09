@@ -206,6 +206,8 @@
       "yDollar": "скопировать до конца строки",
       "p": "вставить буфер обмена после курсора",
       "P": "вставить буфер обмена перед курсором",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "удалить (вырезать) строку",
       "twodd": "удалить (вырезать) 2 строки",
       "dw": "удалить (вырезать) слово",

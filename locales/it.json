@@ -205,6 +205,8 @@
       "yDollar": "copia fino alla fine della linea",
       "p": "incolla dopo il cursore",
       "P": "incolla prima del cursore",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "cancella (taglia) una linea",
       "twodd": "cancella (taglia) due linee",
       "dw": "cancella (taglia) una parola",

@@ -207,6 +207,8 @@
       "yDollar": "copie pana la sfarsitul liniei",
       "p": "lipeste din clipboard dupa cursor",
       "P": "lipeste inainte de cursor",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "sterge (taie) o linie",
       "twodd": "sterge (taie) 2 linii",
       "dw": "sterge (taie) un cuvant",

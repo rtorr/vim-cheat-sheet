@@ -205,6 +205,8 @@
       "yDollar": "cursor ရှိရာ စကားလုံးမှစ၍ စာကြောင်း၏ နောက်ဆုံး အက္ခရာအထိ yank (copy) လုပ်သည် ",
       "p": "cursor ထောက်ထားသောအက္ခရာ၏ နောက်တစ်နေရာတွင် put (paste) လုပ်သည်",
       "P": "cursor ထောက်ထားသောအက္ခရာ၏ ရှေ့တစ်နေရာတွင် put (paste) လုပ်သည်",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "စာကြောင်းတစ်ကြောင်းကို delete (cut) သည် ",
       "twodd": "စာကြောင်းနှစ်ကြောင်းကို delete (cut) သည်",
       "dw": "cursor ရှိရာ စကားလုံးမှစ၍ နောက်စာလုံး၏ ရှေ့ဆုံးအက္ခရာအထိ delete (cut) သည်",

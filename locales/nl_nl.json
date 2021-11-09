@@ -207,6 +207,8 @@
       "yDollar": "kopieer tot het einde van de regel",
       "p": "plak achter de cursor",
       "P": "plak voor de cursor",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "verwijder (knip) een regel",
       "twodd": "verwijder (knip) twee regels",
       "dw": "verwijder (knip) de karakters vanaf de cursorpositie tot het begin van het volgende woord",

@@ -206,6 +206,8 @@
       "yDollar": "kopiuj na koniec wiersza",
       "p": "wklej zawartość schowka za kursorem",
       "P": "wklej przed kursorem",
+      "gp": "wklej zawartość schowka za kursorem i postaw kursor za wklejonym tekstem",
+      "gP": "wklej przed kursorem i postaw kursor za wklejonym tekstem",
       "dd": "kasuj wiersz",
       "twodd": "kasuj dwa wiersze",
       "dw": "kasuj litery wyrazu od miejsca, gdzie znajduje się kursor, na początek następnego słowa",

@@ -207,6 +207,8 @@
       "yDollar": "skopíruje do konca riadku",
       "p": "vloží (prilepí) schránku za kurzor",
       "P": "vloží (prilepí) schránku pred kurzor",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "zmaže (vystrihne) riadok",
       "twodd": "zmaže (vystrihne) 2 riadky",
       "dw": "zmaže (vystrihne) znaky slova z polohy kurzora na začiatok ďalšieho slova",

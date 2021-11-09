@@ -205,6 +205,8 @@
       "yDollar": "bis Zeilenende kopieren",
       "p": "Zwischenablage nach dem Cursor einfügen",
       "P": "Zwischenablage vor dem Cursor einfügen",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "Löschen (Ausschneiden) der aktuellen Zeile",
       "twodd": "Löschen (Ausschneiden) von 2 Zeilen (aktuelle und folgende)",
       "dw": "Zeichen des Worts unterm Cursor bis zum nächsten Wort löschen (ausschneiden).",

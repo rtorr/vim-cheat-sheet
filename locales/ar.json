@@ -205,6 +205,8 @@
       "yDollar": "yank (copy) to end of line",
       "p": "put (paste) the clipboard after cursor",
       "P": "put (paste) before cursor",
+      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
+      "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "delete (cut) a line",
       "twodd": "delete (cut) 2 lines",
       "dw": "delete (cut) word",
