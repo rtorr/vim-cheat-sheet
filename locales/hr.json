@@ -1,0 +1,345 @@
+{
+  "title": "Hrvatski",
+  "lang": "hr",
+  "lang_tag": "hr",
+  "cursorMovement": {
+    "title": "Pomicanje kursora",
+    "commands": {
+      "h": "pomakni kursor lijevo",
+      "j": "pomakni kursor dolje",
+      "k": "pomakni kursor gore",
+      "l": "pomakni kursor desno",
+      "w": "idi na početak sljedeće riječi",
+      "W": "idi na početak sljedeće riječi (riječ može sadržavati znakove interpunkcije)",
+      "e": "idi na kraj riječi",
+      "E": "idi na kraj riječi (riječ može sadržavati znakove interpunkcije)",
+      "b": "idi na početak riječi",
+      "B": "idi na početak riječi (riječ može sadržavati znakove interpunkcije)",
+      "ge": "idi na kraj predhodne riječi",
+      "gE": "idi na kraj predhodne riječi (riječ može sadržavati znakove interpunkcije)",
+      "H": "pomakni kursor na vrh zaslona",
+      "M": "pomakni kursor na sredinu zaslona",
+      "L": "pomakni kursor na dno zaslona",
+      "zero": "idi na početak linije",
+      "caret": "idi na prvi neprazni znak u redu",
+      "dollar": "idi na kraj linije",
+      "g_": "idi na zadnji neprazni znak u redu",
+      "gg": "idi na prvi red dokumenta",
+      "G": "idi na zadnji red dokumenta",
+      "fiveG": "idi na 5. red",
+      "gd": "idi na lokalnu deklaraciju varijable (programski jezici)",
+      "gD": "idi na globalnu deklaraciju varijable (programski jezici)",
+      "fx": "idi na sljedeće pojavljivanje znaka x",
+      "tx": "idi ispred sljedećeg pojavljivanja znaka x",
+      "Fx": "idi na predhodno pojavljivanje znaka x",
+      "Tx": "idi iza predhodnog pojavljivanja znaka x",
+      "semicolon": "ponovi predhodno f, t, F ili T pomicanje",
+      "comma": "ponovi predhodno f, t, F ili T pomicanje, u suprotnom smjeru",
+      "closeCurlyBrace": "idi na sljedeći odjeljak (ili funkciju/blok, kod uređivanja programskog koda)",
+      "openCurlyBrace": "idi na predhodni odjeljak (ili funkciju/blok, kod uređivanja programskog koda)",
+      "centerCursor": "postavi kursor na sredinu zaslona",
+      "CtrlPluse": "pomakni zaslon jednu liniju prema dolje (bez pomicanja kursora)",
+      "CtrlPlusy": "pomakni zaslon jednu liniju prema gore (bez pomicanja kursora)",
+      "CtrlPlusb": "pomakni nazad jedan zaslon",
+      "CtrlPlusf": "pomakni naprijed jedan zaslon",
+      "CtrlPlusu": "pomakni nazad pola zaslona",
+      "CtrlPlusd": "pomakni naprijed pola zaslona",
+      "percent": "idi na sljedeći podudarni znak (podržani zadani parovi: '()', '{}', '[]' - za više informacija koristi Vim naredbu <code>:h matchpairs</code>)"
+    },
+    "tip": "Prije naredbe za pomicanje kursora upiši broj ponavljanja. Npr. <kbd>4j</kbd> pomiče kursor četiri linje prema dolje."
+  },
+  "insertMode": {
+    "title": "Uređivanje teksta (insert mode)",
+    "commands": {
+      "i": "umetni ispred kursora",
+      "I": "umetni na početak reda",
+      "a": "umetni iza kursora",
+      "A": "umetni na kraj reda",
+      "o": "dodaj (započni) novi red ispod kursora",
+      "O": "dodaj (započni) novu red iznad kursora",
+      "ea": "umetni (dodaj) na kraj riječi",
+      "ctrlPlush": "obriši znak ispred kursora tijekom uređivanja",
+      "ctrlPlusw": "obriši riječ ispred kursora tijekom uređivanja",
+      "ctrlPlusj": "idi u novi red tijekom uređivanja",
+      "ctrlPlust": "povećaj uvlaku (pomakni udesno) red za zadanu širinu tijekom uređivanja",
+      "ctrlPlusd": "smanji uvlaku (pomakni ulijevo) red za zadanu širinu tijekom uređivanja",
+      "ctrlPlusn": "umetni (automatsko dovršavanje) sljedeće podudarne riječi ispred kursora tijekom uređivanja",
+      "ctrlPlusp": "umetni (automatsko dovršavanje) predhodne podudarne riječi ispred kursora tijekom uređivanja",
+      "ctrlPlusrx": "umetni sadržaj registra x",
+      "ctrlPlusox": "Privremeno koristi normalni mod za izvršavanje jedne naredbe x.",
+      "Esc": "izađi iz uređivanja teksta"
+    }
+  },
+  "editing": {
+    "title": "Uređivanje",
+    "commands": {
+      "r": "promijeni jedan znak",
+      "R": "promijeni više od jednog znaka, za kraj promjene koristi <kbd>ESC</kbd>",
+      "J": "spoji red ispod s trenutnim redom koristeći jedan prazni znak između (razdjelnik)",
+      "gJ": "spoji red ispod s trenutnim redom bez dodavanja razdjelnika",
+      "gwip": "preoblikuj odjeljak",
+      "gTilde": "zamijeni velika i mala slova koristeći pomicanje kursora",
+      "gu": "promijeni u mala slova koristeći pomicinje kursora",
+      "gU": "promijeni u velika slova koristeći pomicinje kursora",
+      "cc": "promijeni cijeli red",
+      "C": "promijeni sve do kraja reda",
+      "cDollar": "promijeni sve do kraja reda",
+      "ciw": "promijeni cijelu riječ",
+      "cw": "promijeni do kraja riječi",
+      "s": "izbriši znak i zamijeni s drugim tekstom",
+      "S": "izbriši red i zamijeni s drugim tekstom (isto kao cc)",
+      "xp": "zamijeni poredak dva znaka (izbriši i zalijepi)",
+      "u": "poništi (undo)",
+      "U": "poništi sve promjene u zadnje izmjenjenom redu",
+      "CtrlPlusr": "ponovi (redo)",
+      "dot": "ponovi zadnju naredbu"
+    }
+  },
+  "markingText": {
+    "title": "Označavanje teksta (visual mode)",
+    "commands": {
+      "v": "započni označavanje teksta, označi tekst, zatim izvrši naredbu (npr. y - kopira označeni tekst)",
+      "V": "započni označavanje cijelih redova",
+      "o": "pomakni kursor na suprotni kraj označenog bloka",
+      "CtrlPlusv": "započni označavanje bloka",
+      "O": "pomakni kursor na drugu stranu označenog bloka",
+      "aw": "označi riječ",
+      "ab": "označi blok sa ()",
+      "aB": "označi blok sa {}",
+      "at": "označi blok sa <> tag-ovima",
+      "ib": "označi blok unutar ()",
+      "iB": "označi blok unutar {}",
+      "it": "označi blok unutar <> tag-ova",
+      "Esc": "izađi iz označavanja teksta"
+    },
+    "tip1": "Umjesto <kbd>b</kbd> ili <kbd>B</kbd> možemo koristiti <kbd>(</kbd> odnosno <kbd>{</kbd>."
+  },
+  "visualCommands": {
+    "title": "Naredbe tijekom označavanja teksta",
+    "commands": {
+      "greaterThan": "pomakni označeni tekst udesno",
+      "lessThan": "pomakni označeni tekst ulijevo",
+      "y": "kopiraj označeni tekst",
+      "d": "obriši označeni tekst",
+      "tilde": "zamijeni mala i velika slova",
+      "u": "promijeni označeni tekst u mala slova",
+      "U": "promijeni označeni tekst u velika slova"
+    }
+  },
+  "registers": {
+    "title": "Registri",
+    "commands": {
+      "show": "prikazi sadržaj registara",
+      "pasteRegisterX": "zalijepi sadržaj registra x",
+      "yankIntoRegisterX": "kopiraj u registar x",
+      "quotePlusy": "kopiraj u registar međuspremnika sustava (clipboard)",
+      "quotePlusp": "zalijepi iz registra međuspremnika sustava (clipboard)"
+    },
+    "tip1": "Sadržaj registara je spremljen u ~/.viminfo i biti će učitan prilikom sljedećeg pokretanja Vim-a.",
+    "tip2": {
+      "0": "zadnje kopirani tekst",
+      "title": "Posebni registri:",
+      "quote": "neoznačeni (bezimeni) registar, posljednje brisanje ili kopiranje",
+      "percent": "naziv trenutne datoteke",
+      "hashtag": "alternativni naziv datoteke",
+      "asterisk": "sadržaj međuspremnika (clipboard) (X11 primarno)",
+      "plus": "sadržaj međuspremnika (X11 clipboard)",
+      "slash": "zadnje upotrebljeni izraz (pattern)",
+      "colon": "zadnja naredba",
+      "dot": "zadnje zalijepljeni tekst",
+      "minus": "zadnji manji (manje od jedne linije) obrisani tekst",
+      "equal": "'izraz' registar",
+      "underscore": "'crna rupa' registar"
+    }
+  },
+  "marks": {
+    "title": "Oznake i položaji",
+    "commands": {
+      "list": "lista oznaka",
+      "currentPositionA": "označi trenutni položaj oznakom A",
+      "jumpPositionA": "idi na položaj oznake A",
+      "yankToMarkA": "kopiraj sav tekst do položaja oznake A",
+      "backtick0": "idi na položaj neposredno prije zatvaranja Vim-a",
+      "backtickQuote": "idi na položaj zadnjeg uređivanja datoteke",
+      "backtickDot": "idi na položaj zadnje promjene datoteke",
+      "backtickBacktick": "idi na položaj prije zadnjeg pomaka",
+      "colonjumps": "lista pomaka",
+      "ctrlPlusi": "idi na sljedeći (skorašnji) položaj u listi pomicanja",
+      "ctrlPluso": "idi na predhodni (stariji) položaj u listi pomicanja",
+      "colonchanges": "lista izmjena",
+      "gcomma": "idi na položaj sljedeće (skorašnje) promjene",
+      "gsemicolon": "idi na položaj predhodne (starije) promjene",
+      "ctrlPlusCloseSquare": "idi na tag ispod kursora"
+    },
+    "tip1": "Za pomicanje na oznaku može se koristiti (<kbd>`</kbd>) ili jednostruki apostrof (<kbd>'</kbd>). Ukoliko se koristi jednostruki apostrof kursor se pomiče na prvi neprazni znak u redu koji sadrži oznaku.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Makro naredbe",
+    "commands": {
+      "recordA": "snimi makro a",
+      "stopRecording": "zaustavi snimanje makro-a",
+      "runA": "pokreni makro a",
+      "rerun": "ponovo pokreni zadnji makro"
+    }
+  },
+  "global": {
+    "title": "Globalne naredbe",
+    "commands": {
+      "helpForKeyword": "otvori pomoć za naredbu",
+      "saveAsFile": "snimi datoteku kao",
+      "closePane": "zatvori trenutno aktivni prozor",
+      "K": "otvori 'man' stranicu za riječ ispod kursora",
+      "colonTerminal": "otvori terminal u prozoru"
+    },
+    "tip1": "Pokreniite <kbd>vimtutor</kbd> u terminalu kako bi naučili osnove korištenja Vim-a."
+  },
+  "cutAndPaste": {
+    "title": "Izreži i zaljepi",
+    "commands": {
+      "yy": "kopiraj cijeli red",
+      "twoyy": "kopiraj 2 reda",
+      "yw": "kopiraj znakove u riječi od trenutog položaja kursora do početka sljedeće riječi",
+      "yiw": "kopiraj cijelu riječ ispod kursora",
+      "yaw": "kopiraj riječ ispod kursora i razmak prije ili poslije riječi",
+      "yDollar": "kopiraj sve do kraja reda",
+      "p": "zalijepi sadržaj trenutnog registra iza kursora",
+      "P": "zalijepi ispred kursora",
+      "gp": "zalijepi sadržaj trenutnog registra iza kursora i postavi kursor iza novog teksta",
+      "gP": "zalijepi ispred kursora i postavi kursor iza novog teksta",
+      "dd": "izbriši čitavi red",
+      "twodd": "izbriši 2 reda",
+      "dw": "izbriši znakove u riječi od položaja kursora do početka sljedeće riječi",
+      "diw": "izbriši cijelu riječ ispod kursora",
+      "daw": "izbriši riječ ispod kursora i razmak prije ili poslije riječi",
+      "D": "izbriši sve do kraja reda",
+      "dDollar": "izbriši sve do kraja reda",
+      "x": "izbriši znak ispod kursora"
+    }
+  },
+  "indentText": {
+    "title": "Uvlačenje teksta",
+    "commands": {
+      "greaterThanGreaterThan": "povećaj uvlaku reda (pomakni udesno) za zadanu širinu",
+      "lessThanLessThan": "smanji uvlaku reda (pomakni ulijevo) za zadanu širinu",
+      "greaterThanPercent": "uvuci blok zadan sa () ili {} (kursor na zagradi)",
+      "greaterThanib": "uvuci unutrašnjost bloka zadanog sa ()",
+      "greaterThanat": "uvuci blok zadan sa <> tag-ovima",
+      "3==": "ponovi uvlaku 3 reda",
+      "=Percent": "ponovi uvlaku bloka zadanog sa () ili {} (kursor na zagradi)",
+      "=iB": "ponovi uvlaku unutrašnjosti bloka zadanog sa {}",
+      "gg=G": "ponovo uvuci čitavi međuspremnik",
+      "closeSquarep": "zalijepi i prilagodi uvlaku u trenutnom redu"
+    }
+  },
+  "exiting": {
+    "title": "Zatvaranje",
+    "commands": {
+      "colonw": "spremi izmjene, ali nemoj zatvoriti datoteku",
+      "colonwsudo": "spremi izmjene u datoteci koristeći sudo",
+      "colonwq": "spremi i zatvori",
+      "colonx": "spremi i zatvori",
+      "colonq": "zatvori (neuspješno ukoliko ima nespremljenih izmjena)",
+      "colonqbang": "zatvori i nemoj spremiti izmjene",
+      "colonwqa": "spremi i zatvori za sve otvorene datoteke"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Traži i zamijeni",
+    "commands": {
+      "forwardSlashPattern": "traži izraz",
+      "questionMarkPattern": "traži izraz unazad",
+      "backslashVpattern": "'very magic' izraz: znakovi koji nisu alfanumerički se tretiraju kao posebi znakovi regularnog izraza (nije potreban 'escaping')",
+      "n": "ponovi pretragu u istom smjeru",
+      "N": "ponovi pretragu u suprotnom smjeru",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "zamijeni svaku pojavu starog izraza s novim izrazom",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "zamijeni svaku pojavu starog izraza s novim izrazom, ali zahtjevaj potvrdu",
+      "colonnoh": "makni prikaz istaknutog pronađenog teksta nakon pretrage"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Pretraga u više datoteka",
+    "commands": {
+      "colonvimgrep": "traži izraz u više datoteka",
+      "coloncn": "idi na sljedeći pronađeni tekst",
+      "coloncp": "idi na predhodni pronađeni tekst",
+      "coloncopen": "otvori prozor sa pregledom pronađenog teksta",
+      "coloncclose": "zatvori prozor za brzi popravak"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Rad sa više datoteka",
+    "commands": {
+      "colone": "uredi datoteku u novom međuspremniku (buffer)",
+      "colonbnext": "idi na sljedeći međuspremnik (buffer)",
+      "colonbprev": "idi na predhodni međuspremnik (buffer)",
+      "colonls": "lista svih otvorenih međuspremnika (buffers)",
+      "colonbd": "izbriši međuspremnik (zatvori datoteku)",
+      "colonbnumber": "otvori međuspremnik s indeksom #",
+      "colonbfile": "otvori međuspremnik definiran datotekom",
+      "colonsp": "otvori datoteku u novom međuspremniku (buffer) i podijeli zaslon",
+      "colonvsp": "otvori datoteku u novom međuspremniku (buffer) i podijeli zaslon vertikalno",
+      "colonvertba": "uredi sve međuspremnike u vertikalnim prozorima",
+      "colontabba": "uredi sve međuspremnike (buffer) u karticama (tabs)",
+      "ctrlPlusws": "podijeli prozor",
+      "ctrlPluswv": "podijeli prozor vertikalno",
+      "ctrlPlusww": "zamijeni prozore",
+      "ctrlPluswq": "zatori prozor",
+      "ctrlPluswx": "promijeni trenutni prozor s sljedećim",
+      "ctrlPlusw=": "postavi sve prozore na jednake dimenzije (sirina i visina)",
+      "ctrlPluswh": "pomakni kursor u prozor lijevo (vertikalna podjela)",
+      "ctrlPluswl": "pomakni kursor u prozor desno (vertikalna podjela)",
+      "ctrlPluswj": "pomakni kursor u prozor ispod (horizontalna podjela)",
+      "ctrlPluswk": "pomakni kursor u prozor iznad (horizontalna podjela)",
+      "ctrlPluswH": "pomakni trenutni prozor skroz ulijevo i podesi na punu visinu zaslona (lijevi vertikalni prozor)",
+      "ctrlPluswL": "pomakni trenutni prozor skroz udesno i podesi na punu visinu zaslona (desni vertikalni prozor)",
+      "ctrlPluswJ": "pomakni trenutni prozor skroz dolje i podesi na punu širinu zaslona (donji horizontalni prozor)",
+      "ctrlPluswK": "pomakni trenutni prozor skroz gore i podesi na punu širinu zaslona (gornji horizontalni prozor)"
+    }
+  },
+  "tabs": {
+    "title": "Kartice (tabs)",
+    "commands": {
+      "colonTabNew": "otvori datoteku u novoj kartici",
+      "ctrlPluswT": "prebaci trenutni podjeljeni prozor u posebnu novu karticu",
+      "gt": "idi na sljedeću karticu",
+      "gT": "idi na predhodnu karticu",
+      "hashgt": "idi na karticu broj #",
+      "colontabmove": "pomakni trenutnu karticu na # mjesto (indeks kreće od 0)",
+      "colontabc": "zatvori trenutnu karticu i sve pripadajuće pozore",
+      "colontabo": "zatvori sve kartice osim trenutno otvorene",
+      "colontabdo": "pokreni naredbu <code>command</code> u svim karticama (npr. <code>:tabdo q</code> - zatvara sve otvorene kartice)"
+    }
+  },
+  "diff": {
+    "title": "Razlika (Diff)",
+    "commands": {
+      "zf": "ručno definiranje grupiranja (skupljanja) teksta",
+      "zd": "poništi zadano grupiranje teksta ispod kursora",
+      "za": "izmjenjuj skupljanje/rastvaranje grupiranog teksta ispod kursora",
+      "zo": "rastvori grupirani tekst ispod kursora",
+      "zc": "skupi grupirani tekst ispod kursora",
+      "zr": "rastvori jedan nivo manje u svim grupiranim tekstovima",
+      "zm": "skupi jedan nivo više u svim grupiranim tekstovima",
+      "zi": "izmjenjuj skupljanje/rastvaranje grupiranih tekstova",
+      "closeSquarec": "idi na početak sljedeće izmjene",
+      "openSquarec": "idi na početak predhodne izmjene",
+      "do": "dohvati razliku (iz drugog buffer-a)",
+      "dp": "pošalji razliku (drugom buffer-u)",
+      "colonDiffthis": "označi trenutni prozor dijelom razlike",
+      "colonDiffupdate": "osvježi razlike",
+      "colonDiffoff": "ukloni trenutni prozor iz razlike"
+    },
+    "tip1": "Naredbe za skupljanje/rastvaranje (npr. <kbd>za</kbd>) djeluju na jedan nivo. Za radnje na svim nivoima, koristi velika slova (npr. <kbd>zA</kbd>).",
+    "tip2": "Za pregled razlika u datotekama, Vim se može pokrenuti u diff modu naredbom u terminalu <kbd>vimdiff</kbd>. Možete čak i definirati kao <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "naredba",
+    "file": "datoteka",
+    "movement": "kretnja"
+  },
+  "languages": {
+    "title": "Jezici"
+  },
+  "footer": "Provjeri izvorni kod na"
+}
