@@ -74,7 +74,7 @@
     "title": "편집 모드",
     "commands": {
       "r": "한 글자 바꾸기",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
+      "R": "한 글자 이상 바꾸기(<kbd>ESC</kbd> 누르면 종료)",
       "J": "현재 행과 다음 행 연결",
       "gJ": "현재 행과 다음 행 연결 (공백무시)",
       "gwip": "단락 리플로우",
@@ -206,8 +206,8 @@
       "yDollar": "한 행 끝까지 복사하기",
       "p": "커서 뒤에 붙여넣기",
       "P": "커서 앞에 붙여넣기",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "커서 뒤에 붙여넣고 붙여넣은 행 다음으로 커서 옮기기",
+      "gP": "커서 앞에 붙여넣고 붙여넣은 행 다음으로 커서 옮기기",
       "dd": "한 행 잘라내기",
       "twodd": "2줄 잘라내기",
       "dw": "다음 단어까지 잘라내기",
@@ -292,10 +292,10 @@
       "ctrlPluswl": "오른쪽 창으로 이동",
       "ctrlPluswj": "아래 창으로 이동",
       "ctrlPluswk": "위 창으로 이동",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+      "ctrlPluswH": "현재 창을 최대 높이인 상태로 왼쪽 이동(가장 왼쪽)",
+      "ctrlPluswL": "현재 창을 최대 높이인 상태로 오른쪽 이동(가장 오른쪽)",
+      "ctrlPluswJ": "현재 창을 최대 너비인 상태로 아래로 이동(가장 아래쪽",
+      "ctrlPluswK": "현재 창을 최대 너비인 상태로 위로 이동(가장 위쪽)"
     }
   },
   "tabs": {
