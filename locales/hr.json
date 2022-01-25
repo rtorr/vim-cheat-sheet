@@ -192,7 +192,7 @@
       "K": "otvori 'man' stranicu za riječ ispod kursora",
       "colonTerminal": "otvori terminal u prozoru"
     },
-    "tip1": "Pokreniite <kbd>vimtutor</kbd> u terminalu kako bi naučili osnove korištenja Vim-a."
+    "tip1": "Pokrenite <kbd>vimtutor</kbd> u terminalu kako bi naučili osnove korištenja Vim-a."
   },
   "cutAndPaste": {
     "title": "Izreži i zaljepi",
