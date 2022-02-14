@@ -9,6 +9,8 @@
       "j": "move cursor down",
       "k": "move cursor up",
       "l": "move cursor right",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)", 
       "w": "jump forwards to the start of a word",
       "W": "jump forwards to the start of a word (words can contain punctuation)",
       "e": "jump forwards to the end of a word",
