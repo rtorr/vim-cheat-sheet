@@ -9,6 +9,8 @@
       "j": "verplaats cursor naar rechts",
       "k": "verplaats cursor naar boven",
       "l": "verplaats cursor naar beneden",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "verplaats cursor naar het begin van een woord",
       "W": "verplaats cursor naar het begin van een woord (woorden mogen interpunctie bevatten)",
       "e": "verplaats cursor naar het einde van een woord",
@@ -83,7 +85,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "vervang huidige regel",
-      "C": "vervang tot einde regel",
       "cDollar": "vervang tot einde regel",
       "ciw": "vervang woord",
       "cw": "vervang tot einde huidig woord",
@@ -214,7 +215,6 @@
       "dw": "verwijder (knip) de karakters vanaf de cursorpositie tot het begin van het volgende woord",
       "diw": "verwijder (knip) woord onder de cursor",
       "daw": "verwijder (knip) het woord onder de cursor, inclusief de spatie er voor of er achter",
-      "D": "verwijder (knip) tot het einde van de regel",
       "dDollar": "verwijder (knip) tot het einde van de regel",
       "x": "verwijder (knip) huidige karakter"
     }

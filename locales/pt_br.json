@@ -9,6 +9,8 @@
       "j": "mover o cursor para baixo",
       "k": "mover o cursor para cima",
       "l": "mover o cursor para direita",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "pular adiante em direção ao inicio de uma palavra",
       "W": "pular adiante em direção ao inicio de uma palavra (podendo conter pontuação)",
       "e": "pular adiante em direção ao fim de uma palavra",
@@ -82,7 +84,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "substituir a linha toda",
-      "C": "change (replace) to the end of the line",
       "cDollar": "substituir no final da linha",
       "ciw": "change (replace) entire word",
       "cw": "substituir no final da palavra",
@@ -214,7 +215,6 @@
       "dw": "deletar (cortar) uma palavra",
       "diw": "delete (cut) word under the cursor",
       "daw": "delete (cut) word under the cursor and the space after or before it",
-      "D": "deletar (cortar) até o final da linha",
       "dDollar": "deletar (cortar) até o final da linha",
       "x": "deletar (cortar) caractere"
     }

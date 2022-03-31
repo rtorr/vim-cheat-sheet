@@ -9,6 +9,8 @@
       "j": "flytt markøren ned",
       "k": "flytt markøren opp",
       "l": "flytt markøren til høyre",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "hopp frem til begynnelsen av et ord",
       "W": "hopp frem til begynnelsen av et ord (ord kan inneholde tegnsetting)",
       "e": "hopp fremover til slutten av et ord",
@@ -82,7 +84,6 @@
       "gu": "endre til små bokstaver opp til bevegelse",
       "gU": "endre til store bokstaver opp til bevegelse",
       "cc": "endre (erstatt) hele linjen",
-      "C": "endre (erstatt) til slutten av linjen",
       "cDollar": "endre (erstatt) til slutten av linjen",
       "ciw": "endre (erstatt) hele ordet",
       "cw": "endre (erstatt) til slutten av ordet",
@@ -212,7 +213,6 @@
       "dw": "slett (klipp ut) tegnene i ordet fra markørposisjonen til begynnelsen av neste ord",
       "diw": "slett (klipp ut) ord under markøren",
       "daw": "slett (klipp ut) ord under markøren og mellomrommet etter eller før det",
-      "D": "slett (klipp) til slutten av linjen",
       "dDollar": "slett (klipp) til slutten av linjen",
       "x": "slett (klipp ut) tegn"
     }

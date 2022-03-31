@@ -9,6 +9,8 @@
       "j": "ลงด้านล่าง",
       "k": "ขึ้นข้างบน",
       "l": "ไปทางขวา",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรแรกของคำนั้น",
       "W": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรแรกของคำนั้น (แบบรวมเครื่องหมายวรรคตอนด้วย)",
       "e": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรสุดท้ายของคำนั้น",
@@ -82,7 +84,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "ลบทั้งบรรทัดแล้วพิมพ์ใหม่",
-      "C": "change (replace) to the end of the line",
       "cDollar": "ลบไปจนถึงสุดบรรทัดแล้วพิมพ์ใหม่",
       "ciw": "change (replace) entire word",
       "cw": "ลบทั้งคำแล้วพิมพ์ใหม่",
@@ -213,7 +214,6 @@
       "dw": "ลบ (cut) ทั้งคำ่",
       "diw": "delete (cut) word under the cursor",
       "daw": "delete (cut) word under the cursor and the space after or before it",
-      "D": "ลบ (cut) ตั้งแต่ตำแหน่งเคอร์เซอร์ปัจจุบัน ถึงสุดบรรทัด",
       "dDollar": "ลบ (cut) ตั้งแต่ตำแหน่งเคอร์เซอร์ปัจจุบัน ถึงสุดบรรทัด",
       "x": "ลบ (cut) หนึ่งตัวอักษร"
     }

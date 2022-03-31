@@ -9,6 +9,8 @@
       "j": "перемістити курсор вниз",
       "k": "перемістити курсор вгору",
       "l": "перемістити курсор праворуч",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "переміститись вперед на початок слова",
       "W": "переміститись вперед на початок слова (слово може містити пунктуацію)",
       "e": "переміститись вперед на кінець слова",
@@ -82,7 +84,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "замінити усю строчку",
-      "C": "change (replace) to the end of the line",
       "cDollar": "замінити до кінця строчки",
       "ciw": "change (replace) entire word",
       "cw": "замінити до кінця слова",
@@ -212,7 +213,6 @@
       "dw": "видалити (вирізати) слово",
       "diw": "delete (cut) word under the cursor",
       "daw": "delete (cut) word under the cursor and the space after or before it",
-      "D": "видалити (вирізати) до кінця строчки",
       "dDollar": "видалити (вирізати) до кінця строчки",
       "x": "видалити (вирізати) символ"
     }

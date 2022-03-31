@@ -9,6 +9,8 @@
       "j": "pomakni kursor dolje",
       "k": "pomakni kursor gore",
       "l": "pomakni kursor desno",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "idi na početak sljedeće riječi",
       "W": "idi na početak sljedeće riječi (riječ može sadržavati znakove interpunkcije)",
       "e": "idi na kraj riječi",
@@ -82,7 +84,6 @@
       "gu": "promijeni u mala slova koristeći pomicinje kursora",
       "gU": "promijeni u velika slova koristeći pomicinje kursora",
       "cc": "promijeni cijeli red",
-      "C": "promijeni sve do kraja reda",
       "cDollar": "promijeni sve do kraja reda",
       "ciw": "promijeni cijelu riječ",
       "cw": "promijeni do kraja riječi",
@@ -212,7 +213,6 @@
       "dw": "izbriši znakove u riječi od položaja kursora do početka sljedeće riječi",
       "diw": "izbriši cijelu riječ ispod kursora",
       "daw": "izbriši riječ ispod kursora i razmak prije ili poslije riječi",
-      "D": "izbriši sve do kraja reda",
       "dDollar": "izbriši sve do kraja reda",
       "x": "izbriši znak ispod kursora"
     }

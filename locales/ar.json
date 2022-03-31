@@ -9,6 +9,8 @@
       "j": "تحريك المؤشر للأسفل",
       "k": "تحريك المؤشر للأعلى",
       "l": "تحريك المؤشر لليمين",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "اقفز للأمام إلى بداية كلمة",
       "W": "اقفز للأمام إلى بداية كلمة (يمكن للكلمات أن تشمل علامات الترقيم)",
       "e": "اقفز للأمام إلى نهاية الكلمة",
@@ -82,7 +84,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "change (replace) entire line",
-      "C": "change (replace) to the end of the line",
       "cDollar": "change (replace) to the end of the line",
       "ciw": "change (replace) entire word",
       "cw": "change (replace) to the end of the word",
@@ -212,7 +213,6 @@
       "dw": "delete (cut) word",
       "diw": "delete (cut) word under the cursor",
       "daw": "delete (cut) word under the cursor and the space after or before it",
-      "D": "delete (cut) to the end of the line",
       "dDollar": "delete (cut) to the end of the line",
       "x": "delete (cut) character"
     }

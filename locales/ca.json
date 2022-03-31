@@ -9,6 +9,8 @@
       "j": "moure el cursor cap avall",
       "k": "moure el cursor cap amunt",
       "l": "moure el cursor cap a la dreta",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "saltar a l'inici de la següent paraula",
       "W": "saltar a l'inici de la següent paraula (la paraula pot contenir puntuació)",
       "e": "saltar al final de la següent paraula",
@@ -82,7 +84,6 @@
       "gu": "canviar a minúscules segons el moviment",
       "gU": "canviar a majúscules fins al moviment",
       "cc": "canviar (substituir) tota la línia",
-      "C": "canviar (substituir) fins al final de la línia",
       "cDollar": "canviar (substituir) fins al final de la línia (igual que C)",
       "ciw": "canviar (substituir) la paraula sencera",
       "cw": "canviar (substituir) fins al final de la paraula",
@@ -214,7 +215,6 @@
       "dw": "esborrar (retallar) la resta de caràcters de la paraula des de la posició del cursor fins a l'inici de la paraula següent",
       "diw": "esborrar (retallar) la paraula sota el cursor",
       "daw": "esborrar (retallar) la paraula sota el cursor i l'espai darrere o davant d'ella",
-      "D": "esborrar (retallar) fins el final de la línia",
       "dDollar": "esborrar (retallar) fins al final de la línia",
       "x": "esborrar (retallar) un caràcter"
     }

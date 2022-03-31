@@ -9,6 +9,8 @@
       "j": "Cursor eine Zeile nach unten bewegen",
       "k": "Cursor eine Zeile nach oben bewegen",
       "l": "Cursor ein Zeichen nach rechts bewegen",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "Springe vorwärts zum Wortanfang",
       "W": "Springe vorwärts zum Wortanfang (Wort kann Interpunktion enthalten)",
       "e": "Springe vorwärts zum Wortende",
@@ -82,7 +84,6 @@
       "gu": "In Kleinschreibung ändern bis zur Bewegung",
       "gU": "In Großschreibung ändern bis zur Bewegung",
       "cc": "Ersetzen der kompletten Zeile",
-      "C": "Ersetzen bis zum Zeilenende",
       "cDollar": "Ersetzen bis zum Zeilenende",
       "ciw": "Ersetzen des gesamten Worts",
       "cw": "Ersetzen bis zum Ende des Worts",
@@ -212,7 +213,6 @@
       "dw": "Zeichen des Worts unterm Cursor bis zum nächsten Wort löschen (ausschneiden).",
       "diw": "Wort löschen (ausschneiden)",
       "daw": "Zeichen des Worts unterm Cursor und die Abstände davor oder danach löschen (ausschneiden)",
-      "D": "Löschen (Ausschneiden) bis Zeilenende",
       "dDollar": "Löschen (Ausschneiden) bis Zeilenende",
       "x": "Zeichen löschen (ausschneiden)"
     }
