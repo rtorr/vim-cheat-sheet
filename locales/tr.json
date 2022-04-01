@@ -9,6 +9,8 @@
       "j": "imleci aşağı kaydır",
       "k": "imleci yukarı kaydır",
       "l": "imleci sağa kaydır",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "bir sonraki kelimenin başlangıcına atla",
       "W": "bir sonraki kelimenin başlangıcına atla (kelime noktalama işareti içerebilir)",
       "e": "bir sonraki kelimenin sonuna atla",
@@ -82,7 +84,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "tüm satırı değiştirir (yerine koyar)",
-      "C": "change (replace) to the end of the line",
       "cDollar": "satır sonuna kadar değiştirir (yerine koyar)",
       "ciw": "change (replace) entire word",
       "cw": "kelimenin sonuna kadar değiştirir (yerine koyar)",
@@ -213,7 +214,6 @@
       "dw": "kelime (keser) siler",
       "diw": "delete (cut) word under the cursor",
       "daw": "delete (cut) word under the cursor and the space after or before it",
-      "D": "satır sonuna kadar (keser) siler",
       "dDollar": "satır sonuna kadar (keser) siler",
       "x": "karakter (keser) siler"
     }

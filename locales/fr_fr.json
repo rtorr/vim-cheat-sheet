@@ -9,6 +9,8 @@
       "j": "déplacer le curseur vers le bas",
       "k": "déplacer le curseur vers le haut",
       "l": "déplacer le curseur vers la droite",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "aller en avant au début d'un mot",
       "W": "aller en avant au début d'un mot (les mots peuvent contenir de la ponctuation)",
       "e": "aller en avant à la fin d'un mot",
@@ -82,7 +84,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "changer (remplacer) une ligne entière",
-      "C": "changer (remplacer) jusqu'à la fin de la ligne",
       "cDollar": "changer (remplacer) jusqu'à la fin d'une ligne",
       "ciw": "changer (remplacer) un mot entier",
       "cw": "changer (remplacer) jusqu'à la fin d'un mot",
@@ -213,7 +214,6 @@
       "dw": "supprimer (couper) un mot",
       "diw": "supprimer (couper) un mot sous le curseur",
       "daw": "supprimer (couper) un mot avec l'espace après ou avant",
-      "D": "supprimer (couper) jusqu'à la fin de la ligne",
       "dDollar": "supprimer (couper) jusqu'à la fin de la ligne",
       "x": "supprimer (couper) un caractère"
     }

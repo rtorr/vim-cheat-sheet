@@ -9,6 +9,8 @@
       "j": "presunie kurzor nadol",
       "k": "presunie kurzor hore",
       "l": "presunie kurzor doprava",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "skočí na začiatok slova",
       "W": "skočí na začiatok slova (slová môžu obsahovať interpunkciu)",
       "e": "skočí na koniec slova",
@@ -82,7 +84,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "zmení (nahradí) celý riadok",
-      "C": "change (replace) to the end of the line",
       "cDollar": "zmení (nahradí) do konca riadku",
       "ciw": "zmení (nahradí) celé slovo",
       "cw": "zmení (nahradí) do konca slova",
@@ -214,7 +215,6 @@
       "dw": "zmaže (vystrihne) znaky slova z polohy kurzora na začiatok ďalšieho slova",
       "diw": "zmaže (vystrihne) slovo pod kurzorom",
       "daw": "zmaže (vystrihne) slovo pod kurzorom a miesto pred alebo za ním",
-      "D": "zmaže (vystrihne) do konca riadku",
       "dDollar": "zmaže (vystrihne) do konca riadku",
       "x": "zmaže (vystrihne) znak"
     }

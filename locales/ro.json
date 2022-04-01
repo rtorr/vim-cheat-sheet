@@ -9,6 +9,8 @@
       "j": "muta cursorul la dreapta",
       "k": "muta cursolul in sus",
       "l": "muta cursolul in jos",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "sari la inceputul cuvantului",
       "W": "sari la inceputul cuvantului (cuvintele pot contine semne de punctuatie)",
       "e": "sari la sfarsitul cuvantului",
@@ -83,7 +85,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "schimba (inlocuieste) toata linia",
-      "C": "editing.commands.C",
       "cDollar": "schimba (inlocuieste) pana la sfarsitul liniei",
       "ciw": "editing.commands.ciw",
       "cw": "schimba (inlocuieste) pana la sfarsitul cuvantului",
@@ -214,7 +215,6 @@
       "dw": "sterge (taie) un cuvant",
       "diw": "sterge (taie) cuvantul de sub cursor",
       "daw": "sterge (taie) cuvantul de sub cursor si spatiul de dinainte si dupa el",
-      "D": "sterge (taie) pana la sfarsitul liniei",
       "dDollar": "sterge (taie) pana la sfarsitul liniei",
       "x": "sterge (taie) un caracter"
     }

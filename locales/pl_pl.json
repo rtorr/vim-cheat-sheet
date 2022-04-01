@@ -9,6 +9,8 @@
       "j": "przesuń kursor w dół",
       "k": "przesuń kursor w górę",
       "l": "przesuń kursor w prawo",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "skocz na początek następnego wyrazu",
       "W": "skocz na początek następnego wyrazu (słowa mogą zawierać interpunkcję)",
       "e": "skocz na koniec bieżącego wyrazu",
@@ -82,7 +84,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "zastąp cały wiersz",
-      "C": "change (replace) to the end of the line",
       "cDollar": "zastąp na końcu wiersza",
       "ciw": "change (replace) entire word",
       "cw": "zastąp na końcu wyrazu",
@@ -213,7 +214,6 @@
       "dw": "kasuj litery wyrazu od miejsca, gdzie znajduje się kursor, na początek następnego słowa",
       "diw": "kasuj wyraz pod kursorem",
       "daw": "kopiuj wyraz pod kursorem i spację przed wyrazem lub za nim",
-      "D": "kasuj na końcu wiersza",
       "dDollar": "kasuj na końcu wiersza",
       "x": "usuń znak"
     }

@@ -9,6 +9,8 @@
       "j": "muovi cursore in basso",
       "k": "muovi cursore in alto",
       "l": "muovi cursore a destra",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "salta avanti fino all'inizio di una parola",
       "W": "salta avanti fino all'inizio di una parola (le parole possono contenere punteggiatura)",
       "e": "salta avanti fino alla fine di una parola",
@@ -82,7 +84,6 @@
       "gu": "cambia il carattere minuscolo in maiuscolo, in movimento",
       "gU": "cambia il carattere maiuscolo in minuscolo, in movimento",
       "cc": "cambia (sostituisci) l'intera linea",
-      "C": "change (replace) to the end of the line",
       "cDollar": "cambia (sostituisci) fino alla fine della linea",
       "ciw": "cambia (sostituisci) una parola intera",
       "cw": "cambia (sostituisci) fino alla fine della parola",
@@ -212,7 +213,6 @@
       "dw": "cancella (taglia) una parola",
       "diw": "cancella (taglia) la parola sotto il cursore",
       "daw": "cancella (taglia) la parola sotto il cursore e lo spazio prima o dopo",
-      "D": "cancella (taglia) fino alla fine della linea",
       "dDollar": "cancella (taglia) fino alla fine della linea",
       "x": "cancella (taglia) carattere"
     }
