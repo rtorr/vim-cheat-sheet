@@ -9,16 +9,16 @@
       "j": "передвинуть курсор вниз",
       "k": "передвинуть курсор вверх",
       "l": "передвинуть курсор вправо",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "переместить курсор вниз (многострочный текст)",
+      "gk": "переместить курсор вверх (многострочный текст)",
       "w": "переместиться вперед на начало слова",
       "W": "переместиться вперед на начало слова (слово может содержать пунктуацию)",
       "e": "переместиться вперед на конец слова",
       "E": "переместиться вперед на конец слова (слово может содержать пунктуацию)",
       "b": "переместиться назад на начало слова",
       "B": "переместиться назад на начало слова (слово может содержать пунктуацию)",
-      "ge": "jump backwards to the end of a word",
-      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "ge": "переместиться назад на конец слова",
+      "gE": "переместиться назад на конец слова (слово может содержать пунктуацию)",
       "H": "переместиться к началу экрана",
       "M": "переместиться к середине экрана",
       "L": "переместиться к концу экрана",
@@ -29,26 +29,26 @@
       "gg": "переместиться на первую строку документа",
       "G": "переместиться на последнюю строку документа",
       "fiveG": "переместить на пятую строку",
-      "gd": "move to local declaration",
-      "gD": "move to global declaration",
+      "gd": "переместиться к локальному объявлению",
+      "gD": "переместиться к глобальному объявлению",
       "fx": "переместиться к следующему вхождению символа x",
       "tx": "переместиться перед следующим вхождением символа x",
-      "Fx": "jump to previous occurence of character x",
-      "Tx": "jump to after previous occurence of character x",
-      "semicolon": "repeat previous f, t, F or T movement",
-      "comma": "repeat previous f, t, F or T movement, backwards",
+      "Fx": "переместиться к предыдущему вхождению символа x",
+      "Tx": "переместиться перед предыдущим вхождением символа x",
+      "semicolon": "повторить предыдущее перемещение f, t, F или T",
+      "comma": "повторить предыдущее перемещение f, t, F или T в обратном порядке",
       "closeCurlyBrace": "переместиться к следующему параграфу (или функции/блоку при редактировании кода)",
       "openCurlyBrace": "переместиться к предыдущему параграфу (или функции/блоку при редактировании кода)",
-      "centerCursor": "center cursor on screen",
-      "CtrlPluse": "move screen down one line (without moving cursor)",
-      "CtrlPlusy": "move screen up one line (without moving cursor)",
+      "centerCursor": "централизовать курсор на экране",
+      "CtrlPluse": "переместить экран на одну строку вниз (без перемещения курсора)",
+      "CtrlPlusy": "переместить экран на одну строку вверх (без перемещения курсора)",
       "CtrlPlusb": "переместиться назад на целый экран",
       "CtrlPlusf": "переместиться вперед на целый экран",
       "CtrlPlusu": "переместиться назад на половину экрана",
       "CtrlPlusd": "переместиться вперед на половину экрана",
-      "percent": "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
+      "percent": "перейти к соответствующему парному символу (по умолчанию поддерживаемые пары: '()', '{}', '[]' - используйте <code>:h matchpairs</code> в Vim для получения дополнительной информации)"
     },
-    "tip": "Добавьте число перед командой перемещения курсора для того, чтобы повторить её. Например, <kbd>4j</kbd> перемещает курсор на 4 строки вниз."
+    "tip": "Добавьте число перед командой перемещения курсора, чтобы повторить её. Например, <kbd>4j</kbd> перемещает курсор на 4 строки вниз."
   },
   "insertMode": {
     "title": "Режим вставки - вставка/добавление текста",
@@ -60,15 +60,15 @@
       "o": "добавление новой строки под текущей",
       "O": "добавление новой строки над текущей",
       "ea": "вставка (добавление) после конца слова",
-      "ctrlPlush": "delete the character before the cursor during insert mode",
-      "ctrlPlusw": "delete word before the cursor during insert mode",
-      "ctrlPlusj": "begin new line during insert mode",
-      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
-      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
-      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
-      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
-      "ctrlPlusrx": "insert the contents of register x",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlush": "удалить символ перед курсором в режиме вставки",
+      "ctrlPlusw": "удалить слово перед курсором в режиме вставки",
+      "ctrlPlusj": "перейти на новую строку в режиме вставки",
+      "ctrlPlust": "добавить один отступ строке (переместить вправо) в режиме вставки",
+      "ctrlPlusd": "убрать один отступ у строки (переместить влево) в режиме вставки",
+      "ctrlPlusn": "вставить (автозаполнить) следующее соответствие перед курсором в режиме вставки",
+      "ctrlPlusp": "вставить (автозаполнить) предыдущее соответствие перед курсором в режиме вставки",
+      "ctrlPlusrx": "вставить содержимое регистра x",
+      "ctrlPlusox": "временно включить нормальный режим и выполнить команду нормального режима x.",
       "Esc": "выход из режима вставки"
     }
   },
@@ -76,22 +76,22 @@
     "title": "Редактирование",
     "commands": {
       "r": "заменить один символ",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
+      "R": "заменить несколько символов, до нажатия <kbd>ESC</kbd>.",
       "J": "присоединить нижнюю строку к текущей",
-      "gJ": "join line below to the current one without space in between",
-      "gwip": "reflow paragraph",
-      "gTilde": "switch case up to motion",
-      "gu": "change to lowercase up to motion",
-      "gU": "change to uppercase up to motion",
+      "gJ": "присоединить нижнюю строку к текущей без пробела между ними",
+      "gwip": "перекомпоновать азбац",
+      "gTilde": "инвертировать регистр в ходе перемещения курсора",
+      "gu": "перевести в верхний регистр в ходе перемещения курсора",
+      "gU": "перевести в нижний регистр в ходе перемещения курсора",
       "cc": "заменить всю строку",
       "cDollar": "заменить до конца строки",
-      "ciw": "change (replace) entire word",
+      "ciw": "изменить (заменить) всё слово",
       "cw": "заменить до конца слова",
       "s": "удалить символ и заменить текст",
-      "S": "удалить строку и заменить текст (то же что cc)",
+      "S": "удалить строку и заменить текст (то же, что cc)",
       "xp": "переставить две буквы (удалить и вставить)",
       "u": "отменить",
-      "U": "restore (undo) last changed line",
+      "U": "восстановить (откатить) последнюю изменённую строку",
       "CtrlPlusr": "повторить",
       "dot": "повторить последнюю команду"
     }
@@ -107,13 +107,13 @@
       "aw": "выделить слово",
       "ab": "блок в ()",
       "aB": "блок в {}",
-      "at": "a block with <> tags",
+      "at": "блок в <> тегах",
       "ib": "внутренний блок в ()",
       "iB": "внутренний блок в {}",
-      "it": "inner block with <> tags",
+      "it": "внутренний блок в <> тегах",
       "Esc": "выйти из режима выделения текста"
     },
-    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+    "tip1": "Вместо <kbd>b</kbd> и <kbd>B</kbd> также можно использовать <kbd>(</kbd> и <kbd>{</kbd> соответственно."
   },
   "visualCommands": {
     "title": "Визуальные команды",
@@ -123,8 +123,8 @@
       "y": "скопировать выделенный текст",
       "d": "удалить выделенный текст",
       "tilde": "переключить регистр",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "u": "перевести выделенный текст в нижний регистр",
+      "U": "перевести выделенный текст в верхний регистр"
     }
   },
   "registers": {
@@ -133,24 +133,24 @@
       "show": "показать содержимое регистров",
       "pasteRegisterX": "вставить содержимое регистра x",
       "yankIntoRegisterX": "поместить содержимое в регистр x",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "quotePlusy": "скопировать в системный регистр буфера обмена",
+      "quotePlusp": "вставить из системного регистра буфера обмена"
     },
-    "tip1": "Содержимое регистров сохраняется в ~/.viminfo, и будет восстановлено при следующем запуске vim.",
+    "tip1": "Содержимое регистров сохраняется в ~/.viminfo и восстанавливается при следующем запуске vim.",
     "tip2": {
-      "0": "last yank",
-      "title": "Special registers:",
-      "quote": "unnamed register, last delete or yank",
-      "percent": "current file name",
-      "hashtag": "alternate file name",
-      "asterisk": "clipboard contents (X11 primary)",
-      "plus": "clipboard contents (X11 clipboard)",
-      "slash": "last search pattern",
-      "colon": "last command-line",
-      "dot": "last inserted text",
-      "minus": "last small (less than a line) delete",
-      "equal": "expression register",
-      "underscore": "black hole register"
+      "0": "последнее копирование",
+      "title": "Специальные регистры:",
+      "quote": "безымянный регистр: последнее удаление или копирование",
+      "percent": "название текущего файла",
+      "hashtag": "название альтернативного файла",
+      "asterisk": "содержимое буфера обмена (первичный X11)",
+      "plus": "содержимое буфера обмена (буфер обмена X11)",
+      "slash": "последний поисковый паттерн",
+      "colon": "последняя команда",
+      "dot": "последний вставленный текст",
+      "minus": "последнее небольшое (меньшее, чем строка) удаление",
+      "equal": "регистр, возвращающий значение выражения",
+      "underscore": "регистр чёрной дыры"
     }
   },
   "marks": {
@@ -160,19 +160,19 @@
       "currentPositionA": "установить метку A на текущей позиции",
       "jumpPositionA": "переместиться к метке A",
       "yankToMarkA": "скопировать до метки A",
-      "backtick0": "go to the position where Vim was previously exited",
-      "backtickQuote": "go to the position when last editing this file",
-      "backtickDot": "go to the position of the last change in this file",
-      "backtickBacktick": "go to the position before the last jump",
-      "colonjumps": "list of jumps",
-      "ctrlPlusi": "go to newer position in jump list",
-      "ctrlPluso": "go to older position in jump list",
-      "colonchanges": "list of changes",
-      "gcomma": "go to newer position in change list",
-      "gsemicolon": "go to older position in change list",
-      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+      "backtick0": "переместиться на позицию, на которой Vim в последний раз был закрыт",
+      "backtickQuote": "переместиться на позицию, на которой был закрыт в последний раз данный файл",
+      "backtickDot": "переместиться на позицию последнего изменения данного файла",
+      "backtickBacktick": "переместиться на позицию перед последним переходом",
+      "colonjumps": "открыть список переходов",
+      "ctrlPlusi": "перейти к более новому переходу в списке переходов",
+      "ctrlPluso": "перейти к более старому переходу в списке переходов",
+      "colonchanges": "открыть список изменений",
+      "gcomma": "перейти к более новому изменению в списке изменений",
+      "gsemicolon": "перейти к более старому изменению в списке изменений",
+      "ctrlPlusCloseSquare": "перейти к тегу под курсором"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
+    "tip1": "Для перехода к отметке вы можете использовать как знак побочного ударения (<kbd>`</kbd>), так и апостроф (<kbd>'</kbd>). Использование апострофа переводит к началу (первой непустой) строки, содержащей отметку.",
     "tip": ""
   },
   "macros": {
@@ -180,21 +180,21 @@
     "commands": {
       "recordA": "записать макрос A",
       "stopRecording": "остановить запись макроса",
-      "runA": "run macro a",
+      "runA": "выполнить макрос A",
       "rerun": "выполнить последний макрос"
     }
   },
   "global": {
     "title": "Общее",
     "commands": {
-      "helpForKeyword": "открыть помощь для keyword",
-      "saveAsFile": "сохранить как file",
+      "helpForKeyword": "открыть справку для ключевого слова keyword",
+      "saveAsFile": "сохранить под названием file",
       "closePane": "закрыть текущую панель",
       "K": "открыть справочное руководство для слова под курсором",
-      "colonTerminal": "open a terminal window",
-      "openFile": "открыть file"
+      "colonTerminal": "открыть окно терминала",
+      "openFile": "открыть файл file"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "Выполните <kbd>vimtutor</kbd> в терминале, чтобы изучить первые команды Vim."
   },
   "cutAndPaste": {
     "title": "Вырезать и вставить",
@@ -207,8 +207,8 @@
       "yDollar": "скопировать до конца строки",
       "p": "вставить буфер обмена после курсора",
       "P": "вставить буфер обмена перед курсором",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "вставить буфер обмена после курсора и переместить курсор после вставленного текста",
+      "gP": "вставить буфер обмена перед курсором и переместить курсор после вставленного текста",
       "dd": "удалить (вырезать) строку",
       "twodd": "удалить (вырезать) 2 строки",
       "dw": "удалить (вырезать) слово",
@@ -219,18 +219,18 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Отступы текста",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line"
+      "greaterThanGreaterThan": "добавить один отступ строке (переместить вправо)",
+      "lessThanLessThan": "убрать один отступ у строки (переместить влево)",
+      "greaterThanPercent": "добавить один отступ блоку в () или {}",
+      "greaterThanib": "изменить отступ внутреннему блоку в ()",
+      "greaterThanat": "изменить отступ блоку в <> тегах",
+      "3==": "выровнить отступы 3-х строк",
+      "=Percent": "выровнить отступы блока в () или {}",
+      "=iB": "выровнить отступы блока в {}",
+      "gg=G": "выровнить оступы всего буфера",
+      "closeSquarep": "вставить и выровнить отступы по строке под курсором"
     }
   },
   "exiting": {
@@ -241,8 +241,8 @@
       "colonwq": "сохранить файл и выйти",
       "colonx": "сохранить и выйти",
       "colonq": "выйти (терпит неудачу в случае несохраненных изменений)",
-      "colonqbang": "выйти и потерять несохраненные изменения",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonqbang": "выйти без сохранения",
+      "colonwqa": "записать (сохранить) и выйти во всех вкладках и буферах"
     }
   },
   "searchAndReplace": {
@@ -265,7 +265,7 @@
       "coloncn": "переместиться к следующему совпадению",
       "coloncp": "переместиться к предыдущему совпадению",
       "coloncopen": "открыть окно со списком результатов",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "закрыть окно со списком результатов"
     }
   },
   "workingWithMultipleFiles": {
@@ -276,26 +276,26 @@
       "colonbprev": "перейти к предыдущему буферу",
       "colonls": "список всех открытых буферов",
       "colonbd": "удалить буфер (закрыть файл)",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "перейти к буферу по номеру #",
+      "colonbfile": "перейти к буферу по имени файла",
       "colonsp": "открыть файл в новом буфере и разделить окно",
       "colonvsp": "открыть файл в новом буфере и вертикально разделить окно",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvertba": "развернуть все буферы как вертикальные окна",
+      "colontabba": "развернуть все буферы как вкладки",
       "ctrlPlusws": "разделить окно",
       "ctrlPluswv": "разделить окно вертикально",
       "ctrlPlusww": "переключение окон",
       "ctrlPluswq": "закрыть окно",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswx": "поменять местами текущее окно со следующим",
+      "ctrlPlusw=": "сделать все окна одинаковой высоты и ширины",
       "ctrlPluswh": "переместить курсор в левое окно (вертикально разделение)",
       "ctrlPluswl": "переместить курсор в правое окно (вертикальное разделение)",
       "ctrlPluswj": "переместить курсор в окно ниже (горизонтальное разделение)",
       "ctrlPluswk": "переместить курсор в окно выше (горизонтальное разделение)",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+      "ctrlPluswH": "сделать текущее окно максимальным по высоте и крайним слева (самым левым вертикальным окном)",
+      "ctrlPluswL": "сделать текущее окно максимальным по высоте и крайним справа (самым правым вертикальным окном)",
+      "ctrlPluswJ": "сделать текущее окно максимальным по ширине и крайним снизу (самым нижним горизонтальным окном)",
+      "ctrlPluswK": "сделать текущее окно максимальным по ширине и крайним сверху (самым верхним горизонтальным окном)"
     }
   },
   "tabs": {
@@ -305,34 +305,34 @@
       "ctrlPluswT": "переместить текущее окно в собственную вкладку",
       "gt": "переключиться на следующую вкладку",
       "gT": "переключиться на предыдущую вкладку",
-      "hashgt": "переключить на вкладку номер #",
+      "hashgt": "переключиться на вкладку с номером #",
       "colontabmove": "переместить текущую вкладку на # позицию (нумерация с 0)",
       "colontabc": "закрыть текущую вкладку и все её окна",
-      "colontabo": "закрыть все вкладки кроме текущей",
-      "colontabdo": "выполнить <code>command</code> на всех вкладках (к примеру <code>:tabdo q</code> - закрывает все открытые вкладки)"
+      "colontabo": "закрыть все вкладки, кроме текущей",
+      "colontabdo": "выполнить <code>command</code> на всех вкладках (к примеру, <code>:tabdo q</code> закрывает все открытые вкладки)"
     }
   },
   "diff": {
-    "title": "Diff",
+    "title": "Различия файлов",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "вручную определить свёртку в ходе перемещения курсора",
+      "zd": "удалить свёртку под курсором",
+      "za": "переключить состояние свёртки под курсором",
+      "zo": "раскрыть свёртку под курсором",
+      "zc": "свернуть свёртку под курсором",
+      "zr": "раскрыть все свёртки на один уровень",
+      "zm": "свернуть все свёртки на один уровень",
+      "zi": "переключить состояния всех свёрток в буфере",
+      "closeSquarec": "перейти к началу следующего отличия",
+      "openSquarec": "перейти к началу предыдущего отличия",
+      "do": "скопировать отличия (из другого буфера)",
+      "dp": "вставить отличия (в другой буфер)",
+      "colonDiffthis": "сделать текущее окно частью окна сравнения",
+      "colonDiffupdate": "обновить отличия",
+      "colonDiffoff": "выключить режим сравнения для текущего окна"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "Команды для свёрток (например, <kbd>za</kbd>) работают на одном уровне вложенности. Чтобы работать на всех уровнях, используйте заглавные буквы (например, <kbd>zA</kbd>).",
+    "tip2": "Чтобы увидеть различия файлов, можно напрямую запустить Vim в режиме сравнения, выполнив в терминале <kbd>vimdiff</kbd>. Можно даже установить его как <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "keyword",
