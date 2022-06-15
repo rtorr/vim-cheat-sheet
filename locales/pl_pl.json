@@ -68,7 +68,7 @@
       "ctrlPlusn": "wstaw następne dopasowanie przed kursorem w trybie edycji",
       "ctrlPlusp": "wstaw poprzednie dopasowanie przed kursorem w trybie edycji",
       "ctrlPlusrx": "wstaw zawartość rejestru x",
-      "ctrlPlusox": "tymczasowy przejdź do trybu normalnego, żeby wykonać komendę x.",
+      "ctrlPlusox": "tymczasowo przejdź do trybu normalnego, żeby wykonać komendę x.",
       "Esc": "wyjdź z trybu wstawiania"
     }
   },
