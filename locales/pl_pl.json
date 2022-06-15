@@ -65,10 +65,10 @@
       "ctrlPlusj": "rozpocznij nowy wiersz w trybie edycji",
       "ctrlPlust": "zwiększ wcięcie (przesuń w prawo) linię o jedną szerokość wcięcia w trybie edycji",
       "ctrlPlusd": "zmniejsz wcięcie (przesuń w lewo) linię o jedną szerokość wcięcia w trybie edycji",
-      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
-      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
+      "ctrlPlusn": "wstaw następne dopasowanie przed kursorem w trybie edycji",
+      "ctrlPlusp": "wstaw poprzednie dopasowanie przed kursorem w trybie edycji",
       "ctrlPlusrx": "wstaw zawartość rejestru x",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlusox": "tymczasowy przejdź do trybu normalnego, żeby wykonać komendę x.",
       "Esc": "wyjdź z trybu wstawiania"
     }
   },
