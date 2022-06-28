@@ -9,8 +9,8 @@
       "j": "ลงด้านล่าง",
       "k": "ขึ้นข้างบน",
       "l": "ไปทางขวา",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "ลงด้านล่าง (สำหรับข้อความหลายบรรทัด)",
+      "gk": "ขึ้นข้างบน (สำหรับข้อความหลายบรรทัด)",
       "w": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรแรกของคำนั้น",
       "W": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรแรกของคำนั้น (แบบรวมเครื่องหมายวรรคตอนด้วย)",
       "e": "ไปข้างหน้าทีละคำ โดยไปที่ตัวอักษรสุดท้ายของคำนั้น",
@@ -35,18 +35,18 @@
       "tx": "ไปที่ตัวอักษรก่อนหน้าตัวอักษร x ถัดไปหลังจากตำแหน่งเคอร์เซอร์ปัจจุบัน",
       "Fx": "ไปที่ตัวอักษร x ถัดไปก่อนหน้าตำแหน่งเคอร์เซอร์ปัจจุบัน",
       "Tx": "ไปที่ตัวอักษรหลังจากตัวอักษร x ถัดไปก่อนหน้าตำแหน่งเคอร์เซอร์ปัจจุบัน",
-      "semicolon": "repeat previous f, t, F or T movement",
-      "comma": "repeat previous f, t, F or T movement, backwards",
+      "semicolon": "ทำคำสั่ง f, t, F หรือ T คำสั่งที่แล้ว",
+      "comma": "ทำคำสั่ง f, t, F หรือ T คำสั่งที่แล้ว แต่ย้อนกลับ",
       "closeCurlyBrace": "jump to next paragraph (or function/block, when editing code)",
       "openCurlyBrace": "jump to previous paragraph (or function/block, when editing code)",
-      "centerCursor": "center cursor on screen",
-      "CtrlPluse": "move screen down one line (without moving cursor)",
-      "CtrlPlusy": "move screen up one line (without moving cursor)",
-      "CtrlPlusb": "move back one full screen",
-      "CtrlPlusf": "move forward one full screen",
-      "CtrlPlusu": "move back 1/2 a screen",
-      "CtrlPlusd": "move forward 1/2 a screen",
-      "percent": "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
+      "centerCursor": "ทำให้เคอร์เซอร์อยู่กลางจอ",
+      "CtrlPluse": "เลื่อนจอลงหนึ่งบรรทัด (โดยไม่ขยับเคอร์เซอร์)",
+      "CtrlPlusy": "เลื่อนจอขึ้นหนึ่งบรรทัด (โดยไม่ขยับเคอร์เซอร์)",
+      "CtrlPlusb": "เลื่อนขึ้นไปข้างบนหนึ่งจอเต็ม",
+      "CtrlPlusf": "เลื่อนลงไปข้างล่างหนึ่งจอเต็ม",
+      "CtrlPlusu": "เลื่อนขึ้นไปข้างบนครึ่งจอ",
+      "CtrlPlusd": "เลื่อนลงไปข้างล่างครึ่งจอ",
+      "percent": "ไปที่ตัวอักษรที่ตรงกัน (คู่เครื่องหมายที่รองรับ: '()', '{}', '[]' - ใช้คำสั่ง <code>:h matchpairs</code> ใน vim เพื่อดูข้อมูลเพิ่มเติม)"
     },
     "tip": "กดตัวเลขก่อนใช้คำสั่งการเลื่อนตำแหน่งเคอร์เซอร์ ซึ่งตัวเลขนั้นคือจำนวนคำสั่งที่ทำซ้ำ เช่น <kbd>4j</kbd>  คือลงมาด้านล่าง 4 บรรทัด"
   },
@@ -60,15 +60,15 @@
       "o": "เริ่มพิมพ์ข้อความในบรรทัดใหม่ใต้บรรทัดเดิม",
       "O": "เริ่มพิมพ์ข้อความในบรรทัดใหม่ก่อนหน้าบรรทัดเดิม",
       "ea": "เริ่มพิมพ์ข้อความต่อจากข้อความนั้น",
-      "ctrlPlush": "delete the character before the cursor during insert mode",
-      "ctrlPlusw": "delete word before the cursor during insert mode",
-      "ctrlPlusj": "begin new line during insert mode",
-      "ctrlPlust": "เลื่อนข้อความไปทางขวา 1 ย่อหน้า (tab) ขณะอยู่ใน insert mode",
-      "ctrlPlusd": "เลื่อนข้อความไปทางซ้าย 1 ย่อหน้า (tab) ขณะอยู่ใน insert mode",
+      "ctrlPlush": "ลบตัวอักษรที่อยู่ด้านหน้าเคอร์เซอร์ขณะที่อยู่ใน insert mode",
+      "ctrlPlusw": "ลบคำที่อยู่ด้านหน้าเคอร์เซอร์ขณะที่อยู่ใน insert mode",
+      "ctrlPlusj": "เริ่มบรรทัดใหม่ขณะที่อยู่ใน insert mode",
+      "ctrlPlust": "เลื่อนข้อความไปทางขวา 1 ย่อหน้า (tab) ขณะที่อยู่ใน insert mode",
+      "ctrlPlusd": "เลื่อนข้อความไปทางซ้าย 1 ย่อหน้า (tab) ขณะที่อยู่ใน insert mode",
       "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
       "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "ctrlPlusrx": "insert the contents of register x",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlusox": "เข้าสู่โหมดปกติเพียงชั่วคราว เพื่อใช้คำสั่ง x ของโหมดปกติหนึ่งครั้ง",
       "Esc": "ออกจาก insert mode"
     }
   },
@@ -85,14 +85,14 @@
       "gU": "change to uppercase up to motion",
       "cc": "ลบทั้งบรรทัดแล้วพิมพ์ใหม่",
       "cDollar": "ลบไปจนถึงสุดบรรทัดแล้วพิมพ์ใหม่",
-      "ciw": "change (replace) entire word",
+      "ciw": "เปลี่ยน (แทนที่) คำนั้นทั้งคำ",
       "cw": "ลบทั้งคำแล้วพิมพ์ใหม่",
       "s": "ลบหนึ่งตัวอักษร แล้วเริ่มพิมพ์ใหม่",
       "S": "ลบทั้งบรรทัดแล้วพิมพ์ใหม่ (เหมือนกับใช้ cc)",
-      "xp": "สลับตัวอักษร 2 ตัวที่ติดกัน (ลบแล้วก็วาง)",
+      "xp": "สลับตัวอักษร 2 ตัวที่ติดกัน (ลบแล้ววาง)",
       "u": "ย้อนกลับ (undo)",
-      "U": "restore (undo) last changed line",
-      "CtrlPlusr": "ยกเลิกคำสั่ง ย้อนกลับ (redo)",
+      "U": "คืนค่า (undo) บรรทัดสุดท้ายที่เปลี่ยนแปลง",
+      "CtrlPlusr": "ยกเลิกคำสั่งย้อนกลับ (redo)",
       "dot": "ทำคำสั่งสุดท้ายซ้ำ"
     }
   },
@@ -105,26 +105,26 @@
       "CtrlPlusv": "เริ่มเข้าใช้งาน visual mode แบบเลือก เป็นกล่องสี่เหลี่ยม",
       "O": "เลื่อนเคอร์เซอร์ไปยัง อีกมุมของพื้นที่โดนเลือก",
       "aw": "เลือกทีละคำ",
-      "ab": "เลือกคลุม ทั้ง ()",
-      "aB": "เลือกคลุม ทั้ง  {}",
+      "ab": "เลือกคลุมทั้ง ()",
+      "aB": "เลือกคลุมทั้ง  {}",
       "at": "a block with <> tags",
-      "ib": "เลือกคลุม เฉพาะใน ()",
-      "iB": "เลือกคลุม เฉพาะใน {}",
+      "ib": "เลือกคลุมเฉพาะใน ()",
+      "iB": "เลือกคลุมเฉพาะใน {}",
       "it": "inner block with <> tags",
       "Esc": "ออกจาก visual mode"
     },
-    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+    "tip1": "แทนที่เราจะพิมพ์ <kbd>b</kbd> หรือ <kbd>B</kbd> ตอนที่จะเลือกคลุม ก็สามารถพิมพ์ <kbd>(</kbd> หรือ <kbd>{</kbd> ได้เหมือนกันตามลำดับ"
   },
   "visualCommands": {
-    "title": "คำสั่งที่ใช้ ใน Visual mode",
+    "title": "คำสั่งที่ใช้ใน Visual mode",
     "commands": {
       "greaterThan": "เลื่อนข้อความไปทางขวา 1 ย่อหน้า (tab)",
       "lessThan": "เลื่อนข้อความไปทางซ้าย1 ย่อหน้า (tab)",
       "y": "คัดลอก (copy) ข้อความที่คลุมไว้แล้ว",
       "d": "ลบ (cut) ข้อความที่เลือกไว้แล้ว (สามารถใช้ p เพื่อวางข้อความนั้นได้)",
       "tilde": "สลับตัวพิมพ์เล็ก/พิมพ์ใหญ่",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "u": "เปลี่ยนข้อความที่คลุมไว้เป็นตัวพิมพ์เล็ก",
+      "U": "เปลี่ยนข้อความที่คลุมไว้เป็นตัวพิมพ์ใหญ่"
     }
   },
   "registers": {
@@ -176,25 +176,25 @@
     "tip": ""
   },
   "macros": {
-    "title": "Macros",
+    "title": "มาโคร",
     "commands": {
-      "recordA": "บันทึก macro 'a'",
-      "stopRecording": "หยุดบันทึก macro 'a'",
-      "runA": "ใช้งาน macro 'a'",
-      "rerun": "ใช้งาน macro 'a' อีกครั้ง"
+      "recordA": "บันทึกมาโคร 'a'",
+      "stopRecording": "หยุดบันทึกมาโคร 'a'",
+      "runA": "ใช้งานมาโคร 'a'",
+      "rerun": "ใช้งานมาโคร 'a' อีกครั้ง"
     }
   },
   "global": {
     "title": "Global",
     "commands": {
       "helpForKeyword": "ขอความช่วยเหลือสำหรับ keyword",
-      "saveAsFile": "บันทึกเป็น file",
-      "closePane": "ปิด pane ปัจจุบัน",
+      "saveAsFile": "บันทึกเป็นไฟล์",
+      "closePane": "ปิดหน้าต่างปัจจุบัน",
       "K": "เปิด man page สำหรับคำใต้ cursor",
-      "colonTerminal": "open a terminal window",
-      "openFile": "เปิด file"
+      "colonTerminal": "เปิดหน้าต่างเทอร์มินัล",
+      "openFile": "เปิดไฟล์"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "ใช้คำสั่ง <kbd>vimtutor</kbd> ในเทอร์มินัลเพื่อเรียนรู้คำสั่งแรกของ Vim"
   },
   "cutAndPaste": {
     "title": "การลบ (Cut) และการวาง (Paste)",
@@ -219,14 +219,14 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "การย่อหน้าข้อความ",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanGreaterThan": "ย่อหน้า (ไปทางขวา) บรรทัดหนึ่งย่อหน้า",
+      "lessThanLessThan": "ย้อนกลับย่อหน้า (ไปทางซ้าย) บรรทัดหนึ่งย่อหน้า",
       "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
       "greaterThanib": "indent inner block with ()",
       "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
+      "3==": "ย้อนกลับย่อหน้า 3 บรรทัด",
       "=Percent": "re-indent a block with () or {} (cursor on brace)",
       "=iB": "re-indent inner block with {}",
       "gg=G": "re-indent entire buffer",
@@ -237,7 +237,7 @@
     "title": "การออกจาก Vim",
     "commands": {
       "colonw": "บันทึก (write) ลงไฟล์อย่างเดียว ไม่ได้ออก",
-      "colonwsudo": "write out the current file using sudo",
+      "colonwsudo": "บันทึกไฟล์ปัจจุบันโดยใช้ sudo ร่วมด้วย",
       "colonwq": "บันทึก (write) ลงไฟล์ และออกจาก Vim",
       "colonx": "บันทึก (write) ลงไฟล์ และออกจาก Vim",
       "colonq": "ออกจาก Vim (ออกไม่ได้ ถ้าไม่ได้บันทึกลงไฟล์)",
@@ -342,7 +342,7 @@
   "languages": {
     "title": "ภาษา"
   },
-  "footer": "Checkout the source on",
+  "footer": "ดูซอร์สโค้ดได้ที่",
   "layout": "page",
   "permalink": "/lang/th/"
 }
