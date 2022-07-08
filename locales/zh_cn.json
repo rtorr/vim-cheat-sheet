@@ -9,8 +9,8 @@
       "j": "下移光标",
       "k": "上移光标",
       "l": "右移光标",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "下移光标(折行文本)",
+      "gk": "下移光标(折行文本)",
       "w": "移动到下个单词开头",
       "W": "移动到下个单词开头(单词含标点)",
       "e": "移动到下个单词结尾",
@@ -80,7 +80,7 @@
       "J": "将下一行合并到当前行, 并在两部分文本之间插入一个空格",
       "gJ": "将下一行合并到当前行, 两部分文本之间不含空格",
       "gwip": "重新调整段落",
-      "gTilde": "switch case up to motion",
+      "gTilde": "大小写转换操作修饰符",
       "gu": "小写操作修饰符",
       "gU": "大写操作修饰符",
       "cc": "将光标所在的行删除, 然后进入插入模式",
@@ -99,7 +99,7 @@
   "markingText": {
     "title": "选择文本（可视化模式）",
     "commands": {
-      "v": "进入可视化模式, 移动光标高亮选择, 然后可以对选择的文本执行命令(比如<kbd>y</kbd>-复制)",
+      "v": "进入可视化模式, 移动光标高亮选择, 然后可以对选择的文本执行命令(比 y - 复制)",
       "V": "进入可视化模式(行粒度选择)",
       "o": "切换光标到选择区开头/结尾",
       "CtrlPlusv": "进入可视化模式(矩阵选择)",
@@ -160,19 +160,19 @@
       "currentPositionA": "设置当前位置为标记 a",
       "jumpPositionA": "跳转到标记 a 的位置",
       "yankToMarkA": "复制当前位置到标记 a 的内容",
-      "backtick0": "go to the position where Vim was previously exited",
-      "backtickQuote": "go to the position when last editing this file",
-      "backtickDot": "go to the position of the last change in this file",
-      "backtickBacktick": "go to the position before the last jump",
-      "colonjumps": "list of jumps",
-      "ctrlPlusi": "go to newer position in jump list",
-      "ctrlPluso": "go to older position in jump list",
-      "colonchanges": "list of changes",
-      "gcomma": "go to newer position in change list",
-      "gsemicolon": "go to older position in change list",
-      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+      "backtick0": "跳转到上次 Vim 退出时的位置",
+      "backtickQuote": "跳转到上次编辑该文件时的位置",
+      "backtickDot": "跳转到上次修改的位置",
+      "backtickBacktick": "跳转回上次跳转前的位置",
+      "colonjumps": "列出跳转历史记录",
+      "ctrlPlusi": "跳转至跳转历史中较晚的位置",
+      "ctrlPluso": "跳转回跳转历史中较早的位置",
+      "colonchanges": "列出修改历史记录",
+      "gcomma": "跳转至修改历史中较晚修改的位置",
+      "gsemicolon": "跳转至修改历史中较早修改的位置",
+      "ctrlPlusCloseSquare": "跳转到当前光标位置对应的 tag"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
+    "tip1": "可以使用反引号(<kbd>`</kbd>)或单引号(<kbd>'</kbd>)跳转至标记位置。使用单引号会跳转至该标记所在行行首(首个非空白字符)。",
     "tip": ""
   },
   "macros": {
@@ -194,7 +194,7 @@
       "colonTerminal": "打开一个shell窗口",
       "openFile": "打开文件"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "在终端中运行 <kbd>vimtutor</kbd> 以学习最基础的 Vim 命令。"
   },
   "cutAndPaste": {
     "title": "剪切, 复制, 粘贴",
@@ -207,14 +207,14 @@
       "yDollar": "复制, 从光标位置到行末",
       "p": "在光标后粘贴",
       "P": "在光标前粘贴",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "在光标后粘贴并把光标定位于粘贴的文本之后",
+      "gP": "在光标前粘贴并把光标定位于粘贴的文本之后",
       "dd": "剪切当前行",
       "twodd": "剪切 2 行",
       "dw": "剪切当前单词",
       "diw": "删除光标处的单词",
       "daw": "删除光标处的单词及其前后的空格",
-      "dDollar": "剪切, 从光标位置到行末 (同<kbd>D</kbd>)",
+      "dDollar": "剪切, 从光标位置到行末 (同 D )",
       "x": "剪切当前字符"
     }
   },
@@ -248,9 +248,9 @@
   "searchAndReplace": {
     "title": "查找/替换",
     "commands": {
-      "forwardSlashPattern": "查找<kbd>pattern</kbd>",
-      "questionMarkPattern": "向上查找<kbd>pattern</kbd>",
-      "backslashVpattern": "<kbd>pattern</kbd> 中的非字母数字字符被视为正则表达式特殊字符 (不需转义字符)",
+      "forwardSlashPattern": "查找 pattern",
+      "questionMarkPattern": "向上查找 pattern",
+      "backslashVpattern": " pattern 中的非字母数字字符被视为正则表达式特殊字符 (不需转义字符)",
       "n": "查找下一个",
       "N": "查找上一个",
       "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "替换全部",
@@ -261,11 +261,11 @@
   "searchMultipleFiles": {
     "title": "多文件搜索",
     "commands": {
-      "colonvimgrep": "在多个文件中搜索 <kbd>pattern</kbd>",
+      "colonvimgrep": "在多个文件中搜索 pattern",
       "coloncn": "移动至下一个",
       "coloncp": "移动至上一个",
       "coloncopen": "打开搜索结果列表",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "关闭 quickfix 窗口"
     }
   },
   "workingWithMultipleFiles": {
@@ -276,18 +276,18 @@
       "colonbprev": "切换到上个缓冲区",
       "colonls": "列出所有打开的缓冲区",
       "colonbd": "关闭缓冲区",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "切换到第 # 个缓冲区",
+      "colonbfile": "用文件名切换缓冲区",
       "colonsp": "新建缓冲区打开 filename 并水平分割窗口",
       "colonvsp": "新缓冲区打开 filename 并垂直分割窗口",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvertba": "垂直分割窗口编辑所有缓冲区",
+      "colontabba": "标签页编辑所有缓冲区",
       "ctrlPlusws": "水平分割窗口",
       "ctrlPluswv": "垂直分割窗口",
       "ctrlPlusww": "在窗口间切换",
       "ctrlPluswq": "关闭窗口",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswx": "当前窗口与下一个窗口交换位置",
+      "ctrlPlusw=": "令所有窗口高 & 宽一致",
       "ctrlPluswh": "切换到左侧窗口",
       "ctrlPluswl": "切换到右侧窗口",
       "ctrlPluswj": "切换到下侧窗口",
@@ -305,8 +305,8 @@
       "ctrlPluswT": "将窗口变成标签",
       "gt": "切换到下一个标签",
       "gT": "切换到上一个标签",
-      "hashgt": "切换到第 <kbd>#</kbd> 个标签",
-      "colontabmove": "移动标签到第 <kbd>#</kbd> 位(下标从 0 开始)",
+      "hashgt": "切换到第 # 个标签",
+      "colontabmove": "移动标签到第 # 位(下标从 0 开始)",
       "colontabc": "关闭当前标签",
       "colontabo": "关闭其他标签",
       "colontabdo": "在所有标签中执行命令 (例如 <kbd>:tabdo q</kbd> 关闭所有标签)"
@@ -315,24 +315,24 @@
   "diff": {
     "title": "Diff",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "定义折叠修饰符",
+      "zd": "删除光标位置的折叠",
+      "za": "展开 & 关闭光标位置的折叠",
+      "zo": "展开光标位置的折叠",
+      "zc": "关闭光标位置的折叠",
+      "zr": "展开同级的所有折叠",
+      "zm": "关闭同级的所有折叠",
+      "zi": "开启 & 关闭折叠功能",
+      "closeSquarec": "光标移至下一处差异",
+      "openSquarec": "光标移至上一处差异",
+      "do": "将另一缓冲区中的差异合并至当前缓冲区",
+      "dp": "将当前缓冲去中的差异推送至另一缓冲区",
+      "colonDiffthis": "令当前窗口成为 diff 模式的窗口之一",
+      "colonDiffupdate": "强制刷新 diff 的高亮与折叠",
+      "colonDiffoff": "令当前窗口退出 diff 模式"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "折叠命令(e.g. <kbd>za</kbd>)只作用于当前级别。使用大写字母(e.g. <kbd>zA</kbd>)令命令作用于全部级别。",
+    "tip2": "可以直接在终端运行 <kbd>vimdiff</kbd> 查看文件间的不同。也可以将该程序设为 <kbd>git difftool</kbd> 的选项之一。"
   },
   "words": {
     "keyword": "关键字",
