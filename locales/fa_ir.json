@@ -313,15 +313,15 @@
     }
   },
   "diff": {
-    "title": "Diff",
+    "title": "مقایسه کردن",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
+      "zf": "تا آخرین خط انتخابی یک پنهان گر کد بساز",
+      "zd": "پنهان گر کد زیر مکان نما را حذف من",
+      "za": "پنهانگر کد زیر مکان نما را باز و بسته کن",
+      "zo": "پنهانگر کد زیر مکان نما را باز کن",
+      "zc": "پنهانگر کد زیر مکان نما را ببند",
+      "zr": "همه پنهانگر های کد را یک مرتبه باز کن",
+      "zm": "همه پنهانگر های کد را یک مرتبه باز ببند",
       "zi": "toggle folding functionality",
       "closeSquarec": "jump to start of next change",
       "openSquarec": "jump to start of previous change",
