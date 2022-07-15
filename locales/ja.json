@@ -9,6 +9,8 @@
       "j": "下に移動",
       "k": "上に移動",
       "l": "右に移動",
+      "gj": "表示行で1行下に移動",
+      "gk": "表示行で1行上に移動",
       "w": "次の単語の先頭に移動",
       "W": "次の（区切り文字を含む）単語の先頭に移動",
       "e": "次の単語の末尾に移動",
@@ -27,8 +29,8 @@
       "gg": "ドキュメントの先頭行に移動",
       "G": "ドキュメントの末尾行に移動",
       "fiveG": "5行目に移動",
-      "gd": "move to local declaration",
-      "gD": "move to global declaration",
+      "gd": "カーソル位置の語の定義を関数内で探して移動",
+      "gD": "カーソル位置の語の定義をファイル全体で探して移動",
       "fx": "次にある文字「x」の手前に移動",
       "tx": "次にある文字「x」の 1 つ手前に移動",
       "Fx": "前にある文字「x」の手前に移動",
@@ -65,8 +67,8 @@
       "ctrlPlusd": "挿入モード中にその行を（左に）字上げ",
       "ctrlPlusn": "挿入モード中にカーソルの手前側へ次の候補を挿入（自動補完）",
       "ctrlPlusp": "挿入モード中にカーソルの後ろ側へ前の候補を挿入（自動補完）",
-      "ctrlPlusrx": "insert the contents of register x",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlusrx": "レジスタxの内容を挿入",
+      "ctrlPlusox": "挿入モードからノーマルモードに一時的に移動してコマンドxを実行",
       "Esc": "挿入モードを終了"
     }
   },
@@ -74,7 +76,7 @@
     "title": "編集",
     "commands": {
       "r": "文字を 1 つだけ置き換え",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
+      "R": "<kbd>ESC</kbd>が押されるまで1つ以上の文字を置き換え",
       "J": "スペースを 1 つ加えて下の行を現在の行に連結",
       "gJ": "スペースなしで現在の行に下の行を連結",
       "gwip": "段落をすべて連結",
@@ -82,7 +84,6 @@
       "gu": "モーション範囲を小文字に",
       "gU": "モーション範囲を大文字に",
       "cc": "現在の行を消去して挿入モード",
-      "C": "カーソル位置から行末までを消去して挿入モード",
       "cDollar": "カーソル位置から行末までを消去して挿入モード",
       "ciw": "単語を全て消去して挿入モード",
       "cw": "単語をカーソル位置から末尾まで消去して挿入モード",
@@ -110,8 +111,7 @@
       "ib": "() ブロックの括弧を除いた内側を選択",
       "iB": "{} ブロックの括弧を除いた内側を選択",
       "it": "<> タグのブロックの括弧を除いた内側を選択",
-      "Esc": "ビジュアルモード終了",
-      "AB": "untranslatable"
+      "Esc": "ビジュアルモード終了"
     },
     "tip1": "<kbd>b</kbd> や <kbd>B</kbd> の代わりにそれぞれ <kbd>(</kbd> や <kbd>{</kbd> も使えます。"
   },
@@ -206,14 +206,13 @@
       "yDollar": "行末までヤンク",
       "p": "カーソル位置の 1 つ後ろにペースト",
       "P": "カーソル位置の手前にペースト",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "カーソルの位置の後にペーストしてカーソル位置を新たなテキストの後に",
+      "gP": "カーソルの位置の前にペーストしてカーソル位置を新たなテキストの後に",
       "dd": "行を消去（カット）",
       "twodd": "2 行を消去（カット）",
       "dw": "次の単語の始まりまでを消去（カット）",
       "diw": "その単語全体を消去（カット）",
       "daw": "その単語全体と前後のスペースを消去（カット）",
-      "D": "行末まで消去（カット）",
       "dDollar": "行末まで消去（カット）（<kbd>D</kbd>と同じ）",
       "x": "文字を 1 つ消去（カット）"
     }
@@ -292,10 +291,10 @@
       "ctrlPluswl": "左のウィンドウ（垂直分割）にカーソル移動",
       "ctrlPluswj": "下のウィンドウ（水平分割）にカーソル移動",
       "ctrlPluswk": "上のウィンドウ（水平分割）にカーソル移動",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+      "ctrlPluswH": "現在のウィンドウの高さを最大化して最も左側に移動",
+      "ctrlPluswL": "現在のウィンドウの高さを最大化して最も右側に移動",
+      "ctrlPluswJ": "現在のウィンドウの幅を最大化して最も下側に移動",
+      "ctrlPluswK": "現在のウィンドウの幅を最大化して最も上側に移動"
     }
   },
   "tabs": {

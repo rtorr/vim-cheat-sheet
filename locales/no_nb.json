@@ -1,0 +1,346 @@
+{
+  "title": "Norsk",
+  "lang": "no_nb",
+  "lang_tag": "no",
+  "cursorMovement": {
+    "title": "Markørbevegelser",
+    "commands": {
+      "h": "flytt markøren til venstre",
+      "j": "flytt markøren ned",
+      "k": "flytt markøren opp",
+      "l": "flytt markøren til høyre",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
+      "w": "hopp frem til begynnelsen av et ord",
+      "W": "hopp frem til begynnelsen av et ord (ord kan inneholde tegnsetting)",
+      "e": "hopp fremover til slutten av et ord",
+      "E": "hopp frem til slutten av et ord (ord kan inneholde tegnsetting)",
+      "b": "hopp bakover til begynnelsen av et ord",
+      "B": "hopp bakover til begynnelsen av et ord (ord kan inneholde tegnsetting)",
+      "ge": "hopp bakover til slutten av et ord",
+      "gE": "hopp bakover til slutten av et ord (ord kan inneholde tegnsetting)",
+      "H": "flytt til toppen av skjermen",
+      "M": "flytt til midten av skjermen",
+      "L": "flytt til bunnen av skjermen",
+      "zero": "hopp til begynnelsen av linjen",
+      "caret": "hopp til det første ikke-blanke tegnet på linjen",
+      "dollar": "hopp til slutten av linjen",
+      "g_": "hopp til det siste ikke-blanke tegnet på linjen",
+      "gg": "gå til den første linjen i dokumentet",
+      "G": "gå til siste linje i dokumentet",
+      "fiveG": "gå til linje 5",
+      "gd": "flytt til lokal erklæring",
+      "gD": "flytt til global erklæring",
+      "fx": "hopp til neste forekomst av tegnet x",
+      "tx": "hopp til før neste forekomst av tegnet x",
+      "Fx": "hopp til forrige forekomst av tegnet x",
+      "Tx": "hopp til etter forrige forekomst av tegnet x",
+      "semicolon": "gjenta forrige f-, t-, F- eller T-bevegelse",
+      "comma": "gjenta forrige f-, t-, F- eller T-bevegelse, bakover",
+      "closeCurlyBrace": "hopp til neste avsnitt (eller funksjon/blokk, når du redigerer kode)",
+      "openCurlyBrace": "hopp til forrige avsnitt (eller funksjon/blokk, når du redigerer kode)",
+      "centerCursor": "sentermarkør på skjermen",
+      "CtrlPluse": "flytt skjermen én linje ned (uten å flytte markøren)",
+      "CtrlPlusy": "flytt skjermen opp en linje (uten å flytte markøren)",
+      "CtrlPlusb": "flytt tilbake en fullskjerm",
+      "CtrlPlusf": "flytt én fullskjerm fremover",
+      "CtrlPlusu": "flytt tilbake 1/2 en skjerm",
+      "CtrlPlusd": "flytt frem 1/2 en skjerm",
+      "percent": "flytt til samsvarende tegn (standard støttede par: '()', '{}', '[]' - bruk <code>:h matchpairs</code> i vim for mer informasjon)"
+    },
+    "tip": "Prefiks en markørbevegelseskommando med et tall for å gjenta den. For eksempel flytter <kbd>4j</kbd> fire linjer ned."
+  },
+  "insertMode": {
+    "title": "Innsettingsmodus - innsetting/legg til tekst",
+    "commands": {
+      "i": "sett inn før markøren",
+      "I": "sett inn på begynnelsen av linjen",
+      "a": "sett inn (legg til) etter markøren",
+      "A": "sett inn (legg til) på slutten av linjen",
+      "o": "legg til (åpne) en ny linje under gjeldende linje",
+      "O": "legg til (åpne) en ny linje over gjeldende linje",
+      "ea": "sett inn (legg til) på slutten av ordet",
+      "ctrlPlush": "slett tegnet før markøren under innsettingsmodus",
+      "ctrlPlusw": "slett ord før markøren under innsettingsmodus",
+      "ctrlPlusj": "begynn ny linje under innsettingsmodus",
+      "ctrlPlust": "rykk inn (flytt til høyre) linje én skiftbredde under innsettingsmodus",
+      "ctrlPlusd": "fjern innrykk (flytt til venstre) linje én skiftbredde under innsettingsmodus",
+      "ctrlPlusn": "sett inn (autofullfør) neste treff før markøren under innsettingsmodus",
+      "ctrlPlusp": "sett inn (autofullfør) forrige treff før markøren under innsettingsmodus",
+      "ctrlPlusrx": "sett inn innholdet i register x",
+      "ctrlPlusox": "Gå midlertidig inn i normalmodus for å gi en normalmoduskommando x.",
+      "Esc": "avslutt innsettingsmodus"
+    }
+  },
+  "editing": {
+    "title": "Editering",
+    "commands": {
+      "r": "erstatt et enkelt tegn.",
+      "R": "erstatt mer enn ett tegn, til <kbd>ESC</kbd> trykkes.",
+      "J": "føy linjen under til den gjeldende med ett mellomrom",
+      "gJ": "føy linjen under til den gjeldende uten mellomrom",
+      "gwip": "flyt avsnitt",
+      "gTilde": "switch opp til bevegelse",
+      "gu": "endre til små bokstaver opp til bevegelse",
+      "gU": "endre til store bokstaver opp til bevegelse",
+      "cc": "endre (erstatt) hele linjen",
+      "cDollar": "endre (erstatt) til slutten av linjen",
+      "ciw": "endre (erstatt) hele ordet",
+      "cw": "endre (erstatt) til slutten av ordet",
+      "s": "slett tegn og erstatt tekst",
+      "S": "slett linje og erstatt tekst (samme som cc)",
+      "xp": "transponer to bokstaver (slett og lim inn)",
+      "u": "angre",
+      "U": "gjenopprett (angre) sist endrede linje",
+      "CtrlPlusr": "gjør om",
+      "dot": "gjenta siste kommando"
+    }
+  },
+  "markingText": {
+    "title": "Markere tekst (visuell modus)",
+    "commands": {
+      "v": "start visuell modus, merk linjer, og utfør deretter en kommando (som y-yank)",
+      "V": "start linjevis visuell modus",
+      "o": "flytt til andre enden av markert område",
+      "CtrlPlusv": "start visuell blokkeringsmodus",
+      "O": "flytt til et annet hjørne av blokken",
+      "aw": "merk et ord",
+      "ab": "en blokk med ()",
+      "aB": "en blokk med {}",
+      "at": "en blokk med <>-tagger",
+      "ib": "indre blokk med ()",
+      "iB": "indre blokk med {}",
+      "it": "indre blokk med <>-tagger",
+      "Esc": "avslutt visuell modus"
+    },
+    "tip1": " stedet for <kbd>b</kbd> eller <kbd>B</kbd> kan man også bruke henholdsvis <kbd>(</kbd> eller <kbd>{</kbd>)."
+  },
+  "visualCommands": {
+    "title": "Visuelle kommandoer",
+    "commands": {
+      "greaterThan": "skift tekst til høyre",
+      "lessThan": "skift tekst til venstre",
+      "y": "kopier merket tekst",
+      "d": "slett merket tekst",
+      "tilde": "bytte sak",
+      "u": "endre markert tekst til små bokstaver",
+      "U": "endre merket tekst til store bokstaver"
+    }
+  },
+  "registers": {
+    "title": "Register",
+    "commands": {
+      "show": "vis registrer innhold",
+      "pasteRegisterX": "lim inn innholdet i register x",
+      "yankIntoRegisterX": "kopier inn i register x",
+      "quotePlusy": "kopier inn i systemets utklippstavleregister",
+      "quotePlusp": "lim inn fra systemets utklippstavleregister"
+    },
+    "tip1": "Registrene blir lagret i ~/.viminfo, og vil bli lastet inn igjen ved neste omstart av vim.",
+    "tip2": {
+      "0": "siste kopiering",
+      "title": "Spesielle registre:",
+      "quote": "ikke navngitte register, siste sletting eller kopi",
+      "percent": "nåværende filnavn",
+      "hashtag": "alternativt filnavn",
+      "asterisk": "utklippstavleinnhold (X11 primær)",
+      "plus": "utklippstavleinnhold (X11 utklippstavle)",
+      "slash": "siste søkemønster",
+      "colon": "siste kommandolinje",
+      "dot": "sist innsatt tekst",
+      "minus": "siste liten (mindre enn en linje) sletting",
+      "equal": "uttrykksregister",
+      "underscore": "svart hull register"
+    }
+  },
+  "marks": {
+    "title": "Merker og posisjoner",
+    "commands": {
+      "list": "liste over merker",
+      "currentPositionA": "sett gjeldende posisjon for merke A",
+      "jumpPositionA": "hopp til posisjonen til merke A",
+      "yankToMarkA": "kopier tekst fra posisjonen til merke A",
+      "backtick0": "gå til posisjonen der Vim tidligere ble avsluttet",
+      "backtickQuote": "gå til posisjonen da du sist redigerte denne filen",
+      "backtickDot": "gå til posisjonen til den siste endringen i denne filen",
+      "backtickBacktick": "gå til posisjonen før siste hopp",
+      "colonjumps": "liste over hopp",
+      "ctrlPlusi": "gå til nyere posisjon i hoppeoversikten",
+      "ctrlPluso": "gå til eldre posisjon i hoppeoversikten",
+      "colonchanges": "liste over endringer",
+      "gcomma": "gå til nyere posisjon i endringslisten",
+      "gsemicolon": "gå til eldre posisjon i endringslisten",
+      "ctrlPlusCloseSquare": "hopp til taggen under markøren"
+    },
+    "tip1": "For å hoppe til et merke kan du enten bruke en backtick (<kbd>`</kbd>) eller en apostrof (<kbd>'</kbd>). Ved å bruke en apostrof hopper du til begynnelsen (første ikke-blank) av linjen som holder merket.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Makroer",
+    "commands": {
+      "recordA": "ta opp makro a",
+      "stopRecording": "stopp opptak av makro",
+      "runA": "kjør makro a",
+      "rerun": "kjør siste kjøring makro"
+    }
+  },
+  "global": {
+    "title": "Globale kommandoer",
+    "commands": {
+      "helpForKeyword": "åpne hjelp for søkeord",
+      "saveAsFile": "lagre fil som",
+      "closePane": "lukk gjeldende rute",
+      "K": "åpne man-side for ord under markøren",
+      "colonTerminal": "åpne et terminalvindu"
+    },
+    "tip1": "Kjør <kbd>vimtutor</kbd> i en terminal for å lære de første Vim-kommandoene."
+  },
+  "cutAndPaste": {
+    "title": "Klipp og lim",
+    "commands": {
+      "yy": "kopier en linje",
+      "twoyy": "kopier 2 linjer",
+      "yw": "kopier tegnene i ordet fra markørposisjonen til begynnelsen av neste ord",
+      "yiw": "kopier ordet under markøren",
+      "yaw": "kopier ordet under markøren og mellomrommet etter eller før det",
+      "yDollar": "kopier til slutten av linjen",
+      "p": "lim inn utklippstavlen etter markøren",
+      "P": "lim inn før markøren",
+      "gp": "lim inn utklippstavlen etter markøren og la markøren stå etter den nye teksten",
+      "gP": "lim inn før markøren og la markøren stå etter den nye teksten",
+      "dd": "slett (klipp ut) en linje",
+      "twodd": "slett (klipp ut) 2 linjer",
+      "dw": "slett (klipp ut) tegnene i ordet fra markørposisjonen til begynnelsen av neste ord",
+      "diw": "slett (klipp ut) ord under markøren",
+      "daw": "slett (klipp ut) ord under markøren og mellomrommet etter eller før det",
+      "dDollar": "slett (klipp) til slutten av linjen",
+      "x": "slett (klipp ut) tegn"
+    }
+  },
+  "indentText": {
+    "title": "Innrykk av tekst",
+    "commands": {
+      "greaterThanGreaterThan": "rykk inn (flytt til høyre) linje én skiftbredde",
+      "lessThanLessThan": "fjern innrykk (flytt til venstre) linje én skiftbredde",
+      "greaterThanPercent": "rykk inn en blokk med () eller {} (markør på klammeparentes)",
+      "greaterThanib": "innrykk indre blokk med ()",
+      "greaterThanat": "rykk inn en blokk med <>-tagger",
+      "3==": "rykk inn 3 linjer på nytt",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "rykk inn indre blokk på nytt med {}",
+      "gg=G": "innrykk hele bufferen på nytt",
+      "closeSquarep": "lim inn og juster innrykk til gjeldende linje",
+      "=Prosent": "sett inn en blokk på nytt med () eller {} (markør på klammeparentes)"
+    }
+  },
+  "exiting": {
+    "title": "Avslutt",
+    "commands": {
+      "colonw": "skriv (lagre) filen, men ikke avslutt",
+      "colonwsudo": "skriv ut gjeldende fil med sudo",
+      "colonwq": "skriv (lagre) og avslutt",
+      "colonx": "skriv (lagre) og avslutt",
+      "colonq": "avslutt (mislykkes hvis det er ulagrede endringer)",
+      "colonqbang": "avslutt og kast ulagrede endringer",
+      "colonwqa": "skriv (lagre) og avslutt på alle faner"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Søk og erstatt",
+    "commands": {
+      "forwardSlashPattern": "søk etter mønster",
+      "questionMarkPattern": "søk bakover etter mønster",
+      "backslashVpattern": "'veldig magisk' mønster: ikke-alfanumeriske tegn tolkes som spesielle regex-symboler (ingen unnslipping nødvendig)",
+      "n": "gjenta søk i samme retning",
+      "N": "gjenta søk i motsatt retning",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "erstatt alle gamle med nye gjennom hele filen",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "erstatt alle gamle med nye gjennom hele filen med bekreftelser",
+      "colonnoh": "fjern utheving av søketreff"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Søk i flere filer",
+    "commands": {
+      "colonvimgrep": "søk etter mønster i flere filer",
+      "coloncn": "hopp til neste kamp",
+      "coloncp": "hopp til forrige kamp",
+      "coloncopen": "åpne et vindu som inneholder listen over treff",
+      "coloncclose": "lukk hurtigreparasjonsvinduet"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Arbeid med flere filer",
+    "commands": {
+      "colone": "rediger en fil i en ny buffer",
+      "colonbnext": "gå til neste buffer",
+      "colonbprev": "gå til forrige buffer",
+      "colonls": "liste opp alle åpne buffere",
+      "colonbd": "slett en buffer (lukk en fil)",
+      "colonbnumber": "gå til en buffer etter indeks #",
+      "colonbfile": "gå til en buffer etter fil",
+      "colonsp": "åpne en fil i en ny buffer og delt vindu",
+      "colonvsp": "åpne en fil i en ny buffer og vertikalt delt vindu",
+      "colonvertba": "rediger alle buffere som vertikale vinduer",
+      "colontabba": "rediger alle buffere som faner",
+      "ctrlPlusws": "delt vindu",
+      "ctrlPluswv": "delt vindu vertikalt",
+      "ctrlPlusww": "bytt vinduer",
+      "ctrlPluswq": "avslutt et vindu",
+      "ctrlPluswx": "bytt gjeldende vindu med neste",
+      "ctrlPlusw=": "gjør alle vinduer like høyde og bredde",
+      "ctrlPluswh": "flytt markøren til venstre vindu (vertikal delt)",
+      "ctrlPluswl": "flytt markøren til høyre vindu (vertikal delt)",
+      "ctrlPluswj": "flytt markøren til vinduet under (horisontal delt)",
+      "ctrlPluswk": "flytt markøren til vinduet over (horisontal delt)",
+      "ctrlPluswH": "gjør gjeldende vindu i full høyde helt til venstre (vertikalt vindu lengst til venstre)",
+      "ctrlPluswL": "gjør gjeldende vindu i full høyde helt til høyre (vertikalt vindu lengst til høyre)",
+      "ctrlPluswJ": "gjør gjeldende vindu i full bredde helt nederst (nederste horisontale vindu)",
+      "ctrlPluswK": "gjør gjeldende vindu i full bredde helt øverst (øverste horisontale vindu)"
+    }
+  },
+  "tabs": {
+    "title": "Faner",
+    "commands": {
+      "colonTabNew": "åpne en fil i en ny fane",
+      "ctrlPluswT": "flytt det gjeldende delte vinduet til sin egen fane",
+      "gt": "flytt til neste fane",
+      "gT": "flytt til forrige fane",
+      "hashgt": "flytt til fanenummer #",
+      "colontabmove": "flytt gjeldende fane til #. posisjon (indeksert fra 0)",
+      "colontabc": "lukk gjeldende fane og alle dens vinduer",
+      "colontabo": "lukk alle faner bortsett fra den gjeldende",
+      "colontabdo": "kjør <code>kommandoen</code> på alle faner (f.eks. <code>:tabdo q</code> - lukker alle åpne faner)"
+    }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "definer manuelt en fold opp til bevegelse",
+      "zd": "slett fold under markøren",
+      "za": "skift fold under markøren",
+      "zo": "åpne fold under markøren",
+      "zc": "lukk fold under markøren",
+      "zr": "reduser (åpne) alle folder med ett nivå",
+      "zm": "fold mer (lukk) alle folder med ett nivå",
+      "zi": "bytte brettefunksjonalitet",
+      "closeSquarec": "hopp til starten av neste endring",
+      "openSquarec": "hopp til starten av forrige endring",
+      "do": "få (få) forskjell (fra annen buffer)",
+      "dp": "sett forskjell (til annen buffer)",
+      "colonDiffthis": "gjør gjeldende vindu til en del av diff",
+      "colonDiffupdate": "oppdateringsforskjeller",
+      "colonDiffoff": "slå av diff-modus for gjeldende vindu"
+    },
+    "tip1": "Kommandoene for bretting (f.eks. <kbd>za</kbd>) fungerer på ett nivå. For å operere på alle nivåer, bruk store bokstaver (f.eks. <kbd>zA</kbd>).",
+    "tip2": "For å se forskjellene på filer, kan man starte Vim direkte i diff-modus ved å kjøre <kbd>vimdiff</kbd> i en terminal. Man kan til og med sette dette som <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "søkeord",
+    "file": "fil",
+    "movement": "bevegelse"
+  },
+  "languages": {
+    "title": "Språk"
+  },
+  "footer": "Sjekk ut kildekoden på"
+}

@@ -309,6 +309,10 @@ kbd {
     height: 0px;
     display: none;
   }
+  
+  .sponsor {
+    display: none;
+  }
 }
 
 @page {

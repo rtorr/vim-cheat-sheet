@@ -9,6 +9,8 @@
       "j": "flytta markören åt höger",
       "k": "flytta markören uppåt",
       "l": "flytta markören neråt",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "hoppa framåt till starten av nästa ord",
       "W": "hoppa framåt till starten av nästa ord (orden kan innehålla skiljetecken)",
       "e": "hoppa framåt till slutet av nästa ord",
@@ -82,7 +84,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "byt (ersätt) hela raden",
-      "C": "byt (ersätt) till slutet av raden",
       "cDollar": "byt (ersätt) till slutet av raden",
       "ciw": "byt (ersätt) ett helt ord",
       "cw": "byt (ersätt) till slutet av ordet",
@@ -212,7 +213,6 @@
       "dw": "tag bort tecken från markören till början av nästa ord",
       "diw": "tag bort ordet under markören",
       "daw": "tag bort ordet under markören och mellanslag före eller efter ordet",
-      "D": "tag bort till slutet av raden",
       "dDollar": "tag bort till slutet av raden",
       "x": "tag bort tecken"
     }

@@ -9,6 +9,8 @@
       "j": "di chuyển con trỏ xuống dưới một hàng",
       "k": "di chuyển con trỏ lên trên một hàng",
       "l": "di chuyển con trỏ qua phải một ký tự",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "di chuyển qua phải, đến ký tự đầu tiên của từ kế tiếp",
       "W": "di chuyển qua phải, đến ký tự đầu tiên của từ kế tiếp (trong từ có thể chứa các ký tự đặc biệt và dấu câu)",
       "e": "di chuyển qua phải, đến ký tự cuối cùng của từ",
@@ -82,7 +84,6 @@
       "gu": "chuyển thành lowercase cho các ký tự nằm trong vùng di chuyển của con trỏ, ví dụ: <kbd>gu</kbd><kbd> Enter</kbd> là chuyển cả hàng thành lowercase.",
       "gU": "chuyển thành uppercase cho các ký tự nằm trong vùng di chuyển của con trỏ, ví dụ: <kbd>gUiw</kbd> là chuyển cả từ thành uppercase.",
       "cc": "thay đổi nội dung của một hàng",
-      "C": "thay đổi nội dung của hàng, tính từ vị trí con trỏ đến cuối hàng.",
       "cDollar": "thay đổi nội dung của hàng, tính từ vị trí con trỏ đến cuối hàng.",
       "ciw": "thay đổi nội dung của cả một từ.",
       "cw": "thay đổi nội dung của một từ, tính từ vị trí con trỏ đến ký tự cuối cùng của từ.",
@@ -212,7 +213,6 @@
       "dw": "xóa từ vị trí con trỏ đến trước ký tự đầu tiên của từ tiếp theo.",
       "diw": "xóa cả từ tại vị trí con trỏ.",
       "daw": "xóa cả từ tại vị trí con trỏ, kể cả khoảng trắng phía trước hoặc sau nó.",
-      "D": "xóa đến cuối hàng.",
       "dDollar": "xóa đến cuối hàng.",
       "x": "xóa ký tự tại vị trí con trỏ."
     }

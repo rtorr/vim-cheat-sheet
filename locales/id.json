@@ -9,6 +9,8 @@
       "j": "memindahkan kursor ke bawah",
       "k": "memindahkan kursor ke atas",
       "l": "memindahkan kursor ke kanan",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "lompat ke awal kata selanjutnya",
       "W": "lompat ke awal kata selanjutanya (kata-kata dapat mengandung tanda baca)",
       "e": "lompat ke akhir kata selanjutnya",
@@ -83,7 +85,6 @@
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "menghapus isi baris saat ini untuk diganti dengan text lain",
-      "C": "change (replace) to the end of the line",
       "cDollar": "menghapus semua karakter setelah kursor hingga akhir baris",
       "ciw": "change (replace) entire word",
       "cw": "menghapus satu kata untuk diganti dengan kata lain",
@@ -213,7 +214,6 @@
       "dw": "menghapus (memotong) kata",
       "diw": "delete (cut) word under the cursor",
       "daw": "delete (cut) word under the cursor and the space after or before it",
-      "D": "menghapus (memotong) hingga ke akhir baris saat ini",
       "dDollar": "menghapus (memotong) hingga ke akhir baris saat ini",
       "x": "menghapus (memotong) satu karakter"
     }

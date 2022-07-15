@@ -9,6 +9,8 @@
       "j": "mover el cursor hacia abajo",
       "k": "mover el cursor hacia arriba",
       "l": "mover el cursor hacia la derecha",
+      "gj": "move cursor down (multi-line text)",
+      "gk": "move cursor up (multi-line text)",
       "w": "saltar hasta el inicio de la siguiente palabra",
       "W": "saltar hasta el inicio de la siguiente palabra (incluso con puntuación)",
       "e": "saltar hasta el final de la siguiente palabra",
@@ -82,7 +84,6 @@
       "gu": "cambiar a minúsculas hasta movimiento",
       "gU": "cambiar a mayúsculas hasta el movimiento",
       "cc": "cambiar (reemplazar) toda la línea",
-      "C": "cambiar (reemplazar) al final de la línea",
       "cDollar": "cambiar (reemplazar) hasta el final de la línea",
       "ciw": "cambiar (reemplazar) palabra completa",
       "cw": "cambiar (reemplazar) una palabra",
@@ -213,7 +214,6 @@
       "dw": "cortar el resto de los carácteres de la palabra desde la posición del cursor hasta el principio de la siguiente palabra",
       "diw": "cortar la palabra localizada en la posición del cursor",
       "daw": "cortar la palabra localizada en la posición del cursor y el espacio detras de ella o delante",
-      "D": "cortar hasta el final de la línea",
       "dDollar": "cortar hasta el final de la línea",
       "x": "cortar carácter"
     }
