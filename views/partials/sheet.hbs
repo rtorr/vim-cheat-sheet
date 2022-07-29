@@ -134,6 +134,12 @@
             <kbd>zz</kbd> - {{__ 'cursorMovement.commands.centerCursor'}}
           </li>
           <li>
+            <kbd>zt</kbd> - position cursor on top of the screen
+          </li>
+          <li>
+            <kbd>zb</kbd> - position cursor on bottom of the screen
+          </li>
+          <li>
             <kbd>Ctrl</kbd> + <kbd>e</kbd> - {{__ 'cursorMovement.commands.CtrlPluse'}}
           </li>
           <li>
@@ -495,6 +501,24 @@
             <kbd>daw</kbd> - {{__ 'cutAndPaste.commands.daw'}}
           </li>
           <li>
+            <kbd>:3,5d</kbd> - delete lines starting from 3 to 5
+          </li>
+        <div class="well">
+          <strong>Tip</strong> You can also use the following characters to specify the range: <br>
+          e.g. <br>
+          <p>
+            <kbd>:.,$d</kbd> - From the current line to the end of the file <br>
+            <kbd>:.,1d</kbd> - From the current line to the beginning of the file <br>
+            <kbd>:10,$d</kbd> - From the 10th line to the beginning of the file <br>
+          </p>
+        </div>
+          <li>
+            <kbd>:g/{pattern}/d</kbd> - delete all lines containing pattern
+          </li>
+          <li>
+            <kbd>:g!/{pattern}/d</kbd> - delete all lines not containing pattern
+          </li>
+          <li>
             <kbd>d$</kbd> or <kbd>D</kbd> - {{__ 'cutAndPaste.commands.dDollar'}}
           </li>
           <li>
@@ -511,6 +535,9 @@
           </li>
           <li>
             <kbd>&#62;%</kbd> - {{__ 'indentText.commands.greaterThanPercent'}}
+          </li>
+          <li>
+            <kbd>&#60;%</kbd> - de-indent a block with () or {} (cursor on brace)
           </li>
           <li>
             <kbd>&#62;ib</kbd> - {{__ 'indentText.commands.greaterThanib'}}
