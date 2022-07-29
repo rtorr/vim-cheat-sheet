@@ -134,6 +134,12 @@
             <kbd>zz</kbd> - {{__ 'cursorMovement.commands.centerCursor'}}
           </li>
           <li>
+            <kbd>zt</kbd> - {{__ 'cursorMovement.commands.topCursor'}}
+          </li>
+          <li>
+            <kbd>zb</kbd> - {{__ 'cursorMovement.commands.bottomCursor'}}
+          </li>
+          <li>
             <kbd>Ctrl</kbd> + <kbd>e</kbd> - {{__ 'cursorMovement.commands.CtrlPluse'}}
           </li>
           <li>
@@ -495,6 +501,22 @@
             <kbd>daw</kbd> - {{__ 'cutAndPaste.commands.daw'}}
           </li>
           <li>
+            <kbd>:3,5d</kbd> - {{__ 'cutAndPaste.commands.colonThreeCommaFiveD'}}
+          </li>
+	<div class="well">
+	  <strong>Tip</strong> {{{__ 'cutAndPaste.tip'}}}
+	  e.g.
+	  <kbd>:.,$d</kbd> - From the current line to the end of the file
+	  <kbd>:.,1d</kbd> - From the current line to the beginning of the file
+	  <kbd>:10,$d</kbd> - From the 10th line to the beginning of the file
+	</div>
+          <li>
+            <kbd>:g/{pattern}/d</kbd> - {{__ 'cutAndPaste.commands.colonGForwardSlashPatternForwardSlashD'}}
+          </li>
+          <li>
+            <kbd>:g!/{pattern}/d</kbd> - {{__ 'cutAndPaste.commands.colonGBangForwardSlashPatternForwardSlashD'}}
+          </li>
+          <li>
             <kbd>d$</kbd> or <kbd>D</kbd> - {{__ 'cutAndPaste.commands.dDollar'}}
           </li>
           <li>
@@ -511,6 +533,9 @@
           </li>
           <li>
             <kbd>&#62;%</kbd> - {{__ 'indentText.commands.greaterThanPercent'}}
+          </li>
+          <li>
+            <kbd>&#60;%</kbd> - {{__ 'indentText.commands.lessThanPercent'}}
           </li>
           <li>
             <kbd>&#62;ib</kbd> - {{__ 'indentText.commands.greaterThanib'}}
