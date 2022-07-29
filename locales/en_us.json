@@ -40,6 +40,8 @@
       "closeCurlyBrace": "jump to next paragraph (or function/block, when editing code)",
       "openCurlyBrace": "jump to previous paragraph (or function/block, when editing code)",
       "centerCursor": "center cursor on screen",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "move screen down one line (without moving cursor)",
       "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "move back one full screen",
@@ -213,6 +215,15 @@
       "dw": "delete (cut) the characters of the word from the cursor position to the start of the next word",
       "diw": "delete (cut) word under the cursor",
       "daw": "delete (cut) word under the cursor and the space after or before it",
+      "colonThreeCommaFixeD":"delete lines starting from 3 to 5",
+      "tip":{
+	      "title":"You can also use the following characters to specify the range:",
+	      "dot":"The current line",
+	      "dollar":"The last line",
+	      "percent":"All lines"
+      },
+      "colonGForwardSlashPatternForwardSlashD":"delete all lines containing pattern",
+      "colonGBangForwardSlashPatternForwardSlashD":"delete all lines not containing pattern",
       "dDollar": "delete (cut) to the end of the line",
       "x": "delete (cut) character"
     }
@@ -223,6 +234,7 @@
       "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
       "lessThanLessThan": "de-indent (move left) line one shiftwidth",
       "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)",
       "greaterThanib": "indent inner block with ()",
       "greaterThanat": "indent a block with <> tags",
       "3==": "re-indent 3 lines",
