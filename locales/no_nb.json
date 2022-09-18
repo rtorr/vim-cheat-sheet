@@ -111,6 +111,7 @@
       "ib": "indre blokk med ()",
       "iB": "indre blokk med {}",
       "it": "indre blokk med <>-tagger",
+      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "avslutt visuell modus"
     },
     "tip1": " stedet for <kbd>b</kbd> eller <kbd>B</kbd> kan man også bruke henholdsvis <kbd>(</kbd> eller <kbd>{</kbd>)."

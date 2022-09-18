@@ -111,6 +111,7 @@
       "ib": "选择被 () 包裹的区域(不含括号)",
       "iB": "选择被 {} 包裹的区域(不含花括号)",
       "it": "选择被 <> 标签包裹的区域(不含<>标签)",
+      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "退出可视化模式"
     },
     "tip1": "也可以使用 <kbd>(</kbd> 和 <kbd>{</kbd> 分别代替 <kbd>b</kbd> 和 <kbd>B</kbd> "

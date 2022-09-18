@@ -112,6 +112,7 @@
       "ib": "sectiunea interioara cu ()",
       "iB": "sectiunea interioara cu {}",
       "it": "inner block with <> tags",
+      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "iesi din modul vizual"
     },
     "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."

@@ -111,6 +111,7 @@
       "ib": "un bloque interno con ()",
       "iB": "un bloque interno con {}",
       "it": "bloque interior con etiquetas <>",
+      "gB": "usa esa combinación varias veces para crear múltiples cursores para marcar palabras o símbolos que coinciden",
       "Esc": "salir del modo visual"
     },
     "tip1": "En lugar de <kbd>b</kbd> o <kbd>B</kbd> también puede usar <kbd>(</kbd> o <kbd>{</kbd> respectivamente."

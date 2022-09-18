@@ -111,6 +111,7 @@
       "ib": "wewnętrzny blok z ()",
       "iB": "wewnętrzny blok z {}",
       "it": "inner block with <> tags",
+      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "wyjdź z trybu wizualnego"
     },
     "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
@@ -222,7 +223,7 @@
     "title": "Indent text",
     "commands": {
       "greaterThanGreaterThan": "zwiększ wcięcie (przesuń w prawo) o jedną szerokość wcięcia",
-		"lessThanLessThan": "zmniejsz wcięcie (przesuń w lewo) o jedną szerokość wcięcia",
+      "lessThanLessThan": "zmniejsz wcięcie (przesuń w lewo) o jedną szerokość wcięcia",
       "greaterThanPercent": "zwiększ więcie bloku ograniczonego () lub {} (kursor on nawiasie)",
       "greaterThanib": "indent inner block with ()",
       "greaterThanat": "indent a block with <> tags",
