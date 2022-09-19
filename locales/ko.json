@@ -111,7 +111,7 @@
       "ib": "소괄호() 내부 선택",
       "iB": "중괄호{} 내부 선택",
       "it": "태그<> 내부 선택",
-      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
+      "gb": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "선택 모드 종료"
     },
     "tip1": "<kbd>b</kbd> 또는 <kbd>B</kbd> 대신에 <kbd>(</kbd> 또는 <kbd>{</kbd> 사용가능."

@@ -111,7 +111,7 @@
       "ib": "označi blok unutar ()",
       "iB": "označi blok unutar {}",
       "it": "označi blok unutar <> tag-ova",
-      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
+      "gb": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "izađi iz označavanja teksta"
     },
     "tip1": "Umjesto <kbd>b</kbd> ili <kbd>B</kbd> možemo koristiti <kbd>(</kbd> odnosno <kbd>{</kbd>."

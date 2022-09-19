@@ -111,7 +111,7 @@
       "ib": "Innerer Block mit ()",
       "iB": "Innerer Block mit {}",
       "it": "Innerer Block mit <>",
-      "gB": "Wiederhole diese Kombination und setze mehrere Cursor gleichzeit bei Wörtern oder Symbolen die übereinstimmen.",
+      "gb": "Wiederhole diese Kombination und setze mehrere Cursor gleichzeit bei Wörtern oder Symbolen die übereinstimmen.",
       "Esc": "Visuellen Modus verlassen"
     },
     "tip1": "Anstatt <kbd>b</kbd> oder <kbd>B</kbd>, kann man auch <kbd>(</kbd> oder <kbd>{</kbd> verwenden."

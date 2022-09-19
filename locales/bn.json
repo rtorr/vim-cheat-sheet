@@ -111,7 +111,7 @@
       "ib": "ভিতরের ব্লক () সহ",
       "iB": "{} সহ ভিতরের ব্লক",
       "it": "<> ট্যাগ সহ ভিতরের ব্লক",
-      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
+      "gb": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "ভিজ্যুয়াল মোড থেকে প্রস্থান করুন"
     },
     "tip1": " <kbd>b</kbd> বা <kbd>B</kbd> এর পরিবর্তে চাইলে  <kbd>(</kbd> বা <kbd>{</kbd> ব্যবহার করতে পারেন "

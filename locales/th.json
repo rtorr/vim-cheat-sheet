@@ -111,7 +111,7 @@
       "ib": "เลือกคลุมเฉพาะใน ()",
       "iB": "เลือกคลุมเฉพาะใน {}",
       "it": "inner block with <> tags",
-      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
+      "gb": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "ออกจาก visual mode"
     },
     "tip1": "แทนที่เราจะพิมพ์ <kbd>b</kbd> หรือ <kbd>B</kbd> ตอนที่จะเลือกคลุม ก็สามารถพิมพ์ <kbd>(</kbd> หรือ <kbd>{</kbd> ได้เหมือนกันตามลำดับ"

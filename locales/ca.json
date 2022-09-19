@@ -111,7 +111,7 @@
       "ib": "un bloc intern amb ()",
       "iB": "un bloc intern amb {}",
       "it": "bloc interior amb etiquetes <>",
-      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
+      "gb": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "sortir del mode visual"
     },
     "tip1": "En comptes de <kbd>b</kbd> o <kbd>B</kbd> també es poden utilitzar <kbd>(</kbd> o <kbd>{</kbd> respectivament."

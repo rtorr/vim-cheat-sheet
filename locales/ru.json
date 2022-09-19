@@ -111,7 +111,7 @@
       "ib": "внутренний блок в ()",
       "iB": "внутренний блок в {}",
       "it": "внутренний блок в <> тегах",
-      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
+      "gb": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "выйти из режима выделения текста"
     },
     "tip1": "Вместо <kbd>b</kbd> и <kbd>B</kbd> также можно использовать <kbd>(</kbd> и <kbd>{</kbd> соответственно."

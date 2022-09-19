@@ -111,7 +111,7 @@
       "ib": "() ブロックの括弧を除いた内側を選択",
       "iB": "{} ブロックの括弧を除いた内側を選択",
       "it": "<> タグのブロックの括弧を除いた内側を選択",
-      "gB": "use it multiple times to create multiple cursors to mark the matching words or symbols",
+      "gb": "use it multiple times to create multiple cursors to mark the matching words or symbols",
       "Esc": "ビジュアルモード終了"
     },
     "tip1": "<kbd>b</kbd> や <kbd>B</kbd> の代わりにそれぞれ <kbd>(</kbd> や <kbd>{</kbd> も使えます。"
