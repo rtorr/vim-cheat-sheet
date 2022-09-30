@@ -68,7 +68,7 @@
       "ctrlPlusn": "다음 단어 탐색 (자동완성)",
       "ctrlPlusp": "이전 단어 탐색 (자동완성)",
       "ctrlPlusrx": "레지스터 x의 내용 삽입",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlusox": "일시적으로 삽입 모드에서 노멀 모드로 이동하여 command x 실행",
       "Esc": "삽입모드 종료"
     }
   },
