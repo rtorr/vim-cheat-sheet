@@ -218,18 +218,18 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "المساحات البادئة",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line"
+      "greaterThanGreaterThan": "أضف مساحه بادئة (حرك لليمن) للسطر الحاليي",
+      "lessThanLessThan": "إحذف مساحه بادئة (حرك لليسار) من السطر الحالي",
+      "greaterThanPercent": "أضف مساحه بادئة لبلوك بين () او {}  مع وضع المؤشر في الأول",
+      "greaterThanib": "() أضف مساحه بادئة لبلوك محدوده ب",
+      "greaterThanat": "<> أضف مساحه بادئة لبلوك محدوده ب",
+      "3==": "أعد إضافة مساحه بادئة لثلاثة سطرور",
+      "=Percent": "أعد إضافة مساحه بادئة لبلوك محدوده ب () او {} مع وضع المؤشر في الأول",
+      "=iB": "{} أعد إضافة مساحه بادئة للكلام المحدود ب",
+      "gg=G": "أعد إضافة مساحه بادئة للملف بالكامل",
+      "closeSquarep": "إلصق وأضف مساحه بادئة للسطر الحالي"
     }
   },
   "exiting": {
