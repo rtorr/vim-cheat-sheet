@@ -118,45 +118,45 @@
   "visualCommands": {
     "title": "Visual commands",
     "commands": {
-      "greaterThan": "shift text right",
-      "lessThan": "shift text left",
-      "y": "yank (copy) marked text",
-      "d": "delete marked text",
-      "tilde": "switch case",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "greaterThan": "حرك الكلام الي اليمين",
+      "lessThan": "حرك الكلام الي اليسار",
+      "y": "إنسخ الكلام المحدد",
+      "d": "إمسح الكلام المحدد",
+      "tilde": "إعكس الكلام المحدد من حروف كبيره الي صغير والعكس",
+      "u": "غير الكلام المحدد الي احرف صغيره",
+      "U": "غير الكلام المحدد الي احرف كبيره"
     }
   },
   "registers": {
-    "title": "Registers",
+    "title": "التسجيلات",
     "commands": {
-      "show": "show registers content",
-      "pasteRegisterX": "paste contents of register x",
-      "yankIntoRegisterX": "yank into register x",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "show": "إعرض محتوي التسجيلات",
+      "pasteRegisterX": "X الصق المحتوي في التسجيل",
+      "yankIntoRegisterX": "X إنسخ الي التسجيل",
+      "quotePlusy": "clipboard انسخ الي الحافظه",
+      "quotePlusp": "الصق من الحافظه"
     },
     "tip1": "Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.",
     "tip2": {
-      "0": "last yank",
-      "title": "Special registers:",
-      "quote": "unnamed register, last delete or yank",
-      "percent": "current file name",
-      "hashtag": "alternate file name",
+      "0": "اخر كلام منسوخ",
+      "title": "تسجيلات من نوع خاص",
+      "quote": "تسجيل غير مسمي - يحتوي علي اخر نسخ او لصق",
+      "percent": "اسم الملف الحالي",
+      "hashtag": "تغير اسم الملف",
       "asterisk": "clipboard contents (X11 primary)",
       "plus": "clipboard contents (X11 clipboard)",
-      "slash": "last search pattern",
-      "colon": "last command-line",
-      "dot": "last inserted text",
-      "minus": "last small (less than a line) delete",
-      "equal": "expression register",
-      "underscore": "black hole register"
+      "slash": "اخر ماتم البحث عنه",
+      "colon": "CLI اخر امر من ",
+      "dot": "اخر كلام تم إضافته",
+      "minus": "اخر ماتم مسحه (اقل من سطر)",
+      "equal": "سجل التعبيرات",
+      "underscore": "سجل الثقب الاسود (لا يحتفظ باي شيء)"
     }
   },
   "marks": {
-    "title": "Marks",
+    "title": "العلامات",
     "commands": {
-      "list": "list of marks",
+      "list": "إعرض قائمة العلامات",
       "currentPositionA": "set current position for mark A",
       "jumpPositionA": "jump to position of mark A",
       "yankToMarkA": "yank text to position of mark A",
@@ -176,12 +176,12 @@
     "tip": ""
   },
   "macros": {
-    "title": "Macros",
+    "title": "ماكروس",
     "commands": {
-      "recordA": "record macro a",
-      "stopRecording": "stop recording macro",
-      "runA": "run macro a",
-      "rerun": "rerun last run macro"
+      "recordA": "a تسجيل ماكرو",
+      "stopRecording": "توقيف تسجيل الماكرو",
+      "runA": "شغل الماكرو",
+      "rerun": "إعادة الماكرو الآخير"
     }
   },
   "global": {
