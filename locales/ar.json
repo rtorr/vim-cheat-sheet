@@ -185,36 +185,36 @@
     }
   },
   "global": {
-    "title": "Global",
+    "title": "عامه",
     "commands": {
-      "helpForKeyword": "open help for keyword",
-      "saveAsFile": "save file as",
-      "closePane": "close current pane",
-      "K": "open man page for word under the cursor",
-      "colonTerminal": "open a terminal window"
+      "helpForKeyword": "إعرض المساعده باستخدام كلمه مفتاحيه",
+      "saveAsFile": "حفظ الملف كا",
+      "closePane": "إغلق الجزءالحالي",
+      "K": "إفتح كتيب التعليمات للكلمه تحت المؤشر",
+      "colonTerminal": "إفتح نافذ طرفيه"
     },
     "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
-    "title": "Cut and paste",
+    "title": "النسخ والصق",
     "commands": {
-      "yy": "yank (copy) a line",
-      "twoyy": "yank (copy) 2 lines",
-      "yw": "yank (copy) word",
-      "yiw": "yank (copy) word under the cursor",
-      "yaw": "yank (copy) word under the cursor and the space after or before it",
-      "yDollar": "yank (copy) to end of line",
-      "p": "put (paste) the clipboard after cursor",
-      "P": "put (paste) before cursor",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
-      "dd": "delete (cut) a line",
-      "twodd": "delete (cut) 2 lines",
-      "dw": "delete (cut) word",
-      "diw": "delete (cut) word under the cursor",
-      "daw": "delete (cut) word under the cursor and the space after or before it",
-      "dDollar": "delete (cut) to the end of the line",
-      "x": "delete (cut) character"
+      "yy": "إنسخ سطر",
+      "twoyy": "انسخ سطرين",
+      "yw": "إنسخ كلمه",
+      "yiw": "إنسخ الكلمه تحت المؤشر",
+      "yaw": "إنسخ الكلمه تحت المؤشر و المساحه قبلها وبعدها",
+      "yDollar": "إنسخ من المؤشر الي اخر السطر",
+      "p": "إلصق من الحافظه الي مابعد المؤشر",
+      "P": "الصق من الحافظه الي ماقبل المؤشر",
+      "gp": "إلصق من الحافظه بعد المؤشر مع وضع المؤشر بعد الكلام الجديد",
+      "gP": "إلصق من الحافظه قبل المؤشر مع وضع المؤشر قبل الكلام الجديد",
+      "dd": "قص السطر الحالي",
+      "twodd": "قص سطرين",
+      "dw": "قص كلمه",
+      "diw": "قص الكلمه تحت المؤشر",
+      "daw": "قص الكلمه تحت المؤشر والمساحه قبلها وبعدها",
+      "dDollar": "قص من المؤشر الي نهاية السطر",
+      "x": "قص حرف واحد"
     }
   },
   "indentText": {
