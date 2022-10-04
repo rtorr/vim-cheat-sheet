@@ -233,28 +233,28 @@
     }
   },
   "exiting": {
-    "title": "Exiting",
+    "title": "الخروج",
     "commands": {
-      "colonw": "write (save) the file, but don't exit",
-      "colonwsudo": "write out the current file using sudo",
-      "colonwq": "write (save) and quit",
-      "colonx": "write (save) and quit",
-      "colonq": "quit (fails if there are unsaved changes)",
-      "colonqbang": "quit and throw away unsaved changes",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonw": "حفظ الملف بدون الخروج",
+      "colonwsudo": "حفظ الملف الحالي باستخدام حساب المستخدم الرئيسي",
+      "colonwq": "حفظ وخروج من الملف",
+      "colonx": "حفظ وخروج من الملف الحالي",
+      "colonq": "الخروج (يفشل في حالة عدم وجود اي تغير)",
+      "colonqbang": "الخروج مع عدم حفظ اي تغير",
+      "colonwqa": "خفظ والخروج من كل الملفات الحاليه"
     }
   },
   "searchAndReplace": {
-    "title": "Search and replace",
+    "title": "البحث والاستبدال",
     "commands": {
-      "forwardSlashPattern": "search for pattern",
-      "questionMarkPattern": "search backward for pattern",
-      "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
-      "n": "repeat search in same direction",
-      "N": "repeat search in opposite direction",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "replace all old with new throughout file",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "replace all old with new throughout file with confirmations",
-      "colonnoh": "remove highlighting of search matches"
+      "forwardSlashPattern": "البحث عن للامام عن نمط",
+      "questionMarkPattern": "البحث للخلف عن نمط",
+      "backslashVpattern": "'very magic' البحث عن أنماط بدون الحاجه الي اخذ الحوف الخاصه في الاعتبار",
+      "n": "كرر البحث في نفس الاتجاه",
+      "N": "كرر البحث في عكس الاتجاه",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "استبدل كلام قديم باخر جديد في جميع انحاء الملف",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "استبدل كلام جديد باخر جديد في جميع انحاء الملف مع التاكيدات",
+      "colonnoh": "إزالة التظليل"
     }
   },
   "searchMultipleFiles": {
