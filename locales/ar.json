@@ -298,37 +298,37 @@
     }
   },
   "tabs": {
-    "title": "Tabs",
+    "title": "النوافذ",
     "commands": {
-      "colonTabNew": "open a file in a new tab",
-      "ctrlPluswT": "move the current split window into its own tab",
-      "gt": "move to the next tab",
-      "gT": "move to the previous tab",
-      "hashgt": "move to tab number #",
-      "colontabmove": "move current tab to the #th position (indexed from 0)",
-      "colontabc": "close the current tab and all its windows",
-      "colontabo": "close all tabs except for the current one",
-      "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
+      "colonTabNew": "افتح ملف في نافذة جديده",
+      "ctrlPluswT": "حرك الجزء الحالي من النافذة في نافذة خاصه به",
+      "gt": "اقفز الي النافذة التاليه",
+      "gT": "اقفز الي النافذة السابقه",
+      "hashgt": "# تحرك الي النافذة رقم",
+      "colontabmove": "حرك النافذة الحاليه الي الموضع # (بدا العد من الصفر)",
+      "colontabc": "اغلق كل النوافذ",
+      "colontabo": "اغلق كل النوافذ باستثاء الحاليه",
+      "colontabdo": "(:tabdo q - سوف يغلق كل النوافذ) نفذ الامر علي كل النوافذ"
     }
   },
   "diff": {
-    "title": "Diff",
+    "title": "الانطواء",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "عرف انحناء باستخدام أحد الحركات",
+      "zd": "احذف انحناء تحت المؤشر",
+      "za": "بدل الانحناء تحت المؤشر (افتح/اغلق)",
+      "zo": "افتح الانحناء تحت المؤشر",
+      "zc": "اغلق الامحناء تحت المؤشر",
+      "zr": "افتح كل الانحنات علي مستوي واحد",
+      "zm": "عرف المزيد من الانحنات",
+      "zi": "بدل وظيفة الانحنات",
+      "closeSquarec": "اقفز الي الاختلاف التالي",
+      "openSquarec": "اقفز الي الاختلاف السابق",
+      "do": "احضر الاختلاف من ملف اخر الي الملف الحالي",
+      "dp": "ضع الاختلاف في الملف الحالي الي ملف اخر",
+      "colonDiffthis": "اجعل النافذة الحاليه جزء من اختلاف جديد",
+      "colonDiffupdate": "حدث الاختلاف",
+      "colonDiffoff": "اغلق وضع الاختلاف للنافذه الحاليه"
     },
     "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
     "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
@@ -339,9 +339,9 @@
     "movement": "movement"
   },
   "languages": {
-    "title": "Languages"
+    "title": "الغات"
   },
-  "footer": "Checkout the source on",
-  "layout": "page",
+  "footer": "راجع المصدر علي",
+  "layout": "الصفحه",
   "permalink": "/lang/ar/"
 }
