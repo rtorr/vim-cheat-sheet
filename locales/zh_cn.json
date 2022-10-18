@@ -326,7 +326,7 @@
       "closeSquarec": "光标移至下一处差异",
       "openSquarec": "光标移至上一处差异",
       "do": "将另一缓冲区中的差异合并至当前缓冲区",
-      "dp": "将当前缓冲去中的差异推送至另一缓冲区",
+      "dp": "将当前缓冲区中的差异推送至另一缓冲区",
       "colonDiffthis": "令当前窗口成为 diff 模式的窗口之一",
       "colonDiffupdate": "强制刷新 diff 的高亮与折叠",
       "colonDiffoff": "令当前窗口退出 diff 模式"
