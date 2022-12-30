@@ -111,6 +111,7 @@
       "ib": "un blocco con () (parentesi escluse)",
       "iB": "un blocco con {} (parentesi escluse)",
       "it": "blocco interno tra <> tags",
+      "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "esci dalla modalità visuale"
     },
     "tip1": "Invece di <kbd>b</kbd> o <kbd>B</kbd> puoi usare <kbd>(</kbd> o <kbd>{</kbd> rispettivamente."

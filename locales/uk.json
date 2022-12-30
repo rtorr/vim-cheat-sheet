@@ -110,7 +110,8 @@
       "at": "блок у <>",
       "ib": "внутрішній блок у ()",
       "iB": "внутрішній блок у {}",
-      "it": "внутрішній блок у <>",
+      "it": "inner block with <> tags",
+      "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "вийти з режиму виділення тексту"
     },
     "tip1": "Замість використання <kbd>b</kbd> чи <kbd>B</kbd> можна також використовувати <kbd>(</kbd> чи <kbd>{</kbd> відповідно."

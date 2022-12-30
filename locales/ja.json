@@ -111,6 +111,7 @@
       "ib": "() ブロックの括弧を除いた内側を選択",
       "iB": "{} ブロックの括弧を除いた内側を選択",
       "it": "<> タグのブロックの括弧を除いた内側を選択",
+      "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "ビジュアルモード終了"
     },
     "tip1": "<kbd>b</kbd> や <kbd>B</kbd> の代わりにそれぞれ <kbd>(</kbd> や <kbd>{</kbd> も使えます。"

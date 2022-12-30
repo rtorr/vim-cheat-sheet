@@ -111,6 +111,7 @@
       "ib": "ena bloko per ()",
       "iB": "ena bloko per {}",
       "it": "ena bloko per etikedoj <>",
+      "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "eliri vida modo"
     },
     "tip1": "Anstataŭ <kbd>b</kbd> aŭ <kbd>B</kbd>, oni povas ankaŭ uzi <kbd>(</kbd> aŭ <kbd>{</kbd> respektive."

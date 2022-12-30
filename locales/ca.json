@@ -111,6 +111,7 @@
       "ib": "un bloc intern amb ()",
       "iB": "un bloc intern amb {}",
       "it": "bloc interior amb etiquetes <>",
+      "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "sortir del mode visual"
     },
     "tip1": "En comptes de <kbd>b</kbd> o <kbd>B</kbd> també es poden utilitzar <kbd>(</kbd> o <kbd>{</kbd> respectivament."

@@ -111,6 +111,7 @@
       "ib": "un bloque interno con ()",
       "iB": "un bloque interno con {}",
       "it": "bloque interior con etiquetas <>",
+      "gb": "crear múltiples cursores del texto seleccionado. Opcionalmente, utilice I o A en mayúsculas para cambiar al modo de inserción",
       "Esc": "salir del modo visual"
     },
     "tip1": "En lugar de <kbd>b</kbd> o <kbd>B</kbd> también puede usar <kbd>(</kbd> o <kbd>{</kbd> respectivamente."
