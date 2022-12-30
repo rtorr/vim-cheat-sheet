@@ -110,7 +110,7 @@
       "at": "блок у <>",
       "ib": "внутрішній блок у ()",
       "iB": "внутрішній блок у {}",
-      "it": "inner block with <> tags",
+      "it": "внутрішній блок у <>",
       "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "вийти з режиму виділення тексту"
     },
