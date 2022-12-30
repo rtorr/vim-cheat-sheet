@@ -1,0 +1,6 @@
+{
+  "prettier.endOfLine": "lf",
+  "files.insertFinalNewline": false,
+  "files.trimFinalNewlines": false,
+  "editor.renderFinalNewline": false
+}
