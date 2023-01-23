@@ -111,6 +111,7 @@
       "ib": "เลือกคลุมเฉพาะใน ()",
       "iB": "เลือกคลุมเฉพาะใน {}",
       "it": "inner block with <> tags",
+      "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "ออกจาก visual mode"
     },
     "tip1": "แทนที่เราจะพิมพ์ <kbd>b</kbd> หรือ <kbd>B</kbd> ตอนที่จะเลือกคลุม ก็สามารถพิมพ์ <kbd>(</kbd> หรือ <kbd>{</kbd> ได้เหมือนกันตามลำดับ"

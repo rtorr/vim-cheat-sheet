@@ -111,6 +111,7 @@
       "ib": "選取 () 內的區塊",
       "iB": "選取 {} 內的區塊",
       "it": "選取 <> tags 內的區塊",
+      "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "退出標示模式"
     },
     "tip1": "除了 <kbd>b</kbd> 或 <kbd>B</kbd> 我們也能使用 <kbd>(</kbd> 或 <kbd>{</kbd> 。"

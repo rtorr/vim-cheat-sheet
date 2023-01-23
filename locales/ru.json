@@ -111,6 +111,7 @@
       "ib": "внутренний блок в ()",
       "iB": "внутренний блок в {}",
       "it": "внутренний блок в <> тегах",
+      "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "выйти из режима выделения текста"
     },
     "tip1": "Вместо <kbd>b</kbd> и <kbd>B</kbd> также можно использовать <kbd>(</kbd> и <kbd>{</kbd> соответственно."

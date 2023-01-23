@@ -111,6 +111,7 @@
       "ib": "označi blok unutar ()",
       "iB": "označi blok unutar {}",
       "it": "označi blok unutar <> tag-ova",
+      "gb": "create multiple cursors from marked text. Optionally use uppercase I or A after completion to switch to insert mode",
       "Esc": "izađi iz označavanja teksta"
     },
     "tip1": "Umjesto <kbd>b</kbd> ili <kbd>B</kbd> možemo koristiti <kbd>(</kbd> odnosno <kbd>{</kbd>."
