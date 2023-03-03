@@ -40,6 +40,8 @@
       "closeCurlyBrace": "jump to next paragraph (or function/block, when editing code)",
       "openCurlyBrace": "jump to previous paragraph (or function/block, when editing code)",
       "centerCursor": "ทำให้เคอร์เซอร์อยู่กลางจอ",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "เลื่อนจอลงหนึ่งบรรทัด (โดยไม่ขยับเคอร์เซอร์)",
       "CtrlPlusy": "เลื่อนจอขึ้นหนึ่งบรรทัด (โดยไม่ขยับเคอร์เซอร์)",
       "CtrlPlusb": "เลื่อนขึ้นไปข้างบนหนึ่งจอเต็ม",

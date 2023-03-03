@@ -40,6 +40,8 @@
       "closeCurlyBrace": "pular para o próximo parágrafo (ou função/bloco, quando estiver editando código)",
       "openCurlyBrace": "pular para o parágrafo anterior (ou função/bloco, quando estiver editando código)",
       "centerCursor": "centralizar o cursor na tela",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "move screen down one line (without moving cursor)",
       "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "mover o cursor uma tela cheia para tras",

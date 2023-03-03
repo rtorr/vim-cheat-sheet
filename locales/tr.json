@@ -40,6 +40,8 @@
       "closeCurlyBrace": "sonraki paragrafa atla (veya fonksiyon/blok, kod yazarken)",
       "openCurlyBrace": "önceki paragrafa atla (veya fonksiyon/blok, kod yazarken)",
       "centerCursor": "imleci ekranda ortala",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "ekranı bir satır aşağı kaydır (imleci hareket ettirmeden)",
       "CtrlPlusy": "ekranı bir satır yukarı kaydır (imleci hareket ettirmeden)",
       "CtrlPlusb": "tam ekran geri kaydır",

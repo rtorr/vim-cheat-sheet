@@ -40,6 +40,8 @@
       "closeCurlyBrace": " עבור לפסקה (או פונקציה/בלוק כשכותבים קוד ) הבאה ",
       "openCurlyBrace": " עבור לפסקה (או פונקציה/בלוק כשכותבים קוד ) הקודמת ",
       "centerCursor": "ממרכז את מיקום הסמן במסך",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "(ללא הזזת הסמן) מוריד את המסך שורה אחת",
       "CtrlPlusy": "(ללא הזזת הסמן) מעלה את המסך שורה אחת",
       "CtrlPlusb": "עבור מסך מלא אחורה",

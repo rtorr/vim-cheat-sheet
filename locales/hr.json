@@ -40,6 +40,8 @@
       "closeCurlyBrace": "idi na sljedeći odjeljak (ili funkciju/blok, kod uređivanja programskog koda)",
       "openCurlyBrace": "idi na predhodni odjeljak (ili funkciju/blok, kod uređivanja programskog koda)",
       "centerCursor": "postavi kursor na sredinu zaslona",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "pomakni zaslon jednu liniju prema dolje (bez pomicanja kursora)",
       "CtrlPlusy": "pomakni zaslon jednu liniju prema gore (bez pomicanja kursora)",
       "CtrlPlusb": "pomakni nazad jedan zaslon",

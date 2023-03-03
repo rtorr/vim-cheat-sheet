@@ -40,6 +40,8 @@
       "closeCurlyBrace": "跳至下一段 (若編輯程式碼則為函式/區塊)",
       "openCurlyBrace": "跳至上一段 (若編輯程式碼則為函式/區塊)",
       "centerCursor": "將游標所在行移到視窗中間",
+      "topCursor": "将游标所在行移到屏幕顶部",
+      "bottomCursor": "将游标所在行移到屏幕底部",
       "CtrlPluse": "視窗向下捲動一行 (不移動游標)",
       "CtrlPlusy": "視窗向上捲動一行 (不移動游標)",
       "CtrlPlusb": "向上捲動一個視窗",

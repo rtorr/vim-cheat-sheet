@@ -40,6 +40,8 @@
       "closeCurlyBrace": "ga naar de volgende paragraaf (of functie/blok, tijdens het bewerken van code)",
       "openCurlyBrace": "ga naar de vorige paragraaf (of functie/blok, tijdens het bewerken van code)",
       "centerCursor": "center cursor on screen",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "beweeg scherm een regel omlaag",
       "CtrlPlusy": "beweeg scherm een regel omhoog",
       "CtrlPlusb": "ga een volledig scherm terug",

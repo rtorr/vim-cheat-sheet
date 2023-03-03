@@ -40,6 +40,8 @@
       "closeCurlyBrace": "skocz do następnego paragrafu (albo funkcji/bloku kodu w trakcie edycji kodu)",
       "openCurlyBrace": "skocz do poprzedniego paragrafu (albo funkcji/bloku kodu w trakcie edycji kodu)",
       "centerCursor": "wyśrodkuj kursor na ekranie",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "przesuń ekran o jedną linię w dół (bez przesuwania kursowa)",
       "CtrlPlusy": "przesuń ekran o jedną linię w górę (bez przesuwania kursowa)",
       "CtrlPlusb": "przesuń ekran o całą jego wysokość w górę",
@@ -222,7 +224,7 @@
     "title": "Indent text",
     "commands": {
       "greaterThanGreaterThan": "zwiększ wcięcie (przesuń w prawo) o jedną szerokość wcięcia",
-		"lessThanLessThan": "zmniejsz wcięcie (przesuń w lewo) o jedną szerokość wcięcia",
+      "lessThanLessThan": "zmniejsz wcięcie (przesuń w lewo) o jedną szerokość wcięcia",
       "greaterThanPercent": "zwiększ więcie bloku ograniczonego () lub {} (kursor on nawiasie)",
       "greaterThanib": "indent inner block with ()",
       "greaterThanat": "indent a block with <> tags",

@@ -40,6 +40,8 @@
       "closeCurlyBrace": "atteindre le prochain paragraphe (ou function/bloc, en mode édition)",
       "openCurlyBrace": "atteindre le précédent paragraphe (ou function/bloc, en mode édition)",
       "centerCursor": "centre le curseur sur l'écran",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "Descendre l'écran d'une ligne (sans déplacer le curseur)",
       "CtrlPlusy": "Monter l'écran d'une ligne (sans déplacer le curseur)",
       "CtrlPlusb": "Descendre d'une hauteur d'écran",

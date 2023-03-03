@@ -40,6 +40,8 @@
       "closeCurlyBrace": "salti al la sekva paragrafo (aŭ funkcio/bloko, redaktante kodon)",
       "openCurlyBrace": "salti al la lasta paragrafo (aŭ funkcio/bloko, redaktante kodon)",
       "centerCursor": "centrigi montrilon en la ekrano",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "movi ekranon suben unu linion (sen movigi montrilon)",
       "CtrlPlusy": "movi ekranon supren unu linion (sen movigi montrilon)",
       "CtrlPlusb": "movi malantaŭen unu tutan ekranon",

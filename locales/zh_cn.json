@@ -40,6 +40,8 @@
       "closeCurlyBrace": "移动到下一个段落 (当编辑代码时则为函数／代码块)",
       "openCurlyBrace": "移动到上一个段落 (当编辑代码时则为函数／代码块)",
       "centerCursor": "移动屏幕使光标居中",
+			"topCursor": "移动屏幕使光标位于屏幕顶部",
+			"bottomCursor": "移动屏幕使光标位于屏幕底部",
       "CtrlPluse": "向下移动屏幕一行(保持光标不动)",
       "CtrlPlusy": "向上移动屏幕一行(保持光标不动)",
       "CtrlPlusb": "向上滚动一屏",
