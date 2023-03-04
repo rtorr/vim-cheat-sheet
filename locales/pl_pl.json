@@ -133,8 +133,8 @@
       "show": "pokaż zawartość rejestrów",
       "pasteRegisterX": "wklej zawartość rejestru x",
       "yankIntoRegisterX": "kopiuj do rejestru x",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "quotePlusy": "skopiuj do rejestru schowka systemowego",
+      "quotePlusp": "wklej z rejestru schowka systemowego"
     },
     "tip1": "Rejestry zostały zapisane w ~/.viminfo i zostaną załadowane przy ponownym uruchomieniu vima",
     "tip2": {
