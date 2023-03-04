@@ -191,7 +191,7 @@
       "saveAsFile": "zapisz plik jako",
       "closePane": "zamknij okienko nawigacji",
       "K": "otwórz stronę pomocy dla słowa pod kursorem",
-      "colonTerminal": "otwórz okno terminalaw",
+      "colonTerminal": "otwórz okno terminala",
       "openFile": "otwórz plik"
     },
     "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
