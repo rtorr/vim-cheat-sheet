@@ -190,8 +190,8 @@
       "helpForKeyword": "otwórz pomoc dla słowa kluczowego",
       "saveAsFile": "zapisz plik jako",
       "closePane": "zamknij okienko nawigacji",
-      "K": "open man page for word under the cursor",
-      "colonTerminal": "open a terminal window",
+      "K": "otwórz stronę pomocy dla słowa pod kursorem",
+      "colonTerminal": "otwórz okno terminalaw",
       "openFile": "otwórz plik"
     },
     "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
@@ -242,7 +242,7 @@
       "colonx": "zapisz i wyjdź",
       "colonq": "wyjdź (nie zadziała, jeśli są niezapisane zmiany)",
       "colonqbang": "wyjdź i odrzuć niezapisane zmiany",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonwqa": "zapisz i zamknij wszystkie karty"
     }
   },
   "searchAndReplace": {
@@ -275,7 +275,7 @@
       "colonbnext": "idź do następnego bufora",
       "colonbprev": "wróć do poprzedniego bufora",
       "colonls": "zrób listę wszystkich otwartych buforów",
-      "colonbd": "usuń bufer (zamknij plik)",
+      "colonbd": "usuń bufor (zamknij plik)",
       "colonbnumber": "go to a buffer by #",
       "colonbfile": "go to a buffer by file",
       "colonsp": "otwórz plik w nowym buforze i podziel okno",
@@ -283,15 +283,15 @@
       "colonvertba": "edit all buffers as vertical windows",
       "colontabba": "edit all buffers as tabs",
       "ctrlPlusws": "podziel okno",
-      "ctrlPluswv": "podziel okno wertykalnie",
+      "ctrlPluswv": "podziel okno pionowo",
       "ctrlPlusww": "przełącz okno",
       "ctrlPluswq": "wyjdź z okna",
       "ctrlPluswx": "exchange current window with next one",
       "ctrlPlusw=": "make all windows equal height & width",
-      "ctrlPluswh": "przesuń kursor do lewego okna (podział wertykalny)",
-      "ctrlPluswl": "przesuń kursor do prawego okna (podział wertykalny)",
-      "ctrlPluswj": "przesuń kursor do okna poniżej (podział horyzontalny)",
-      "ctrlPluswk": "przesuń kursor do okna powyżej (podział horyzontalny)",
+      "ctrlPluswh": "przesuń kursor do lewego okna (podział pionowy)",
+      "ctrlPluswl": "przesuń kursor do prawego okna (podział pionowy)",
+      "ctrlPluswj": "przesuń kursor do okna poniżej (podział poziomy)",
+      "ctrlPluswk": "przesuń kursor do okna powyżej (podział poziomy)",
       "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
       "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
       "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
