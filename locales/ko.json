@@ -9,8 +9,8 @@
       "j": "아래로 한 칸 이동",
       "k": "위로 한 칸 이동",
       "l": "오른쪽으로 한 칸 이동",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "다음 문장으로 이동 (한 문장이 여러 줄로 나뉘어 있을 경우)",
+      "gk": "이전 문장으로 이동 (한 문장이 여러 줄로 나뉘어 있을 경우)",
       "w": "다음 단어 시작으로 점프",
       "W": "다음 단어 시작으로 점프 (특수문자 포함)",
       "e": "다음 단어 끝으로 점프",
@@ -68,7 +68,7 @@
       "ctrlPlusn": "다음 단어 탐색 (자동완성)",
       "ctrlPlusp": "이전 단어 탐색 (자동완성)",
       "ctrlPlusrx": "레지스터 x의 내용 삽입",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlusox": "일시적으로 삽입 모드에서 노멀 모드로 이동하여 command x 실행",
       "Esc": "삽입모드 종료"
     }
   },

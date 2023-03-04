@@ -1,0 +1,345 @@
+{
+  "title": "Esperanto",
+  "lang": "eo",
+  "lang_tag": "eo",
+  "cursorMovement": {
+    "title": "Movado de la Montrilo",
+    "commands": {
+      "h": "movi montrilon maldekstren",
+      "j": "movi montrilon malsupren",
+      "k": "movi montrilon supren",
+      "l": "movi montrilon dekstren",
+      "gj": "movi montrilon malsupren (multlinia teksto)",
+      "gk": "movi montrilon supren (multlinia teksto)",
+      "w": "salti antaŭen al la komenco de vorto",
+      "W": "salti antaŭen al la komenco de vorto (vortoj povas enhavi interpunkciojn)",
+      "e": "salti antaŭen al la fino de vorto",
+      "E": "salti antaŭen al la fino de vorto (vortoj povas enhavi interpunkciojn)",
+      "b": "salti malantaŭen al la komenco de vorto",
+      "B": "salti malantaŭen al la komenco de vorto (vortoj povas enhavi interpunkciojn)",
+      "ge": "salti malantaŭen al la fino de vorto",
+      "gE": "salti malantaŭen al la fino de vorto (vortoj povas enhavi interpunkciojn)",
+      "H": "movi montrilon al la supro de la ekrano",
+      "M": "movi montrilon al la mezo de la ekrano",
+      "L": "movi montrilon al la bazo de la ekrano",
+      "zero": "salti al la komenco de la linio",
+      "caret": "salti al la unua neblanka signo de la linio",
+      "dollar": "salti al la fino de la linio",
+      "g_": "salti al la fina neblanka signo de la linio",
+      "gg": "iri al la unua linio de la dosiero",
+      "G": "iri al la fina linio de la dosiero",
+      "fiveG": "iri al linio 5",
+      "gd": "movi montrilon al loka deklaro",
+      "gD": "movi montrilon al ĉiea deklaro",
+      "fx": "salti al la sekva okazo de la signo x",
+      "tx": "salti antaŭ la sekvan okazon de la signo x",
+      "Fx": "salti al la lasta okazo de la signo x",
+      "Tx": "salti post la lastan okazon de la signo x",
+      "semicolon": "refari la lastan movadon f, t, F, aŭ T",
+      "comma": "refari la lastan movadon f, t, F, aŭ T, male",
+      "closeCurlyBrace": "salti al la sekva paragrafo (aŭ funkcio/bloko, redaktante kodon)",
+      "openCurlyBrace": "salti al la lasta paragrafo (aŭ funkcio/bloko, redaktante kodon)",
+      "centerCursor": "centrigi montrilon en la ekrano",
+      "CtrlPluse": "movi ekranon suben unu linion (sen movigi montrilon)",
+      "CtrlPlusy": "movi ekranon supren unu linion (sen movigi montrilon)",
+      "CtrlPlusb": "movi malantaŭen unu tutan ekranon",
+      "CtrlPlusf": "movi antaŭen unu tutan ekranon",
+      "CtrlPlusu": "movi malantaŭen duonon de ekrano",
+      "CtrlPlusd": "movi antaŭen duonon de ekrano",
+      "percent": "movi al para signo (defaŭlte subtenitaj paroj: '()', '{}', '[]' - uzu <code>:h matchpairs</code> en vim por pli da informo)"
+    },
+    "tip": "Sekvigi montrilmovadon per nombro por ripeti ĝin. Ekzemple, <kbd>4j</kbd> movas la montrilon suben kvar liniojn."
+  },
+  "insertMode": {
+    "title": "Inserta modo - inserti/aldoni tekston",
+    "commands": {
+      "i": "inserti antaŭ la montrilo",
+      "I": "inserti ĉe la komenco de la linio",
+      "a": "inserti (aldoni) post la montrilo",
+      "A": "inserti (aldoni) ĉe la fino de la linio",
+      "o": "aldoni novan linion sub la nuna linio",
+      "O": "alsoni novan linion super la nuna linio",
+      "ea": "inserti (aldoni) ĉe la fino de la vorto",
+      "ctrlPlush": "forigi la signo antaŭ la signo dum la inserta modo",
+      "ctrlPlusw": "forigi la vorto antaŭ la montrilo dum la inserta modo",
+      "ctrlPlusj": "komenci novan linion dum la inserta modo",
+      "ctrlPlust": "krei krommarĝenon ĉe la komenco de la linio (movi dekstren) dum la inserta modo",
+      "ctrlPlusd": "forigi krommarĝenon ĉe la komenco de la linio (movi maldekstren) dum la inserta modo",
+      "ctrlPlusn": "inserti (aŭtomate kompletigi) la sekvan kongruon antaŭ la montrilo dum la inserta modo",
+      "ctrlPlusp": "inserti (aŭtomate kompletigi) la lastan kongruon antaŭ la montrilo dum la inserta modo",
+      "ctrlPlusrx": "inserti la enhavon de la reĝistro x",
+      "ctrlPlusox": "provizore eniri normalan modon por fari unu normalmodan postulon x",
+      "Esc": "eliri insertan modon"
+    }
+  },
+  "editing": {
+    "title": "Redaktado",
+    "commands": {
+      "r": "anstataŭigi unu signon",
+      "R": "anstataŭigi pli ol unu signon, ĝis vi klakas <kbd>ESC</kbd>",
+      "J": "kunigi suban linion al la nuna kun unu spaco inter ili",
+      "gJ": "kunigi suban linion al la nuna sen intera spaco",
+      "gwip": "aranĝi nunan paragrafon",
+      "gTilde": "maligi majusklecon ĝis movado",
+      "gu": "ŝanĝi tekston en minusklon ĝis movado",
+      "gU": "ŝanĝi tekston en majusklon ĝis movado",
+      "cc": "ŝanĝi tutan linion",
+      "cDollar": "ŝanĝi ĝis la fino de la linio",
+      "ciw": "ŝanĝi tutan vorton",
+      "cw": "ŝanĝi ĝis la fino de la vorto",
+      "s": "forigi signon kaj anstataŭigi tekston",
+      "S": "forigi linion kaj anstataŭigi tekston (same al cc)",
+      "xp": "anstataŭigi du signojn (forigi kaj alglui)",
+      "u": "malfari",
+      "U": "malfari la laste ŝanĝitan linion",
+      "CtrlPlusr": "refari",
+      "dot": "ripeti la lastan postulon"
+    }
+  },
+  "markingText": {
+    "title": "Marki tekston (vida modo)",
+    "commands": {
+      "v": "komenci vidan modon, marki liniojn, kaj fari postulon (kiel y-yank)",
+      "V": "komenci polinan vidan modon",
+      "o": "movi montrilon al la alia flanko de la markita areo",
+      "CtrlPlusv": "komenci blokan vidan modon",
+      "O": "movi montrilon al la alia angulo de la bloko",
+      "aw": "marki vorton",
+      "ab": "bloko per ()",
+      "aB": "bloko per {}",
+      "at": "bloko per etikedoj <>",
+      "ib": "ena bloko per ()",
+      "iB": "ena bloko per {}",
+      "it": "ena bloko per etikedoj <>",
+      "Esc": "eliri vida modo"
+    },
+    "tip1": "Anstataŭ <kbd>b</kbd> aŭ <kbd>B</kbd>, oni povas ankaŭ uzi <kbd>(</kbd> aŭ <kbd>{</kbd> respektive."
+  },
+  "visualCommands": {
+    "title": "Vidaj postuloj",
+    "commands": {
+      "greaterThan": "ŝovi tekston dekstren",
+      "lessThan": "ŝovi tekston maldekstren",
+      "y": "kopii markitan tekston",
+      "d": "forigi markitan tekston",
+      "tilde": "maligi majusklecon",
+      "u": "ŝanĝi markitan tekston en minusklon",
+      "U": "ŝanĝi markitan tekston en majusklon"
+    }
+  },
+  "registers": {
+    "title": "Reĝistroj",
+    "commands": {
+      "show": "montri enhavojn de la reĝistroj",
+      "pasteRegisterX": "alglui enhavon de reĝistro x",
+      "yankIntoRegisterX": "kopii en registron x",
+      "quotePlusy": "kopii en sisteman tondujan reĝistron",
+      "quotePlusp": "alglui el la sisteman tondujan reĝistron"
+    },
+    "tip1": "Oni tenas reĝistrojn en ~/.viminfo, kaj ŝarĝas ilin denove je la sekva rekomenco de vim.",
+    "tip2": {
+      "0": "lasta kopio",
+      "title": "Specialaj reĝistroj:",
+      "quote": "sennoma reĝistro, lasta forigo aŭ kopio",
+      "percent": "nuna dosiernomo",
+      "hashtag": "alternativa dosiernomo",
+      "asterisk": "enhavo de la tondujo (X11 ĉefa)",
+      "plus": "enhavo d la tondujo (X11 tondujo)",
+      "slash": "lasta serĉesprimo",
+      "colon": "lasta postullinio",
+      "dot": "laste enmetita teksto",
+      "minus": "lasta malgranda (malpli ol linio) forigo",
+      "equal": "reĝistro esprimo",
+      "underscore": "reĝistro nigra truo"
+    }
+  },
+  "marks": {
+    "title": "Markoj kaj lokoj",
+    "commands": {
+      "list": "listo de markoj",
+      "currentPositionA": "meti markon A en nuna loko",
+      "jumpPositionA": "salti al loko de marko A",
+      "yankToMarkA": "kopii teksto ĝis loko de marko A",
+      "backtick0": "iru al la loko kie oni laste eliris Vim",
+      "backtickQuote": "iru al la loko kie oni estis kiam laste redakti ĉi tiun dosieron",
+      "backtickDot": "iru al la loko de la lasta ŝanĝo en ĉi tiu dosiero",
+      "backtickBacktick": "iru al la loko antaŭ ol la lasta salto",
+      "colonjumps": "saltlisto",
+      "ctrlPlusi": "iru al pli lasta loko en la saltlisto",
+      "ctrlPluso": "iru al malpli lasta loko en la saltlisto",
+      "colonchanges": "ŝanĝlisto",
+      "gcomma": "iru al pli lasta loko en la ŝanĝlisto",
+      "gsemicolon": "iru al la malpli lasta loko en la saltlisto",
+      "ctrlPlusCloseSquare": "salti al la etikedo sub la montrilo"
+    },
+    "tip1": "Oni povas salti al marko per aŭ malapostrofo (<kbd>`</kbd>) aŭ apostrofo (<kbd>'</kbd>). Per apostrofo, al la komenco (unua neblanka) de la linio kun la marko.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macrooj",
+    "commands": {
+      "recordA": "registri macroon a",
+      "stopRecording": "ĉesi registri macroon",
+      "runA": "aktivigi macroon a",
+      "rerun": "reaktivigi laste aktivigitan macroon"
+    }
+  },
+  "global": {
+    "title": "Ĉiea",
+    "commands": {
+      "helpForKeyword": "malfermi helpopaĝon por ŝlosilvorto",
+      "saveAsFile": "konservi dosieron kiel ...",
+      "closePane": "fermi nunan fenestron",
+      "K": "malfermi paĝon man por vorto sub la montrilo",
+      "colonTerminal": "malfermi fenestron terminalan"
+    },
+    "tip1": "Aktivigi <kbd>vimtutor</kbd> en terminalo por lerni la unuaj postuloj de Vim."
+  },
+  "cutAndPaste": {
+    "title": "Tranĉi kaj alglui",
+    "commands": {
+      "yy": "kopii linion",
+      "twoyy": "kopii du liniojn",
+      "yw": "kopii la signojn de la vorto de la montrilloko ĝis la komenco de la sekva vorto",
+      "yiw": "kopii la vorton sub la montrilo",
+      "yaw": "kopii la vorton sub la montrilo kaj la spacon antaŭ ĝi aŭ post ĝi",
+      "yDollar": "kopii ĝis la fino de la linio",
+      "p": "alglui la tondujon post la montrilo",
+      "P": "alglui antaŭ la montrilo",
+      "gp": "alglui post la montrilo kaj meti la montrilon post la nova teksto",
+      "gP": "alglui antaŭ la montrilo kaj meti la montrilon post la nova teksto",
+      "dd": "forigi (tranĉi) linion",
+      "twodd": "forigi (tranĉi) du liniojn",
+      "dw": "forigi (tranĉi) la signojn de la vorto de la montrilloko ĝis la komenco de la sekva vorto",
+      "diw": "forigi (tranĉi) la vorton sub la montrilo",
+      "daw": "forigi (tranĉi) la vorton sub la montrilo kaj la spacon antaŭ ĝi aŭ post ĝi",
+      "dDollar": "forigi (tranĉi) ĝis la fino de la linio",
+      "x": "forigi (tranĉi) signon"
+    }
+  },
+  "indentText": {
+    "title": "Krei krommarĝenojn",
+    "commands": {
+      "greaterThanGreaterThan": "krei krommarĝenon (ŝovi dekstren) por linio unu ŝovlongon",
+      "lessThanLessThan": "forigi krommarĝenon (ŝovi maldekstren) por linio unu ŝovlongon",
+      "greaterThanPercent": "krei krommarĝenojn sur bloko kun () aŭ {} (montrilo sur krampo)",
+      "greaterThanib": "krei krommarĝenojn sur ena bloko kun ()",
+      "greaterThanat": "krei krommarĝenojn sur bloko kun etikedoj <>",
+      "3==": "rekrei krommarĝenojn por 3 linioj",
+      "=Percent": "rekrei krommarĝenojn sur bloko kun () aŭ {} (montrilo sur krampo)",
+      "=iB": "rekrei krommarĝenon sur ena bloko kun {}",
+      "gg=G": "rekrei krommarĝenon sur tuta bufro",
+      "closeSquarep": "alglui kaj ĝustigi krommarĝenojn por nuna linio"
+    }
+  },
+  "exiting": {
+    "title": "Elirado",
+    "commands": {
+      "colonw": "konservi dosieron, sed ne eliri",
+      "colonwsudo": "konservi la nunan dosieron per sudo",
+      "colonwq": "konservi kaj eliri",
+      "colonx": "konservi kaj eliri",
+      "colonq": "eliri (malsukcese se estas nekonservitaj ŝanĝoj)",
+      "colonqbang": "eliri kaj forigi nekonservitajn ŝanĝojn",
+      "colonwqa": "konservi kaj eliri ĉiujn fenestrojnwrite"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Serĉi kaj anstataŭigi",
+    "commands": {
+      "forwardSlashPattern": "serĉi per esprimo",
+      "questionMarkPattern": "serĉi malantaŭen por esprimo",
+      "backslashVpattern": "'magiega' esprimp: signojn kiuj ne estas literoj aŭ ciferoj oni legas kiel specialiajn RegEspajn signojn (nebezonante kodŝanĝan signon)",
+      "n": "ripeti serĉon en la sama direkto",
+      "N": "ripeti serĉon en la mala direkto",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "anstataŭigi ĉiujn malnovajn per novaj tra la dosiero",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "anstataŭigi ĉiujn malnovajn per novaj tra la dosiero, kun jesigoj",
+      "colonnoh": "forigi emfazon de serĉtrafoj"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Serĉi tra pluraj dosieroj",
+    "commands": {
+      "colonvimgrep": "serĉi per esprimo tra pluraj dosieroj",
+      "coloncn": "salti al la sekva serĉtrafo",
+      "coloncp": "salti al la lasta serĉtrafo",
+      "coloncopen": "malfermi fenestron enhavantan la liston de serĉtrafoj",
+      "coloncclose": "fermi la fenestro rapidripar'"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Trakti plurajn dosierojn",
+    "commands": {
+      "colone": "redakti dosieron en nova bufro",
+      "colonbnext": "iri al la sekva bufro",
+      "colonbprev": "iri al la lasta bufro",
+      "colonls": "listi ĉiujn malfermajn bufrojn",
+      "colonbd": "forigi bufron (fermi dosieron)",
+      "colonbnumber": "iri al bufro per indekso #",
+      "colonbfile": "iri al bufro per dosiero",
+      "colonsp": "malfermi dosieron en nova bufro kaj dividi fenestron",
+      "colonvsp": "malfermi dosieron en nova bufro kaj vertikale dividi fenestron",
+      "colonvertba": "redakti ĉiujn bufrojn en vertikalaj fenestroj",
+      "colontabba": "redakti ĉiujn bufrojn en langetoj",
+      "ctrlPlusws": "dividi fenestron",
+      "ctrlPluswv": "vertikale dividi fenestron",
+      "ctrlPlusww": "anstataŭigi fenestrojn",
+      "ctrlPluswq": "eliri fenestron",
+      "ctrlPluswx": "anstataŭigi nunan fenestron per la sekvan",
+      "ctrlPlusw=": "egaligi la alton kaj larĝon de ĉiuj fenestroj",
+      "ctrlPluswh": "movi montrilon al la maldekstra fenestro (vertikala divido)",
+      "ctrlPluswl": "movi montrilon al la dekstra fenestro (vertikala divido)",
+      "ctrlPluswj": "movi montrilon al la suba fenestro (horizontala divido)",
+      "ctrlPluswk": "movi montrilon al la supera fenestro (horizontala divido)",
+      "ctrlPluswH": "farigi nunan fenestron plenalta ĉe la plej maldekstra vertikala fenestro",
+      "ctrlPluswL": "farigi nunan fenestron plenalta ĉe la plej dekstra vertikala fenestro",
+      "ctrlPluswJ": "farigi nunan fenestron plenlarĝa ĉe la plej suba horizontala fenestro",
+      "ctrlPluswK": "farigi nunan fenestron plenlarĝa ĉe la plej supera horizontala fenestro"
+    }
+  },
+  "tabs": {
+    "title": "Langetoj",
+    "commands": {
+      "colonTabNew": "malfermi dosieron en nova langeto",
+      "ctrlPluswT": "movi nunan dividan fenestron al ĝia propra langeto",
+      "gt": "movi al la sekva langeto",
+      "gT": "movi al la lasta langeto",
+      "hashgt": "movi al langeto numero #",
+      "colontabmove": "movi nunan langeton al la #a pozicio (0-indeksa)",
+      "colontabc": "fermi nunan langeton kaj ĉiujn el ĝiaj fenestroj",
+      "colontabo": "fermi ĉiujn langetojn krom la nuna",
+      "colontabdo": "fari la <code>postulo</code> en ĉiuj langetoj (ekz. <code>:tabdo q</code> fermas ĉiujn malfermajn langetojn)"
+    }
+  },
+  "diff": {
+    "title": "Dosierdiferenca",
+    "commands": {
+      "zf": "difini faldon ĝis movado",
+      "zd": "forigi faldon sub montrilo",
+      "za": "inversigi faldon sub montrilo",
+      "zo": "malfermi faldon sub montrilo",
+      "zc": "fermi faldon sub montrilo",
+      "zr": "malfermi ĉiujn faldojn unu nivelon",
+      "zm": "fermi ĉiujn faldojn unu nivelon",
+      "zi": "inversigi kapablecon de foldoj",
+      "closeSquarec": "salti al komenco de sekva ŝanĝo",
+      "openSquarec": "salti al komenco de lasta ŝanĝo",
+      "do": "obteni diferencon (el alia bufro)",
+      "dp": "meti diferencon (al alia bufro)",
+      "colonDiffthis": "farigi nunan fenestron parto de diferenco",
+      "colonDiffupdate": "ĝisdatigi diferencojn",
+      "colonDiffoff": "malaktivigi dosierdiferencan modon en nuna fenestro"
+    },
+    "tip1": "La postuloj por foldado (ekz. <kbd>za</kbd>) traktas nur unu nivelon. Por trakti ĉiujn nivelojn, uzu majusklajn literojn (ekz. <kbd>zA</kbd>).",
+    "tip2": "Por vidi la diferencojn inter dosieroj, oni povas rekte komenci Vim en dosierdiferenca modo per postuli <kbd>vimdiff</kbd> en terminalo. Oni povas eĉ nomi ĉi tiun kiel <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "ŝlosilvorto",
+    "file": "dosiero",
+    "movement": "movado"
+  },
+  "languages": {
+    "title": "Lingvoj"
+  },
+  "footer": "Vidu la fontkodon ĉe"
+}
