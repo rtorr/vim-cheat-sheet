@@ -143,14 +143,14 @@
       "quote": "nienazwany rejestr, ostatnio skopiowany lub usunięty tekst",
       "percent": "bieżąca nazwa pliku",
       "hashtag": "alternatywna nazwa pliku",
-      "asterisk": "clipboard contents (X11 primary)",
-      "plus": "clipboard contents (X11 clipboard)",
+      "asterisk": "zawartość schowka (X11 primary)",
+      "plus": "zawartość schowkas (schowek X11)",
       "slash": "ostatnio wyszukiwany wzorzec",
-      "colon": "last command-line",
+      "colon": "ostatnio wykonana komenda z linii poleceń",
       "dot": "ostatnio wstawiony tekst",
-      "minus": "last small (less than a line) delete",
-      "equal": "expression register",
-      "underscore": "black hole register"
+      "minus": "ostatnio usunięty krótki (krótszy niż linia) tekst",
+      "equal": "rejestr przechowujący wyrażenie",
+      "underscore": "rejestr „czarna dziura” (pochłania przekazany tekst, nie zwraca niczego przy odczycie)"
     }
   },
   "marks": {
