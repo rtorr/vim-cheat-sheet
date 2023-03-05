@@ -265,7 +265,7 @@
       "coloncn": "skocz do następnego dopasowania",
       "coloncp": "skocz do poprzedniego dopasowania",
       "coloncopen": "otwórz okno zawierające listę dopasowań",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "zakmij okno zawierające listę dopasowań"
     }
   },
   "workingWithMultipleFiles": {
