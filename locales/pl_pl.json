@@ -219,18 +219,18 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Wcięcia tekstu",
     "commands": {
       "greaterThanGreaterThan": "zwiększ wcięcie (przesuń w prawo) o jedną szerokość wcięcia",
 		"lessThanLessThan": "zmniejsz wcięcie (przesuń w lewo) o jedną szerokość wcięcia",
       "greaterThanPercent": "zwiększ więcie bloku ograniczonego () lub {} (kursor on nawiasie)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line"
+      "greaterThanib": "zwiększ wcięcia bloku ograniczonego ()",
+      "greaterThanat": "zwiększ wcięcia bloku ograniczonego <>",
+      "3==": "popraw wcięcia trzech linii",
+      "=Percent": "popraw wcięcia bloku ograniczonego () lub {} (kursor na nawiasie)",
+      "=iB": "popraw wcięcia bloku wewnętrznego ogranoczonego {}",
+      "gg=G": "popraw wcięcia całego bufora",
+      "closeSquarep": "wklej i dopasuj wcięcia do bieżącej linii"
     }
   },
   "exiting": {
