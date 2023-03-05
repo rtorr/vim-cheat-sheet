@@ -315,24 +315,24 @@
   "diff": {
     "title": "Diff",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "ręcznie zdefiniuj zwinięcie poprzez ruch",
+      "zd": "skasuj zwinięcie pod kursorem zdefiniowane znacznikami",
+      "za": "zwiń, jeśli niezwinięte; rozwiń, jeśli zwinięte (pod kursorem)",
+      "zo": "rozwiń zwinięcie pod kursorem",
+      "zc": "zwiń pod kursorem",
+      "zr": "zmniejsz (rozwiń) zwinięcia o jeden poziom",
+      "zm": "zwiększ (zwiń) zwinięcia o jeden poziom",
+      "zi": "włącz lub wyłącz funkcjonalność zwijania",
+      "closeSquarec": "skocz do początku następnej zmiany",
+      "openSquarec": "skocz do początku poprzedniej zmiany",
+      "do": "pobierz różnice (z innego bufora)",
+      "dp": "przekaż różnice (do innego bufora)",
+      "colonDiffthis": "bieżące okno staje się częścią diff",
+      "colonDiffupdate": "aktualizuj różnice",
+      "colonDiffoff": "wyłącz tryb różnic w bieżącym oknie"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "Komendy do zwijania (np. <kbd>za</kbd>) działają na jednym poziomie. Żeby działały na wszystkich poziomach, użyj wielkich liter (np. <kbd>zA</kbd>).",
+    "tip2": "Żeby pokazać różnice plików, można od razu uruchomić Vima w trybie różnic uruchamiając <kbd>vimdiff</kbd> w terminalu. Można to nawet ustawić jako <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "keyword",
