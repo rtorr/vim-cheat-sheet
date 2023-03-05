@@ -335,12 +335,12 @@
     "tip2": "Żeby pokazać różnice plików, można od razu uruchomić Vima w trybie różnic uruchamiając <kbd>vimdiff</kbd> w terminalu. Można to nawet ustawić jako <kbd>git difftool</kbd>."
   },
   "words": {
-    "keyword": "keyword",
-    "file": "file",
-    "movement": "movement"
+    "keyword": "słowo kluczowe",
+    "file": "plik",
+    "movement": "ruch"
   },
   "languages": {
-    "title": "Languages"
+    "title": "Języki"
   },
   "footer": "Sprawdź źródło na",
   "layout": "page",
