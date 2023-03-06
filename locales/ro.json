@@ -40,6 +40,8 @@
       "closeCurlyBrace": "sari la urmatorul paragraf (sau functie/bloc, cand editezi cod)",
       "openCurlyBrace": "cursorMovement.commands.openCurlyBrace",
       "centerCursor": "cursorMovement.commands.centerCursor",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "cursorMovement.commands.CtrlPluse",
       "CtrlPlusy": "cursorMovement.commands.CtrlPlusy",
       "CtrlPlusb": "mergi inapoi un ecran intreg",

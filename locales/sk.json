@@ -40,6 +40,8 @@
       "closeCurlyBrace": "skočí na ďalší odsek (alebo funkciu/blok pri úprave kódu)",
       "openCurlyBrace": "skočí na predchádzajúci odsek (alebo funkciu/blok pri úprave kódu)",
       "centerCursor": "centruje kurzor na stred obrazovky",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "presunie obrazovku dole o jeden riadok (bez posunu kurzoru)",
       "CtrlPlusy": "presunie obrazovku hore o jeden riadok (bez posunu kurzoru)",
       "CtrlPlusb": "presunie späť jednu celú obrazovku",

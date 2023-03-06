@@ -40,6 +40,8 @@
       "closeCurlyBrace": "saltar al párrafo siguiente (o función/bloque, en modo edición)",
       "openCurlyBrace": "saltar al párrafo previo (o función/bloque, en modo edición)",
       "centerCursor": "centrar el cursor en la pantalla",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "mover la pantalla hacia abajo una línea (sin mover el cursor)",
       "CtrlPlusy": "mover la pantalla una línea hacia arriba (sin mover el cursor)",
       "CtrlPlusb": "retroceder una pantalla",

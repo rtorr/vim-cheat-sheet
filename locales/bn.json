@@ -40,6 +40,8 @@
       "closeCurlyBrace": "পরবর্তী অনুচ্ছেদে যেতে (অথবা ফাংশন/ব্লক, কোড সম্পাদনা করার সময়)",
       "openCurlyBrace": "আগের অনুচ্ছেদে যেতে (অথবা ফাংশন/ব্লক, কোড সম্পাদনা করার সময়)",
       "centerCursor": "কার্সার স্ক্রিনের কেন্দ্রে",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "স্ক্রিন এক লাইনের নিচে সরানো হচ্ছে (কার্সর না সরিয়ে)",
       "CtrlPlusy": "স্ক্রিন এক লাইনের উপরে সরানো হচ্ছে (কার্সর না সরিয়ে)",
       "CtrlPlusb": "একটি পূর্ণস্ক্রীন পিছনে সরান",

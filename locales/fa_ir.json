@@ -40,6 +40,8 @@
       "closeCurlyBrace": "برو به پاراگراف بعدی( یا تابع بعدی/ یابلاک بعدی)",
       "openCurlyBrace": "برو به پاراگراف قبلی( یا تابع قبلی/ یا بلاک قبلی)",
       "centerCursor": "قرار دادن خط فعلی در مرکز صفحه نمایش",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "یک خط به پایین",
       "CtrlPlusy": "یک خط به بالا",
       "CtrlPlusb": "صفحه قبل",

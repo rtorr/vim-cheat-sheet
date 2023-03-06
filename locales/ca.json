@@ -40,6 +40,8 @@
       "closeCurlyBrace": "saltar al paràgraf següent (o funció/bloc, en mode d'edició)",
       "openCurlyBrace": "saltar al paràgraf anterior (o funció/bloc, en mode d'edició)",
       "centerCursor": "centrar el cursor a la pantalla",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "moure la pantalla cap avall una línia (sense moure el cursor)",
       "CtrlPlusy": "moure la pantalla una línia cap amunt (sense moure el cursor)",
       "CtrlPlusb": "retrocedir una pantalla sencera",

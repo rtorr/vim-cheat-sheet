@@ -40,6 +40,8 @@
       "closeCurlyBrace": "(اقفز إلى القترة التالية (كود او الدالة",
       "openCurlyBrace": "اقفز الي الفقره السابقه (كود او الداله)",
       "centerCursor": "ضع المؤشر في منتصف الشاشة",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "حرك الشاشة سطر واحد لاسفل (بدون تحريك المؤشر)",
       "CtrlPlusy": "حرك الشاشة سطر واحد للاعلي (بدون تحريك المؤشر)",
       "CtrlPlusb": "تحرك شاشه كامله للخلف",

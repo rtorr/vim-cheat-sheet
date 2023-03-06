@@ -40,6 +40,8 @@
       "closeCurlyBrace": "次の段落に移動（コード編集中の場合は関数/ブロック）",
       "openCurlyBrace": "前の段落に移動（コード編集中の場合は関数/ブロック）",
       "centerCursor": "カーソル位置を画面中央に",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "画面を下に 1 行スクロール（カーソル移動なし）",
       "CtrlPlusy": "画面を上に 1 行スクロール（カーソル移動なし）",
       "CtrlPlusb": "画面全体分だけ上に移動",

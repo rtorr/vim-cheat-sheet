@@ -40,6 +40,8 @@
       "closeCurlyBrace": "Lompat ke paragraf berikutnya (atau blok kode, saat mengedit kode)",
       "openCurlyBrace": "Lompat ke paragraf sebelumnya (atau blok kode, saat mengedit kode)",
       "centerCursor": "center cursor on screen",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "move screen down one line (without moving cursor)",
       "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "move back one full screen",

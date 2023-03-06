@@ -40,6 +40,8 @@
       "closeCurlyBrace": "hopp til neste avsnitt (eller funksjon/blokk, når du redigerer kode)",
       "openCurlyBrace": "hopp til forrige avsnitt (eller funksjon/blokk, når du redigerer kode)",
       "centerCursor": "sentermarkør på skjermen",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "flytt skjermen én linje ned (uten å flytte markøren)",
       "CtrlPlusy": "flytt skjermen opp en linje (uten å flytte markøren)",
       "CtrlPlusb": "flytt tilbake en fullskjerm",
