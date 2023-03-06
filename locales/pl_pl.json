@@ -60,15 +60,15 @@
       "o": "utwórz nowy wiersz poniżej bieżącego i wprowadź tekst",
       "O": "utwórz nowy wiersz powyżej bieżącego i wprowadź tekst",
       "ea": "wstaw na końcu wyrazu",
-      "ctrlPlush": "delete the character before the cursor during insert mode",
-      "ctrlPlusw": "delete word before the cursor during insert mode",
-      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlush": "usuń znak przed kursorem w trybie edycji",
+      "ctrlPlusw": "usuń słowo przed kursorem w trybie edycji",
+      "ctrlPlusj": "rozpocznij nowy wiersz w trybie edycji",
       "ctrlPlust": "zwiększ wcięcie (przesuń w prawo) linię o jedną szerokość wcięcia w trybie edycji",
       "ctrlPlusd": "zmniejsz wcięcie (przesuń w lewo) linię o jedną szerokość wcięcia w trybie edycji",
-      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
-      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
+      "ctrlPlusn": "wstaw następne dopasowanie przed kursorem w trybie edycji",
+      "ctrlPlusp": "wstaw poprzednie dopasowanie przed kursorem w trybie edycji",
       "ctrlPlusrx": "wstaw zawartość rejestru x",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlusox": "tymczasowo przejdź do trybu normalnego, żeby wykonać komendę x.",
       "Esc": "wyjdź z trybu wstawiania"
     }
   },
@@ -76,13 +76,13 @@
     "title": "Edycja",
     "commands": {
       "r": "zamień pojedynczy znak pod kursorem",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
+      "R": "zamień więcej niż jeden znak (dopóki nie zostanie naciśniety <kbd>ESC</kbd>).",
       "J": "połącz wiersze: dodaj wiersz poniżej do bieżącego",
       "gJ": "połącz wiersze: dodaj wiersz poniżej do bieżącego bez spacji pomiędzy nimi",
-      "gwip": "reflow paragraph",
-      "gTilde": "switch case up to motion",
-      "gu": "change to lowercase up to motion",
-      "gU": "change to uppercase up to motion",
+      "gwip": "podziel akapit na wiersze",
+      "gTilde": "zmień wielkość liter (zgodnie z ruchem)",
+      "gu": "zmień na małe litery (zgodnie z ruchem)",
+      "gU": "zmień na wielkie litery (zgodnie z ruchem)",
       "cc": "zastąp cały wiersz",
       "cDollar": "zastąp na końcu wiersza",
       "ciw": "zastąp całe słowo",
@@ -107,10 +107,10 @@
       "aw": "zaznacz słowo",
       "ab": "blok z ()",
       "aB": "blok z {}",
-      "at": "a block with <> tags",
+      "at": "blok z <>",
       "ib": "wewnętrzny blok z ()",
       "iB": "wewnętrzny blok z {}",
-      "it": "inner block with <> tags",
+      "it": "wewnętrzny blok z <>s",
       "Esc": "wyjdź z trybu wizualnego"
     },
     "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
@@ -133,8 +133,8 @@
       "show": "pokaż zawartość rejestrów",
       "pasteRegisterX": "wklej zawartość rejestru x",
       "yankIntoRegisterX": "kopiuj do rejestru x",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "quotePlusy": "skopiuj do rejestru schowka systemowego",
+      "quotePlusp": "wklej z rejestru schowka systemowego"
     },
     "tip1": "Rejestry zostały zapisane w ~/.viminfo i zostaną załadowane przy ponownym uruchomieniu vima",
     "tip2": {
@@ -143,14 +143,14 @@
       "quote": "nienazwany rejestr, ostatnio skopiowany lub usunięty tekst",
       "percent": "bieżąca nazwa pliku",
       "hashtag": "alternatywna nazwa pliku",
-      "asterisk": "clipboard contents (X11 primary)",
-      "plus": "clipboard contents (X11 clipboard)",
+      "asterisk": "zawartość schowka (X11 primary)",
+      "plus": "zawartość schowkas (schowek X11)",
       "slash": "ostatnio wyszukiwany wzorzec",
-      "colon": "last command-line",
+      "colon": "ostatnio wykonana komenda z linii poleceń",
       "dot": "ostatnio wstawiony tekst",
-      "minus": "last small (less than a line) delete",
-      "equal": "expression register",
-      "underscore": "black hole register"
+      "minus": "ostatnio usunięty krótki (krótszy niż linia) tekst",
+      "equal": "rejestr przechowujący wyrażenie",
+      "underscore": "rejestr „czarna dziura” (pochłania przekazany tekst, nie zwraca niczego przy odczycie)"
     }
   },
   "marks": {
@@ -160,19 +160,19 @@
       "currentPositionA": "ustaw bieżącą pozycję na oznaczenie A",
       "jumpPositionA": "przeskocz do pozycji oznaczenia A",
       "yankToMarkA": "kopiuj tekst do pozycji oznaczenia A",
-      "backtick0": "go to the position where Vim was previously exited",
-      "backtickQuote": "go to the position when last editing this file",
-      "backtickDot": "go to the position of the last change in this file",
-      "backtickBacktick": "go to the position before the last jump",
+      "backtick0": "idź do lokalizacji, w której Vim został zamknięty",
+      "backtickQuote": "idź do miejsca ostatniej edycji w tym pliku",
+      "backtickDot": "idź do miejsca ostatniej zmiany w tym pliku",
+      "backtickBacktick": "idź do miejsca przed ostatnim skokiem",
       "colonjumps": "lista skoków",
-      "ctrlPlusi": "go to newer position in jump list",
-      "ctrlPluso": "go to older position in jump list",
-      "colonchanges": "list of changes",
-      "gcomma": "go to newer position in change list",
-      "gsemicolon": "go to older position in change list",
-      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+      "ctrlPlusi": "idź do nowszej pozycji w liście skoków",
+      "ctrlPluso": "idź do starszej pozycji w liście skoków",
+      "colonchanges": "lista zmian",
+      "gcomma": "idź do nowszej pozycji w liście zmian",
+      "gsemicolon": "idź do starszej pozycji w liście zmian",
+      "ctrlPlusCloseSquare": "skocz do znacznika pod kursorem"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
+    "tip1": "Żeby skoczyć do znacznika, można użyć grawisu (<kbd>`</kbd>) albo apostrofu (<kbd>'</kbd>). Skok przy użyciu apostrofu wykonywany jest do początku (pierwszy niebiały znak) linii oznaczonej znacznikiem.",
     "tip": ""
   },
   "macros": {
@@ -190,8 +190,8 @@
       "helpForKeyword": "otwórz pomoc dla słowa kluczowego",
       "saveAsFile": "zapisz plik jako",
       "closePane": "zamknij okienko nawigacji",
-      "K": "open man page for word under the cursor",
-      "colonTerminal": "open a terminal window",
+      "K": "otwórz stronę pomocy dla słowa pod kursorem",
+      "colonTerminal": "otwórz okno terminala",
       "openFile": "otwórz plik"
     },
     "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
@@ -219,18 +219,18 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Wcięcia tekstu",
     "commands": {
       "greaterThanGreaterThan": "zwiększ wcięcie (przesuń w prawo) o jedną szerokość wcięcia",
 		"lessThanLessThan": "zmniejsz wcięcie (przesuń w lewo) o jedną szerokość wcięcia",
       "greaterThanPercent": "zwiększ więcie bloku ograniczonego () lub {} (kursor on nawiasie)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line"
+      "greaterThanib": "zwiększ wcięcia bloku ograniczonego ()",
+      "greaterThanat": "zwiększ wcięcia bloku ograniczonego <>",
+      "3==": "popraw wcięcia trzech linii",
+      "=Percent": "popraw wcięcia bloku ograniczonego () lub {} (kursor na nawiasie)",
+      "=iB": "popraw wcięcia bloku wewnętrznego ogranoczonego {}",
+      "gg=G": "popraw wcięcia całego bufora",
+      "closeSquarep": "wklej i dopasuj wcięcia do bieżącej linii"
     }
   },
   "exiting": {
@@ -242,7 +242,7 @@
       "colonx": "zapisz i wyjdź",
       "colonq": "wyjdź (nie zadziała, jeśli są niezapisane zmiany)",
       "colonqbang": "wyjdź i odrzuć niezapisane zmiany",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonwqa": "zapisz i zamknij wszystkie karty"
     }
   },
   "searchAndReplace": {
@@ -265,7 +265,7 @@
       "coloncn": "skocz do następnego dopasowania",
       "coloncp": "skocz do poprzedniego dopasowania",
       "coloncopen": "otwórz okno zawierające listę dopasowań",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "zakmij okno zawierające listę dopasowań"
     }
   },
   "workingWithMultipleFiles": {
@@ -275,27 +275,27 @@
       "colonbnext": "idź do następnego bufora",
       "colonbprev": "wróć do poprzedniego bufora",
       "colonls": "zrób listę wszystkich otwartych buforów",
-      "colonbd": "usuń bufer (zamknij plik)",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbd": "usuń bufor (zamknij plik)",
+      "colonbnumber": "idź do bufora o numerze #",
+      "colonbfile": "idź do bufora o nazwie pliku",
       "colonsp": "otwórz plik w nowym buforze i podziel okno",
       "colonvsp": "otwórz plik w nowym buforze i podziel okno wertykalnie",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvertba": "edytuj wszystkie bufory w oknach pionowych",
+      "colontabba": "edytuj wszystkie bufory jako zakładki",
       "ctrlPlusws": "podziel okno",
-      "ctrlPluswv": "podziel okno wertykalnie",
+      "ctrlPluswv": "podziel okno pionowo",
       "ctrlPlusww": "przełącz okno",
       "ctrlPluswq": "wyjdź z okna",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
-      "ctrlPluswh": "przesuń kursor do lewego okna (podział wertykalny)",
-      "ctrlPluswl": "przesuń kursor do prawego okna (podział wertykalny)",
-      "ctrlPluswj": "przesuń kursor do okna poniżej (podział horyzontalny)",
-      "ctrlPluswk": "przesuń kursor do okna powyżej (podział horyzontalny)",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+      "ctrlPluswx": "zmień bieżące okno z następnym",
+      "ctrlPlusw=": "wyrównaj wysokość i szerokość wszystkich okien",
+      "ctrlPluswh": "przesuń kursor do lewego okna (podział pionowy)",
+      "ctrlPluswl": "przesuń kursor do prawego okna (podział pionowy)",
+      "ctrlPluswj": "przesuń kursor do okna poniżej (podział poziomy)",
+      "ctrlPluswk": "przesuń kursor do okna powyżej (podział poziomy)",
+      "ctrlPluswH": "przesuń bieżące okno maksymalnie w lewo i zmaksymalizuj jego wysokość",
+      "ctrlPluswL": "przesuń bieżące okno maksymalnie w prawo i zmaksymalizuj jego wysokość",
+      "ctrlPluswJ": "przesuń bieżące okno maksymalnie w dół i zmaksymalizuj jego szerokość",
+      "ctrlPluswK": "przesuń bieżące okno maksymalnie w górę i zmaksymalizuj jego szerokość"
     }
   },
   "tabs": {
@@ -315,32 +315,32 @@
   "diff": {
     "title": "Diff",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "ręcznie zdefiniuj zwinięcie poprzez ruch",
+      "zd": "skasuj zwinięcie pod kursorem zdefiniowane znacznikami",
+      "za": "zwiń, jeśli niezwinięte; rozwiń, jeśli zwinięte (pod kursorem)",
+      "zo": "rozwiń zwinięcie pod kursorem",
+      "zc": "zwiń pod kursorem",
+      "zr": "zmniejsz (rozwiń) zwinięcia o jeden poziom",
+      "zm": "zwiększ (zwiń) zwinięcia o jeden poziom",
+      "zi": "włącz lub wyłącz funkcjonalność zwijania",
+      "closeSquarec": "skocz do początku następnej zmiany",
+      "openSquarec": "skocz do początku poprzedniej zmiany",
+      "do": "pobierz różnice (z innego bufora)",
+      "dp": "przekaż różnice (do innego bufora)",
+      "colonDiffthis": "bieżące okno staje się częścią diff",
+      "colonDiffupdate": "aktualizuj różnice",
+      "colonDiffoff": "wyłącz tryb różnic w bieżącym oknie"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "Komendy do zwijania (np. <kbd>za</kbd>) działają na jednym poziomie. Żeby działały na wszystkich poziomach, użyj wielkich liter (np. <kbd>zA</kbd>).",
+    "tip2": "Żeby pokazać różnice plików, można od razu uruchomić Vima w trybie różnic uruchamiając <kbd>vimdiff</kbd> w terminalu. Można to nawet ustawić jako <kbd>git difftool</kbd>."
   },
   "words": {
-    "keyword": "keyword",
-    "file": "file",
-    "movement": "movement"
+    "keyword": "słowo kluczowe",
+    "file": "plik",
+    "movement": "ruch"
   },
   "languages": {
-    "title": "Languages"
+    "title": "Języki"
   },
   "footer": "Sprawdź źródło na",
   "layout": "page",
