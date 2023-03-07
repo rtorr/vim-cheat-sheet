@@ -40,6 +40,8 @@
       "closeCurlyBrace": "ඊළඟ ඡේදයට යන්න (හෝ ක්රියාත්මක කිරීම / බ්ලොක්, කේත සංස්කරණය කරන විට)",
       "openCurlyBrace": "පෙර ඡේදයට පෙරාතුව (හෝ ක්රියාත්මක කිරීම / අවහිර කිරීම, කේත සංස්කරණය කිරීමේදී)",
       "centerCursor": "කර්සරය තිරය මත කේන්ද්රීය පිහිටුවීම",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "ලේඛනයේ එක් පේළියක තිරය ඉහළට ගෙනයාම (කර්සරය එලෙසම)",
       "CtrlPlusy": "ලේඛනයේ එක් පේළියක තිරය පහළට ගෙනයාම (කර්සරය එලෙසම)",
       "CtrlPlusb": "එක් පූර්ණ තිරයක් ආපසු යන්න",

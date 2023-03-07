@@ -40,6 +40,8 @@
       "closeCurlyBrace": "Springe zum nächsten Paragraphen (oder Funktion/Block)",
       "openCurlyBrace": "Springe zum vorherigen Paragraphen (oder Funktion/Block)",
       "centerCursor": "Zentriere den Cursor",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "Bewege den Bildschirm eine Zeile runter (ohne den Cursor zu verschieben)",
       "CtrlPlusy": "Bewege den Bildschirm eine Zeile hoch (ohne den Cursor zu verschieben)",
       "CtrlPlusb": "Springe eine Bildschirmseite zurück",

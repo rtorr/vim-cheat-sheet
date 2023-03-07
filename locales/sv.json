@@ -40,6 +40,8 @@
       "closeCurlyBrace": "hoppa till nästa paragraf (eller funktion/block av kod)",
       "openCurlyBrace": "hoppa till föregående paragraf (eller funktion/block av kod)",
       "centerCursor": "centrera markören på skärmen",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "flytta ner skärmen en rad (utan att flytta markören)",
       "CtrlPlusy": "flytta upp skärmen en rad (utan att flytta markören)",
       "CtrlPlusb": "flytta bakåt en hel skärm",

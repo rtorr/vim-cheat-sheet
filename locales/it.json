@@ -40,6 +40,8 @@
       "closeCurlyBrace": "salta al prossimo paragrafo (o funzione/blocco, se si scrive codice)",
       "openCurlyBrace": "salta al paragrafo precedente (o funzione/blocco, se si scrive codice)",
       "centerCursor": "centra il cursore nella schermata",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "sposta la schermata in basso di una linea (senza muovere il cursore)",
       "CtrlPlusy": "sposta la schermata in alto di una linea (senza muovere il cursore)",
       "CtrlPlusb": "sposta indietro di un'intera schermata",

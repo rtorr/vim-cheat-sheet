@@ -40,6 +40,8 @@
       "closeCurlyBrace": "di chuyển đến khối văn bản tiếp theo.",
       "openCurlyBrace": "di chuyển đến khối văn bản trước đó.",
       "centerCursor": "di chuyển màn hình để con trỏ nằm ở trung tâm màn hình.",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "di chuyển màn hình xuống dưới một hàng (không di chuyển con trỏ).",
       "CtrlPlusy": "di chuyển màn hình lên trên một hàng (không di chuyển con trỏ).",
       "CtrlPlusb": "di chuyển lên trên một màn hình.",

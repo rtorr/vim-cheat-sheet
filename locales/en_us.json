@@ -40,6 +40,8 @@
       "closeCurlyBrace": "jump to next paragraph (or function/block, when editing code)",
       "openCurlyBrace": "jump to previous paragraph (or function/block, when editing code)",
       "centerCursor": "center cursor on screen",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "move screen down one line (without moving cursor)",
       "CtrlPlusy": "move screen up one line (without moving cursor)",
       "CtrlPlusb": "move back one full screen",

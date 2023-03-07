@@ -40,6 +40,8 @@
       "closeCurlyBrace": "နောက် paragraph သို့ cursor ကိုရွှေ့သည် (or function/block, when editing code)",
       "openCurlyBrace": "ရှေ့ paragraph သို့ cursor ကိုရွှေ့သည် (or function/block, when editing code)",
       "centerCursor": "cursor ကို screen ၏အလယ်သို့ ရွှေ့သည်",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "cursor မရွှေ့ဘဲ screen ကိုအောက်တစ်ကြောင်း ဆင်းသည်",
       "CtrlPlusy": "cursor မရွှေ့ဘဲ screen ကိုအပေါ်တစ်ကြောင်း တက်သည်",
       "CtrlPlusb": "screen တစ်ခုစာ အပေါ်တက်သည်",

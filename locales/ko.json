@@ -40,6 +40,8 @@
       "closeCurlyBrace": "다음 단락으로 점프",
       "openCurlyBrace": "이전 단락으로 점프",
       "centerCursor": "화면 위치 중간으로 조정",
+      "topCursor": "position cursor on top of the screen",
+      "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "한 줄 아래로 화면 조정",
       "CtrlPlusy": "한 줄 위로 화면 조정",
       "CtrlPlusb": "한 화면 위로 조정",
