@@ -146,7 +146,7 @@
       "percent": "bieżąca nazwa pliku",
       "hashtag": "alternatywna nazwa pliku",
       "asterisk": "zawartość schowka (X11 primary)",
-      "plus": "zawartość schowkas (schowek X11)",
+      "plus": "zawartość schowka (schowek X11)",
       "slash": "ostatnio wyszukiwany wzorzec",
       "colon": "ostatnio wykonana komenda z linii poleceń",
       "dot": "ostatnio wstawiony tekst",
@@ -225,7 +225,7 @@
     "commands": {
       "greaterThanGreaterThan": "zwiększ wcięcie (przesuń w prawo) o jedną szerokość wcięcia",
       "lessThanLessThan": "zmniejsz wcięcie (przesuń w lewo) o jedną szerokość wcięcia",
-      "greaterThanPercent": "zwiększ więcie bloku ograniczonego () lub {} (kursor on nawiasie)",
+      "greaterThanPercent": "zwiększ wcięcie bloku ograniczonego () lub {} (kursor on nawiasie)",
       "greaterThanib": "zwiększ wcięcia bloku ograniczonego ()",
       "greaterThanat": "zwiększ wcięcia bloku ograniczonego <>",
       "3==": "popraw wcięcia trzech linii",
