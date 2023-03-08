@@ -252,7 +252,7 @@
     "commands": {
       "forwardSlashPattern": "szukaj wzoru",
       "questionMarkPattern": "szukaj wzoru wstecz",
-      "backslashVpattern": "'magiczny' wzór: nie alfanumeryczne znaki są rozumiane jako wyrażenia regularne - regex (bez wstawiania ukośników)",
+      "backslashVpattern": "„magiczny” wzór: niealfanumeryczne znaki są rozumiane jako wyrażenia regularne - regex (bez wstawiania ukośników)",
       "n": "powtórz szukanie w tym samym kierunku",
       "N": "powtórz szukanie w przeciwnym kierunku",
       "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "zastąp wszystkie stare z nowymi w całym pliku",
