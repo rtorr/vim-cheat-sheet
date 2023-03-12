@@ -216,7 +216,18 @@
       "diw": "কার্সারের নীচে শব্দটি মুছুন (cut)",
       "daw": "কার্সারের নিচে (cut) শব্দ এবং এর পরে বা আগে স্পেস মুছুন",
       "dDollar": "লাইনের শেষে মুছুন (cut)",
-      "x": "অক্ষর মুছুন (cut)"
+      "x": "অক্ষর মুছুন (cut)",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +242,8 @@
       "=Percent": "() বা {} (বন্ধনীতে কার্সার) দিয়ে একটি ব্লক পুনরায় ইন্ডেন্ট করুন",
       "=iB": "{} দিয়ে ভিতরের ব্লক পুনরায় ইন্ডেন্ট করুন",
       "gg=G": "সম্পূর্ণ বাফার পুনরায় ইন্ডেন্ট",
-      "closeSquarep": "পেস্ট করুন এবং বর্তমান লাইনে ইন্ডেন্ট সামঞ্জস্য(adjust) করুন"
+      "closeSquarep": "পেস্ট করুন এবং বর্তমান লাইনে ইন্ডেন্ট সামঞ্জস্য(adjust) করুন",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

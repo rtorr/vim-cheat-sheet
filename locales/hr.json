@@ -216,7 +216,18 @@
       "diw": "izbriši cijelu riječ ispod kursora",
       "daw": "izbriši riječ ispod kursora i razmak prije ili poslije riječi",
       "dDollar": "izbriši sve do kraja reda",
-      "x": "izbriši znak ispod kursora"
+      "x": "izbriši znak ispod kursora",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +242,8 @@
       "=Percent": "ponovi uvlaku bloka zadanog sa () ili {} (kursor na zagradi)",
       "=iB": "ponovi uvlaku unutrašnjosti bloka zadanog sa {}",
       "gg=G": "ponovo uvuci čitavi međuspremnik",
-      "closeSquarep": "zalijepi i prilagodi uvlaku u trenutnom redu"
+      "closeSquarep": "zalijepi i prilagodi uvlaku u trenutnom redu",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

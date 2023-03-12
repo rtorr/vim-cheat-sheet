@@ -216,7 +216,18 @@
       "diw": "slett (klipp ut) ord under markøren",
       "daw": "slett (klipp ut) ord under markøren og mellomrommet etter eller før det",
       "dDollar": "slett (klipp) til slutten av linjen",
-      "x": "slett (klipp ut) tegn"
+      "x": "slett (klipp ut) tegn",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -232,7 +243,8 @@
       "=iB": "rykk inn indre blokk på nytt med {}",
       "gg=G": "innrykk hele bufferen på nytt",
       "closeSquarep": "lim inn og juster innrykk til gjeldende linje",
-      "=Prosent": "sett inn en blokk på nytt med () eller {} (markør på klammeparentes)"
+      "=Prosent": "sett inn en blokk på nytt med () eller {} (markør på klammeparentes)",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

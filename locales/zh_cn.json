@@ -40,8 +40,8 @@
       "closeCurlyBrace": "移动到下一个段落 (当编辑代码时则为函数／代码块)",
       "openCurlyBrace": "移动到上一个段落 (当编辑代码时则为函数／代码块)",
       "centerCursor": "移动屏幕使光标居中",
-			"topCursor": "移动屏幕使光标位于屏幕顶部",
-			"bottomCursor": "移动屏幕使光标位于屏幕底部",
+      "topCursor": "移动屏幕使光标位于屏幕顶部",
+      "bottomCursor": "移动屏幕使光标位于屏幕底部",
       "CtrlPluse": "向下移动屏幕一行(保持光标不动)",
       "CtrlPlusy": "向上移动屏幕一行(保持光标不动)",
       "CtrlPlusb": "向上滚动一屏",
@@ -217,7 +217,18 @@
       "diw": "删除光标处的单词",
       "daw": "删除光标处的单词及其前后的空格",
       "dDollar": "剪切, 从光标位置到行末 (同 D )",
-      "x": "剪切当前字符"
+      "x": "剪切当前字符",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -232,7 +243,8 @@
       "=Percent": "自动缩进 () 或 {} 内的区域 (光标需置于括号上)",
       "=iB": "自动缩进 {} 内的区域 (光标需置于括号上)",
       "gg=G": "自动缩进整个缓冲区",
-      "closeSquarep": "粘贴并调整缩进至当前行"
+      "closeSquarep": "粘贴并调整缩进至当前行",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

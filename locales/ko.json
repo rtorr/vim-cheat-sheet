@@ -40,8 +40,8 @@
       "closeCurlyBrace": "다음 단락으로 점프",
       "openCurlyBrace": "이전 단락으로 점프",
       "centerCursor": "화면 위치 중간으로 조정",
-      "topCursor": "position cursor on top of the screen",
-      "bottomCursor": "position cursor on bottom of the screen",
+      "topCursor": "화면 맨 위로 커서 이동",
+      "bottomCursor": "화면 맨 아래로 커서 이동",
       "CtrlPluse": "한 줄 아래로 화면 조정",
       "CtrlPlusy": "한 줄 위로 화면 조정",
       "CtrlPlusb": "한 화면 위로 조정",
@@ -217,7 +217,18 @@
       "diw": "한 단어 잘라내기",
       "daw": "한 단어 잘라내기 (공백포함)",
       "dDollar": "한 행 끝까지 잘라내기",
-      "x": "한 문자 잘라내기"
+      "x": "한 문자 잘라내기",
+      "threeToFiveD": "3행 부터 5행 까지 삭제",
+      "gPatternD": "패턴을 포함하는 모든 행 삭제",
+      "gNotPatternD": "패턴을 포함하지 않는 모든 행 삭제"
+    },
+    "tip1": {
+      "title": "특정 범위를 지정하기 위해 다음과 같은 문자들을 사용할 수 있습니다.",
+      "commands": {
+        "dotCommaDollarD": "현재 행 부터 끝까지",
+        "dotCommaOneD": "현재 행 부터 처음까지",
+        "tenCommaDollarD": "10 번째 행 부터 처음까지"
+      }
     }
   },
   "indentText": {
@@ -232,7 +243,8 @@
       "=Percent": "중·소괄호 구간 자동정렬",
       "=iB": "중괄호 내부 자동정렬",
       "gg=G": "전체 버퍼 자동정렬",
-      "closeSquarep": "붙여쓰고 현재 행 들여쓰기 조"
+      "closeSquarep": "붙여쓰고 현재 행 들여쓰기 조",
+      "lessThanPercent": "중·소괄호 구간 내어쓰기"
     }
   },
   "exiting": {

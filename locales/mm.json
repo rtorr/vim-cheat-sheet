@@ -216,7 +216,18 @@
       "diw": "cursor  ရှိရာ စကားလုံးတစ်ခုလုံးကို delete (cut) လုပ်သည်",
       "daw": "cursor  ရှိရာ စကားလုံးတစ်ခုလုံးကို delete (cut) လုပ်၍ cursor ကို ထိပ်ဆုံးအက္ခရာသို့ ရွှေ့သည်",
       "dDollar": "cursor ရှိရာ စကားလုံးမှစ၍ စာကြောင်း၏ နောက်ဆုံး အက္ခရာအထိ delete (cut) လုပ်သည်",
-      "x": "အက္ခရာ တစ်လုံးစာ delete (cut) လုပ်သည်"
+      "x": "အက္ခရာ တစ်လုံးစာ delete (cut) လုပ်သည်",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +242,8 @@
       "=Percent": "re-indent a block with () or {} (cursor on brace)",
       "=iB": "re-indent inner block with {}",
       "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line"
+      "closeSquarep": "paste and adjust indent to current line",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

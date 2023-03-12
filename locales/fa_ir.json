@@ -217,7 +217,18 @@
       "diw": "",
       "daw": "",
       "dDollar": "کات کردن تا انتهای خط",
-      "x": "کات کردن یک کاراکتر"
+      "x": "کات کردن یک کاراکتر",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -232,7 +243,8 @@
       "=Percent": "re-indent a block with () or {} (cursor on brace)",
       "=iB": "re-indent inner block with {}",
       "gg=G": "تنظیم مجدد تورفتنگی کل بافر",
-      "closeSquarep": "چسباندن و تنظیم تو رفتگی برای خط کنونی"
+      "closeSquarep": "چسباندن و تنظیم تو رفتگی برای خط کنونی",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {
