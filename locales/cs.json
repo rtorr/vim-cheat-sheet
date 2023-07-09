@@ -314,26 +314,26 @@
     }
   },
   "diff": {
-    "title": "Diff",
+    "title": "Rozdíly",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "ručně nastavit rozbalení/sbalení",
+      "zd": "smazat rozbalení/sbalení pod kurzorem",
+      "za": "přepnout rozbalení/sbalení pod kurzorem",
+      "zo": "rozbalit pod kurzorem",
+      "zc": "sbalit pod kurzorem",
+      "zr": "rozbalit vše o jednu úroveň",
+      "zm": "sbalit vše o jednu úroveň",
+      "zi": "přepnout funkci rozbalení/sbalení",
+      "closeSquarec": "skok na začátek další změny",
+      "openSquarec": "skok na začátek předchozí změny",
+      "do": "získat rozdíl (z jiného bufferu)",
+      "dp": "vložit rozdíl (do jiného bufferu)",
+      "colonDiffthis": "udělat z aktuálního okna část diff",
+      "colonDiffupdate": "aktualizovat rozdíly",
+      "colonDiffoff": "vypnout režim rozdílu pro aktuální okno"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "Příkazy pro rozbalení/sbalení (např. <kbd>za</kbd>) fungují na jedné úrovni. Chcete-li pracovat na všech úrovních, používejte velká písmena (např. <kbd>zA</kbd>).",
+    "tip2": "Chcete-li zobrazit rozdíly mezi soubory, můžete přímo spustit Vim v režimu diff spuštěním <kbd>vimdiff</kbd> v terminálu. Lze dokonce nastavit jako <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "klíčové slovo",
