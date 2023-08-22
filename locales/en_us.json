@@ -44,11 +44,11 @@
       "bottomCursor": "position cursor on bottom of the screen",
       "CtrlPluse": "move screen down one line (without moving cursor)",
       "CtrlPlusy": "move screen up one line (without moving cursor)",
-      "CtrlPlusb": "move back one full screen",
-      "CtrlPlusf": "move forward one full screen",
-      "CtrlPlusu": "move back 1/2 a screen",
-      "CtrlPlusd": "move forward 1/2 a screen",
-      "percent": "move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
+      "CtrlPlusb": "move screen up one page (cursor to last line)",
+      "CtrlPlusf": "move screen down one page (cursor to first line)",
+      "CtrlPlusu": "move cursor and screen up 1/2 page",
+      "CtrlPlusd": "move cursor and screen down 1/2 page",
+      "percent": "move cursor to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)"
     },
     "tip": "Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines."
   },
@@ -64,7 +64,7 @@
       "ea": "insert (append) at the end of the word",
       "ctrlPlush": "delete the character before the cursor during insert mode",
       "ctrlPlusw": "delete word before the cursor during insert mode",
-      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlusj": "add a line break at the cursor position during insert mode",
       "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
       "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
       "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
