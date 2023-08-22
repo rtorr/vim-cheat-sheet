@@ -1,0 +1,347 @@
+{
+  "title": "Čeština",
+  "lang": "cs",
+  "lang_tag": "cs",
+  "cursorMovement": {
+    "title": "Pohyb kurzoru",
+    "commands": {
+      "h": "přesunout kurzor doleva",
+      "j": "přesunout kurzor dolů",
+      "k": "přesunout kurzor nahoru",
+      "l": "přesunout kurzor doprava",
+      "gj": "přesunout kurzor dolů (víceřádkový text)",
+      "gk": "přesunout kurzor nahoru (víceřádkový text)",
+      "w": "skok dopředu na začátek slova",
+      "W": "skok dopředu na začátek slova (slova mohou obsahovat interpunkci)",
+      "e": "skok dopředu na konec slova",
+      "E": "skok dopředu na konec slova (slova mohou obsahovat interpunkci)",
+      "b": "skok zpět na začátek slova",
+      "B": "skok zpět na začátek slova (slova mohou obsahovat interpunkci)",
+      "ge": "skok zpět na konec slova",
+      "gE": "skok zpět na konec slova (slova mohou obsahovat interpunkci)",
+      "H": "přejít na horní část obrazovky",
+      "M": "přejít do středu obrazovky",
+      "L": "přejít na spodní část obrazovky",
+      "zero": "přeskočit na začátek řádku",
+      "caret": "přeskočit na první neprázdný znak řádku",
+      "dollar": "přeskočit na konec řádku",
+      "g_": "přeskočit na poslední neprázdný znak řádku",
+      "gg": "přejít na první řádek dokumentu",
+      "G": "přejít na poslední řádek dokumentu",
+      "fiveG": "přejít na řádek 5",
+      "gd": "přejít na lokální deklaraci",
+      "gD": "přejít na globální deklaraci",
+      "fx": "přejít na další výskyt znaku x",
+      "tx": "přejít před další výskyt znaku x",
+      "Fx": "přejít na předchozí výskyt znaku x",
+      "Tx": "přejít za předchozí výskyt znaku x",
+      "semicolon": "opakovat předchozí pohyb f, t, F nebo T",
+      "comma": "opakovat předchozí pohyb f, t, F nebo T směrem zpět",
+      "closeCurlyBrace": "skok na další odstavec (nebo funkci/blok, při editaci kódu)",
+      "openCurlyBrace": "skok na předchozí odstavec (nebo funkci/blok, při editaci kódu)",
+      "centerCursor": "vycentrovat kurzor na obrazovce",
+      "topCursor": "umístit kurzor do horní části obrazovky",
+      "bottomCursor": "umístit kurzor do spodní části obrazovky",
+      "CtrlPluse": "posunout obrazovku o jeden řádek dolů (bez pohybu kurzoru)",
+      "CtrlPlusy": "posunout obrazovku o jeden řádek nahoru (bez pohybu kurzoru)",
+      "CtrlPlusb": "posun o jednu celou obrazovku zpět",
+      "CtrlPlusf": "posun o jednu celou obrazovku vpřed",
+      "CtrlPlusu": "posun o půl obrazovky zpět",
+      "CtrlPlusd": "posun o půl obrazovky vpřed",
+      "percent": "přejít na odpovídající znak (výchozí podporované dvojice: '()', '{}', '[]' - pro více informací použijte <code>:h matchpairs</code> ve vim)"
+    },
+    "tip": "Před příkazem pohybu kurzoru uveďte číslo, které jej zopakuje. Například <kbd>4j</kbd> se posune o 4 řádky dolů."
+  },
+  "insertMode": {
+    "title": "Režim vkládání - vkládání/připojování textu",
+    "commands": {
+      "i": "vložit před kurzor",
+      "I": "vložit na začátek řádku",
+      "a": "vložit (připojit) za kurzor",
+      "A": "vložit (připojit) na konec řádku",
+      "o": "přidat nový řádek pod aktuální řádek",
+      "O": "přidat nový řádek nad aktuální řádek",
+      "ea": "vložit (připojit) na konec slova",
+      "ctrlPlush": "vymazat znak před kurzorem během režimu vkládání",
+      "ctrlPlusw": "vymažte slovo před kurzorem během režimu vkládání",
+      "ctrlPlusj": "začít nový řádek během režimu vkládání",
+      "ctrlPlust": "odsadit (přesunout doprava) řádek o šířku posunu během režimu vkládání",
+      "ctrlPlusd": "zrušit odsazení (přesunout doleva) řádek o jednu šířku posunu během režimu vkládání",
+      "ctrlPlusn": "vložit (automatické dokončení) další shodu před kurzor během režimu vkládání",
+      "ctrlPlusp": "vložit (automatické dokončení) předchozí shodu před kurzor během režimu vkládání",
+      "ctrlPlusrx": "vložit obsah registru x",
+      "ctrlPlusox": "Dočasně přejít do normálního režimu a zadat jeden příkaz x.",
+      "Esc": "ukončit režim vkládání"
+    }
+  },
+  "editing": {
+    "title": "Editace",
+    "commands": {
+      "r": "nahradit jeden znak.",
+      "R": "nahradit více než jeden znak, dokud nestisknete <kbd>ESC</kbd>.",
+      "J": "spojit řádek níže s aktuálním řádkem s jednou mezerou mezi nimi",
+      "gJ": "spojit řádek níže s aktuálním řádkem bez mezery mezi nimi",
+      "gwip": "přeformátovat odstavec",
+      "gTilde": "prohodit velká a malá písmena",
+      "gu": "změnit na malá písmena",
+      "gU": "změnit na velká písmena",
+      "cc": "změnit (nahradit) celý řádek",
+      "cDollar": "změnit (nahradit) do konce řádku",
+      "ciw": "změnit (nahradit) celé slovo",
+      "cw": "změnit (nahradit) do konce slova",
+      "s": "smazat znak a nahradit text",
+      "S": "smazat řádek a nahradit text (stejné jako cc)",
+      "xp": "transponovat dvě písmena (smazat a vložit)",
+      "u": "zpět",
+      "U": "obnovit (vrátit zpět) poslední změněný řádek",
+      "CtrlPlusr": "vpřed",
+      "dot": "opakovat poslední příkaz"
+    }
+  },
+  "markingText": {
+    "title": "Označení textu (vizuální režim)",
+    "commands": {
+      "v": "spustit vizuální režim, označit řádky a poté provést příkaz (například y-yank)",
+      "V": "spustit vizuální režim po řádcích",
+      "o": "přesunout na druhý konec označené oblasti",
+      "CtrlPlusv": "spustit režim vizuálního bloku",
+      "O": "přesunout do jiného rohu bloku",
+      "aw": "označit slovo",
+      "ab": "blok s ()",
+      "aB": "blok s {}",
+      "at": "blok se značkami <>",
+      "ib": "vnitřní blok s ()",
+      "iB": "vnitřní blok s {}",
+      "it": "vnitřní blok se značkami <>",
+      "Esc": "opustit vizuální režim"
+    },
+    "tip1": "Místo <kbd>b</kbd> nebo <kbd>B</kbd> lze také použít <kbd>(</kbd> nebo <kbd>{</kbd> v daném pořadí."
+  },
+  "visualCommands": {
+    "title": "Vizuální příkazy",
+    "commands": {
+      "greaterThan": "posunout text doprava",
+      "lessThan": "posunout text doleva",
+      "y": "yank (zkopírovat) označený text",
+      "d": "smazat označený text",
+      "tilde": "prohodit velká a malá písmena",
+      "u": "změnit označený text na malá písmena",
+      "U": "změnit označený text na velká písmena"
+    }
+  },
+  "registers": {
+    "title": "Registry",
+    "commands": {
+      "show": "zobrazit obsah registrů",
+      "pasteRegisterX": "vložit obsah registru x",
+      "yankIntoRegisterX": "yank (zkopírovat) do registru x",
+      "quotePlusy": "yank (zkopírovat) do registru systémové schránky",
+      "quotePlusp": "vložit z registru systémové schránky"
+    },
+    "tip1": "Registry se ukládají do ~/.viminfo a budou znovu načteny při příštím restartu vim.",
+    "tip2": {
+      "0": "poslední yank",
+      "title": "Speciální registry:",
+      "quote": "nepojmenovaný registr, poslední smazání nebo yank",
+      "percent": "aktuální název souboru",
+      "hashtag": "alternativní název souboru",
+      "asterisk": "obsah schránky (primární X11)",
+      "plus": "obsah schránky (schránka X11)",
+      "slash": "poslední vzor vyhledávání",
+      "colon": "poslední příkazový řádek",
+      "dot": "poslední vložený text",
+      "minus": "poslední smazání (méně než řádek)",
+      "equal": "expression register",
+      "underscore": "black hole register"
+    }
+  },
+  "marks": {
+    "title": "Značky a pozice",
+    "commands": {
+      "list": "seznam značek",
+      "currentPositionA": "nastavit aktuální pozici pro značku A",
+      "jumpPositionA": "skok na pozici značky A",
+      "yankToMarkA": "yank text na pozici značky A",
+      "backtick0": "přejít na pozici, kde byl Vim předtím ukončen",
+      "backtickQuote": "přejít na pozici při poslední úpravě tohoto souboru",
+      "backtickDot": "přejít na pozici poslední změny v tomto souboru",
+      "backtickBacktick": "přejít na pozici před posledním skokem",
+      "colonjumps": "seznam skoků",
+      "ctrlPlusi": "přejít na novější pozici v seznamu skoků",
+      "ctrlPluso": "přejít na starší pozici v seznamu skoků",
+      "colonchanges": "seznam změn",
+      "gcomma": "přejít na novější pozici v seznamu změn",
+      "gsemicolon": "přejít na starší pozici v seznamu změn",
+      "ctrlPlusCloseSquare": "skok na značku pod kurzorem"
+    },
+    "tip1": "Chcete-li přejít na značku, můžete použít buď backtick (<kbd>`</kbd>) nebo apostrof (<kbd>'</kbd>). Pomocí apostrofu skočí na začátek (první neprázdný) řádku, na kterém je značka.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Makra",
+    "commands": {
+      "recordA": "záznam makra a",
+      "stopRecording": "zastavit záznam makra",
+      "runA": "spustit makro a",
+      "rerun": "zopakovat poslední spuštěné makro"
+    }
+  },
+  "global": {
+    "title": "Globální",
+    "commands": {
+      "helpForKeyword": "otevřít nápovědu pro klíčové slovo",
+      "saveAsFile": "uložit soubor jako",
+      "closePane": "zavřít aktuální panel",
+      "K": "otevřít manuál pro slovo pod kurzorem",
+      "colonTerminal": "otevřít okno terminálu"
+    },
+    "tip1": "Spusťte <kbd>vimtutor</kbd> v terminálu a naučte se první příkazy Vim."
+  },
+  "cutAndPaste": {
+    "title": "Vyjmout a vložit",
+    "commands": {
+      "yy": "yank (zkopírovat) řádek",
+      "twoyy": "yank (zkopírovat) 2 řádky",
+      "yw": "yank (zkopírovat) znaky slova z pozice kurzoru na začátek dalšího slova",
+      "yiw": "yank (zkopírovat) slovo pod kurzorem",
+      "yaw": "yank (zkopírovat) slovo pod kurzorem a mezeru za ním nebo před ním",
+      "yDollar": "yank (zkopírovat) na konec řádku",
+      "p": "umístit (vložit) schránku za kurzor",
+      "P": "umístit (vložit) před kurzor",
+      "gp": "umístit (vložit) schránku za kurzor a ponechat kurzor za novým textem",
+      "gP": "umístit (vložit) schránku před kurzor a ponechat kurzor za novým textem",
+      "dd": "smazat (vyjmout) řádek",
+      "twodd": "smazat (vyjmout) 2 řádky",
+      "dw": "smazat (vyjmout) znaky slova z pozice kurzoru na začátek dalšího slova",
+      "diw": "smazat (vyjmout) slovo pod kurzorem",
+      "daw": "smazat (vyjmout) slovo pod kurzorem a mezeru za ním nebo před ním",
+      "dDollar": "smazat (vyjmout) na konec řádku",
+      "x": "smazat (vyjmout) znak"
+    }
+  },
+  "indentText": {
+    "title": "Odsazení textu",
+    "commands": {
+      "greaterThanGreaterThan": "odsadit (přesunout doprava) řádek o šířku jednoho posunu",
+      "lessThanLessThan": "zrušit odsazení (přesunout doleva) řádek o šířku jednoho posunu",
+      "greaterThanPercent": "odsadit blok s () nebo {} (kurzor na závorce)",
+      "greaterThanib": "odsadit vnitřní blok s ()",
+      "greaterThanat": "odsadit blok s <> značkami",
+      "3==": "znovu odsadit 3 řádky",
+      "=Percent": "znovu odsadit blok s () nebo {} (kurzor na závorce)",
+      "=iB": "znovu odsadit vnitřní blok s {}",
+      "gg=G": "znovu odsadit celou vyrovnávací paměť",
+      "closeSquarep": "vložit a upravit odsazení aktuálního řádku"
+    }
+  },
+  "exiting": {
+    "title": "Konec",
+    "commands": {
+      "colonw": "zapsat (uložit) soubor, ale neukončovat",
+      "colonwsudo": "uložit aktuální soubor pomocí sudo",
+      "colonwq": "uložit a ukončit",
+      "colonx": "uložit a ukončit",
+      "colonq": "ukončit (selže, pokud existují neuložené změny)",
+      "colonqbang": "ukončit a zahodit neuložené změny",
+      "colonwqa": "uložit a ukončit na všech záložkách"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Hledat a nahradit",
+    "commands": {
+      "forwardSlashPattern": "hledat vzor",
+      "questionMarkPattern": "hledat vzor dozadu",
+      "backslashVpattern": "„velmi kouzelný“ vzor: nealfanumerické znaky jsou interpretovány jako speciální symboly regulárních výrazů (není potřeba escapování)",
+      "n": "opakovat hledání stejným směrem",
+      "N": "opakovat hledání v opačném směru",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "nahradit všechny \"old\" s \"new\" v celém souboru",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "nahradit všechny \"old\" s \"new\" v celém souboru s potvrzeními",
+      "colonnoh": "odstranit zvýraznění shod vyhledávání"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Vyhledávání ve více souborech",
+    "commands": {
+      "colonvimgrep": "hledat vzor ve více souborech",
+      "coloncn": "skok na další shodu",
+      "coloncp": "skok na předchozí shodu",
+      "coloncopen": "otevřít okno se seznamem shod",
+      "coloncclose": "zavřít okno rychlé opravy"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Práce s více soubory",
+    "commands": {
+      "colone": "upravit soubor v novém bufferu",
+      "colonbnext": "přejít do dalšího bufferu",
+      "colonbprev": "přejít do předchozího bufferu",
+      "colonls": "vypsat všechny otevřené buffery",
+      "colonbd": "smazat buffer (zavřít soubor)",
+      "colonbnumber": "přejít do bufferu podle indexu #",
+      "colonbfile": "přejít do bufferu podle souboru",
+      "colonsp": "otevřít soubor v novém bufferu a rozdělit okno",
+      "colonvsp": "otevřít soubor v novém bufferu a vertikálně rozdělit okno",
+      "colonvertba": "editovat všechny buffery jako vertikální okna",
+      "colontabba": "editovat všechny buffery jako záložky",
+      "ctrlPlusws": "rozdělit okno",
+      "ctrlPluswv": "rozdělit okno vertikálně",
+      "ctrlPlusww": "přepnout okna",
+      "ctrlPluswq": "opustit okno",
+      "ctrlPluswx": "vyměnit aktuální okno za následující",
+      "ctrlPlusw=": "všechna okna stejně vysoká a široká",
+      "ctrlPluswh": "přesunout kurzor do levého okna (vertikální rozdělení)",
+      "ctrlPluswl": "přesunout kurzor do pravého okna (vertikální rozdělení)",
+      "ctrlPluswj": "přesunout kurzor do okna níže (horizontální rozdělení)",
+      "ctrlPluswk": "přesunout kurzor do okna výše (horizontální rozdělení)",
+      "ctrlPluswH": "nastavit aktuální okno na plnou výšku zcela vlevo (svislé okno úplně vlevo)",
+      "ctrlPluswL": "nastavit aktuální okno na plnou výšku úplně vpravo (svislé okno úplně vpravo)",
+      "ctrlPluswJ": "nastavit aktuální okno na plnou šířku úplně dole (nejspodnější vodorovné okno)",
+      "ctrlPluswK": "nastavit aktuální okno na plnou šířku úplně nahoře (horní vodorovné okno)"
+    }
+  },
+  "tabs": {
+    "title": "Záložky",
+    "commands": {
+      "colonTabNew": "otevřít soubor v nové záložce",
+      "ctrlPluswT": "přesunout aktuální rozdělené okno na vlastní záložku",
+      "gt": "přejít na další záložku",
+      "gT": "přejít na předchozí záložku",
+      "hashgt": "přejít na záložku číslo #",
+      "colontabmove": "přesunout aktuální záložku na #-tou pozici (indexováno od 0)",
+      "colontabc": "zavřít aktuální záložku a všechna její okna",
+      "colontabo": "zavřít všechny záložky kromě aktuální",
+      "colontabdo": "spustit <code>command</code> na všech záožkách (např. <code>:tabdo q</code> - zavře všechny otevřené záložky)"
+    }
+  },
+  "diff": {
+    "title": "Rozdíly",
+    "commands": {
+      "zf": "ručně nastavit rozbalení/sbalení",
+      "zd": "smazat rozbalení/sbalení pod kurzorem",
+      "za": "přepnout rozbalení/sbalení pod kurzorem",
+      "zo": "rozbalit pod kurzorem",
+      "zc": "sbalit pod kurzorem",
+      "zr": "rozbalit vše o jednu úroveň",
+      "zm": "sbalit vše o jednu úroveň",
+      "zi": "přepnout funkci rozbalení/sbalení",
+      "closeSquarec": "skok na začátek další změny",
+      "openSquarec": "skok na začátek předchozí změny",
+      "do": "získat rozdíl (z jiného bufferu)",
+      "dp": "vložit rozdíl (do jiného bufferu)",
+      "colonDiffthis": "udělat z aktuálního okna část diff",
+      "colonDiffupdate": "aktualizovat rozdíly",
+      "colonDiffoff": "vypnout režim rozdílu pro aktuální okno"
+    },
+    "tip1": "Příkazy pro rozbalení/sbalení (např. <kbd>za</kbd>) fungují na jedné úrovni. Chcete-li pracovat na všech úrovních, používejte velká písmena (např. <kbd>zA</kbd>).",
+    "tip2": "Chcete-li zobrazit rozdíly mezi soubory, můžete přímo spustit Vim v režimu diff spuštěním <kbd>vimdiff</kbd> v terminálu. Lze dokonce nastavit jako <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "klíčové slovo",
+    "file": "soubor",
+    "movement": "pohyb"
+  },
+  "languages": {
+    "title": "Jazyky"
+  },
+  "footer": "Podívejte se na zdroj na"
+}
