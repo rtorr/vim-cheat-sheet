@@ -217,7 +217,18 @@
       "diw": "удалить (вырезать) слово под курсором",
       "daw": "удалить (вырезать) слово под курсором и пространство перед или после него",
       "dDollar": "удалить (вырезать) до конца строки",
-      "x": "удалить (вырезать) символ"
+      "x": "удалить (вырезать) символ",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -232,7 +243,8 @@
       "=Percent": "выровнить отступы блока в () или {}",
       "=iB": "выровнить отступы блока в {}",
       "gg=G": "выровнить оступы всего буфера",
-      "closeSquarep": "вставить и выровнить отступы по строке под курсором"
+      "closeSquarep": "вставить и выровнить отступы по строке под курсором",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

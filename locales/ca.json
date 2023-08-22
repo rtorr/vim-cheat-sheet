@@ -218,7 +218,18 @@
       "diw": "esborrar (retallar) la paraula sota el cursor",
       "daw": "esborrar (retallar) la paraula sota el cursor i l'espai darrere o davant d'ella",
       "dDollar": "esborrar (retallar) fins al final de la línia",
-      "x": "esborrar (retallar) un caràcter"
+      "x": "esborrar (retallar) un caràcter",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -233,7 +244,8 @@
       "=Percent": "tornar a sagnar un bloc amb () o {} (amb el cursor sobre el parèntesi o la clau)",
       "=iB": "tornar a sagnar el bloc interior amb {}",
       "gg=G": "tornar a sagnar tots els caràcters a la memòria intermèdia (buffer)",
-      "closeSquarep": "enganxar i ajustar la sagnia a la línia actual"
+      "closeSquarep": "enganxar i ajustar la sagnia a la línia actual",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

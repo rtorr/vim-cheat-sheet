@@ -217,7 +217,18 @@
       "diw": "cortar la palabra localizada en la posición del cursor",
       "daw": "cortar la palabra localizada en la posición del cursor y el espacio detras de ella o delante",
       "dDollar": "cortar hasta el final de la línea",
-      "x": "cortar carácter"
+      "x": "cortar carácter",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -232,7 +243,8 @@
       "=Percent": "volver a sangrar un bloque con () o {} (cursor sobre llave)",
       "=iB": "volver a sangrar el bloque interior con {}",
       "gg=G": "volver a sangrar todo el búfer",
-      "closeSquarep": "pegar y ajustar la sangría a la línea actual"
+      "closeSquarep": "pegar y ajustar la sangría a la línea actual",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

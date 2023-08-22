@@ -216,7 +216,18 @@
       "diw": "cancella (taglia) la parola sotto il cursore",
       "daw": "cancella (taglia) la parola sotto il cursore e lo spazio prima o dopo",
       "dDollar": "cancella (taglia) fino alla fine della linea",
-      "x": "cancella (taglia) carattere"
+      "x": "cancella (taglia) carattere",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +242,8 @@
       "=Percent": "reindenta un blocco compreso tra () o {} (cursore nelle parentesi)",
       "=iB": "reindenta il blocco interno compreso tra {}",
       "gg=G": "reindenta l' intero buffer",
-      "closeSquarep": "incolla e aggiusta l' indenzione della linea attuale"
+      "closeSquarep": "incolla e aggiusta l' indenzione della linea attuale",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

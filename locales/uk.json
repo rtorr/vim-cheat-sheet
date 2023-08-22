@@ -216,7 +216,18 @@
       "diw": "видалити (вирізати) слово під курсором",
       "daw": "видалити (вирізати) слово під курсором з пробілом",
       "dDollar": "видалити (вирізати) до кінця рядка",
-      "x": "видалити (вирізати) символ"
+      "x": "видалити (вирізати) символ",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +242,8 @@
       "=Percent": "вирівняти блок в середині () чи {} (курсор на дужці)",
       "=iB": "вирівняти текст між {}",
       "gg=G": "вирівняти весь буфер",
-      "closeSquarep": "вставити і підігнати відступ для поточного рядка"
+      "closeSquarep": "вставити і підігнати відступ для поточного рядка",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

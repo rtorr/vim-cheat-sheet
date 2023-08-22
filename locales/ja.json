@@ -216,7 +216,18 @@
       "diw": "その単語全体を消去（カット）",
       "daw": "その単語全体と前後のスペースを消去（カット）",
       "dDollar": "行末まで消去（カット）（<kbd>D</kbd>と同じ）",
-      "x": "文字を 1 つ消去（カット）"
+      "x": "文字を 1 つ消去（カット）",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +242,8 @@
       "=Percent": "() や {} のブロックを再字下げ（カーソルが括弧にあるとき)",
       "=iB": "{} のブロックの内側を再字下げ",
       "gg=G": "バッファ全体を再字下げ",
-      "closeSquarep": "ペーストして現在の行にインデントを揃える"
+      "closeSquarep": "ペーストして現在の行にインデントを揃える",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

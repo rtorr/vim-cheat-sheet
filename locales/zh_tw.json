@@ -216,7 +216,18 @@
       "diw": "剪下 (刪除) 游標所在單字",
       "daw": "剪下 (刪除) 游標所在單字和後面或前面的空格",
       "dDollar": "剪下 (刪除) 游標位置到行尾的區塊 (同 D)",
-      "x": "剪下 (刪除) 字元"
+      "x": "剪下 (刪除) 字元",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +242,8 @@
       "=Percent": "自動縮排 () 或 {} 內的區塊 (游標需置於括號上)",
       "=iB": "自動縮排 {} 內的區塊",
       "gg=G": "自動縮排整個緩衝區",
-      "closeSquarep": "貼上並自動縮排至該行"
+      "closeSquarep": "貼上並自動縮排至該行",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {

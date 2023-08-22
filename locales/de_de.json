@@ -216,7 +216,18 @@
       "diw": "Wort löschen (ausschneiden)",
       "daw": "Zeichen des Worts unterm Cursor und die Abstände davor oder danach löschen (ausschneiden)",
       "dDollar": "Löschen (Ausschneiden) bis Zeilenende",
-      "x": "Zeichen löschen (ausschneiden)"
+      "x": "Zeichen löschen (ausschneiden)",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +242,8 @@
       "=Percent": "Block mit () oder {} neu ausrichten (Cursor auf Klammer)",
       "=iB": "Inner Block mit {} neu ausrichten",
       "gg=G": "Gesamter Buffer neu ausrichten",
-      "closeSquarep": "Einfügen und analog zur aktuellen Zeile einrücken"
+      "closeSquarep": "Einfügen und analog zur aktuellen Zeile einrücken",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {
