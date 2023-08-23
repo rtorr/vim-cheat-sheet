@@ -217,16 +217,18 @@
       "daw": "delete (cut) word under the cursor and the space after or before it",
       "dDollar": "delete (cut) to the end of the line",
       "x": "delete (cut) character",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "threeToFiveD": "delete (cut) lines starting from 3 to 5",
+      "gPatternD": "delete (cut) all lines containing pattern",
+      "gNotPatternD": "delete (cut) all lines not containing pattern",
+      "dtx": "delete (cut) up to but not including character <kbd>x</kbd> in the horizontal line",
+      "dfx": "delete (cut) up to and including character <kbd>x</kbd> in the horizontal line"
     },
     "tip1": {
       "title": "You can also use the following characters to specify the range:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "delete (cut) from the current line to the end of the file",
+        "dotCommaOneD": "delete (cut) from the current line to the beginning of the file",
+        "tenCommaDollarD": "delete (cut) from the 10th line to the beginning of the file"
       }
     }
   },

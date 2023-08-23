@@ -219,7 +219,11 @@
       "x": "slett (klipp ut) tegn",
       "threeToFiveD": "delete lines starting from 3 to 5",
       "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "gNotPatternD": "delete all lines not containing pattern",
+      "dtx": "delete (cut) up to but not including character <kbd>x</kbd> in the horizontal line",
+      "dfx": "delete (cut) up to and including character <kbd>x</kbd> in the horizontal line",
+      "dte": "delete (cut) up to but not including character <kbd>e</kbd> in the horizontal line",
+      "dfe": "delete (cut) up to and including character <kbd>e</kbd> in the horizontal line"
     },
     "tip1": {
       "title": "You can also use the following characters to specify the range:",
@@ -243,8 +247,8 @@
       "=iB": "rykk inn indre blokk på nytt med {}",
       "gg=G": "innrykk hele bufferen på nytt",
       "closeSquarep": "lim inn og juster innrykk til gjeldende linje",
-      "=Prosent": "sett inn en blokk på nytt med () eller {} (markør på klammeparentes)",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)",
+      "=Prosent": "sett inn en blokk på nytt med () eller {} (markør på klammeparentes)"
     }
   },
   "exiting": {

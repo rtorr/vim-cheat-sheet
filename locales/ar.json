@@ -219,7 +219,11 @@
       "x": "قص حرف واحد",
       "threeToFiveD": "delete lines starting from 3 to 5",
       "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "gNotPatternD": "delete all lines not containing pattern",
+      "dtx": "delete (cut) up to but not including character <kbd>x</kbd> in the horizontal line",
+      "dfx": "delete (cut) up to and including character <kbd>x</kbd> in the horizontal line",
+      "dte": "delete (cut) up to but not including character <kbd>e</kbd> in the horizontal line",
+      "dfe": "delete (cut) up to and including character <kbd>e</kbd> in the horizontal line"
     },
     "tip1": {
       "title": "You can also use the following characters to specify the range:",

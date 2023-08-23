@@ -216,7 +216,22 @@
       "diw": "smazat (vyjmout) slovo pod kurzorem",
       "daw": "smazat (vyjmout) slovo pod kurzorem a mezeru za ním nebo před ním",
       "dDollar": "smazat (vyjmout) na konec řádku",
-      "x": "smazat (vyjmout) znak"
+      "x": "smazat (vyjmout) znak",
+      "threeToFiveD": "delete (cut) lines starting from 3 to 5",
+      "gPatternD": "delete (cut) all lines containing pattern",
+      "gNotPatternD": "delete (cut) all lines not containing pattern",
+      "dtx": "delete (cut) up to but not including character <kbd>x</kbd> in the horizontal line",
+      "dfx": "delete (cut) up to and including character <kbd>x</kbd> in the horizontal line",
+      "dte": "delete (cut) up to but not including character <kbd>e</kbd> in the horizontal line",
+      "dfe": "delete (cut) up to and including character <kbd>e</kbd> in the horizontal line"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "delete (cut) from the current line to the end of the file",
+        "dotCommaOneD": "delete (cut) from the current line to the beginning of the file",
+        "tenCommaDollarD": "delete (cut) from the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +246,8 @@
       "=Percent": "znovu odsadit blok s () nebo {} (kurzor na závorce)",
       "=iB": "znovu odsadit vnitřní blok s {}",
       "gg=G": "znovu odsadit celou vyrovnávací paměť",
-      "closeSquarep": "vložit a upravit odsazení aktuálního řádku"
+      "closeSquarep": "vložit a upravit odsazení aktuálního řádku",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {
