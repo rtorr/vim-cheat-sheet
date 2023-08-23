@@ -222,9 +222,7 @@
       "gPatternD": "패턴을 포함하는 모든 행 삭제",
       "gNotPatternD": "패턴을 포함하지 않는 모든 행 삭제",
       "dtx": "delete (cut) up to but not including character <kbd>x</kbd> in the horizontal line",
-      "dfx": "delete (cut) up to and including character <kbd>x</kbd> in the horizontal line",
-      "dte": "delete (cut) up to but not including character <kbd>e</kbd> in the horizontal line",
-      "dfe": "delete (cut) up to and including character <kbd>e</kbd> in the horizontal line"
+      "dfx": "delete (cut) up to and including character <kbd>x</kbd> in the horizontal line"
     },
     "tip1": {
       "title": "특정 범위를 지정하기 위해 다음과 같은 문자들을 사용할 수 있습니다.",
