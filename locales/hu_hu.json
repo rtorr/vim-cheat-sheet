@@ -1,0 +1,476 @@
+{
+  "title": "Magyar",
+  "lang": "hu_hu",
+  "lang_tag": "hu",
+  "cursorMovement": {
+    "title": "Kurzormozgás",
+    "commands": {
+      "h": "kurzort balra mozgatás",
+      "j": "kurzort lefelé mozgatás",
+      "k": "kurzort felfelé mozgatás",
+      "l": "kurzort jobbra mozgatás",
+      "gj": "kurzort lefelé mozgatás (többsoros szövegben)",
+      "gk": "kurzort felfelé mozgatás (többsoros szövegben)",
+      "w": "ugrás előre egy szó elejére",
+      "W": "ugrás előre egy szó elejére (szavak tartalmazhatnak írásjeleket is)",
+      "e": "ugrás előre egy szó végére",
+      "E": "ugrás előre egy szó végére (szavak tartalmazhatnak írásjeleket is)",
+      "b": "ugrás hátra egy szó elejére",
+      "B": "ugrás hátra egy szó elejére (szavak tartalmazhatnak írásjeleket is)",
+      "ge": "ugrás hátra egy szó végére",
+      "gE": "ugrás hátra egy szó végére (szavak tartalmazhatnak írásjeleket is)",
+      "H": "ugrás a képernyő tetejére",
+      "M": "ugrás a képernyő közepére",
+      "L": "ugrás a képernyő aljára",
+      "zero": "ugrás a sor elejére",
+      "caret": "ugrás a sor első nem-szóköz karakterére",
+      "dollar": "ugrás a sor végére",
+      "g_": "ugrás a sor utolsó nem-szóköz karakterére",
+      "gg": "ugrás a dokumentum első sorára",
+      "G": "ugrás a dokumentum utolsó sorára",
+      "fiveG": "ugrás az 5. sorra",
+      "gd": "ugrás a helyi deklarációra",
+      "gD": "ugrás a globális deklarációra",
+      "fx": "ugrás a karakter x következő előfordulására",
+      "tx": "ugrás a karakter x előtti következő előfordulás elé",
+      "Fx": "ugrás a karakter x előző előfordulására",
+      "Tx": "ugrás a karakter x előző előfordulás utánra",
+      "semicolon": "ismétlés az előző f, t, F vagy T mozgásnak",
+      "comma": "ismétlés az előző f, t, F vagy T mozgásnak hátrafele",
+      "closeCurlyBrace": "ugrás a következő bekezdésre (vagy funkcióra/blockra, ha kódot szerkesztesz)",
+      "openCurlyBrace": "ugrás az előző bekezdésre (vagy funkcióra/blockra, ha kódot szerkesztesz)",
+      "centerCursor": "kurzor középre állítása a képernyőn",
+      "topCursor": "kurzor pozícionálása a képernyő tetejére",
+      "bottomCursor": "kurzor pozícionálása a képernyő aljára",
+      "CtrlPluse": "képernyő lefelé egy sorral (kurzor mozgatása nélkül)",
+      "CtrlPlusy": "képernyő felfelé egy sorral (kurzor mozgatása nélkül)",
+      "CtrlPlusb": "képernyő felfelé egy oldallal (kurzor az utolsó sorra)",
+      "CtrlPlusf": "képernyő lefelé egy oldallal (kurzor az első sorra)",
+      "CtrlPlusu": "kurzor és képernyő felfelé 1/2 oldallal",
+      "CtrlPlusd": "kurzor és képernyő lefelé 1/2 oldallal",
+      "percent": "kurzor pozícionálása a megfelelő karakterre (alapértelmezett támogatott párok: '()', '{}', '[]' - további információkért használd a <code>:h matchpairs</code> parancsot a Vimben)"
+    },
+    "tip": "Egy kurzormozgás parancs elé írj egy számot annak ismétléséhez. Például a <kbd>4j</kbd> lefelé mozgatja a kurzort 4 sorral."
+  },
+  "insertMode": {
+    "title": "Beszúrási mód - beszúrás/bővítés szöveghez",
+    "commands": {
+      "i": "beszúrás a kurzor előtt",
+      "I": "beszúrás a sor elején",
+      "a": "beszúrás (bővítés) a kurzor után",
+      "A": "beszúrás (bővítés) a sor végén",
+      "o": "új sor beszúrása a jelenlegi sor alá",
+      "O": "új sor beszúrása a jelenlegi sor fölé",
+      "ea": "beszúrás (bővítés) a szó végére",
+      "ctrlPlush": "karakter törlése a kurzor előtt beszúrás közben",
+      "ctrlPlusw": "szó törlése a kurzor előtt beszúrás közben",
+      "ctrlPlusj": "sortörés hozzáadása a kurzor pozíciójához beszúrás közben",
+      "ctrlPlust": "bekezdésig való behúzás (jobbra mozgatás) egy sornyi lépéssel beszúrás közben",
+      "ctrlPlusd": "bekezdésig való kihúzás (balra mozgatás) egy sornyi lépéssel beszúrás közben",
+      "ctrlPlusn": "beszúrás (automatikus befejezés) a kurzor előtt a következő találatból beszúrás közben",
+      "ctrlPlusp": "beszúrás (automatikus befejezés) a kurzor előtt az előző találatból beszúrás közben",
+      "ctrlPlusrx": "a 'x' regiszter tartalmának beszúrása",
+      "ctrlPlusox": "Ideiglenes átváltás normál módba egy normál mód parancs futtatásához 'x' betűvel.",
+      "Esc": "kilépés a beszúrási módból"
+    }
+  },
+  "editing": {
+    "title": "Szerkesztés",
+    "commands": {
+      "r": "egy karakter helyettesítése.",
+      "R": "több karakter helyettesítése, amíg meg nem nyomod az <kbd>ESC</kbd>-t.",
+      "J": "a sor alatti sor összefűzése egy szóközzel",
+      "gJ": "a sor alatti sor összefűzése szóköz nélkül",
+      "gwip": "bekezdés újraformázása",
+      "gTilde": "kapcsolja át a kisbetűket a kurzor helyzetéig",
+      "gu": "átváltás kisbetűre a kurzor helyzetéig",
+      "gU": "átváltás nagybetűre a kurzor helyzetéig",
+      "cc": "sor teljes cseréje",
+      "cDollar": "cserélés a sor végéig",
+      "ciw": "szó teljes cseréje",
+      "cw": "cserélés a szó végéig",
+      "s": "karakter törlése és szöveg beillesztése",
+      "S": "sor törlése és szöveg beillesztése (ugyanaz, mint cc)",
+      "xp": "két karakter felcserélése (törlés és beillesztés)",
+      "u": "visszavonás",
+      "U": "visszaállítás (visszavonás) az utolsó megváltoztatott sorra",
+      "CtrlPlusr": "újra",
+      "dot": "az utolsó parancs ismétlése"
+    }
+  },
+  "markingText": {
+    "title": "Szöveg kijelölése (vizuális mód)",
+    "commands": {
+      "v": "vizuális mód indítása, sorok kijelölése, majd parancs végrehajtása (pl. yank)",
+      "V": "sortöréses vizuális mód indítása",
+      "o": "ugrás a kijelölt terület másik végére",
+      "CtrlPlusv": "vizuális blokk mód indítása",
+      "O": "ugrás a blokk másik sarkához",
+      "aw": "szó kijelölése",
+      "ab": "blokk kijelölése ()-al",
+      "aB": "blokk kijelölése {}-al",
+      "at": "blokk kijelölése <> címkékkel",
+      "ib": "belső blokk kijelölése ()-al",
+      "iB": "belső blokk kijelölése {}-al",
+      "it": "belső blokk kijelölése <> címkékkel",
+      "Esc": "kilépés a vizuális módból"
+    },
+    "tip1": "A <kbd>b</kbd> vagy a <kbd>B</kbd> helyett használhatsz <kbd>(</kbd> vagy <kbd>{</kbd> is.",
+    "tip": ""
+  },
+  "visualCommands": {
+    "title": "Vizuális parancsok",
+    "commands": {
+      "greaterThan": "szöveg jobbra mozgatása",
+      "lessThan": "szöveg balra mozgatása",
+      "y": "kijelölt szöveg másolása",
+      "d": "kijelölt szöveg törlése",
+      "tilde": "kis- és nagybetű váltás",
+      "u": "kijelölt szöveg kisbetűvé alakítása",
+      "U": "kijelölt szöveg nagybetűvé alakítása"
+    }
+  },
+  "registers": {
+    "title": "Regiszterek",
+    "commands": {
+      "show": "regiszter tartalmának megjelenítése",
+      "pasteRegisterX": "regiszter x tartalmának beillesztése",
+      "yankIntoRegisterX": "regiszter x-be való másolás",
+      "quotePlusy": "beillesztés a rendszer vágólap regiszterbe",
+      "quotePlusp": "beillesztés a rendszer vágólap regiszterből"
+    },
+    "tip1": "A regiszterek a ~/.viminfo fájlban vannak tárolva, és a Vim következő indításakor újra betöltődnek.",
+    "tip2": {
+      "0": "utolsó másolás",
+      "title": "Különleges regiszterek:",
+      "quote": "névtelen regiszter, utolsó törlés vagy másolás",
+      "percent": "aktuális fájlnév",
+      "hashtag": "alternatív fájlnév",
+      "asterisk": "vágólap tartalma (X11 elsődleges)",
+      "plus": "vágólap tartalma (X11 vágólap)",
+      "slash": "utolsó keresési minta",
+      "colon": "utolsó parancssor",
+      "dot": "utolsó beillesztett szöveg",
+      "minus": "utolsó kis (egy soron belüli) törlés",
+      "equal": "kifejezés regiszter",
+      "underscore": "fekete lyuk regiszter"
+    }
+  },
+  "marks": {
+    "title": "Jelölések és pozíciók",
+    "commands": {
+      "list": "jelölések listája",
+      "currentPositionA": "aktuális pozíció beállítása az 'A' jelzéshez",
+      "jumpPositionA": "ugrás az 'A' jelzés pozíciójához",
+      "yankToMarkA": "szöveg másolása az 'A' jelzés pozíciójába",
+      "backtick0": "ugrás az utolsó Vim kilépési helyéhez",
+      "backtickQuote": "ugrás a legutóbbi szerkesztés helyéhez ebben a fájlban",
+      "backtickDot": "ugrás az utolsó változás helyéhez ebben a fájlban",
+      "backtickBacktick": "ugrás az utolsó ugrás előtti helyhez",
+      "colonjumps": "ugrások listája",
+      "ctrlPlusi": "ugrás a legújabb helyhez az ugrás listában",
+      "ctrlPluso": "ugrás a legutóbbi helyhez az ugrás listában",
+      "colonchanges": "változások listája",
+      "gcomma": "ugrás a legújabb helyhez a változás listában",
+      "gsemicolon": "ugrás a legutóbbi helyhez a változás listában",
+      "ctrlPlusCloseSquare": "ugrás az aktuális kurzor alatti címkehez"
+    },
+    "tip1": "A jelzéshez való ugráshoz használhatsz egy visszafele hajló vonalat (<kbd>`</kbd>) vagy egy idézőjelet (<kbd>'</kbd>). Az idézőjel használatával az ugrás a jelölés sorának kezdetére történik (első nem üres karakter).",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Makrók",
+    "commands": {
+      "recordA": "makró 'a' rögzítése",
+      "stopRecording": "makró rögzítésének leállítása",
+      "runA": "makró 'a' futtatása",
+      "rerun": "utoljára futtatott makró újra futtatása"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "segítség megnyitása kulcsszóhoz",
+      "saveAsFile": "fájl mentése másként",
+      "closePane": "aktuális ablak bezárása",
+      "K": "man oldal megnyitása a kurzor alatti szóhoz",
+      "colonTerminal": "terminálablak megnyitása"
+    },
+    "tip1": "Futtasd a <kbd>vimtutor</kbd> parancsot egy terminálban az első Vim parancsok tanulásához."
+  },
+  "cutAndPaste": {
+    "title": "Vágás és beillesztés",
+    "commands": {
+      "yy": "sor másolása",
+      "twoyy": "2 sor másolása",
+      "yw": "a kurzor helyzetétől a következő szó elejéig tartó karakterek másolása",
+      "yiw": "a kurzor alatti szó másolása",
+      "yaw": "a kurzor alatti szó és előtte vagy utána levő szóköz másolása",
+      "yDollar": "a kurzor helyzetétől a sor végéig tartó szöveg másolása",
+      "p": "vágólap beillesztése a kurzor után",
+      "P": "vágólap beillesztése a kurzor előtt",
+      "gp": "vágólap beillesztése a kurzor után, és a kurzort az új szöveg után hagyja",
+      "gP": "vágólap beillesztése a kurzor előtt, és a kurzort az új szöveg után hagyja",
+      "dd": "sor törlése",
+      "twodd": "2 sor törlése",
+      "dw": "a kurzor helyzetétől a következő szó elejéig tartó karakterek törlése",
+      "diw": "a kurzor alatti szó törlése",
+      "daw": "a kurzor alatti szó és előtte vagy utána levő szóköz törlése",
+      "dDollar": "a kurzor helyzetétől a sor végéig tartó szöveg törlése",
+      "x": "karakter törlése",
+      "threeToFiveD": "3-tól 5-ig terjedő sorok törlése",
+      "gPatternD": "a mintát tartalmazó összes sor törlése",
+      "gNotPatternD": "nem tartalmaz mintát az összes sor törlése"
+    },
+    "tip1": {
+      "title": "Használhatsz a következő karaktereket a tartomány meghatározásához:",
+      "commands": {
+        "dotCommaDollarD": "Az aktuális sortól a fájl végéig",
+        "dotCommaOneD": "Az aktuális sortól a fájl elejéig",
+        "tenCommaDollarD": "A 10. sortól a fájl elejéig"
+      }
+    }
+  },
+  "indentText": {
+    "title": "Szöveg behúzása",
+    "commands": {
+      "greaterThanGreaterThan": "egy sor behúzása egy tabulálás mérettel jobbra",
+      "lessThanLessThan": "egy sor behúzása egy tabulálás mérettel balra",
+      "greaterThanPercent": "blokk behúzása () vagy {} címkékkel (kurzor a kapcsos zárójel fölött)",
+      "greaterThanib": "belső blokk behúzása ()-al",
+      "greaterThaniB": "belső blokk behúzása {}-al",
+      "equals": "blokk újraformázása (egyenlővé tétele)",
+      "1equals": "1. szintű behúzás (minden szinten egy tabulálás)",
+      "equals": "blokk újraformázása (egyenlővé tétele)",
+      "equals1": "1. szintű behúzás (minden szinten egy tabulálás)",
+      "equals2": "2. szintű behúzás (minden szinten két tabulálás)"
+    },
+    "tip": ""
+  },
+  "undoAndRedo": {
+    "title": "Visszavonás és újra",
+    "commands": {
+      "u": "visszavonás",
+      "CtrlPlusr": "újra",
+      "uTwice": "két lépésnyi visszavonás",
+      "CtrlPlusrTwice": "két lépésnyi újra",
+      "U": "sor visszavonása",
+      "gU": "sor visszaállítása"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Keresés és csere",
+    "commands": {
+      "slash": "keresés előre",
+      "questionMark": "keresés hátra",
+      "n": "következő találat",
+      "N": "előző találat",
+      "star": "aktuális szó keresése",
+      "hash": "aktuális szó hátrafele keresése",
+      ":%s": "aktuális sorban keresés és csere",
+      ":n,%s": "aktuális sornál kezdve következő találat keresése és csere",
+      ":n,m%s": "n. sor és m. sor között keresés és csere",
+      ":n,$%s": "n. sortól a fájl végéig keresés és csere"
+    },
+    "tip1": "A keresési minta sor végén lévő <kbd>/</kbd> vagy <kbd>?</kbd> karakterrel is megegyezhet.",
+    "tip2": "A <kbd>%</kbd> a fájl teljes tartalmát jelenti."
+  },
+  "searchAndReplaceGlobal": {
+    "title": "Globális keresés és csere",
+    "commands": {
+      ":g/pattern/d": "összes sor törlése, ami illeszkedik a mintára",
+      ":g/pattern/normalCommand": "minden találatra futtat egy normál módban végrehajtható parancsot"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Több fájl keresése",
+    "commands": {
+      ":args": "fájlok listájának megjelenítése",
+      ":args *.txt": "összes .txt kiterjesztésű fájl hozzáadása a listához",
+      ":argdo %s/pattern/replace/gc": "a minta minden találatának cseréje minden fájlban"
+    }
+  },
+  "tabsAndWindows": {
+    "title": "Tabok és ablakok",
+    "commands": {
+      "tabnew": "új lap hozzáadása",
+      "tabnext": "következő lapra váltás",
+      "tabprevious": "előző lapra váltás",
+      "tabclose": "aktuális lap bezárása",
+      "tabonly": "bezárt lapok újranyitása (kivéve az aktuálisat)",
+      "vsp": "vertikális szétválasztás (új ablak a jelenlegi mellett)",
+      "sp": "horizontális szétválasztás (új ablak a jelenlegi alatt)",
+      "CtrlPlusww": "ablakok közötti váltás",
+      "CtrlPluswArrow": "ablakok közötti váltás kurzormozgással",
+      "CtrlPluswT": "ablak átrendezése új lapként",
+      "CtrlPluswH": "ablak átrendezése balra",
+      "CtrlPluswL": "ablak átrendezése jobbra",
+      "CtrlPluswJ": "ablak átrendezése lefelé",
+      "CtrlPluswK": "ablak átrendezése felfelé",
+      "CtrlPluswEqual": "ablakok méretének kiegyenlítése",
+      "CtrlPluswBar": "ablakok elrendezése vízszintesen",
+      "CtrlPluswPlus": "ablakok elrendezése függőlegesen"
+    }
+  },
+  "tabsAndWindowsNavigation": {
+    "title": "Tabok és ablakok navigálása",
+    "commands": {
+      "CtrlPluswH": "balra lévő ablakra váltás",
+      "CtrlPluswL": "jobbra lévő ablakra váltás",
+      "CtrlPluswJ": "lefelé lévő ablakra váltás",
+      "CtrlPluswK": "felfelé lévő ablakra váltás",
+      "CtrlPluswT": "aktív ablakra váltás (teljes képernyőre)",
+      "CtrlPluswDot": "ablak bezárása"
+    }
+  },
+  "scrollingText": {
+    "title": "Szöveg görgetése",
+    "commands": {
+      "CtrlPluse": "egy sorral lefelé görgetés (kurzor mozgatása nélkül)",
+      "CtrlPlusy": "egy sorral felfelé görgetés (kurzor mozgatása nélkül)",
+      "CtrlPlusb": "egy oldallal lefelé görgetés (kurzor az utolsó sorra)",
+      "CtrlPlusf": "egy oldallal felfelé görgetés (kurzor az első sorra)",
+      "CtrlPlusu": "kurzor és képernyő felfelé 1/2 oldallal",
+      "CtrlPlusd": "kurzor és képernyő lefelé 1/2 oldallal"
+    }
+  },
+  "buffers": {
+    "title": "Pufferkezelés",
+    "commands": {
+      ":e file": "megnyitás egy fájlra egy új pufferben",
+      ":bnext (vagy :bn)": "következő pufferre váltás",
+      ":bprev (vagy :bp)": "előző pufferre váltás",
+      ":bd file": "aktuális puffer bezárása (vagy :bp)",
+      ":ls": "pufferek listájának megjelenítése",
+      ":b 2": "a 2. pufferre váltás",
+      ":sb 1": "oldalsó ablakban való váltás a 1. pufferre"
+    }
+  },
+  "tags": {
+    "title": "Címkék és címkék kezelése",
+    "commands": {
+      ":tag functionName": "ugrás a functionName címkéhez",
+      ":tags": "címkék listájának megjelenítése",
+      ":tag /pattern": "ugrás a megfelelő mintájú címkéhez",
+      ":tag CtrlPlusD": "megjeleníti a megfelelő címkék listáját",
+      ":tnext (vagy :tn)": "következő címke szerinti ugrás",
+      ":tprev (vagy :tp)": "előző címke szerinti ugrás",
+      ":tselect": "címke kiválasztása a listából",
+      ":ptnext (vagy :ptn)": "következő tartalmi címke szerinti ugrás",
+      ":ptprev (vagy :ptp)": "előző tartalmi címke szerinti ugrás"
+    }
+  },
+  "foldingText": {
+    "title": "Szöveg összecsukása",
+    "commands": {
+      "zf": "kijelölés összecsukása",
+      "zo": "kijelölés kinyitása",
+      "zc": "aktuális összecsukása",
+      "zC": "aktuális összecsukása mind",
+      "zr": "kinyitás minden szinten",
+      "zm": "összecsukás minden szinten",
+      "za": "állapot váltása (összecsukás/kinyitás)",
+      "zA": "minden állapot váltása",
+      "zd": "összecsukás törlése",
+      "zE": "összecsukás törlése minden szinten",
+      "zfPattern": "sorok összecsukása a megadott minta alapján",
+      "zf/": "sorok összecsukása a megadott minta alapján",
+      "zm": "összecsukás minden szinten",
+      "za": "állapot váltása (összecsukás/kinyitás)",
+      "zA": "minden állapot váltása",
+      "zd": "összecsukás törlése",
+      "zE": "összecsukás törlése minden szinten",
+      "zfPattern": "sorok összecsukása a megadott minta alapján"
+    }
+  },
+  "marksAndMotions": {
+    "title": "Jelölések és mozgások",
+    "commands": {
+      "mLetter": "aktuális pozíció jelölése 'letter' névvel",
+      "'Letter": "az 'letter' névű jelöléshez ugrás",
+      "d'Letter": "az 'letter' névű jelöléshez ugrás és törlés",
+      "``": "visszatérés az előző pozícióhoz",
+      "g'Letter": "az 'letter' névű jelöléshez ugrás (nem változtatja meg az ugrási helyet)",
+      "''": "az előző pozícióhoz való visszatérés (nem változtatja meg az ugrási helyet)",
+      "[[": "ugrás a fájl elejéhez (először nem üres karakter sor)",
+      "]]": "ugrás a fájl végéhez (először nem üres karakter sor)",
+      "[]": "ugrás a blokk elejéhez (először nem üres karakter sor)",
+      "][": "ugrás a blokk végéhez (először nem üres karakter sor)",
+      "[m": "ugrás az előző metódus deklarációjához (először nem üres karakter sor)",
+      "]m": "ugrás a következő metódus deklarációjához (először nem üres karakter sor)",
+      "[{": "ugrás a {} vagy [] blokk elejéhez (először nem üres karakter sor)",
+      "]}": "ugrás a {} vagy [] blokk végéhez (először nem üres karakter sor)"
+    },
+    "tip1": "Az 'letter' helyére egy tetszőleges betűt (a-tól z-ig) helyezhetsz.",
+    "tip2": "Az 'm', '[', ']', '{', '}' stb. mozgások a blokkok szerkezetét ismerik fel, így a blokk elejéhez vagy végéhez ugranak.",
+    "tip3": "Az '[[', ']]', '[m', stb. mozgások a programozási nyelvekben gyakran használt szerkezeteket ismerik fel, például függvényeket és vezérlési szerkezeteket."
+  },
+  "commandLine": {
+    "title": "Parancssor",
+    "commands": {
+      ":": "parancssor megnyitása",
+      "q:": "parancsok előzményeinek megjelenítése",
+      "/pattern": "keresés a parancssorban",
+      "?pattern": "keresés hátrafele a parancssorban",
+      "n": "következő találat a parancssor keresésében",
+      "N": "előző találat a parancssor keresésében",
+      ":q": "ablak bezárása",
+      ":q!": "ablak bezárása mentés nélkül",
+      ":w": "mentés",
+      ":wq": "mentés és ablak bezárása",
+      ":x": "mentés és ablak bezárása",
+      ":w file": "mentés más néven",
+      ":e file": "fájl megnyitása",
+      ":sp file": "új ablak megnyitása fájl megnyitásával",
+      ":vsp file": "új függőleges ablak megnyitása fájl megnyitásával",
+      ":tabnew": "új lap megnyitása",
+      ":args": "fájlok listájának megjelenítése",
+      ":args *.txt": "összes .txt kiterjesztésű fájl hozzáadása a listához",
+      ":argdo %s/pattern/replace/gc": "a minta minden találatának cseréje minden fájlban"
+    },
+    "tip": ""
+  },
+  "autocomplete": {
+    "title": "Automatikus kiegészítés",
+    "commands": {
+      "CtrlPlusn": "következő kiegészítési javaslat kiválasztása",
+      "CtrlPlusp": "előző kiegészítési javaslat kiválasztása",
+      "CtrlPlusx_CtrlPlusf": "fájlnevek kiegészítése",
+      "CtrlPlusx_CtrlPlusl": "sorok kiegészítése",
+      "CtrlPlusx_CtrlPlusv": "változók kiegészítése",
+      "CtrlPlusx_CtrlPlusk": "kulcsszavak kiegészítése",
+      "CtrlPlusx_CtrlPlusn": "kézikönyv oldalak kiegészítése"
+    }
+  },
+  "help": {
+    "title": "Súgó",
+    "commands": {
+      ":help keyword": "súgó megnyitása egy kulcsszóhoz",
+      ":help": "általános súgó megnyitása",
+      "K": "man oldal megnyitása a kurzor alatti szóhoz"
+    }
+  },
+  "exiting": {
+    "title": "Kilépés",
+    "commands": {
+      ":q": "ablak bezárása (kilépés, ha nincs további ablak)",
+      ":q!": "ablak bezárása mentés nélkül (kilépés, ha nincs további ablak)",
+      ":wq": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
+      ":x": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
+      ":wqa": "összes ablak mentése és kilépés",
+      ":qa!": "összes ablak bezárása mentés nélkül és kilépés"
+    }
+  },
+  "references": {
+    "title": "Hivatkozások",
+    "vimOfficialSite": "Vim hivatalos weboldala",
+    "vimDocumentation": "Vim dokumentáció",
+    "vimWiki": "Vim Wiki",
+    "vimReddit": "Vim subreddit",
+    "stackOverflowVim": "Stack Overflow - Vim",
+    "learnVimscriptTheHardWay": "Tanuld meg a Vimscriptet a nehéz úton",
+    "vimgolf": "VimGolf",
+    "useVimAsIDE": "Vim használata fejlesztőkörnyezetként"
+  }
+}
+
