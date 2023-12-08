@@ -1,0 +1,162 @@
+{
+  "title": "Dansk",
+  "lang": "da_DK",
+  "lang_tag": "da",
+  "cursorMovement": {
+    "title": "Markørbevægelser",
+    "commands": {
+      "h": "flyt markøren til venstre",
+      "j": "flyt markøren ned",
+      "k": "flyt markøren op",
+      "l": "flyt markøren til højre",
+      "gj": "flyt markøren ned (flerlinjetekst)",
+      "gk": "flyt markøren op (flerlinjetekst)",
+      "w": "hop frem til starten af et ord",
+      "W": "hop frem til starten af et ord (ord kan indeholde tegnsætning)",
+      "e": "hop frem til slutningen af et ord",
+      "E": "hop frem til slutningen af et ord (ord kan indeholde tegnsætning)",
+      "b": "hop tilbage til starten af et ord",
+      "B": "hop tilbage til starten af et ord (ord kan indeholde tegnsætning)",
+      "ge": "hop tilbage til slutningen af et ord",
+      "gE": "hop tilbage til slutningen af et ord (ord kan indeholde tegnsætning)",
+      "H": "flyt til toppen af skærmen",
+      "M": "flyt til midten af skærmen",
+      "L": "flyt til bunden af skærmen",
+      "zero": "hop til starten af linjen",
+      "caret": "hop til det første ikke-blanke tegn på linjen",
+      "dollar": "hop til slutningen af linjen",
+      "g_": "hop til det sidste ikke-blanke tegn på linjen",
+      "gg": "gå til den første linje i dokumentet",
+      "G": "gå til sidste linje i dokumentet",
+      "fiveG": "gå til linje 5",
+      "gd": "flyt til lokal erklæring",
+      "gD": "flyt til global erklæring",
+      "fx": "hop til næste forekomst af tegnet x",
+      "tx": "hop til før næste forekomst af tegnet x",
+      "Fx": "hop til forrige forekomst af tegnet x",
+      "Tx": "hop til efter forrige forekomst af tegnet x",
+      "semicolon": "gentag sidste f-, t-, F- eller T-bevægelse",
+      "comma": "gentag sidste f-, t-, F- eller T-bevægelse, baglæns",
+      "closeCurlyBrace": "hop til næste afsnit (eller funktion/blok, når du redigerer kode)",
+      "openCurlyBrace": "hop til forrige afsnit (eller funktion/blok, når du redigerer kode)",
+      "centerCursor": "centrer markøren på skærmen",
+      "topCursor": "positioner markøren i toppen af skærmen",
+      "bottomCursor": "positioner markøren i bunden af skærmen",
+      "CtrlPluse": "flyt skærmen én linje ned (uden at flytte markøren)",
+      "CtrlPlusy": "flyt skærmen op en linje (uden at flytte markøren)",
+      "CtrlPlusb": "flyt tilbage en hel skærm",
+      "CtrlPlusf": "flyt en hel skærm frem",
+      "CtrlPlusu": "flyt tilbage 1/2 en skærm",
+      "CtrlPlusd": "flyt frem 1/2 en skærm",
+      "percent": "flyt til matchende tegn (standard understøttede par: '()', '{}', '[]' - brug <code>:h matchpairs</code> i vim for mere information)"
+    },
+    "tip": "For-præfiks en markørbevægelseskommando med et tal for at gentage den. For eksempel flytter <kbd>4j</kbd> fire linjer ned."
+  },
+  "insertMode": {
+    "title": "Indsætningsmodus - indsætning/tilføj tekst",
+    "commands": {
+      "i": "indsæt før markøren",
+      "I": "indsæt i starten af linjen",
+      "a": "indsæt (tilføj) efter markøren",
+      "A": "indsæt (tilføj) i slutningen af linjen",
+      "o": "indsæt (tilføj) en ny linje under nuværende linje",
+      "O": "indsæt (tilføj) en ny linje over nuværende linje",
+      "ea": "indsæt (tilføj) efter sidste tegn i ordet",
+      "s": "slet karakter under markøren og gå ind i indsætningsmodus",
+      "S": "slet linje og gå ind i indsætningsmodus",
+      "Cx": "slet fra markøren til slutningen af linjen og gå ind i indsætningsmodus",
+      "c": "slet fra markøren til starten af linjen og gå ind i indsætningsmodus",
+      "Cc": "slet hele linjen og gå ind i indsætningsmodus",
+      "C": "slet fra markøren til slutningen af linjen og gå ind i indsætningsmodus",
+      "r": "erstat tegnet under markøren",
+      "gr": "erstat karakter, men ikke træk i en tabulator eller indsæt ekstra mellemrum",
+      "R": "erstat flere tegn fra markøren og til højre"
+    }
+},
+{
+  "cutAndPaste": {
+    "title": "Klip og indsæt",
+    "commands": {
+      "yy": "kopier en linje",
+      "twoyy": "kopier 2 linjer",
+      "yw": "kopier tegnene i ordet fra markørpositionen til begyndelsen af det næste ord",
+      "yiw": "kopier ordet under markøren",
+      "yaw": "kopier ordet under markøren og mellemrummet efter eller før det",
+      "yDollar": "kopier til slutningen af linjen",
+      "p": "indsæt klippepladen efter markøren",
+      "P": "indsæt før markøren",
+      "gp": "indsæt klippepladen efter markøren og lad markøren stå efter den nye tekst",
+      "gP": "indsæt før markøren og lad markøren stå efter den nye tekst",
+      "dd": "slet (klip ud) en linje",
+      "twodd": "slet (klip ud) 2 linjer",
+      "dw": "slet (klip ud) tegnene i ordet fra markørpositionen til begyndelsen af det næste ord",
+      "diw": "slet (klip ud) ord under markøren",
+      "daw": "slet (klip ud) ord under markøren og mellemrummet efter eller før det",
+      "dDollar": "slet (klip) til slutningen af linjen",
+      "x": "slet (klip ud) tegn",
+      "threeToFiveD": "slet linjer fra 3 til 5",
+      "gPatternD": "slet alle linjer, der indeholder mønsteret",
+      "gNotPatternD": "slet alle linjer, der ikke indeholder mønsteret"
+    },
+    "tip1": {
+      "title": "Du kan også bruge følgende tegn til at angive rækkevidden:",
+      "commands": {
+        "dotCommaDollarD": "Fra den nuværende linje til slutningen af filen",
+        "dotCommaOneD": "Fra den nuværende linje til begyndelsen af filen",
+        "tenCommaDollarD": "Fra den 10. linje til begyndelsen af filen"
+      }
+    }
+  },
+  "indentText": {
+    "title": "Indrykning af tekst",
+    "commands": {
+      "greaterThanGreaterThan": "indryk (flyt til højre) linje én indrykningsbredde",
+      "lessThanLessThan": "fjern indryk (flyt til venstre) linje én indrykningsbredde",
+      "greaterThanPercent": "indryk en blok med () eller {} (markør på parentes)",
+      "greaterThanib": "indryk indre blok med ()",
+      "greaterThanat": "indryk en blok med <>-tags",
+      "3==": "indryk 3 linjer på ny",
+      "=Percent": "genindryk en blok med () eller {} (markør på parentes)",
+      "=iB": "genindryk indre blok med {}",
+      "gg=G": "genindryk hele bufferen",
+      "closeSquarep": "indsæt og juster indryk til den aktuelle linje",
+      "=Procent": "genindryk en blok med () eller {} (markør på parentes)",
+      "lessThanPercent": "fjern indryk af en blok med () eller {} (markør på parentes)"
+    }
+  },
+  "exiting": {
+    "title": "Afslut",
+    "commands": {
+      "colonw": "skriv (gem) filen, men afslut ikke",
+      "colonwsudo": "skriv den aktuelle fil med sudo",
+      "colonwq": "skriv (gem) og afslut",
+      "colonx": "skriv (gem) og afslut",
+      "colonq": "afslut (mislykkes hvis der er ikke-gemte ændringer)",
+      "colonqbang": "afslut og kassér ikke-gemte ændringer",
+      "colonwqa": "skriv (gem) og afslut i alle faneblade"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Søg og erstat",
+    "commands": {
+      "forwardSlashPattern": "søg efter mønster",
+      "questionMarkPattern": "søg bagud efter mønster",
+      "backslashVpattern": "'meget magisk' mønster: ikke-alfanumeriske tegn tolkes som specielle regex-symboler (ingen escaping nødvendig)",
+      "n": "gentag søgning i samme retning",
+      "N": "gentag søgning i modsat retning",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "erstat alle gamle med nye i hele filen",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "erstat alle gamle med nye i hele filen med bekræftelser",
+      "colonnoh": "fjern markering af søgeresultater"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Søg i flere filer",
+    "commands": {
+      "colonvimgrep": "søg efter mønster i flere filer",
+      "coloncn": "hop til næste match",
+      "coloncp": "hop til forrige match",
+      "coloncopen": "åbn quickfix-listen",
+      "coloncclose": "luk quickfix-listen"
+    }
+  }
+}
