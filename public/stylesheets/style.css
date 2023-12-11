@@ -132,6 +132,7 @@ kbd {
   min-height: 20px;
   margin-bottom: 20px;
   padding: 19px;
+  line-height: 26px;
 }
 
 .link-to-repo {
@@ -350,4 +351,75 @@ kbd {
   .grid-lg-1-3 {
     width: 33.3333%;
   }
+}
+
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    /* Dark background */
+    color: #e0e0e0;
+    /* Light text */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: #e6e6e6;
+    /* Lighter headings for dark mode */
+  }
+
+  h1 a {
+    color: #ff6e6e;
+    /* Adjust link colors as needed */
+  }
+
+  a {
+    color: #4a90e2;
+    /* Different link color for dark mode */
+  }
+
+  .well,
+  .box,
+  .box-header {
+    background: #1a1a1a;
+    /* Darker backgrounds for containers */
+    border-color: #333333;
+    /* Dark borders */
+  }
+
+  .sponsor {
+    background: #0a0a23;
+    /* Dark theme for sponsor section */
+    border-bottom-color: #1a1a56;
+  }
+
+  .sponsor span {
+    color: #a8d1fb;
+    /* Adjust text colors */
+  }
+
+  .sponsor .container {
+    background: #0a0a23;
+  }
+
+  kbd {
+    background: #282828;
+    color: #e6e6e6;
+  }
+
+  li {
+    border-bottom: 1px dashed #2f2f2f;
+  }
+
+  /* Additional overrides as needed */
 }
