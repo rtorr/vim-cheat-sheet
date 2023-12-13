@@ -101,7 +101,7 @@
   "markingText": {
     "title": "Tekstin merkintä (visuaalinen tila)",
     "commands": {
-      "v": "käynnistä visuaalinen tila, merkitse alue, sitten aja komento (esim. y-vedä)",
+      "v": "käynnistä visuaalinen tila, merkitse alue, sitten aja komento (esim. y-nykäise)",
       "V": "käynnistä rivikohtainen visuaalinen tila",
       "o": "siirry merkityn alueen toiseen päähän",
       "CtrlPlusv": "käynnistä lohkokohtainen visuaalinen tila",
@@ -118,15 +118,15 @@
     "tip1": "<kbd>b</kbd>:n tai <kbd>B</kbd>:n sijasta voit myös käyttää <kbd>(</kbd>:a tai <kbd>{</kbd>:a."
   },
   "visualCommands": {
-    "title": "Visual commands",
+    "title": "Visuaaliset komennot",
     "commands": {
-      "greaterThan": "shift text right",
-      "lessThan": "shift text left",
-      "y": "yank (copy) marked text",
-      "d": "delete marked text",
-      "tilde": "switch case",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "greaterThan": "siirrä tekstiä oikealle",
+      "lessThan": "siirrä tekstiä vasemmalle",
+      "y": "nykäise (kopioi) merkitty teksti",
+      "d": "poista merkitty teksti",
+      "tilde": "vaihda kirjaimien koko",
+      "u": "muuta merkityn tekstin kirjaimet pieneksi",
+      "U": "muuta merkityn tekstin kirjaimet isoiksi"
     }
   },
   "registers": {
