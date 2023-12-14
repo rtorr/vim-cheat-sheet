@@ -312,17 +312,17 @@
     }
   },
   "tabs": {
-    "title": "Tabs",
+    "title": "Välilehdet",
     "commands": {
-      "colonTabNew": "open a file in a new tab",
-      "ctrlPluswT": "move the current split window into its own tab",
-      "gt": "move to the next tab",
-      "gT": "move to the previous tab",
-      "hashgt": "move to tab number #",
-      "colontabmove": "move current tab to the #th position (indexed from 0)",
-      "colontabc": "close the current tab and all its windows",
-      "colontabo": "close all tabs except for the current one",
-      "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
+      "colonTabNew": "avaa tiedosto uudessa välilehdessä",
+      "ctrlPluswT": "siirrä nykyinen jaettu ikkuna omaan välilehteen",
+      "gt": "siirry seuraavaan välilehteen",
+      "gT": "siirry edelliseen välilehteen",
+      "hashgt": "siirry välilehteen numero #",
+      "colontabmove": "siirrä nykyinen välilehti #:teen sijaintiin (alkaen nollasta)",
+      "colontabc": "sulje nykyinen välilehti ja sen kaikki ikkunat",
+      "colontabo": "sulje kaikki muut paitsi nykyinen välilehti",
+      "colontabdo": "aja <code>komento</code> kaikissa välilehdissä (esim. <code>:tabdo q</code> - sulkee kaikki avatut välilehdet)"
     }
   },
   "diff": {
