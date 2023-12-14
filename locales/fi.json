@@ -348,12 +348,12 @@
     "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
   },
   "words": {
-    "keyword": "keyword",
-    "file": "file",
-    "movement": "movement"
+    "keyword": "avainsana",
+    "file": "tiedosto",
+    "movement": "liike"
   },
   "languages": {
-    "title": "Languages"
+    "title": "Kielet"
   },
   "footer": "Checkout the source on"
 }
