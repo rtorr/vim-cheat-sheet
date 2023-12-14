@@ -150,18 +150,18 @@
       "slash": "viimeisin haku kaava",
       "colon": "viimeisin komento",
       "dot": "viimeisin syötetty teksti",
-      "minus": "viimeisin pieni (alle rivi) poisto",
+      "minus": "viimeisin pieni (alle rivin) poisto",
       "equal": "yhtälö rekisteri",
       "underscore": "musta aukko rekisteri"
     }
   },
   "marks": {
-    "title": "Marks and positions",
+    "title": "Merkit ja sijainnit",
     "commands": {
-      "list": "list of marks",
-      "currentPositionA": "set current position for mark A",
-      "jumpPositionA": "jump to position of mark A",
-      "yankToMarkA": "yank text to position of mark A",
+      "list": "lista merkeistä",
+      "currentPositionA": "aseta nykyisen sijainti merkkiin A",
+      "jumpPositionA": "hyppää merkin A sijantiin",
+      "yankToMarkA": "nykäise teksti merkin A sijaintiin asti",
       "backtick0": "go to the position where Vim was previously exited",
       "backtickQuote": "go to the position when last editing this file",
       "backtickDot": "go to the position of the last change in this file",
