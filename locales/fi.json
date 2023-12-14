@@ -187,15 +187,15 @@
     }
   },
   "global": {
-    "title": "Global",
+    "title": "Yleiset",
     "commands": {
-      "helpForKeyword": "open help for keyword",
-      "saveAsFile": "save file as",
-      "closePane": "close current pane",
-      "K": "open man page for word under the cursor",
-      "colonTerminal": "open a terminal window"
+      "helpForKeyword": "näytä apu avainsanalle",
+      "saveAsFile": "tallenna nimellä",
+      "closePane": "sulje nykyinen paneeeli",
+      "K": "avaa man-sivu kursorin alla olevalle sanalle",
+      "colonTerminal": "avaa terminaali ikkuna"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "Aja <kbd>vimtutor</kbd> terminaalissa oppiaksesti ensimmäiset Vim komennot."
   },
   "cutAndPaste": {
     "title": "Cut and paste",
