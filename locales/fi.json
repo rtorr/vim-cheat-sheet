@@ -178,12 +178,12 @@
     "tip": ""
   },
   "macros": {
-    "title": "Macros",
+    "title": "Makrot",
     "commands": {
-      "recordA": "record macro a",
-      "stopRecording": "stop recording macro",
-      "runA": "run macro a",
-      "rerun": "rerun last run macro"
+      "recordA": "tallenna makro a",
+      "stopRecording": "lopeta makron tallennus",
+      "runA": "aja makro a",
+      "rerun": "aja viimeisin makro uudelleen"
     }
   },
   "global": {
