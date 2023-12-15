@@ -379,12 +379,12 @@ kbd {
   }
 
   h1 a {
-    color: #ff1a2b;
+    color: #ff6e6e;
     /* Adjust link colors as needed */
   }
 
   a {
-    color: #ff1a2b;
+    color: #ff6e6e;
     /* Different link color for dark mode */
   }
 
