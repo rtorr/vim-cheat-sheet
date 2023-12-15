@@ -24,7 +24,7 @@ hbs.registerHelper("log", function (something) {
   return "" + something;
 });
 hbs.registerHelper("splitFirst", function (title) {
-  var t = title.split("-");
+  var t = title.split("_");
   return t[0];
 });
 
