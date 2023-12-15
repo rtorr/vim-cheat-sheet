@@ -80,7 +80,7 @@ h2 {
 }
 
 a {
-  color: #1a0dab;
+  color: #1a65ff;
   text-decoration: none;
 }
 
@@ -379,12 +379,12 @@ kbd {
   }
 
   h1 a {
-    color: #ff6e6e;
+    color: #ff1a2b;
     /* Adjust link colors as needed */
   }
 
   a {
-    color: #ff6e6e;
+    color: #ff1a2b;
     /* Different link color for dark mode */
   }
 

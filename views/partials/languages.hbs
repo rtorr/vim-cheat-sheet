@@ -1,7 +1,7 @@
 <ul>
   {{#each languagesMetaData as |language|}}
   <li>
-    <a href="/lang/{{language.lang}}">{{language.title}}</a>
+    <a href="/lang/{{language.lang}}" lang="{{language.lang}}">{{language.title}}</a>
   </li>
   {{/each}}
 </ul>
