@@ -247,15 +247,15 @@
     }
   },
   "exiting": {
-    "title": "Exiting",
+    "title": "Poistuminen",
     "commands": {
-      "colonw": "write (save) the file, but don't exit",
-      "colonwsudo": "write out the current file using sudo",
-      "colonwq": "write (save) and quit",
-      "colonx": "write (save) and quit",
-      "colonq": "quit (fails if there are unsaved changes)",
-      "colonqbang": "quit and throw away unsaved changes",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonw": "kirjoita (tallenna) tiedosto, mutta älä poistu",
+      "colonwsudo": "kirjoite tiedosto sudolla",
+      "colonwq": "kirjoita (tallenna) ja poistu",
+      "colonx": "kirjoita (tallenna) ja poistu",
+      "colonq": "poistu (epäonnistuu, jos tiedostossa on tallentamattomia muutoksia)",
+      "colonqbang": "poiustu ja hylkää tallentamattomat muutokset",
+      "colonwqa": "kirjoita (tallenna) ja poistu kaikista välilehdistä"
     }
   },
   "searchAndReplace": {
