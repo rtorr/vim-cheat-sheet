@@ -259,16 +259,16 @@
     }
   },
   "searchAndReplace": {
-    "title": "Search and replace",
+    "title": "Etsi ja korvaa",
     "commands": {
-      "forwardSlashPattern": "search for pattern",
-      "questionMarkPattern": "search backward for pattern",
-      "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
-      "n": "repeat search in same direction",
-      "N": "repeat search in opposite direction",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "replace all old with new throughout file",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "replace all old with new throughout file with confirmations",
-      "colonnoh": "remove highlighting of search matches"
+      "forwardSlashPattern": "etsi kaavaa",
+      "questionMarkPattern": "etsi kaavaa taaksepäin",
+      "backslashVpattern": "'very magic' kaava: ei-alfanumeeriset merkit tulkitaan regex-symboleina (ei tarvetta escapelle)",
+      "n": "toista haku samaan suuntaan",
+      "N": "toista haku toiseen suuntaan",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "korvaa kaikki old → new koko tiedostossa",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "korvaa kaikki old → new koko tiedostossa varmistuksella",
+      "colonnoh": "poista korostus haku osumista"
     }
   },
   "searchMultipleFiles": {
