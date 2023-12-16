@@ -231,19 +231,19 @@
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Tekstin sisennys",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "greaterThanGreaterThan": "sisennä (siirrä oikealle) yhdellä shiftwidth-arvolla",
+      "lessThanLessThan": "vähennä sisennystä (siirrä vasemmalle) yhdellä shiftwidth-arvolla",
+      "greaterThanPercent": "sisennä () tai {} lohko (kursori sulkeella)",
+      "greaterThanib": "sisennä sisempi () lohko",
+      "greaterThanat": "sisennä lohko <> tägeillä",
+      "3==": "uudelleen sisennä kolme riviä",
+      "=Percent": "uudelleen sisennä () tai {} lohko (kursori sulkeella)",
+      "=iB": "uudelleen sisennä sisempi {} lohko",
+      "gg=G": "uudelleen sisennä koko bufferi",
+      "closeSquarep": "liitä ja muokkaa sisennystä nykyiselle riville",
+      "lessThanPercent": "vähennä sisennystä () tai {} lohkolle (kursori sulkeella)"
     }
   },
   "exiting": {
