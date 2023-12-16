@@ -272,13 +272,13 @@
     }
   },
   "searchMultipleFiles": {
-    "title": "Search in multiple files",
+    "title": "Etsi useasta tiedostosta",
     "commands": {
-      "colonvimgrep": "search for pattern in multiple files",
-      "coloncn": "jump to the next match",
-      "coloncp": "jump to the previous match",
-      "coloncopen": "open a window containing the list of matches",
-      "coloncclose": "close the quickfix window"
+      "colonvimgrep": "etsi kaavaa useasta tiedostosta",
+      "coloncn": "hyppää seuraavaan osumaan",
+      "coloncp": "hyppää edelliseen osumaan",
+      "coloncopen": "avaa ikkuna nähdäksesi listan osumista",
+      "coloncclose": "sulje quickfix ikkuna"
     }
   },
   "workingWithMultipleFiles": {
