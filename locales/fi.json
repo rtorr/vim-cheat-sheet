@@ -222,11 +222,11 @@
       "gNotPatternD": "poista kaikki rivit, joilla kaava ei esiinny"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "Voit myös käyttää seuraavia merkkejä määritelläksesi alueen:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "Nykyiseltä riviltä tiedoston loppuun",
+        "dotCommaOneD": "Nykyiseltä riviltä tiedoston alkuun",
+        "tenCommaDollarD": "Kymmenenneltä rivilä tiedoston alkuun"
       }
     }
   },
