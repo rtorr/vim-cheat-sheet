@@ -305,10 +305,10 @@
       "ctrlPluswl": "siirrä kursori oikeaan ikkunaan (vertikaalisessa jaossa)",
       "ctrlPluswj": "siirrä kursori alempaan ikkunaan (horisontaalisessa jaossa)",
       "ctrlPluswk": "siirrä kursori ylempään ikkunaan (horisontaalisessa jaossa)",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+      "ctrlPluswH": "tee nykyisestä ikkunasta koko terminaali-ikkunan korkuinen vasempaan reunaan (vasemmanpuoleisin pystyikkuna)",
+      "ctrlPluswL": "tee nykyisestä ikkunasta koko terminaali-ikkunan korkuinen oikeaan reunaan (oikeanpuoleisin pystyikkuna)",
+      "ctrlPluswJ": "tee nykyisestä ikkunasta koko terminaali-ikkunan levyinen alas (alin vaakaikkuna)",
+      "ctrlPluswK": "tee nykyisestä ikkunasta koko terminaali-ikkunan levyinen ylös (ylin vaakaikkuna)"
     }
   },
   "tabs": {
@@ -328,11 +328,11 @@
   "diff": {
     "title": "Diff",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
+      "zf": "määrittele taitos manuaalisesti seuraavaan liikkeeseen asti",
+      "zd": "poista kursorin alla oleva taitos",
+      "za": "avaa tai sulje kursorin alla oleva taitos",
+      "zo": "avaa kursorin alla oleva taitos",
+      "zc": "sulje kursorin alla oleva taitos",
       "zr": "reduce (open) all folds by one level",
       "zm": "fold more (close) all folds by one level",
       "zi": "toggle folding functionality",
