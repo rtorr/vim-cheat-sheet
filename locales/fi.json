@@ -333,19 +333,19 @@
       "za": "avaa tai sulje kursorin alla oleva taitos",
       "zo": "avaa kursorin alla oleva taitos",
       "zc": "sulje kursorin alla oleva taitos",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zr": "avaa kaikkia taitoksia yhdellä tasolla",
+      "zm": "sulje kaikki taitoksia yhdellä tasolla",
+      "zi": "vaihda taitto ominaisuus päälle tai pois",
+      "closeSquarec": "hyppää seuraavan muutoksen alkuun",
+      "openSquarec": "hyppää edellisen muutoksen alkuun",
+      "do": "hae erot (toisesta bufferista)",
+      "dp": "laita erot (toiseen bufferiin)",
+      "colonDiffthis": "ota nykyinen ikkuna mukaan diffiin",
+      "colonDiffupdate": "päivitä erot",
+      "colonDiffoff": "sulje diff-tila nykyisestä ikkunasta"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "Taitos komennot (esim. <kbd>za</kbd>) toimivat yhdellä tasolla. Kaikilla tasoilla toimiaksesi, käytä isoja kirjaimia (esim. <kbd>zA</kbd>.",
+    "tip2": "Katsoaksesi eroja tiedostojen välillä, voit käynnistää Vim:in diff tilassa <kbd>vimdiff</kbd> terminaalista. Tämän asettaa <kbd>git difftool</kbd>:ksi."
   },
   "words": {
     "keyword": "avainsana",
