@@ -1,20 +1,20 @@
 {
   "name": "vim-express",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "postinstall": "node ./postinstall.js"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "deepmerge": "^4.2.2",
+    "cookie-parser": "~1.4.6",
+    "debug": "~4.3.4",
+    "deepmerge": "^4.3.1",
     "express": "~4.18.2",
-    "express-hbs": "^2.3.4",
-    "hbs": "^4.1.1",
-    "http-errors": "~1.6.3",
-    "i18n": "^0.8.4",
-    "morgan": "~1.9.1"
+    "express-hbs": "^2.5.0",
+    "hbs": "^4.2.0",
+    "http-errors": "~2.0.0",
+    "i18n": "^0.15.1",
+    "morgan": "~1.10.0"
   }
 }

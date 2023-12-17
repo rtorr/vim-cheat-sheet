@@ -243,8 +243,8 @@
       "=iB": "rykk inn indre blokk på nytt med {}",
       "gg=G": "innrykk hele bufferen på nytt",
       "closeSquarep": "lim inn og juster innrykk til gjeldende linje",
-      "=Prosent": "sett inn en blokk på nytt med () eller {} (markør på klammeparentes)",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)",
+      "=Prosent": "sett inn en blokk på nytt med () eller {} (markør på klammeparentes)"
     }
   },
   "exiting": {

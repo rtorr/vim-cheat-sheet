@@ -216,7 +216,18 @@
       "diw": "smazat (vyjmout) slovo pod kurzorem",
       "daw": "smazat (vyjmout) slovo pod kurzorem a mezeru za ním nebo před ním",
       "dDollar": "smazat (vyjmout) na konec řádku",
-      "x": "smazat (vyjmout) znak"
+      "x": "smazat (vyjmout) znak",
+      "threeToFiveD": "delete lines starting from 3 to 5",
+      "gPatternD": "delete all lines containing pattern",
+      "gNotPatternD": "delete all lines not containing pattern"
+    },
+    "tip1": {
+      "title": "You can also use the following characters to specify the range:",
+      "commands": {
+        "dotCommaDollarD": "From the current line to the end of the file",
+        "dotCommaOneD": "From the current line to the beginning of the file",
+        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+      }
     }
   },
   "indentText": {
@@ -231,7 +242,8 @@
       "=Percent": "znovu odsadit blok s () nebo {} (kurzor na závorce)",
       "=iB": "znovu odsadit vnitřní blok s {}",
       "gg=G": "znovu odsadit celou vyrovnávací paměť",
-      "closeSquarep": "vložit a upravit odsazení aktuálního řádku"
+      "closeSquarep": "vložit a upravit odsazení aktuálního řádku",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
   "exiting": {
