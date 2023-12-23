@@ -1,0 +1,359 @@
+{
+  "title": "Suomi",
+  "lang": "fi",
+  "lang_tag": "fi",
+  "cursorMovement": {
+    "title": "Kursorin liike",
+    "commands": {
+      "h": "siirrä kursori vasemmalle",
+      "j": "siirrä kursori alas",
+      "k": "siirrä kursori ylös",
+      "l": "siirrä kursori oikealle",
+      "gj": "siirrä kursori alas (monirivinen teksti)",
+      "gk": "siirrä kursori ylös (monirivinen teksti)",
+      "w": "hyppää eteenpäin sanan alkuun",
+      "W": "hyppää eteenpäin sanan alkuun (sanat voivat sisältää välimerkkejä)",
+      "e": "hyppää eteenpäin sanan loppuun",
+      "E": "hyppää eteenpäin sanan loppuun (sanat voivat sisältää välimerkkejä)",
+      "b": "hyppää taaksepäin sanan alkuun",
+      "B": "hyppää taaksepäin sanan alkuun (sanat voivat sisältää välimerkkejä)",
+      "ge": "hyppää taaksepäin sanan loppuun",
+      "gE": "hyppää taaksepäin sanan loppuun (sanat voivat sisältää välimerkkejä)",
+      "H": "siirry näytön yläosaan",
+      "M": "siirry näytön keskelle",
+      "L": "siirry näytön alaosaan",
+      "zero": "hyppää rivin alkuun",
+      "caret": "hyppää rivin ensimmäiseen ei-tyhjään merkkiin",
+      "dollar": "hyppää rivin loppuun",
+      "g_": "hyppää rivin viimeiseen ei-tyhjään merkkiin",
+      "gg": "mene tiedoston ensimmäiselle riville",
+      "G": "mene tiedoston viimeiselle riville",
+      "fiveG": "mene riville 5",
+      "gd": "mene paikalliseen määrittelyyn",
+      "gD": "mene globaaliin määrittelyyn",
+      "fx": "hyppää seuraavaan merkin x esiintymään",
+      "tx": "hyppää merkin x seuraavaa esiintymää edeltävään merkkiin",
+      "Fx": "hyppää edelliseen merkin x esiintymään",
+      "Tx": "hyppää merkin x edellistä esiintymää seuraavaan merkkiin",
+      "semicolon": "toista edellinen f, t, F tai T liike",
+      "comma": "toista edellinen f, t, F tai T liike, takaperin",
+      "closeCurlyBrace": "hyppää seuraavaan kappaleeseen (tai funktioon/lohkoon koodia editoidessa))",
+      "openCurlyBrace": "hyppää edelliseen kappaleeseen (tai funktioon/lohkoon koodia editoidessa))",
+      "centerCursor": "keskitä näyttö kursoriin",
+      "topCursor": "sijoita kursori sivun yläosaan",
+      "bottomCursor": "sijoita kursori sivun alaosaan",
+      "CtrlPluse": "liikuta näyttöä yksi rivi alas (ilman että kursori liikkuu)",
+      "CtrlPlusy": "liikuta näyttöä yksi rivi ylös (ilman että kursori liikkuu)",
+      "CtrlPlusb": "siirrä näyttöä yksi sivu ylös (kursori viimeiselle riville)",
+      "CtrlPlusf": "siirrä näyttöä yksi sivu alas (kursori ensimmäiselle riville)",
+      "CtrlPlusu": "siirrä kursoria ja näyttöä 1/2 sivu ylös",
+      "CtrlPlusd": "siirrä kursoria ja näyttöä 1/2 sivu alas",
+      "percent": "siirrä kursori merkin pariin (oletuksena tuetut parit: '()', '{}', '[]' - aja <code>:h matchpairs</code> vim:issä saadaksesi lisää tietoa)"
+    },
+    "tip": "Anna kursorin liike komentoa ennen numero toistaaksesi sen useasti. Esimerkiksi, <kbd>4j</kbd> siirtyy alas 4 riviä."
+  },
+  "insertMode": {
+    "title": "Syöttötila - tekstin syöttäminen/lisääminen",
+    "commands": {
+      "i": "syötä kursorin eteen",
+      "I": "syötä rivin alkuun",
+      "a": "syötä (lisää) kursorin jälkeen",
+      "A": "syötä (lisää) rivin loppuun",
+      "o": "lisää (avaa) uusi rivi nykyisen rivin alle",
+      "O": "lisää (avaa) uusi rivi nykyisen rivin yläpuolelle",
+      "ea": "syötä (lisää) sanan loppuun",
+      "ctrlPlush": "poista kursoria edeltävä merkki syöttytilassa ollessa",
+      "ctrlPlusw": "poista kursoria edeltävä sana syöttötilassa ollessa",
+      "ctrlPlusj": "lisää rivinvaihto kursin sijaintiin syöttytilassa ollessa",
+      "ctrlPlust": "sisennä (siirrä oikealle) yhdellä shiftwidth-arvolla syöttytilassa ollessa",
+      "ctrlPlusd": "vähennä sisennystä (siirrä vasemmalle) yhdellä shiftwidth-arvolla syöttyötilassa ollessa",
+      "ctrlPlusn": "syötä (täydennä automaattisesti) seuraava osuma ennen kursoria syöttötilassa ollessa",
+      "ctrlPlusp": "syötä (täydennä automaattisesti) edellinen osuma ennen kursoria syöttötilassa ollessa",
+      "ctrlPlusrx": "syötä rekisterin x sisältö",
+      "ctrlPlusox": "Siirry väliaikaisesti normaalitilaan ja syötä yksi normaalin tilan komento x.",
+      "Esc": "poistu syöttötilasta"
+    }
+  },
+  "editing": {
+    "title": "Muokkaaminen",
+    "commands": {
+      "r": "korvaa yksi merkki.",
+      "R": "korvaa useampi kuin yksi merkki, kunnes <kbd>ESC</kbd> on painettu.",
+      "J": "liitä alla oleva rivi nykyiseen välilyönnillä",
+      "gJ": "liitä alla oleva rivi nykyiseen ilman välilyöntiä",
+      "gwip": "formatoi kappale",
+      "gTilde": "muuta kirjaimien koko liikkeen loppuun asti",
+      "gu": "muuta pieniksi kirjaimiksi liikkeen loppuun asti",
+      "gU": "muuta isoiksi kirjaimiksi liikeen loppuun asti",
+      "cc": "muuta (korvaa) koko rivi",
+      "cDollar": "muuta (korvaa) rivin loppun asti",
+      "ciw": "muuta (korvaa) koko sana",
+      "cw": "muuta (korvaa) sanan loppuun asti",
+      "s": "poista merkki ja korvaa tekstillä",
+      "S": "poista rivi ja kovaa tekstillä (sama kuin cc)",
+      "xp": "vaihda kahden kirjaimen paikkaa (leikkaa ja liitä)",
+      "u": "peru",
+      "U": "palauta (peru) viimeksi muutettu rivi",
+      "CtrlPlusr": "tee uudelleen",
+      "dot": "toista viimeisin komento"
+    }
+  },
+  "markingText": {
+    "title": "Tekstin merkintä (visuaalinen tila)",
+    "commands": {
+      "v": "käynnistä visuaalinen tila, merkitse alue, sitten aja komento (esim. y-nykäise)",
+      "V": "käynnistä rivikohtainen visuaalinen tila",
+      "o": "siirry merkityn alueen toiseen päähän",
+      "CtrlPlusv": "käynnistä lohkokohtainen visuaalinen tila",
+      "O": "siirry lohkon toiseen kulmaan",
+      "aw": "merkitse sana",
+      "ab": "merkitse () lohko",
+      "aB": "merkitse {} lohko",
+      "at": "merkitse <> lohko",
+      "ib": "merkitse () sisempi lohko",
+      "iB": "merkitse {} sisempi lohko",
+      "it": "merkitse <> sisempi lohko",
+      "Esc": "poistu visuaalisesta tilasta"
+    },
+    "tip1": "<kbd>b</kbd>:n tai <kbd>B</kbd>:n sijasta voit myös käyttää <kbd>(</kbd>:a tai <kbd>{</kbd>:a."
+  },
+  "visualCommands": {
+    "title": "Visuaaliset komennot",
+    "commands": {
+      "greaterThan": "siirrä tekstiä oikealle",
+      "lessThan": "siirrä tekstiä vasemmalle",
+      "y": "nykäise (kopioi) merkitty teksti",
+      "d": "poista merkitty teksti",
+      "tilde": "vaihda kirjaimien koko",
+      "u": "muuta merkityn tekstin kirjaimet pieneksi",
+      "U": "muuta merkityn tekstin kirjaimet isoiksi"
+    }
+  },
+  "registers": {
+    "title": "Rekisterit",
+    "commands": {
+      "show": "näytä rekisterien sisältö",
+      "pasteRegisterX": "liitä rekisterin x sisältö",
+      "yankIntoRegisterX": "nykäisen rekisteriin x",
+      "quotePlusy": "nykäisen järjestelmän leikepöydän rekisteriin",
+      "quotePlusp": "liitä järjestelmän leikepöydän rekisteristä"
+    },
+    "tip1": "Rekisterit ovat tallessa ~/.viminfo-tiedostossa ja ladataan uudestaan seuraavan käynnistyksen yhteydessä.",
+    "tip2": {
+      "0": "viimeisin nykäsy",
+      "title": "Erikois rekisterit:",
+      "quote": "nimeämätön rekisteri, viimeisin poisto tai nykäsy",
+      "percent": "nykyisen tiedoston nimi",
+      "hashtag": "vaihtoehtoinen tiedoston nimi",
+      "asterisk": "leikepöydän sisältö (X11 ensisijainen)",
+      "plus": "leikepöydän sisältö (X11 leikepöytä)",
+      "slash": "viimeisin haku kaava",
+      "colon": "viimeisin komento",
+      "dot": "viimeisin syötetty teksti",
+      "minus": "viimeisin pieni (alle rivin) poisto",
+      "equal": "yhtälö rekisteri",
+      "underscore": "musta aukko rekisteri"
+    }
+  },
+  "marks": {
+    "title": "Merkit ja sijainnit",
+    "commands": {
+      "list": "lista merkeistä",
+      "currentPositionA": "aseta nykyisen sijainti merkkiin A",
+      "jumpPositionA": "hyppää merkin A sijantiin",
+      "yankToMarkA": "nykäise teksti merkin A sijaintiin asti",
+      "backtick0": "mene sijaintiin, jossa Vim edellisen kerran suljettiin",
+      "backtickQuote": "mene sijaintiin, jossa viimeksi lähdit tiedostosta",
+      "backtickDot": "mene sijaintiin, jossa viimeisin muutos tehtiin tähän tiedostoon",
+      "backtickBacktick": "mene edellistä hyppyä edeltävään sijaintiin",
+      "colonjumps": "listaa hypyt",
+      "ctrlPlusi": "mene uusimpaan sijaintiin hyppy listalla",
+      "ctrlPluso": "mene vanhempaan sijantiin hyppy listalla",
+      "colonchanges": "muutoslista",
+      "gcomma": "mene uudempaan sijantiin muutoslistalla",
+      "gsemicolon": "mene vanhempaan sijaintiin muutoslistalla",
+      "ctrlPlusCloseSquare": "hyppää kursorin alla olevaan tägiin"
+    },
+    "tip1": "Voit käyttää backtick- (<kbd>`</kbd>) tai heittomerkkiä (<kbd>'</kbd>) hypätäksesi merkkiin. Heittomerkki hyppää merkin sisältämän rivin alkuun (ensimmäinen ei-tyhjä merkki).",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Makrot",
+    "commands": {
+      "recordA": "tallenna makro a",
+      "stopRecording": "lopeta makron tallennus",
+      "runA": "aja makro a",
+      "rerun": "aja viimeisin makro uudelleen"
+    }
+  },
+  "global": {
+    "title": "Yleiset",
+    "commands": {
+      "helpForKeyword": "näytä apu avainsanalle",
+      "saveAsFile": "tallenna nimellä",
+      "closePane": "sulje nykyinen paneeeli",
+      "K": "avaa man-sivu kursorin alla olevalle sanalle",
+      "colonTerminal": "avaa terminaali ikkuna"
+    },
+    "tip1": "Aja <kbd>vimtutor</kbd> terminaalissa oppiaksesti ensimmäiset Vim komennot."
+  },
+  "cutAndPaste": {
+    "title": "Leikkaa ja liitä",
+    "commands": {
+      "yy": "nykäise (kopioi) rivi",
+      "twoyy": "nykäise (kopioi) 2 riviä",
+      "yw": "nykäise (kopioi) sanan merkit kursorin tämän hetkisestä sijainnista seuraavan sanan alkuun",
+      "yiw": "nykäise (kopioi) kursorin alla oleva sana",
+      "yaw": "nykäise (kopioi) kursorin alla oleva sana ja väliluönnit sen edessä ja takana",
+      "yDollar": "nykäise (kopioi) rivin loppuun",
+      "p": "laita (liitä) kursorin jälkeen",
+      "P": "laita (liitä) kursoria ennen",
+      "gp": "laita (liitä) kursorin jälkeen ja jätä kursori uuden tekstin perään",
+      "gP": "laita (liitä) kursorin eteen ja jätä kursori uuden tekstin perään",
+      "dd": "poista (leikkaa) rivi",
+      "twodd": "poista (leikkaa) 2 riviä",
+      "dw": "poista (leikkaa) sanan merkit kursorin sijainnista seuraavan sanan alkuun",
+      "diw": "poista (leikkaa) kursorin alla oleva sana",
+      "daw": "poista (leikkaa) kursoin alla oleva sana ja välilyönti sen edestä tai takaa",
+      "dDollar": "poista (leikkaa) rivin loppuun asti",
+      "x": "poista (leikkaa) merkki",
+      "threeToFiveD": "poista rivit kolme - viisi",
+      "gPatternD": "poista kaikki rivit, joissa kaava esiintyy",
+      "gNotPatternD": "poista kaikki rivit, joilla kaava ei esiinny"
+    },
+    "tip1": {
+      "title": "Voit myös käyttää seuraavia merkkejä määritelläksesi alueen:",
+      "commands": {
+        "dotCommaDollarD": "Nykyiseltä riviltä tiedoston loppuun",
+        "dotCommaOneD": "Nykyiseltä riviltä tiedoston alkuun",
+        "tenCommaDollarD": "Kymmenenneltä rivilä tiedoston alkuun"
+      }
+    }
+  },
+  "indentText": {
+    "title": "Tekstin sisennys",
+    "commands": {
+      "greaterThanGreaterThan": "sisennä (siirrä oikealle) yhdellä shiftwidth-arvolla",
+      "lessThanLessThan": "vähennä sisennystä (siirrä vasemmalle) yhdellä shiftwidth-arvolla",
+      "greaterThanPercent": "sisennä () tai {} lohko (kursori sulkeella)",
+      "greaterThanib": "sisennä sisempi () lohko",
+      "greaterThanat": "sisennä lohko <> tägeillä",
+      "3==": "uudelleen sisennä kolme riviä",
+      "=Percent": "uudelleen sisennä () tai {} lohko (kursori sulkeella)",
+      "=iB": "uudelleen sisennä sisempi {} lohko",
+      "gg=G": "uudelleen sisennä koko bufferi",
+      "closeSquarep": "liitä ja muokkaa sisennystä nykyiselle riville",
+      "lessThanPercent": "vähennä sisennystä () tai {} lohkolle (kursori sulkeella)"
+    }
+  },
+  "exiting": {
+    "title": "Poistuminen",
+    "commands": {
+      "colonw": "kirjoita (tallenna) tiedosto, mutta älä poistu",
+      "colonwsudo": "kirjoite tiedosto sudolla",
+      "colonwq": "kirjoita (tallenna) ja poistu",
+      "colonx": "kirjoita (tallenna) ja poistu",
+      "colonq": "poistu (epäonnistuu, jos tiedostossa on tallentamattomia muutoksia)",
+      "colonqbang": "poiustu ja hylkää tallentamattomat muutokset",
+      "colonwqa": "kirjoita (tallenna) ja poistu kaikista välilehdistä"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Etsi ja korvaa",
+    "commands": {
+      "forwardSlashPattern": "etsi kaavaa",
+      "questionMarkPattern": "etsi kaavaa taaksepäin",
+      "backslashVpattern": "'very magic' kaava: ei-alfanumeeriset merkit tulkitaan regex-symboleina (ei tarvetta escapelle)",
+      "n": "toista haku samaan suuntaan",
+      "N": "toista haku toiseen suuntaan",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "korvaa kaikki old → new koko tiedostossa",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "korvaa kaikki old → new koko tiedostossa varmistuksella",
+      "colonnoh": "poista korostus haku osumista"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Etsi useasta tiedostosta",
+    "commands": {
+      "colonvimgrep": "etsi kaavaa useasta tiedostosta",
+      "coloncn": "hyppää seuraavaan osumaan",
+      "coloncp": "hyppää edelliseen osumaan",
+      "coloncopen": "avaa ikkuna nähdäksesi listan osumista",
+      "coloncclose": "sulje quickfix ikkuna"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Usean tiedoston työstäminen",
+    "commands": {
+      "colone": "muokkaa tiedostoa uudessa bufferissa",
+      "colonbnext": "mene seuraavaan bufferiin",
+      "colonbprev": "mene edelliseen bufferiin",
+      "colonls": "listaa kaikki avoimet bufferit",
+      "colonbd": "poista bufferi (sulje tiedosto)",
+      "colonbnumber": "mene bufferiin numero #",
+      "colonbfile": "mene bufferiin tiedostonimellä",
+      "colonsp": "avaa tiedosto uudessa bufferissa ja jaa ikkuna",
+      "colonvsp": "avaa tiedosto uudessa bufferissa ja jaa ikkuna vertikaalisesti",
+      "colonvertba": "muokkaa kaikkia buffereita vertikaalisina ikkunoina",
+      "colontabba": "muokkaa kaikki buffereita välilehtinä",
+      "ctrlPlusws": "jaa ikkuna",
+      "ctrlPluswv": "jaa ikkuna vertikaalisesti",
+      "ctrlPlusww": "vaihda ikkunaa",
+      "ctrlPluswq": "sulje ikkuna",
+      "ctrlPluswx": "vaihda nykyinen ikkuna seuraavan kanssa",
+      "ctrlPlusw=": "tee kaikista ikkunoista yhtä korkeita ja leveitä",
+      "ctrlPluswh": "siirrä kursori vasempaan ikkunaan (vertikaalisessa jaossa)",
+      "ctrlPluswl": "siirrä kursori oikeaan ikkunaan (vertikaalisessa jaossa)",
+      "ctrlPluswj": "siirrä kursori alempaan ikkunaan (horisontaalisessa jaossa)",
+      "ctrlPluswk": "siirrä kursori ylempään ikkunaan (horisontaalisessa jaossa)",
+      "ctrlPluswH": "tee nykyisestä ikkunasta koko terminaali-ikkunan korkuinen vasempaan reunaan (vasemmanpuoleisin pystyikkuna)",
+      "ctrlPluswL": "tee nykyisestä ikkunasta koko terminaali-ikkunan korkuinen oikeaan reunaan (oikeanpuoleisin pystyikkuna)",
+      "ctrlPluswJ": "tee nykyisestä ikkunasta koko terminaali-ikkunan levyinen alas (alin vaakaikkuna)",
+      "ctrlPluswK": "tee nykyisestä ikkunasta koko terminaali-ikkunan levyinen ylös (ylin vaakaikkuna)"
+    }
+  },
+  "tabs": {
+    "title": "Välilehdet",
+    "commands": {
+      "colonTabNew": "avaa tiedosto uudessa välilehdessä",
+      "ctrlPluswT": "siirrä nykyinen jaettu ikkuna omaan välilehteen",
+      "gt": "siirry seuraavaan välilehteen",
+      "gT": "siirry edelliseen välilehteen",
+      "hashgt": "siirry välilehteen numero #",
+      "colontabmove": "siirrä nykyinen välilehti #:teen sijaintiin (alkaen nollasta)",
+      "colontabc": "sulje nykyinen välilehti ja sen kaikki ikkunat",
+      "colontabo": "sulje kaikki muut paitsi nykyinen välilehti",
+      "colontabdo": "aja <code>komento</code> kaikissa välilehdissä (esim. <code>:tabdo q</code> - sulkee kaikki avatut välilehdet)"
+    }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "määrittele taitos manuaalisesti seuraavaan liikkeeseen asti",
+      "zd": "poista kursorin alla oleva taitos",
+      "za": "avaa tai sulje kursorin alla oleva taitos",
+      "zo": "avaa kursorin alla oleva taitos",
+      "zc": "sulje kursorin alla oleva taitos",
+      "zr": "avaa kaikkia taitoksia yhdellä tasolla",
+      "zm": "sulje kaikki taitoksia yhdellä tasolla",
+      "zi": "vaihda taitto ominaisuus päälle tai pois",
+      "closeSquarec": "hyppää seuraavan muutoksen alkuun",
+      "openSquarec": "hyppää edellisen muutoksen alkuun",
+      "do": "hae erot (toisesta bufferista)",
+      "dp": "laita erot (toiseen bufferiin)",
+      "colonDiffthis": "ota nykyinen ikkuna mukaan diffiin",
+      "colonDiffupdate": "päivitä erot",
+      "colonDiffoff": "sulje diff-tila nykyisestä ikkunasta"
+    },
+    "tip1": "Taitos komennot (esim. <kbd>za</kbd>) toimivat yhdellä tasolla. Kaikilla tasoilla toimiaksesi, käytä isoja kirjaimia (esim. <kbd>zA</kbd>.",
+    "tip2": "Katsoaksesi eroja tiedostojen välillä, voit käynnistää Vim:in diff tilassa <kbd>vimdiff</kbd> terminaalista. Tämän asettaa <kbd>git difftool</kbd>:ksi."
+  },
+  "words": {
+    "keyword": "avainsana",
+    "file": "tiedosto",
+    "movement": "liike"
+  },
+  "languages": {
+    "title": "Kielet"
+  },
+  "footer": "Tutstu lähdekoodiin:"
+}
