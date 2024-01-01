@@ -48,7 +48,7 @@
       "CtrlPlusf": "向下滚动一屏",
       "CtrlPlusu": "向上滚动半屏",
       "CtrlPlusd": "向下滚动半屏",
-      "percent": "跳转到配对的符号(默认支持的配对符号组:: '()', '{}', '[]' - 在vim中使用 <code>:h matchpairs</code> 获得更多信息)"
+      "percent": "跳转到配对的符号(默认支持的配对符号组: '()', '{}', '[]' - 在vim中使用 <code>:h matchpairs</code> 获得更多信息)"
     },
     "tip": "命令前追加数字表示命令的重复次数, 比如 <kbd>4j</kbd> 表示向下移动四行"
   },
@@ -218,16 +218,16 @@
       "daw": "删除光标处的单词及其前后的空格",
       "dDollar": "剪切, 从光标位置到行末 (同 D )",
       "x": "剪切当前字符",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "threeToFiveD": "删除 3 至 5 行",
+      "gPatternD": "删除所有包含 pattern 的行",
+      "gNotPatternD": "删除所有不包含 pattern 的行"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "你也可以使用以下字符来指定范围：",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "从当前行到文件末尾",
+        "dotCommaOneD": "从当前行到文件开头",
+        "tenCommaDollarD": "第 10 行到文件末尾"
       }
     }
   },
@@ -244,7 +244,7 @@
       "=iB": "自动缩进 {} 内的区域 (光标需置于括号上)",
       "gg=G": "自动缩进整个缓冲区",
       "closeSquarep": "粘贴并调整缩进至当前行",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "lessThanPercent": "向左缩进 () 或 {} 内的区域 (光标需置于括号上)"
     }
   },
   "exiting": {
