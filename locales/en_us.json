@@ -89,7 +89,7 @@
       "cDollar": "change (replace) to the end of the line",
       "ciw": "change (replace) entire word",
       "cw": "change (replace) to the end of the word",
-      "s": "delete character and substitute text",
+      "s": "delete character and substitute text (same as cl)",
       "S": "delete line and substitute text (same as cc)",
       "xp": "transpose two letters (delete and paste)",
       "u": "undo",
