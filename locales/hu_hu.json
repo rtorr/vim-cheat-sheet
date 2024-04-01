@@ -219,7 +219,7 @@
       "dDollar": "a kurzor helyzetétől a sor végéig tartó szöveg törlése",
       "x": "karakter törlése",
       "threeToFiveD": "3-tól 5-ig terjedő sorok törlése",
-      "gPatternD": "a mintát tartalmazó összes sor törlése",
+      "gPatternD": "összes sor törlése, ami illeszkedik a mintára",
       "gNotPatternD": "nem tartalmaz mintát az összes sor törlése"
     },
     "tip1": {
@@ -238,239 +238,130 @@
       "lessThanLessThan": "egy sor behúzása egy tabulálás mérettel balra",
       "greaterThanPercent": "blokk behúzása () vagy {} címkékkel (kurzor a kapcsos zárójel fölött)",
       "greaterThanib": "belső blokk behúzása ()-al",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)",
       "greaterThaniB": "belső blokk behúzása {}-al",
       "equals": "blokk újraformázása (egyenlővé tétele)",
       "1equals": "1. szintű behúzás (minden szinten egy tabulálás)",
-      "equals": "blokk újraformázása (egyenlővé tétele)",
       "equals1": "1. szintű behúzás (minden szinten egy tabulálás)",
       "equals2": "2. szintű behúzás (minden szinten két tabulálás)"
     },
     "tip": ""
   },
-  "undoAndRedo": {
-    "title": "Visszavonás és újra",
+  "exiting": {
+    "title": "Kilépés",
     "commands": {
-      "u": "visszavonás",
-      "CtrlPlusr": "újra",
-      "uTwice": "két lépésnyi visszavonás",
-      "CtrlPlusrTwice": "két lépésnyi újra",
-      "U": "sor visszavonása",
-      "gU": "sor visszaállítása"
+      "colonw": "mentés",
+      "colonwsudo": "write out the current file using sudo",
+      "colonwq": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
+      "colonx": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
+      "colonq": "ablak bezárása (kilépés, ha nincs további ablak)",
+      "colonqbang": "ablak bezárása mentés nélkül (kilépés, ha nincs további ablak)",
+      "colonqbang": "összes ablak bezárása mentés nélkül és kilépés",
+      "colonwqa": "összes ablak mentése és kilépés"
     }
   },
   "searchAndReplace": {
     "title": "Keresés és csere",
     "commands": {
-      "slash": "keresés előre",
-      "questionMark": "keresés hátra",
+      "forwardSlashPattern": "keresés előre",
+      "questionMarkPattern": "keresés hátra",
+      "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
       "n": "következő találat",
       "N": "előző találat",
-      "star": "aktuális szó keresése",
-      "hash": "aktuális szó hátrafele keresése",
-      ":%s": "aktuális sorban keresés és csere",
-      ":n,%s": "aktuális sornál kezdve következő találat keresése és csere",
-      ":n,m%s": "n. sor és m. sor között keresés és csere",
-      ":n,$%s": "n. sortól a fájl végéig keresés és csere"
-    },
-    "tip1": "A keresési minta sor végén lévő <kbd>/</kbd> vagy <kbd>?</kbd> karakterrel is megegyezhet.",
-    "tip2": "A <kbd>%</kbd> a fájl teljes tartalmát jelenti."
-  },
-  "searchAndReplaceGlobal": {
-    "title": "Globális keresés és csere",
-    "commands": {
-      ":g/pattern/d": "összes sor törlése, ami illeszkedik a mintára",
-      ":g/pattern/normalCommand": "minden találatra futtat egy normál módban végrehajtható parancsot"
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "aktuális sorban keresés és csere",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "replace all old with new throughout file with confirmations",
+      "colonnoh": "remove highlighting of search matches"
     }
   },
   "searchMultipleFiles": {
     "title": "Több fájl keresése",
     "commands": {
-      ":args": "fájlok listájának megjelenítése",
-      ":args *.txt": "összes .txt kiterjesztésű fájl hozzáadása a listához",
-      ":argdo %s/pattern/replace/gc": "a minta minden találatának cseréje minden fájlban"
+      "colonvimgrep": "search for pattern in multiple files",
+      "coloncn": "jump to the next match",
+      "coloncp": "jump to the previous match",
+      "coloncopen": "open a window containing the list of matches",
+      "coloncclose": "close the quickfix window"
     }
   },
-  "tabsAndWindows": {
-    "title": "Tabok és ablakok",
+  "workingWithMultipleFiles": {
+    "title": "Working with multiple files",
     "commands": {
-      "tabnew": "új lap hozzáadása",
-      "tabnext": "következő lapra váltás",
-      "tabprevious": "előző lapra váltás",
-      "tabclose": "aktuális lap bezárása",
-      "tabonly": "bezárt lapok újranyitása (kivéve az aktuálisat)",
-      "vsp": "vertikális szétválasztás (új ablak a jelenlegi mellett)",
-      "sp": "horizontális szétválasztás (új ablak a jelenlegi alatt)",
-      "CtrlPlusww": "ablakok közötti váltás",
-      "CtrlPluswArrow": "ablakok közötti váltás kurzormozgással",
-      "CtrlPluswT": "ablak átrendezése új lapként",
-      "CtrlPluswH": "ablak átrendezése balra",
-      "CtrlPluswL": "ablak átrendezése jobbra",
-      "CtrlPluswJ": "ablak átrendezése lefelé",
-      "CtrlPluswK": "ablak átrendezése felfelé",
-      "CtrlPluswEqual": "ablakok méretének kiegyenlítése",
-      "CtrlPluswBar": "ablakok elrendezése vízszintesen",
-      "CtrlPluswPlus": "ablakok elrendezése függőlegesen"
+      "colone": "megnyitás egy fájlra egy új pufferben",
+      "colonbnext": "következő pufferre váltás",
+      "colonbprev": "előző pufferre váltás",
+      "colonls": "pufferek listájának megjelenítése",
+      "colonbd": "aktuális puffer bezárása",
+      "colonbnumber": "go to a buffer by index #",
+      "colonbfile": "go to a buffer by file",
+      "colonsp": "horizontális szétválasztás (új ablak a jelenlegi alatt)",
+      "colonvsp": "vertikális szétválasztás (új ablak a jelenlegi mellett)",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
+      "ctrlPlusws": "split window",
+      "ctrlPluswv": "split window vertically",
+      "ctrlPlusww": "ablakok közötti váltás",
+      "ctrlPluswq": "quit a window",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "ablakok méretének kiegyenlítése",
+      "ctrlPluswh": "move cursor to the left window (vertical split)",
+      "ctrlPluswl": "move cursor to the right window (vertical split)",
+      "ctrlPluswj": "move cursor to the window below (horizontal split)",
+      "ctrlPluswk": "move cursor to the window above (horizontal split)",
+      "ctrlPluswH": "ablak átrendezése balra",
+      "ctrlPluswL": "ablak átrendezése jobbra",
+      "ctrlPluswJ": "ablak átrendezése lefelé",
+      "ctrlPluswK": "ablak átrendezése felfelé"
     }
   },
-  "tabsAndWindowsNavigation": {
-    "title": "Tabok és ablakok navigálása",
+  "tabs": {
+    "title": "Tabok",
     "commands": {
-      "CtrlPluswH": "balra lévő ablakra váltás",
-      "CtrlPluswL": "jobbra lévő ablakra váltás",
-      "CtrlPluswJ": "lefelé lévő ablakra váltás",
-      "CtrlPluswK": "felfelé lévő ablakra váltás",
-      "CtrlPluswT": "aktív ablakra váltás (teljes képernyőre)",
-      "CtrlPluswDot": "ablak bezárása"
+      "colonTabNew": "új lap hozzáadása",
+      "ctrlPluswT": "move the current split window into its own tab",
+      "gt": "következő lapra váltás",
+      "gT": "előző lapra váltás",
+      "hashgt": "move to tab number #",
+      "colontabmove": "move current tab to the #th position (indexed from 0)",
+      "colontabc": "aktuális lap bezárása",
+      "colontabo": "bezárt lapok újranyitása (kivéve az aktuálisat)",
+      "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
     }
   },
-  "scrollingText": {
-    "title": "Szöveg görgetése",
-    "commands": {
-      "CtrlPluse": "egy sorral lefelé görgetés (kurzor mozgatása nélkül)",
-      "CtrlPlusy": "egy sorral felfelé görgetés (kurzor mozgatása nélkül)",
-      "CtrlPlusb": "egy oldallal lefelé görgetés (kurzor az utolsó sorra)",
-      "CtrlPlusf": "egy oldallal felfelé görgetés (kurzor az első sorra)",
-      "CtrlPlusu": "kurzor és képernyő felfelé 1/2 oldallal",
-      "CtrlPlusd": "kurzor és képernyő lefelé 1/2 oldallal"
-    }
-  },
-  "buffers": {
-    "title": "Pufferkezelés",
-    "commands": {
-      ":e file": "megnyitás egy fájlra egy új pufferben",
-      ":bnext (vagy :bn)": "következő pufferre váltás",
-      ":bprev (vagy :bp)": "előző pufferre váltás",
-      ":bd file": "aktuális puffer bezárása (vagy :bp)",
-      ":ls": "pufferek listájának megjelenítése",
-      ":b 2": "a 2. pufferre váltás",
-      ":sb 1": "oldalsó ablakban való váltás a 1. pufferre"
-    }
-  },
-  "tags": {
-    "title": "Címkék és címkék kezelése",
-    "commands": {
-      ":tag functionName": "ugrás a functionName címkéhez",
-      ":tags": "címkék listájának megjelenítése",
-      ":tag /pattern": "ugrás a megfelelő mintájú címkéhez",
-      ":tag CtrlPlusD": "megjeleníti a megfelelő címkék listáját",
-      ":tnext (vagy :tn)": "következő címke szerinti ugrás",
-      ":tprev (vagy :tp)": "előző címke szerinti ugrás",
-      ":tselect": "címke kiválasztása a listából",
-      ":ptnext (vagy :ptn)": "következő tartalmi címke szerinti ugrás",
-      ":ptprev (vagy :ptp)": "előző tartalmi címke szerinti ugrás"
-    }
-  },
-  "foldingText": {
+  "diff": {
     "title": "Szöveg összecsukása",
     "commands": {
       "zf": "kijelölés összecsukása",
+      "zd": "összecsukás törlése",
+      "za": "állapot váltása (összecsukás/kinyitás)",
       "zo": "kijelölés kinyitása",
       "zc": "aktuális összecsukása",
-      "zC": "aktuális összecsukása mind",
       "zr": "kinyitás minden szinten",
       "zm": "összecsukás minden szinten",
-      "za": "állapot váltása (összecsukás/kinyitás)",
-      "zA": "minden állapot váltása",
-      "zd": "összecsukás törlése",
-      "zE": "összecsukás törlése minden szinten",
-      "zfPattern": "sorok összecsukása a megadott minta alapján",
-      "zf/": "sorok összecsukása a megadott minta alapján",
-      "zm": "összecsukás minden szinten",
-      "za": "állapot váltása (összecsukás/kinyitás)",
-      "zA": "minden állapot váltása",
-      "zd": "összecsukás törlése",
-      "zE": "összecsukás törlése minden szinten",
-      "zfPattern": "sorok összecsukása a megadott minta alapján"
-    }
-  },
-  "marksAndMotions": {
-    "title": "Jelölések és mozgások",
-    "commands": {
-      "mLetter": "aktuális pozíció jelölése 'letter' névvel",
-      "'Letter": "az 'letter' névű jelöléshez ugrás",
-      "d'Letter": "az 'letter' névű jelöléshez ugrás és törlés",
-      "``": "visszatérés az előző pozícióhoz",
-      "g'Letter": "az 'letter' névű jelöléshez ugrás (nem változtatja meg az ugrási helyet)",
-      "''": "az előző pozícióhoz való visszatérés (nem változtatja meg az ugrási helyet)",
-      "[[": "ugrás a fájl elejéhez (először nem üres karakter sor)",
-      "]]": "ugrás a fájl végéhez (először nem üres karakter sor)",
-      "[]": "ugrás a blokk elejéhez (először nem üres karakter sor)",
-      "][": "ugrás a blokk végéhez (először nem üres karakter sor)",
-      "[m": "ugrás az előző metódus deklarációjához (először nem üres karakter sor)",
-      "]m": "ugrás a következő metódus deklarációjához (először nem üres karakter sor)",
-      "[{": "ugrás a {} vagy [] blokk elejéhez (először nem üres karakter sor)",
-      "]}": "ugrás a {} vagy [] blokk végéhez (először nem üres karakter sor)"
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
     },
-    "tip1": "Az 'letter' helyére egy tetszőleges betűt (a-tól z-ig) helyezhetsz.",
-    "tip2": "Az 'm', '[', ']', '{', '}' stb. mozgások a blokkok szerkezetét ismerik fel, így a blokk elejéhez vagy végéhez ugranak.",
-    "tip3": "Az '[[', ']]', '[m', stb. mozgások a programozási nyelvekben gyakran használt szerkezeteket ismerik fel, például függvényeket és vezérlési szerkezeteket."
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
   },
-  "commandLine": {
-    "title": "Parancssor",
-    "commands": {
-      ":": "parancssor megnyitása",
-      "q:": "parancsok előzményeinek megjelenítése",
-      "/pattern": "keresés a parancssorban",
-      "?pattern": "keresés hátrafele a parancssorban",
-      "n": "következő találat a parancssor keresésében",
-      "N": "előző találat a parancssor keresésében",
-      ":q": "ablak bezárása",
-      ":q!": "ablak bezárása mentés nélkül",
-      ":w": "mentés",
-      ":wq": "mentés és ablak bezárása",
-      ":x": "mentés és ablak bezárása",
-      ":w file": "mentés más néven",
-      ":e file": "fájl megnyitása",
-      ":sp file": "új ablak megnyitása fájl megnyitásával",
-      ":vsp file": "új függőleges ablak megnyitása fájl megnyitásával",
-      ":tabnew": "új lap megnyitása",
-      ":args": "fájlok listájának megjelenítése",
-      ":args *.txt": "összes .txt kiterjesztésű fájl hozzáadása a listához",
-      ":argdo %s/pattern/replace/gc": "a minta minden találatának cseréje minden fájlban"
-    },
-    "tip": ""
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
   },
-  "autocomplete": {
-    "title": "Automatikus kiegészítés",
-    "commands": {
-      "CtrlPlusn": "következő kiegészítési javaslat kiválasztása",
-      "CtrlPlusp": "előző kiegészítési javaslat kiválasztása",
-      "CtrlPlusx_CtrlPlusf": "fájlnevek kiegészítése",
-      "CtrlPlusx_CtrlPlusl": "sorok kiegészítése",
-      "CtrlPlusx_CtrlPlusv": "változók kiegészítése",
-      "CtrlPlusx_CtrlPlusk": "kulcsszavak kiegészítése",
-      "CtrlPlusx_CtrlPlusn": "kézikönyv oldalak kiegészítése"
-    }
+  "languages": {
+    "title": "Languages"
   },
-  "help": {
-    "title": "Súgó",
-    "commands": {
-      ":help keyword": "súgó megnyitása egy kulcsszóhoz",
-      ":help": "általános súgó megnyitása",
-      "K": "man oldal megnyitása a kurzor alatti szóhoz"
-    }
-  },
-  "exiting": {
-    "title": "Kilépés",
-    "commands": {
-      ":q": "ablak bezárása (kilépés, ha nincs további ablak)",
-      ":q!": "ablak bezárása mentés nélkül (kilépés, ha nincs további ablak)",
-      ":wq": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
-      ":x": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
-      ":wqa": "összes ablak mentése és kilépés",
-      ":qa!": "összes ablak bezárása mentés nélkül és kilépés"
-    }
-  },
-  "references": {
-    "title": "Hivatkozások",
-    "vimOfficialSite": "Vim hivatalos weboldala",
-    "vimDocumentation": "Vim dokumentáció",
-    "vimWiki": "Vim Wiki",
-    "vimReddit": "Vim subreddit",
-    "stackOverflowVim": "Stack Overflow - Vim",
-    "learnVimscriptTheHardWay": "Tanuld meg a Vimscriptet a nehéz úton",
-    "vimgolf": "VimGolf",
-    "useVimAsIDE": "Vim használata fejlesztőkörnyezetként"
-  }
+  "footer": "Checkout the source on",
 }
-
