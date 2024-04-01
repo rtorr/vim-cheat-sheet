@@ -1,6 +1,6 @@
 {
   "title": "Dansk",
-  "lang": "da_DK",
+  "lang": "da_dk",
   "lang_tag": "da",
   "cursorMovement": {
     "title": "Markørbevægelser",
@@ -71,120 +71,26 @@
       "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
       "ctrlPlusrx": "insert the contents of register x",
       "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
-      "Esc": "exit insert mode",
-      "s": "slet karakter under markøren og gå ind i indsætningsmodus",
-      "S": "slet linje og gå ind i indsætningsmodus",
-      "Cx": "slet fra markøren til slutningen af linjen og gå ind i indsætningsmodus",
-      "c": "slet fra markøren til starten af linjen og gå ind i indsætningsmodus",
-      "Cc": "slet hele linjen og gå ind i indsætningsmodus",
-      "C": "slet fra markøren til slutningen af linjen og gå ind i indsætningsmodus",
-      "r": "erstat tegnet under markøren",
-      "gr": "erstat karakter, men ikke træk i en tabulator eller indsæt ekstra mellemrum",
-      "R": "erstat flere tegn fra markøren og til højre"
-    },
-    "cutAndPaste": {
-      "title": "Klip og indsæt",
-      "commands": {
-        "yy": "kopier en linje",
-        "twoyy": "kopier 2 linjer",
-        "yw": "kopier tegnene i ordet fra markørpositionen til begyndelsen af det næste ord",
-        "yiw": "kopier ordet under markøren",
-        "yaw": "kopier ordet under markøren og mellemrummet efter eller før det",
-        "yDollar": "kopier til slutningen af linjen",
-        "p": "indsæt klippepladen efter markøren",
-        "P": "indsæt før markøren",
-        "gp": "indsæt klippepladen efter markøren og lad markøren stå efter den nye tekst",
-        "gP": "indsæt før markøren og lad markøren stå efter den nye tekst",
-        "dd": "slet (klip ud) en linje",
-        "twodd": "slet (klip ud) 2 linjer",
-        "dw": "slet (klip ud) tegnene i ordet fra markørpositionen til begyndelsen af det næste ord",
-        "diw": "slet (klip ud) ord under markøren",
-        "daw": "slet (klip ud) ord under markøren og mellemrummet efter eller før det",
-        "dDollar": "slet (klip) til slutningen af linjen",
-        "x": "slet (klip ud) tegn",
-        "threeToFiveD": "slet linjer fra 3 til 5",
-        "gPatternD": "slet alle linjer, der indeholder mønsteret",
-        "gNotPatternD": "slet alle linjer, der ikke indeholder mønsteret"
-      },
-      "tip1": {
-        "title": "Du kan også bruge følgende tegn til at angive rækkevidden:",
-        "commands": {
-          "dotCommaDollarD": "Fra den nuværende linje til slutningen af filen",
-          "dotCommaOneD": "Fra den nuværende linje til begyndelsen af filen",
-          "tenCommaDollarD": "Fra den 10. linje til begyndelsen af filen"
-        }
-      }
-    },
-    "indentText": {
-      "title": "Indrykning af tekst",
-      "commands": {
-        "greaterThanGreaterThan": "indryk (flyt til højre) linje én indrykningsbredde",
-        "lessThanLessThan": "fjern indryk (flyt til venstre) linje én indrykningsbredde",
-        "greaterThanPercent": "indryk en blok med () eller {} (markør på parentes)",
-        "greaterThanib": "indryk indre blok med ()",
-        "greaterThanat": "indryk en blok med <>-tags",
-        "3==": "indryk 3 linjer på ny",
-        "=Percent": "genindryk en blok med () eller {} (markør på parentes)",
-        "=iB": "genindryk indre blok med {}",
-        "gg=G": "genindryk hele bufferen",
-        "closeSquarep": "indsæt og juster indryk til den aktuelle linje",
-        "=Procent": "genindryk en blok med () eller {} (markør på parentes)",
-        "lessThanPercent": "fjern indryk af en blok med () eller {} (markør på parentes)"
-      }
-    },
-    "exiting": {
-      "title": "Afslut",
-      "commands": {
-        "colonw": "skriv (gem) filen, men afslut ikke",
-        "colonwsudo": "skriv den aktuelle fil med sudo",
-        "colonwq": "skriv (gem) og afslut",
-        "colonx": "skriv (gem) og afslut",
-        "colonq": "afslut (mislykkes hvis der er ikke-gemte ændringer)",
-        "colonqbang": "afslut og kassér ikke-gemte ændringer",
-        "colonwqa": "skriv (gem) og afslut i alle faneblade"
-      }
-    },
-    "searchAndReplace": {
-      "title": "Søg og erstat",
-      "commands": {
-        "forwardSlashPattern": "søg efter mønster",
-        "questionMarkPattern": "søg bagud efter mønster",
-        "backslashVpattern": "'meget magisk' mønster: ikke-alfanumeriske tegn tolkes som specielle regex-symboler (ingen escaping nødvendig)",
-        "n": "gentag søgning i samme retning",
-        "N": "gentag søgning i modsat retning",
-        "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "erstat alle gamle med nye i hele filen",
-        "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "erstat alle gamle med nye i hele filen med bekræftelser",
-        "colonnoh": "fjern markering af søgeresultater"
-      }
-    },
-    "searchMultipleFiles": {
-      "title": "Søg i flere filer",
-      "commands": {
-        "colonvimgrep": "søg efter mønster i flere filer",
-        "coloncn": "hop til næste match",
-        "coloncp": "hop til forrige match",
-        "coloncopen": "åbn quickfix-listen",
-        "coloncclose": "luk quickfix-listen"
-      }
+      "Esc": "exit insert mode"
     }
   },
   "editing": {
     "title": "Editing",
     "commands": {
-      "r": "replace a single character.",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
+      "r": "erstat tegnet under markøren",
+      "R": "erstat flere tegn fra markøren og til højre",
       "J": "join line below to the current one with one space in between",
       "gJ": "join line below to the current one without space in between",
       "gwip": "reflow paragraph",
       "gTilde": "switch case up to motion",
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
-      "cc": "change (replace) entire line",
-      "cDollar": "change (replace) to the end of the line",
+      "cc": "slet hele linjen og gå ind i indsætningsmodus",
+      "cDollar": "slet fra markøren til slutningen af linjen og gå ind i indsætningsmodus",
       "ciw": "change (replace) entire word",
       "cw": "change (replace) to the end of the word",
-      "s": "delete character and substitute text",
-      "S": "delete line and substitute text (same as cc)",
+      "s": "slet karakter under markøren og gå ind i indsætningsmodus",
+      "S": "slet linje og gå ind i indsætningsmodus",
       "xp": "transpose two letters (delete and paste)",
       "u": "undo",
       "U": "restore (undo) last changed line",
@@ -292,87 +198,88 @@
     "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
   },
   "cutAndPaste": {
-    "title": "Cut and paste",
+    "title": "Klip og indsæt",
     "commands": {
-      "yy": "yank (copy) a line",
-      "twoyy": "yank (copy) 2 lines",
-      "yw": "yank (copy) the characters of the word from the cursor position to the start of the next word",
-      "yiw": "yank (copy) word under the cursor",
-      "yaw": "yank (copy) word under the cursor and the space after or before it",
-      "yDollar": "yank (copy) to end of line",
-      "p": "put (paste) the clipboard after cursor",
-      "P": "put (paste) before cursor",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
-      "dd": "delete (cut) a line",
-      "twodd": "delete (cut) 2 lines",
-      "dw": "delete (cut) the characters of the word from the cursor position to the start of the next word",
-      "diw": "delete (cut) word under the cursor",
-      "daw": "delete (cut) word under the cursor and the space after or before it",
-      "dDollar": "delete (cut) to the end of the line",
-      "x": "delete (cut) character",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "yy": "kopier en linje",
+      "twoyy": "kopier 2 linjer",
+      "yw": "kopier tegnene i ordet fra markørpositionen til begyndelsen af det næste ord",
+      "yiw": "kopier ordet under markøren",
+      "yaw": "kopier ordet under markøren og mellemrummet efter eller før det",
+      "yDollar": "kopier til slutningen af linjen",
+      "p": "indsæt klippepladen efter markøren",
+      "P": "indsæt før markøren",
+      "gp": "indsæt klippepladen efter markøren og lad markøren stå efter den nye tekst",
+      "gP": "indsæt før markøren og lad markøren stå efter den nye tekst",
+      "dd": "slet (klip ud) en linje",
+      "twodd": "slet (klip ud) 2 linjer",
+      "dw": "slet (klip ud) tegnene i ordet fra markørpositionen til begyndelsen af det næste ord",
+      "diw": "slet (klip ud) ord under markøren",
+      "daw": "slet (klip ud) ord under markøren og mellemrummet efter eller før det",
+      "dDollar": "slet (klip) til slutningen af linjen",
+      "x": "slet (klip ud) tegn",
+      "threeToFiveD": "slet linjer fra 3 til 5",
+      "gPatternD": "slet alle linjer, der indeholder mønsteret",
+      "gNotPatternD": "slet alle linjer, der ikke indeholder mønsteret"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "Du kan også bruge følgende tegn til at angive rækkevidden:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "Fra den nuværende linje til slutningen af filen",
+        "dotCommaOneD": "Fra den nuværende linje til begyndelsen af filen",
+        "tenCommaDollarD": "Fra den 10. linje til begyndelsen af filen"
       }
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Indrykning af tekst",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "greaterThanGreaterThan": "indryk (flyt til højre) linje én indrykningsbredde",
+      "lessThanLessThan": "fjern indryk (flyt til venstre) linje én indrykningsbredde",
+      "greaterThanPercent": "indryk en blok med () eller {} (markør på parentes)",
+      "greaterThanib": "indryk indre blok med ()",
+      "greaterThanat": "indryk en blok med <>-tags",
+      "3==": "indryk 3 linjer på ny",
+      "=Percent": "genindryk en blok med () eller {} (markør på parentes)",
+      "=iB": "genindryk indre blok med {}",
+      "gg=G": "genindryk hele bufferen",
+      "closeSquarep": "indsæt og juster indryk til den aktuelle linje",
+      "=Procent": "genindryk en blok med () eller {} (markør på parentes)",
+      "lessThanPercent": "fjern indryk af en blok med () eller {} (markør på parentes)"
     }
   },
   "exiting": {
-    "title": "Exiting",
+    "title": "Afslut",
     "commands": {
-      "colonw": "write (save) the file, but don't exit",
-      "colonwsudo": "write out the current file using sudo",
-      "colonwq": "write (save) and quit",
-      "colonx": "write (save) and quit",
-      "colonq": "quit (fails if there are unsaved changes)",
-      "colonqbang": "quit and throw away unsaved changes",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonw": "skriv (gem) filen, men afslut ikke",
+      "colonwsudo": "skriv den aktuelle fil med sudo",
+      "colonwq": "skriv (gem) og afslut",
+      "colonx": "skriv (gem) og afslut",
+      "colonq": "afslut (mislykkes hvis der er ikke-gemte ændringer)",
+      "colonqbang": "afslut og kassér ikke-gemte ændringer",
+      "colonwqa": "skriv (gem) og afslut i alle faneblade"
     }
   },
   "searchAndReplace": {
-    "title": "Search and replace",
+    "title": "Søg og erstat",
     "commands": {
-      "forwardSlashPattern": "search for pattern",
-      "questionMarkPattern": "search backward for pattern",
-      "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
-      "n": "repeat search in same direction",
-      "N": "repeat search in opposite direction",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "replace all old with new throughout file",
-      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "replace all old with new throughout file with confirmations",
-      "colonnoh": "remove highlighting of search matches"
+      "forwardSlashPattern": "søg efter mønster",
+      "questionMarkPattern": "søg bagud efter mønster",
+      "backslashVpattern": "'meget magisk' mønster: ikke-alfanumeriske tegn tolkes som specielle regex-symboler (ingen escaping nødvendig)",
+      "n": "gentag søgning i samme retning",
+      "N": "gentag søgning i modsat retning",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "erstat alle gamle med nye i hele filen",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "erstat alle gamle med nye i hele filen med bekræftelser",
+      "colonnoh": "fjern markering af søgeresultater"
     }
   },
   "searchMultipleFiles": {
-    "title": "Search in multiple files",
+    "title": "Søg i flere filer",
     "commands": {
-      "colonvimgrep": "search for pattern in multiple files",
-      "coloncn": "jump to the next match",
-      "coloncp": "jump to the previous match",
-      "coloncopen": "open a window containing the list of matches",
-      "coloncclose": "close the quickfix window"
+      "colonvimgrep": "søg efter mønster i flere filer",
+      "coloncn": "hop til næste match",
+      "coloncp": "hop til forrige match",
+      "coloncopen": "åbn quickfix-listen",
+      "coloncclose": "luk quickfix-listen"
     }
   },
   "workingWithMultipleFiles": {
