@@ -226,7 +226,7 @@
       "commands": {
         "dotCommaDollarD": "從當前行到檔案結束",
         "dotCommaOneD": "從當前行到檔案開始",
-        "tenCommaDollarD": "從第10行到檔案開始"
+        "tenCommaOneD": "從第10行到檔案開始"
       }
     }
   },

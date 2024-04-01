@@ -227,7 +227,7 @@
       "commands": {
         "dotCommaDollarD": "Od obecnej linii do końca pliku",
         "dotCommaOneD": "Od obecnej linii do początku pliku",
-        "tenCommaDollarD": "Od 10 linii do początku pliku"
+        "tenCommaOneD": "Od 10 linii do początku pliku"
       }
     }
   },
