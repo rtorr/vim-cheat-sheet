@@ -350,10 +350,15 @@
   "words": {
     "keyword": "avainsana",
     "file": "tiedosto",
-    "movement": "liike"
+    "movement": "liike",
+    "tip": "Tip",
+    "or": "or",
+    "pattern": "pattern",
+    "eg": "e.g."
   },
   "languages": {
     "title": "Kielet"
   },
-  "footer": "Tutstu lähdekoodiin:"
+  "footer": "Tutstu lähdekoodiin:",
+  "page_title": "Vim Cheat Sheet"
 }
