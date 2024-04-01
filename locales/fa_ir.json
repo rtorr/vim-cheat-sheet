@@ -351,12 +351,17 @@
   "words": {
     "keyword": "کلید واژه",
     "file": "فایل",
-    "movement": "حرکت مکان نما"
+    "movement": "حرکت مکان نما",
+    "tip": "Tip",
+    "or": "or",
+    "pattern": "pattern",
+    "eg": "e.g."
   },
   "languages": {
     "title": "زبان"
   },
   "footer": "سورس کد در زیر",
+  "page_title": "Vim Cheat Sheet",
   "layout": "page",
   "permalink": "/lang/fa_ir/"
 }

@@ -349,14 +349,19 @@
     "tip2": "Para ver las diferencias de archivos, puede iniciar Vim directamente en el modo diferencias ejecutando <kbd>vimdiff</kbd> en una terminal. Incluso se puede configurar como <kbd>git difftool</kbd>."
   },
   "words": {
-    "keyword": "keyword",
-    "file": "file",
-    "movement": "movement"
+    "keyword": "palabra_clave",
+    "file": "archivo",
+    "movement": "movimiento",
+    "tip": "Consejo",
+    "or": "o",
+    "pattern": "patrón",
+    "eg": "ej."
   },
   "languages": {
     "title": "Idiomas"
   },
   "footer": "El código fuente está disponible en",
+  "page_title": "Chuleta de Vim",
   "layout": "page",
   "permalink": "/lang/es_es/"
 }

@@ -351,10 +351,15 @@
   "words": {
     "keyword": "keyword",
     "file": "file",
-    "movement": "movement"
+    "movement": "movement",
+    "tip": "Tip",
+    "or": "or",
+    "pattern": "pattern",
+    "eg": "e.g."
   },
   "languages": {
     "title": "Languages"
   },
-  "footer": "Checkout the source on"
+  "footer": "Checkout the source on",
+  "page_title": "Vim Cheat Sheet"
 }
