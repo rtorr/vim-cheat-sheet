@@ -243,8 +243,8 @@
       "=iB": "genindryk indre blok med {}",
       "gg=G": "genindryk hele bufferen",
       "closeSquarep": "indsæt og juster indryk til den aktuelle linje",
-      "=Procent": "genindryk en blok med () eller {} (markør på parentes)",
-      "lessThanPercent": "fjern indryk af en blok med () eller {} (markør på parentes)"
+      "lessThanPercent": "fjern indryk af en blok med () eller {} (markør på parentes)",
+      "=Procent": "genindryk en blok med () eller {} (markør på parentes)"
     }
   },
   "exiting": {
