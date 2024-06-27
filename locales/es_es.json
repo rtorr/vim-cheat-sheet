@@ -183,7 +183,7 @@
       "recordA": "grabar macro a",
       "stopRecording": "detener la grabación de la macro",
       "runA": "ejecutar macro a",
-      "rerun": "re-ejecutar la última macro ejecutada"
+      "rerun": "reejecutar la última macro"
     }
   },
   "global": {
@@ -239,7 +239,7 @@
       "greaterThanPercent": "sangrar un bloque con () o {} (cursor sobre llave)",
       "greaterThanib": "sangrar el bloque interior con ()",
       "greaterThanat": "sangrar un bloque con etiquetas <>",
-      "3==": "re-sangrar 3 líneas",
+      "3==": "resangrar 3 líneas",
       "=Percent": "volver a sangrar un bloque con () o {} (cursor sobre llave)",
       "=iB": "volver a sangrar el bloque interior con {}",
       "gg=G": "volver a sangrar todo el búfer",
@@ -264,7 +264,7 @@
     "commands": {
       "forwardSlashPattern": "buscar patrón",
       "questionMarkPattern": "buscar patrón hacia atrás",
-      "backslashVpattern": "patrón 'muy mágico' (very magic): los caracteres no alfanuméricos son interpretados como caracteres especiales regex (sin necesidad de escaparlos)",
+      "backslashVpattern": "patrón 'muy mágico' (very magic): los caracteres no alfanuméricos son interpretados como caracteres de expresiones regulares (sin necesidad de escaparlos)",
       "n": "repetir la búsqueda en la misma dirección",
       "N": "repetir la búsqueda en la dirección contraria",
       "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "reemplazar en todo el archivo",
@@ -345,7 +345,7 @@
       "colonDiffupdate": "actualizar diferencias",
       "colonDiffoff": "desactivar el modo diferencial para la ventana actual"
     },
-    "tip1": "Los comandos de plegar <kbd>za</kbd>) operan en un nivel. Para operar en todos los niveles, use letras mayúsculas (p. ej. <kbd>zA</kbd>).",
+    "tip1": "Los comandos de plegar (<kbd>za</kbd>) operan en un nivel. Para operar en todos los niveles, use letras mayúsculas (p. ej. <kbd>zA</kbd>).",
     "tip2": "Para ver las diferencias de archivos, puede iniciar Vim directamente en el modo diferencias ejecutando <kbd>vimdiff</kbd> en una terminal. Incluso se puede configurar como <kbd>git difftool</kbd>."
   },
   "words": {
