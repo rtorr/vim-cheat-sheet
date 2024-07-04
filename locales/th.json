@@ -227,7 +227,7 @@
       "commands": {
         "dotCommaDollarD": "From the current line to the end of the file",
         "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+        "tenCommaDollarD": "From the 10th line to the end of the file"
       }
     }
   },

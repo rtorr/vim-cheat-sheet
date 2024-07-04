@@ -226,7 +226,7 @@
       "commands": {
         "dotCommaDollarD": "Nykyiseltä riviltä tiedoston loppuun",
         "dotCommaOneD": "Nykyiseltä riviltä tiedoston alkuun",
-        "tenCommaDollarD": "Kymmenenneltä rivilä tiedoston alkuun"
+        "tenCommaDollarD": "Siirry kymmenenneltä riviltä tiedoston loppuun"
       }
     }
   },

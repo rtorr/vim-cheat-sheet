@@ -227,7 +227,7 @@
       "commands": {
         "dotCommaDollarD": "Az aktuális sortól a fájl végéig",
         "dotCommaOneD": "Az aktuális sortól a fájl elejéig",
-        "tenCommaDollarD": "A 10. sortól a fájl elejéig"
+        "tenCommaDollarD": "A 10. sortól a fájl végéig"
       }
     }
   },
