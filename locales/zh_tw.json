@@ -9,8 +9,8 @@
       "j": "向下移動游標",
       "k": "向上移動游標",
       "l": "向右移動游標",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "向下移動游標，適用於一行文字超長、自動分成幾行顯示的情況",
+      "gk": "向上移動游標，適用於一行文字超長、自動分成幾行顯示的情況",
       "w": "向右跳至字首",
       "W": "向右跳至字首 (字中可含標點)",
       "e": "向右跳至字尾",
@@ -29,8 +29,8 @@
       "gg": "跳至檔案第一行",
       "G": "跳至檔案最後一行",
       "fiveG": "跳至第 5 行",
-      "gd": "move to local declaration",
-      "gD": "move to global declaration",
+      "gd": "跳至局部變數的定義 (在 C/C++) 效果最佳",
+      "gD": "跳至全域變數的定義 (在 C/C++) 效果最佳",
       "fx": "跳至字元 x 下次出現的位置",
       "tx": "跳至字元 x 下次出現位置的上一個字元",
       "Fx": "跳至字元 x 上次出現的位置",
@@ -70,7 +70,7 @@
       "ctrlPlusn": "在插入模式中自動補全下個候補字",
       "ctrlPlusp": "在插入模式中自動補全上個候補字",
       "ctrlPlusrx": "在插入模式中插入x暫存器的內容",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlusox": "在插入模式暫時切換到普通模式執行一個指令，之後自動回到插入模式",
       "Esc": "退出插入模式"
     }
   },
@@ -78,7 +78,7 @@
     "title": "編輯",
     "commands": {
       "r": "取代游標後一個字元",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
+      "R": "覆蓋當前光標位置的現有字符",
       "J": "將下一行合併至該行 (兩行之間有空格)",
       "gJ": "將下一行合併至該行 (兩行之間沒有空格)",
       "gwip": "重新調整段落",
@@ -167,14 +167,14 @@
       "backtickDot": "回到上次修改該檔案的位置",
       "backtickBacktick": "回到上次跳離的位置",
       "colonjumps": "列出跳轉紀錄",
-      "ctrlPlusi": "go to newer position in jump list",
-      "ctrlPluso": "go to older position in jump list",
-      "colonchanges": "list of changes",
-      "gcomma": "go to newer position in change list",
-      "gsemicolon": "go to older position in change list",
-      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+      "ctrlPlusi": "在跳轉歷史中前往一個較新的位置",
+      "ctrlPluso": "在跳轉歷史中前往一個較舊的位置",
+      "colonchanges": "顯示對文件所做更改的歷史記錄",
+      "gcomma": "在變更列表中前往一個較新的位置",
+      "gsemicolon": "在變更列表中前往一個較舊的位置",
+      "ctrlPlusCloseSquare": "跳轉到游標當前位置下的標籤"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
+    "tip1": "跳至一個標記可以使用反引號（`）或單引號（'）。使用單引號跳轉會到達該行的首個非空白字符處。",
     "tip": ""
   },
   "macros": {
@@ -208,8 +208,8 @@
       "yDollar": "複製游標位置到行尾的區塊",
       "p": "在游標後貼上",
       "P": "在游標前貼上",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "在光標後面貼上文字，並且操作完成後游標停留在貼上文字的最後一個字符後面",
+      "gP": "在光標前面貼上文字，並且操作完成後游標停留在貼上文字的最後一個字符後面",
       "dd": "剪下 (刪除) 該行",
       "twodd": "剪下 (刪除) 2 行",
       "dw": "剪下 (刪除) 游標位置到下個單字前的字元",
@@ -217,16 +217,16 @@
       "daw": "剪下 (刪除) 游標所在單字和後面或前面的空格",
       "dDollar": "剪下 (刪除) 游標位置到行尾的區塊 (同 D)",
       "x": "剪下 (刪除) 字元",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "threeToFiveD": "刪除從第 3 行到第 5 行的內容 (3,5D)",
+      "gPatternD": " 刪除包含特定模式的所有行",
+      "gNotPatternD": "刪除不包含特定模式的所有行"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "您也可以使用以下字元來指定範圍:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "從當前行到檔案結束",
+        "dotCommaOneD": "從當前行到檔案開始",
+        "tenCommaDollarD": "從第10行到檔案開始"
       }
     }
   },
@@ -243,7 +243,7 @@
       "=iB": "自動縮排 {} 內的區塊",
       "gg=G": "自動縮排整個緩衝區",
       "closeSquarep": "貼上並自動縮排至該行",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "lessThanPercent": "向左縮排 () 或 {} 內的區塊 (游標需置於括號上)"
     }
   },
   "exiting": {
@@ -278,7 +278,7 @@
       "coloncn": "跳至下一個",
       "coloncp": "跳至上一個",
       "coloncopen": "開啟搜尋結果列表視窗",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "關閉快速修復視窗"
     }
   },
   "workingWithMultipleFiles": {
@@ -289,18 +289,18 @@
       "colonbprev": "切換到上個緩衝區",
       "colonls": "列出所有開啟的緩衝區",
       "colonbd": "刪除緩衝區 (關閉檔案)",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "通過編號切換到特定緩衝區",
+      "colonbfile": "通過檔案名切換到特定緩衝區",
       "colonsp": "在新緩衝區開啟檔案名稱並水平分割視窗",
       "colonvsp": "在新緩衝區開啟檔案名稱並垂直分割視窗",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvertba": "以垂直視窗方式編輯所有緩衝區",
+      "colontabba": "以標籤頁方式編輯所有緩衝區。",
       "ctrlPlusws": "水平分割視窗",
       "ctrlPluswv": "垂直分割視窗",
       "ctrlPlusww": "切換視窗",
       "ctrlPluswq": "關閉視窗",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswx": "與下一個視窗交換當前視窗",
+      "ctrlPlusw=": "使所有視窗等高等寬",
       "ctrlPluswh": "游標跳至左視窗 (垂直分割)",
       "ctrlPluswl": "游標跳至右視窗 (垂直分割)",
       "ctrlPluswj": "游標跳至下視窗 (水平分割)",
@@ -328,24 +328,24 @@
   "diff": {
     "title": "Diff",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "手動定義一個動作範圍的摺疊",
+      "zd": "刪除游標下的摺疊",
+      "za": "切換游標下的摺疊",
+      "zo": "打開游標下的摺疊",
+      "zc": "關閉游標下的摺疊",
+      "zr": "減少（打開）所有摺疊一級",
+      "zm": "增加（關閉）所有摺疊一級",
+      "zi": "切換摺疊功能",
+      "closeSquarec": "跳至下一個更改的開始",
+      "openSquarec": "跳至上一個更改的開始",
+      "do": "獲取（從另一緩衝區）差異",
+      "dp": "放置（到另一緩衝區）差異",
+      "colonDiffthis": "將當前視窗設為差異比較的一部分",
+      "colonDiffupdate": "更新差異",
+      "colonDiffoff": "為當前視窗關閉差異模式"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "摺疊命令（例如 <kbd>za</kbd>）作用於單一層級。要對所有層級操作，請使用大寫字母（例如 <kbd>zA</kbd>）。",
+    "tip2": "要查看文件的差異，可以直接在終端機中運行 <kbd>vimdiff</kbd> 來啟動Vim的差異模式。甚至可以將此設置為 <kbd>git difftool</kbd>"
   },
   "words": {
     "keyword": "關鍵字",
