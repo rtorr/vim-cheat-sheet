@@ -9,8 +9,8 @@
       "j": "mover el cursor hacia abajo",
       "k": "mover el cursor hacia arriba",
       "l": "mover el cursor hacia la derecha",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "mover el cursor hacia abajo (texto multilínea)",
+      "gk": "mover el cursor hacia arriba (texto multilínea)",
       "w": "saltar hasta el inicio de la siguiente palabra",
       "W": "saltar hasta el inicio de la siguiente palabra (incluso con puntuación)",
       "e": "saltar hasta el final de la siguiente palabra",
@@ -26,9 +26,9 @@
       "caret": "saltar al primer carácter no-espacio de la línea",
       "dollar": "saltar al final de la línea",
       "g_": "saltar al último carácter no-espacio de la línea",
-      "gg": "ir a la primera línea del documento",
-      "G": "ir a la última línea del documento",
-      "fiveG": "ir a la línea 5",
+      "gg": "saltar a la primera línea del documento",
+      "G": "saltar a la última línea del documento",
+      "fiveG": "saltar a la línea 5",
       "gd": "saltar a la declaración local",
       "gD": "saltar a la declaración global",
       "fx": "saltar a la siguiente ocurrencia del carácter x",
@@ -39,24 +39,24 @@
       "comma": "repetir el movimiento anterior de f, t, F o T, hacia atrás",
       "closeCurlyBrace": "saltar al párrafo siguiente (o función/bloque, en modo edición)",
       "openCurlyBrace": "saltar al párrafo previo (o función/bloque, en modo edición)",
-      "centerCursor": "centrar el cursor en la pantalla",
-      "topCursor": "position cursor on top of the screen",
-      "bottomCursor": "position cursor on bottom of the screen",
+      "centerCursor": "desplazar el cursor (sin moverlo) hacia el centro de la pantalla",
+      "topCursor": "desplazar el cursor (sin moverlo) hacia la parte superior de la pantalla",
+      "bottomCursor": "desplazar el cursor (sin moverlo) hacia la parte inferior de la pantalla",
       "CtrlPluse": "mover la pantalla hacia abajo una línea (sin mover el cursor)",
       "CtrlPlusy": "mover la pantalla una línea hacia arriba (sin mover el cursor)",
       "CtrlPlusb": "retroceder una pantalla",
       "CtrlPlusf": "avanzar una pantalla",
       "CtrlPlusu": "retroceder cursor media pantalla",
       "CtrlPlusd": "avanzar cursor media pantalla",
-      "percent": "ir al carácter asociado (pares por defecto: '()', '{}', '[]' - usar </code>:h matchpairs</code> en vim para más información)"
+      "percent": "ir al carácter asociado (pares por defecto: '()', '{}', '[]' - usar <code>:h matchpairs</code> en vim para más información)"
     },
-    "tip": "Escribir un número antes del comando de movimiento para repetirlo. Por ejemplo, <kbd>4j</kbd> mueve el cursor hacia abajo 4 líneas."
+    "tip": "Escriba un número antes del comando de movimiento para repetirlo. Por ejemplo, <kbd>4j</kbd> mueve el cursor hacia abajo 4 líneas."
   },
   "insertMode": {
     "title": "Modo insertar - insertar/agregar texto",
     "commands": {
       "i": "insertar antes del cursor",
-      "I": "insertar al comienzo de la línea",
+      "I": "insertar al inicio de la línea",
       "a": "insertar después del cursor",
       "A": "insertar al final de la línea",
       "o": "insertar una nueva linea debajo de la línea actual",
@@ -67,10 +67,10 @@
       "ctrlPlusj": "comenzar una nueva línea durante el modo de inserción",
       "ctrlPlust": "sangrar (mover a la derecha) línea un ancho de cambio durante el modo de inserción",
       "ctrlPlusd": "desangrar (mover a la izquierda) línea un ancho de turno durante el modo de inserción",
-      "ctrlPlusn": "insertar (autocompletar) la siguiente coincidencia antes del cursor durante el modo de inserción",
-      "ctrlPlusp": "insertar (autocompletar) coincidencia anterior antes del cursor durante el modo de inserción",
+      "ctrlPlusn": "insertar (auto completar) la siguiente coincidencia antes del cursor durante el modo de inserción",
+      "ctrlPlusp": "insertar (auto completar) coincidencia anterior antes del cursor durante el modo de inserción",
       "ctrlPlusrx": "insertar el contenido del registro x",
-      "ctrlPlusox": "Ingrese temporalmente al modo normal para emitir un comando de modo normal x.",
+      "ctrlPlusox": "ingresar temporalmente al modo normal para emitir un comando de modo normal x.",
       "Esc": "salir del modo insertar"
     }
   },
@@ -80,20 +80,20 @@
       "r": "reemplazar un carácter",
       "R": "reemplazar más de un carácter, hasta que se presione <kbd>ESC</kbd>.",
       "J": "juntar siguiente línea con la actual",
-      "gJ": "une la línea de abajo a la actual sin espacio entre ellas",
-      "gwip": "párrafo de reflujo",
-      "gTilde": "cambiar caso a movimiento",
+      "gJ": "juntar siguiente línea con la actual sin espacio entre ellas",
+      "gwip": "aplicar formato en párrafo",
+      "gTilde": "alternar mayúsculas/minúsculas hasta movimiento",
       "gu": "cambiar a minúsculas hasta movimiento",
-      "gU": "cambiar a mayúsculas hasta el movimiento",
+      "gU": "cambiar a mayúsculas hasta movimiento",
       "cc": "cambiar (reemplazar) toda la línea",
       "cDollar": "cambiar (reemplazar) hasta el final de la línea",
       "ciw": "cambiar (reemplazar) palabra completa",
       "cw": "cambiar (reemplazar) una palabra",
       "s": "eliminar carácter y reemplazar texto",
-      "S": "eliminar línea y reemplazar texto (igual que el comando cc)",
+      "S": "eliminar línea y reemplazar texto (igual que <kbd>cc</kbd>)",
       "xp": "transponer dos letras (suprimir y pegar)",
       "u": " deshacer",
-      "U": "restaurar (deshacer) la última línea modificada",
+      "U": "deshacer completamente la última línea modificada",
       "CtrlPlusr": "rehacer",
       "dot": "repetir el último comando"
     }
@@ -101,8 +101,8 @@
   "markingText": {
     "title": "Seleccionar texto (modo visual)",
     "commands": {
-      "v": "iniciar modo visual, seleccionar lineas y ejecutar un comando (como y-yank)",
-      "V": "iniciar modo visual seleccionando toda la línea",
+      "v": "iniciar modo visual, seleccionar lineas y ejecutar un comando (p. ej. y-yank)",
+      "V": "iniciar modo visual seleccionando líneas completas (visual line mode)",
       "o": "moverse al otro extremo de la zona seleccionada",
       "CtrlPlusv": "iniciar modo visual de bloque (visual block mode)",
       "O": "moverse a la otra esquina del bloque",
@@ -124,7 +124,7 @@
       "lessThan": "mover texto hacia la izquierda",
       "y": "copiar texto seleccionado",
       "d": "eliminar texto seleccionado",
-      "tilde": "pasar de minúscula a mayúscula y viceversa",
+      "tilde": "alternar minúsculas/mayúsculas",
       "u": "cambiar el texto marcado a minúsculas",
       "U": "cambiar el texto marcado a mayúsculas"
     }
@@ -135,18 +135,18 @@
       "show": "mostrar el contenido de los registros",
       "pasteRegisterX": "pegar el contenido del registro X",
       "yankIntoRegisterX": "copiar en el registro X",
-      "quotePlusy": "copiar en el registro del portapapeles del sistema",
-      "quotePlusp": "pegar desde el registro del portapapeles del sistema"
+      "quotePlusy": "copiar en el registro del porta-papeles del sistema",
+      "quotePlusp": "pegar desde el registro del porta-papeles del sistema"
     },
-    "tip1": "Los registros son guardados en ~/.viminfo, y serán cargados la próxima vez que se ejecute vim.",
+    "tip1": "Los registros son guardados en ~/.viminfo, y serán cargados la próxima vez que se ejecute Vim.",
     "tip2": {
       "0": "ultima copia",
       "title": "Registros especiales:",
       "quote": "registro sin nombre, última eliminación o copia",
       "percent": "nombre de archivo actual",
       "hashtag": "nombre de archivo alternativo",
-      "asterisk": "contenido del portapapeles (X11 primario)",
-      "plus": "contenido del portapapeles (portapapeles X11)",
+      "asterisk": "contenido del porta-papeles (X11 primario)",
+      "plus": "contenido del porta-papeles (porta-papeles X11)",
       "slash": "último patrón de búsqueda",
       "colon": "última línea de comandos",
       "dot": "último texto insertado",
@@ -183,7 +183,7 @@
       "recordA": "grabar macro a",
       "stopRecording": "detener la grabación de la macro",
       "runA": "ejecutar macro a",
-      "rerun": "re-ejecutar la última macro ejecutada"
+      "rerun": "reejecutar la última macro"
     }
   },
   "global": {
@@ -196,38 +196,38 @@
       "colonTerminal": "abre una ventana de terminal",
       "openFile": "abrir archivo"
     },
-    "tip1": "Ejecuta <kbd>vimtutor</kbd> en una terminal para aprender los primeros comandos de Vim."
+    "tip1": "Ejecute <code>vimtutor</code> en una terminal para aprender los primeros comandos de Vim."
   },
   "cutAndPaste": {
     "title": "Copiar y pegar",
     "commands": {
       "yy": "copiar una línea",
       "twoyy": "copiar dos líneas",
-      "yw": "copiar el resto de los carácteres de la palabra desde la posición del cursor hasta el principio de la siguiente palabra",
+      "yw": "copiar el resto de los caracteres de la palabra desde la posición del cursor hasta el inicio de la siguiente palabra",
       "yiw": "copiar la palabra localizada en la posición del cursor",
-      "yaw": "copiar la palabra localizada en la posición del cursor y el espacio detras de ella o delante",
+      "yaw": "copiar la palabra localizada en la posición del cursor y el espacio detrás de ella o delante",
       "yDollar": "copiar hasta el final de la línea",
       "p": "pegar antes del cursor",
       "P": "pegar después del cursor",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "pegar antes del cursor y mover después del nuevo texto",
+      "gP": "pegar después del cursor y mover después del nuevo texto",
       "dd": "cortar una línea",
       "twodd": "cortar dos líneas",
-      "dw": "cortar el resto de los carácteres de la palabra desde la posición del cursor hasta el principio de la siguiente palabra",
+      "dw": "cortar el resto de los caracteres de la palabra desde la posición del cursor hasta el inicio de la siguiente palabra",
       "diw": "cortar la palabra localizada en la posición del cursor",
-      "daw": "cortar la palabra localizada en la posición del cursor y el espacio detras de ella o delante",
+      "daw": "cortar la palabra localizada en la posición del cursor y el espacio detrás de ella o delante",
       "dDollar": "cortar hasta el final de la línea",
       "x": "cortar carácter",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "threeToFiveD": "cortar desde la línea 3 hasta la 5",
+      "gPatternD": "cortar todas las líneas que contengan el patrón",
+      "gNotPatternD": "cortar todas las líneas que no contengan el patrón"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "También puede usar estos caracteres para definir rangos:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "Desde la línea actual al final del archivo",
+        "dotCommaOneD": "Desde la línea actual al inicio del archivo",
+        "tenCommaDollarD": "Desde la décima línea al inicio del archivo"
       }
     }
   },
@@ -239,12 +239,12 @@
       "greaterThanPercent": "sangrar un bloque con () o {} (cursor sobre llave)",
       "greaterThanib": "sangrar el bloque interior con ()",
       "greaterThanat": "sangrar un bloque con etiquetas <>",
-      "3==": "re-sangrar 3 líneas",
+      "3==": "resangrar 3 líneas",
       "=Percent": "volver a sangrar un bloque con () o {} (cursor sobre llave)",
       "=iB": "volver a sangrar el bloque interior con {}",
       "gg=G": "volver a sangrar todo el búfer",
       "closeSquarep": "pegar y ajustar la sangría a la línea actual",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "lessThanPercent": "desangrar un bloque con () o {} (cursor sobre llave)"
     }
   },
   "exiting": {
@@ -264,7 +264,7 @@
     "commands": {
       "forwardSlashPattern": "buscar patrón",
       "questionMarkPattern": "buscar patrón hacia atrás",
-      "backslashVpattern": "patrón 'muy mágico' (very magic): los caracteres no alfanuméricos son interpretados como caracteres especiales regex (sin necesidad de escaparlos)",
+      "backslashVpattern": "patrón 'muy mágico' (very magic): los caracteres no alfanuméricos son interpretados como caracteres de expresiones regulares (sin necesidad de escaparlos)",
       "n": "repetir la búsqueda en la misma dirección",
       "N": "repetir la búsqueda en la dirección contraria",
       "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "reemplazar en todo el archivo",
@@ -286,9 +286,9 @@
     "title": "Trabajar con varios archivos",
     "commands": {
       "colone": "editar un archivo en un nuevo búfer",
-      "colonbnext": "ir al próximo búfer",
+      "colonbnext": "ir al búfer siguiente",
       "colonbprev": "ir al búfer anterior",
-      "colonls": "mostrar todos los búfers abiertos",
+      "colonls": "mostrar todos los búferes abiertos",
       "colonbd": "eliminar búfer (cerrar archivo)",
       "colonbnumber": "ir a un búfer por #",
       "colonbfile": "ir a un búfer por archivo",
@@ -306,10 +306,10 @@
       "ctrlPluswl": "mover el cursor a la ventana derecha (división vertical)",
       "ctrlPluswj": "mover el cursor a la ventana de abajo (división horizontal)",
       "ctrlPluswk": "mover el cursor a la ventana de arriba (división horizontal)",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+      "ctrlPluswH": "extender ancho de la ventana (vertical) hacia la izquierda",
+      "ctrlPluswL": "extender ancho de la ventana (vertical) hacia la derecha",
+      "ctrlPluswJ": "extender alto de la ventana (horizontal) hacia abajo",
+      "ctrlPluswK": "extender alto de la ventana (horizontal) hacia arriba"
     }
   },
   "tabs": {
@@ -317,7 +317,7 @@
     "commands": {
       "colonTabNew": "abrir archivo en una nueva pestaña",
       "ctrlPluswT": "mover la ventana actual a su propia pestaña",
-      "gt": "irr a la próxima pestaña",
+      "gt": "ir a la pestaña siguiente",
       "gT": "ir a la pestaña anterior",
       "hashgt": "ir a la pestaña número #",
       "colontabmove": "mover a la pestaña actual a la posición número # (desde 0)",
@@ -345,13 +345,13 @@
       "colonDiffupdate": "actualizar diferencias",
       "colonDiffoff": "desactivar el modo diferencial para la ventana actual"
     },
-    "tip1": "Los comandos de plegar <kbd>za</kbd>) operan en un nivel. Para operar en todos los niveles, use letras mayúsculas (p. ej. <kbd>zA</kbd>).",
+    "tip1": "Los comandos de plegar (<kbd>za</kbd>) operan en un nivel. Para operar en todos los niveles, use letras mayúsculas (p. ej. <kbd>zA</kbd>).",
     "tip2": "Para ver las diferencias de archivos, puede iniciar Vim directamente en el modo diferencias ejecutando <kbd>vimdiff</kbd> en una terminal. Incluso se puede configurar como <kbd>git difftool</kbd>."
   },
   "words": {
-    "keyword": "keyword",
-    "file": "file",
-    "movement": "movement"
+    "keyword": "palabra_clave",
+    "file": "archivo",
+    "movement": "movimiento"
   },
   "languages": {
     "title": "Idiomas"
