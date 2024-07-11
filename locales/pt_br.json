@@ -65,12 +65,12 @@
       "ctrlPlush": "apaga o caractere antes do cursor no modo de inserção",
       "ctrlPlusw": "apaga a palavra antes do cursor no modo de inserção",
       "ctrlPlusj": "adiciona uma quebra de linha na posição do cursor no modo de inserção",
-      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
-      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
-      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
-      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
-      "ctrlPlusrx": "insert the contents of register x",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlust": "recuar (mover para a direita) uma linha em um shiftwidth durante o modo de inserção",
+      "ctrlPlusd": "desrecuar (mover para a esquerda) uma linha em um shiftwidth durante o modo de inserção",
+      "ctrlPlusn": "inserir (auto-completar) a próxima correspondência antes do cursor durante o modo de inserção",
+      "ctrlPlusp": "inserir (auto-completar) a correspondência anterior antes do cursor durante o modo de inserção",
+      "ctrlPlusrx": "inserir o conteúdo do registrador x",
+      "ctrlPlusox": "Entrar temporariamente no modo normal para executar um comando do modo normal x.",
       "Esc": "sair do modo de inserção"
     }
   },
@@ -78,22 +78,22 @@
     "title": "Editando",
     "commands": {
       "r": "substituir um único caractere",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
-      "J": "juntar a linha que está em baixo da linha atual",
-      "gJ": "join line below to the current one without space in between",
-      "gwip": "reflow paragraph",
-      "gTilde": "switch case up to motion",
-      "gu": "change to lowercase up to motion",
-      "gU": "change to uppercase up to motion",
-      "cc": "substituir a linha toda",
-      "cDollar": "substituir no final da linha",
-      "ciw": "change (replace) entire word",
-      "cw": "substituir no final da palavra",
+      "R": "substituir mais de um caractere, até pressionar <kbd>ESC</kbd>.",
+      "J": "juntar a linha abaixo da linha atual",
+      "gJ": "juntar a linha abaixo à linha atual sem espaço entre elas",
+      "gwip": "refazer parágrafo",
+      "gTilde": "alternar maiúsculas e minúsculas até o movimento",
+      "gu": "alterar para minúsculas até o movimento",
+      "gU": "alterar para maiúsculas até o movimento",
+      "cc": "substituir toda a linha",
+      "cDollar": "substituir até o final da linha",
+      "ciw": "substituir a palavra inteira",
+      "cw": "substituir até o final da palavra",
       "s": "deletar um caractere e substituir texto",
-      "S": "deletar linha e substituir texto (igual o comando cc)",
-      "xp": "transpor duas letras (deletar e colar)",
+      "S": "deletar a linha e substituir texto (igual ao comando cc)",
+      "xp": "trocar duas letras (deletar e colar)",
       "u": "desfazer",
-      "U": "restaura linha inteira",
+      "U": "restaurar a linha inteira",
       "CtrlPlusr": "refazer",
       "dot": "repetir o último comando"
     }
@@ -101,21 +101,21 @@
   "markingText": {
     "title": "Marcação de texto (modo visual)",
     "commands": {
-      "v": "iniciar modo visual, marcar linhas e fazer um comando (como y-yank)",
-      "V": "iniciar modo visual marcando a linha toda",
-      "o": "mover para o fim/inicio da marcação",
+      "v": "iniciar modo visual, selecionar linhas e executar um comando (como y-yank)",
+      "V": "iniciar modo visual selecionando a linha inteira",
+      "o": "mover para o fim/início da seleção",
       "CtrlPlusv": "iniciar modo de bloco visual",
-      "O": "mover para o fim/inicio do bloco",
-      "aw": "marcar uma palavra",
-      "ab": "um bloco com ()",
-      "aB": "um bloco com {}",
-      "at": "a block with <> tags",
-      "ib": "um bloco interno com ()",
-      "iB": "um bloco interno com {}",
-      "it": "inner block with <> tags",
+      "O": "mover para o fim/início do bloco",
+      "aw": "selecionar uma palavra",
+      "ab": "selecionar um bloco com ()",
+      "aB": "selecionar um bloco com {}",
+      "at": "selecionar um bloco com tags <>",
+      "ib": "selecionar um bloco interno com ()",
+      "iB": "selecionar um bloco interno com {}",
+      "it": "selecionar um bloco interno com tags <>",
       "Esc": "sair do modo visual"
     },
-    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+    "tip1": "Ao invés de <kbd>b</kbd> ou <kbd>B</kbd>, também é possível utilizar <kbd>(</kbd> ou <kbd>{</kbd>, respectivamente."
   },
   "visualCommands": {
     "title": "Comandos visuais",
@@ -125,9 +125,9 @@
       "y": "copiar texto marcado",
       "d": "deletar texto marcado",
       "tilde": "alterar entre maiúscula e minúscula",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
-    }
+      "u": "alterar o texto marcado para minúsculas",
+      "U": "alterar o texto marcado para maiúsculas"
+        }
   },
   "registers": {
     "title": "Registradores",
@@ -135,24 +135,24 @@
       "show": "mostrar conteúdo dos registradores",
       "pasteRegisterX": "colar o conteúdo do registrador x",
       "yankIntoRegisterX": "colar no registrador x",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
-    },
+      "quotePlusy": "copiar para a área de transferência do sistema",
+      "quotePlusp": "colar da área de transferência do sistema"
+        },
     "tip1": "Registradores são guardados em ~/.viminfo, e são carregados no início do vim.",
     "tip2": {
-      "0": "last yank",
-      "title": "Special registers:",
-      "quote": "unnamed register, last delete or yank",
-      "percent": "current file name",
-      "hashtag": "alternate file name",
-      "asterisk": "clipboard contents (X11 primary)",
-      "plus": "clipboard contents (X11 clipboard)",
-      "slash": "last search pattern",
-      "colon": "last command-line",
-      "dot": "last inserted text",
-      "minus": "last small (less than a line) delete",
-      "equal": "expression register",
-      "underscore": "black hole register"
+      "0": "último yank",
+      "title": "Registradores especiais:",
+      "quote": "registrador sem nome, último delete ou yank",
+      "percent": "nome do arquivo atual",
+      "hashtag": "nome do arquivo alternativo",
+      "asterisk": "conteúdo da área de transferência (primário do X11)",
+      "plus": "conteúdo da área de transferência (área de transferência do X11)",
+      "slash": "último padrão de busca",
+      "colon": "último comando de linha",
+      "dot": "último texto inserido",
+      "minus": "última exclusão pequena (menos que uma linha)",
+      "equal": "registrador de expressão",
+      "underscore": "registrador buraco negro"
     }
   },
   "marks": {
@@ -161,21 +161,21 @@
       "list": "listar todos os marcadores",
       "currentPositionA": "atribuir a posição atual no marcador A",
       "jumpPositionA": "pular para a posição do marcador A",
-      "yankToMarkA": "copiar texto para a posição do marcador A",
-      "backtick0": "go to the position where Vim was previously exited",
-      "backtickQuote": "go to the position when last editing this file",
-      "backtickDot": "go to the position of the last change in this file",
-      "backtickBacktick": "go to the position before the last jump",
-      "colonjumps": "list of jumps",
-      "ctrlPlusi": "go to newer position in jump list",
-      "ctrlPluso": "go to older position in jump list",
-      "colonchanges": "list of changes",
-      "gcomma": "go to newer position in change list",
-      "gsemicolon": "go to older position in change list",
-      "ctrlPlusCloseSquare": "jump to the tag under cursor",
+      "yankToMarkA": "copiar (yank) texto para a posição do marcador A",
+      "backtick0": "vai para a posição onde o Vim foi anteriormente encerrado",
+      "backtickQuote": "vai para a posição quando foi editado este arquivo pela última vez",
+      "backtickDot": "vai para a posição da última alteração neste arquivo",
+      "backtickBacktick": "vai para a posição antes do último salto",
+      "colonjumps": "lista de saltos",
+      "ctrlPlusi": "vai para a posição mais recente na lista de saltos",
+      "ctrlPluso": "vai para a posição mais antiga na lista de saltos",
+      "colonchanges": "lista de alterações",
+      "gcomma": "vai para a posição mais recente na lista de alterações",
+      "gsemicolon": "vai para a posição mais antiga na lista de alterações",
+      "ctrlPlusCloseSquare": "vai para a tag sob o cursor",
       "tip": ""
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
+    "tip1": "Para pular para um marcador, você pode usar um acento grave (<kbd>`</kbd>) ou uma aspas simples (<kbd>'</kbd>). Usar uma aspas simples pula para o início (primeiro caractere não vazio) da linha que contém o marcador.",
     "tip": ""
   },
   "macros": {
@@ -197,7 +197,7 @@
       "colonTerminal": "open a terminal window",
       "openFile": "abrir um arquivo"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "Execute <kbd>vimtutor</kbd> em um terminal para aprender os primeiros comandos do Vim."
   },
   "cutAndPaste": {
     "title": "Copiar e colar",
@@ -205,59 +205,59 @@
       "yy": "copiar uma linha",
       "twoyy": "copiar duas linhas",
       "yw": "copiar uma palavra",
-      "yiw": "yank (copy) word under the cursor",
-      "yaw": "yank (copy) word under the cursor and the space after or before it",
+      "yiw": "copiar palavra sob o cursor",
+      "yaw": "copiar palavra sob o cursor e o espaço depois ou antes dela",
       "yDollar": "copiar até o final da linha",
       "p": "colar depois do cursor",
       "P": "colar antes do cursor",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "colar o conteúdo da área de transferência após o cursor e deixar o cursor após o novo texto",
+      "gP": "colar o conteúdo da área de transferência antes do cursor e deixar o cursor após o novo texto",
       "dd": "deletar (cortar) uma linha",
       "twodd": "deletar (cortar) duas linhas",
       "dw": "deletar (cortar) uma palavra",
-      "diw": "delete (cut) word under the cursor",
-      "daw": "delete (cut) word under the cursor and the space after or before it",
+      "diw": "deletar (cortar) a palavra sob o cursor",
+      "daw": "deletar (cortar) a palavra sob o cursor e o espaço depois ou antes dela",
       "dDollar": "deletar (cortar) até o final da linha",
       "x": "deletar (cortar) caractere",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
-    },
+      "threeToFiveD": "deletar linhas do 3 ao 5",
+      "gPatternD": "deletar todas as linhas que contêm o padrão",
+      "gNotPatternD": "deletar todas as linhas que não contêm o padrão"
+        },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "Você também pode usar os seguintes caracteres para especificar o intervalo:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "Da linha atual até o final do arquivo",
+        "dotCommaOneD": "Da linha atual até o início do arquivo",
+        "tenCommaDollarD": "Da 10ª linha até o final do arquivo"
       }
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Indentar texto",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "greaterThanGreaterThan": "indentar (mover para a direita) uma linha com um shiftwidth",
+      "lessThanLessThan": "desindentar (mover para a esquerda) uma linha com um shiftwidth",
+      "greaterThanPercent": "indentar um bloco com () ou {} (cursor na chave)",
+      "greaterThanib": "indentar bloco interno com ()",
+      "greaterThanat": "indentar um bloco com tags <>",
+      "3==": "re-indentar 3 linhas",
+      "=Percent": "re-indentar um bloco com () ou {} (cursor na chave)",
+      "=iB": "re-indentar bloco interno com {}",
+      "gg=G": "re-indentar o buffer inteiro",
+      "closeSquarep": "colar e ajustar a indentação para a linha atual",
+      "lessThanPercent": "desindentar um bloco com () ou {} (cursor na chave)"
     }
   },
   "exiting": {
     "title": "Saindo",
     "commands": {
       "colonw": "escrever (salvar) arquivo, mas não sair",
-      "colonwsudo": "write out the current file using sudo",
+      "colonwsudo": "escrever o arquivo atual usando sudo",
       "colonwq": "escrever (salvar) arquivo e sair",
       "colonx": "escrever (salvar) arquivo e sair",
       "colonq": "sair (não funciona se existirem mudanças não salvas)",
       "colonqbang": "sair e descartar mudanças não salvas",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonwqa": "escrever (salvar) e sair em todas as abas"
     }
   },
   "searchAndReplace": {
@@ -280,7 +280,7 @@
       "coloncn": "pular para próxima ocorrência",
       "coloncp": "pular para ocorrência anterior",
       "coloncopen": "abrir uma janela com a lista de ocorrências",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "fechar a janela de resultados rápidos"
     }
   },
   "workingWithMultipleFiles": {
@@ -291,27 +291,27 @@
       "colonbprev": "ir para o buffer anterior",
       "colonls": "listar todos os buffers abertos",
       "colonbd": "deletar um buffer (fechar um arquivo)",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "ir para um buffer pelo número",
+      "colonbfile": "ir para um buffer pelo arquivo",
       "colonsp": "abrir um arquivo em um novo buffer e dividir a janela",
-      "colonvsp": "abrir um arquivo em um novo buffer e dividir janelas verticalmente",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvsp": "abrir um arquivo em um novo buffer e dividir as janelas verticalmente",
+      "colonvertba": "editar todos os buffers como janelas verticais",
+      "colontabba": "editar todos os buffers como abas",
       "ctrlPlusws": "dividir janela",
       "ctrlPluswv": "dividir janelas verticalmente",
       "ctrlPlusww": "trocar de janelas",
       "ctrlPluswq": "fechar janela",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
-      "ctrlPluswh": "mover o cursor para a janela a direita (vertical)",
+      "ctrlPluswx": "trocar janela atual com a próxima",
+      "ctrlPlusw=": "tornar todas as janelas de altura e largura iguais",
+      "ctrlPluswh": "mover o cursor para a janela à direita (vertical)",
       "ctrlPluswl": "mover o cursor para a janela a esquerda (vertical)",
       "ctrlPluswj": "mover o cursor para a janela abaixo (horizontal)",
       "ctrlPluswk": "mover o cursor para a janela acima (horizontal)",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
-    }
+      "ctrlPluswH": "tornar a janela atual com altura total à extrema esquerda (janela vertical mais à esquerda)",
+      "ctrlPluswL": "tornar a janela atual com altura total à extrema direita (janela vertical mais à direita)",
+      "ctrlPluswJ": "tornar a janela atual com largura total na parte inferior (janela horizontal mais abaixo)",
+      "ctrlPluswK": "tornar a janela atual com largura total na parte superior (janela horizontal mais acima)"
+        }
   },
   "tabs": {
     "title": "Abas",
@@ -328,27 +328,27 @@
     }
   },
   "diff": {
-    "title": "Diff",
+    "title": "Diferenças",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "definir manualmente um fold até o movimento",
+      "zd": "excluir o fold sob o cursor",
+      "za": "alternar o fold sob o cursor",
+      "zo": "abrir o fold sob o cursor",
+      "zc": "fechar o fold sob o cursor",
+      "zr": "reduzir (abrir) todos os folds em um nível",
+      "zm": "reduzir (fechar) todos os folds em um nível",
+      "zi": "alternar a funcionalidade de folding",
+      "closeSquarec": "ir para o início da próxima alteração",
+      "openSquarec": "ir para o início da alteração anterior",
+      "do": "obter a diferença (do outro buffer)",
+      "dp": "colocar a diferença (no outro buffer)",
+      "colonDiffthis": "tornar a janela atual parte da diferença",
+      "colonDiffupdate": "atualizar as diferenças",
+      "colonDiffoff": "desativar o modo de diferença para a janela atual"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
-  },
+    "tip1": "Os comandos para folding (por exemplo, <kbd>za</kbd>) operam em um nível. Para operar em todos os níveis, use letras maiúsculas (por exemplo, <kbd>zA</kbd>).",
+    "tip2": "Para visualizar as diferenças entre arquivos, você pode iniciar o Vim diretamente no modo de diferença executando <kbd>vimdiff</kbd> em um terminal. Você também pode configurar isso como <kbd>git difftool</kbd>."
+    },
   "words": {
     "keyword": "palavra chave",
     "file": "arquivo",

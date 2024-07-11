@@ -9,8 +9,8 @@
       "j": "pomakni kursor dolje",
       "k": "pomakni kursor gore",
       "l": "pomakni kursor desno",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "pomakni kursor dolje (višelinijski tekst)",
+      "gk": "pomakni kursor gore (višelinijski tekst)",
       "w": "idi na početak sljedeće riječi",
       "W": "idi na početak sljedeće riječi (riječ može sadržavati znakove interpunkcije)",
       "e": "idi na kraj riječi",
@@ -40,8 +40,8 @@
       "closeCurlyBrace": "idi na sljedeći odjeljak (ili funkciju/blok, kod uređivanja programskog koda)",
       "openCurlyBrace": "idi na predhodni odjeljak (ili funkciju/blok, kod uređivanja programskog koda)",
       "centerCursor": "postavi kursor na sredinu zaslona",
-      "topCursor": "position cursor on top of the screen",
-      "bottomCursor": "position cursor on bottom of the screen",
+      "topCursor": "postavi kursor na vrh zaslona",
+      "bottomCursor": "postavi kursor na dno zaslona",
       "CtrlPluse": "pomakni zaslon jednu liniju prema dolje (bez pomicanja kursora)",
       "CtrlPlusy": "pomakni zaslon jednu liniju prema gore (bez pomicanja kursora)",
       "CtrlPlusb": "pomakni nazad jedan zaslon",
@@ -172,7 +172,7 @@
       "colonchanges": "lista izmjena",
       "gcomma": "idi na položaj sljedeće (skorašnje) promjene",
       "gsemicolon": "idi na položaj predhodne (starije) promjene",
-      "ctrlPlusCloseSquare": "idi na tag ispod kursora"
+      "ctrlPlusCloseSquare": "idi na tag pod kursorom"
     },
     "tip1": "Za pomicanje na oznaku može se koristiti (<kbd>`</kbd>) ili jednostruki apostrof (<kbd>'</kbd>). Ukoliko se koristi jednostruki apostrof kursor se pomiče na prvi neprazni znak u redu koji sadrži oznaku.",
     "tip": ""
@@ -192,7 +192,7 @@
       "helpForKeyword": "otvori pomoć za naredbu",
       "saveAsFile": "snimi datoteku kao",
       "closePane": "zatvori trenutno aktivni prozor",
-      "K": "otvori 'man' stranicu za riječ ispod kursora",
+      "K": "otvori 'man' stranicu za riječ pod kursorom",
       "colonTerminal": "otvori terminal u prozoru"
     },
     "tip1": "Pokrenite <kbd>vimtutor</kbd> u terminalu kako bi naučili osnove korištenja Vim-a."
@@ -203,8 +203,8 @@
       "yy": "kopiraj cijeli red",
       "twoyy": "kopiraj 2 reda",
       "yw": "kopiraj znakove u riječi od trenutog položaja kursora do početka sljedeće riječi",
-      "yiw": "kopiraj cijelu riječ ispod kursora",
-      "yaw": "kopiraj riječ ispod kursora i razmak prije ili poslije riječi",
+      "yiw": "kopiraj cijelu riječ pod kursorom",
+      "yaw": "kopiraj riječ pod kursorom i razmak prije ili poslije riječi",
       "yDollar": "kopiraj sve do kraja reda",
       "p": "zalijepi sadržaj trenutnog registra iza kursora",
       "P": "zalijepi ispred kursora",
@@ -213,20 +213,20 @@
       "dd": "izbriši čitavi red",
       "twodd": "izbriši 2 reda",
       "dw": "izbriši znakove u riječi od položaja kursora do početka sljedeće riječi",
-      "diw": "izbriši cijelu riječ ispod kursora",
-      "daw": "izbriši riječ ispod kursora i razmak prije ili poslije riječi",
+      "diw": "izbriši cijelu riječ pod kursorom",
+      "daw": "izbriši riječ pod kursorom i razmak prije ili poslije riječi",
       "dDollar": "izbriši sve do kraja reda",
-      "x": "izbriši znak ispod kursora",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "x": "izbriši znak pod kursorom",
+      "threeToFiveD": "izbriši redove počevši od 3. do 5.",
+      "gPatternD": "izbriši sve redove koji sadrže izraz (pattern)",
+      "gNotPatternD": "izbriši sve redove koji ne sadrže izraz (pattern)"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "Također je moguće koristiti sljedeće znakove za određivanje raspona:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaDollarD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "Od trenutnog reda do kraja datoteke",
+        "dotCommaOneD": "Od trenutnog reda do početka datoteke",
+        "tenCommaDollarD": "Od 10. reda do početka datoteke"
       }
     }
   },
@@ -243,7 +243,7 @@
       "=iB": "ponovi uvlaku unutrašnjosti bloka zadanog sa {}",
       "gg=G": "ponovo uvuci čitavi međuspremnik",
       "closeSquarep": "zalijepi i prilagodi uvlaku u trenutnom redu",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "lessThanPercent": "uvuci blok zadan sa () ili {} (kursor na zagradi)"
     }
   },
   "exiting": {
@@ -329,10 +329,10 @@
     "title": "Razlika (Diff)",
     "commands": {
       "zf": "ručno definiranje grupiranja (skupljanja) teksta",
-      "zd": "poništi zadano grupiranje teksta ispod kursora",
-      "za": "izmjenjuj skupljanje/rastvaranje grupiranog teksta ispod kursora",
-      "zo": "rastvori grupirani tekst ispod kursora",
-      "zc": "skupi grupirani tekst ispod kursora",
+      "zd": "poništi zadano grupiranje teksta pod kursorom",
+      "za": "izmjenjuj skupljanje/rastvaranje grupiranog teksta pod kursorom",
+      "zo": "rastvori grupirani tekst pod kursorom",
+      "zc": "skupi grupirani tekst pod kursorom",
       "zr": "rastvori jedan nivo manje u svim grupiranim tekstovima",
       "zm": "skupi jedan nivo više u svim grupiranim tekstovima",
       "zi": "izmjenjuj skupljanje/rastvaranje grupiranih tekstova",
