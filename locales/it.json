@@ -350,12 +350,17 @@
   "words": {
     "keyword": "parola chiave",
     "file": "file",
-    "movement": "movimento"
+    "movement": "movimento",
+    "tip": "Tip",
+    "or": "or",
+    "pattern": "pattern",
+    "eg": "e.g."
   },
   "languages": {
     "title": "Lingue"
   },
   "footer": "Guarda il codice sorgente su",
+  "page_title": "Vim Cheat Sheet",
   "layout": "page",
   "permalink": "/lang/it/"
 }
