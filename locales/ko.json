@@ -227,7 +227,7 @@
       "commands": {
         "dotCommaDollarD": "현재 행 부터 끝까지",
         "dotCommaOneD": "현재 행 부터 처음까지",
-        "tenCommaDollarD": "10 번째 행 부터 처음까지"
+        "tenCommaOneD": "10 번째 행 부터 처음까지"
       }
     }
   },
