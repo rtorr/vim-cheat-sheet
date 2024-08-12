@@ -235,7 +235,7 @@
     "title": "تورفتگی متن",
     "commands": {
       "greaterThanGreaterThan": "تورفتگی خط به اندازه یک shiftwidth (تورفتگی به راست)",
-      "lessThanLessThan": "پاد-تورفتگی خط به اندازه یک shiftwidth (تورفتگی به چپ)",
+      "lessThanLessThan": "کاهش تورفتگی خط به اندازه یک shiftwidth (تورفتگی به چپ)",
       "greaterThanPercent": "تورفتگی یک بلوک از () یا {} (نشانگر بروی کروشه یا پرانتز باشد)",
       "greaterThanib": "indent inner block with ()",
       "greaterThanat": "indent a block with <> tags",
