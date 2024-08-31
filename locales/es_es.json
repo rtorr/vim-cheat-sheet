@@ -227,7 +227,7 @@
       "commands": {
         "dotCommaDollarD": "Desde la línea actual al final del archivo",
         "dotCommaOneD": "Desde la línea actual al inicio del archivo",
-        "tenCommaDollarD": "Desde la décima línea al inicio del archivo"
+        "tenCommaOneD": "Desde la décima línea al inicio del archivo"
       }
     }
   },

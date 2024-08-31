@@ -227,7 +227,7 @@
       "commands": {
         "dotCommaDollarD": "从当前行到文件末尾",
         "dotCommaOneD": "从当前行到文件开头",
-        "tenCommaDollarD": "第 10 行到文件末尾"
+        "tenCommaOneD": "第 10 行到文件末尾"
       }
     }
   },

@@ -226,7 +226,7 @@
       "commands": {
         "dotCommaDollarD": "Od trenutnog reda do kraja datoteke",
         "dotCommaOneD": "Od trenutnog reda do početka datoteke",
-        "tenCommaDollarD": "Od 10. reda do početka datoteke"
+        "tenCommaOneD": "Od 10. reda do početka datoteke"
       }
     }
   },
