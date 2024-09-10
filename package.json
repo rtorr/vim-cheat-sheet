@@ -10,7 +10,7 @@
     "cookie-parser": "~1.4.6",
     "debug": "~4.3.4",
     "deepmerge": "^4.3.1",
-    "express": "~4.19.2",
+    "express": "~4.20.0",
     "express-hbs": "^2.5.0",
     "hbs": "^4.2.0",
     "http-errors": "~2.0.0",
