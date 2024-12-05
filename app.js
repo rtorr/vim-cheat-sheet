@@ -28,6 +28,10 @@ hbs.registerHelper("splitFirst", function (title) {
   return t[0];
 });
 
+hbs.registerHelper("lowerCase", function (str) {
+  return str.toLowerCase()
+})
+
 app.set("packageVersion", packageJson.version);
 app.set("languagesMetaData", metaData);
 
