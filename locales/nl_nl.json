@@ -6,9 +6,9 @@
     "title": "Cursorbewegingen",
     "commands": {
       "h": "verplaats cursor naar links",
-      "j": "verplaats cursor naar rechts",
+      "j": "verplaats cursor naar beneden",
       "k": "verplaats cursor naar boven",
-      "l": "verplaats cursor naar beneden",
+      "l": "verplaats cursor naar rechts",
       "gj": "move cursor down (multi-line text)",
       "gk": "move cursor up (multi-line text)",
       "w": "verplaats cursor naar het begin van een woord",
