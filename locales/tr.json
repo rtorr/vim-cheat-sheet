@@ -9,8 +9,8 @@
       "j": "imleci aşağı kaydır",
       "k": "imleci yukarı kaydır",
       "l": "imleci sağa kaydır",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "imleci aşağı kaydır (çok satırlı metin)",
+      "gk": "imleci yukarı kaydır (çok satırlı meting)",
       "w": "bir sonraki kelimenin başlangıcına atla",
       "W": "bir sonraki kelimenin başlangıcına atla (kelime noktalama işareti içerebilir)",
       "e": "bir sonraki kelimenin sonuna atla",
@@ -20,6 +20,7 @@
       "ge": "bir önceki kelimenin sonuna atla",
       "gE": "bir önceki kelimenin sonuna atla (kelime noktalama işareti içerebilir)",
       "H": "ekranın en üstüne kaydır",
+      "o": "diğer işaretlenmiş alanın sonuna gider",
       "M": "ekranın ortasına kaydır",
       "L": "ekranın en altına kaydır",
       "zero": "satır başına atla",
@@ -29,8 +30,8 @@
       "gg": "dokümanın ilk satırına git",
       "G": "dokümanın son satırına git",
       "fiveG": "5. satıra git",
-      "gd": "move to local declaration",
-      "gD": "move to global declaration",
+      "gd": "lokal deklarasyona git",
+      "gD": "global deklarasyona git",
       "fx": "sonraki x karakter konumuna atla",
       "tx": "sonraki x karakter konumunun yanına atla",
       "Fx": "önceki x karakter konumuna atla",
@@ -40,8 +41,8 @@
       "closeCurlyBrace": "sonraki paragrafa atla (veya fonksiyon/blok, kod yazarken)",
       "openCurlyBrace": "önceki paragrafa atla (veya fonksiyon/blok, kod yazarken)",
       "centerCursor": "imleci ekranda ortala",
-      "topCursor": "position cursor on top of the screen",
-      "bottomCursor": "position cursor on bottom of the screen",
+      "topCursor": "imleci ekranın üstüne konumlandır",
+      "bottomCursor": "imleci ekranın altına konumlandır",
       "CtrlPluse": "ekranı bir satır aşağı kaydır (imleci hareket ettirmeden)",
       "CtrlPlusy": "ekranı bir satır yukarı kaydır (imleci hareket ettirmeden)",
       "CtrlPlusb": "tam ekran geri kaydır",
@@ -78,22 +79,22 @@
     "title": "Düzenleme",
     "commands": {
       "r": "tek karakterin yerine koyar",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
+      "R": "<kbd>ESC</kbd> basılana kadar birden fazla karakter değiştir",
       "J": "şu anki satırın altına ekler",
-      "gJ": "join line below to the current one without space in between",
+      "gJ": "aşağıdaki satır ile şu anki satırı aralarında boşluk olmadan ekle",
       "gwip": "reflow paragraph",
       "gTilde": "switch case up to motion",
       "gu": "change to lowercase up to motion",
       "gU": "change to uppercase up to motion",
       "cc": "tüm satırı değiştirir (yerine koyar)",
       "cDollar": "satır sonuna kadar değiştirir (yerine koyar)",
-      "ciw": "change (replace) entire word",
+      "ciw": "kelimenin tamamını değiştir",
       "cw": "kelimenin sonuna kadar değiştirir (yerine koyar)",
       "s": "karakteri siler ve metin ile değiştirir",
       "S": "satırı siler ve metin ile değiştirir (cc komutu ile aynı)",
       "xp": "iki harfi transpoze eder (sil ve yapıştır)",
       "u": "geri al",
-      "U": "restore (undo) last changed line",
+      "U": "em son güncellenmiş satırı geri al",
       "CtrlPlusr": "ileri al",
       "dot": "son komutu tekrarla"
     }
@@ -107,12 +108,12 @@
       "CtrlPlusv": "görsel blok moduna başlar",
       "O": "bloğun diğer köşesine gider",
       "aw": "kelimeyi işaretle",
-      "ab": "() ile bloklar",
-      "aB": "{} ile bloklar",
-      "at": "a block with <> tags",
+      "ab": "() olan bloğu seç",
+      "aB": "{} olan bloğu seç",
+      "at": "<> etiketli olan bloğu seç",
       "ib": "() içerisini bloklar",
       "iB": "{} içerisini bloklar",
-      "it": "inner block with <> tags",
+      "it": "<> etiketli iç bloğu seç",
       "Esc": "görsel moddan çık"
     },
     "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
@@ -125,8 +126,8 @@
       "y": "işaretlenmiş metni kopyala",
       "d": "işaretlenmiş metni sil",
       "tilde": "harfleri büyükse küçük, küçükse büyük yap",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "u": "işaretli yazıyı küçük harf yap",
+      "U": "işaretli yazıyı büyük harf yap"
     }
   },
   "registers": {
@@ -135,24 +136,24 @@
       "show": "register içeriğini göster",
       "pasteRegisterX": "register x'in içeriğini yapıştırır",
       "yankIntoRegisterX": "register x içerisini kopyalar",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "quotePlusy": "sistem panosuna kopyala",
+      "quotePlusp": "sistem panoasundan yapistir"
     },
     "tip1": "Registerlar ~/.viminfo içerisinde depolanıyor ve vim'i yeniden başlattığınızda yüklenecektir",
     "tip2": {
-      "0": "last yank",
-      "title": "Special registers:",
-      "quote": "unnamed register, last delete or yank",
-      "percent": "current file name",
-      "hashtag": "alternate file name",
-      "asterisk": "clipboard contents (X11 primary)",
-      "plus": "clipboard contents (X11 clipboard)",
-      "slash": "last search pattern",
-      "colon": "last command-line",
-      "dot": "last inserted text",
+      "0": "son kopyalanan",
+      "title": "Ozel registerlar:",
+      "quote": "isimsiz register, son silinmis veya kopyalanmis",
+      "percent": "gecerli dosya adi",
+      "hashtag": "alternatif dosya adi",
+      "asterisk": "sistem panosu icerikleri (X11 primary)",
+      "plus": "sistem panosu icerikleri (X11 clipboard)",
+      "slash": "son arama kalibi",
+      "colon": "son komut-satiri",
+      "dot": "son eklenen metin",
       "minus": "last small (less than a line) delete",
-      "equal": "expression register",
-      "underscore": "black hole register"
+      "equal": "ifade registeri",
+      "underscore": "kara delik registeri"
     }
   },
   "marks": {
@@ -162,17 +163,17 @@
       "currentPositionA": "A işareti için konum belirle",
       "jumpPositionA": "A işaretinin konumuna atla",
       "yankToMarkA": "A işaretinin konumundaki yazıyı kopyala",
-      "backtick0": "go to the position where Vim was previously exited",
-      "backtickQuote": "go to the position when last editing this file",
-      "backtickDot": "go to the position of the last change in this file",
-      "backtickBacktick": "go to the position before the last jump",
-      "colonjumps": "list of jumps",
-      "ctrlPlusi": "go to newer position in jump list",
-      "ctrlPluso": "go to older position in jump list",
-      "colonchanges": "list of changes",
-      "gcomma": "go to newer position in change list",
-      "gsemicolon": "go to older position in change list",
-      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+      "backtick0": "Vim'den daha önce çıkılan konuma git",
+      "backtickQuote": "bu dosyayı en son düzenlediğiniz konuma gidin",
+      "backtickDot": "bu dosyadaki son değişikliğin konumuna git",
+      "backtickBacktick": "son atlamadan önceki konuma git",
+      "colonjumps": "ziplamalarin listesi",
+      "ctrlPlusi": "atlama listesinde daha yeni bir konuma git",
+      "ctrlPluso": "atlama listesinde eski konuma git",
+      "colonchanges": "degisiklik listesi",
+      "gcomma": "atlama listesinde yeni konuma git",
+      "gsemicolon": "atlama listesinde eski konuma git",
+      "ctrlPlusCloseSquare": "imlec uzerindeki tag'e git"
     },
     "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
@@ -193,10 +194,10 @@
       "saveAsFile": "dosyayı farklı kaydet",
       "closePane": "bölümü kapat ",
       "K": "imleç altındaki kelime için kılavuzu aç",
-      "colonTerminal": "open a terminal window",
+      "colonTerminal": "terminal penceresi aç",
       "openFile": "dosyayı aç"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "Ilk Vim komutlarini ogrenmek icin <kbd>vimtutor</kbd> calistir"
   },
   "cutAndPaste": {
     "title": "Kes ve yapıştır",
@@ -204,47 +205,47 @@
       "yy": "tek satır kopyalar",
       "twoyy": "2 satır kopyalar",
       "yw": "kelime kopyalar",
-      "yiw": "yank (copy) word under the cursor",
-      "yaw": "yank (copy) word under the cursor and the space after or before it",
+      "yiw": "imleç üzerindeki kelimeyi kopyala",
+      "yaw": "imlecin altındaki kelimeyi ve ondan sonraki veya önceki boşluğu kopyala",
       "yDollar": "satır sonuna kadar kopyalar",
       "p": "imleç sonrasına yapıştırır",
       "P": "imleç öncesine yapıştırır",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "panoyu imleçten sonraya koy (yapıştır) ve imleci yeni metinden sonra bırak",
+      "gP": "imleçten önce (yapıştır) koy ve imleci yeni metinden sonra bırak",
       "dd": "satırı (keser) siler",
       "twodd": "2 satırı (keser) siler",
       "dw": "kelime (keser) siler",
-      "diw": "delete (cut) word under the cursor",
-      "daw": "delete (cut) word under the cursor and the space after or before it",
+      "diw": "imlecin altındaki kelimeyi sil (kes)",
+      "daw": "imlecin altındaki kelimeyi ve ondan sonraki veya önceki boşluğu sil (kes)",
       "dDollar": "satır sonuna kadar (keser) siler",
       "x": "karakter (keser) siler",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "threeToFiveD": "3'ten 5'e kadar olan satırları sil",
+      "gPatternD": "kalıbı içeren tüm satırları sil",
+      "gNotPatternD": "kalıbı içermeyen tüm satırları sil"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "Aralığı belirtmek için aşağıdaki karakterleri de kullanabilirsiniz:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaOneD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "Geçerli satırdan dosyanın sonuna kadar",
+        "dotCommaOneD": "Geçerli satırdan dosyanın başına kadar",
+        "tenCommaOneD": "10. satırdan dosyanın başına kadar"
       }
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Metni girintile",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "greaterThanGreaterThan": "girintile (sağa kaydır) satırı bir shiftwidth kadar",
+      "lessThanLessThan": "girintiyi azalt (sola kaydır) satırı bir shiftwidth kadar",
+      "greaterThanPercent": "() veya {} ile bir bloğu girintile (imleç parantezin üzerinde)",
+      "greaterThanib": "iç bloğu () ile girintile",
+      "greaterThanat": "<> etiketleriyle bir bloğu girintile",
+      "3==": "3 satırı yeniden girintile",
+      "=Percent": "() veya {} ile bir bloğu yeniden girintile (imleç parantezin üzerinde)",
+      "=iB": "iç bloğu {} ile yeniden girintile",
+      "gg=G": "tüm tamponu yeniden girintile",
+      "closeSquarep": "yapıştır ve girintiyi mevcut satıra göre ayarla",
+      "lessThanPercent": "() veya {} ile bir bloğun girintisini azalt (imleç parantezin üzerinde)"
     }
   },
   "exiting": {
@@ -256,7 +257,7 @@
       "colonx": "dosyayı kaydet ve kapat",
       "colonq": "(kaydedilmemiş değişiklikler varsa hata ver) kapat",
       "colonqbang": "kaydedilmemiş değişiklikleri at ve kapat",
-      "colonwqa": "write (save) and quit on all tabs"
+      "colonwqa": "tüm sekmelerde yaz (kaydet) ve çık"
     }
   },
   "searchAndReplace": {
@@ -290,26 +291,26 @@
       "colonbprev": "bir önceki tampona geçer",
       "colonls": "tüm açık tamponları listeler",
       "colonbd": "tamponu siler ve dosyayı kapatır",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "tampona numarasına göre git",
+      "colonbfile": "tampona dosya adına göre git",
       "colonsp": "yeni tamponda dosya açar ve pencereyi böler",
       "colonvsp": "yeni tamponda dosya açar ve dikey olarak pencereyi böler",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvertba": "tüm tamponları dikey pencereler olarak düzenle",
+      "colontabba": "tüm tamponları sekmeler olarak düzenle",
       "ctrlPlusws": "pencereyi böler",
       "ctrlPluswv": "pencereyi dikey böler",
       "ctrlPlusww": "pencereyi değiştirir",
       "ctrlPluswq": "pencereyi kapatır",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswx": "mevcut pencereyi bir sonraki ile değiştir",
+      "ctrlPlusw=": "tüm pencereleri eşit yükseklik ve genişlikte yap",
       "ctrlPluswh": "imleci sol pencereye taşır (dikey bölme)",
       "ctrlPluswl": "imleci sağ pencereye taşır (dikey bölme)",
       "ctrlPluswj": "imleci aşağı pencereye taşır (yatay bölme)",
       "ctrlPluswk": "imleci yukarı pencereye taşır (yatay bölme)",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+      "ctrlPluswH": "mevcut pencereyi en sola tam yükseklikte taşı (en sol dikey pencere)",
+      "ctrlPluswL": "mevcut pencereyi en sağa tam yükseklikte taşı (en sağ dikey pencere)",
+      "ctrlPluswJ": "mevcut pencereyi en alta tam genişlikte taşı (en alt yatay pencere)",
+      "ctrlPluswK": "mevcut pencereyi en üste tam genişlikte taşı (en üst yatay pencere)"
     }
   },
   "tabs": {
@@ -327,31 +328,31 @@
     }
   },
   "diff": {
-    "title": "Diff",
+    "title": "Fark (Diff)",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "bir hareket kadar manuel olarak katlama tanımla",
+      "zd": "imleç altındaki katlamayı sil",
+      "za": "imleç altındaki katlamayı aç/kapat",
+      "zo": "imleç altındaki katlamayı aç",
+      "zc": "imleç altındaki katlamayı kapat",
+      "zr": "tüm katlamaları bir seviye aç",
+      "zm": "tüm katlamaları bir seviye kapat",
+      "zi": "katlama işlevini aç/kapat",
+      "closeSquarec": "bir sonraki değişikliğin başlangıcına atla",
+      "openSquarec": "bir önceki değişikliğin başlangıcına atla",
+      "do": "farkı al (diğer tampondan)",
+      "dp": "farkı ekle (diğer tampona)",
+      "colonDiffthis": "mevcut pencereyi fark moduna dahil et",
+      "colonDiffupdate": "farkları güncelle",
+      "colonDiffoff": "mevcut pencere için fark modunu kapat"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "Katlama komutları (örn. <kbd>za</kbd>) yalnızca bir seviyede çalışır. Tüm seviyelerde çalıştırmak için büyük harf kullanın (örn. <kbd>zA</kbd>).",
+    "tip2": "Dosyalar arasındaki farkları görmek için Vim doğrudan fark modunda başlatılabilir. Bunun için terminalde <kbd>vimdiff</kbd> komutu çalıştırılabilir. Hatta bu komut <kbd>git difftool</kbd> olarak da ayarlanabilir."
   },
   "words": {
-    "keyword": "keyword",
-    "file": "file",
-    "movement": "movement"
+    "keyword": "anahtar kelime",
+    "file": "dosya",
+    "movement": "hareket"
   },
   "languages": {
     "title": "Diller"
