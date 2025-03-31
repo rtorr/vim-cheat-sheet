@@ -40,8 +40,8 @@
       "closeCurlyBrace": "переміститись до наступного параграфа (чи функції/блоку, коли редагується код)",
       "openCurlyBrace": "переміститись до попереднього параграфа (чи функції/блоку, коли редагується код)",
       "centerCursor": "центрувати курсор на екрані",
-      "topCursor": "position cursor on top of the screen",
-      "bottomCursor": "position cursor on bottom of the screen",
+      "topCursor": "перемістити курсор в верх екрана",
+      "bottomCursor": "перемістити курсор в низ екрана",
       "CtrlPluse": "підняти видимий вміст екрану на один рядок (без переміщення курсора)",
       "CtrlPlusy": "опустити видимий вміст екрану на один рядок (без переміщення курсора)",
       "CtrlPlusb": "переміститись назад на один екрана",
@@ -217,16 +217,16 @@
       "daw": "видалити (вирізати) слово під курсором з пробілом",
       "dDollar": "видалити (вирізати) до кінця рядка",
       "x": "видалити (вирізати) символ",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "threeToFiveD": "видалити рядки з 3 по 5",
+      "gPatternD": "видалити всі рядки, що містять шаблон",
+      "gNotPatternD": "видалити всі рядки, що не містять шаблон"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "Ви також можете використовувати наступні символи для вказання діапазону:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaOneD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "Від поточного рядка до кінця файлу",
+        "dotCommaOneD": "Від поточного рядка до початку файлу",
+        "tenCommaOneD": "Від 10 рядка до початку файлу"
       }
     }
   },
@@ -243,7 +243,7 @@
       "=iB": "вирівняти текст між {}",
       "gg=G": "вирівняти весь буфер",
       "closeSquarep": "вставити і підігнати відступ для поточного рядка",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "lessThanPercent": "прибрати відступ для блоку, обмеженого () чи {} (курсор знаходиться на дужці)"
     }
   },
   "exiting": {
@@ -348,9 +348,9 @@
     "tip2": "Що б переглянути різницю між файлами, ви маєте змогу запустити Vim в режимі перегляду змін, використовуючи команду <kbd>vimdiff</kbd> в терміналі. Більш того, ви наміть маєте змогу використовувати цю команду в <kbd>git difftool</kbd>."
   },
   "words": {
-    "keyword": "keyword",
-    "file": "file",
-    "movement": "movement"
+    "keyword": "ключове слово",
+    "file": "файл",
+    "movement": "переміщення"
   },
   "languages": {
     "title": "Мови"
