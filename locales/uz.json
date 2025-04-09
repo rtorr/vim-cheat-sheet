@@ -1,0 +1,362 @@
+{
+  "title": "O‘zbek",
+  "lang": "uz",
+  "lang_tag": "uz",
+  "cursorMovement": {
+    "title": "Kursorni ko‘chirish",
+    "commands": {
+      "h": "kursorni chapga surish",
+      "j": "kursorni pastga surish",
+      "k": "kursorni yuqoriga surish",
+      "l": "kursorni o‘ngga surish",
+      "gj": "kursorni pastga siljitish (ko‘p satrli matn)",
+      "gk": "kursorni yuqoriga surish (ko‘p satrli matn)",
+      "w": "so‘z boshida oldinga o‘tish",
+      "W": "so‘z boshida oldinga siljitish (so‘zda tinish belgilari bo‘lishi mumkin)",
+      "e": "so‘z oxirida oldinga siljitish",
+      "E": "so‘z oxirida oldinga siljitish (so‘zda tinish belgilari bo‘lishi mumkin)",
+      "b": "so‘z boshida orqaga qaytish",
+      "B": "so‘z boshiga qaytish (so‘zda tinish belgilari bo‘lishi mumkin)",
+      "ge": "so‘z oxirida orqaga qaytish",
+      "gE": "so‘zning oxiriga qaytish (so‘zda tinish belgilari bo‘lishi mumkin)",
+      "H": "ekran boshiga o‘tish",
+      "M": "ekranning o‘rtasiga o‘tish",
+      "L": "ekranning oxiriga o‘tish",
+      "zero": "satr boshiga o‘tish",
+      "caret": "satrning birinchi probelsiz belgisiga o‘tish",
+      "dollar": "satr oxiriga o‘tish",
+      "g_": "satrdagi oxirgi bo‘sh bo‘lmagan belgiga o‘tish",
+      "gg": "hujjatning birinchi qatoriga o‘tish",
+      "G": "hujjatning oxirgi satriga o‘tish",
+      "fiveG": "beshinchi satrga ko‘chirish",
+      "gd": "mahalliy e’longa o‘tish",
+      "gD": "global e’longa o‘tish",
+      "fx": "x belgisining keyingi kirishiga o‘tish",
+      "tx": "x belgisining keyingi kiritilishidan oldin siljitish",
+      "Fx": "x belgisining oldingi kiritilishiga o‘tish",
+      "Tx": "oldingi x belgisi kiritilishidan oldin siljitish",
+      "semicolon": "oldingi ko‘chishni takrorlash f, t, F yokiT",
+      "comma": "oldingi f, t, F yoki T ko‘chishni teskari tartibda takrorlash",
+      "closeCurlyBrace": "keyingi paragrafga o‘tish (yoki kodni tahrirlashda funksiyalar/blok)",
+      "openCurlyBrace": "oldingi paragrafga (yoki kodni tahrirlashda funksiya/blokga) o‘tish",
+      "centerCursor": "kursorni ekranda markazlashtirish",
+      "topCursor": "kursorni ekranning yuqori qismida joylashtiring",
+      "bottomCursor": "kursorni ekranning pastki qismida joylashtiring",
+      "CtrlPluse": "ekranni bir qator pastga siljitish (kursorni siljitmasdan)",
+      "CtrlPlusy": "ekranni bir qator yuqoriga siljitish (kursorni siljitmasdan)",
+      "CtrlPlusb": "butun ekranga qaytish",
+      "CtrlPlusf": "butun ekranga oldinga siljish",
+      "CtrlPlusu": "ekranning yarmiga orqaga siljish",
+      "CtrlPlusd": "ekranning yarmiga oldinga siljish",
+      "percent": "mos juftlik belgisiga o‘tish (odatiy qo‘llab-quvvatlanadigan juftliklar:’() ’, ’{}’, ’[]’ - qo‘shimcha ma’lumot olish uchun Vim ilovasida <code>:h matchpairs</code> ishlating)"
+    },
+    "tip": "Kursorni siljitish buyrug‘ini takrorlash uchun uning oldiga son qo‘shing. Masalan, <kbd>4j</kbd> kursorni 4 qator pastga siljitadi."
+  },
+  "insertMode": {
+    "title": "Kiritish rejimi - matn kiritish/kiritish",
+    "commands": {
+      "i": "kursor oldidagi qo‘shimcha",
+      "I": "satr boshiga qo‘yish",
+      "a": "kursordan keyin qo‘yish",
+      "A": "satr oxiriga qo‘yish",
+      "o": "joriy qator ostiga yangi qator qo‘shish",
+      "O": "joriy qator ustiga yangi qator qo‘shish",
+      "ea": "so‘z oxiridan keyin qo‘shish",
+      "ctrlPlush": "kiritish rejimida kursor oldidagi belgini o‘chirish",
+      "ctrlPlusw": "kiritish rejimida kursor oldidagi so‘zni olib tashlash",
+      "ctrlPlusj": "kiritish rejimida yangi qatorga o‘tish",
+      "ctrlPlust": "kiritish rejimida qatorga bitta chekinish qo‘shish (o‘ngga surish)",
+      "ctrlPlusd": "kiritish rejimida satrdan bitta nuqtani olib tashlash (chapga surish)",
+      "ctrlPlusn": "kiritish rejimida kursor oldidagi quyidagi moslikni kiritish (avtomatik kiritish)",
+      "ctrlPlusp": "kiritish rejimida kursor oldidagi oldingi moslikni kiritish (avtomatik kiritish)",
+      "ctrlPlusrx": "x registrining mundarijasini qo‘yish",
+      "ctrlPlusox": "normal rejimni vaqtincha yoqing va normal rejim x buyrug‘ini bajarish.",
+      "Esc": "kiritish rejimidan chiqish"
+    }
+  },
+  "editing": {
+    "title": "Tahrirlash",
+    "commands": {
+      "r": "bitta simvolni almashtirish",
+      "R": "<kbd>ESC</kbd> tugmasini bosishdan oldin bir nechta belgini almashtiring.",
+      "J": "pastki qatorni joriy qatorga qo‘shish",
+      "gJ": "pastki qatorni joriy qatorga bo‘sh joy qoldirmasdan qo‘shish",
+      "gwip": "azbasni qayta kompanovka qilish",
+      "gTilde": "kursorni siljitish davomida registrni inversiyalash",
+      "gu": "kursorni siljitish davomida yuqori registrga o‘tkazish",
+      "gU": "kursorni siljitish davomida pastki registrga o‘tkazish",
+      "cc": "butun satrni almashtirish",
+      "cDollar": "satr oxirigacha almashtirish",
+      "ciw": "butun so‘zni o‘zgartirish",
+      "cw": "so‘zning oxirigacha almashtirish",
+      "s": "belgini o‘chirish va matnni almashtirish",
+      "S": "satrni olib tashlash va matnni almashtirish (cc bilan bir xil)",
+      "xp": "ikkita harfning o‘rnini almashtirish (o‘chirish va qo‘yish)",
+      "u": "bekor qilish",
+      "U": "oxirgi o‘zgartirilgan satrni tiklash",
+      "CtrlPlusr": "takrorlash",
+      "dot": "oxirgi buyruqni takrorlash"
+    }
+  },
+  "markingText": {
+    "title": "Matnni belgilash (vizual rejim)",
+    "commands": {
+      "v": "matnni belgilash rejimini yoqish, satrlarni belgilash, keyin buyruqni bajarish (masalan, y-nusxa olish)",
+      "V": "satrma-satr tanlash rejimini yoqish",
+      "o": "belgilangan sohaning boshqa chetiga o‘tish",
+      "CtrlPlusv": "bloklarni ajratish rejimini yoqish",
+      "O": "blokning boshqa burchagiga ko‘chirish",
+      "aw": "so‘zni ajratib ko‘rsatish",
+      "ab": "dagi blok ()",
+      "aB": "{} ichidagi blok",
+      "at": "<> ta tegdagi blok",
+      "ib": "ichidagi blok ()",
+      "iB": "{} ichidagi ichki blok",
+      "it": "<> ta tegdagi ichki blok",
+      "Esc": "matnni belgilash rejimidan chiqish"
+    },
+    "tip1": "<kbd>b</kbd> va <kbd>B</kbd> o‘rniga mos ravishda <kbd> (</kbd> va <kbd>{</kbd> ni ham ishlatish mumkin."
+  },
+  "visualCommands": {
+    "title": "Vizual buyruqlar",
+    "commands": {
+      "greaterThan": "matnni o‘ngga surish",
+      "lessThan": "matnni chapga surish",
+      "y": "ajratilgan matndan nusxa ko‘chirish",
+      "d": "belgilangan matnni o‘chirish",
+      "tilde": "registrni almashtirish",
+      "u": "ajratilgan matnni quyi registrga o‘tkazish",
+      "U": "belgilangan matnni yuqori registrga o‘tkazishр"
+    }
+  },
+  "registers": {
+    "title": "Registrlar",
+    "commands": {
+      "show": "registrlar tarkibini ko‘rsatish",
+      "pasteRegisterX": "x registrining mundarijasini qo‘yish",
+      "yankIntoRegisterX": "tarkibni x registriga joylashtirish",
+      "quotePlusy": "almashinuv buferining tizim registriga nusxa olish",
+      "quotePlusp": "almashinuv buferining tizim registridan qo‘yish"
+    },
+    "tip1": "Registrlar tarkibi ~/.viminfo da saqlanadi va keyingi safar vim ishga tushirilganda tiklanadi.",
+    "tip2": {
+      "0": "oxirgi nusxa olish",
+      "title": "Maxsus registrlar:",
+      "quote": "nomsiz registr: oxirgi marta o‘chirilgan yoki nusxalangan",
+      "percent": "joriy fayl nomi",
+      "hashtag": "muqobil fayl nomi",
+      "asterisk": "bufer kontenti (birlamchi X11)",
+      "plus": "bufer kontenti (X11 bufer kontenti)",
+      "slash": "oxirgi qidiruv namunasi",
+      "colon": "oxirgi komanda",
+      "dot": "oxirgi kiritilgan matn",
+      "minus": "oxirgi kichik (satrdan kichik) o‘chirish",
+      "equal": "ifoda qiymatini qaytaruvchi registr",
+      "underscore": "qora tuynuk registri"
+    }
+  },
+  "marks": {
+    "title": "Yorliqlar",
+    "commands": {
+      "list": "yorliqlar ro‘yxati",
+      "currentPositionA": "joriy pozitsiyada A belgisini o‘rnatish",
+      "jumpPositionA": "A belgiga o‘tish",
+      "yankToMarkA": "A belgisigacha nusxalash",
+      "backtick0": "Vim oxirgi marta yopilgan joyga o‘tish",
+      "backtickQuote": "ushbu fayl oxirgi marta yopilgan joyga o‘tish",
+      "backtickDot": "ushbu faylning oxirgi tahrirlangan joyiga o‘tish",
+      "backtickBacktick": "oxirgi o‘tish oldidan pozitsiyaga o‘tish",
+      "colonjumps": "o‘tishlar ro‘yxatini ochish",
+      "ctrlPlusi": "o‘tishlar ro‘yxatida yangi o‘tishga o‘tish",
+      "ctrlPluso": "o‘tishlar ro‘yxatidagi eskiroq o‘tishga o‘tish",
+      "colonchanges": "o‘zgarishlar ro‘yxatini ochish",
+      "gcomma": "o‘zgarishlar ro‘yxatidagi yangi o‘zgarishga o‘tish",
+      "gsemicolon": "o‘zgarishlar ro‘yxatidagi eskiroq o‘zgarishga o‘tish",
+      "ctrlPlusCloseSquare": "kursor ostidagi tegga o‘tish"
+    },
+    "tip1": "Belgiga o‘tish uchun yon urg‘u belgisi (<kbd>’</kbd>) va tutuq belgisi (<kbd>’</kbd>) dan foydalanishingiz mumkin. Tutuq belgisidan foydalanish belgini o‘z ichiga olgan satr boshiga (birinchi bo‘sh bo‘lmagan) o‘tkazadi.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Makroslar",
+    "commands": {
+      "recordA": "A makrosni yozish",
+      "stopRecording": "makros yozuvini to‘xtatish",
+      "runA": "A makrosni bajarish",
+      "rerun": "oxirgi makrosni bajarish"
+    }
+  },
+  "global": {
+    "title": "Umumiy",
+    "commands": {
+      "helpForKeyword": "kalit so‘z uchun yordamni ochish keyword",
+      "saveAsFile": "fayl nomi bilan saqlash",
+      "closePane": "joriy panelni yopish",
+      "K": "kursor ostidagi so‘z uchun qo‘llanmani ochish",
+      "colonTerminal": "terminal oynasini ochish",
+      "openFile": "faylni ochish"
+    },
+    "tip1": "Vimning birinchi buyruqlarini o‘rganish uchun terminalda <kbd>vimtutor</kbd> bajaring."
+  },
+  "cutAndPaste": {
+    "title": "Qirqib olish va joylash",
+    "commands": {
+      "yy": "satrni nusxalash",
+      "twoyy": "2 qatorni nusxalash",
+      "yw": "so‘zdan nusxa ko‘chirish",
+      "yiw": "so‘zni kursor ostiga ko‘chirish",
+      "yaw": "kursor ostidagi so‘zni va undan oldingi yoki keyingi bo‘shliqni nusxalash",
+      "yDollar": "satr oxirigacha ko‘chirish",
+      "p": "kursordan keyin almashinuv buferini qo‘yish",
+      "P": "kursor oldiga vaqtinchalik xotirani qo‘yish",
+      "gp": "kursordan keyin buferni qo‘yish va qo‘yilgan matndan keyin kursorni siljitish",
+      "gP": "almashinuv buferini kursor oldidan qo‘yish va qo‘yilgan matndan keyin kursorni siljitish",
+      "dd": "satrni o‘chirish (qirqib olish)",
+      "twodd": "2 ta qatorni o‘chirish (qirqib olish)",
+      "dw": "so‘zni o‘chirib tashlash",
+      "diw": "kursor ostidagi so‘zni o‘chirish (qirqib olish)",
+      "daw": "kursor ostidagi so‘zni va undan oldingi yoki keyingi bo‘shliqni olib tashlash (kesib tashlash)",
+      "dDollar": "satr oxirigacha o‘chirish (qirqib olish)",
+      "x": "belgini o‘chirish (qirqib olish)",
+      "threeToFiveD": "3 dan 5 gacha qatorlarni o‘chirish",
+      "gPatternD": "patterni o‘z ichiga olgan barcha qatorlarni o‘chirishn",
+      "gNotPatternD": "grafik kalitga ega bo‘lmagan barcha qatorlarni o‘chirish"
+    },
+    "tip1": {
+      "title": "Diapazonni belgilash uchun quyidagi belgilardan ham foydalanishingiz mumkin:",
+      "commands": {
+        "dotCommaDollarD": "Joriy qatordan fayl oxirigacha",
+        "dotCommaOneD": "Joriy satrdan fayl boshiga",
+        "tenCommaOneD": "10-satrdan faylning boshigacha"
+      }
+    }
+  },
+  "indentText": {
+    "title": "Matndagi chekinishlar",
+    "commands": {
+      "greaterThanGreaterThan": "satrga bitta chekinish qo‘shish (o‘ngga surish)",
+      "lessThanLessThan": "satrdan bir nuqtani olib tashlash (chapga surish)",
+      "greaterThanPercent": "() yoki {}da blokga bitta chekinish qo‘shish",
+      "greaterThanib": "ichki blokga chekinishni () ga o‘zgartirish",
+      "greaterThanat": "<> ta tegda chekinishni blokka o‘zgartirish",
+      "3==": "3 ta satrning chetga chiqishini tekislash",
+      "=Percent": "() yoki {} da blok chekkalarini tekislash",
+      "=iB": "blok chekinishlarini {} ga tenglashtirish",
+      "gg=G": "butun buferni tekislash",
+      "closeSquarep": "Kursor ostidagi satr bo‘yicha chetlanishlarni qo‘yish va tekislash",
+      "lessThanPercent": "() yoki {} bilan blokni de-indent qilish (kursor qavsda)"
+    }
+  },
+  "exiting": {
+    "title": "Chiqish va saqlash",
+    "commands": {
+      "colonw": "faylni saqlash, lekin chiqmaslik",
+      "colonwsudo": "faylni sudo bilan saqlash",
+      "colonwq": "faylni saqlash va chiqish",
+      "colonx": "saqlash va chiqish",
+      "colonq": "chiqish (agar o‘zgarishlar saqlanmasa, muvaffaqiyatsizlikka uchraydi)",
+      "colonqbang": "saqlanmasdan chiqish",
+      "colonwqa": "barcha varaqlar va buferlarga yozish (saqlash) va chiqish"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Qidirish va almashtirish",
+    "commands": {
+      "forwardSlashPattern": "shablon qidirish",
+      "questionMarkPattern": "shablonni teskari qidirish",
+      "backslashVpattern": "very magic rejimi: barcha alifbo-raqamli bo‘lmagan belgilar maxsus deb talqin qilinadi (ekranlash shart emas)",
+      "n": "bir xil yo‘nalishda qidirishni takrorlash",
+      "N": "qidiruvni teskari yo‘nalishda takrorlash",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "fayldagi barcha shablon kirishlarini ko‘rsatilgan qiymatga almashtirish",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "fayldagi barcha shablon kirishlarini tasdiqlash bilan ko‘rsatilgan qiymatga almashtirish",
+      "colonnoh": "qidiruv natijalarini yoritishni faolsizlantirish"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Bir nechta fayldan qidirish",
+    "commands": {
+      "colonvimgrep": "bir nechta fayllarda shablon bo‘yicha qidirish",
+      "coloncn": "keyingi moslikka o‘tish",
+      "coloncp": "oldingi tasodifga o‘tish",
+      "coloncopen": "natijalar ro‘yxati oynasini ochish",
+      "coloncclose": "natijalar ro‘yxati oynasini yopish"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Bir nechta fayl bilan ishlash",
+    "commands": {
+      "colone": "faylni yangi buferda tahrirlash",
+      "colonbnext": "keyingi buferga o‘tish",
+      "colonbprev": "oldingi buferga o‘tish",
+      "colonls": "barcha ochiq buferlar ro‘yxati",
+      "colonbd": "buferni olib tashlash (faylni yopish)",
+      "colonbnumber": "# raqamli buferga o‘tish",
+      "colonbfile": "fayl nomi bilan buferga o‘tish",
+      "colonsp": "faylni yangi buferda ochish va oynani ajratish",
+      "colonvsp": "faylni yangi buferda ochish va oynani vertikal ravishda ajratish",
+      "colonvertba": "barcha buferlarni vertikal oyna sifatida ochish",
+      "colontabba": "barcha buferlarni varaq sifatida ochish",
+      "ctrlPlusws": "derazani ikkiga bo‘lish",
+      "ctrlPluswv": "derazani vertikal bo‘laklarga ajratish",
+      "ctrlPlusww": "oynalarni almashlab ulash",
+      "ctrlPluswq": "derazani yopish",
+      "ctrlPluswx": "joriy oynani keyingisi bilan almashtirish",
+      "ctrlPlusw=": "barcha derazalarni bir xil balandlikda va kenglikda qilish",
+      "ctrlPluswh": "kursorni chap oynaga ko‘chirish (vertikal ajratish)",
+      "ctrlPluswl": "kursorni o‘ng oynaga ko‘chirish (vertikal ajratish)",
+      "ctrlPluswj": "kursorni quyidagi oynaga ko‘chirish (gorizontal ajratish)",
+      "ctrlPluswk": "kursorni yuqoridagi oynaga ko‘chirish (gorizontal ajratish)",
+      "ctrlPluswH": "joriy oynani balandligi bo‘yicha maksimal va chapdan eng chekkasi (eng chap vertikal oyna) qilib belgilash",
+      "ctrlPluswL": "joriy oynani balandligi bo‘yicha maksimal va o‘ng tomondagi eng chekka oynaga aylantirish (eng o‘ng vertikal oyna)",
+      "ctrlPluswJ": "joriy oynani kengligi bo‘yicha maksimal va pastdan eng chekka (eng pastki gorizontal oyna) qilish",
+      "ctrlPluswK": "joriy oynani kengligi bo‘yicha maksimal va yuqoridan eng chekka (eng yuqori gorizontal oyna) qilish"
+    }
+  },
+  "tabs": {
+    "title": "Varaqlar",
+    "commands": {
+      "colonTabNew": "faylni yangi varaqda ochish",
+      "ctrlPluswT": "joriy oynani o‘z sahifasiga ko‘chirish",
+      "gt": "keyingi varaqqa o‘tish",
+      "gT": "avvalgi varaqqa o‘tish",
+      "hashgt": "# ta varaqqa almashish",
+      "colontabmove": "joriy varaqni # ta pozitsiyaga ko‘chirish (0 dan boshlab raqamlangan)",
+      "colontabc": "joriy varaq va uning barcha oynalarini yopish",
+      "colontabo": "joriy varaqdan tashqari barcha varaqlarni yopish",
+      "colontabdo": "barcha varaqlarda <code>buyruq</code> bajaring (masalan, <code>:tabdo q</code> barcha ochiq varaqlarni yopadi)"
+    }
+  },
+  "diff": {
+    "title": "Fayllardagi farqlar",
+    "commands": {
+      "zf": "kursorni siljitish jarayonida o‘ramni qo‘lda aniqlash",
+      "zd": "kursor ostidagi o‘ramni o‘chirish",
+      "za": "kursor ostidagi o‘ram holatini o‘zgartirish",
+      "zo": "o‘ramni kursor ostida ochish",
+      "zc": "o‘ramni kursor ostida o‘rash",
+      "zr": "barcha o‘ramlarni bir xil darajada ochish",
+      "zm": "barcha o‘ramlarni bir xil darajaga o‘rash",
+      "zi": "buferdagi barcha o‘ramlar holatini o‘zgartirish",
+      "closeSquarec": "keyingi farqning boshiga o‘tish",
+      "openSquarec": "avvalgi farqning boshiga o‘tish",
+      "do": "farqlarni nusxalash (boshqa buferdan)",
+      "dp": "farqlarni qo‘yish (boshqa buferga)",
+      "colonDiffthis": "joriy oynani taqqoslash oynasining bir qismiga aylantirish",
+      "colonDiffupdate": "farqlarni yangilash",
+      "colonDiffoff": "joriy oyna uchun taqqoslash rejimini faolsizlantirish"
+    },
+    "tip1": "O‘ram buyruqlari (masalan, <kbd>za</kbd>) bir xil joylashuv darajasida ishlaydi. Barcha darajalarda ishlash uchun bosh harflardan foydalaning (masalan, <kbd>zA</kbd>).",
+    "tip2": "Fayllardagi farqlarni ko‘rish uchun terminal <kbd>vimdiff</kbd> orqali taqqoslash rejimida to‘g‘ridan-to‘g‘ri Vimni ishga tushirish mumkin. Uni <kbd>git difftool</kbd> qilib ham o‘rnatish mumkin."
+  },
+  "words": {
+    "keyword": "kalit so‘z",
+    "file": "fayl",
+    "movement": "harakat"
+  },
+  "languages": {
+    "title": "Tillar"
+  },
+  "footer": "Kod bilan tanishing",
+  "layout": "page",
+  "permalink": "/lang/uz/"
+}
