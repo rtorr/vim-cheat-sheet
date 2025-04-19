@@ -1,0 +1,362 @@
+{
+  "title": "Galego",
+  "lang": "gl",
+  "lang_tag": "gl",
+  "cursorMovement": {
+    "title": "Movemento do cursor",
+    "commands": {
+      "h": "mover o cursor cara a esquerda",
+      "j": "mover o cursor cara embaixo",
+      "k": "mover o cursor cara enriba",
+      "l": "mover o cursor cara a dereita",
+      "gj": "move cursor abaixo (texto multi-liña)",
+      "gk": "move cursor arriba (texto multi-liña)",
+      "w": "ir ao inicio da próxima palabra",
+      "W": "ir ao inicio da próxima palabra (podendo conter puntuación)",
+      "e": "ir á fin da próxima palabra",
+      "E": "ir á fin da próxima palabra (podendo conter puntuación)",
+      "b": "ir ao inicio da palabra anterior",
+      "B": "ir ao inicio da palabra anterior (podendo conter puntuación)",
+      "ge": "salta atrás ata a fin da palabra",
+      "gE": "salta atrás ata a fin da palabra (podendo conter puntuación)",
+      "H": "posiciona o cursor na parte superior da pantalla",
+      "M": "posiciona o cursor no medio da pantalla",
+      "L": "posiciona o cursor na parte inferior da pantalla",
+      "zero": "ir ao inicio da liña",
+      "caret": "ir ao primeiro carácter da liña que non sexa espazo",
+      "dollar": "ir á fin da liña",
+      "g_": "ir ao último carácter da liña que non sexa espazo",
+      "gg": "ir á primeira liña do documento",
+      "G": "ir á derradeira liña do documento",
+      "fiveG": "ir á liña 5",
+      "gd": "moverse ata a declaración local",
+      "gD": "moverse ata a declaración global",
+      "fx": "ir ata a próxima aparición do caracter 'x'",
+      "tx": "ir ata o carácter anterior á próxima aparición do caracter 'x'",
+      "Fx": "ir ata a aparición anterior do caracter 'x'",
+      "Tx": "ir ata despois da aparición anterior do caracter 'x'",
+      "semicolon": "repetir movemento f, t, F ou T",
+      "comma": "repetir movemento f, t, F ou T, no sentido contrario",
+      "closeCurlyBrace": "ir ao próximo parágrafo (ou función/bloque, ao editar código)",
+      "openCurlyBrace": "ir ao parágrafo anterior (ou función/bloque, ao editar código)",
+      "centerCursor": "centrar o cursor na pantalla",
+      "topCursor": "posiciona o cursor no alto da pantalla",
+      "bottomCursor": "posiciona o cursor no baixo da pantalla",
+      "CtrlPluse": "move a pantalla unha liña abaixo (sen mover o cursor)",
+      "CtrlPlusy": "move a pantalla unha liña arriba (sen mover o cursor)",
+      "CtrlPlusb": "retroceder unha pantalla completa",
+      "CtrlPlusf": "avanzar unha pantalla completa",
+      "CtrlPlusu": "retroceder media pantalla",
+      "CtrlPlusd": "avanzar media pantalla",
+      "percent": "ir ao carácter correspondente (pares recoñecidos orixinalmente: '()', '{}', '[]' - use <code>:h matchpairs</code> no vim para máis información"
+    },
+    "tip": "Para repetir un movemento do cursor engada un prefixo numérico. Por exemplo, <kbd>4j</kbd> move o cursor 4 liñas cara embaixo."
+  },
+  "insertMode": {
+    "title": "Modo de inserción - inserir/engadir texto",
+    "commands": {
+      "i": "inserir antes do cursor",
+      "I": "inserir no inicio da liña",
+      "a": "inserir despois do cursor",
+      "A": "inserir na fin da liña",
+      "o": "inserir unha nova liña por baixo da actual",
+      "O": "inserir unha nova liña por riba da actual",
+      "ea": "inserir na fin da palabra",
+      "ctrlPlush": "borra o carácter antes do cursor durante o modo de inserción",
+      "ctrlPlusw": "borra a palabra antes do cursor durante o modo de inserción",
+      "ctrlPlusj": "comeza unha líña nova durante o modo de inserción",
+      "ctrlPlust": "indenta (move á dereita) a liña un ancho de desprazamento durante o modo de inserción",
+      "ctrlPlusd": "desindenta (move á esquerda) a liña un ancho de desprazamento durante o modo de inserción",
+      "ctrlPlusn": "inisire (auto-completa) o seguinte achado antes do cursor durante o modo de inserción",
+      "ctrlPlusp": "insire (auto-completa) o previo achado antes do cursor durante o modo de inserción",
+      "ctrlPlusrx": "insire o contido do rexistro 'x'",
+      "ctrlPlusox": "Entra temporalmente no modo normal para executar un comando 'x' do modo normal",
+      "Esc": "saír do modo de inserción"
+    }
+  },
+  "editing": {
+    "title": "Edición",
+    "commands": {
+      "r": "substituír un único carácter",
+      "R": "trocar máis dun carácter, ata premer <kbd>ESC</kbd>",
+      "J": "xuntar a liña seguinte coa liña actual",
+      "gJ": "xuntar a liña seguinte coa liña actual sen espazo entre medio",
+      "gwip": "refluxo de parágrafo",
+      "gTilde": "trocar maiúsculas/minúsculas ata o movemento",
+      "gu": "trocar a minúsculas ata o movemento",
+      "gU": "trocar a maiúsculas ata o movemento",
+      "cc": "substituír a liña enteira",
+      "cDollar": "substituír ata a fin da liña",
+      "ciw": "troca (substitúe) a palabra enteira",
+      "cw": "substituír ata a fin da palabra actual",
+      "s": "eliminar un carácter e substituír texto",
+      "S": "eliminar un carácter e substituír texto ata a fin da liña (igual a cc)",
+      "xp": "transpor dúas letras (cortar e pegar)",
+      "u": "desfacer",
+      "U": "restaurar (desfacer) a última liña cambiada",
+      "CtrlPlusr": "refazer",
+      "dot": "repetir o último comando"
+    }
+  },
+  "markingText": {
+    "title": "Marcación de texto (modo visual)",
+    "commands": {
+      "v": "iniciar modo visual, marcar liñas e executar un comando (como y - copiar)",
+      "V": "iniciar modo visual de liña",
+      "o": "ir alternadamente á fin/inicio da área marcada",
+      "CtrlPlusv": "iniciar modo visual de bloque",
+      "O": "ir alternadamente á fin/inicio do bloque na liña actual",
+      "aw": "marcar unha palabra",
+      "ab": "marcar bloque dentro de (), incluíndo ()",
+      "aB": "marcar bloque dentro de {}, incluíndo {}",
+      "at": "marcar bloque dentro das etiquetas <>, incluíndo <>",
+      "ib": "marcar bloque dentro de (), excluíndo ()",
+      "iB": "marcar bloque dentro de {}, excluíndo {}",
+      "it": "marcar bloque dentro das etiquetas <>, excluíndo <>",
+      "Esc": "saír do modo visual"
+    },
+    "tip1": "En troques de <kbd>b</kbd> ou <kbd>B</kbd>, pódese tamén usar <kbd>(</kbd> ou <kbd>{</kbd>, respectivamente."
+  },
+  "visualCommands": {
+    "title": "Comandos no modo visual",
+    "commands": {
+      "greaterThan": "indentar texto cara á dereita",
+      "lessThan": "indentar texto cara á esquerda",
+      "y": "copiar texto marcado",
+      "d": "eliminar texto marcado",
+      "tilde": "alternar maiúsculas/minúsculas",
+      "u": "cambiar texto marcado a minúsula",
+      "U": "cambiar texto marcado a maiúscula"
+    }
+  },
+  "registers": {
+    "title": "Rexistros",
+    "commands": {
+      "show": "mostrar contido dos rexistros",
+      "pasteRegisterX": "pegar contido do rexistro 'x'",
+      "yankIntoRegisterX": "copiar ao rexistro 'x'",
+      "quotePlusy": "copiar no rexistro de portapapeis do sistema",
+      "quotePlusp": "pergar dende o rexistro de portapapeis do sistema"
+    },
+    "tip1": "Os rexistros son gardados en ~/.viminfo e serán carregados novamente ao reiniciar o vim.",
+    "tip2": {
+      "0": "última copia",
+      "title": "Rexistros especiais:",
+      "quote": "rexistro sen nome, última eliminación ou copia",
+      "percent": "nome do ficheiro actual",
+      "hashtag": "nome de ficheiro alternativo",
+      "asterisk": "contido do portapapeis (X11 primario)",
+      "plus": "contido do portapapeis (X11 portapapeis)",
+      "slash": "último patron de busca",
+      "colon": "último comando da liña de comandos",
+      "dot": "último texto inserido",
+      "minus": "último texto curto (menos dunha liña) eliminado",
+      "equal": "registro de expresión",
+      "underscore": "rexistro do burato negro"
+    }
+  },
+  "marks": {
+    "title": "Marcas",
+    "commands": {
+      "list": "lista das marcas",
+      "currentPositionA": "definir a marca 'a' na posición actual",
+      "jumpPositionA": "ir á posición da marca 'a'",
+      "yankToMarkA": "copiar texto da posición actual ata a marca 'a'",
+      "backtick0": "ir á posición dende onde vim saiu na última vez",
+      "backtickQuote": "ir á posición da última edición no ficheiro actual",
+      "backtickDot": "ir á posición do último cambio no ficheiro actual",
+      "backtickBacktick": "ir á posición anterior ao último chimpo",
+      "colonjumps": "lista de chimpos",
+      "ctrlPlusi": "ir a posición máis nova na lista de chimpos",
+      "ctrlPluso": "ir á posición máis vella na lista de chimpos",
+      "colonchanges": "lista de cambios",
+      "gcomma": "ir á posición máis nova na lista de cambios",
+      "gsemicolon": "ir á posición máis vella na lista de cambios",
+      "ctrlPlusCloseSquare": "chimpar á etiqueta baixo o cursor"
+    },
+    "tip1": "Parar chimpar a unha marca pódese ou ben usar o til inverso (<kbd>`</kbd>) ou ben un apóstrofo (<kbd>'</kbd>). Cando se usa un apóstrofo, sáltase ao comezo (primeiro carácter non branco) da liña sobre a que está a marca.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "Macros",
+    "commands": {
+      "recordA": "comezar a gravar a macro 'a'",
+      "stopRecording": "parar de gravar a macro",
+      "runA": "correr a macro 'a'",
+      "rerun": "correr novamente a última macro executada"
+    }
+  },
+  "global": {
+    "title": "Global",
+    "commands": {
+      "helpForKeyword": "abrir axuda para o termo",
+      "saveAsFile": "gravar como",
+      "closePane": "pechar panel actual",
+      "K": "abrir páxina do manual para o termo onde está o cursor",
+      "colonTerminal": "abrir unha xanela de terminal",
+      "openFile": "abrir ficheiro"
+    },
+    "tip1": "Executa <kbd>vimtutor</kbd> nunha terminal para aprender os primeiros comandos do vim."
+  },
+  "cutAndPaste": {
+    "title": "Cortar/copiar e pegar",
+    "commands": {
+      "yy": "copiar unha liña",
+      "twoyy": "copiar dúas liñas",
+      "yw": "copiar os carácteres ata o inicio da próxima palabra",
+      "yiw": "copiar a palabra baixo o cursor",
+      "yaw": "copiar a palabra baixo o cursor e máis o espazo anterior ou posterior a ela",
+      "yDollar": "copiar ata a fin da liña",
+      "p": "pegar despois do cursor",
+      "P": "pegar antes do cursor",
+      "gp": "pór (pegar) o contido do portapapeis despois do cursor e deixar o cursor despois do novo texto",
+      "gP": "pór (pegar) antes do cursor e deixar of cursor antes do novot texto",
+      "dd": "cortar unha liña",
+      "twodd": "cortar dúas liñas",
+      "dw": "cortar ata o inicio da próxima palabra",
+      "diw": "borrar (cortar) a palabra baixo o cursor",
+      "daw": "borrar (cortar) a palabra baixo o cursor e máis os espazos anterior e posterior",
+      "dDollar": "cortar ata ao fin da liña (igual a D)",
+      "x": "cortar o carácter baixo o cursor",
+      "threeToFiveD": "borra as liñas da 3 á 5",
+      "gPatternD": "borra tódalas liñas que conteñen o patrón",
+      "gNotPatternD": "borra tódalas liñas que non conteñen o patrón"
+    },
+    "tip1": {
+      "title": "Tamén pódense usar os seguintes carácteres para especificar o rango.",
+      "commands": {
+        "dotCommaDollarD": "Dende a liña actual ata a fin do ficheiro",
+        "dotCommaOneD": "Dende a liña acutal ata o comezo do ficheiro",
+        "tenCommaOneD": "Dende a liña 10 ata o comezo do ficheiro"
+      }
+    }
+  },
+  "indentText": {
+    "title": "Indentar texto",
+    "commands": {
+      "greaterThanGreaterThan": "indenta (move á dereita) a liña un ancho de desprazamento",
+      "lessThanLessThan": "desindenta (move á esquerda) a liña un ancho de desprazamento",
+      "greaterThanPercent": "indenta un bloque con () ou {} (cando o cursor está na chave)",
+      "greaterThanib": "indenta un bloque interno con ()",
+      "greaterThanat": "indenta un bloque coas etiquetas <>",
+      "3==": "re-indenta 3 liñas",
+      "=Percent": "re-indenta un bloque con () ou {} (cando o cursor está na chage)",
+      "=iB": "re-indenta o bloque interno con {}",
+      "gg=G": "re-indenta a memoria temporal enteira",
+      "closeSquarep": "pega e axusta o indentado á liña actual",
+      "lessThanPercent": "de-indenta un bloque con () ou {} (cando o cursor está na chave)"
+    }
+  },
+  "exiting": {
+    "title": "Saír",
+    "commands": {
+      "colonw": "gravar o ficheiro, mais sen saír",
+      "colonwsudo": "gravar o ficheiro actual con sudo",
+      "colonwq": "gravar e saír",
+      "colonx": "gravar se foi modificado en Vim e saír",
+      "colonq": "saír (non sae se houber modificacions por gravar)",
+      "colonqbang": "saír sen gravar modificacions",
+      "colonwqa": "escribe (grava) e sae de tódolos separadores"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Buscar e substituír",
+    "commands": {
+      "forwardSlashPattern": "buscar a seguinte aparición de patrón",
+      "questionMarkPattern": "buscar a anterior aparición de patrón",
+      "backslashVpattern": "patrón 'moito máxico': os carácteres non-alfanuméricos son interpretados como símbolos especiais de expresións regulares (sen necesidade de escape)",
+      "n": "repetir busca na mesma dirección",
+      "N": "repetir busca na direción oposta",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "substituír tódalas aparicións de 'old' por 'new' no documento",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "substituír tódalas aparicións de 'old' por 'new' no documento, con confirmación",
+      "colonnoh": "quitar o destaque das aparicións achadas"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "Buscar en múltiples ficheiros",
+    "commands": {
+      "colonvimgrep": "buscar por patrón en múltiples ficheiros",
+      "coloncn": "ir á seguinte aparición",
+      "coloncp": "ir á anterior aparición",
+      "coloncopen": "abrir unha xanela coa lista de aparicións achadas",
+      "coloncclose": "pechar a xanela de fixado rápido"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Traballar con múltiples ficheiros (buffers)",
+    "commands": {
+      "colone": "editar un ficheiro nunha nova área de memoria temporal (buffer)",
+      "colonbnext": "ir á próxima área de memoria temporal",
+      "colonbprev": "ir á anterior área de memoria temporal",
+      "colonls": "listar as áreas de memoria temporal abertas",
+      "colonbd": "eliminar unha área de memoria temporal (pechar un ficheiro)",
+      "colonbnumber": "ir á área de memoria temporal #",
+      "colonbfile": "ir á área de memoria tempora por nome de ficheiro",
+      "colonsp": "abrir un ficheiro nunha nova área de memoria temporal e dividir a xanela",
+      "colonvsp": "abrir un ficheiro nunha nova área de memoria temporal e dividir a xanela verticalmente",
+      "colonvertba": "editar tódolas áres de memoria temporal como xanelas verticais",
+      "colontabba": "edita tódolas áreas de memoria temporal como separadores (tabs)",
+      "ctrlPlusws": "dividir a xanela",
+      "ctrlPluswv": "dividir a xanela verticalmente",
+      "ctrlPlusww": "alternar xanelas",
+      "ctrlPluswq": "saír dunha xanela",
+      "ctrlPluswx": "intercambiar a xaneal actual coa seguinte",
+      "ctrlPlusw=": "facer tódalas xanelas de igual altura e anchura",
+      "ctrlPluswh": "mover o cursor á xanela da esquerda (división vertical)",
+      "ctrlPluswl": "mover o cursor á xanela da dereita (división vertical)",
+      "ctrlPluswj": "mover o cursor á xanela de embaixo (división horizontal)",
+      "ctrlPluswk": "mover o cursor á xanela de enriba (división horizontal)",
+      "ctrlPluswH": "facer a xanela actual de altura completa e á esquerda (a xanela vertical máis á esquerda)",
+      "ctrlPluswL": "facer a xanela actual de altural completa e á dereita (a xanela vertical máis á dereita)",
+      "ctrlPluswJ": "facer a xanela actual de anchura completa e na parte inferior (a xanela horizontal que está máis abaixo)",
+      "ctrlPluswK": "facer a xanela actual de anchura completa e na parte superior (a xanela horizontal que está máix arriba)"
+    }
+  },
+  "tabs": {
+    "title": "Separadores (tabs)",
+    "commands": {
+      "colonTabNew": "abrir un ficheiro nun novo separador",
+      "ctrlPluswT": "mover a xanela dividida actual para o seu proprio separador",
+      "gt": "ir ao próximo separador",
+      "gT": "ir ao separador anterior",
+      "hashgt": "ir ao separador número '#'",
+      "colontabmove": "mover o separador actual ata a posición '#' (comeza no cero)",
+      "colontabc": "pechar o separador actual e tódalas súas xanelas",
+      "colontabo": "pechar tódolos separadores agás o actual",
+      "colontabdo": "correr <code>comando</code> para tódolos separadores (por exemplo, <code>:tabdo q</code> - pecha tódolos separadores abertos)"
+    }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "define manualmente un pregue ata o movemento",
+      "zd": "borra o pregue baixo o cursor",
+      "za": "prega/desprega pregue baixo o cursor",
+      "zo": "desprega o pregue baixo o cursor",
+      "zc": "prega o pregue baixo o cursor",
+      "zr": "desprega tódolos pregues un nível",
+      "zm": "prega tódolos pregues un nível",
+      "zi": "funcionalidade prega/desprega pregue",
+      "closeSquarec": "chimpa ao comezo do seguinte cambio",
+      "openSquarec": "chimpa ao comezo do cambio anterior",
+      "do": "obtén (get) diferenza (doutra memoria temporal)",
+      "dp": "pon a diferenza (a outra memoria temporal)",
+      "colonDiffthis": "fai a xanela actual parte do diff",
+      "colonDiffupdate": "actualiza diferenza",
+      "colonDiffoff": "desactiva o modo diff para a xanela actual"
+    },
+    "tip1": "Os comandos para pregue (por exemplo: <kbd>za</kbd>), operan en un nível. Para operar en tódolos nívels, hanse usar letras maiúsculas (por exemplo: <kbd>zA</kbd>).",
+    "tip2": "Para ver as diferenzas entre ficheiros, pódese executar directamente o vim en modo diff co comando <kbd>vimdiff</kbd> nunha terminal. Incluso, pódese usar isto como <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "termo",
+    "file": "ficheiro",
+    "movement": "movemento"
+  },
+  "languages": {
+    "title": "Idiomas"
+  },
+  "footer": "Comproba a fonte en",
+  "layout": "páxina",
+  "permalink": "/lang/gl/"
+}
