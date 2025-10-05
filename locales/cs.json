@@ -350,10 +350,15 @@
   "words": {
     "keyword": "klíčové slovo",
     "file": "soubor",
-    "movement": "pohyb"
+    "movement": "pohyb",
+    "tip": "Tip",
+    "or": "or",
+    "pattern": "pattern",
+    "eg": "e.g."
   },
   "languages": {
     "title": "Jazyky"
   },
-  "footer": "Podívejte se na zdroj na"
+  "footer": "Podívejte se na zdroj na",
+  "page_title": "Vim Cheat Sheet"
 }

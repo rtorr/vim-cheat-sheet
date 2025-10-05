@@ -350,12 +350,17 @@
   "words": {
     "keyword": "Stichwort",
     "file": "Datei",
-    "movement": "Cursor-Bewegung"
+    "movement": "Cursor-Bewegung",
+    "tip": "Tip",
+    "or": "or",
+    "pattern": "pattern",
+    "eg": "e.g."
   },
   "languages": {
     "title": "Sprachen"
   },
   "footer": "Quellcode unter ",
+  "page_title": "Vim Cheat Sheet",
   "layout": "page",
   "permalink": "/lang/de_de/"
 }
