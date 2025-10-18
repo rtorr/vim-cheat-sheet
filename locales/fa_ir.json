@@ -1,14 +1,14 @@
 {
-  "title": "Persian",
+  "title": "پارسی",
   "lang": "fa_ir",
   "lang_tag": "fa",
   "cursorMovement": {
-    "title": "حرکت مکان نما",
+    "title": "(Cursor) حرکت نشانگر",
     "commands": {
-      "h": "حرکت مکان نما به سمت چپ",
-      "j": "حرکت مکان نما به سمت پایین",
-      "k": "حرکت مکان نما به سمت بالا",
-      "l": "حرکت مکان نما به سمت پایین",
+      "h": "حرکت نشانگر به چپ",
+      "j": "حرکت نشانگر به پایین",
+      "k": "حرکت نشانگر به بالا",
+      "l": "حرکت نشانگر به راست",
       "gj": "move cursor down (multi-line text)",
       "gk": "move cursor up (multi-line text)",
       "w": "برو به ابتدای کلمه",
@@ -33,8 +33,8 @@
       "gD": "حرکت روی تعریف (اعلام) سرتاسری",
       "fx": "برو به کاراکتر x",
       "tx": "برو به یک کاراکتر قبل از x",
-      "Fx": "برو به کاراکتر x قبل از محل فعلی مکان نما",
-      "Tx": "برو به  یک کاراکتر بعد از کاراکتر x قبل از محل فعلی مکان نما",
+      "Fx": "برو به کاراکتر x قبل از محل فعلی نشانگر",
+      "Tx": "برو به  یک کاراکتر بعد از کاراکتر x قبل از محل فعلی نشانگر",
       "semicolon": "تکرار عملیات قبلی  اگر این عملیات F,f,T,t  باشد",
       "comma": "مثل سمی کالمن اما برعکس",
       "closeCurlyBrace": "برو به پاراگراف بعدی( یا تابع بعدی/ یابلاک بعدی)",
@@ -55,9 +55,9 @@
   "insertMode": {
     "title": "افزودن و اضافه کردن",
     "commands": {
-      "i": "اضافه کن به قبل از مکان فعلی مکان نما",
+      "i": "اضافه کن به قبل از مکان فعلی نشانگر",
       "I": "اضافه کن به ابتدای خط",
-      "a": "اضافه کن بعد از مکان فعلی مکان نما",
+      "a": "اضافه کن بعد از مکان فعلی نشانگر",
       "A": "اضافه کن به انتهای خط",
       "o": "اضافه کن به خط بعدی",
       "O": "اضافه کن به خط قبلی",
@@ -75,7 +75,7 @@
     }
   },
   "editing": {
-    "title": "تصحیح",
+    "title": "ویرایشگری",
     "commands": {
       "r": "یک کاراکتر را جایگزین کن",
       "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
@@ -83,7 +83,7 @@
       "gJ": "خط بعدی را بدون فاصله به خط فعلی بچسبان",
       "gwip": "جمع کردن پاراگراف",
       "gTilde": "switch case up to motion",
-      "gu": "change to lowercase up to motion",
+      "gu": "change to lowercase up to motio",
       "gU": "change to uppercase up to motion",
       "cc": "خط فعلی را جایگزین کن",
       "cDollar": "از مکان فعلی تا آخر خط را جایگزین کن",
@@ -94,17 +94,17 @@
       "xp": "ترانهادن دو کاراکتر(پاک کردن و چسباندن)",
       "u": "بازگرداندن",
       "U": "بازگرداندن تغییرات آخرین خط تغییرکرده",
-      "CtrlPlusr": "دوباره انجام بده",
-      "dot": "فرمان قبلی را تکرار کن"
+      "CtrlPlusr": "انجام دوباره",
+      "dot": "تکرار دستور پیشین"
     }
   },
   "markingText": {
-    "title": "علامت گذاری(مد بصری)",
+    "title": "علامت گذاری(حالت بصری)",
     "commands": {
-      "v": "ورود به مد بصری",
-      "V": "ورود به مد بصری برای کار روی خط",
+      "v": "ورود به حالت بصری",
+      "V": "ورود به حالت بصری برای کار روی خط",
       "o": "برو به طرف دیگر ناحیه علامت گذاری شده",
-      "CtrlPlusv": "ورود به مد بصری برای علامت گذاری یک بلاک",
+      "CtrlPlusv": "ورود به حالت بصری برای علامت گذاری یک بلاک",
       "O": "برو به گوشه دیگر بلاک انتخاب شده",
       "aw": "یک کلمه را علامت گذاری کن",
       "ab": "یک بلاکت با ()",
@@ -113,12 +113,12 @@
       "ib": "بلاک داخل ()",
       "iB": "بلاک داخل {}",
       "it": "inner block with <> tags",
-      "Esc": "از مد بصری خارج شو"
+      "Esc": "از حالت بصری خارج شو"
     },
     "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
   },
   "visualCommands": {
-    "title": "دستورات مد بصری",
+    "title": "دستورات حالت بصری",
     "commands": {
       "greaterThan": "حرکت متن به سمت راست",
       "lessThan": "حرکت متن به سمت چپ",
@@ -156,9 +156,9 @@
     }
   },
   "marks": {
-    "title": "علامت ها",
+    "title": "نشانه‌ها",
     "commands": {
-      "list": "لیست علامت ها",
+      "list": "فهرست نشانه‌ها",
       "currentPositionA": "مکان فعلی را به عنوان علامت a نشان کن",
       "jumpPositionA": "برو به مکانی که به عنوان a نشان شده است",
       "yankToMarkA": "متن را به مکانی که به عنوان a نشان شده کپی کن",
@@ -166,13 +166,13 @@
       "backtickQuote": "go to the position when last editing this file",
       "backtickDot": "برو به مکانی که آخرین تغییر در این فایل انجام شده است.",
       "backtickBacktick": "برو به مکانی که قبل از آخرین پرش بودی",
-      "colonjumps": "لیست پرش‌ها",
-      "ctrlPlusi": "برو به مکان جدید‌تر در لیست پرش",
-      "ctrlPluso": "برو به مکان قدیمی‌تر در لیست پرش",
-      "colonchanges": "لیست تغییرات",
-      "gcomma": "برو به مکان جدیدتر در لیست تغییر",
-      "gsemicolon": "برو به مکان قدیمی‌تر در لیست تغییر",
-      "ctrlPlusCloseSquare": "پرش به برچسب زیر مکان‌نما"
+      "colonjumps": "فهرست پرش‌ها",
+      "ctrlPlusi": "برو به مکان جدید‌تر در فهرست پرش",
+      "ctrlPluso": "برو به مکان قدیمی‌تر در فهرست پرش",
+      "colonchanges": "فهرست تغییرات",
+      "gcomma": "برو به مکان جدیدتر در فهرست تغییر",
+      "gsemicolon": "برو به مکان قدیمی‌تر در فهرست تغییر",
+      "ctrlPlusCloseSquare": "پرش به برچسب زیر نشانگر"
     },
     "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
     "tip": ""
@@ -203,21 +203,21 @@
     "commands": {
       "yy": "کپی کردن هط",
       "twoyy": "کپی کردن 2 خط",
-      "yw": "کپی کردن از مکان فعلی مکان نما تا ابتدای کلمه بعد",
+      "yw": "کپی کردن از مکان فعلی نشانگر تا ابتدای کلمه بعد",
       "yiw": "کپی کردن کلمه",
       "yaw": "",
       "yDollar": "کپی کردن تا آخری خط",
-      "p": "چسباندن محتوای کلیپ بورد بعد از مکان فعلی مکان نما",
-      "P": "چسباندن محتوای کلیپ بورد قبل از مکان فعلی مکان نما",
+      "p": "چسباندن محتوای کلیپ بورد بعد از مکان فعلی نشانگر",
+      "P": "چسباندن محتوای کلیپ بورد قبل از مکان فعلی نشانگر",
       "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
       "gP": "put (paste) before cursor and leave cursor after the new text",
       "dd": "کات کردن خط فعلی",
       "twodd": "کات کردن دو خط",
-      "dw": "کات کردن از مکان فعلی مکان نما تا ابتدای کلمه بعدی",
+      "dw": "کات کردن از مکان فعلی نشانگر تا ابتدای کلمه بعدی",
       "diw": "",
       "daw": "",
-      "dDollar": "کات کردن تا انتهای خط",
-      "x": "کات کردن یک کاراکتر",
+      "dDollar": "برش تا انتهای خط",
+      "x": "برش یک کاراکتر",
       "threeToFiveD": "delete lines starting from 3 to 5",
       "gPatternD": "delete all lines containing pattern",
       "gNotPatternD": "delete all lines not containing pattern"
@@ -232,18 +232,18 @@
     }
   },
   "indentText": {
-    "title": "تو رفتنگی متن",
+    "title": "تورفتگی متن",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanGreaterThan": "تورفتگی خط به اندازه یک shiftwidth (تورفتگی به راست)",
+      "lessThanLessThan": "کاهش تورفتگی خط به اندازه یک shiftwidth (تورفتگی به چپ)",
+      "greaterThanPercent": "تورفتگی یک بلوک از () یا {} (نشانگر بروی کروشه یا پرانتز باشد)",
       "greaterThanib": "indent inner block with ()",
       "greaterThanat": "indent a block with <> tags",
-      "3==": "تنظیم مجدد تو رفتگی ۳ خط",
+      "3==": "تنظیم دوباره تورفتگی به اندازه ۳ خط",
       "=Percent": "re-indent a block with () or {} (cursor on brace)",
       "=iB": "re-indent inner block with {}",
-      "gg=G": "تنظیم مجدد تورفتنگی کل بافر",
-      "closeSquarep": "چسباندن و تنظیم تو رفتگی برای خط کنونی",
+      "gg=G": "تنظیم مجدد تورفتگی کل بافر",
+      "closeSquarep": "چسباندن و تنظیم تورفتگی برای خط کنونی",
       "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
     }
   },
@@ -263,7 +263,7 @@
     "title": "جستجو و جایگذاری",
     "commands": {
       "forwardSlashPattern": "جستجوی الگو ",
-      "questionMarkPattern": "جستجوی الگو از مکان فعلی مکان نما به قبل",
+      "questionMarkPattern": "جستجوی الگو از مکان فعلی نشانگر به قبل",
       "backslashVpattern": "الگوی 'very magic': حروف و اعداد غیر به عنوان regex شناخته می شوند",
       "n": "تکرار جستجو در جهت یکسان",
       "N": "تکرار جستجو در جهت مخالف",
@@ -302,10 +302,10 @@
       "ctrlPluswq": "خارج شدن از پنجره",
       "ctrlPluswx": "تعویض پنجره فعلی با بعدی",
       "ctrlPlusw=": "مساوی‌کردن طول و عرض تمامی پنجره‌ها",
-      "ctrlPluswh": "انتقال مکان نما به پنجره سمت چپ",
-      "ctrlPluswl": "انتقال مکان نما به پنجره سمت راست",
-      "ctrlPluswj": "انتقال مکان نما به پنجره پایین",
-      "ctrlPluswk": "انتقال مکان نمابه پنجره بالا",
+      "ctrlPluswh": "انتقال نشانگر به پنجره سمت چپ",
+      "ctrlPluswl": "انتقال نشانگر به پنجره سمت راست",
+      "ctrlPluswj": "انتقال نشانگر به پنجره پایین",
+      "ctrlPluswk": "انتقال نشانگر پنجره بالا",
       "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
       "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
       "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
@@ -329,11 +329,11 @@
   "diff": {
     "title": "مقایسه کردن",
     "commands": {
-      "zf": "تا آخرین خط انتخابی یک پنهان گر کد بساز",
-      "zd": "پنهان گر کد زیر مکان نما را حذف من",
-      "za": "پنهانگر کد زیر مکان نما را باز و بسته کن",
-      "zo": "پنهانگر کد زیر مکان نما را باز کن",
-      "zc": "پنهانگر کد زیر مکان نما را ببند",
+      "zf": "تا آخرین خط انتخابی یک پنهانگر کد بساز",
+      "zd": "پنهانگر کد زیر نشانگر را حذف من",
+      "za": "پنهانگر کد زیر نشانگر را باز و بسته کن",
+      "zo": "پنهانگر کد زیر نشانگر را باز کن",
+      "zc": "پنهانگر کد زیر نشانگر را ببند",
       "zr": "همه پنهانگر های کد را یک مرتبه باز کن",
       "zm": "همه پنهانگر های کد را یک مرتبه باز ببند",
       "zi": "toggle folding functionality",
@@ -351,7 +351,7 @@
   "words": {
     "keyword": "کلید واژه",
     "file": "فایل",
-    "movement": "حرکت مکان نما"
+    "movement": "حرکت نشانگر"
   },
   "languages": {
     "title": "زبان"
