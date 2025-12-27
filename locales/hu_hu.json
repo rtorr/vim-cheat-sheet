@@ -238,15 +238,150 @@
       "lessThanLessThan": "egy sor behúzása egy tabulálás mérettel balra",
       "greaterThanPercent": "blokk behúzása () vagy {} címkékkel (kurzor a kapcsos zárójel fölött)",
       "greaterThanib": "belső blokk behúzása ()-al",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line",
+      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)",
       "greaterThaniB": "belső blokk behúzása {}-al",
       "equals": "blokk újraformázása (egyenlővé tétele)",
       "1equals": "1. szintű behúzás (minden szinten egy tabulálás)",
-      "equals": "blokk újraformázása (egyenlővé tétele)",
       "equals1": "1. szintű behúzás (minden szinten egy tabulálás)",
       "equals2": "2. szintű behúzás (minden szinten két tabulálás)"
     },
     "tip": ""
   },
+  "exiting": {
+    "title": "Kilépés",
+    "commands": {
+      "colonw": "write (save) the file, but don't exit",
+      "colonwsudo": "write out the current file using sudo",
+      "colonwq": "write (save) and quit",
+      "colonx": "write (save) and quit",
+      "colonq": "quit (fails if there are unsaved changes)",
+      "colonqbang": "quit and throw away unsaved changes",
+      "colonwqa": "write (save) and quit on all tabs",
+      ":q": "ablak bezárása (kilépés, ha nincs további ablak)",
+      ":q!": "ablak bezárása mentés nélkül (kilépés, ha nincs további ablak)",
+      ":wq": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
+      ":x": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
+      ":wqa": "összes ablak mentése és kilépés",
+      ":qa!": "összes ablak bezárása mentés nélkül és kilépés"
+    }
+  },
+  "searchAndReplace": {
+    "title": "Keresés és csere",
+    "commands": {
+      "forwardSlashPattern": "search for pattern",
+      "questionMarkPattern": "search backward for pattern",
+      "backslashVpattern": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
+      "n": "következő találat",
+      "N": "előző találat",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "replace all old with new throughout file",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "replace all old with new throughout file with confirmations",
+      "colonnoh": "remove highlighting of search matches",
+      "slash": "keresés előre",
+      "questionMark": "keresés hátra",
+      "star": "aktuális szó keresése",
+      "hash": "aktuális szó hátrafele keresése",
+      ":%s": "aktuális sorban keresés és csere",
+      ":n,%s": "aktuális sornál kezdve következő találat keresése és csere",
+      ":n,m%s": "n. sor és m. sor között keresés és csere",
+      ":n,$%s": "n. sortól a fájl végéig keresés és csere"
+    },
+    "tip1": "A keresési minta sor végén lévő <kbd>/</kbd> vagy <kbd>?</kbd> karakterrel is megegyezhet.",
+    "tip2": "A <kbd>%</kbd> a fájl teljes tartalmát jelenti."
+  },
+  "searchMultipleFiles": {
+    "title": "Több fájl keresése",
+    "commands": {
+      "colonvimgrep": "search for pattern in multiple files",
+      "coloncn": "jump to the next match",
+      "coloncp": "jump to the previous match",
+      "coloncopen": "open a window containing the list of matches",
+      "coloncclose": "close the quickfix window",
+      ":args": "fájlok listájának megjelenítése",
+      ":args *.txt": "összes .txt kiterjesztésű fájl hozzáadása a listához",
+      ":argdo %s/pattern/replace/gc": "a minta minden találatának cseréje minden fájlban"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "Working with multiple files",
+    "commands": {
+      "colone": "edit a file in a new buffer",
+      "colonbnext": "go to the next buffer",
+      "colonbprev": "go to the previous buffer",
+      "colonls": "list all open buffers",
+      "colonbd": "delete a buffer (close a file)",
+      "colonbnumber": "go to a buffer by index #",
+      "colonbfile": "go to a buffer by file",
+      "colonsp": "open a file in a new buffer and split window",
+      "colonvsp": "open a file in a new buffer and vertically split window",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
+      "ctrlPlusws": "split window",
+      "ctrlPluswv": "split window vertically",
+      "ctrlPlusww": "switch windows",
+      "ctrlPluswq": "quit a window",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswh": "move cursor to the left window (vertical split)",
+      "ctrlPluswl": "move cursor to the right window (vertical split)",
+      "ctrlPluswj": "move cursor to the window below (horizontal split)",
+      "ctrlPluswk": "move cursor to the window above (horizontal split)",
+      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
+      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
+      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
+      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+    }
+  },
+  "tabs": {
+    "title": "Tabs",
+    "commands": {
+      "colonTabNew": "open a file in a new tab",
+      "ctrlPluswT": "move the current split window into its own tab",
+      "gt": "move to the next tab",
+      "gT": "move to the previous tab",
+      "hashgt": "move to tab number #",
+      "colontabmove": "move current tab to the #th position (indexed from 0)",
+      "colontabc": "close the current tab and all its windows",
+      "colontabo": "close all tabs except for the current one",
+      "colontabdo": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)"
+    }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "manually define a fold up to motion",
+      "zd": "delete fold under the cursor",
+      "za": "toggle fold under the cursor",
+      "zo": "open fold under the cursor",
+      "zc": "close fold under the cursor",
+      "zr": "reduce (open) all folds by one level",
+      "zm": "fold more (close) all folds by one level",
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
+    },
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "keyword",
+    "file": "file",
+    "movement": "movement"
+  },
+  "languages": {
+    "title": "Languages"
+  },
+  "footer": "Checkout the source on",
   "undoAndRedo": {
     "title": "Visszavonás és újra",
     "commands": {
@@ -258,36 +393,11 @@
       "gU": "sor visszaállítása"
     }
   },
-  "searchAndReplace": {
-    "title": "Keresés és csere",
-    "commands": {
-      "slash": "keresés előre",
-      "questionMark": "keresés hátra",
-      "n": "következő találat",
-      "N": "előző találat",
-      "star": "aktuális szó keresése",
-      "hash": "aktuális szó hátrafele keresése",
-      ":%s": "aktuális sorban keresés és csere",
-      ":n,%s": "aktuális sornál kezdve következő találat keresése és csere",
-      ":n,m%s": "n. sor és m. sor között keresés és csere",
-      ":n,$%s": "n. sortól a fájl végéig keresés és csere"
-    },
-    "tip1": "A keresési minta sor végén lévő <kbd>/</kbd> vagy <kbd>?</kbd> karakterrel is megegyezhet.",
-    "tip2": "A <kbd>%</kbd> a fájl teljes tartalmát jelenti."
-  },
   "searchAndReplaceGlobal": {
     "title": "Globális keresés és csere",
     "commands": {
       ":g/pattern/d": "összes sor törlése, ami illeszkedik a mintára",
       ":g/pattern/normalCommand": "minden találatra futtat egy normál módban végrehajtható parancsot"
-    }
-  },
-  "searchMultipleFiles": {
-    "title": "Több fájl keresése",
-    "commands": {
-      ":args": "fájlok listájának megjelenítése",
-      ":args *.txt": "összes .txt kiterjesztésű fájl hozzáadása a listához",
-      ":argdo %s/pattern/replace/gc": "a minta minden találatának cseréje minden fájlban"
     }
   },
   "tabsAndWindows": {
@@ -374,13 +484,7 @@
       "zd": "összecsukás törlése",
       "zE": "összecsukás törlése minden szinten",
       "zfPattern": "sorok összecsukása a megadott minta alapján",
-      "zf/": "sorok összecsukása a megadott minta alapján",
-      "zm": "összecsukás minden szinten",
-      "za": "állapot váltása (összecsukás/kinyitás)",
-      "zA": "minden állapot váltása",
-      "zd": "összecsukás törlése",
-      "zE": "összecsukás törlése minden szinten",
-      "zfPattern": "sorok összecsukása a megadott minta alapján"
+      "zf/": "sorok összecsukása a megadott minta alapján"
     }
   },
   "marksAndMotions": {
@@ -450,17 +554,6 @@
       "K": "man oldal megnyitása a kurzor alatti szóhoz"
     }
   },
-  "exiting": {
-    "title": "Kilépés",
-    "commands": {
-      ":q": "ablak bezárása (kilépés, ha nincs további ablak)",
-      ":q!": "ablak bezárása mentés nélkül (kilépés, ha nincs további ablak)",
-      ":wq": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
-      ":x": "mentés és ablak bezárása (kilépés, ha nincs további ablak)",
-      ":wqa": "összes ablak mentése és kilépés",
-      ":qa!": "összes ablak bezárása mentés nélkül és kilépés"
-    }
-  },
   "references": {
     "title": "Hivatkozások",
     "vimOfficialSite": "Vim hivatalos weboldala",
@@ -473,4 +566,3 @@
     "useVimAsIDE": "Vim használata fejlesztőkörnyezetként"
   }
 }
-

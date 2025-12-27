@@ -127,7 +127,7 @@
       "tilde": "alterar entre maiúscula e minúscula",
       "u": "alterar o texto marcado para minúsculas",
       "U": "alterar o texto marcado para maiúsculas"
-        }
+    }
   },
   "registers": {
     "title": "Registradores",
@@ -137,7 +137,7 @@
       "yankIntoRegisterX": "colar no registrador x",
       "quotePlusy": "copiar para a área de transferência do sistema",
       "quotePlusp": "colar da área de transferência do sistema"
-        },
+    },
     "tip1": "Registradores são guardados em ~/.viminfo, e são carregados no início do vim.",
     "tip2": {
       "0": "último yank",
@@ -222,7 +222,7 @@
       "threeToFiveD": "deletar linhas do 3 ao 5",
       "gPatternD": "deletar todas as linhas que contêm o padrão",
       "gNotPatternD": "deletar todas as linhas que não contêm o padrão"
-        },
+    },
     "tip1": {
       "title": "Você também pode usar os seguintes caracteres para especificar o intervalo:",
       "commands": {
@@ -311,7 +311,7 @@
       "ctrlPluswL": "tornar a janela atual com altura total à extrema direita (janela vertical mais à direita)",
       "ctrlPluswJ": "tornar a janela atual com largura total na parte inferior (janela horizontal mais abaixo)",
       "ctrlPluswK": "tornar a janela atual com largura total na parte superior (janela horizontal mais acima)"
-        }
+    }
   },
   "tabs": {
     "title": "Abas",
@@ -348,7 +348,7 @@
     },
     "tip1": "Os comandos para folding (por exemplo, <kbd>za</kbd>) operam em um nível. Para operar em todos os níveis, use letras maiúsculas (por exemplo, <kbd>zA</kbd>).",
     "tip2": "Para visualizar as diferenças entre arquivos, você pode iniciar o Vim diretamente no modo de diferença executando <kbd>vimdiff</kbd> em um terminal. Você também pode configurar isso como <kbd>git difftool</kbd>."
-    },
+  },
   "words": {
     "keyword": "palavra chave",
     "file": "arquivo",

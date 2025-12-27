@@ -226,6 +226,7 @@
       "commands": {
         "dotCommaDollarD": "Από την τρέχουσα γραμμή μέχρι το τέλος του αρχείου",
         "dotCommaOneD": "Από την τρέχουσα γραμμή μέχρι την αρχή του αρχείου",
+        "tenCommaOneD": "From the 10th line to the beginning of the file",
         "tenCommaDollarD": "Από τη 10η γραμμή μέχρι την αρχή του αρχείου"
       }
     }
