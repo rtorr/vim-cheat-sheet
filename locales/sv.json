@@ -9,16 +9,16 @@
       "j": "flytta markören åt höger",
       "k": "flytta markören uppåt",
       "l": "flytta markören neråt",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "flytta markören neråt (flerradig text)",
+      "gk": "flytta markören uppåt (flerradig text)",
       "w": "hoppa framåt till starten av nästa ord",
       "W": "hoppa framåt till starten av nästa ord (orden kan innehålla skiljetecken)",
       "e": "hoppa framåt till slutet av nästa ord",
       "E": "hoppa framåt till slutet av nästa ord (orden kan innehålla skiljetecken)",
       "b": "hoppa bakåt till starten av föregående ord",
       "B": "hoppa bakåt till starten av föregående ord (orden kan innehålla skiljetecken)",
-      "ge": "jump backwards to the end of a word",
-      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "ge": "hoppa bakåt till slutet av ett ord",
+      "gE": "hoppa bakåt till slutet av ett ord (orden kan innehålla skiljetecken)",
       "H": "flytta till toppen av skärmen",
       "M": "flytta till mitten av skärmen",
       "L": "flytta till botten av skärmen",
@@ -29,8 +29,8 @@
       "gg": "gå till första raden i dokumentet",
       "G": "gå till sista raden i dokumentet",
       "fiveG": "gå till rad 5",
-      "gd": "move to local declaration",
-      "gD": "move to global declaration",
+      "gd": "flytta till lokal deklaration",
+      "gD": "flytta till global deklaration",
       "fx": "hoppa till nästa förekomst av tecknet x",
       "tx": "hoppa till tecknet före nästa förekomst av tecknet x",
       "Fx": "hoppa till föregående förekomst av tecknet x",
@@ -40,8 +40,8 @@
       "closeCurlyBrace": "hoppa till nästa paragraf (eller funktion/block av kod)",
       "openCurlyBrace": "hoppa till föregående paragraf (eller funktion/block av kod)",
       "centerCursor": "centrera markören på skärmen",
-      "topCursor": "position cursor on top of the screen",
-      "bottomCursor": "position cursor on bottom of the screen",
+      "topCursor": "placera markören överst på skärmen",
+      "bottomCursor": "placera markören längst ner på skärmen",
       "CtrlPluse": "flytta ner skärmen en rad (utan att flytta markören)",
       "CtrlPlusy": "flytta upp skärmen en rad (utan att flytta markören)",
       "CtrlPlusb": "flytta bakåt en hel skärm",
@@ -60,17 +60,17 @@
       "a": "sätt in (lägg till) efter markören",
       "A": "sätt in (lägg till) på slutet av raden",
       "o": "lägg till (öppna) en ny rad under nuvarande rad",
-      "O": "lägg till (öppna) enny rad över nuvarande rad",
+      "O": "lägg till (öppna) en ny rad över nuvarande rad",
       "ea": "sätt in (lägg till) efter slutet av ordet",
-      "ctrlPlush": "delete the character before the cursor during insert mode",
-      "ctrlPlusw": "delete word before the cursor during insert mode",
-      "ctrlPlusj": "begin new line during insert mode",
-      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
-      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
-      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
-      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
-      "ctrlPlusrx": "insert the contents of register x",
-      "ctrlPlusox": "Temporärt byt till normal-mode  för att kunna ange ett normel-mode kommando x.",
+      "ctrlPlush": "ta bort tecknet före markören under insättningsläge",
+      "ctrlPlusw": "ta bort ordet före markören under insättningsläge",
+      "ctrlPlusj": "börja ny rad under insättningsläge",
+      "ctrlPlust": "indentera (flytta höger) rad ett steg under insättningsläge",
+      "ctrlPlusd": "ta bort indentering (flytta vänster) rad ett steg under insättningsläge",
+      "ctrlPlusn": "infoga (automatisk komplettering) nästa match före markören under insättningsläge",
+      "ctrlPlusp": "infoga (automatisk komplettering) föregående match före markören under insättningsläge",
+      "ctrlPlusrx": "infoga innehållet från register x",
+      "ctrlPlusox": "Temporärt byt till normal-mode för att kunna ange ett normal-mode kommando x.",
       "Esc": "lämna insättningsläget"
     }
   },
@@ -78,13 +78,13 @@
     "title": "Redigering",
     "commands": {
       "r": "byt ut ett tecken",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
+      "R": "byt ut flera tecken, tills <kbd>ESC</kbd> trycks",
       "J": "sammanfoga raden under med nuvarande rad med mellanslag mellan",
       "gJ": "sammanfoga raden under med nuvarande rad utan mellanslag mellan",
       "gwip": "flyt ihop paragrafen",
-      "gTilde": "switch case up to motion",
-      "gu": "change to lowercase up to motion",
-      "gU": "change to uppercase up to motion",
+      "gTilde": "byt skiftläge upp till rörelse",
+      "gu": "ändra till gemener upp till rörelse",
+      "gU": "ändra till versaler upp till rörelse",
       "cc": "byt (ersätt) hela raden",
       "cDollar": "byt (ersätt) till slutet av raden",
       "ciw": "byt (ersätt) ett helt ord",
@@ -93,7 +93,7 @@
       "S": "tag bort rad och ersätt med text (samma som cc)",
       "xp": "byt ut två tecken (klipp och klistra)",
       "u": "ångra",
-      "U": "restore (undo) last changed line",
+      "U": "återställ (ångra) senast ändrade raden",
       "CtrlPlusr": "gör om",
       "dot": "upprepa föregående kommando"
     }
@@ -109,24 +109,24 @@
       "aw": "markera ett ord",
       "ab": "markera ett block med ()",
       "aB": "markera ett block med {}",
-      "at": "a block with <> tags",
+      "at": "markera ett block med <> taggar",
       "ib": "markera inre block med ()",
       "iB": "markera inre block med {}",
-      "it": "inner block with <> tags",
+      "it": "markera inre block med <> taggar",
       "Esc": "avsluta visuellt läge"
     },
-    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+    "tip1": "Istället för <kbd>b</kbd> eller <kbd>B</kbd> kan man också använda <kbd>(</kbd> eller <kbd>{</kbd> respektive."
   },
   "visualCommands": {
     "title": "Visuella kommandon",
     "commands": {
       "greaterThan": "flytta texten åt höger",
       "lessThan": "flytta texten åt vänster",
-      "y": "yank (copy) marked text",
+      "y": "kopiera markerad text",
       "d": "tag bort markerad text",
       "tilde": "byt till stora/små bokstäver",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "u": "ändra markerad text till gemener",
+      "U": "ändra markerad text till versaler"
     }
   },
   "registers": {
@@ -135,24 +135,24 @@
       "show": "visa alla registers innehåll",
       "pasteRegisterX": "klistra in innehållet av register x",
       "yankIntoRegisterX": "kopiera till register x",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "quotePlusy": "kopiera till systemets urklippsregister",
+      "quotePlusp": "klistra in från systemets urklippsregister"
     },
     "tip1": "Register förvaras i ~/.viminfo och kommer att laddas igen nästa gång vim startar om.",
     "tip2": {
-      "0": "last yank",
-      "title": "Special registers:",
-      "quote": "unnamed register, last delete or yank",
-      "percent": "current file name",
-      "hashtag": "alternate file name",
-      "asterisk": "clipboard contents (X11 primary)",
-      "plus": "clipboard contents (X11 clipboard)",
-      "slash": "last search pattern",
-      "colon": "last command-line",
-      "dot": "last inserted text",
-      "minus": "last small (less than a line) delete",
-      "equal": "expression register",
-      "underscore": "black hole register"
+      "0": "senaste kopieringen",
+      "title": "Speciella register:",
+      "quote": "namnlöst register, senaste borttagningen eller kopieringen",
+      "percent": "nuvarande filnamn",
+      "hashtag": "alternativt filnamn",
+      "asterisk": "urklippsinnehåll (X11 primär)",
+      "plus": "urklippsinnehåll (X11 urklipp)",
+      "slash": "senaste sökmönstret",
+      "colon": "senaste kommandoradskommandot",
+      "dot": "senast infogad text",
+      "minus": "senaste små borttagningen (mindre än en rad)",
+      "equal": "uttrycksregister",
+      "underscore": "svart hål-register"
     }
   },
   "marks": {
@@ -162,28 +162,28 @@
       "currentPositionA": "spara nuvarande position i märke A",
       "jumpPositionA": "hoppa till märke A",
       "yankToMarkA": "klistra in text vid märke A",
-      "backtick0": "go to the position where Vim was previously exited",
-      "backtickQuote": "go to the position when last editing this file",
-      "backtickDot": "go to the position of the last change in this file",
-      "backtickBacktick": "go to the position before the last jump",
-      "colonjumps": "list of jumps",
-      "ctrlPlusi": "go to newer position in jump list",
-      "ctrlPluso": "go to older position in jump list",
-      "colonchanges": "list of changes",
-      "gcomma": "go to newer position in change list",
-      "gsemicolon": "go to older position in change list",
-      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+      "backtick0": "gå till positionen där Vim senast avslutades",
+      "backtickQuote": "gå till positionen när filen senast redigerades",
+      "backtickDot": "gå till positionen för senaste ändringen i filen",
+      "backtickBacktick": "gå till positionen före senaste hoppet",
+      "colonjumps": "lista över hopp",
+      "ctrlPlusi": "gå till nyare position i hopplistan",
+      "ctrlPluso": "gå till äldre position i hopplistan",
+      "colonchanges": "lista över ändringar",
+      "gcomma": "gå till nyare position i ändringslistans",
+      "gsemicolon": "gå till äldre position i ändringslistans",
+      "ctrlPlusCloseSquare": "hoppa till taggen under markören"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
+    "tip1": "För att hoppa till ett märke kan man antingen använda en backtick (<kbd>`</kbd>) eller en apostrof (<kbd>'</kbd>). Att använda en apostrof hoppar till början (första icke-blanka) av raden som innehåller märket.",
     "tip": ""
   },
   "macros": {
     "title": "Macros",
     "commands": {
-      "recordA": "record macro a",
-      "stopRecording": "stop recording macro",
-      "runA": "run macro a",
-      "rerun": "rerun last run macro"
+      "recordA": "spela in macro a",
+      "stopRecording": "sluta spela in macro",
+      "runA": "kör macro a",
+      "rerun": "kör senaste macro igen"
     }
   },
   "global": {
@@ -193,9 +193,9 @@
       "saveAsFile": "spara fil som",
       "closePane": "stäng nuvarande ruta",
       "K": "öppna man page för ordet under markören",
-      "colonTerminal": "open a terminal window"
+      "colonTerminal": "öppna ett terminalfönster"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "Kör <kbd>vimtutor</kbd> i en terminal för att lära dig de första Vim-kommandona."
   },
   "cutAndPaste": {
     "title": "Klipp och klistra",
@@ -203,13 +203,13 @@
       "yy": "kopiera en rad",
       "twoyy": "kopiera två rader",
       "yw": "kopiera tecken från nuvarande position till starten av nästa ord",
-      "yiw": "kopiera till slutet av raden",
+      "yiw": "kopiera ordet under markören",
       "yaw": "kopiera ordet under markören och mellanslag före eller efter ordet",
       "yDollar": "kopiera till slutet av raden",
       "p": "klistra in urklippet efter markören",
       "P": "klistra in före markören",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "klistra in urklippet efter markören och lämna markören efter den nya texten",
+      "gP": "klistra in före markören och lämna markören efter den nya texten",
       "dd": "tag bort en rad",
       "twodd": "tag bort två rader",
       "dw": "tag bort tecken från markören till början av nästa ord",
@@ -217,33 +217,33 @@
       "daw": "tag bort ordet under markören och mellanslag före eller efter ordet",
       "dDollar": "tag bort till slutet av raden",
       "x": "tag bort tecken",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "threeToFiveD": "ta bort rader från rad 3 till 5",
+      "gPatternD": "ta bort alla rader som innehåller mönster",
+      "gNotPatternD": "ta bort alla rader som inte innehåller mönster"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "Du kan också använda följande tecken för att ange intervall:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaOneD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "Från nuvarande rad till slutet av filen",
+        "dotCommaOneD": "Från nuvarande rad till början av filen",
+        "tenCommaOneD": "Från 10:e raden till början av filen"
       }
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Intentering av text",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "greaterThanGreaterThan": "intendera (flytta höger) rad ett steg",
+      "lessThanLessThan": "ta bort indentering (flytta vänster) rad ett steg",
+      "greaterThanPercent": "indentera block med () eller {} (markören på klammerparentes)",
+      "greaterThanib": "indentera inre block med ()",
+      "greaterThanat": "indentera ett block med <> taggar",
+      "3==": "omindentera 3 rader",
+      "=Percent": "omindentera ett block med () eller {} (markören på klammerparentes)",
+      "=iB": "omindentera inre block med {}",
+      "gg=G": "omindentera hela bufferten",
+      "closeSquarep": "klistra in och justera indenteringen till nuvarande rad",
+      "lessThanPercent": "minska indenteringen för ett block med () eller {} (markören på klammerparentes)"
     }
   },
   "exiting": {
@@ -274,41 +274,41 @@
   "searchMultipleFiles": {
     "title": "Sök i flera filer",
     "commands": {
-      "colonvimgrep": "search for pattern in multiple files",
-      "coloncn": "jump to the next match",
-      "coloncp": "jump to the previous match",
-      "coloncopen": "open a window containing the list of matches",
-      "coloncclose": "close the quickfix window"
+      "colonvimgrep": "sök efter mönster i flera filer",
+      "coloncn": "hoppa till nästa träff",
+      "coloncp": "hoppa till föregående träff",
+      "coloncopen": "öppna ett fönster som innehåller listan med träffar",
+      "coloncclose": "stäng quickfix-fönstret"
     }
   },
   "workingWithMultipleFiles": {
-    "title": "Working with multiple files",
+    "title": "Arbeta med flera filer",
     "commands": {
       "colone": "öppna en fil i en ny buffer",
       "colonbnext": "gå till nästa buffer",
       "colonbprev": "gå till föregående buffer",
       "colonls": "visa lista över alla öppna buffrar",
       "colonbd": "tag bort buffer (stäng en fil)",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "gå till en buffer efter nummer #",
+      "colonbfile": "gå till en buffer efter fil",
       "colonsp": "öppna en fil i en ny buffer och dela fönstret horisontellt",
       "colonvsp": "öppna en fil i en ny buffer och dela fönstret vertikalt",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvertba": "redigera alla buffrar som vertikala fönster",
+      "colontabba": "redigera alla buffrar som tabbar",
       "ctrlPlusws": "splitta fönster",
       "ctrlPluswv": "dela ett fönster vertikalt",
       "ctrlPlusww": "byt fönster",
       "ctrlPluswq": "stäng ett fönster",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswx": "byt nuvarande fönster med nästa",
+      "ctrlPlusw=": "gör alla fönster lika höga och breda",
       "ctrlPluswh": "flytta till fönstret åt vänster (vertikal delning)",
       "ctrlPluswl": "flytta till fönstret åt höger (vertikal delning)",
       "ctrlPluswj": "flytta till fönstret nedanför (horisontell delning)",
       "ctrlPluswk": "flytta till fönstret ovanför (horisontell delning)",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+      "ctrlPluswH": "gör nuvarande fönster full höjd längst till vänster (vänstraste vertikala fönstret)",
+      "ctrlPluswL": "gör nuvarande fönster full höjd längst till höger (högersta vertikala fönstret)",
+      "ctrlPluswJ": "gör nuvarande fönster full bredd längst ner (nedersta horisontella fönstret)",
+      "ctrlPluswK": "gör nuvarande fönster full bredd längst upp (översta horisontella fönstret)"
     }
   },
   "tabs": {
@@ -328,24 +328,24 @@
   "diff": {
     "title": "Diff",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "definiera manuellt en vikning upp till rörelse",
+      "zd": "ta bort vikning under markören",
+      "za": "växla vikning under markören",
+      "zo": "öppna vikning under markören",
+      "zc": "stäng vikning under markören",
+      "zr": "minska (öppna) alla vikningar med en nivå",
+      "zm": "vik mer (stäng) alla vikningar med en nivå",
+      "zi": "växla vikningsfunktionalitet",
+      "closeSquarec": "hoppa till början av nästa ändring",
+      "openSquarec": "hoppa till början av föregående ändring",
+      "do": "hämta skillnad (från annan buffer)",
+      "dp": "placera skillnad (till annan buffer)",
+      "colonDiffthis": "gör nuvarande fönster till en del av diff",
+      "colonDiffupdate": "uppdatera skillnader",
+      "colonDiffoff": "stäng av diff-läge för nuvarande fönster"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "Kommandona för vikning (t.ex. <kbd>za</kbd>) arbetar på en nivå. För att arbeta på alla nivåer, använd stora bokstäver (t.ex. <kbd>zA</kbd>).",
+    "tip2": "För att visa skillnaderna mellan filer kan man direkt starta Vim i diff-läge genom att köra <kbd>vimdiff</kbd> i terminalen. Man kan till och med ställa in detta som <kbd>git difftool</kbd>."
   },
   "words": {
     "keyword": "nyckelord",
