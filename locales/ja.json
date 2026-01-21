@@ -40,8 +40,8 @@
       "closeCurlyBrace": "次の段落に移動（コード編集中の場合は関数/ブロック）",
       "openCurlyBrace": "前の段落に移動（コード編集中の場合は関数/ブロック）",
       "centerCursor": "カーソル位置を画面中央に",
-      "topCursor": "position cursor on top of the screen",
-      "bottomCursor": "position cursor on bottom of the screen",
+      "topCursor": "カーソル位置を画面上部に",
+      "bottomCursor": "カーソル位置を画面下部に",
       "CtrlPluse": "画面を下に 1 行スクロール（カーソル移動なし）",
       "CtrlPlusy": "画面を上に 1 行スクロール（カーソル移動なし）",
       "CtrlPlusb": "画面全体分だけ上に移動",
@@ -217,16 +217,16 @@
       "daw": "その単語全体と前後のスペースを消去（カット）",
       "dDollar": "行末まで消去（カット）（<kbd>D</kbd>と同じ）",
       "x": "文字を 1 つ消去（カット）",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "threeToFiveD": "3行目から5行目を消去",
+      "gPatternD": "patternを含む行を全て削除",
+      "gNotPatternD": "patternを含まない全ての行を削除"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "以下の文字列を使っても範囲を指定することができます",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaOneD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "現在の行からファイルの終わりまで",
+        "dotCommaOneD": "現在の行からファイルの先頭まで",
+        "tenCommaOneD": "10行目からファイルの先頭まで"
       }
     }
   },
