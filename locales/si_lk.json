@@ -9,16 +9,16 @@
       "j": "කර්සරය පහලට ගෙනයන්න",
       "k": "කර්සරය ඉහළට ගෙනයන්න",
       "l": "කර්සරය දකුණට ගෙනයන්න",
-      "gj": "move cursor down (multi-line text)",
-      "gk": "move cursor up (multi-line text)",
+      "gj": "කර්සරය පහළට ගෙනයන්න (බහු-පේළි පෙළක)",
+      "gk": "කර්සරය පහළට ගෙනයන්න (බහු-පේළි පෙළක)",
       "w": "වදනක ආරම්භයක් පාසා ඉදිරියට යන්න ",
       "W": "වදනක ආරම්භයක් පාසා ඉදිරියට යන්න (වදන් වලට විරාම ලකුණු තිබිය හැක)",
       "e": "වදනක අවසානයක් පාසා ඉදිරියට යෑමට ",
       "E": "වදනක අවසානයක් පාසා ඉදිරියට යෑමට (වදන් වලට විරාම ලකුණු තිබිය හැක)",
       "b": "වදනක ආරම්භයක් පාසා ආපසු හැරීම",
       "B": "වදනක ආරම්භයක් පාසා ආපසු හැරීම (වදන් වලට විරාම ලකුණු තිබිය හැක)",
-      "ge": "jump backwards to the end of a word",
-      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "ge": "වදනක අවසානය කරා ආපසු හැරෙන්න",
+      "gE": "වදනක අවසානය කරා ආපසු හැරෙන්න (වදන් වලට විරාම ලකුණු තිබිය හැක)",
       "H": "තිරයේ ඉහළට යන්න",
       "M": "තිරයේ මැදට යන්න",
       "L": "තිරයේ පහළට යන්න",
@@ -29,8 +29,8 @@
       "gg": "ලේඛනයේ පළමු පේළිය වෙත පනින්න",
       "G": "ලේඛනයේ අවසන් පේළිය වෙත පනින්න",
       "fiveG": "පස් වැනි පේළිය වෙත පනින්න",
-      "gd": "move to local declaration",
-      "gD": "move to global declaration",
+      "gd": "දේශීය ප්‍රකාශනය (local declaration) වෙත යන්න",
+      "gD": "ගෝලීය ප්‍රකාශනය (global declaration) වෙත යන්න",
       "fx": "x අනුලකුණේ ඊලඟ අවස්ථාව වෙත පැනීම",
       "tx": "x අනුලකුණේ ඊලඟ අවස්ථාවට පෙර පනින්න",
       "Fx": "x අනුලකුණේ පෙර අවස්ථාවට පනින්න",
@@ -40,8 +40,8 @@
       "closeCurlyBrace": "ඊළඟ ඡේදයට යන්න (හෝ ක්රියාත්මක කිරීම / බ්ලොක්, කේත සංස්කරණය කරන විට)",
       "openCurlyBrace": "පෙර ඡේදයට පෙරාතුව (හෝ ක්රියාත්මක කිරීම / අවහිර කිරීම, කේත සංස්කරණය කිරීමේදී)",
       "centerCursor": "කර්සරය තිරය මත කේන්ද්රීය පිහිටුවීම",
-      "topCursor": "position cursor on top of the screen",
-      "bottomCursor": "position cursor on bottom of the screen",
+      "topCursor": "කර්සරය තිරයේ ඉහළටම රැගෙන යන්න",
+      "bottomCursor": "කර්සරය තිරයේ පහළටම රැගෙන යන්න",
       "CtrlPluse": "ලේඛනයේ එක් පේළියක තිරය ඉහළට ගෙනයාම (කර්සරය එලෙසම)",
       "CtrlPlusy": "ලේඛනයේ එක් පේළියක තිරය පහළට ගෙනයාම (කර්සරය එලෙසම)",
       "CtrlPlusb": "එක් පූර්ණ තිරයක් ආපසු යන්න",
@@ -62,15 +62,15 @@
       "o": "nawa පේළිය (විවෘත කරන්න) වර්තමාන පේළිය පහළින් නව පේළිය",
       "O": "වර්තමාන පේළිය ඉහලින් නව පේළිය (විවෘත කරන්න)",
       "ea": "වදන අවසානයේ එක් කරන්න",
-      "ctrlPlush": "delete the character before the cursor during insert mode",
-      "ctrlPlusw": "delete word before the cursor during insert mode",
-      "ctrlPlusj": "begin new line during insert mode",
-      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
-      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
-      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
-      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
-      "ctrlPlusrx": "insert the contents of register x",
-      "ctrlPlusox": "Temporarily enter normal mode to issue one normal-mode command x.",
+      "ctrlPlush": "Insert Mode එකේදී cursor එකට පෙර ඇති character එක මකා දමන්න",
+      "ctrlPlusw": "Insert Mode එකේදී cursor එකට පෙර ඇති word එක මකා දමන්න",
+      "ctrlPlusj": "Insert Mode එකේදී නව line එකක් ආරම්භ කරන්න",
+      "ctrlPlust": "Insert Mode එකේදී line එක එක් shiftwidth ප්‍රමාණයකින් indent (දකුණට) කරන්න",
+      "ctrlPlusd": "Insert Mode එකේදී line එක එක් shiftwidth ප්‍රමාණයකින් de-indent (වමට) කරන්න",
+      "ctrlPlusn": "Insert Mode එකේදී cursor එකට පෙර ඊළඟ match එක insert (auto-complete) කරන්න",
+      "ctrlPlusp": "Insert Mode එකේදී cursor එකට පෙර, කලින් match එක insert (auto-complete) කරන්න",
+      "ctrlPlusrx": "register x හි අන්තර්ගතය insert කරන්න",
+      "ctrlPlusox": "එක් normal-mode command එකක් (x) ලබා දීම සඳහා තාවකාලිකව normal mode වෙත පිවිසෙන්න",
       "Esc": "ඇතුල් කිරීමේ ප්‍රකාරයෙන් (Insert Mode) පිටවන්න"
     }
   },
@@ -78,13 +78,13 @@
     "title": "සංස්කරණය කිරීම",
     "commands": {
       "r": "කර්සරය ට යටින් ඇති අනුලකුණ වෙන එකක් මගින් ප්‍රතිස්ථාපනය ",
-      "R": "replace more than one character, until <kbd>ESC</kbd> is pressed.",
+      "R": "<kbd>ESC</kbd> ප්‍රෙස් කරන තුරු character එකකට වඩා වැඩි ප්‍රමාණයක් replace කරන්න",
       "J": "පහළ පේළිය වත්මන් එකට සම්බන්ධ කරන්න",
       "gJ": "පහළ පේළිය වත්මන් එකට සම්බන්ධ කරන්න (හිස්තැනක් නොමැතිව)",
       "gwip": "ඡේදය පුනරුච්චාරණය කරන්න",
-      "gTilde": "switch case up to motion",
-      "gu": "change to lowercase up to motion",
-      "gU": "change to uppercase up to motion",
+      "gTilde": "motion එක දක්වා case එක switch කරන්න (Uppercase/Lowercase මාරු කරන්න)",
+      "gu": "motion එක දක්වා lowercase වලට change කරන්න",
+      "gU": "motion එක දක්වා uppercase වලට change කරන්න",
       "cc": "සම්පූර්ණ පේළිය මුල සිටම වෙනස් කරන්න",
       "cDollar": "පේළිය අවසානය වෙනස් කරන්න (ප්‍රතිස්ථාපනය  කරන්න)",
       "ciw": "සම්පූර්ණ වදන වෙනස් කරන්න",
@@ -93,7 +93,7 @@
       "S": "සම්පූර්ණ පේළිය ආරම්භයේ සිට වෙනස් කරන්න (cc)",
       "xp": "අනුලකුණ දෙකක් හුවමාරුව (මකා ආපසු ඇලවීම)",
       "u": "අවලංගු කරන්න",
-      "U": "restore (undo) last changed line",
+      "U": "අන්තිමට change කරපු line එක restore (undo) කරන්න",
       "CtrlPlusr": "අවසානට අවලංගු කරන ලද විධානය (u) නැවතත් කරන්න (r)",
       "dot": "අවසාන විධානය නැවත වරක් ක්රියාත්මක කරන්න"
     }
@@ -109,13 +109,13 @@
       "aw": "වදන ලකුණු කරන්න",
       "ab": "බ්ලොක් ()",
       "aB": "බ්ලොක් {}",
-      "at": "a block with <> tags",
+      "at": "බ්ලොක් <>",
       "ib": "ඇතුළත බ්ලොක් ()",
       "iB": "ඇතුළත බ්ලොක් {}",
       "it": "inner block with <> tags",
       "Esc": "දෘශ්‍ය ප්‍රකාරයෙන් පිටවීම"
     },
-    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+    "tip1": "<kbd>b</kbd> හෝ <kbd>B</kbd> වෙනුවට පිළිවෙලින් <kbd>(</kbd> හෝ <kbd>{</kbd> වුවද භාවිතා කළ හැක."
   },
   "visualCommands": {
     "title": "දෘශ්‍ය ප්‍රකාරයේ විධාන (Visual Mode Commands)",
@@ -125,8 +125,8 @@
       "y": "තෝරාගත් පෙළ පිටපත් කරන්න",
       "d": "තෝරාගත් පෙළ මකන්න",
       "tilde": "මහකුරු / කුඩා අකුරු හුවමාරුව",
-      "u": "change marked text to lowercase",
-      "U": "change marked text to uppercase"
+      "u": "marked text එක lowercase වලට change කරන්න",
+      "U": "marked text එක uppercase වලට change කරන්න"
     }
   },
   "registers": {
@@ -135,8 +135,8 @@
       "show": "රෙජිස්ටර් අන්තර්ගතය පෙන්වන්න",
       "pasteRegisterX": "රෙජිස්ටර් අන්තර්ගතය ආදේශ කරන්න",
       "yankIntoRegisterX": "රෙජිස්ටරයට පිටපත් කරන්න",
-      "quotePlusy": "yank into the system clipboard register",
-      "quotePlusp": "paste from the system clipboard register"
+      "quotePlusy": "system clipboard register එකට yank කරන්න",
+      "quotePlusp": "ystem clipboard register එකෙන් paste කරන්න"
     },
     "tip1": "ටයිප් රෙජිස්ටර් ~/.viminfo තුල ගබඩා කර ඇත, නැවතත් නැවතත් Vim සමග අලුතෙන් ආරම්භ වේ.",
     "tip2": {
@@ -162,19 +162,19 @@
       "currentPositionA": "මෙම ස්ථානය a යනුවෙන් සලකුණු කරන්න",
       "jumpPositionA": "a සලකුණු වෙත යන්න",
       "yankToMarkA": "a සලකුණ යෙදු ස්ථානයට පිටපත් කරන්න",
-      "backtick0": "go to the position where Vim was previously exited",
-      "backtickQuote": "go to the position when last editing this file",
-      "backtickDot": "go to the position of the last change in this file",
-      "backtickBacktick": "go to the position before the last jump",
-      "colonjumps": "list of jumps",
-      "ctrlPlusi": "go to newer position in jump list",
-      "ctrlPluso": "go to older position in jump list",
-      "colonchanges": "list of changes",
-      "gcomma": "go to newer position in change list",
-      "gsemicolon": "go to older position in change list",
-      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+      "backtick0": "Vim එකෙන් අවසන් වරට exit වූ position එක වෙත යන්න",
+      "backtickQuote": "මෙම file එක අවසන් වරට edit කළ position එක වෙත යන්න",
+      "backtickDot": "මෙම file එකේ අවසන් change එක සිදු කළ position එක වෙත යන්න",
+      "backtickBacktick": "අවසන් jump එකට පෙර තිබූ position එක වෙත යන්න",
+      "colonjumps": "jumps ලැයිස්තුව (list of jumps)",
+      "ctrlPlusi": "jump list එකේ newer position එක වෙත යන්න",
+      "ctrlPluso": "jump list එකේ older position එක වෙත යන්න",
+      "colonchanges": "changes ලැයිස්තුව (list of changes)",
+      "gcomma": "change list එකේ newer position එක වෙත යන්න",
+      "gsemicolon": "change list එකේ older position එක වෙත යන්න",
+      "ctrlPlusCloseSquare": "cursor එක යට ඇති tag එක වෙත jump කරන්න"
     },
-    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.",
+    "tip1": "mark එකක් වෙත jump කිරීම සඳහා backtick එකක් (<kbd>`</kbd>) හෝ apostrophe එකක් (<kbd>'</kbd>) භාවිතා කළ හැක. apostrophe එකක් භාවිතා කිරීමෙන් mark එක ඇති line එකේ ආරම්භය (first non-blank) වෙත jump කරයි.",
     "tip": ""
   },
   "macros": {
@@ -196,7 +196,7 @@
       "colonTerminal": "open a terminal window",
       "openFile": "ගොනුව සුරකින්න"
     },
-    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+    "tip1": "පළමු Vim commands ඉගෙන ගැනීමට terminal එකෙහි <kbd>vimtutor</kbd> run කරන්න."
   },
   "cutAndPaste": {
     "title": "පිටපත් කිරීම, කැපීම සහ ඇලවීම",
@@ -209,8 +209,8 @@
       "yDollar": "පේළියේ අවසානය දක්වා පිටපත් කරන්න",
       "p": "කර්සරයට පසු ඇමිණුම් පිටපත් කරගත් පේළි අලවන්න",
       "P": "කර්සරයට පසු ඇමිණුම් පිටපත් කරගත් පේළි අලවන්න",
-      "gp": "put (paste) the clipboard after cursor and leave cursor after the new text",
-      "gP": "put (paste) before cursor and leave cursor after the new text",
+      "gp": "clipboard එක cursor එකට පසුව put (paste) කර, cursor එක නව text එකට පසුව තබන්න",
+      "gP": "cursor එකට පෙර put (paste) කර, cursor එක නව text එකට පසුව තබන්න",
       "dd": "වත්මන් පේළිය මකන්න (කපන්න)",
       "twodd": "පේළි 2 ක් (වත්මන් හා පහත) මකන්න (කැපීම)",
       "dw": "ඊළඟ වදන ය දක්වා කර්සරය යට අක්ෂර මකා දැමීම (කැපීම)",
@@ -218,33 +218,33 @@
       "daw": "කර්සරය යටින් ඇති වදන ය සහ මකා දැමීම පෙර හෝ පසුව (අවහිර කිරීම්) අවකාශය",
       "dDollar": "පේළි අවසානය දක්වා මකන්න (කැපීම)",
       "x": "අක්ෂර ඉවත් කරන්න (කැපීම)",
-      "threeToFiveD": "delete lines starting from 3 to 5",
-      "gPatternD": "delete all lines containing pattern",
-      "gNotPatternD": "delete all lines not containing pattern"
+      "threeToFiveD": "3 සිට 5 දක්වා ඇති lines delete කරන්න",
+      "gPatternD": "pattern එක අඩංගු සියලුම lines delete කරන්න",
+      "gNotPatternD": "pattern එක අඩංගු නොවන සියලුම lines delete කරන්න"
     },
     "tip1": {
-      "title": "You can also use the following characters to specify the range:",
+      "title": "Range එක specify කිරීම සඳහා ඔබට පහත characters ද භාවිතා කළ හැක:",
       "commands": {
-        "dotCommaDollarD": "From the current line to the end of the file",
-        "dotCommaOneD": "From the current line to the beginning of the file",
-        "tenCommaOneD": "From the 10th line to the beginning of the file"
+        "dotCommaDollarD": "වත්මන් line එකේ සිට file එකේ අවසානය දක්වා",
+        "dotCommaOneD": "වත්මන් line එකේ සිට file එකේ ආරම්භය දක්වා",
+        "tenCommaOneD": "10 වන line එකේ සිට file එකේ ආරම්භය දක්වා"
       }
     }
   },
   "indentText": {
-    "title": "Indent text",
+    "title": "Text indent කරන්න",
     "commands": {
-      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
-      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
-      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
-      "greaterThanib": "indent inner block with ()",
-      "greaterThanat": "indent a block with <> tags",
-      "3==": "re-indent 3 lines",
-      "=Percent": "re-indent a block with () or {} (cursor on brace)",
-      "=iB": "re-indent inner block with {}",
-      "gg=G": "re-indent entire buffer",
-      "closeSquarep": "paste and adjust indent to current line",
-      "lessThanPercent": "de-indent a block with () or {} (cursor on brace)"
+      "greaterThanGreaterThan": "line එක එක් shiftwidth ප්‍රමාණයකින් indent (දකුණට) කරන්න",
+      "lessThanLessThan": "line එක එක් shiftwidth ප්‍රමාණයකින් de-indent (වමට) කරන්න",
+      "greaterThanPercent": "() හෝ {} අඩංගු block එකක් indent කරන්න (cursor එක brace එක මත තබා)",
+      "greaterThanib": "() අඩංගු inner block එක indent කරන්න",
+      "greaterThanat": "<> tags අඩංගු block එකක් indent කරන්න",
+      "3==": "lines 3ක් නැවත re-indent කරන්න",
+      "=Percent": "() හෝ {} අඩංගු block එකක් නැවත re-indent කරන්න (cursor එක brace එක මත තබා)",
+      "=iB": "{} අඩංගු inner block එක නැවත re-indent කරන්න",
+      "gg=G": "මුළු buffer එකම නැවත re-indent කරන්න",
+      "closeSquarep": "paste කර වත්මන් line එකට අනුව indent එක adjust කරන්න",
+      "lessThanPercent": "() හෝ {} අඩංගු block එකක් de-indent කරන්න (cursor එක brace එක මත තබා)"
     }
   },
   "exiting": {
@@ -279,7 +279,7 @@
       "coloncn": "රටාවේ ඊළඟ යෙදුමට (ඉදිරියට) යන්න",
       "coloncp": "රටාවේ ඊළඟ යෙදුමට (පසුපසට) යන්න",
       "coloncopen": "රටාවේ සියලු යෙදීම් ලැයිස්තුව සහිත කවුළුව විවෘත කරන්න",
-      "coloncclose": "close the quickfix window"
+      "coloncclose": "quickfix window එක close කරන්න"
     }
   },
   "workingWithMultipleFiles": {
@@ -290,26 +290,26 @@
       "colonbprev": "පෙර බෆරය වෙත යන්න",
       "colonls": "සියලු විවෘත බෆර් ලැයිස්තුගත කරන්න",
       "colonbd": "බෆරයක් මකන්න (ගොනුව වසා දමන්න)",
-      "colonbnumber": "go to a buffer by #",
-      "colonbfile": "go to a buffer by file",
+      "colonbnumber": "# මගින් buffer එකක් වෙත යන්න",
+      "colonbfile": "file එක මගින් buffer එකක් වෙත යන්න",
       "colonsp": "නව බෆර් සහ ද්විත්ව කවුළුවක ගොනුව විවෘත කරන්න",
       "colonvsp": "නව බෆරයක ගොනුවක් විවෘත කර සිරස් වින්යාස සහිත කවුළුවක විවෘත කරන්න",
-      "colonvertba": "edit all buffers as vertical windows",
-      "colontabba": "edit all buffers as tabs",
+      "colonvertba": "සියලුම buffers, vertical windows ලෙස edit කරන්න",
+      "colontabba": "සියලුම buffers, tabs ලෙස edit කරන්න",
       "ctrlPlusws": "කවුළුව භේදනය (තිරස් භේදය)",
       "ctrlPluswv": "කවුළුව භේදනය (සිරස් භේදය)",
       "ctrlPlusww": " ඊළඟ කවුළුව වෙත යන්න ",
       "ctrlPluswq": "කවුළුව වසන්න",
-      "ctrlPluswx": "exchange current window with next one",
-      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswx": "වත්මන් window එක ඊළඟ window එක සමඟ exchange කරන්න",
+      "ctrlPlusw=": "සියලුම windows වල height සහ width එක සමාන කරන්න",
       "ctrlPluswh": "වම් කවුළුව වෙත කර්සරය ගෙනයාම (සිරස් භේදය)",
       "ctrlPluswl": "දකුණු කවුළුව වෙත කර්සරය ගෙනයාම (සිරස් භේදය)",
       "ctrlPluswj": "පහත දැක්වෙන කවුළුව කර්සරය ගෙනයාම (තිරස් භේදය)",
       "ctrlPluswk": "ඉහළ කවුළුව වෙත ගෙන යාම (තිරස් භේදය)",
-      "ctrlPluswH": "make current window full height at far left (leftmost vertical window)",
-      "ctrlPluswL": "make current window full height at far right (rightmost vertical window)",
-      "ctrlPluswJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "ctrlPluswK": "make current window full width at the very top (topmost horizontal window)"
+      "ctrlPluswH": "වත්මන් window එක වම් කෙළවරටම ගෙන ගොස් full height කරන්න (leftmost vertical window)",
+      "ctrlPluswL": "වත්මන් window එක දකුණු කෙළවරටම ගෙන ගොස් full height කරන්න (rightmost vertical window)",
+      "ctrlPluswJ": "වත්මන් window එක පහළටම ගෙන ගොස් full width කරන්න (bottommost horizontal window)",
+      "ctrlPluswK": "වත්මන් window එක ඉහළටම ගෙන ගොස් full width කරන්න (topmost horizontal window)"
     }
   },
   "tabs": {
@@ -329,24 +329,24 @@
   "diff": {
     "title": "Diff",
     "commands": {
-      "zf": "manually define a fold up to motion",
-      "zd": "delete fold under the cursor",
-      "za": "toggle fold under the cursor",
-      "zo": "open fold under the cursor",
-      "zc": "close fold under the cursor",
-      "zr": "reduce (open) all folds by one level",
-      "zm": "fold more (close) all folds by one level",
-      "zi": "toggle folding functionality",
-      "closeSquarec": "jump to start of next change",
-      "openSquarec": "jump to start of previous change",
-      "do": "obtain (get) difference (from other buffer)",
-      "dp": "put difference (to other buffer)",
-      "colonDiffthis": "make current window part of diff",
-      "colonDiffupdate": "update differences",
-      "colonDiffoff": "switch off diff mode for current window"
+      "zf": "motion එක දක්වා manually fold එකක් define කරන්න",
+      "zd": "cursor එක යට ඇති fold එක delete කරන්න",
+      "za": "cursor එක යට ඇති fold එක toggle (open/close) කරන්න",
+      "zo": "cursor එක යට ඇති fold එක open කරන්න",
+      "zc": "cursor එක යට ඇති fold එක close කරන්න",
+      "zr": "සියලුම folds එක් level එකකින් reduce (open) කරන්න",
+      "zm": "සියලුම folds එක් level එකකින් fold more (close) කරන්න",
+      "zi": "folding functionality එක toggle කරන්න",
+      "closeSquarec": "ඊළඟ change එකේ ආරම්භය වෙත jump කරන්න",
+      "openSquarec": "පෙර change එකේ ආරම්භය වෙත jump කරන්න",
+      "do": "difference එක ලබා ගන්න (other buffer එකෙන්)",
+      "dp": "difference එක දමන්න (other buffer එකට)",
+      "colonDiffthis": "වත්මන් window එක diff එකේ කොටසක් කරන්න",
+      "colonDiffupdate": "differences update කරන්න",
+      "colonDiffoff": "වත්මන් window එක සඳහා diff mode එක switch off කරන්න"
     },
-    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
-    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+    "tip1": "folding සඳහා වන commands (<kbd>za</kbd> වැනි) ක්‍රියාත්මක වන්නේ එක් level එකක් සඳහා පමණි. සියලුම levels සඳහා ක්‍රියාත්මක කිරීමට uppercase letters (<kbd>zA</kbd> වැනි) භාවිතා කරන්න.",
+    "tip2": "files වල differences බලා ගැනීමට, terminal එකෙහි <kbd>vimdiff</kbd> run කිරීම මගින් සෘජුවම Vim එක diff mode එකෙන් start කළ හැක. මෙය <kbd>git difftool</kbd> එක ලෙස වුවද set කළ හැක."
   },
   "words": {
     "keyword": "විධානය",
